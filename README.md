@@ -22,6 +22,7 @@ Set up the project's dependencies.
     bundle --binstubs
     rake db:create
     rake db:schema:load
+    rake db:seed
 
 Add Heroku remotes for staging and production environments.
 
@@ -290,7 +291,6 @@ Ruby
 * Use `{...}` over `do..end` for single-line blocks.
 * Use `!` suffix for dangerous methods (modifies `self`).
 * Use `?` suffix for predicate methods (return a boolean).
-* [Use `bundle --binstubs`](http://goo.gl/T9C90).
 * Use `CamelCase` for classes and modules, `snake_case` for variables and
   methods, `SCREAMING_SNAKE_CASE` for constants.
 * Use `def` with parentheses when there are arguments.
@@ -314,7 +314,6 @@ Rails
 * Avoid the `:except` option in routes.
 * Avoid `member` and `collection` routes.
 * Avoid Single Table Inheritance.
-* Deploy to [Heroku](http://heroku.com).
 * Don't change a migration after it has been committed unless it cannot be
   solved with another migration.
 * Don't invoke a model's class directly from a view.
@@ -335,9 +334,7 @@ Rails
   `config/application.rb`.
 * Set default values in the database.
 * Use `_path` over `_url` for named routes everywhere except mailer views.
-* Use `db/seeds.rb` for bootstrap data, not migrations.
 * Use `def self.method` over the `named_scope :method` DSL.
-* Use [Foreman](http://goo.gl/oy4uw) to run the development server.
 * Use `I18n.t 'dot.separated.key'` over
   `I18n.t :key, :scope => [:dot, :separated]`.
 * Use [Haml](http://haml-lang.com) for view templates.
