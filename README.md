@@ -168,9 +168,7 @@ Ruby
 * Avoid monkey-patching core classes.
 * Avoid `return` unless required.
 * Avoid superfluous parentheses when calling methods, but keep them when you
-  assign the return value.
-        x = Math.sin(y)
-        array.delete e
+  assign the return value: `x = Math.sin(y); array.delete e`
 * Avoid ternary operators (`boolean ? true : false`). Use multi-line `if`
   instead to emphasize code branches.
 * Define the version of Ruby the project uses in the Gemfile.
@@ -181,8 +179,7 @@ Ruby
   with ActiveRecord and keep `select`/`reject` symmetry.
 * Prefer `map` over `collect` and `reduce` over `inject` due to symmetry and
   familarity with mapping and reducing in other technologies.
-* Use `_` for unused block parameters.
-        hash.map { |_, v| v + 1 }
+* Use `_` for unused block parameters: `hash.map { |_, v| v + 1 }`
 * Use `%{}` for single-line strings needing interpolation and double-quotes.
 * Use `%w()` over `['', '']` for an array of words.
 * Use `&&` and `||` for boolean expressions.
@@ -231,8 +228,8 @@ Rails
 * Set `config.action_mailer.delivery_method = :test` in the test environment.
 * Use `_path` over `_url` for named routes everywhere except mailer views.
 * Use `def self.method` over the `named_scope :method` DSL.
-* Use [Foreman](https://github.com/ddollar/foreman) to run Rails apps in
-  development mode.
+* Use [Foreman](https://github.com/ddollar/foreman) to run the development
+  server.
 * Use `I18n.t 'dot.separated.key'` over
   `I18n.t :key, :scope => [:dot, :separated]`.
 * Use [Haml](http://haml-lang.com) for view templates.
