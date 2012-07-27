@@ -28,7 +28,7 @@ Write a [good commit message](http://goo.gl/w11us).
     * More information about commit (under 72 characters)
     * More information about commit (under 72 characters)
 
-Share your branch:
+Share your branch.
 
     git push origin [branch]
 
@@ -130,6 +130,7 @@ Naming
 * Avoid abbreviations.
 * Avoid Hungarian notiation (`szName`).
 * Avoid types in names (`user_array`).
+* Name background jobs with a `Job` suffix.
 * Name the enumeration parameter the singular of the collection.
 * Name variables, methods, and classes with intention-revealing names..
 * Treat acronyms as words in names (`XmlHttpRequest` not `XMLHTTPRequest`),
@@ -149,12 +150,24 @@ Design
 * Don't swallow exceptions or "fail silently."
 * Don't write code that guesses at future functionality.
 * [Exceptions should be exceptional](http://rdd.me/yichhgvu).
-* [Keep the code simple](http://www.readability.com/articles/ko2aqda2).
+* [Keep the code simple](http://rdd.me/ko2aqda2).
 * Limit the number of collaborators of an object.
 * Prefer composition over inheritance.
 * Prefer small methods. One line is best.
 * Prefer small objects with a single, well-defined responsibility.
-* [Tell, don't ask](http://robots.thoughtbot.com/post/27572137956/tell-dont-ask).
+* [Tell, don't ask](http://goo.gl/Ztawt).
+
+Javascript
+----------
+
+* Define functions that operate on `window` or DOM in scope of `window`.
+* Initialize arrays using `[]`.
+* Initialize empty objects and hashes using `{}`.
+* Use `CamelCase` for prototypes, `mixedCase` for variables and functions,
+  `SCREAMING_SNAKE_CASE` for constants, `_single_leading_underscore` for
+  private variables and functions.
+* Use `data-` attributes to bind event handlers.
+* Use the [module pattern](http://goo.gl/JDtHN) to control method visibility.
 
 Ruby
 ----
@@ -200,8 +213,7 @@ Ruby
 * Use `Set` over `Array` for arrays with unique elements. The lookup is faster.
 * Use single-quotes for strings unless interpolating.
 * Use `unless boolean?` instead of `if !boolean?`.
-* Use [Factory Girl](https://github.com/thoughtbot/factory_girl) for setting up
-  complicated test data.
+* Use [Factory Girl](http://goo.gl/zCsF1) to set up test data.
 
 Rails
 -----
@@ -210,6 +222,8 @@ Rails
 * Avoid `member` and `collection` routes.
 * Avoid Single Table Inheritance.
 * Deploy to [Heroku](http://heroku.com).
+* Don't change a migration after it has been committed unless it cannot be
+  solved with another migration.
 * Don't invoke a model's class directly from a view.
 * Don't use SQL or SQL fragments (`where('inviter_id is not null')`) outside of
   models.
@@ -225,21 +239,24 @@ Rails
   helpers.
 * Put all copy text in models, views, controllers, and mailers in
   `config/locales`.
+* Serve assets from S3 using [asset_sync](http://goo.gl/m58tF).
 * Set `config.action_mailer.delivery_method = :test` in the test environment.
+* Set `config.assets.initialize_on_precompile = false` in
+  `config/application.rb`.
+* Set default values in the database.
 * Use `_path` over `_url` for named routes everywhere except mailer views.
+* Use `db/seeds.rb` for bootstrap data, not migrations.
 * Use `def self.method` over the `named_scope :method` DSL.
-* Use [Foreman](https://github.com/ddollar/foreman) to run the development
-  server.
+* Use [Foreman](http://goo.gl/oy4uw) to run the development server.
 * Use `I18n.t 'dot.separated.key'` over
   `I18n.t :key, :scope => [:dot, :separated]`.
 * Use [Haml](http://haml-lang.com) for view templates.
 * Use `has_and_belongs_to_many` if all you need is a join table. Start simple.
-* Use namespaced locale lookup in the views by prefixing a period: `t '.title'`.
+* Use namespaced locale lookup in views by prefixing a period: `t '.title'`.
 * Use nested routes to express `belongs_to` relationships between resources.
 * Use one `ActionMailer` for the app. Name it `Mailer`.
-* Use [single recipient SMTP](https://gist.github.com/2042496) in the staging
-  environment.
-* Use the default `render 'partial'` syntax over `render :partial => 'partial'`.
+* Use [single recipient SMTP](http://goo.gl/FWdhG) in staging environment.
+* Use the default `render 'partial'` syntax over `render partial: 'partial'`.
 * Use the `:only` option to explicitly state exposed routes.
 
 Database
@@ -254,21 +271,21 @@ Database
 * Create a read-only [Heroku Follower](http://goo.gl/xWDMx) for your
   production database. If a Heroku database outage occurs, Heroku can use the
   follower to get your app back up and running faster.
+* Index all foreign keys.
 * Use the Heroku Follower database for analytics to limit reads on the primary
   database.
 
-Javascript
-----------
+Background Jobs
+---------------
 
-* Define functions that operate on `window` or DOM in scope of `window`.
-* Initialize arrays using `[]`.
-* Initialize empty objects and hashes using `{}`.
-* Use `CamelCase` for prototypes, `mixedCase` for variables and functions,
-  `SCREAMING_SNAKE_CASE` for constants, `_single_leading_underscore` for
-  private variables and functions.
-* Use `data-` attributes to bind event handlers.
-* Use the [module pattern](http://yuiblog.com/blog/2007/06/12/module-pattern)
-  to control method visibility.
+* Define a `PRIORITY` constant at the top of the class.
+* Define two public methods: `self.enqueue` and `perform`.
+* Enqueue the job in `self.enqueue` [like this](http://goo.gl/C7e54).
+* Put background jobs in `app/jobs`.
+* Store IDs, not `ActiveRecord` objects for cleaner serialization. Re-find the
+  `ActiveRecord` object in the `perform` method.
+* Subclass the job from `Struct.new(:something_id)`.
+* Use [`Delayed::Job`](http://goo.gl/sRYju) for background jobs.
 
 Testing
 -------
@@ -286,14 +303,12 @@ Testing
 * Prefix `context` blocks names with 'given' when receiving input. Prefix with
   'when' in most other cases.
 * Run specs with `--format documentation`.
+* Test backgroun jobs with a [`Delayed::Job` matcher](http://goo.gl/bzBlN).
 * Use a `context` block for each execution path through the method.
-* Use a [Fake](http://robots.thoughtbot.com/post/219216005/fake-it) to stub
-  requests to external services.
-* Use `before` blocks to clearly define the 'setup' phase of the
-  [Four Phase Test](http://xunitpatterns.com/Four%20Phase%20Test.html).
+* Use a [Fake](http://goo.gl/YR7Hh) to stub requests to external services.
+* Use a `before` block to define phases of [Four Phase
+  Test](http://goo.gl/J9FiJ).
 * Use integration tests to execute the entire app.
-* Use literal strings or non-[SUT](http://xunitpatterns.com/SUT.html) methods
-  in test expectations when possible.
+* Use non-[SUT](http://goo.gl/r5Ti2) methods in expectations when possible.
 * Use one expection per `it` block.
-* Use stubs and spies (not mocks) in isolated tests to test only the object
-  under test.
+* Use stubs and spies (not mocks) in isolated tests.
