@@ -33,7 +33,7 @@ variables.
 
     heroku config:pull --app <app>-staging
 
-You'll see credentials as config vars. Delete lines that don't apply.
+Delete lines in `.env` that don't apply.
 
     BRAINTREE_MERCHANT_ID
     BRAINTREE_PRIVATE_KEY
@@ -44,9 +44,10 @@ You'll see credentials as config vars. Delete lines that don't apply.
 User stories
 ------------
 
-* Add stories as a team to [Trajectory](https://www.apptrajectory.com).
-* The client is responsible for prioritizing stories.
-* The designers and developers are responsible for estimating stories.
+* Add stories during weekly retrospectives as a team to
+  [Trajectory](https://www.apptrajectory.com).
+* Make the client prioritize stories.
+* Estimate stories with your fellow designers and developers.
 * Write stories in the form `As a [user role], I want to [goal], so that
   [reason].`
 
@@ -65,25 +66,16 @@ Use foreman to run the app locally.
 
     foreman start
 
-It will pick up your `.env` file, and run declared processes from `Procfile`,
-just like Heroku's [Cedar](https://devcenter.heroku.com/articles/cedar/) stack.
+It will pick up your `.env` file and run declared processes from `Procfile`
+like Heroku's [Cedar](https://devcenter.heroku.com/articles/cedar/) stack.
 
-Run the whole test suite with.
+Run the whole test suite or individual test files or individual tests.
 
     rake
-
-Run individual features.
-
     cucumber features/visitor/signs_in.feature
-
-Run individual specs.
-
     rspec spec/models/user_spec.rb
-
-Run individual tests by line number.
-
-    rspec spec/models/user_spec.rb:8
     cucumber features/visitor/signs_in.feature:50
+    rspec spec/models/user_spec.rb:8
 
 When feature is complete and tests pass, commit the changes.
 
@@ -110,7 +102,7 @@ Ask for a code review in [Campfire](http://campfirenow.com).
 Code review
 -----------
 
-A team member other than the author should review the code before it is merged.
+A team member other than the author should review the code.
 
 Read the pull request on Github. Comment directly on lines of code.
 
@@ -121,8 +113,7 @@ For larger features, check out the branch.
     rake
     git diff origin/master..HEAD
 
-If you see any style guide violations, opportunities for better names, or other
-small changes, make the fixes right in the branch, commit, and push.
+Make small changes right in the branch, commit, and push.
 
 View the feature in the browser. Click around.
 
