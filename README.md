@@ -238,6 +238,8 @@ Rails
 Database
 --------
 
+* Avoid multicolumn indexes in Postgres. It [combines multiple
+  indexes](http://goo.gl/pY3Po) efficiently.
 * Create [indexes concurrently](https://gist.github.com/3186117) to avoid table
   locks and [reduced performance](http://goo.gl/fi5ER) during deploys.
 * Consider a [partial index](http://goo.gl/YC8Jt) for queries on booleans.
