@@ -9,24 +9,27 @@ Laptop setup
 Set up your laptop with [this script](https://github.com/thoughtbot/laptop)
 and [these dotfiles](https://github.com/thoughtbot/dotfiles).
 
-Getting the code:
+Project setup
+-------------
+
+Get the code.
 
     git clone git@github.com:organization/project.git
 
-Set up the project's dependencies:
+Set up the project's dependencies.
 
     cd project
     bundle --binstubs
     rake db:create
     rake db:schema:load
 
-Add Heroku remotes for staging and production environments:
+Add Heroku remotes for staging and production environments.
 
     git remote add staging git@heroku.com:<app>-staging.git
     git remote add production git@heroku.com:<app>-production.git
 
 Use [Heroku config](https://github.com/ddollar/heroku-config) to get `ENV`
-variables:
+variables.
 
     heroku config:pull --app <app>-staging
 
@@ -38,30 +41,6 @@ You'll see credentials as config vars. Delete lines that don't apply.
     S3_KEY
     S3_SECRET
 
-Use foreman to run the app locally:
-
-    foreman start
-
-It will pick up your `.env` file, and run declared processes from `Procfile`,
-just like Heroku's [Cedar](https://devcenter.heroku.com/articles/cedar/) stack.
-
-Run the whole test suite with:
-
-    rake
-
-Run individual features:
-
-    cucumber features/visitor/signs_in.feature
-
-Run individual specs:
-
-    rspec spec/models/user_spec.rb
-
-Run individual tests by line number:
-
-    rspec spec/models/user_spec.rb:8
-    cucumber features/visitor/signs_in.feature:50
-
 User stories
 ------------
 
@@ -71,8 +50,8 @@ User stories
 * Write stories in the form `As a [user role], I want to [goal], so that
   [reason].`
 
-Git-based development
----------------------
+Development
+-----------
 
 Start a user story.
 
@@ -82,7 +61,31 @@ Create a local feature branch based off master.
     git pull
     git checkout -b feature-xyz
 
-Do work in your branch. Make sure tests pass and commit the changes.
+Use foreman to run the app locally.
+
+    foreman start
+
+It will pick up your `.env` file, and run declared processes from `Procfile`,
+just like Heroku's [Cedar](https://devcenter.heroku.com/articles/cedar/) stack.
+
+Run the whole test suite with.
+
+    rake
+
+Run individual features.
+
+    cucumber features/visitor/signs_in.feature
+
+Run individual specs.
+
+    rspec spec/models/user_spec.rb
+
+Run individual tests by line number.
+
+    rspec spec/models/user_spec.rb:8
+    cucumber features/visitor/signs_in.feature:50
+
+When feature is complete and tests pass, commit the changes.
 
     rake
     git add -A
@@ -109,17 +112,13 @@ Code review
 
 A team member other than the author should review the code before it is merged.
 
-When you review a teammate's code, you can read it in the Github web interface
-and make comments on each line.
+Read the pull request on Github. Comment directly on lines of code.
 
-You might also want to check out the branch to run tests:
+For larger features, check out the branch.
 
     git checkout <branch>
     rake db:migrate
     rake
-
-Read the code:
-
     git diff origin/master..HEAD
 
 If you see any style guide violations, opportunities for better names, or other
@@ -129,9 +128,7 @@ View the feature in the browser. Click around.
 
 Ask questions of your teammate in a comment on the pull request or in Campfire.
 
-When the feature is ready to be merged, comment on the pull request:
-
-    Ready to squash and merge.
+Comment on the pull request `Ready to squash and merge.`
 
 Deploy
 ------
@@ -164,11 +161,9 @@ Delete your local feature branch.
 
     git branch -d [branch]
 
-Close pull request and leave a comment:
+Close pull request and comment `Merged.`
 
-    Merged.
-
-Merge master into the staging branch:
+Merge master into the staging branch.
 
     git checkout staging
     git reset --hard staging/master
@@ -176,19 +171,19 @@ Merge master into the staging branch:
     git diff --stat origin/master (view changed files)
     git merge master
 
-Deploy to [Heroku](https://devcenter.heroku.com/articles/quickstart):
+Deploy to [Heroku](https://devcenter.heroku.com/articles/quickstart).
 
-    git push
+    git push staging
 
-Run migrations (if necessary):
+Run migrations (if necessary).
 
     heroku rake db:migrate --app <app>
 
-Restart the dynos if migrations were run:
+Restart the dynos if migrations were run.
 
     heroku restart --app <app>
 
-[Introspect](http://goo.gl/tTgVF) to make sure everything's ok:
+[Introspect](http://goo.gl/tTgVF) to make sure everything's ok.
 
     watch heroku ps --app <app>
 
@@ -199,14 +194,14 @@ Write acceptance criteria on the story and "deliver" the story.
 A team member other than the author should review the feature on staging based
 on acceptance criteria.
 
-Deploy to production:
+Deploy to production.
 
     git checkout production
     git reset --hard production/master
     git log production..staging (view list of new commits)
     git diff --stat staging/master (view changed files)
     git merge staging
-    git push
+    git push production
     heroku rake db:migrate --app <app>
     heroku restart --app <app>
     watch heroku ps --app <app>
