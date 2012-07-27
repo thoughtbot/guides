@@ -312,3 +312,9 @@ Testing
 * Use non-[SUT](http://goo.gl/r5Ti2) methods in expectations when possible.
 * Use one expection per `it` block.
 * Use stubs and spies (not mocks) in isolated tests.
+
+Browsers
+--------
+
+* Don't support clients without Javascript.
+* Don't support IE6.
