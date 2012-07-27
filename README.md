@@ -309,8 +309,8 @@ Background Jobs
 * Define two public methods: `self.enqueue` and `perform`.
 * Enqueue the job in `self.enqueue` [like this](http://goo.gl/C7e54).
 * Put background jobs in `app/jobs`.
-* Store IDs, not `ActiveRecord` objects for cleaner serialization. Re-find the
-  `ActiveRecord` object in the `perform` method.
+* Store IDs, not `ActiveRecord` objects for cleaner serialization, then re-find
+  the `ActiveRecord` object in the `perform` method.
 * Subclass the job from `Struct.new(:something_id)`.
 * Use [`Delayed::Job`](http://goo.gl/sRYju) for background jobs.
 
@@ -330,7 +330,7 @@ Testing
 * Prefix `context` blocks names with 'given' when receiving input. Prefix with
   'when' in most other cases.
 * Run specs with `--format documentation`.
-* Test backgroun jobs with a [`Delayed::Job` matcher](http://goo.gl/bzBlN).
+* Test background jobs with a [`Delayed::Job` matcher](http://goo.gl/bzBlN).
 * Use a `context` block for each execution path through the method.
 * Use a [Fake](http://goo.gl/YR7Hh) to stub requests to external services.
 * Use a `before` block to define phases of [Four Phase
