@@ -3,19 +3,20 @@ Style Guide
 
 A guide for programming in style.
 
-Workflow
---------
+Git-based workflow
+------------------
 
 Start a [Trajectory](https://www.apptrajectory.com) story.
 
-Create a local feature branch off of master for development.
+Create a local feature branch based off master.
 
     git checkout master
     git pull
     git checkout -b feature-xyz
 
-Do work in your feature branch and commit the changes.
+Do work in your branch. Make sure tests pass and commit the changes.
 
+    rake
     git add -A
     git status
     git commit
@@ -27,14 +28,14 @@ Write a [good commit message](http://goo.gl/w11us).
     * More information about commit (under 72 characters)
     * More information about commit (under 72 characters)
 
-Make sure tests pass. Share your feature branch
+Share your branch:
 
     git push origin [branch]
 
 Submit a [Github pull request](http://goo.gl/Kmdee).
 
-Ask for a code review in Campfire. At least one person other than the author
-reviews the code before it is merged.
+Ask for a code review in Campfire. A team member other than the author should
+review the code before it is merged.
 
 Rebase frequently to incorporate upstream changes.
 
@@ -50,6 +51,7 @@ Interactive rebase (squash) your commits (if necessary).
 
 Make sure tests pass. Merge your branch back to master and push your changes.
 
+    rake
     git checkout master
     git diff --stat master [branch]
     git merge [branch] --ff-only
@@ -66,15 +68,14 @@ Delete your local feature branch.
 Merge master into the staging branch:
 
     git checkout staging
-    git reset --hard origin/staging
+    git reset --hard staging/master
     git log staging..master (view list of new commits)
-    git diff --stat staging master (view changed files)
+    git diff --stat origin/master (view changed files)
     git merge master
-    git push origin staging
 
 Deploy to [Heroku](https://devcenter.heroku.com/articles/quickstart):
 
-    git push <app> staging:master
+    git push
 
 Run migrations (if necessary):
 
@@ -89,13 +90,22 @@ Restart the dynos if migrations were run:
     watch heroku ps --app <app>
 
 Smoke test in browser. Write acceptance criteria on the Trajectory story.
+Deliver story.
 
-Deliver story in Trajectory.
+A team member other than the author should review the feature on staging based
+on acceptance criteria.
 
-Another team member reviews feature on staging based on acceptance criteria.
+Deploy to production:
 
-When a batch (including a batch of one) of features have been accepted on
-staging, deploy to production using the same git workflow as staging.
+    git checkout production
+    git reset --hard production/master
+    git log production..staging (view list of new commits)
+    git diff --stat staging/master (view changed files)
+    git merge staging
+    git push
+    heroku rake db:migrate --app <app>
+    heroku restart --app <app>
+    watch heroku ps --app <app>
 
 Formatting
 ----------
