@@ -227,8 +227,6 @@ Rails
 * Don't invoke a model's class directly from a view.
 * Don't use SQL or SQL fragments (`where('inviter_id is not null')`) outside of
   models.
-* Set `config.action_mailer.raise_delivery_errors = true` in the development
-  environment.
 * Keep the `db/schema.rb` under version control.
 * Limit the number of instance variables shared between controller and view.
 * Name initializers for their gem name. Example: `paperclip.rb`
@@ -240,7 +238,6 @@ Rails
 * Put all copy text in models, views, controllers, and mailers in
   `config/locales`.
 * Serve assets from S3 using [asset_sync](http://goo.gl/m58tF).
-* Set `config.action_mailer.delivery_method = :test` in the test environment.
 * Set `config.assets.initialize_on_precompile = false` in
   `config/application.rb`.
 * Set default values in the database.
@@ -254,8 +251,6 @@ Rails
 * Use `has_and_belongs_to_many` if all you need is a join table. Start simple.
 * Use namespaced locale lookup in views by prefixing a period: `t '.title'`.
 * Use nested routes to express `belongs_to` relationships between resources.
-* Use one `ActionMailer` for the app. Name it `Mailer`.
-* Use [single recipient SMTP](http://goo.gl/FWdhG) in staging environment.
 * Use the default `render 'partial'` syntax over `render partial: 'partial'`.
 * Use the `:only` option to explicitly state exposed routes.
 
@@ -272,8 +267,21 @@ Database
   production database. If a Heroku database outage occurs, Heroku can use the
   follower to get your app back up and running faster.
 * Index all foreign keys.
-* Use the Heroku Follower database for analytics to limit reads on the primary
+* Use a Heroku Follower database for analytics to limit reads on the primary
   database.
+
+Email
+-----
+
+* Set `config.action_mailer.raise_delivery_errors = true` in the development
+  environment.
+* Set `config.action_mailer.delivery_method = :test` in the test environment.
+* Use one `ActionMailer` for the app. Name it `Mailer`.
+* Use [SendGrid](http://goo.gl/Kxu9W) or [Amazon SES](http://goo.gl/A5jAA) to
+  deliver email in staging and production environments.
+* Use [single recipient SMTP](http://goo.gl/FWdhG) in staging environment.
+* Use the user's name in the `From` header and email in the `Reply-To` when
+  [delivering email on behalf of the app's users](http://goo.gl/5w1ck).
 
 Background Jobs
 ---------------
