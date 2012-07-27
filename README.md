@@ -3,6 +3,12 @@ Style Guide
 
 A guide for programming in style.
 
+Laptop setup
+------------
+
+Set up your laptop with [this script](https://github.com/thoughtbot/laptop)
+and [these dotfiles](https://github.com/thoughtbot/dotfiles).
+
 User stories
 ------------
 
@@ -210,6 +216,7 @@ Ruby
 * Use `{...}` over `do..end` for single-line blocks.
 * Use `!` suffix for dangerous methods (modifies `self`).
 * Use `?` suffix for predicate methods (return a boolean).
+* [Use `bundle --binstubs`](http://goo.gl/T9C90).
 * Use `CamelCase` for classes and modules, `snake_case` for variables and
   methods, `SCREAMING_SNAKE_CASE` for constants.
 * Use `def` with parentheses when there are arguments.
