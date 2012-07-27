@@ -207,10 +207,7 @@ Formatting
 * Include spaces around infix method invocations like `+` and `-`.
 * Indent continued lines two spaces.
 * Indent private methods equal to public methods.
-* Limit lines to a maximum of 80 characters.
-* Order methods and attributes alphabetically where possible.
 * Use 2 space indentation (no tabs) unless otherwise noted.
-* Use an empty line between methods, blocks and conditionals.
 * Use spaces around operators, after commas, colons and semicolons, around `{`
   and before `}`.
 * Use Unix-style line endings (`\n`).
@@ -337,7 +334,6 @@ Rails
 * Use `def self.method` over the `named_scope :method` DSL.
 * Use `I18n.t 'dot.separated.key'` over
   `I18n.t :key, :scope => [:dot, :separated]`.
-* Use [Haml](http://haml-lang.com) for view templates.
 * Use `has_and_belongs_to_many` if all you need is a join table. Start simple.
 * Use namespaced locale lookup in views by prefixing a period: `t '.title'`.
 * Use nested routes to express `belongs_to` relationships between resources.
