@@ -9,6 +9,59 @@ Laptop setup
 Set up your laptop with [this script](https://github.com/thoughtbot/laptop)
 and [these dotfiles](https://github.com/thoughtbot/dotfiles).
 
+Getting the code:
+
+    git clone git@github.com:organization/project.git
+
+Set up the project's dependencies:
+
+    cd project
+    bundle --binstubs
+    rake db:create
+    rake db:schema:load
+
+Add Heroku remotes for staging and production environments:
+
+    git remote add staging git@heroku.com:<app>-staging.git
+    git remote add production git@heroku.com:<app>-production.git
+
+Use [Heroku config](https://github.com/ddollar/heroku-config) to get `ENV`
+variables:
+
+    heroku config:pull --app <app>-staging
+
+You'll see credentials as config vars. Delete lines that don't apply.
+
+    BRAINTREE_MERCHANT_ID
+    BRAINTREE_PRIVATE_KEY
+    BRAINTREE_PUBLIC_KEY
+    S3_KEY
+    S3_SECRET
+
+Use foreman to run the app locally:
+
+    foreman start
+
+It will pick up your `.env` file, and run declared processes from `Procfile`,
+just like Heroku's [Cedar](https://devcenter.heroku.com/articles/cedar/) stack.
+
+Run the whole test suite with:
+
+    rake
+
+Run individual features:
+
+    cucumber features/visitor/signs_in.feature
+
+Run individual specs:
+
+    rspec spec/models/user_spec.rb
+
+Run individual tests by line number:
+
+    rspec spec/models/user_spec.rb:8
+    cucumber features/visitor/signs_in.feature:50
+
 User stories
 ------------
 
@@ -18,8 +71,8 @@ User stories
 * Write stories in the form `As a [user role], I want to [goal], so that
   [reason].`
 
-Git-based workflow
-------------------
+Git-based development
+---------------------
 
 Start a user story.
 
@@ -34,7 +87,7 @@ Do work in your branch. Make sure tests pass and commit the changes.
     rake
     git add -A
     git status
-    git commit
+    git commit -v
 
 Write a [good commit message](http://goo.gl/w11us).
 
@@ -49,8 +102,39 @@ Share your branch.
 
 Submit a [Github pull request](http://goo.gl/Kmdee).
 
-Ask for a code review in Campfire. A team member other than the author should
-review the code before it is merged.
+Ask for a code review in [Campfire](http://campfirenow.com).
+
+Code review
+-----------
+
+A team member other than the author should review the code before it is merged.
+
+When you review a teammate's code, you can read it in the Github web interface
+and make comments on each line.
+
+You might also want to check out the branch to run tests:
+
+    git checkout <branch>
+    rake db:migrate
+    rake
+
+Read the code:
+
+    git diff origin/master..HEAD
+
+If you see any style guide violations, opportunities for better names, or other
+small changes, make the fixes right in the branch, commit, and push.
+
+View the feature in the browser. Click around.
+
+Ask questions of your teammate in a comment on the pull request or in Campfire.
+
+When the feature is ready to be merged, comment on the pull request:
+
+    Ready to squash and merge.
+
+Deploy
+------
 
 Rebase frequently to incorporate upstream changes.
 
@@ -79,6 +163,10 @@ Delete your remote feature branch.
 Delete your local feature branch.
 
     git branch -d [branch]
+
+Close pull request and leave a comment:
+
+    Merged.
 
 Merge master into the staging branch:
 
@@ -338,7 +426,7 @@ Testing
 * Use integration tests to execute the entire app.
 * Use non-[SUT](http://goo.gl/r5Ti2) methods in expectations when possible.
 * Use one expectation per `it` block.
-* Use stubs and spies (not mocks) in isolated tests.
+* Use [stubs and spies](http://goo.gl/EciDJ) (not mocks) in isolated tests.
 
 Browsers
 --------
