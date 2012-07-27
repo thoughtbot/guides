@@ -3,10 +3,19 @@ Style Guide
 
 A guide for programming in style.
 
+User stories
+------------
+
+* Add stories as a team to [Trajectory](https://www.apptrajectory.com).
+* The client is responsible for prioritizing stories.
+* The designers and developers are responsible for estimating stories.
+* Write stories in the form `As a [user role], I want to [goal], so that
+  [reason].`
+
 Git-based workflow
 ------------------
 
-Start a [Trajectory](https://www.apptrajectory.com) story.
+Start a user story.
 
 Create a local feature branch based off master.
 
@@ -89,8 +98,9 @@ Restart the dynos if migrations were run:
 
     watch heroku ps --app <app>
 
-Smoke test in browser. Write acceptance criteria on the Trajectory story.
-Deliver story.
+Smoke test in browser.
+
+Write acceptance criteria on the story and "deliver" the story.
 
 A team member other than the author should review the feature on staging based
 on acceptance criteria.
@@ -218,6 +228,8 @@ Ruby
 Rails
 -----
 
+* Avoid bypassing validations with methods such as `save(:validate => false)`,
+  `update_attribute`, and `toggle`.
 * Avoid the `:except` option in routes.
 * Avoid `member` and `collection` routes.
 * Avoid Single Table Inheritance.
@@ -318,7 +330,7 @@ Testing
   Test](http://goo.gl/J9FiJ).
 * Use integration tests to execute the entire app.
 * Use non-[SUT](http://goo.gl/r5Ti2) methods in expectations when possible.
-* Use one expection per `it` block.
+* Use one expectation per `it` block.
 * Use stubs and spies (not mocks) in isolated tests.
 
 Browsers
