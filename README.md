@@ -87,26 +87,6 @@ Submit a [Github pull request](http://goo.gl/Kmdee).
 
 Ask for a code review in [Campfire](http://campfirenow.com).
 
-Code review
------------
-
-A team member other than the author reviews the pull request.
-
-They make comments and ask questions directly on lines of code in the Github
-web interface or in Campfire.
-
-For changes which they can make themselves, they check out the branch.
-
-    git checkout <branch>
-    rake db:migrate
-    rake
-    git diff staging..HEAD
-
-They make small changes right in the branch, test the feature in browser,
-run tests, commit, and push.
-
-When satisfied, they comment on the pull request `Ready to squash and merge.`
-
 Deploy
 ------
 
