@@ -34,7 +34,8 @@ variables.
 
     heroku config:pull --app <app>-staging
 
-Delete lines in `.env` that don't apply.
+Delete extra lines in `.env`, leaving only those needed for app to function
+properly.
 
     BRAINTREE_MERCHANT_ID
     BRAINTREE_PRIVATE_KEY
@@ -42,41 +43,27 @@ Delete lines in `.env` that don't apply.
     S3_KEY
     S3_SECRET
 
-User stories
-------------
+Use [Foreman](http://goo.gl/oy4uw) to run the app locally.
 
-* Add stories during weekly retrospectives as a team to
-  [Trajectory](https://www.apptrajectory.com).
-* Make the client prioritize stories.
-* Estimate stories with your fellow designers and developers.
-* Write stories in the form `As a [user role], I want to [goal], so that
-  [reason].`
+    foreman start
+
+It uses your `.env` file and `Procfile` to run processes just like Heroku's
+[Cedar](https://devcenter.heroku.com/articles/cedar/) stack.
 
 Development
 -----------
 
-Start a user story.
-
 Create a local feature branch based off master.
 
     git checkout master
-    git pull
+    git pull --rebase
     git checkout -b feature-xyz
 
-Use foreman to run the app locally.
+Rebase frequently to incorporate upstream changes.
 
-    foreman start
-
-It will pick up your `.env` file and run declared processes from `Procfile`
-like Heroku's [Cedar](https://devcenter.heroku.com/articles/cedar/) stack.
-
-Run the whole test suite or individual test files or individual tests.
-
-    rake
-    cucumber features/visitor/signs_in.feature
-    rspec spec/models/user_spec.rb
-    cucumber features/visitor/signs_in.feature:50
-    rspec spec/models/user_spec.rb:8
+    git fetch origin
+    git rebase origin/master
+    <resolve conflicts>
 
 When feature is complete and tests pass, commit the changes.
 
@@ -89,8 +76,8 @@ Write a [good commit message](http://goo.gl/w11us).
 
     Present-tense summary under 50 characters
 
-    * More information about commit (under 72 characters)
-    * More information about commit (under 72 characters)
+    * More information about commit (under 72 characters).
+    * More information about commit (under 72 characters).
 
 Share your branch.
 
@@ -103,47 +90,57 @@ Ask for a code review in [Campfire](http://campfirenow.com).
 Code review
 -----------
 
-A team member other than the author should review the code.
+A team member other than the author reviews the pull request.
 
-Read the pull request on Github. Comment directly on lines of code.
+They make comments and ask questions directly on lines of code in the Github
+web interface or in Campfire.
 
-For larger features, check out the branch.
+For changes which they can make themselves, they check out the branch.
 
     git checkout <branch>
     rake db:migrate
     rake
-    git diff origin/master..HEAD
+    git diff staging..HEAD
 
-Make small changes right in the branch, commit, and push.
+They make small changes right in the branch, test the feature in browser,
+run tests, commit, and push.
 
-View the feature in the browser. Click around.
-
-Ask questions of your teammate in a comment on the pull request or in Campfire.
-
-Comment on the pull request `Ready to squash and merge.`
+When satisfied, they comment on the pull request `Ready to squash and merge.`
 
 Deploy
 ------
 
-Rebase frequently to incorporate upstream changes.
+If there are multiple commits in the branch, squash them.
 
-    git checkout master
-    git pull
-    git checkout [branch]
-    git rebase master
-    <resolve conflicts>
-
-Interactive rebase (squash) your commits (if necessary).
-
-    git rebase -i master
-
-Make sure tests pass. Merge your branch back to master and push your changes.
-
+    git rebase -i staging/master
     rake
-    git checkout master
-    git diff --stat master [branch]
+
+View a list of new commits. View changed files. Merge branch into staging.
+
+    git checkout staging
+    git fetch staging
+    git reset --hard staging/master
+    git log staging..[branch]
+    git diff --stat [branch]
     git merge [branch] --ff-only
-    git push origin master
+
+Deploy to [Heroku](https://devcenter.heroku.com/articles/quickstart).
+
+    git push staging
+
+Run migrations (if necessary).
+
+    heroku run rake db:migrate --app <app>
+
+Restart the dynos if migrations were run.
+
+    heroku restart --app <app>
+
+[Introspect](http://goo.gl/tTgVF) to make sure everything's ok.
+
+    watch heroku ps --app <app>
+
+Test the feature in browser.
 
 Delete your remote feature branch.
 
@@ -155,48 +152,26 @@ Delete your local feature branch.
 
 Close pull request and comment `Merged.`
 
-Merge master into the staging branch.
-
-    git checkout staging
-    git reset --hard staging/master
-    git log staging..master (view list of new commits)
-    git diff --stat origin/master (view changed files)
-    git merge master
-
-Deploy to [Heroku](https://devcenter.heroku.com/articles/quickstart).
-
-    git push staging
-
-Run migrations (if necessary).
-
-    heroku rake db:migrate --app <app>
-
-Restart the dynos if migrations were run.
-
-    heroku restart --app <app>
-
-[Introspect](http://goo.gl/tTgVF) to make sure everything's ok.
-
-    watch heroku ps --app <app>
-
-Smoke test in browser.
-
-Write acceptance criteria on the story and "deliver" the story.
-
-A team member other than the author should review the feature on staging based
-on acceptance criteria.
-
 Deploy to production.
 
     git checkout production
+    git fetch production
     git reset --hard production/master
-    git log production..staging (view list of new commits)
-    git diff --stat staging/master (view changed files)
-    git merge staging
+    git log production..staging
+    git diff --stat staging/master
+    git merge staging --ff-only
     git push production
-    heroku rake db:migrate --app <app>
+    heroku run rake db:migrate --app <app>
     heroku restart --app <app>
     watch heroku ps --app <app>
+
+Watch logs and metrics dashboards. If the feature is working, merge into master.
+
+    git checkout master
+    git fetch origin
+    git log production..master
+    git merge production --ff-only
+    git push origin master
 
 Formatting
 ----------
@@ -208,9 +183,9 @@ Formatting
 * Indent continued lines two spaces.
 * Indent private methods equal to public methods.
 * Use 2 space indentation (no tabs) unless otherwise noted.
+* Use an empty line between methods, blocks and conditionals.
 * Use spaces around operators, after commas, colons and semicolons, around `{`
   and before `}`.
-* Use Unix-style line endings (`\n`).
 
 Naming
 ------
@@ -220,21 +195,19 @@ Naming
 * Avoid types in names (`user_array`).
 * Name background jobs with a `Job` suffix.
 * Name the enumeration parameter the singular of the collection.
-* Name variables, methods, and classes with intention-revealing names..
+* Name variables, methods, and classes to reveal intent.
 * Treat acronyms as words in names (`XmlHttpRequest` not `XMLHTTPRequest`),
   even if the acronym is the entire name (`class Html` not `class HTML`).
 
 Design
 ------
 
-* Aggressively DRY code during development.
+* Aggressively remove duplication during development.
 * Avoid comments.
 * Avoid global variables.
 * Avoid long parameter lists.
 * Be consistent.
-* Consider extracting `private` methods to their own object.
 * Don't duplicate the functionality of a built-in library.
-* Don't program defensively.
 * Don't swallow exceptions or "fail silently."
 * Don't write code that guesses at future functionality.
 * [Exceptions should be exceptional](http://rdd.me/yichhgvu).
@@ -260,54 +233,46 @@ Javascript
 Ruby
 ----
 
-* Avoid `%q`, `%Q`, `%x`, `%s`, and `%W`.
 * Avoid conditional modifiers (lines that end with conditionals).
 * Avoid hashes as optional parameters. Does the method do too much?
 * Avoid including code and gems in source control that are specific to your
-  development machine or process. Examples: `.rvmrc`, file watchers, debuggers.
+  development machine or process. Examples: `.rvmrc`, `.swp`
 * Avoid meta-programming.
 * Avoid monkey-patching core classes.
-* Avoid `return` unless required.
-* Avoid superfluous parentheses when calling methods, but keep them when you
-  assign the return value: `x = Math.sin(y); array.delete e`
 * Avoid ternary operators (`boolean ? true : false`). Use multi-line `if`
   instead to emphasize code branches.
-* Define the version of Ruby the project uses in the Gemfile.
-* Don't use `unless`.
+* Define the project's [Ruby version in the
+  Gemfile](http://gembundler.com/man/gemfile.5.html#RUBY-ruby-).
 * Prefer classes to modules when designing functionality that is shared by
   multiple models.
-* Prefer `detect` over `find` and `select` over `find_all` to avoid confusion
+* Prefer `detect`, not `find`, and `select`, not `find_all`, to avoid confusion
   with ActiveRecord and keep `select`/`reject` symmetry.
-* Prefer `map` over `collect` and `reduce` over `inject` due to symmetry and
+* Prefer `map`, not `collect`, and `reduce`, not `inject`, due to symmetry and
   familarity with mapping and reducing in other technologies.
 * Use `_` for unused block parameters: `hash.map { |_, v| v + 1 }`
 * Use `%{}` for single-line strings needing interpolation and double-quotes.
-* Use `%w()` over `['', '']` for an array of words.
+* Use `%w()`, not `['', '']`, for an array of words.
 * Use `&&` and `||` for boolean expressions.
 * Use `||=` freely.
-* Use `{...}` over `do..end` for single-line blocks.
+* Use `{...}`, not `do..end`, for single-line blocks.
 * Use `!` suffix for dangerous methods (modifies `self`).
 * Use `?` suffix for predicate methods (return a boolean).
 * Use `CamelCase` for classes and modules, `snake_case` for variables and
   methods, `SCREAMING_SNAKE_CASE` for constants.
 * Use `def` with parentheses when there are arguments.
-* Use `do..end` over `{...}` for multi-line blocks.
+* Use `do..end`, not `{...}`, for multi-line blocks.
 * Use `each`, not `for`, for iteration.
 * Use heredocs for multi-line strings.
-* Use `/(?:first|second)/` over `/(first|second)/` when you don't need the
+* Use `/(?:first|second)/`, not `/(first|second)/`, when you don't need the
   captured group.
-* Use `private` over `protected` to indicate scope.
-* Use `def self.method` over `def Class.method` or `class << self`.
-* Use `Set` over `Array` for arrays with unique elements. The lookup is faster.
+* Use `private`, not `protected`, to indicate scope.
+* Use `def self.method`, not `def Class.method` or `class << self`.
+* Use `Set`, not `Array`, for arrays with unique elements. The lookup is faster.
 * Use single-quotes for strings unless interpolating.
-* Use `unless boolean?` instead of `if !boolean?`.
-* Use [Factory Girl](http://goo.gl/zCsF1) to set up test data.
 
 Rails
 -----
 
-* Avoid bypassing validations with methods such as `save(:validate => false)`,
-  `update_attribute`, and `toggle`.
 * Avoid the `:except` option in routes.
 * Avoid `member` and `collection` routes.
 * Avoid Single Table Inheritance.
@@ -322,21 +287,21 @@ Rails
 * Order controller contents: filters, public methods, private methods.
 * Order model contents: constants, attributes, associations, nested attributes,
   named scopes, validations, callbacks, public methods, private methods.
-* Prefer presenters (Ruby objects responsible for presentation) over view
-  helpers.
+* Prefer [decorators](http://goo.gl/yeF3X), not view helpers.
 * Put all copy text in models, views, controllers, and mailers in
   `config/locales`.
-* Serve assets from S3 using [asset_sync](http://goo.gl/m58tF).
 * Set `config.assets.initialize_on_precompile = false` in
   `config/application.rb`.
 * Set default values in the database.
-* Use `_path` over `_url` for named routes everywhere except mailer views.
-* Use `def self.method` over the `named_scope :method` DSL.
-* Use `I18n.t 'dot.separated.key'` over
-  `I18n.t :key, :scope => [:dot, :separated]`.
-* Use `has_and_belongs_to_many` if all you need is a join table. Start simple.
+* Use `_path`, not `_url`, for named routes everywhere except mailer views.
+* Use `def self.method`, not the `named_scope :method` DSL.
+* Use `I18n.t 'dot.separated.key'`, not `I18n.t :key,
+  :scope => [:dot, :separated]`.
+* Use `has_and_belongs_to_many` if all you need is a join table. Do not include
+  an `id` or timestamps.
 * Use namespaced locale lookup in views by prefixing a period: `t '.title'`.
 * Use nested routes to express `belongs_to` relationships between resources.
+* Use SQL, not `ActiveRecord` models, in migrations.
 * Use the default `render 'partial'` syntax over `render partial: 'partial'`.
 * Use the `:only` option to explicitly state exposed routes.
 
@@ -356,6 +321,18 @@ Database
 * Use a Heroku Follower database for analytics to limit reads on the primary
   database.
 
+Background Jobs
+---------------
+
+* Define a `PRIORITY` constant at the top of the class.
+* Define two public methods: `self.enqueue` and `perform`.
+* Enqueue the job in `self.enqueue` [like this](http://goo.gl/C7e54).
+* Put background jobs in `app/jobs`.
+* Store IDs, not `ActiveRecord` objects for cleaner serialization, then re-find
+  the `ActiveRecord` object in the `perform` method.
+* Subclass the job from `Struct.new(:something_id)`.
+* Use [`Delayed::Job`](http://goo.gl/sRYju) for background jobs.
+
 Email
 -----
 
@@ -369,24 +346,30 @@ Email
 * Use the user's name in the `From` header and email in the `Reply-To` when
   [delivering email on behalf of the app's users](http://goo.gl/5w1ck).
 
-Background Jobs
----------------
+Gems
+----
 
-* Define a `PRIORITY` constant at the top of the class.
-* Define two public methods: `self.enqueue` and `perform`.
-* Enqueue the job in `self.enqueue` [like this](http://goo.gl/C7e54).
-* Put background jobs in `app/jobs`.
-* Store IDs, not `ActiveRecord` objects for cleaner serialization, then re-find
-  the `ActiveRecord` object in the `perform` method.
-* Subclass the job from `Struct.new(:something_id)`.
-* Use [`Delayed::Job`](http://goo.gl/sRYju) for background jobs.
+* Use [AssetSync](http://goo.gl/m58tF) to serve assets from S3.
+* Use [Bourbon](http://goo.gl/wpyee) for Sass mixins.
+* Use [Bourne](http://goo.gl/lE7zH) for stubs and spies.
+* Use [Braintree](http://goo.gl/mpWTp) for credit card processing.
+* Use [Clearance](http://goo.gl/svPGo) for authentication.
+* Use [Factory Girl](http://goo.gl/AB8bI) to set up test data.
+* Use [Geocoder](http://goo.gl/CKnYF) for geocoding.
+* Use [Haml](http://haml.info) for view templates.
+* Use [Money](http://goo.gl/2CNfc) for money objects.
+* Use [New Relic](http://goo.gl/F7Q56) for performance monitoring.
+* Use [Paperclip](http://goo.gl/eSESD) for file uploads.
+* Use [Thin](http://goo.gl/5Hlr) for serving web requests.
+* Use [WebMock](http://goo.gl/BC1Ac) to disable real HTTP requests.
 
 Testing
 -------
 
 * Avoid `its`, `let`, `let!`, `specify`, `subject`, and other DSLs. Prefer
   explicitness and consistency.
-* Disable real HTTP requests to external services.
+* Disable real HTTP requests to external services with
+  `WebMock.disable_net_connect!`.
 * Don't prefix `it` blocks with 'should'.
 * Name outer `describe` blocks after the method under test. Use `.method`
   for class methods and `#method` for instance methods.
@@ -412,3 +395,5 @@ Browsers
 
 * Don't support clients without Javascript.
 * Don't support IE6.
+
+[Always be learning](http://learn.thoughtbot.com).
