@@ -7,7 +7,7 @@ class SomeClass
   end
 
   def method_with_arguments(argument_one, argument_two)
-    this_is_a_really_line_that_should_be_broken_up_over_multiple_lines_and.
+    this_is_a_really_long_line_that_should_be_broken_up_over_multiple_lines_and.
       every_line_but_the_first_is_indented
   end
 
@@ -27,6 +27,25 @@ class SomeClass
 
   def method_that_returns_a_hash
     { :key => 'value' }
+  end
+
+  def method_with_large_hash
+    {
+      :one => 'value',
+      :two => 'value'
+    }
+  end
+
+  def invoke_method_with_arguments_on_multiple_lines
+    some_method(
+      i_am_a_long_variable_name_that_i_will_never_fit_on_one_line_with_others,
+      two,
+      three
+    )
+
+    # Bad:
+    some_method(one,
+                two)
   end
 
   def method_that_uses_infix_operators
