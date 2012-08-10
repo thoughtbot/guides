@@ -250,6 +250,8 @@ Ruby
 * Use `Set`, not `Array`, for arrays with unique elements. The lookup is faster.
 * Use single-quotes for strings unless interpolating.
 
+[Sample](https://github.com/thoughtbot/style-guide/blob/master/ruby-sample.rb)
+
 Rails
 -----
 
@@ -369,6 +371,8 @@ Testing
 * Use non-[SUT](http://goo.gl/r5Ti2) methods in expectations when possible.
 * Use one expectation per `it` block.
 * Use [stubs and spies](http://goo.gl/EciDJ) (not mocks) in isolated tests.
+
+[Sample](https://github.com/thoughtbot/style-guide/blob/master/rspec-sample.rb)
 
 Browsers
 --------
