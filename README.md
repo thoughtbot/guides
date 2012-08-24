@@ -3,9 +3,11 @@ Style Guide
 
 A guide for programming in style.
 
-Guideline number one: don't violate the conventions without a good reason.
-Guideline number two: be consistent.
-Guideline number three: don't rewrite existing code to follow this guide.
+High level guidelines:
+
+* Be consistent.
+* Don't violate the conventions without a good reason.
+* Don't rewrite existing code to follow this guide.
 
 Heroku
 ------
