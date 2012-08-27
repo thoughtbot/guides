@@ -51,6 +51,8 @@ you find one.
 * Use a [Fake](http://goo.gl/YR7Hh) to stub requests to external services.
 * Use integration tests to execute the entire app.
 * Use non-[SUT](http://goo.gl/r5Ti2) methods in expectations when possible.
+* Validate the associated `belongs_to` object (`user`), not the database
+  column (`user_id`).
 
 Browsers
 --------
