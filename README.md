@@ -92,7 +92,7 @@ Ruby
 * Use `each`, not `for`, for iteration.
 * Use heredocs for multi-line strings.
 * Use `def self.method`, not `def Class.method` or `class << self`.
-* Use single quotes for strings unless interpolating.
+* Prefer single quotes for strings.
 
 Rails
 -----
