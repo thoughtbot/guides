@@ -132,18 +132,16 @@ Testing
 -------
 
 * Avoid `its`, `let`, `let!`, `specify`, `before`, and `subject`.
-* Don't prefix `it` block descriptions with 'should'.
-* Name outer `describe` blocks after the method under test. Use `.method`
-  for class methods and `#method` for instance methods.
-* Order factories.rb: sequences, traits, factory definitions.
-* Order factory definitions alphabetically by factory name.
-* Order factory attributes: implicit attributes, explicit attributes,
-  child factory definitions. Each section's attributes are alphabetical.
-* Use one factories.rb file per project.
-* Use an `it` example for each execution path through the method.
-* Use [stubs and spies](http://goo.gl/EciDJ) (not mocks) in isolated tests.
 * Avoid using instance variables in tests.
-* Separate each test phase (Setup, Exercise, Verify, Teardown) with a newline
+* Don't prefix `it` block descriptions with 'should'.
+* Name outer `describe` blocks after the method under test. Use `.method` for class methods and `#method` for instance methods.
+* Order factories.rb: sequences, traits, factory definitions.
+* Order factory attributes: implicit attributes, explicit attributes, child factory definitions. Each section's attributes are alphabetical.
+* Order factory definitions alphabetically by factory name.
+* Use [stubs and spies](http://goo.gl/EciDJ) (not mocks) in isolated tests.
+* Use a newline between the Setup, Exercise, Verify, and Teardown test phases.
+* Use an `it` example for each execution path through the method.
+* Use one factories.rb file per project.
 
 [Sample](https://github.com/thoughtbot/style-guide/blob/master/rspec-sample.rb)
 
