@@ -139,6 +139,7 @@ Testing
 * Order factory definitions alphabetically by factory name.
 * Order factory attributes: implicit attributes, explicit attributes,
   child factory definitions. Each section's attributes are alphabetical.
+* Separate setup, exercise, verification, and teardown phases with newlines.
 * Use one factories.rb file per project.
 * Use an `it` example for each execution path through the method.
 * Use [stubs and spies](http://goo.gl/EciDJ) (not mocks) in isolated tests.
