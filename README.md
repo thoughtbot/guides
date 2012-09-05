@@ -103,6 +103,14 @@ Ruby
 * Use `each`, not `for`, for iteration.
 * Use heredocs for multi-line strings.
 
+ERB
+---
+
+* When wrapping long lines, keep the method name on the same line as the ERB
+  interpolation operator and keep each method argument on its own line.
+
+[Sample](https://github.com/thoughtbot/style-guide/blob/master/erb-sample.erb)
+
 Rails
 -----
 
