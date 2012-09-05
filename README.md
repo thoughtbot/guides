@@ -108,6 +108,8 @@ Rails
 * Name initializers for their gem name.
 * Order controller contents: filters, public methods, private methods.
 * Order model contents: constants, macros, public methods, private methods.
+* Put application-wide partials in the
+  [`app/views/application`](http://goo.gl/5Z8Vv) directory.
 * Use `_path`, not `_url`, for named routes everywhere except mailer views.
 * Use `def self.method`, not the `scope :method` DSL.
 * Use SQL, not `ActiveRecord` models, in migrations.
