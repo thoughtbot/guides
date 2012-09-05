@@ -1,5 +1,6 @@
 describe SomeClass, '#some_method' do
   it 'does something' do
+    something.should eq 'something'
   end
 end
 

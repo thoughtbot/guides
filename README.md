@@ -142,6 +142,7 @@ Testing
 * Order factory attributes: implicit attributes, explicit attributes,
   child factory definitions. Each section's attributes are alphabetical.
 * Order factory definitions alphabetically by factory name.
+* Prefer `eq` to `==` in RSpec.
 * Separate setup, exercise, verification, and teardown phases with newlines.
 * Use an `it` example for each execution path through the method.
 * Use one factories.rb file per project.
