@@ -94,6 +94,15 @@ Ruby
 * Use `def self.method`, not `def Class.method` or `class << self`.
 * Prefer single quotes for strings.
 
+ERB
+---
+
+* Omit parenthesis for the outermost method call for a single line.
+* When wrapping long lines, keep the method name on the same line as the ERB
+  interpolation operator and keep each method argument on its own line.
+
+[Sample](https://github.com/thoughtbot/style-guide/blob/master/erb-sample.erb)
+
 Rails
 -----
 
