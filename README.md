@@ -143,6 +143,7 @@ Testing
 * Use an `it` example for each execution path through the method.
 * Use [stubs and spies](http://goo.gl/EciDJ) (not mocks) in isolated tests.
 * Avoid using instance variables in tests.
+* Prefer `eq` to `==` in RSpec.
 
 [Sample](https://github.com/thoughtbot/style-guide/blob/master/rspec-sample.rb)
 
