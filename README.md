@@ -72,6 +72,8 @@ CoffeeScript
 Ruby
 ----
 
+[Sample](https://github.com/thoughtbot/style-guide/blob/master/ruby-sample.rb)
+
 * Avoid conditional modifiers (lines that end with conditionals).
 * Avoid ternary operators (`boolean ? true : false`). Use multi-line `if`
   instead to emphasize code branches.
@@ -133,6 +135,8 @@ Email
 Testing
 -------
 
+[Sample](https://github.com/thoughtbot/style-guide/blob/master/rspec-sample.rb)
+
 * Avoid `its`, `let`, `let!`, `specify`, `before`, and `subject`.
 * Avoid using instance variables in tests.
 * Don't prefix `it` block descriptions with 'should'.
@@ -147,7 +151,5 @@ Testing
 * Use an `it` example for each execution path through the method.
 * Use one factories.rb file per project.
 * Use [stubs and spies](http://goo.gl/EciDJ) (not mocks) in isolated tests.
-
-[Sample](https://github.com/thoughtbot/style-guide/blob/master/rspec-sample.rb)
 
 [Always be learning](http://learn.thoughtbot.com).
