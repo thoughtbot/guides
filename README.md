@@ -48,6 +48,7 @@ Formatting
 * Indent continued lines two spaces.
 * Indent private methods equal to public methods.
 * Use 2 space indentation (no tabs).
+* Use an empty line at the end of each file.
 * Use an empty line between methods.
 * Use spaces around operators, after commas, after colons and semicolons, around
   `{` and before `}`.
