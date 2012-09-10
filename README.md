@@ -31,6 +31,7 @@ Git
 Formatting
 ----------
 
+* All text files must end in `\n`.
 * Delete trailing whitespace.
 * Don't include spaces after `(`, `[` or before `]`, `)`.
 * Don't vertically align tokens on consecutive lines.
