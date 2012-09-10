@@ -40,7 +40,6 @@ Formatting
 * If you break up a hash, keep the curly braces on their own lines.
 * Indent private methods equal to public methods.
 * Use 2 space indentation (no tabs).
-* Use an empty line at the end of each file.
 * Use an empty line between methods.
 * Use spaces around operators, after commas, after colons and semicolons, around `{` and before `}`.
 * Break long lines after 80 characters.
