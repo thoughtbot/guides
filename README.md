@@ -97,7 +97,6 @@ Ruby
 ERB
 ---
 
-* Omit parenthesis for the outermost method call for a single line.
 * When wrapping long lines, keep the method name on the same line as the ERB
   interpolation operator and keep each method argument on its own line.
 
