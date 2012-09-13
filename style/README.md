@@ -58,6 +58,9 @@ Naming
 * Name variables, methods, and classes to reveal intent.
 * Treat acronyms as words in names (`XmlHttpRequest` not `XMLHTTPRequest`),
   even if the acronym is the entire name (`class Html` not `class HTML`).
+* Name variables holding a factory with `_factory` (`user_factory`).
+* Name variables created by a factory after the factory (`user_factory`
+  creates `user`).
 
 CSS
 ---
