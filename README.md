@@ -166,5 +166,3 @@ Testing
 * Use an `it` example for each execution path through the method.
 * Use one factories.rb file per project.
 * Use [stubs and spies](http://goo.gl/EciDJ) (not mocks) in isolated tests.
-
-[Always be learning](http://learn.thoughtbot.com).
