@@ -31,16 +31,12 @@ Set up the app's dependencies.
 
     cd project
     bundle --binstubs
-    rake db:create
-    rake db:schema:load
-    rake db:seed
+    rake db:setup
 
 Add Heroku remotes for staging and production environments.
 
     git remote add staging git@heroku.com:<app>-staging.git
-    git checkout -b staging --track staging/master
     git remote add production git@heroku.com:<app>-production.git
-    git checkout -b production --track production/master
 
 Use [Heroku config](/ddollar/heroku-config) to get `ENV`
 variables.
@@ -113,7 +109,7 @@ For changes which they can make themselves, they check out the branch.
     git checkout <branch>
     rake db:migrate
     rake
-    git diff staging..HEAD
+    git diff staging/master..HEAD
 
 They make small changes right in the branch, test the feature in browser,
 run tests, commit, and push.
@@ -125,56 +121,16 @@ Deploy
 
 If there are multiple commits in the branch, squash them.
 
-    git rebase -i staging/master
+    git rebase -i origin/master
     rake
 
-View a list of new commits. View changed files. Merge branch into staging.
+View a list of new commits. View changed files. Merge branch into master.
 
-    git checkout staging
-    git fetch staging
-    git reset --hard staging/master
-    git log staging..[branch]
-    git diff --stat [branch]
-    git merge [branch] --ff-only
-
-Deploy to [Heroku](https://devcenter.heroku.com/articles/quickstart).
-
-    git push staging
-
-Run migrations (if necessary).
-
-    heroku run rake db:migrate --app <app>
-
-Restart the dynos if migrations were run.
-
-    heroku restart --app <app>
-
-[Introspect](http://goo.gl/tTgVF) to make sure everything's ok.
-
-    watch heroku ps --app <app>
-
-Test the feature in browser.
-
-Deploy to production.
-
-    git checkout production
-    git fetch production
-    git reset --hard production/master
-    git log production..staging
-    git diff --stat staging/master
-    git merge staging --ff-only
-    git push production
-    heroku run rake db:migrate --app <app>
-    heroku restart --app <app>
-    watch heroku ps --app <app>
-
-Watch logs and metrics dashboards. If the feature is working, merge into master.
-
+    git log origin/master..[branch]
+    git diff --stat origin/master
     git checkout master
-    git fetch origin
-    git log production..master
-    git merge production --ff-only
-    git push origin master
+    git merge [branch] --ff-only
+    git push
 
 Delete your remote feature branch.
 
@@ -183,6 +139,40 @@ Delete your remote feature branch.
 Delete your local feature branch.
 
     git branch -d [branch]
+
+View a list of new commits. View changed files. Deploy to
+[Heroku](https://devcenter.heroku.com/articles/quickstart) staging.
+
+    git fetch staging
+    git log staging/master..master
+    git diff --stat staging/master
+    git push staging
+
+Run migrations (if necessary).
+
+    heroku run rake db:migrate -r staging
+
+Restart the dynos if migrations were run.
+
+    heroku restart -r staging
+
+[Introspect](http://goo.gl/tTgVF) to make sure everything's ok.
+
+    watch heroku ps -r staging
+
+Test the feature in browser.
+
+Deploy to production.
+
+    git fetch production
+    git log production/master..master
+    git diff --stat production/master
+    git push production
+    heroku run rake db:migrate -r production
+    heroku restart -r production
+    watch heroku ps -r production
+
+Watch logs and metrics dashboards.
 
 Close pull request and comment `Merged.`
 
