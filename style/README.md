@@ -1,5 +1,5 @@
-Style Guide
-===========
+Style
+=====
 
 A guide for programming in style.
 
@@ -72,7 +72,7 @@ CoffeeScript
 Ruby
 ----
 
-[Sample](https://github.com/thoughtbot/style-guide/blob/master/ruby-sample.rb)
+[Sample](/thoughtbot/guides/blob/master/style/samples/ruby.rb)
 
 * Avoid conditional modifiers (lines that end with conditionals).
 * Avoid ternary operators (`boolean ? true : false`). Use multi-line `if`
@@ -96,13 +96,13 @@ Ruby
 * Use `each`, not `for`, for iteration.
 * Use heredocs for multi-line strings.
 
-ERB
+ERb
 ---
 
-* When wrapping long lines, keep the method name on the same line as the ERB
-  interpolation operator and keep each method argument on its own line.
+[Sample](/thoughtbot/guides/blob/master/style/samples/erb.rb)
 
-[Sample](https://github.com/thoughtbot/style-guide/blob/master/erb-sample.erb)
+* When wrapping long lines, keep the method name on the same line as the ERb.
+  interpolation operator and keep each method argument on its own line.
 
 Rails
 -----
@@ -143,7 +143,7 @@ Email
 Testing
 -------
 
-[Sample](https://github.com/thoughtbot/style-guide/blob/master/rspec-sample.rb)
+[Sample](/thoughtbot/guides/blob/master/style/samples/testing.rb)
 
 * Avoid `its`, `let`, `let!`, `specify`, `before`, and `subject`.
 * Avoid using instance variables in tests.

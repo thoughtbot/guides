@@ -6,8 +6,8 @@ A guide for getting things done.
 Set up laptop
 -------------
 
-Set up your laptop with [this script](https://github.com/thoughtbot/laptop)
-and [these dotfiles](https://github.com/thoughtbot/dotfiles).
+Set up your laptop with [this script](/thoughtbot/laptop)
+and [these dotfiles](/thoughtbot/dotfiles).
 
 Create Rails app
 ----------------
@@ -42,7 +42,7 @@ Add Heroku remotes for staging and production environments.
     git remote add production git@heroku.com:<app>-production.git
     git checkout -b production --track production/master
 
-Use [Heroku config](https://github.com/ddollar/heroku-config) to get `ENV`
+Use [Heroku config](/ddollar/heroku-config) to get `ENV`
 variables.
 
     heroku config:pull --app <app>-staging
@@ -186,6 +186,6 @@ Delete your local feature branch.
 
 Close pull request and comment `Merged.`
 
-Use scripts from [thoughtbot/dotfiles](http://github.com/thoughtbot/dotfiles)
+Use scripts from [thoughtbot/dotfiles](/thoughtbot/dotfiles)
 to quickly access the Heroku console, backup the production database, and
 transfer production data to staging.
