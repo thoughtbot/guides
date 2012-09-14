@@ -19,7 +19,6 @@ A note on the language:
 Heroku
 ------
 
-* Have Heroku remotes named "staging" and "production."
 * Use a Procfile to configure your services.
 * Use the [Cedar](https://devcenter.heroku.com/articles/cedar/) stack.
 
