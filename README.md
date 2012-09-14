@@ -16,11 +16,6 @@ A note on the language:
 * "Prefer" indicates a better option and its alternative to watch out for.
 * "Use" is a positive instruction.
 
-Heroku
-------
-
-* Use the [Cedar](https://devcenter.heroku.com/articles/cedar/) stack.
-
 Git
 ---
 
