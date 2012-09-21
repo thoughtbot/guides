@@ -108,14 +108,13 @@ For changes which they can make themselves, they check out the branch.
 They make small changes right in the branch, test the feature in browser,
 run tests, commit, and push.
 
-When satisfied, they comment on the pull request `Ready to squash and merge.`
+When satisfied, they comment on the pull request `Ready to merge.`
 
-Deploy
-------
+Merge
+-----
 
-If there are multiple commits in the branch, squash low-level commits like "Fix
-whitespace" into one or a small number of high-level commit(s). Rename any
-vague commits to be reveal intent.
+Rebase interactively. Squash commits like "Fix whitespace" into one or a
+small number of valuable commit(s). Edit commit messages to reveal intent.
 
     git rebase -i origin/master
     rake
@@ -135,6 +134,9 @@ Delete your remote feature branch.
 Delete your local feature branch.
 
     git branch -d [branch]
+
+Deploy
+------
 
 View a list of new commits. View changed files. Deploy to
 [Heroku](https://devcenter.heroku.com/articles/quickstart) staging.
