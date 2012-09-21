@@ -113,7 +113,9 @@ When satisfied, they comment on the pull request `Ready to squash and merge.`
 Deploy
 ------
 
-If there are multiple commits in the branch, squash them.
+If there are multiple commits in the branch, squash low-level commits like "Fix
+whitespace" into one or a small number of high-level commit(s). Rename any
+vague commits to be reveal intent.
 
     git rebase -i origin/master
     rake
