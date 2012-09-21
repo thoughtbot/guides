@@ -44,13 +44,7 @@ variables.
     heroku config:pull --app <app>-staging
 
 Delete extra lines in `.env`, leaving only those needed for app to function
-properly.
-
-    BRAINTREE_MERCHANT_ID
-    BRAINTREE_PRIVATE_KEY
-    BRAINTREE_PUBLIC_KEY
-    S3_KEY
-    S3_SECRET
+properly. For example: `BRAINTREE_MERCHANT_ID` and `S3_SECRET`.
 
 Use [Foreman](http://goo.gl/oy4uw) to run the app locally.
 
