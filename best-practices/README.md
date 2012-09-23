@@ -6,41 +6,38 @@ A guide for programming well.
 General
 -------
 
-* Avoid global variables.
-* Avoid long parameter lists.
 * Don't duplicate the functionality of a built-in library.
 * Don't swallow exceptions or "fail silently."
 * Don't write code that guesses at future functionality.
 * [Exceptions should be exceptional](http://rdd.me/yichhgvu).
 * [Keep the code simple](http://rdd.me/ko2aqda2).
-* Prefer small methods. One line is best.
 
 Object-Oriented Design
 ----------------------
 
+* Avoid global variables.
+* Avoid long parameter lists.
 * Limit the number of collaborators of an object.
 * Prefer composition over inheritance.
+* Prefer small methods. One line is best.
 * Prefer small objects with a single, well-defined responsibility.
 * [Tell, don't ask](http://goo.gl/Ztawt).
 
 Ruby
 ----
 
-* Avoid hashes as optional parameters. Does the method do too much?
+* Avoid optional parameters. Does the method do too much?
 * Avoid monkey-patching core classes.
 * Prefer classes to modules when designing functionality that is shared by
   multiple models.
-* Prefer simplicity to meta-programming.
 * Prefer `private` when indicating scope. Use `protected' only with comparison
   methods like `def ==(other)`, `def <(other)`, and `def >(other)`.
 
 Rails
 -----
 
-* Avoid Single Table Inheritance.
 * Don't change a migration after it has been merged into master if the desired
   change can be solved with another migration.
-* Limit the number of instance variables shared between controller and view.
 * Validate the associated `belongs_to` object (`user`), not the database
   column (`user_id`).
 
