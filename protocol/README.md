@@ -18,7 +18,7 @@ Get Suspenders.
 
 Create the app.
 
-    suspenders app-name --heroku true --github organization/app-name
+    suspenders app --heroku true --github organization/app
 
 Set up Rails app
 ----------------
@@ -41,7 +41,7 @@ Add Heroku remotes for staging and production environments.
 Use [Heroku config](/ddollar/heroku-config) to get `ENV`
 variables.
 
-    heroku config:pull --app <app>-staging
+    heroku config:pull -r staging
 
 Delete extra lines in `.env`, leaving only those needed for app to function
 properly. For example: `BRAINTREE_MERCHANT_ID` and `S3_SECRET`.
@@ -173,7 +173,3 @@ Deploy to production.
 Watch logs and metrics dashboards.
 
 Close pull request and comment `Merged.`
-
-Use scripts from [thoughtbot/dotfiles](/thoughtbot/dotfiles)
-to quickly access the Heroku console, backup the production database, and
-transfer production data to staging.
