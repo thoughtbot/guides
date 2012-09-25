@@ -17,7 +17,8 @@ Object-Oriented Design
 
 * Avoid global variables.
 * Avoid long parameter lists.
-* Limit the number of collaborators of an object.
+* Limit collaborators of an object (entities an object depends on).
+* Limit an object's dependencies (entities that depend on an object).
 * Prefer composition over inheritance.
 * Prefer small methods. One line is best.
 * Prefer small objects with a single, well-defined responsibility.
@@ -27,7 +28,7 @@ Ruby
 ----
 
 * Avoid optional parameters. Does the method do too much?
-* Avoid monkey-patching core classes.
+* Avoid monkey-patching.
 * Prefer classes to modules when designing functionality that is shared by
   multiple models.
 * Prefer `private` when indicating scope. Use `protected' only with comparison
@@ -45,7 +46,8 @@ Postgres
 --------
 
 * Avoid multicolumn indexes in Postgres. It [combines multiple
-  indexes](http://goo.gl/pY3Po) efficiently.
+  indexes](http://goo.gl/pY3Po) efficiently. Optimize later with a compound
+  index if needed.
 * Consider a [partial index](http://goo.gl/YC8Jt) for queries on booleans.
 * Constrain most columns as [`NOT NULL`](http://goo.gl/0GeBr).
 
