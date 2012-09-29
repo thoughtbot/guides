@@ -56,6 +56,11 @@ Naming
 * Treat acronyms as words in names (`XmlHttpRequest` not `XMLHTTPRequest`),
   even if the acronym is the entire name (`class Html` not `class HTML`).
 
+CSS
+---
+
+* Order properties within rule sets alphabetically.
+
 JavaScript
 ----------
 
@@ -117,8 +122,11 @@ Rails
 * Keep the `db/schema.rb` under version control.
 * If there are default values, set them in migrations.
 * Name initializers for their gem name.
+* Order ActiveRecord associations alphabetically.
+* Order ActiveRecord validations alphabetically.
 * Order controller contents: filters, public methods, private methods.
 * Order model contents: constants, macros, public methods, private methods.
+* Order routes alphabetically.
 * Put application-wide partials in the
   [`app/views/application`](http://goo.gl/5Z8Vv) directory.
 * Use `_path`, not `_url`, for named routes everywhere except mailer views.
@@ -151,7 +159,9 @@ Testing
 * Don't prefix `it` block descriptions with 'should'.
 * Name outer `describe` blocks after the method under test. Use `.method`
   for class methods and `#method` for instance methods.
-* Order factories.rb: sequences, traits, factory definitions.
+* Order ActiveRecord association tests alphabetically.
+* Order ActiveRecord validation tests alphabetically.
+* Order `factories.rb` contents: sequences, traits, factory definitions.
 * Order factory attributes: implicit attributes, explicit attributes,
   child factory definitions. Each section's attributes are alphabetical.
 * Order factory definitions alphabetically by factory name.
