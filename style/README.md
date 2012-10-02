@@ -46,6 +46,7 @@ Formatting
 * Use an empty line between methods.
 * Use spaces around operators, after commas, after colons and semicolons, around
   `{` and before `}`.
+* Don't misspell.
 * Use [Unix-style line endings](http://goo.gl/04ehM) (`\n`).
 
 Naming
