@@ -36,8 +36,10 @@ Formatting
 * Delete trailing whitespace.
 * Don't include spaces after `(`, `[` or before `]`, `)`.
 * Don't vertically align tokens on consecutive lines.
-* If you break up an argument list, keep the parenthesis on its own line.
-* If you break up a hash, keep the curly braces on their own lines.
+* If you break up an argument list, keep the arguments on their own lines and
+  closing parenthesis on its own line.
+* If you break up a hash, keep the elements on their own lines and closing curly
+  brace on its own line.
 * Indent continued lines two spaces.
 * Indent private methods equal to public methods.
 * Use 2 space indentation (no tabs).
