@@ -46,8 +46,8 @@ Postgres
 --------
 
 * Avoid multicolumn indexes in Postgres. It [combines multiple
-  indexes](http://goo.gl/pY3Po) efficiently. Optimize later with a compound
-  index if needed.
+  indexes](http://goo.gl/pY3Po) efficiently. Optimize later with a [compound
+  index if needed](http://www.postgresql.org/docs/9.2/static/indexes-bitmap-scans.html).
 * Consider a [partial index](http://goo.gl/YC8Jt) for queries on booleans.
 * Constrain most columns as [`NOT NULL`](http://goo.gl/0GeBr).
 
