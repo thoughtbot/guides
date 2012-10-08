@@ -6,6 +6,8 @@ A guide for getting things done.
 Set up laptop
 -------------
 
+Install the latest version of Xcode from the App Store.
+
 Set up your laptop with [this script](/thoughtbot/laptop)
 and [these dotfiles](/thoughtbot/dotfiles).
 
@@ -19,6 +21,41 @@ Get Suspenders.
 Create the app.
 
     suspenders app --heroku true --github organization/app
+
+Create iOS app
+--------------
+
+Create a new project in Xcode with these settings:
+
+* Check 'Create local git repository for this project'.
+* Check 'Use Automatic Reference Counting'.
+* Set an appropriate 2 or 3 letter class prefix.
+* Set the Base SDK to 'Latest iOS'.
+* Set the iOS Deployment Target to 5.0.
+* Use the Apple LLVM compiler.
+
+Add a `.gitignore` file with contents:
+
+    *~
+    *~.nib/
+    *.dat
+    *.dep
+    *.hmap
+    *.LinkFileList
+    *.mode1
+    *.mode1v3
+    *.mode2v3
+    *.o
+    *.pbxuser
+    *.perspective
+    *.perspectivev3
+    *.xcworkspace
+    build/
+    xcuserdata
+
+Add a `.gitattributes` file with contents:
+
+    *.pbxproj binary merge=union
 
 Set up Rails app
 ----------------

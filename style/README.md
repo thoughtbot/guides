@@ -9,13 +9,6 @@ High level guidelines:
 * Don't rewrite existing code to follow this guide.
 * Don't violate the conventions without a good reason.
 
-A note on the language:
-
-* "Avoid" means don't do it unless you have good reason.
-* "Don't" means there's never a good reason.
-* "Prefer" indicates a better option and its alternative to watch out for.
-* "Use" is a positive instruction.
-
 Git
 ---
 
@@ -77,7 +70,7 @@ CoffeeScript
 
 * Initialize arrays using `[]`.
 * Initialize empty objects and hashes using `{}`.
-* Use `CamelCase` for classes, `mixedCase` for variables and functions,
+* Use `CamelCase` for classes, `lowerCamelCase` for variables and functions,
   `SCREAMING_SNAKE_CASE` for constants, `_single_leading_underscore` for
   private variables and functions.
 
@@ -176,3 +169,32 @@ Testing
 * Use an `it` example for each execution path through the method.
 * Use one factories.rb file per project.
 * Use [stubs and spies](http://goo.gl/EciDJ) (not mocks) in isolated tests.
+
+Objective-C
+-----------
+
+[Sample](/thoughtbot/guides/blod/master/style/samples/ObjectiveC.m)
+
+* `#import` linked frameworks in the prefix header (`ProjectName-Prefix.pch`).
+* Keep `.xib` files grouped with their associated view class.
+* Order `#import` statements alphabetically.
+* Order `@class` directives alphabetically.
+* Order `@property` modifiers: memory management, atomicity, writability.
+* Organize classes into `models`, `views`, `controllers`, `categories`,
+  and `services` directories.
+* Prefer `@class` to `#import` when referring to external classes in a public
+  `@interface`.
+* Prefix class names with a 2-letter project acronym.
+* Remove `#import` statements for `Foundation` and `UIKit` in new project
+  templates.
+* Separate methods by function using `#pragma mark - <Section Name>`
+* Separate sections into subsections using `#pragma mark <Subsection Name>`
+* Write methods using the happy path. Indent the exceptional cases. Keep the
+  optimal case in the left-most column.
+* Use `@interface ClassName ()` to declare private properties.
+* Use `lowerCamelCase` for method names.
+* Use `NSAssert` in methods that require the presence of certain arguments.
+* Prefer `@property` to declaring instance variables.
+* Prefix string constants being used as keys with 'k'.
+* Use `@[arrayObject]`, `@{@"key" : value}`, `@(YES or NO)`, and `@5.0`
+  literals.

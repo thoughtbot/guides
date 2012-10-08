@@ -80,3 +80,9 @@ Browsers
 
 * Don't support clients without Javascript.
 * Don't support IE6.
+
+Objective-C
+-----------
+
+* Prefer categories on `Foundation` classes to helper methods.
+* Prefer string constants to literals when providing keys or key paths to methods.
