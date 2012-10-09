@@ -62,8 +62,8 @@ Email
 
 * Use [SendGrid](http://goo.gl/Kxu9W) or [Amazon SES](http://goo.gl/A5jAA) to
   deliver email in staging and production environments.
-* View mailer views using a tool like [mail_view](http://goo.gl/HhX8y) to
-  view each created or updated view before merging.
+* Use a tool like [mail_view](http://goo.gl/HhX8y) to look at each created or
+  updated mailer view before merging.
 
 Testing
 -------
