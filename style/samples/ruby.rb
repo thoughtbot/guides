@@ -4,6 +4,7 @@ class SomeClass
   def initialize(attributes)
     @some_attribute = attributes[:some_attribute]
     @another_attribute = attributes[:another_attribute]
+    @user_factory = attributes[:user_factory]
   end
 
   def method_with_arguments(argument_one, argument_two)
@@ -53,8 +54,6 @@ class SomeClass
   end
 
   def method_without_arguments
-    method_start
-
     if complex_condition?
       positive_branch
     else
@@ -62,6 +61,11 @@ class SomeClass
     end
 
     rest_of_body
+  end
+
+  def method_that_uses_factory
+    user = @user_factory.new
+    user.ensure_authenticated!
   end
 
   def self.class_method
