@@ -54,8 +54,6 @@ class SomeClass
   end
 
   def method_without_arguments
-    user = @user_factory.new
-
     if complex_condition?
       positive_branch
     else
@@ -63,6 +61,11 @@ class SomeClass
     end
 
     rest_of_body
+  end
+
+  def method_that_uses_factory
+    user = @user_factory.new
+    user.ensure_authenticated!
   end
 
   def self.class_method
