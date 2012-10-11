@@ -80,3 +80,8 @@ Browsers
 
 * Don't support clients without Javascript.
 * Don't support IE6.
+
+Objective-C
+-----------
+
+* Prefer categories on `Foundation` classes to helper methods.
