@@ -70,7 +70,7 @@ CoffeeScript
 
 * Initialize arrays using `[]`.
 * Initialize empty objects and hashes using `{}`.
-* Use `CamelCase` for classes, `mixedCase` for variables and functions,
+* Use `CamelCase` for classes, `lowerCamelCase` for variables and functions,
   `SCREAMING_SNAKE_CASE` for constants, `_single_leading_underscore` for
   private variables and functions.
 
@@ -173,26 +173,28 @@ Testing
 Objective-C
 -----------
 
+[Sample](/thoughtbot/guides/blod/master/style/samples/ObjectiveC.m)
+
 * `#import` linked frameworks in the prefix header (`ProjectName-Prefix.pch`).
-* Declare variables with their type followed by a space then `*` (if it's a
-  pointer to an object) and the variable name. (`NSString *userName;`);
-* Define string constants
-  `static NSString *const StringConstant = @"StringConstant"`.
-* Don't use `@synthesize`.
 * Keep `.xib` files grouped with their associated view class.
-* Keep files organized by function in the MVC paradigm.
-* Name methods using CamelCase except for the first word (`-setUserName:`).
 * Order `#import` statements alphabetically.
 * Order `@class` directives alphabetically.
-* Order `@property` declarations by function within the class.
+* Order `@property` modifiers: memory management, atomicity, writability.
+* Organize classes into `models`, `views`, `controllers`, `categories`,
+  and `services` directories.
+* Prefer `@class` to `#import` when referring to external classes in a public
+  `@interface`.
 * Prefix class names with a 2-letter project acronym.
+* Remove `#import` statements for `Foundation` and `UIKit` in new project
+  templates.
 * Separate methods by function using `#pragma mark - <Section Name>`
 * Separate sections into subsections using `#pragma mark <Subsection Name>`
 * Write methods using the happy path. Indent the exceptional cases. Keep the
   optimal case in the left-most column.
-* Use an interface extension (`@interface ClassName ()`) to declare private
-  properties.
+* Use `@interface ClassName ()` to declare private properties.
+* Use `lowerCamelCase` for method names.
 * Use `NSAssert` in methods that require the presence of certain arguments.
 * Prefer `@property` to declaring instance variables.
+* Prefix string constants being used as keys with 'k'.
 * Use `@[arrayObject]`, `@{@"key" : value}`, `@(YES or NO)`, and `@5.0`
   literals.

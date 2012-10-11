@@ -85,3 +85,4 @@ Objective-C
 -----------
 
 * Prefer categories on `Foundation` classes to helper methods.
+* Prefer string constants to literals when providing keys or key paths to methods.

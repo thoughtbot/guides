@@ -25,12 +25,14 @@ Create the app.
 Create iOS app
 --------------
 
-Choose `File > New > Project...` in Xcode. Use these settings:
+Create a new project in Xcode with these settings:
 
-* Set an appropriate 2 or 3 letter class prefix.
-* Check 'Use Automatic Reference Counting'.
 * Check 'Create local git repository for this project'.
-* Set the deployment target to the highest possible version.
+* Check 'Use Automatic Reference Counting'.
+* Set an appropriate 2 or 3 letter class prefix.
+* Set the Base SDK to 'Latest iOS'.
+* Set the iOS Deployment Target to 5.0.
+* Use the Apple LLVM compiler.
 
 Add a `.gitignore` file with contents:
 
