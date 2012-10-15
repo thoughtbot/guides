@@ -173,7 +173,7 @@ Testing
 Objective-C
 -----------
 
-[Sample](/thoughtbot/guides/blod/master/style/samples/ObjectiveC.m)
+[Sample](/thoughtbot/guides/blob/master/style/samples/ObjectiveC.m)
 
 * `#import` linked frameworks in the prefix header (`ProjectName-Prefix.pch`).
 * Keep `.xib` files grouped with their associated view class.
@@ -184,17 +184,17 @@ Objective-C
   and `services` directories.
 * Prefer `@class` to `#import` when referring to external classes in a public
   `@interface`.
+* Prefer `@property` to declaring instance variables.
 * Prefix class names with a 2-letter project acronym.
+* Prefix string constants being used as keys with 'k'.
 * Remove `#import` statements for `Foundation` and `UIKit` in new project
   templates.
 * Separate methods by function using `#pragma mark - <Section Name>`
 * Separate sections into subsections using `#pragma mark <Subsection Name>`
-* Write methods using the happy path. Indent the exceptional cases. Keep the
-  optimal case in the left-most column.
+* Use `@[arrayObject]`, `@{@"key" : value}`, `@(YES or NO)`, and `@5.0`
+  literals.
 * Use `@interface ClassName ()` to declare private properties.
 * Use `lowerCamelCase` for method names.
 * Use `NSAssert` in methods that require the presence of certain arguments.
-* Prefer `@property` to declaring instance variables.
-* Prefix string constants being used as keys with 'k'.
-* Use `@[arrayObject]`, `@{@"key" : value}`, `@(YES or NO)`, and `@5.0`
-  literals.
+* Write methods using the happy path. Indent the exceptional cases. Keep the
+  optimal case in the left-most column.
