@@ -1,7 +1,7 @@
 #import "Alpha.h"
 #import "Beta.h"
 
-@interface ClassName () <PrivateProperty>
+@interface ClassName () <Protocols>
 
 @property (strong, nonatomic) IBOutlet UISearchBar *searchBar;
 @property (strong, nonatomic) IBOutlet UITableView *tableView;
@@ -27,19 +27,19 @@
 
 - (void)shuffleCards
 {
-  NSDictionary *themeColors = @{ kRedColor : [UIColor redColor], kBlueColor : [UIColor blueColor] };
-  NSArray *robots = @[ @"Ralph", @"Bender", @"The Iron Giant" ];
+    NSDictionary *themeColors = @{ kRedColor : [UIColor redColor], kBlueColor : [UIColor blueColor] };
+    NSArray *robots = @[ @"Ralph", @"Bender", @"The Iron Giant" ];
 
-  NSMutableArray *deckOfCards = [NSMutableArray arrayWithCapacity:52];
+    NSMutableArray *deckOfCards = [NSMutableArray arrayWithCapacity:52];
 
-  for (Card *card in deckOfCards)
-    NSLog(@"%@", [card description]);
+    for (Card *card in deckOfCards)
+        NSLog(@"%@", [card description]);
 
-  Card *jokerCard = [Card joker];
-  [deckOfCards addObject:jokerCard];
+    Card *jokerCard = [Card joker];
+    [deckOfCards addObject:jokerCard];
 
-  if (![creditCard isValid])
-  {
-    //...
-  }
+    if (![creditCard isValid])
+    {
+        //...
+    }
 }
