@@ -31,7 +31,7 @@ Create a new project in Xcode with these settings:
 * Check 'Use Automatic Reference Counting'.
 * Set an appropriate 2 or 3 letter class prefix.
 * Set the Base SDK to 'Latest iOS'.
-* Set the iOS Deployment Target to 5.0.
+* Set the iOS Deployment Target to 6.0.
 * Use the Apple LLVM compiler.
 
 Add a `.gitignore` file with contents:
