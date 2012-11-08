@@ -82,8 +82,6 @@ Ruby
 * Avoid conditional modifiers (lines that end with conditionals).
 * Avoid ternary operators (`boolean ? true : false`). Use multi-line `if`
   instead to emphasize code branches.
-* Define the project's [Ruby version in the
-  Gemfile](http://gembundler.com/man/gemfile.5.html#RUBY-ruby-).
 * Prefer `detect` over `find`.
 * Prefer `inject` over `reduce`.
 * Prefer `map` over `collect`.
