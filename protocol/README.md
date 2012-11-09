@@ -211,13 +211,13 @@ Watch logs and metrics dashboards.
 
 Close pull request and comment `Merged.`
 
-Setup Production Environment
-----------------------------
+Set Up Production Environment
+-----------------------------
 
 * Make sure that your
   [`Procfile`](https://devcenter.heroku.com/articles/procfile)
-  is setup not to run webrick.
-* Make sure that backups are enabled.
+  is set up to run thin.
+* Make sure the PG Backups add-on is enabled.
 * Create a read-only [Heroku Follower](http://goo.gl/xWDMx) for your
   production database. If a Heroku database outage occurs, Heroku can use the
   follower to get your app back up and running faster.
