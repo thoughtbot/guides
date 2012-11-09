@@ -67,7 +67,7 @@ Get the code.
 Set up the app's dependencies.
 
     cd project
-    bundle --binstubs
+    bundle --binstubs=bin/stubs
     rake db:setup
 
 Add Heroku remotes for staging and production environments.
