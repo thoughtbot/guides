@@ -29,13 +29,16 @@ Ruby
 
 * Avoid optional parameters. Does the method do too much?
 * Avoid monkey-patching.
-* Avoid specifying version numbers in `Gemfile`. Rely on `Gemfile.lock`.
+* Avoid exact version numbers in `Gemfile` except for non-framework gems.
+* Prefer `Gemfile` declarations without version numbers. Rely on `Gemfile.lock`.
+* Prefer loose versioning with `~>` for gems that break backwards compatibility.
 * Prefer classes to modules when designing functionality that is shared by
   multiple models.
 * Prefer `private` when indicating scope. Use `protected` only with comparison
   methods like `def ==(other)`, `def <(other)`, and `def >(other)`.
 * Use the project's Gemfile to specify the
   [Ruby version](http://gembundler.com/man/gemfile.5.html#RUBY-ruby-)
+* Use exact version numbers in `Gemfile` for framework gems, such as Rails.
 
 Rails
 -----
