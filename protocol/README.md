@@ -181,7 +181,7 @@ View a list of new commits. View changed files. Deploy to
     git fetch staging
     git log staging/master..master
     git diff --stat staging/master
-    git push staging
+    git push staging master
 
 Run migrations (if necessary).
 
