@@ -181,7 +181,7 @@ View a list of new commits. View changed files. Deploy to
     git fetch staging
     git log staging/master..master
     git diff --stat staging/master
-    git push staging
+    git push staging master
 
 Run migrations (if necessary).
 
@@ -202,7 +202,7 @@ Deploy to production.
     git fetch production
     git log production/master..master
     git diff --stat production/master
-    git push production
+    git push production master
     heroku run rake db:migrate -r production
     heroku restart -r production
     watch heroku ps -r production
