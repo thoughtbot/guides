@@ -155,7 +155,11 @@ Testing
 
 * Avoid `its`, `let`, `let!`, `specify`, `before`, and `subject`.
 * Avoid using instance variables in tests.
+* Avoid scenario titles that add no information, such as "successfully."
+* Avoid scenario titles that repeat the feature title.
+* Avoid the `private` keyword in specs.
 * Don't prefix `it` block descriptions with 'should'.
+* Include the Features module in RSpec scenarios with `:type => :feature` set.
 * Name outer `describe` blocks after the method under test. Use `.method`
   for class methods and `#method` for instance methods.
 * Order ActiveRecord association tests alphabetically by attribute name.
@@ -164,11 +168,20 @@ Testing
 * Order factory attributes: implicit attributes, explicit attributes,
   child factory definitions. Each section's attributes are alphabetical.
 * Order factory definitions alphabetically by factory name.
+* Place helper methods for feature specs directly in a top-level `Features`
+  module.
 * Prefer `eq` to `==` in RSpec.
 * Separate setup, exercise, verification, and teardown phases with newlines.
 * Use an `it` example for each execution path through the method.
 * Use one factories.rb file per project.
 * Use [stubs and spies](http://goo.gl/EciDJ) (not mocks) in isolated tests.
+* Use a single level of abstraction within scenarios.
+* Use names like `ROLE_ACTION_spec.rb`, such as
+  `user_changes_password_spec.rb`, for feature spec file names.
+* Use only one `feature` block per feature spec file.
+* Use scenario titles that describe the success and failure paths.
+* Use spec/features to store feature specs.
+* Use spec/support/features for support code related to feature specs.
 
 Objective-C
 -----------
