@@ -159,7 +159,7 @@ Testing
 * Avoid scenario titles that repeat the feature title.
 * Avoid the `private` keyword in specs.
 * Don't prefix `it` block descriptions with 'should'.
-* Include the Features module in RSpec scenarios with `:type => feature` set.
+* Include the Features module in RSpec scenarios with `:type => :feature` set.
 * Name outer `describe` blocks after the method under test. Use `.method`
   for class methods and `#method` for instance methods.
 * Order ActiveRecord association tests alphabetically by attribute name.
