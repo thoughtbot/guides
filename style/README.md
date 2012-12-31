@@ -28,6 +28,7 @@ Formatting
 * Break long lines after 80 characters.
 * Delete trailing whitespace.
 * Don't include spaces after `(`, `[` or before `]`, `)`.
+* Don't misspell.
 * Don't vertically align tokens on consecutive lines.
 * If you break up an argument list, keep the arguments on their own lines and
   closing parenthesis on its own line.
@@ -39,8 +40,9 @@ Formatting
 * Use an empty line between methods.
 * Use spaces around operators, after commas, after colons and semicolons, around
   `{` and before `}`.
-* Don't misspell.
 * Use [Unix-style line endings](http://goo.gl/04ehM) (`\n`).
+* Use [uppercase for SQL key words and lowercase for SQL
+  identifiers](http://goo.gl/0WAIX).
 
 Naming
 ------
@@ -116,7 +118,7 @@ Rails
 * Avoid the `:except` option in routes.
 * Don't reference a model class directly from a view.
 * Don't use protected controller methods.
-* Don't use SQL or SQL fragments (`where('inviter_id is not null')`) outside
+* Don't use SQL or SQL fragments (`where('inviter_id IS NOT NULL')`) outside
   of models.
 * Keep the `db/schema.rb` under version control.
 * If there are default values, set them in migrations.
