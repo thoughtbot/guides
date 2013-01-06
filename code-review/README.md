@@ -1,7 +1,7 @@
 Code Review
 ===========
 
-A guide for reviewing code respectfully.
+A guide for reviewing code with a light-hearted and respect attitude.
 
 Read more about the process of reviewing code, in context of writing a feature
 or fixing a bug, in the [Protocol](/thoughtbot/guides/blob/master/protocol)
@@ -20,11 +20,11 @@ Everyone
 * Be humble. ("I'm not sure - let's look it up.")
 * Don't use hyperbole. ("always", "never", "endlessly", "nothing")
 * Don't use sarcasm.
+* Keep it real. If emoji, animated gifs, or humor aren't you, don't force them.
+  If they are, use them with aplomb.
 * Reach resolutions quickly.
 * Talk in person if there are too many "I didn't understand" or "Alternative
   solution:" comments. Post a follow-up comment summarizing offline discussion.
-* Use emoji.
-* Use humor.
 
 Author of code for review
 -------------------------
