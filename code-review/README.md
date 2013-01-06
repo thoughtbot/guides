@@ -46,12 +46,16 @@ Author of code for review
 Code reviewer
 -------------
 
+First, make sure you understand why the code is necessary (fixes a bug, improves
+the user experience, or is better engineering). Then:
+
 * Differentiate between ideas you feel strongly about and those you don't.
 * Don't block code for academic reasons. Object-oriented design and other topics
   should be part of a regularly-scheduled Friday afternoon technique discussion,
   not code review.
 * Explain tradeoffs of implementation and why you prefer the tradeoffs as
   written.
+* Identify ways to simplify the code while still solving the problem.
 * Offer alternative implementations, but assume the author already considered
   them. ("What do you think about using a custom validator here?")
 * Seek to understand the author's perspective.
