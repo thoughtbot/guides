@@ -70,13 +70,10 @@ guidelines. Example comment:
 
     > Order resourceful routes alphabetically by name.
 
-The style guidelines are not optional. They have been agreed to as a team,
-intended to improve readability, consistency, and save time discussing style.
-
 An example response to style comments:
 
     Whoops. Good catch, thanks. Fixed in a4994ec.
 
-If you disagree with a style guideline, the code review is not the place to
-discuss it. Open an issue on the style guide repo. In the meantime, apply the
+If you disagree with a style guideline, open an issue on the style guide repo
+rather than discuss it within the code review. In the meantime, apply the
 guideline to the codebase.
