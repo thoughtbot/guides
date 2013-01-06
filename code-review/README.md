@@ -35,8 +35,8 @@ Author of code for review
 * Explain the reasons code exists for which the reviewer asked for
   clarification. ("It's like that because of these reasons. How about I rename
   this class/file/method/variable to make those reasons more clear?")
-* Extract some changes and refactorings into future tickets/Trello cards.
-* Link to the code review from the ticket/Trello card. ("Ready for review:
+* Extract some changes and refactorings into future tickets/stories.
+* Link to the code review from the ticket/story. ("Ready for review:
   http://github.com/organization/project/pull/1")
 * Seek to understand the reviewer's perspective.
 * Push commits based on earlier rounds of feedback as isolated commits to the
