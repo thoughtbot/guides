@@ -1,7 +1,7 @@
 Code Review
 ===========
 
-A guide for reviewing code with a light-hearted and respect attitude.
+A guide for respectfully reviewing code and cheerfully having your code reviewed.
 
 Read more about the process of reviewing code, in context of writing a feature
 or fixing a bug, in the [Protocol](/thoughtbot/guides/blob/master/protocol)
@@ -27,7 +27,7 @@ Everyone
 * Talk in person if there are too many "I didn't understand" or "Alternative
   solution:" comments. Post a follow-up comment summarizing offline discussion.
 
-Author of code for review
+Having your code reviewed
 -------------------------
 
 * Be grateful for the reviewer's suggestions. ("Good call. I'll make that
@@ -43,11 +43,10 @@ Author of code for review
   able to read individual updates based on their earlier feedback.
 * Seek to understand the reviewer's perspective.
 
-Code reviewer
--------------
+Reviewing code
+--------------
 
-First, understand why the code is necessary (bug, user experience, engineering).
-Then:
+Understand why the code is necessary (bug, user experience, engineering). Then:
 
 * Communicate which ideas you feel strongly about and those you don't.
 * Don't block code for academic reasons. Object-oriented design and other topics
