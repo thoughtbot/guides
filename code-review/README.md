@@ -21,8 +21,8 @@ Everyone
 * Don't use hyperbole. ("always", "never", "endlessly", "nothing")
 * Don't use sarcasm.
 * Reach resolutions quickly.
-* Talk in person if there are too many "I didn't understand" comments.
-* Talk in person if there are too many "Alternative solution:" comments.
+* Talk in person if there are too many "I didn't understand" or "Alternative
+  solution:" comments. Post a follow-up comment summarizing offline discussion.
 * Use emoji.
 * Use humor.
 
