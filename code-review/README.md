@@ -1,11 +1,7 @@
 Code Review
 ===========
 
-A guide for respectfully reviewing code and cheerfully having your code reviewed.
-
-Read more about the process of reviewing code, in context of writing a feature
-or fixing a bug, in the [Protocol](/thoughtbot/guides/blob/master/protocol)
-guide.
+A guide for reviewing code and having your code reviewed.
 
 Everyone
 --------
@@ -73,4 +69,4 @@ An example response to style comments:
 
 If you disagree with a style guideline, open an issue on the style guide repo
 rather than discussing it within the code review. In the meantime, apply the
-guideline to the codebase.
+guideline.
