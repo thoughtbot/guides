@@ -47,6 +47,9 @@ Code reviewer
 -------------
 
 * Differentiate between ideas you feel strongly about and those you don't.
+* Don't block code for academic reasons. Object-oriented design and other topics
+  should be part of a regularly-scheduled Friday afternoon technique discussion,
+  not code review.
 * Explain tradeoffs of implementation and why you prefer the tradeoffs as
   written.
 * Offer alternative implementations, but assume the author already considered
