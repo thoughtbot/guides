@@ -112,12 +112,15 @@ When feature is complete and tests pass, commit the changes.
     git status
     git commit -v
 
-Write a [good commit message](http://goo.gl/w11us).
+Write a [good commit message](http://goo.gl/w11us). Example format:
 
     Present-tense summary under 50 characters
 
     * More information about commit (under 72 characters).
     * More information about commit (under 72 characters).
+
+In the commit message, include the purpose of the change and link to any
+supporting tickets or documentation.
 
 Share your branch.
 
@@ -130,7 +133,9 @@ Ask for a code review in [Campfire](http://campfirenow.com).
 Review code
 -----------
 
-A team member other than the author reviews the pull request.
+A team member other than the author reviews the pull request. They follow
+[Code Review](/thoughtbot/guides/blob/master/code-review) guidelines to avoid
+miscommunication.
 
 They make comments and ask questions directly on lines of code in the Github
 web interface or in Campfire.
