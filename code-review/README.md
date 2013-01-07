@@ -45,10 +45,10 @@ Reviewing code
 Understand why the code is necessary (bug, user experience, refactoring). Then:
 
 * Communicate which ideas you feel strongly about and those you don't.
-* Don't block code for academic reasons. Object-oriented design and other topics
-  should be part of regular Friday afternoon discussions instead of code reviews.
 * Identify ways to simplify the code while still solving the problem.
-* Let the author make the final decision about alternative implementations.
+* If discussions turn too philosophical or academic, move the discussion offline
+  to a regular Friday afternoon technique discussion. In the meantime, let the
+  author make the final decision on alternative implementations.
 * Offer alternative implementations, but assume the author already considered
   them. ("What do you think about using a custom validator here?")
 * Seek to understand the author's perspective.
@@ -67,6 +67,5 @@ An example response to style comments:
 
     Whoops. Good catch, thanks. Fixed in a4994ec.
 
-If you disagree with a style guideline, open an issue on the style guide repo
-rather than discussing it within the code review. In the meantime, apply the
-guideline.
+If you disagree with a guideline, open an issue on the guides repo rather than
+debating it within the code review. In the meantime, apply the guideline.
