@@ -38,6 +38,9 @@ Having your code reviewed
   branch. Do not squash until the branch is ready to merge. Reviewers should be
   able to read individual updates based on their earlier feedback.
 * Seek to understand the reviewer's perspective.
+* Wait to merge the branch until another person signs off.
+* Wait to merge the branch until a Continuous Integration service like TDDium or
+  TravisCI to tell you the test suite is green in the branch.
 
 Reviewing code
 --------------
@@ -52,6 +55,7 @@ Understand why the code is necessary (bug, user experience, refactoring). Then:
 * Offer alternative implementations, but assume the author already considered
   them. ("What do you think about using a custom validator here?")
 * Seek to understand the author's perspective.
+* Sign off on the pull request with a :thumbsup: or "Ready to merge" comment.
 
 Style comments
 --------------
