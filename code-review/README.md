@@ -42,7 +42,7 @@ Having your code reviewed
 Reviewing code
 --------------
 
-Understand why the code is necessary (bug, user experience, engineering). Then:
+Understand why the code is necessary (bug, user experience, refactoring). Then:
 
 * Communicate which ideas you feel strongly about and those you don't.
 * Don't block code for academic reasons. Object-oriented design and other topics
