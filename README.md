@@ -7,7 +7,7 @@ High level guidelines:
 
 * Be consistent.
 * Don't rewrite existing code to follow this guide.
-* Don't violate the conventions without a good reason.
+* Don't violate a guideline without a good reason.
 
 * [Protocol](/thoughtbot/guides/blob/master/protocol)
 * [Code Review](/thoughtbot/guides/blob/master/code-review)
