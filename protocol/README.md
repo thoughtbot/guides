@@ -119,6 +119,8 @@ Write a [good commit message](http://goo.gl/w11us).
     * More information about commit (under 72 characters).
     * More information about commit (under 72 characters).
 
+    http://project.management-system.com/ticket/123
+
 Share your branch.
 
     git push origin [branch]
