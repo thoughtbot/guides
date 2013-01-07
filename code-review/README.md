@@ -39,8 +39,8 @@ Having your code reviewed
   able to read individual updates based on their earlier feedback.
 * Seek to understand the reviewer's perspective.
 * Wait to merge the branch until another person signs off.
-* Wait to merge the branch until a Continuous Integration service like TDDium or
-  TravisCI to tell you the test suite is green in the branch.
+* Wait to merge the branch until Continuous Integration (TDDium, TravisCI, etc.)
+  tells you the test suite is green in the branch.
 
 Reviewing code
 --------------
