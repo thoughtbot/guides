@@ -38,6 +38,7 @@ Formatting
 * Indent private methods equal to public methods.
 * Use 2 space indentation (no tabs).
 * Use an empty line between methods.
+* Use newlines around multi-line blocks.
 * Use spaces around operators, after commas, after colons and semicolons, around
   `{` and before `}`.
 * Use [Unix-style line endings](http://goo.gl/04ehM) (`\n`).
