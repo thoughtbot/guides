@@ -81,6 +81,7 @@ Ruby
 * Avoid conditional modifiers (lines that end with conditionals).
 * Avoid ternary operators (`boolean ? true : false`). Use multi-line `if`
   instead to emphasize code branches.
+* Avoid explicit return statements.
 * Prefer `detect` over `find`.
 * Prefer `inject` over `reduce`.
 * Prefer `map` over `collect`.
