@@ -3,12 +3,6 @@ Style
 
 A guide for programming in style.
 
-High level guidelines:
-
-* Be consistent.
-* Don't rewrite existing code to follow this guide.
-* Don't violate the conventions without a good reason.
-
 Git
 ---
 
