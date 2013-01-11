@@ -13,9 +13,13 @@ class SomeClass
   end
 
   def method_with_multiline_block
+    some_method_before_block(should_be_followed_by_a_newline)
+    
     items.each do |item|
       do_something_with_item
     end
+    
+    some_method_after_block(should_follow_after_newline)
   end
 
   def method_with_single_line_block
