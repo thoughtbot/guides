@@ -67,13 +67,7 @@ Get the code.
 Set up the app's dependencies.
 
     cd project
-    bundle --binstubs=bin/stubs
-    rake db:setup
-
-Add Heroku remotes for staging and production environments.
-
-    git remote add staging git@heroku.com:<app>-staging.git
-    git remote add production git@heroku.com:<app>-production.git
+    ./bin/setup
 
 Use [Heroku config](/ddollar/heroku-config) to get `ENV`
 variables.
