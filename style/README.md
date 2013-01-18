@@ -19,6 +19,7 @@ Formatting
 ----------
 
 * Avoid inline comments.
+* Avoid commenting blank lines.
 * Break long lines after 80 characters.
 * Delete trailing whitespace.
 * Don't include spaces after `(`, `[` or before `]`, `)`.
