@@ -1,8 +1,15 @@
 #import "Alpha.h"
 #import "Beta.h"
 
+// Use enums when possible. They should be named similarly, with the prefix
+// coming from the defined enum type
+typedef NS_ENUM(NSInteger, MyEnum) {
+  MyEnumNumberOne,
+  MyEnumNumberTwo
+};
+
 // Use @interface extensions for private properties
-@interface ClassName () <Protocols>
+@interface TBClassName () <Protocols>
 
 // Keep @properties grouped together by function
 @property (strong, nonatomic) IBOutlet UISearchBar *searchBar;
@@ -21,7 +28,8 @@ static NSString *const ConstantName = @"Constant";
 // Prepend constants with 'k' when being used as keys
 static NSString *const kFirstName = @"FirstName";
 
-@implementation ClassName
+// Always use an appropriate 2 or 3 letter prefix for class names
+@implementation TBClassName
 
 /*
  - Use #pragma mark to organize code by function
@@ -37,35 +45,51 @@ static NSString *const kFirstName = @"FirstName";
     // Return early if conditions prohibit the intended function of the method
     // Use conditionals for exceptional cases
     // Keep the 'optimal' path non-indented
-    if (!self)
-        return nil;
+    if (!self) return nil;
+
+    // initialization code
 
     return self;
 }
 
 #pragma mark - UI
 
-// Opening brackets belong on the next line
+// Opening brackets for method definitions belong on the next line
 - (void)shuffleCards
 {
     // Objective-C literals are your friend
     NSDictionary *themeColors = @{ kRedColor : [UIColor redColor], kBlueColor : [UIColor blueColor] };
     NSArray *robots = @[ @"Ralph", @"Bender", @"The Iron Giant" ];
+    NSNumber *magicNumber = @3;
 
     NSMutableArray *deckOfCards = [NSMutableArray arrayWithCapacity:52];
 
-    // Newlines before and after conditional blocks
-    for (Card *card in deckOfCards)
+    for (Card *card in deckOfCards) { // Newlines before and after conditional blocks
         NSLog(@"%@", [card description]);
+    }
 
     Card *jokerCard = [Card joker];
     [deckOfCards addObject:jokerCard];
 
     // Use ! to check for nots. Comparing to 'nil' is redundant
-    if (![creditCard isValid])
-    {
+    if (![creditCard isValid]) {
         //...
     }
+}
+
+- (void)numbersAndBools
+{
+    // Box variables to create NSNumber objects instead of using
+    // numberWithInt/numberWithFloat/numberWithBool
+    NSNumber *numberOfThings = @([objects count]);
+
+    // Use NSInteger in favor of int/long
+    NSInteger numberOfCards = [deckOfCards count];
+
+    // Use CGFloat instead of float/double
+    // Define CGFloat values with trailing decimal and f even if it's
+    // a round number
+    CGFloat widthOfScreen = 320.0f;
 }
 
 @end
