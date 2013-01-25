@@ -34,28 +34,13 @@ Create a new project in Xcode with these settings:
 * Set the iOS Deployment Target to 6.0.
 * Use the Apple LLVM compiler.
 
-Add a `.gitignore` file with contents:
+Get liftoff.
 
-    *~
-    *~.nib/
-    *.dat
-    *.dep
-    *.hmap
-    *.LinkFileList
-    *.mode1
-    *.mode1v3
-    *.mode2v3
-    *.o
-    *.pbxuser
-    *.perspective
-    *.perspectivev3
-    *.xcworkspace
-    build/
-    xcuserdata
+    gem install liftoff
 
-Add a `.gitattributes` file with contents:
+Run liftoff in the project directory.
 
-    *.pbxproj binary merge=union
+    liftoff
 
 Set up Rails app
 ----------------
