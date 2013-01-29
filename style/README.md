@@ -209,3 +209,8 @@ Objective-C
 * Use `NSAssert` in methods that require the presence of certain arguments.
 * Write methods using the happy path. Indent the exceptional cases. Keep the
   optimal case in the left-most column.
+
+Python
+------
+
+* Follow [PEP 8](http://www.python.org/dev/peps/pep-0008/).
