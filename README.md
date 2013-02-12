@@ -9,10 +9,10 @@ High level guidelines:
 * Don't rewrite existing code to follow this guide.
 * Don't violate a guideline without a good reason.
 
-* [Protocol](/thoughtbot/guides/blob/master/protocol)
-* [Code Review](/thoughtbot/guides/blob/master/code-review)
-* [Best Practices](/thoughtbot/guides/blob/master/best-practices)
-* [Style](/thoughtbot/guides/blob/master/style)
+* [Protocol](protocol)
+* [Code Review](code-review)
+* [Best Practices](best-practices)
+* [Style](style)
 
 A note on the language:
 
@@ -24,7 +24,7 @@ A note on the language:
 Credits
 -------
 
-Thank you, [contributors](/thoughtbot/guides/graphs/contributors)!
+Thank you, [contributors](https://github.com/thoughtbot/guides/graphs/contributors)!
 
 ![thoughtbot](http://thoughtbot.com/images/tm/logo.png)
 

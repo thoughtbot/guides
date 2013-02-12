@@ -61,10 +61,10 @@ Understand why the code is necessary (bug, user experience, refactoring). Then:
 Style comments
 --------------
 
-Reviewers should comment on missed [style](/thoughtbot/guides/blob/master/style)
+Reviewers should comment on missed [style](../style)
 guidelines. Example comment:
 
-    [Style](/thoughtbot/guides/blob/master/style):
+    [Style](../style):
 
     > Order resourceful routes alphabetically by name.
 
