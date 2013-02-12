@@ -76,7 +76,7 @@ CoffeeScript
 Ruby
 ----
 
-[Sample](/thoughtbot/guides/blob/master/style/samples/ruby.rb)
+[Sample](samples/ruby.rb)
 
 * Avoid conditional modifiers (lines that end with conditionals).
 * Avoid ternary operators (`boolean ? true : false`). Use multi-line `if`
@@ -102,7 +102,7 @@ Ruby
 ERb
 ---
 
-[Sample](/thoughtbot/guides/blob/master/style/samples/erb.rb)
+[Sample](samples/erb.rb)
 
 * When wrapping long lines, keep the method name on the same line as the ERb.
   interpolation operator and keep each method argument on its own line.
@@ -149,7 +149,7 @@ Email
 Testing
 -------
 
-[Sample](/thoughtbot/guides/blob/master/style/samples/testing.rb)
+[Sample](samples/testing.rb)
 
 * Avoid `its`, `let`, `let!`, `specify`, `before`, and `subject`.
 * Avoid using instance variables in tests.
@@ -184,7 +184,7 @@ Testing
 Objective-C
 -----------
 
-[Sample](/thoughtbot/guides/blob/master/style/samples/ObjectiveC.m)
+[Sample](samples/ObjectiveC.m)
 
 * `#import` linked frameworks in the prefix header (`ProjectName-Prefix.pch`).
 * Keep `.xib` files grouped with their associated view class.

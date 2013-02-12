@@ -8,8 +8,8 @@ Set up laptop
 
 Install the latest version of Xcode from the App Store.
 
-Set up your laptop with [this script](/thoughtbot/laptop)
-and [these dotfiles](/thoughtbot/dotfiles).
+Set up your laptop with [this script](https://github.com/thoughtbot/laptop)
+and [these dotfiles](https://github.com/thoughtbot/dotfiles).
 
 Create Rails app
 ----------------
@@ -54,7 +54,7 @@ Set up the app's dependencies.
     cd project
     ./bin/setup
 
-Use [Heroku config](/ddollar/heroku-config) to get `ENV`
+Use [Heroku config](https://github.com/ddollar/heroku-config) to get `ENV`
 variables.
 
     heroku config:pull -r staging
@@ -112,7 +112,7 @@ Review code
 -----------
 
 A team member other than the author reviews the pull request. They follow
-[Code Review](/thoughtbot/guides/blob/master/code-review) guidelines to avoid
+[Code Review](../code-review) guidelines to avoid
 miscommunication.
 
 They make comments and ask questions directly on lines of code in the Github
