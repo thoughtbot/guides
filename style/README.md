@@ -55,7 +55,17 @@ Naming
 CSS
 ---
 
+* Use Sass.
+
+Sass
+----
+
+* Use the *Scss* syntax.
+* Use dashes when naming mixins, extends, classes or IDs: `span-columns` not `span_columns` or `spanColumns`.
+* Use descriptive names and write them in full-words: `$visual-grid-color` not `$color` or `$vslgrd-clr`.
+* Use space between property and value: `width: 20px` not `width:20px`.
 * Order properties within rule sets alphabetically.
+* Leave a blank line between rule sets.
 
 JavaScript
 ----------
