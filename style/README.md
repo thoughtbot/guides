@@ -55,9 +55,8 @@ Naming
 HTML5
 -----
 
-* Use a trailing slash ("/") on foreign elements to denote a self-closing tag.
-  Do not use a trailing slash on void elements. [Read
-  more](http://dev.w3.org/html5/spec-author-view/syntax.html#syntax-start-tag).
+* Do not use a trailing slash on [void
+  elements](http://www.w3.org/html/wg/drafts/html/master/single-page.html#void-elements)
 
 CSS
 ---
