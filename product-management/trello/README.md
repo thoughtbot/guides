@@ -12,19 +12,6 @@ Trello boards:
 
 ![Current](http://f.cl.ly/items/3H3i1M0Q1G1s2V3I433S/Screen%20Shot%202013-02-25%20at%209.08.22%20AM.png)
 
-The goal of the Product Roadmap board is to provide a potential long-term vision
-for the product and organize major features, marketing initiatives, and other
-milestones.
-
-The goal of the Product Design board is to keep the team focused on solving
-problems and thinking from the user's perspective.
-
-The goal of the Bugs board is to keep track of bugs that are out of scope for
-the current week.
-
-The goal of the Engineering & Refactoring board is to keep track of bugs that
-are out of scope for the current week.
-
 Cards from Product Design, Bugs, Engineering boards are pulled into the
 Next Up list on the Current board as described in the "Weekly Product Meeting"
 section below.
