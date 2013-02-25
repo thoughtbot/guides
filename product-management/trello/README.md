@@ -4,7 +4,6 @@ Product management process with Trello
 The product management process with [Trello](http://trello.com) spans multiple
 Trello boards:
 
-* Product Roadmap
 * Bugs
 * Product Design
 * Engineering & Refactoring
@@ -12,9 +11,9 @@ Trello boards:
 
 ![Current](http://f.cl.ly/items/3H3i1M0Q1G1s2V3I433S/Screen%20Shot%202013-02-25%20at%209.08.22%20AM.png)
 
-Cards from Product Design, Bugs, Engineering boards are pulled into the
-Next Up list on the Current board as described in the "Weekly Product Meeting"
-section below.
+Cards from Product Design, Bugs, Engineering boards are pulled into the Next Up
+list on the Current board as described in the "Weekly Product Meeting" section
+below.
 
 The Next Up list is the single prioritized list to which the product team
 refers in order to know what to work on next. It represents one week of work.
@@ -30,15 +29,6 @@ boards, detail is added, explaining why (from a business perspective)
 we're focusing on it, and maybe notes on suggested implementation (though
 designers and developers may take or leave it at their discretion; it's supposed
 to be helpful, not prescriptive).
-
-Product Roadmap
----------------
-
-The cards on this board are the major projects to be completed. In agile terms,
-they are called "epics." They are not directly moved to other lists but do
-inform cards in Product Design and Refactoring & Engineering lists.
-
-Organize the cards into lists named by the expected month they'll be addressed.
 
 Bugs
 ----
@@ -91,9 +81,6 @@ Hangout. They load the product on a screen, focus on recent changes to it, and
 use the working app and Trello boards to plan the upcoming week's iteration. The
 product manager runs the meeting like this:
 
-* Review the Product Roadmap board. The product manager shows the current state
-  of the roadmap and provides insight into what these cards are and why they're
-  a priority (the business case).
 * Review the Product Design board. Pull what we estimate to be an appropriate
   amount for this week into Next Up.
 * Re-sort the entire Next Up queue according to priority. Cards that were at the
@@ -104,7 +91,7 @@ product manager runs the meeting like this:
   fixing what's broken first.
 * Review the Engineering & Refactoring board. Pull cards into Next Up based on
   what the designers and developers believe is appropriate given the previously
-  stated Product Roadmap, Product Design, and Bugs.
+  stated Product Product Design, and Bugs.
 
 Weekly Planning Meeting (30 minutes)
 ------------------------------------
