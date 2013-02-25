@@ -16,8 +16,8 @@ Cards from Product Design, Bugs, Engineering boards are pulled into the
 Next Up list on the Current board as described in the "Weekly Product Meeting"
 section below.
 
-The Next Up list is the single prioritized list that the product team
-(designers and developers) refer to in order to know what to work on next.
+The Next Up list is the single prioritized list to which the product team
+refers in order to know what to work on next. It represents one week of work.
 
 Trello cards
 ------------
