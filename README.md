@@ -9,7 +9,8 @@ High level guidelines:
 * Don't rewrite existing code to follow this guide.
 * Don't violate a guideline without a good reason.
 
-* [Product Management](/product-management/trello)
+* Product Management
+  * [Trello]((/product-management/trello)
 * [Protocol](/protocol)
 * [Code Review](/code-review)
 * [Best Practices](/best-practices)
