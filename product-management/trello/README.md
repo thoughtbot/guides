@@ -98,10 +98,11 @@ until the next product meeting.
 Weekly Product Meeting (1-2 hours)
 ----------------------------------
 
-On Thursday afternoon, the product manager, designer, and lead developer meet in
-person or via Google Hangout. They load the product on a screen, focus on recent
-changes to it, and use the working app and Trello boards to plan the upcoming
-week's iteration. The product manager runs the meeting like this:
+On Friday (or Thursday if that's the end of the team's week) afternoon, the
+product manager, designer, and lead developer meet in person or via Google
+Hangout. They load the product on a screen, focus on recent changes to it, and
+use the working app and Trello boards to plan the upcoming week's iteration. The
+product manager runs the meeting like this:
 
 * Review the Product Roadmap board. The product manager shows the current state
   of the roadmap and provides insight into what these cards are and why they're
