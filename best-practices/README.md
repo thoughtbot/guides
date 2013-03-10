@@ -34,6 +34,19 @@ Ruby
 * Prefer `private` when indicating scope. Use `protected` only with comparison
   methods like `def ==(other)`, `def <(other)`, and `def >(other)`.
 
+Ruby Gems
+---------
+
+* Declare dependencies in the `<PROJECT_NAME>.gemspec` file.
+* Reference the `gemspec` in the `Gemfile`.
+* Use [Appraisal](http://github.com/thoughtbot/appraisal) to test the gem
+  against multiple versions of gem dependencies (such as Rails in a Rails
+  engine).
+* Use [Bundler](http://gembundler.com/) to manage the gem's dependencies.
+* Use [Travis CI](http://travisci.org) for Continuous Integration, indicators
+  showing whether GitHub pull requests can be merged, and to test against
+  multiple Ruby versions.
+
 Rails
 -----
 
