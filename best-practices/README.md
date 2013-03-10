@@ -56,21 +56,23 @@ Rails
   change can be solved with another migration.
 * Validate the associated `belongs_to` object (`user`), not the database
   column (`user_id`).
-* Avoid exact version numbers in `Gemfile` except for non-framework gems.
 
 Bundler
 -------
 
-* Use the project's Gemfile to specify the
-  [Ruby version](http://gembundler.com/man/gemfile.5.html#RUBY-ruby-)
-* Use an [exact version](http://robots.thoughtbot.com/post/35717411108/a-healthy-bundle#exact-version)
+* Specify the [Ruby version](http://gembundler.com/v1.3/gemfile_ruby.html) to be
+  used on the project in the `Gemfile`.
+* Use a [pessimistic
+  version](http://robots.thoughtbot.com/post/35717411108/a-healthy-bundle#pessimistic-version)
+  in the `Gemfile` for gems that follow semantic versioning, such as `rspec`,
+  `factory_girl`, and `capybara`.
+* Use a
+  [versionless](http://robots.thoughtbot.com/post/35717411108/a-healthy-bundle#versionless)
+  `Gemfile` declarations for gems that are safe to update often, such as pg, thin,
+  and debugger.
+* Use an [exact
+  version](http://robots.thoughtbot.com/post/35717411108/a-healthy-bundle#exact-version)
   in the `Gemfile` for fragile gems, such as Rails.
-* Use a [pessimistic version](http://robots.thoughtbot.com/post/35717411108/a-healthy-bundle#pessimistic-version)
-  in the 'Gemfile' for gems that follow semantic
-  versioning, such as rspec, factory_girl, and capybara.
-* Use [versionless](http://robots.thoughtbot.com/post/35717411108/a-healthy-bundle#versionless)
-  `Gemfile` declarations for gems that are safe to update often, such as pg,
-  thin, and debugger.
 
 Postgres
 --------
