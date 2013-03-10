@@ -128,6 +128,8 @@ Rails
   of models.
 * Keep the `db/schema.rb` under version control.
 * If there are default values, set them in migrations.
+* Name date columns with `_on` suffixes.
+* Name datetime columns with `_at` suffixes.
 * Name initializers for their gem name.
 * Order ActiveRecord associations alphabetically by attribute name.
 * Order ActiveRecord validations alphabetically by attribute name.
