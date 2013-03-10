@@ -128,6 +128,12 @@ JavaScript
 
 * Use CoffeeScript.
 
+HTML
+----
+
+* Don't use a reset button for forms.
+* Prefer cancel links to cancel buttons.
+
 CSS
 ---
 
@@ -137,7 +143,7 @@ Browsers
 --------
 
 * Don't support clients without Javascript.
-* Don't support IE6.
+* Don't support IE6 or IE7.
 
 Objective-C
 -----------
