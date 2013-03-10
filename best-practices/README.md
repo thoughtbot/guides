@@ -92,6 +92,9 @@ Postgres
 Background Jobs
 ---------------
 
+[Sample](samples/background_jobs.rb)
+
+* Notify Airbrake about errors.
 * Store IDs, not `ActiveRecord` objects for cleaner serialization, then re-find
   the `ActiveRecord` object in the `perform` method.
 
