@@ -54,6 +54,8 @@ Rails
   `update_attribute`, and `toggle`.
 * Don't change a migration after it has been merged into master if the desired
   change can be solved with another migration.
+* Use `add_index :table, :column, unique: true` to enforce uniqueness
+  constraints and avoid race conditions.
 * Validate the associated `belongs_to` object (`user`), not the database
   column (`user_id`).
 
@@ -84,10 +86,15 @@ Postgres
   index if needed](http://www.postgresql.org/docs/9.2/static/indexes-bitmap-scans.html).
 * Consider a [partial index](http://goo.gl/YC8Jt) for queries on booleans.
 * Constrain most columns as [`NOT NULL`](http://goo.gl/0GeBr).
+* Index column(s) used as foreign keys.
+* Index column(s) often used in `WHERE` clauses.
 
 Background Jobs
 ---------------
 
+[Sample](samples/background_jobs.rb)
+
+* Notify Airbrake about errors.
 * Store IDs, not `ActiveRecord` objects for cleaner serialization, then re-find
   the `ActiveRecord` object in the `perform` method.
 
