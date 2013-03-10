@@ -111,6 +111,7 @@ Testing
 * Test background jobs with a [`Delayed::Job` matcher](http://goo.gl/bzBlN).
 * Use a [Fake](http://goo.gl/YR7Hh) to stub requests to external services.
 * Use integration tests to execute the entire app.
+* Use [Jasmine](http://pivotal.github.com/jasmine/) for JavaScript unit testing.
 * Use non-[SUT](http://goo.gl/r5Ti2) methods in expectations when possible.
 
 Browsers
