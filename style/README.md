@@ -89,6 +89,7 @@ Ruby
 [Sample](samples/ruby.rb)
 
 * Avoid conditional modifiers (lines that end with conditionals).
+* Avoid organizational comments (`# Validations`).
 * Avoid ternary operators (`boolean ? true : false`). Use multi-line `if`
   instead to emphasize code branches.
 * Avoid explicit return statements.
