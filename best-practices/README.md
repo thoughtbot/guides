@@ -50,6 +50,8 @@ Ruby Gems
 Rails
 -----
 
+* Avoid bypassing validations with methods like `save(validate: false)`,
+  `update_attribute`, and `toggle`.
 * Don't change a migration after it has been merged into master if the desired
   change can be solved with another migration.
 * Validate the associated `belongs_to` object (`user`), not the database
