@@ -74,3 +74,18 @@ An example response to style comments:
 
 If you disagree with a guideline, open an issue on the guides repo rather than
 debating it within the code review. In the meantime, apply the guideline.
+
+Ruby on Rails review
+--------------------
+
+* Review data integrity closely, such as migrations that make irreversible
+  changes to the data, and whether there is a related todo to make a database
+  backup during the staging and production deploys.
+* Review SQL queries for potential SQL injection.
+* Review whether dependency upgrades include a reason in the commit message,
+  such as a link to the dependency's `ChangeLog` or `NEWS` file.
+* Review whether new database indexes are necessary if new columns or SQL
+  queries were added.
+* Review whether new scheduler (`cron`) tasks have been added and whether there
+  is a related todo in the project management system to add it during the
+  staging and production deploys.
