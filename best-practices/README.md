@@ -114,11 +114,23 @@ Testing
 * Use [Jasmine](http://pivotal.github.com/jasmine/) for JavaScript unit testing.
 * Use non-[SUT](http://goo.gl/r5Ti2) methods in expectations when possible.
 
+HTML
+----
+
+* Avoid blank options in dropdowns.
+* Don't use a reset button for forms.
+* Prefer cancel links to cancel buttons.
+
+CSS
+---
+
+* Avoid absolute positioning.
+
 Browsers
 --------
 
 * Don't support clients without Javascript.
-* Don't support IE6.
+* Don't support IE6 or IE7.
 
 Objective-C
 -----------
