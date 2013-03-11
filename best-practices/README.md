@@ -74,7 +74,6 @@ Bundler
 * Use an [exact
   version](http://robots.thoughtbot.com/post/35717411108/a-healthy-bundle#exact-version)
   in the `Gemfile` for fragile gems, such as Rails.
-* Use `--binstubs=bin/stubs` to avoid typing `bundle exec`.
 
 Postgres
 --------
