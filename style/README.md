@@ -52,6 +52,12 @@ Naming
 * Name variables created by a factory after the factory (`user_factory`
   creates `user`).
 
+HTML5
+-----
+
+* Do not use a trailing slash on [void
+  elements](http://www.w3.org/html/wg/drafts/html/master/single-page.html#void-elements)
+
 CSS
 ---
 
