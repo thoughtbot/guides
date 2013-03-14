@@ -88,6 +88,8 @@ Postgres
 * Consider indexing columns used as foreign keys, as they are often used in
   `WHERE` and `JOIN` clauses.
 * Constrain most columns as [`NOT NULL`](http://goo.gl/0GeBr).
+* Index column(s) used as foreign keys.
+* Index column(s) often used in `WHERE` clauses.
 
 Background Jobs
 ---------------
@@ -111,6 +113,7 @@ Testing
 * Test background jobs with a [`Delayed::Job` matcher](http://goo.gl/bzBlN).
 * Use a [Fake](http://goo.gl/YR7Hh) to stub requests to external services.
 * Use integration tests to execute the entire app.
+* Use [Jasmine](http://pivotal.github.com/jasmine/) for JavaScript unit testing.
 * Use non-[SUT](http://goo.gl/r5Ti2) methods in expectations when possible.
 
 Browsers
