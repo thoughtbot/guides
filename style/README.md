@@ -209,7 +209,7 @@ Objective-C
 * Prefer `@class` to `#import` when referring to external classes in a public
   `@interface`.
 * Prefer `@property` to declaring instance variables.
-* Prefix class names with a 2-letter project acronym.
+* Prefix class names with a 3-letter project acronym.
 * Prefix string constants being used as keys with 'k'.
 * Remove `#import` statements for `Foundation` and `UIKit` in new project
   templates.
