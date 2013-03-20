@@ -52,6 +52,14 @@ Naming
 * Name variables created by a factory after the factory (`user_factory`
   creates `user`).
 
+Organization
+------------
+
+* Order methods so that invoking methods are earlier in the file than the
+  methods they invoke.
+* Order methods so that methods are as close as possible to other methods they
+  invoke.
+
 CSS
 ---
 
