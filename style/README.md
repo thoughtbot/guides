@@ -55,10 +55,10 @@ Naming
 Organization
 ------------
 
-* Order methods so that invoking methods are earlier in the file than the
-  methods they invoke.
+* Order methods so that caller methods are earlier in the file than the methods
+  they call.
 * Order methods so that methods are as close as possible to other methods they
-  invoke.
+  call.
 
 CSS
 ---
