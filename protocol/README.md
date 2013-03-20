@@ -69,6 +69,16 @@ Use [Foreman](http://goo.gl/oy4uw) to run the app locally.
 It uses your `.env` file and `Procfile` to run processes just like Heroku's
 [Cedar](https://devcenter.heroku.com/articles/cedar/) stack.
 
+Maintain a Rails app
+--------------------
+
+* Avoid including files in source control that are specific to your
+  development machine or process.
+* Delete local and remote feature branches after merging.
+* Perform work in a feature branch.
+* Rebase frequently to incorporate upstream changes.
+* Use a [pull request](http://goo.gl/Kmdee) for code reviews.
+
 Write a feature
 ---------------
 

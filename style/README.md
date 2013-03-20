@@ -6,13 +6,7 @@ A guide for programming in style.
 Git
 ---
 
-* Avoid including files in source control that are specific to your
-  development machine or process.
-* Delete local and remote feature branches after merging.
-* Perform work in a feature branch.
 * Prefix feature branch names with your initials.
-* Rebase frequently to incorporate upstream changes.
-* Use a [pull request](http://goo.gl/Kmdee) for code reviews.
 * Write a [good commit message](http://goo.gl/w11us).
 
 Formatting
@@ -52,11 +46,6 @@ Naming
 * Name variables created by a factory after the factory (`user_factory`
   creates `user`).
 
-CSS
----
-
-* Use Sass.
-
 Sass
 ----
 
@@ -66,11 +55,6 @@ Sass
 * Use space between property and value: `width: 20px` not `width:20px`.
 * Order properties within rule sets alphabetically.
 * Leave a blank line between rule sets.
-
-JavaScript
-----------
-
-* Use CoffeeScript.
 
 CoffeeScript
 ------------
@@ -123,12 +107,7 @@ Rails
 
 * Avoid `member` and `collection` routes.
 * Avoid the `:except` option in routes.
-* Don't reference a model class directly from a view.
 * Don't use protected controller methods.
-* Don't use SQL or SQL fragments (`where('inviter_id IS NOT NULL')`) outside
-  of models.
-* Keep the `db/schema.rb` under version control.
-* If there are default values, set them in migrations.
 * Name date columns with `_on` suffixes.
 * Name datetime columns with `_at` suffixes.
 * Name initializers for their gem name.
@@ -139,9 +118,7 @@ Rails
 * Order resourceful routes alphabetically by name.
 * Put application-wide partials in the
   [`app/views/application`](http://goo.gl/5Z8Vv) directory.
-* Use `_path`, not `_url`, for named routes everywhere except mailer views.
 * Use `def self.method`, not the `scope :method` DSL.
-* Use SQL, not `ActiveRecord` models, in migrations.
 * Use the default `render 'partial'` syntax over `render partial: 'partial'`.
 * Use the `:only` option to explicitly state exposed routes.
 
@@ -164,13 +141,10 @@ Testing
 
 [Sample](samples/testing.rb)
 
-* Avoid `its`, `let`, `let!`, `specify`, `before`, and `subject`.
-* Avoid using instance variables in tests.
 * Avoid scenario titles that add no information, such as "successfully."
 * Avoid scenario titles that repeat the feature title.
 * Avoid the `private` keyword in specs.
 * Don't prefix `it` block descriptions with 'should'.
-* Include the Features module in RSpec scenarios with `:type => :feature` set.
 * Name outer `describe` blocks after the method under test. Use `.method`
   for class methods and `#method` for instance methods.
 * Order ActiveRecord association tests alphabetically by attribute name.
@@ -179,14 +153,9 @@ Testing
 * Order factory attributes: implicit attributes, explicit attributes,
   child factory definitions. Each section's attributes are alphabetical.
 * Order factory definitions alphabetically by factory name.
-* Place helper methods for feature specs directly in a top-level `Features`
-  module.
 * Prefer `eq` to `==` in RSpec.
 * Separate setup, exercise, verification, and teardown phases with newlines.
-* Use an `it` example for each execution path through the method.
 * Use one factories.rb file per project.
-* Use [stubs and spies](http://goo.gl/EciDJ) (not mocks) in isolated tests.
-* Use a single level of abstraction within scenarios.
 * Use names like `ROLE_ACTION_spec.rb`, such as
   `user_changes_password_spec.rb`, for feature spec file names.
 * Use only one `feature` block per feature spec file.
