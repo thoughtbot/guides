@@ -56,7 +56,6 @@ Sass
 * Order properties within rule sets alphabetically.
 * Leave a blank line between rule sets.
 
-
 CoffeeScript
 ------------
 
@@ -109,7 +108,6 @@ Rails
 * Avoid `member` and `collection` routes.
 * Avoid the `:except` option in routes.
 * Don't use protected controller methods.
-  of models.
 * Name date columns with `_on` suffixes.
 * Name datetime columns with `_at` suffixes.
 * Name initializers for their gem name.

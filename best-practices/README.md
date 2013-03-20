@@ -56,6 +56,7 @@ Rails
   change can be solved with another migration.
 * Don't reference a model class directly from a view.
 * Don't use SQL or SQL fragments (`where('inviter_id IS NOT NULL')`) outside
+  of models.
 * If there are default values, set them in migrations.
 * Keep the `db/schema.rb` under version control.
 * Use SQL, not `ActiveRecord` models, in migrations.
