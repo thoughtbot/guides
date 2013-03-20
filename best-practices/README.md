@@ -54,8 +54,24 @@ Rails
   `update_attribute`, and `toggle`.
 * Don't change a migration after it has been merged into master if the desired
   change can be solved with another migration.
+* Don't reference a model class directly from a view.
+* Don't use SQL or SQL fragments (`where('inviter_id IS NOT NULL')`) outside
+  of models.
+* If there are default values, set them in migrations.
+* Keep `db/schema.rb` or `db/development_structure.sql` under version control.
+* Use SQL, not `ActiveRecord` models, in migrations.
+* Use `_path`, not `_url`, for named routes everywhere except mailer views.
 * Validate the associated `belongs_to` object (`user`), not the database
   column (`user_id`).
+
+Testing
+-------
+
+* Avoid `its`, `let`, `let!`, `specify`, `before`, and `subject` in RSpec.
+* Avoid using instance variables in tests.
+* Use an `it` example or test method for each execution path through the method.
+* Use [stubs and spies](http://goo.gl/EciDJ) (not mocks) in isolated tests.
+* Use a single level of abstraction within scenarios.
 
 Bundler
 -------
@@ -106,6 +122,16 @@ Testing
 * Use a [Fake](http://goo.gl/YR7Hh) to stub requests to external services.
 * Use integration tests to execute the entire app.
 * Use non-[SUT](http://goo.gl/r5Ti2) methods in expectations when possible.
+
+JavaScript
+----------
+
+* Use CoffeeScript.
+
+CSS
+---
+
+* Use Sass.
 
 Browsers
 --------
