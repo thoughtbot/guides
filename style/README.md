@@ -145,6 +145,7 @@ Testing
 * Avoid scenario titles that repeat the feature title.
 * Avoid the `private` keyword in specs.
 * Don't prefix `it` block descriptions with 'should'.
+* Include the Features module in RSpec scenarios with `:type => :feature` set.
 * Name outer `describe` blocks after the method under test. Use `.method`
   for class methods and `#method` for instance methods.
 * Order ActiveRecord association tests alphabetically by attribute name.
@@ -153,6 +154,8 @@ Testing
 * Order factory attributes: implicit attributes, explicit attributes,
   child factory definitions. Each section's attributes are alphabetical.
 * Order factory definitions alphabetically by factory name.
+* Place helper methods for feature specs directly in a top-level `Features`
+  module.
 * Prefer `eq` to `==` in RSpec.
 * Separate setup, exercise, verification, and teardown phases with newlines.
 * Use one factories.rb file per project.

@@ -69,9 +69,6 @@ Testing
 
 * Avoid `its`, `let`, `let!`, `specify`, `before`, and `subject` in RSpec.
 * Avoid using instance variables in tests.
-* Include the Features module in RSpec scenarios with `:type => :feature` set.
-* Place helper methods for feature specs directly in a top-level `Features`
-  module.
 * Use an `it` example or test method for each execution path through the method.
 * Use [stubs and spies](http://goo.gl/EciDJ) (not mocks) in isolated tests.
 * Use a single level of abstraction within scenarios.
