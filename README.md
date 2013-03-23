@@ -27,6 +27,7 @@ Credits
 
 RevUnit forked this repository from thoughtbot and we give attribution credit to them here. We will build on top
 of this and add our own guidelines and rules but thoughtbot definitely gave us a great starting point. Thanks thoughtbot!
+
 ![thoughtbot](http://thoughtbot.com/images/tm/logo.png)
 
 License
