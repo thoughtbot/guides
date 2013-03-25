@@ -59,6 +59,8 @@ Rails
   of models.
 * If there are default values, set them in migrations.
 * Keep `db/schema.rb` or `db/development_structure.sql` under version control.
+* Specify the Ruby version and patch level to be used on the project in the
+  [`.ruby-version`](https://gist.github.com/fnichol/1912050) file.
 * Use SQL, not `ActiveRecord` models, in migrations.
 * Use `_path`, not `_url`, for named routes everywhere except mailer views.
 * Validate the associated `belongs_to` object (`user`), not the database
