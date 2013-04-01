@@ -60,8 +60,9 @@ Rails
 * If there are default values, set them in migrations.
 * Keep `db/schema.rb` or `db/development_structure.sql` under version control.
 * Use SQL, not `ActiveRecord` models, in migrations.
-* Use `_path`, not `_url`, for named routes everywhere except mailer views and
+* Use `_url` suffixes for named routes in mailer views and
   [redirects](http://www.w3.org/Protocols/rfc2616/rfc2616-sec14.html#sec14.30).
+  Use `_path` suffixes for named routes everywhere else.
 * Validate the associated `belongs_to` object (`user`), not the database
   column (`user_id`).
 
