@@ -62,7 +62,9 @@ Rails
 * Use the [`.ruby-version`](https://gist.github.com/fnichol/1912050) file
   convention to specify the Ruby version and patch level for a project.
 * Use SQL, not `ActiveRecord` models, in migrations.
-* Use `_path`, not `_url`, for named routes everywhere except mailer views.
+* Use `_url` suffixes for named routes in mailer views and
+  [redirects](http://www.w3.org/Protocols/rfc2616/rfc2616-sec14.html#sec14.30).
+  Use `_path` suffixes for named routes everywhere else.
 * Validate the associated `belongs_to` object (`user`), not the database
   column (`user_id`).
 
