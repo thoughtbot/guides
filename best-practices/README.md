@@ -120,11 +120,13 @@ Postgres
   efficiently. Optimize later with a [compound index] if needed.
 * Consider a [partial index] for queries on booleans.
 * Constrain most columns as [`NOT NULL`].
+* [Index foreign keys].
 
 [`NOT NULL`]: http://goo.gl/0GeBr
 [combines multiple indexes]: http://goo.gl/pY3Po
 [compound index]: http://www.postgresql.org/docs/9.2/static/indexes-bitmap-scans.html
 [partial index]: http://goo.gl/YC8Jt
+[Index foreign keys]: https://tomafro.net/2009/08/using-indexes-in-rails-index-your-associations
 
 Background Jobs
 ---------------
