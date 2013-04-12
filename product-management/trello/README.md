@@ -91,7 +91,7 @@ product manager runs the meeting like this:
   fixing what's broken first.
 * Review the Engineering & Refactoring board. Pull cards into Next Up based on
   what the designers and developers believe is appropriate given the previously
-  stated Product Product Design, and Bugs.
+  stated Product Design, and Bugs.
 
 Weekly Planning Meeting (30 minutes)
 ------------------------------------
