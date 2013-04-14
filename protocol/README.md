@@ -57,7 +57,7 @@ Set up the app's dependencies.
 Use [Heroku config](https://github.com/ddollar/heroku-config) to get `ENV`
 variables.
 
-    heroku config:pull -r staging
+    heroku config:pull --remote staging
 
 Delete extra lines in `.env`, leaving only those needed for app to function
 properly. For example: `BRAINTREE_MERCHANT_ID` and `S3_SECRET`.
@@ -85,21 +85,25 @@ Write a feature
 Create a local feature branch based off master.
 
     git checkout master
-    git pull --rebase
-    git checkout -b your-initials-new-feature
+    git pull
+    git checkout -b <branch-name>
+
+Prefix the branch name with your initials.
 
 Rebase frequently to incorporate upstream changes.
 
     git fetch origin
     git rebase origin/master
-    <resolve conflicts>
 
-When feature is complete and tests pass, commit the changes.
+Resolve conflicts. When feature is complete and tests pass, stage the changes.
 
     rake
-    git add -A
+    git add --all
+
+When you've staged the changes, commit them.
+
     git status
-    git commit -v
+    git commit --verbose
 
 Write a [good commit message](http://goo.gl/w11us). Example format:
 
@@ -112,9 +116,9 @@ Write a [good commit message](http://goo.gl/w11us). Example format:
 
 Share your branch.
 
-    git push origin [branch]
+    git push origin <branch-name>
 
-Submit a [Github pull request](http://goo.gl/Kmdee).
+Submit a [GitHub pull request](http://goo.gl/Kmdee).
 
 Ask for a code review in [Campfire](http://campfirenow.com).
 
@@ -130,7 +134,7 @@ web interface or in Campfire.
 
 For changes which they can make themselves, they check out the branch.
 
-    git checkout <branch>
+    git checkout <branch-name>
     rake db:migrate
     rake
     git diff staging/master..HEAD
@@ -146,24 +150,25 @@ Merge
 Rebase interactively. Squash commits like "Fix whitespace" into one or a
 small number of valuable commit(s). Edit commit messages to reveal intent.
 
+    git fetch origin
     git rebase -i origin/master
     rake
 
 View a list of new commits. View changed files. Merge branch into master.
 
-    git log origin/master..[branch]
+    git log origin/master..<branch-name>
     git diff --stat origin/master
     git checkout master
-    git merge [branch] --ff-only
+    git merge <branch-name> --ff-only
     git push
 
 Delete your remote feature branch.
 
-    git push origin :[branch]
+    git push origin --delete <branch-name>
 
 Delete your local feature branch.
 
-    git branch -d [branch]
+    git branch --delete <branch-name>
 
 Deploy
 ------
@@ -174,19 +179,16 @@ View a list of new commits. View changed files. Deploy to
     git fetch staging
     git log staging/master..master
     git diff --stat staging/master
-    git push staging master
+    git push staging
 
-Run migrations (if necessary).
+If necessary, run migrations and restart the dynos.
 
-    heroku run rake db:migrate -r staging
-
-Restart the dynos if migrations were run.
-
-    heroku restart -r staging
+    heroku run rake db:migrate --remote staging
+    heroku restart --remote staging
 
 [Introspect](http://goo.gl/tTgVF) to make sure everything's ok.
 
-    watch heroku ps -r staging
+    watch heroku ps --remote staging
 
 Test the feature in browser.
 
@@ -195,10 +197,10 @@ Deploy to production.
     git fetch production
     git log production/master..master
     git diff --stat production/master
-    git push production master
-    heroku run rake db:migrate -r production
-    heroku restart -r production
-    watch heroku ps -r production
+    git push production
+    heroku run rake db:migrate --remote production
+    heroku restart --remote production
+    watch heroku ps --remote production
 
 Watch logs and metrics dashboards.
 
@@ -209,7 +211,7 @@ Set Up Production Environment
 
 * Make sure that your
   [`Procfile`](https://devcenter.heroku.com/articles/procfile)
-  is set up to run thin.
+  is set up to run Unicorn.
 * Make sure the PG Backups add-on is enabled.
 * Create a read-only [Heroku Follower](http://goo.gl/xWDMx) for your
   production database. If a Heroku database outage occurs, Heroku can use the
