@@ -11,6 +11,11 @@ Install the latest version of Xcode from the App Store.
 Set up your laptop with [this script](https://github.com/thoughtbot/laptop)
 and [these dotfiles](https://github.com/thoughtbot/dotfiles).
 
+The dotfiles provide aliases such as `g` for `git`, git wrappers such as
+`create-branch`, `merge-branch`, and `delete-branch`, and Heroku wrappers
+`staging` for `heroku --remote staging` and `production` for `heroku --remote
+production`.
+
 Create Rails app
 ----------------
 
@@ -47,7 +52,7 @@ Set up Rails app
 
 Get the code.
 
-    git clone git@github.com:organization/app.git
+    g clone git@github.com:organization/app.git
 
 Set up the app's dependencies.
 
@@ -57,7 +62,7 @@ Set up the app's dependencies.
 Use [Heroku config](https://github.com/ddollar/heroku-config) to get `ENV`
 variables.
 
-    heroku config:pull -r staging
+    staging config:pull
 
 Delete extra lines in `.env`, leaving only those needed for app to function
 properly. For example: `BRAINTREE_MERCHANT_ID` and `S3_SECRET`.
@@ -84,22 +89,25 @@ Write a feature
 
 Create a local feature branch based off master.
 
-    git checkout master
-    git pull --rebase
-    git checkout -b your-initials-new-feature
+    g co master
+    g pull
+    g create-branch [branch-name]
+
+Prefix the branch name with your initials.
 
 Rebase frequently to incorporate upstream changes.
 
-    git fetch origin
-    git rebase origin/master
-    <resolve conflicts>
+    g rebase-origin
 
-When feature is complete and tests pass, commit the changes.
+Resolve conflicts. When feature is complete and tests pass, stage the changes.
 
     rake
-    git add -A
-    git status
-    git commit -v
+    g ap
+
+When you've staged the chunks you want to group together, commit the changes.
+
+    g st
+    g ci
 
 Write a [good commit message](http://goo.gl/w11us). Example format:
 
@@ -112,9 +120,9 @@ Write a [good commit message](http://goo.gl/w11us). Example format:
 
 Share your branch.
 
-    git push origin [branch]
+    g push
 
-Submit a [Github pull request](http://goo.gl/Kmdee).
+Submit a [GitHub pull request](http://goo.gl/Kmdee).
 
 Ask for a code review in [Campfire](http://campfirenow.com).
 
@@ -130,10 +138,10 @@ web interface or in Campfire.
 
 For changes which they can make themselves, they check out the branch.
 
-    git checkout <branch>
+    g co [branch-name]
     rake db:migrate
     rake
-    git diff staging/master..HEAD
+    g diff staging/master..HEAD
 
 They make small changes right in the branch, test the feature in browser,
 run tests, commit, and push.
@@ -146,24 +154,19 @@ Merge
 Rebase interactively. Squash commits like "Fix whitespace" into one or a
 small number of valuable commit(s). Edit commit messages to reveal intent.
 
-    git rebase -i origin/master
+    g rebase-origin
     rake
 
 View a list of new commits. View changed files. Merge branch into master.
 
-    git log origin/master..[branch]
-    git diff --stat origin/master
-    git checkout master
-    git merge [branch] --ff-only
-    git push
+    g log origin/master..[branch-name]
+    g diff --stat origin/master
+    g merge-branch
+    g push
 
-Delete your remote feature branch.
+Delete your remote and local feature branches.
 
-    git push origin :[branch]
-
-Delete your local feature branch.
-
-    git branch -d [branch]
+    g delete-branch [branch-name]
 
 Deploy
 ------
@@ -171,34 +174,29 @@ Deploy
 View a list of new commits. View changed files. Deploy to
 [Heroku](https://devcenter.heroku.com/articles/quickstart) staging.
 
-    git fetch staging
-    git log staging/master..master
-    git diff --stat staging/master
-    git push staging master
+    g fetch staging
+    g log staging/master..master
+    g diff --stat staging/master
+    g push staging
 
-Run migrations (if necessary).
+Run migrations (if necessary) and restart the dynos.
 
-    heroku run rake db:migrate -r staging
-
-Restart the dynos if migrations were run.
-
-    heroku restart -r staging
+    staging migrate
 
 [Introspect](http://goo.gl/tTgVF) to make sure everything's ok.
 
-    watch heroku ps -r staging
+    watch staging ps
 
 Test the feature in browser.
 
 Deploy to production.
 
-    git fetch production
-    git log production/master..master
-    git diff --stat production/master
-    git push production master
-    heroku run rake db:migrate -r production
-    heroku restart -r production
-    watch heroku ps -r production
+    g fetch production
+    g log production/master..master
+    g diff --stat production/master
+    g push production master
+    production migrate
+    watch production ps
 
 Watch logs and metrics dashboards.
 
@@ -209,7 +207,7 @@ Set Up Production Environment
 
 * Make sure that your
   [`Procfile`](https://devcenter.heroku.com/articles/procfile)
-  is set up to run thin.
+  is set up to run Unicorn.
 * Make sure the PG Backups add-on is enabled.
 * Create a read-only [Heroku Follower](http://goo.gl/xWDMx) for your
   production database. If a Heroku database outage occurs, Heroku can use the
