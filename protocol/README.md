@@ -164,7 +164,7 @@ View a list of new commits. View changed files. Merge branch into master.
 
 Delete your remote feature branch.
 
-    git push origin :<branch-name>
+    git push origin --delete <branch-name>
 
 Delete your local feature branch.
 
