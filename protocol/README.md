@@ -11,10 +11,9 @@ Install the latest version of Xcode from the App Store.
 Set up your laptop with [this script](https://github.com/thoughtbot/laptop)
 and [these dotfiles](https://github.com/thoughtbot/dotfiles).
 
-The dotfiles provide aliases such as `g` for `git`, git wrappers such as
-`create-branch`, `merge-branch`, and `delete-branch`, and Heroku wrappers
-`staging` for `heroku --remote staging` and `production` for `heroku --remote
-production`.
+The dotfiles provide git wrappers such as `create-branch`, `merge-branch`, and
+`delete-branch` and Heroku wrappers `staging` for `heroku --remote staging` and
+`production` for `heroku --remote production`.
 
 Create Rails app
 ----------------
@@ -52,7 +51,7 @@ Set up Rails app
 
 Get the code.
 
-    g clone git@github.com:organization/app.git
+    git clone git@github.com:organization/app.git
 
 Set up the app's dependencies.
 
@@ -89,25 +88,25 @@ Write a feature
 
 Create a local feature branch based off master.
 
-    g co master
-    g pull
-    g create-branch [branch-name]
+    git checkout master
+    git pull
+    git create-branch [branch-name]
 
 Prefix the branch name with your initials.
 
 Rebase frequently to incorporate upstream changes.
 
-    g rebase-origin
+    git rebase-origin
 
 Resolve conflicts. When feature is complete and tests pass, stage the changes.
 
     rake
-    g ap
+    git add --patch
 
 When you've staged the chunks you want to group together, commit the changes.
 
-    g st
-    g ci
+    git status
+    git commit -v
 
 Write a [good commit message](http://goo.gl/w11us). Example format:
 
@@ -120,7 +119,7 @@ Write a [good commit message](http://goo.gl/w11us). Example format:
 
 Share your branch.
 
-    g push
+    git push
 
 Submit a [GitHub pull request](http://goo.gl/Kmdee).
 
@@ -138,10 +137,10 @@ web interface or in Campfire.
 
 For changes which they can make themselves, they check out the branch.
 
-    g co [branch-name]
+    git checkout [branch-name]
     rake db:migrate
     rake
-    g diff staging/master..HEAD
+    git diff staging/master..HEAD
 
 They make small changes right in the branch, test the feature in browser,
 run tests, commit, and push.
@@ -154,19 +153,19 @@ Merge
 Rebase interactively. Squash commits like "Fix whitespace" into one or a
 small number of valuable commit(s). Edit commit messages to reveal intent.
 
-    g rebase-origin
+    git rebase-origin
     rake
 
 View a list of new commits. View changed files. Merge branch into master.
 
-    g log origin/master..[branch-name]
-    g diff --stat origin/master
-    g merge-branch
-    g push
+    git log origin/master..[branch-name]
+    git diff --stat origin/master
+    git merge-branch
+    git push
 
 Delete your remote and local feature branches.
 
-    g delete-branch [branch-name]
+    git delete-branch [branch-name]
 
 Deploy
 ------
@@ -174,10 +173,10 @@ Deploy
 View a list of new commits. View changed files. Deploy to
 [Heroku](https://devcenter.heroku.com/articles/quickstart) staging.
 
-    g fetch staging
-    g log staging/master..master
-    g diff --stat staging/master
-    g push staging
+    git fetch staging
+    git log staging/master..master
+    git diff --stat staging/master
+    git push staging
 
 Run migrations (if necessary) and restart the dynos.
 
@@ -191,10 +190,10 @@ Test the feature in browser.
 
 Deploy to production.
 
-    g fetch production
-    g log production/master..master
-    g diff --stat production/master
-    g push production master
+    git fetch production
+    git log production/master..master
+    git diff --stat production/master
+    git push production master
     production migrate
     watch production ps
 
