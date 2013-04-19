@@ -1,7 +1,11 @@
 Product management process with Trello
 ======================================
 
-The product management process with [Trello](http://trello.com) spans multiple
+A Trello board is a software equivalent of a physical wall with columns of
+sticky notes. In Trello terminology, the wall is called a "board." The columns
+are called "lists." The sticky notes in columns are called "cards."
+
+Our product management process with [Trello](http://trello.com) spans multiple
 Trello boards:
 
 * Bugs
@@ -10,6 +14,9 @@ Trello boards:
 * Current
 
 ![Current](http://f.cl.ly/items/3H3i1M0Q1G1s2V3I433S/Screen%20Shot%202013-02-25%20at%209.08.22%20AM.png)
+
+"Current" is an example of a board. "In Progress" is an example of a list. "Set
+up Splunk for logging" is an example of a card.
 
 Cards from Product Design, Bugs, Engineering boards are pulled into the Next Up
 list on the Current board as described in the "Weekly Product Meeting" section
@@ -43,7 +50,7 @@ lists on this board:
 If a bug is labeled Critical, then it is pulled immediately into Next Up. If the
 bug is not critical, it stays in Bugs until the next product meeting.
 
-A bug has steps to reproduce the bug and optionally a screencast.
+A bug has steps to reproduce the bug and optionally a screenshot or screencast.
 
 Product Design
 --------------
@@ -81,6 +88,7 @@ Hangout. They load the product on a screen, focus on recent changes to it, and
 use the working app and Trello boards to plan the upcoming week's iteration. The
 product manager runs the meeting like this:
 
+* Archive the two-week old "Live (Week of [date])" list.
 * Review the Product Design board. Pull what we estimate to be an appropriate
   amount for this week into Next Up.
 * Re-sort the entire Next Up queue according to priority. Cards that were at the
@@ -139,5 +147,5 @@ on staging and are ready to be deployed (but not necessarily rolled out).
 
 There is no central chokepoint for releasing to production: everyone can do it.
 
-The cards in the Live (Week [date]) lists have been released. Each week has its
-own Live list so we can follow what got released when.
+The cards in the Live (Week of [date]) lists have been released. Each week has
+its own Live list so we can follow what got released when.
