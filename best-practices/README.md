@@ -52,6 +52,7 @@ Rails
 
 * Avoid bypassing validations with methods like `save(validate: false)`,
   `update_attribute`, and `toggle`.
+* Avoid naming methods after database columns in the same class.
 * Don't change a migration after it has been merged into master if the desired
   change can be solved with another migration.
 * Don't reference a model class directly from a view.
