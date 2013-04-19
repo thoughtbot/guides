@@ -168,7 +168,7 @@ Delete your remote feature branch.
 
 Delete your local feature branch.
 
-    git branch -d <branch-name>
+    git branch --delete <branch-name>
 
 Deploy
 ------
