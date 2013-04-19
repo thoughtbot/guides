@@ -86,7 +86,7 @@ Create a local feature branch based off master.
 
     git checkout master
     git pull
-    git checkout -b [branch-name]
+    git checkout -b <branch-name>
 
 Prefix the branch name with your initials.
 
@@ -116,7 +116,7 @@ Write a [good commit message](http://goo.gl/w11us). Example format:
 
 Share your branch.
 
-    git push origin [branch-name]
+    git push origin <branch-name>
 
 Submit a [GitHub pull request](http://goo.gl/Kmdee).
 
@@ -134,7 +134,7 @@ web interface or in Campfire.
 
 For changes which they can make themselves, they check out the branch.
 
-    git checkout [branch-name]
+    git checkout <branch-name>
     rake db:migrate
     rake
     git diff staging/master..HEAD
@@ -156,19 +156,19 @@ small number of valuable commit(s). Edit commit messages to reveal intent.
 
 View a list of new commits. View changed files. Merge branch into master.
 
-    git log origin/master..[branch-name]
+    git log origin/master..<branch-name>
     git diff --stat origin/master
     git checkout master
-    git merge [branch-name] --ff-only
+    git merge <branch-name> --ff-only
     git push
 
 Delete your remote feature branch.
 
-    git push origin :[branch-name]
+    git push origin :<branch-name>
 
 Delete your local feature branch.
 
-    git branch -d [branch-name]
+    git branch -d <branch-name>
 
 Deploy
 ------
