@@ -103,7 +103,7 @@ Resolve conflicts. When feature is complete and tests pass, stage the changes.
 When you've staged the changes, commit them.
 
     git status
-    git commit -v
+    git commit --verbose
 
 Write a [good commit message](http://goo.gl/w11us). Example format:
 
