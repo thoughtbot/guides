@@ -114,9 +114,6 @@ Rails
 -----
 
 * Avoid `member` and `collection` routes.
-* Avoid the `:except` option in routes.
-* Use the `:only` option to explicitly state exposed routes.
-* Order resourceful routes alphabetically by name.
 * Don't use protected controller methods.
 * Name date columns with `_on` suffixes.
 * Name datetime columns with `_at` suffixes.
@@ -129,6 +126,12 @@ Rails
   [`app/views/application`](http://goo.gl/5Z8Vv) directory.
 * Use `def self.method`, not the `scope :method` DSL.
 * Use the default `render 'partial'` syntax over `render partial: 'partial'`.
+
+Rails Routes
+-----------
+* Avoid the `:except` option in routes.
+* Order resourceful routes alphabetically by name.
+* Use the `:only` option to explicitly state exposed routes.
 
 Background Jobs
 ---------------
