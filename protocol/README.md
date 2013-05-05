@@ -94,6 +94,7 @@ Add Git Alias'
 Added the following to the ``~/.gitconfig`` file.
 
     [alias]
+      st = status
       pr = !hub pull-request
       create-branch = !sh -c 'git push origin HEAD:refs/heads/$1 && git fetch origin && git branch --track $1 origin/$1 && cd . && git checkout $1' -
       merge-branch = !git checkout master && git merge @{-1}
@@ -113,15 +114,14 @@ Rebase frequently to incorporate upstream changes.
 
     git rebase-origin
 
-Resolve conflicts. When feature is complete and tests pass, stage the changes.
+Resolve conflicts. When feature is complete and tests pass.
 
-    rake
-    git add --all
+    rake reports:all
 
 When you've staged the changes, commit them.
 
-    git status
-    git commit --verbose
+    git st
+    git commit -av
 
 Write a [good commit message](http://goo.gl/w11us). Example format:
 
