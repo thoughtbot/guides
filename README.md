@@ -3,7 +3,7 @@ Guides
 
 Guides for getting things done, programming well, and programming in style.
 
-<---* Product Management with [Trello](/product-management/trello)-->
+<!--- * Product Management with [Trello](/product-management/trello) -->
 * [Protocol](/protocol)
 * [Code Review](/code-review)
 * [Best Practices](/best-practices)
