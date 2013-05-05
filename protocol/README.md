@@ -83,6 +83,11 @@ Maintain a Rails app
 
 -->
 
+Install Hub
+-----------
+
+    brew install hub
+
 Add Git Alias'
 -------------
 
@@ -137,7 +142,7 @@ Submit a [GitHub pull request](http://goo.gl/Kmdee).
 
 Link to the code review in JIRA ticket comment.
 
-    "Ready for review: http://github.com/organization/project/pull/1"
+    @<Reviewer> Ready for review: http://github.com/organization/project/pull/1
 
 Ask for a code review in [Hipchat](http://hipchat.com).
 
