@@ -94,7 +94,7 @@ Add Git Alias'
 Added the following to the ``~/.gitconfig`` file.
 
     [alias]
-      pr = !hub pull-request -h master
+      pr = !hub pull-request
       create-branch = !sh -c 'git push origin HEAD:refs/heads/$1 && git fetch origin && git branch --track $1 origin/$1 && cd . && git checkout $1' -
       merge-branch = !git checkout master && git merge @{-1}
       rebase-origin = !git fetch origin && git rebase origin/master
