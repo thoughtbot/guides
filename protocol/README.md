@@ -83,10 +83,15 @@ Maintain a Rails app
 
 -->
 
-Install Hub
+Setup Hub
 -----------
+Install [hub](https://github.com/defunkt/hub)
 
     brew install hub
+
+Alias git to hub by adding this line to you ``.bash_profile`` or ``.profile``
+
+    alias git='hub'
 
 Add Git Alias'
 -------------
@@ -95,9 +100,10 @@ Added the following to the ``~/.gitconfig`` file.
 
     [alias]
       st = status
-      pr = !hub pull-request
+      pr = pull-request
       create-branch = !sh -c 'git push origin HEAD:refs/heads/$1 && git fetch origin && git branch --track $1 origin/$1 && cd . && git checkout $1' -
       merge-branch = !git checkout master && git merge @{-1}
+      delete-branch = !sh -c 'git push origin :refs/heads/$1 && git remote prune origin && git branch -D $1' -
       rebase-origin = !git fetch origin && git rebase origin/master
       irebase-origin = !git fetch origin && git rebase -i origin/master
 
