@@ -116,15 +116,11 @@ Create a local feature branch based off master.
 
 Prefix the branch name with your initials and postfix with JIRA ticket number.
 
-Rebase frequently to incorporate upstream changes.
+Rebase frequently to incorporate upstream changes and resolve conflicts as needed.
 
     git rebase-origin
 
-Resolve conflicts. When feature is complete and tests pass.
-
-    rake reports:all
-
-When you've staged the changes, commit them.
+Commit changes regularly.
 
     git st
     git commit -av
@@ -137,6 +133,10 @@ Write a [good commit message](http://goo.gl/w11us). Example format:
     * More information about commit (under 72 characters).
 
     http://project.management-system.com/ticket/123
+
+When feature is complete make sure all tests and reports pass.
+
+    rake reports:all
 
 Push your branch.
 
@@ -160,19 +160,14 @@ A team member other than the author reviews the pull request. They follow
 miscommunication.
 
 They make comments and ask questions directly on lines of code in the Github
-web interface or in Hipchat.
-
-For changes which they can make themselves, they check out the branch.
-
-    git checkout <branch-name>
-    rake db:migrate
-    rake
-    git diff staging/master..HEAD
-
-They make small changes right in the branch, test the feature in browser,
-run tests, commit, and push.
+web interface or in [Hipchat](http://hipchat.com).
 
 When satisfied, they comment on the pull request `Ready to merge.`
+
+The merge master for the project should then be asked to merge the branch.
+This can be done on Hipchat or by mentioning them in a JIRA comment.
+
+    `@<merge-master> Ready to merge.`
 
 Merge
 -----
@@ -181,23 +176,21 @@ Rebase interactively. Squash commits like "Fix whitespace" into one or a
 small number of valuable commit(s). Edit commit messages to reveal intent.
 
     git irebase-origin
-    rake
+
+Run all tests and validate code quality.
+
+    rake reports:all
 
 View a list of new commits. View changed files. Merge branch into master.
 
     git log origin/master..<branch-name>
     git diff --stat origin/master
-    git checkout master
-    git merge <branch-name> --ff-only
+    git merge-branch
     git push
 
-Delete your remote feature branch.
+Delete your local and remote feature branch.
 
-    git push origin --delete <branch-name>
-
-Delete your local feature branch.
-
-    git branch --delete <branch-name>
+    git delete-branch <branch-name>
 
 <!--
 
