@@ -40,7 +40,7 @@ Having your code reviewed
 * Seek to understand the reviewer's perspective.
 * Try to respond to every comment.
 * Wait to merge the branch until another person signs off.
-* Wait to merge the branch until Continuous Integration (TDDium, TravisCI, etc.)
+* Wait to merge the branch until Continuous Integration ([CodeClimate](https://codeclimate.com), [TravisCI](https://travis-ci.org), etc.)
   tells you the test suite is green in the branch.
 
 Reviewing code

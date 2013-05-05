@@ -3,6 +3,8 @@ Protocol
 
 A guide for getting things done.
 
+<!--
+
 Set up laptop
 -------------
 
@@ -79,21 +81,32 @@ Maintain a Rails app
 * Rebase frequently to incorporate upstream changes.
 * Use a [pull request](http://goo.gl/Kmdee) for code reviews.
 
+-->
+
+Add Git Alias'
+-------------
+
+Added the following to the ``~/.gitconfig`` file.
+
+    [alias]
+      pr = !hub pull-request -h master
+      create-branch = !sh -c 'git push origin HEAD:refs/heads/$1 && git fetch origin && git branch --track $1 origin/$1 && cd . && git checkout $1' -
+      merge-branch = !git checkout master && git merge @{-1}
+      rebase-origin = !git fetch origin && git rebase origin/master
+      irebase-origin = !git fetch origin && git rebase -i origin/master
+
 Write a feature
 ---------------
 
 Create a local feature branch based off master.
 
-    git checkout master
-    git pull
-    git checkout -b <branch-name>
+    git create-branch <branch-name>
 
 Prefix the branch name with your initials.
 
 Rebase frequently to incorporate upstream changes.
 
-    git fetch origin
-    git rebase origin/master
+    git rebase-origin
 
 Resolve conflicts. When feature is complete and tests pass, stage the changes.
 
@@ -120,7 +133,13 @@ Share your branch.
 
 Submit a [GitHub pull request](http://goo.gl/Kmdee).
 
-Ask for a code review in [Campfire](http://campfirenow.com).
+    git pr
+
+Link to the code review in JIRA ticket comment.
+
+    "Ready for review: http://github.com/organization/project/pull/1"
+
+Ask for a code review in [Hipchat](http://hipchat.com).
 
 Review code
 -----------
@@ -130,7 +149,7 @@ A team member other than the author reviews the pull request. They follow
 miscommunication.
 
 They make comments and ask questions directly on lines of code in the Github
-web interface or in Campfire.
+web interface or in Hipchat.
 
 For changes which they can make themselves, they check out the branch.
 
@@ -150,8 +169,7 @@ Merge
 Rebase interactively. Squash commits like "Fix whitespace" into one or a
 small number of valuable commit(s). Edit commit messages to reveal intent.
 
-    git fetch origin
-    git rebase -i origin/master
+    git irebase-origin
     rake
 
 View a list of new commits. View changed files. Merge branch into master.
@@ -169,6 +187,8 @@ Delete your remote feature branch.
 Delete your local feature branch.
 
     git branch --delete <branch-name>
+
+<!--
 
 Deploy
 ------
@@ -216,3 +236,5 @@ Set Up Production Environment
 * Create a read-only [Heroku Follower](http://goo.gl/xWDMx) for your
   production database. If a Heroku database outage occurs, Heroku can use the
   follower to get your app back up and running faster.
+
+-->
