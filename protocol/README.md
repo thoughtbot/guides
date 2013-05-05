@@ -106,9 +106,9 @@ Write a feature
 
 Create a local feature branch based off master.
 
-    git create-branch <feature>_<JIRA-id>
+    git create-branch <your-initials>_<feature>_<JIRA-id>
 
-Prefix the branch name with your initials.
+Prefix the branch name with your initials and postfix with JIRA ticket number.
 
 Rebase frequently to incorporate upstream changes.
 
@@ -132,9 +132,9 @@ Write a [good commit message](http://goo.gl/w11us). Example format:
 
     http://project.management-system.com/ticket/123
 
-Share your branch.
+Push your branch.
 
-    git push origin <branch-name>
+    git push
 
 Submit a [GitHub pull request](http://goo.gl/Kmdee).
 
