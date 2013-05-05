@@ -94,7 +94,8 @@ Add Git Alias'
 Added the following to the ``~/.gitconfig`` file.
 
     [alias]
-      pr = !hub pull-request -h master
+      st = status
+      pr = !hub pull-request
       create-branch = !sh -c 'git push origin HEAD:refs/heads/$1 && git fetch origin && git branch --track $1 origin/$1 && cd . && git checkout $1' -
       merge-branch = !git checkout master && git merge @{-1}
       rebase-origin = !git fetch origin && git rebase origin/master
@@ -105,23 +106,22 @@ Write a feature
 
 Create a local feature branch based off master.
 
-    git create-branch <feature>_<JIRA-id>
+    git create-branch <your-initials>_<feature>_<JIRA-id>
 
-Prefix the branch name with your initials.
+Prefix the branch name with your initials and postfix with JIRA ticket number.
 
 Rebase frequently to incorporate upstream changes.
 
     git rebase-origin
 
-Resolve conflicts. When feature is complete and tests pass, stage the changes.
+Resolve conflicts. When feature is complete and tests pass.
 
-    rake
-    git add --all
+    rake reports:all
 
 When you've staged the changes, commit them.
 
-    git status
-    git commit --verbose
+    git st
+    git commit -av
 
 Write a [good commit message](http://goo.gl/w11us). Example format:
 
@@ -132,9 +132,9 @@ Write a [good commit message](http://goo.gl/w11us). Example format:
 
     http://project.management-system.com/ticket/123
 
-Share your branch.
+Push your branch.
 
-    git push origin <branch-name>
+    git push
 
 Submit a [GitHub pull request](http://goo.gl/Kmdee).
 
