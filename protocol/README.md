@@ -100,7 +100,7 @@ Write a feature
 
 Create a local feature branch based off master.
 
-    git create-branch <branch-name>
+    git create-branch <feature>_<JIRA-id>
 
 Prefix the branch name with your initials.
 
