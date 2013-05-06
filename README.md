@@ -27,7 +27,7 @@ Credits
 
 This is a branch of the original [Thoughtbot, inc](http://thoughtbot.com/community) [Guides](https://github.com/thoughtbot/guides)
 
-The original guides have been modified for use internally by [DigitalAugment Inc.](http://digitalaugment.com)
+The original guides have been modified for use by [DigitalAugment Inc.](http://digitalaugment.com)
 
 Thank you, [contributors](https://github.com/thoughtbot/guides/graphs/contributors)!
 
