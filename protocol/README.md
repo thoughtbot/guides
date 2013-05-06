@@ -112,9 +112,13 @@ Write a feature
 
 Create a local feature branch based off master.
 
-    git create-branch <your-initials>_<feature>_<JIRA-id>
+    git create-branch <your-initials>_<feature>_<JIRA-id (just number)>
 
 Prefix the branch name with your initials and postfix with JIRA ticket number.
+
+Here is an example branch name:
+
+    mo_awesome_feature_123
 
 Rebase frequently to incorporate upstream changes and resolve conflicts as needed.
 
@@ -131,6 +135,10 @@ Write a [good commit message](http://goo.gl/w11us). Example format:
 
     * More information about commit (under 72 characters).
     * More information about commit (under 72 characters).
+
+Here is an example commit message:
+
+    Allow users to sign in with username. BVR-123
 
 When feature is complete make sure all tests and reports pass.
 
