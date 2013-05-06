@@ -127,12 +127,10 @@ Commit changes regularly.
 
 Write a [good commit message](http://goo.gl/w11us). Example format:
 
-    Present-tense summary under 50 characters
+    Present-tense summary under 50 characters. Add JIRA ticket number at end of summary.
 
     * More information about commit (under 72 characters).
     * More information about commit (under 72 characters).
-
-    http://project.management-system.com/ticket/123
 
 When feature is complete make sure all tests and reports pass.
 
