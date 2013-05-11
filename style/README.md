@@ -54,6 +54,23 @@ Organization
 * Order methods so that methods are as close as possible to other methods they
   call.
 
+Sandi Metz’ rules for developers
+--------------------------------
+
+1. Classes can be no longer than a hundred lines of code.
+2. Methods can be no longer than five lines of code.
+3. Method calls can have no more than four parameters. Hash options _are_
+   parameters.
+4. Controllers can only instantiate one object to do whatever it is that
+   needs to be done.
+
+   This has a couple of corollaries for views:
+
+   1. Views can only know about one instance variable.
+   2. Views should only send messages to that object i.e., no Demeter
+      violations. (`@object.collaborator.value` is not allowed)
+
+
 Sass
 ----
 
