@@ -76,9 +76,12 @@ Testing
 
 * Avoid `its`, `let`, `let!`, `specify`, `before`, and `subject` in RSpec.
 * Avoid using instance variables in tests.
-* Use an `it` example or test method for each execution path through the method.
+* Don't test private methods.
 * Use [stubs and spies](http://goo.gl/EciDJ) (not mocks) in isolated tests.
 * Use a single level of abstraction within scenarios.
+* Use an `it` example or test method for each execution path through the method.
+* Use assertions about state for incoming messages.
+* Use stubs and spies to assert you sent outgoing messages.
 
 Bundler
 -------
