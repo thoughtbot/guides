@@ -52,6 +52,7 @@ Rails
 
 * Avoid bypassing validations with methods like `save(validate: false)`,
   `update_attribute`, and `toggle`.
+* Avoid instantiating more than one object in controllers.
 * Avoid naming methods after database columns in the same class.
 * Don't change a migration after it has been merged into master if the desired
   change can be solved with another migration.
@@ -60,9 +61,10 @@ Rails
   of models.
 * If there are default values, set them in migrations.
 * Keep `db/schema.rb` or `db/development_structure.sql` under version control.
+* Use only one instance variable in each view.
+* Use SQL, not `ActiveRecord` models, in migrations.
 * Use the [`.ruby-version`](https://gist.github.com/fnichol/1912050) file
   convention to specify the Ruby version and patch level for a project.
-* Use SQL, not `ActiveRecord` models, in migrations.
 * Use `_url` suffixes for named routes in mailer views and
   [redirects](http://www.w3.org/Protocols/rfc2616/rfc2616-sec14.html#sec14.30).
   Use `_path` suffixes for named routes everywhere else.
