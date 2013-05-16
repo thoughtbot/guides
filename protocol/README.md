@@ -112,13 +112,13 @@ Write a feature
 
 Create a local feature branch based off master.
 
-    git create-branch <your-initials>_<feature>_<JIRA-id (just number)>
+    git create-branch <your-initials>-<feature>-<JIRA-id (just number)>
 
 Prefix the branch name with your initials and postfix with JIRA ticket number.
 
 Here is an example branch name:
 
-    mo_awesome_feature_123
+    mo-awesome-feature-123
 
 Rebase frequently to incorporate upstream changes and resolve conflicts as needed.
 
@@ -152,7 +152,7 @@ Submit a [GitHub pull request](http://goo.gl/Kmdee).
 
     git pr
 
-Link to the code review in JIRA ticket comment.
+Link to the code review in JIRA issue comment, assign to reviewer and resolve issue.
 
     @<Reviewer> Ready for review: http://github.com/organization/project/pull/1
 
