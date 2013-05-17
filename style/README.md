@@ -101,6 +101,8 @@ Ruby
 * Use `def` with parentheses when there are arguments.
 * Use `each`, not `for`, for iteration.
 * Use heredocs for multi-line strings.
+* Use `self` explicitly only for class methods (`def self.method`) and
+  assignments (`self.attribute =`).
 
 ERb
 ---
