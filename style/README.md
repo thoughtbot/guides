@@ -85,6 +85,8 @@ Ruby
 * Avoid ternary operators (`boolean ? true : false`). Use multi-line `if`
   instead to emphasize code branches.
 * Avoid explicit return statements.
+* Don't use `self` explicitly anywhere except class methods (`def self.method`)
+  and assignments (`self.attribute =`).
 * Prefer `detect` over `find`.
 * Prefer `inject` over `reduce`.
 * Prefer `map` over `collect`.
