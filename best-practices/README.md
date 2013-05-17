@@ -20,8 +20,9 @@ Object-Oriented Design
 * Limit collaborators of an object (entities an object depends on).
 * Limit an object's dependencies (entities that depend on an object).
 * Prefer composition over inheritance.
-* Prefer small methods. One line is best.
-* Prefer small objects with a single, well-defined responsibility.
+* Prefer small methods. Between one and five lines is best.
+* Prefer small objects with a single, well-defined responsibility. When an
+  object exceeds 100 lines, it may be doing too many things.
 * [Tell, don't ask](http://goo.gl/Ztawt).
 
 Ruby
@@ -52,6 +53,7 @@ Rails
 
 * Avoid bypassing validations with methods like `save(validate: false)`,
   `update_attribute`, and `toggle`.
+* Avoid instantiating more than one object in controllers.
 * Avoid naming methods after database columns in the same class.
 * Don't change a migration after it has been merged into master if the desired
   change can be solved with another migration.
@@ -60,9 +62,10 @@ Rails
   of models.
 * If there are default values, set them in migrations.
 * Keep `db/schema.rb` or `db/development_structure.sql` under version control.
+* Use only one instance variable in each view.
+* Use SQL, not `ActiveRecord` models, in migrations.
 * Use the [`.ruby-version`](https://gist.github.com/fnichol/1912050) file
   convention to specify the Ruby version and patch level for a project.
-* Use SQL, not `ActiveRecord` models, in migrations.
 * Use `_url` suffixes for named routes in mailer views and
   [redirects](http://www.w3.org/Protocols/rfc2616/rfc2616-sec14.html#sec14.30).
   Use `_path` suffixes for named routes everywhere else.
@@ -74,9 +77,14 @@ Testing
 
 * Avoid `its`, `let`, `let!`, `specify`, `before`, and `subject` in RSpec.
 * Avoid using instance variables in tests.
-* Use an `it` example or test method for each execution path through the method.
+* Don't test private methods.
 * Use [stubs and spies](http://goo.gl/EciDJ) (not mocks) in isolated tests.
 * Use a single level of abstraction within scenarios.
+* Use an `it` example or test method for each execution path through the method.
+* Use [assertions about state] for incoming messages.
+* Use stubs and spies to assert you sent outgoing messages.
+
+[assertions about state]: https://speakerdeck.com/skmetz/magic-tricks-of-testing-railsconf?slide=51
 
 Bundler
 -------
