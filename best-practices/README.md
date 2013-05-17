@@ -20,8 +20,9 @@ Object-Oriented Design
 * Limit collaborators of an object (entities an object depends on).
 * Limit an object's dependencies (entities that depend on an object).
 * Prefer composition over inheritance.
-* Prefer small methods. One line is best.
-* Prefer small objects with a single, well-defined responsibility.
+* Prefer small methods. Between one and five lines is best.
+* Prefer small objects with a single, well-defined responsibility. When an
+  object exceeds 100 lines, it may be doing too many things.
 * [Tell, don't ask](http://goo.gl/Ztawt).
 
 Ruby
