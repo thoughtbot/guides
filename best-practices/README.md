@@ -81,8 +81,10 @@ Testing
 * Use [stubs and spies](http://goo.gl/EciDJ) (not mocks) in isolated tests.
 * Use a single level of abstraction within scenarios.
 * Use an `it` example or test method for each execution path through the method.
-* Use assertions about state for incoming messages.
+* Use [assertions about state] for incoming messages.
 * Use stubs and spies to assert you sent outgoing messages.
+
+[assertions about state]: https://speakerdeck.com/skmetz/magic-tricks-of-testing-railsconf?slide=51
 
 Bundler
 -------
