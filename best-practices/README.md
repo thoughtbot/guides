@@ -121,7 +121,7 @@ Background Jobs
 Email
 -----
 
-* Use [SendGrid](http://goo.gl/Kxu9W) or [Amazon SES](http://goo.gl/A5jAA) to
+* Use [SendGrid](http://goo.gl/Kxu9W) or [Amazon SES](http://goo.gl/A5jAA) or [Mailtrap](goo.gl/9ltr0) to
   deliver email in staging and production environments.
 * Use a tool like [mail_view](http://goo.gl/HhX8y) to look at each created or
   updated mailer view before merging.
