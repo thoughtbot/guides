@@ -96,7 +96,7 @@ Rebase frequently to incorporate upstream changes.
 
 When feature is complete and tests pass, commit the changes.
 
-    rake
+    rake (or applicable platform tests execution)
     git add -A
     git status
     git commit -v
@@ -208,7 +208,7 @@ Deploying iOS to Testflight
 
 * Testflight Desktop Application for Mac
 
-Steps:
+**Steps:**
 
 Bump build number
 
@@ -218,7 +218,7 @@ Tag the build with an annotated git tag. Append the beta identifier for all Test
 
 	git tag -a v1.2.1-25-beta -m "v1.2.1-25-beta Testflight Release on 4June2013"
 
-Archive the application in Xcode 
+Archive the application in Xcode with RevUnit's enterprise provisioning profile and certificates.
 
 When the Testflight desktop app intercepts the build:
 
@@ -234,11 +234,13 @@ Deploying iOS to AppStore
 **Prerequisites:**
 
 * Have you opened a pull request to merge the development branch into master?
-* Has the release candidate been deployed to Testflight and verified by the product owner and the client?
+* Has the release candidate been deployed to Testflight and verified by the product owner and the client? Never push a build that hasn't been sent to testflight and verified.
 * Has the app been setup as `Ready For Upload` in iTunes Connect?
 * Do we have a RevUnit login for iTunes Connect on the client's iTunes Connect account using the `contact+[appname]@revunit.com` format?
 * Has it passed all of the above requirements? 
-    
+
+**Steps:**
+
 View a list of new commits. View changed files. Know exactly what we're sending into the AppStore. Every team member should be intimate with and accountable for all code that makes it to production.
 
     git fetch dev
@@ -247,13 +249,15 @@ View a list of new commits. View changed files. Know exactly what we're sending 
 
 Ask for a final code review in Hipchat for the pull request from dev into master. It is important this is done by someone other than the person initiating a release build. All feature branches should have been code reviewed and pull requested into dev up to this point. This final pull request into master is the last checkpoint and review before AppStore deployment. Redundant, but a final quality control check.
 
-When :thumpsup:, close pull request and comment `Merged.`
+When :thumpsup: , close pull request and comment `Merged.`
 
 Tag the build with an annotated git tag
 
 	git tag -a v1.3.1-102 -m "v1.3.1-102 AppStore Release on 15June2013"
 	
-Archive in Xcode
+Archive in Xcode with the client's AppStore distribution provisioning profile and certificates.
+
+Validate the build
 
 Submit to AppStore through Xcode using the RevUnit iTunes connect account created for this specific project under the client's iTunes connect account.
 
