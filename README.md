@@ -1,9 +1,9 @@
-Guides
+RevGuides
 ======
 
 Guides for getting things done, programming well, and programming in style.
 
-* Product Management with [Trello](/product-management/trello)
+* Product Management
 * [Protocol](/protocol)
 * [Code Review](/code-review)
 * [Best Practices](/best-practices)
@@ -26,16 +26,13 @@ A note on the language:
 Credits
 -------
 
-Thank you, [contributors](https://github.com/thoughtbot/guides/graphs/contributors)!
+RevUnit forked this repository from thoughtbot and we give attribution credit to them here. We will build on top
+of this and add our own guidelines and rules but thoughtbot definitely gave us a great starting point. Thanks thoughtbot!
 
 ![thoughtbot](http://thoughtbot.com/images/tm/logo.png)
-
-Guides is maintained by [thoughtbot, inc](http://thoughtbot.com/community).
 
 License
 -------
 
-Guides is © 2013 thoughtbot, inc. It is distributed under the [Creative Commons
+RevGuides is © 2013 revunit, llc. It is distributed under the [Creative Commons
 Attribution License](http://creativecommons.org/licenses/by/3.0/).
-
-The names and logos for thoughtbot are trademarks of thoughtbot, inc.
