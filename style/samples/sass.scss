@@ -1,0 +1,40 @@
+section.application {
+  @extend %extend;
+  @include mixin;
+  attribute: value;
+
+  @include media(value) {
+    attribute: value;
+  }
+
+  &.additional-selector {
+    attribute: value;
+  }
+
+  &:hover {
+    attribute: value;
+  }
+
+  .news {
+    attribute: value;
+
+    article {
+
+      @extend media(value) {
+        attribute: value;
+      }
+
+      p {
+        attribute: value;
+      }
+    }
+  }
+
+  .sidebar {
+    attribute: value;
+
+    h2 {
+      attribute: value;
+    }
+  }
+}
