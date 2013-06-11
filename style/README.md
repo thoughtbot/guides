@@ -153,6 +153,13 @@ ERb
 
 * When wrapping long lines, keep the method name on the same line as the ERb
   interpolation operator and keep each method argument on its own line.
+* Prefer single quotes for strings.
+
+HTML
+----
+
+* Prefer single quotes for strings.
+
 
 Rails
 -----
