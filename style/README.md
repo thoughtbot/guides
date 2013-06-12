@@ -171,6 +171,7 @@ Testing
 * Place helper methods for feature specs directly in a top-level `Features`
   module.
 * Prefer `eq` to `==` in RSpec.
+* Use `not_to` instead of `to_not` in RSpec expectations.
 * Separate setup, exercise, verification, and teardown phases with newlines.
 * Use one factories.rb file per project.
 * Use names like `ROLE_ACTION_spec.rb`, such as
