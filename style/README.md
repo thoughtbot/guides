@@ -160,12 +160,6 @@ HTML
 
 * Prefer double quotes for strings.
 
-Haml
-----
-
-* Haml uses single quotes by default. Pass `--double-quote-attributes` to
-  change that.
-
 Rails
 -----
 
