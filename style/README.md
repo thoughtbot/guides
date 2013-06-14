@@ -177,6 +177,8 @@ Testing
 * Use names like `ROLE_ACTION_spec.rb`, such as
   `user_changes_password_spec.rb`, for feature spec file names.
 * Use only one `feature` block per feature spec file.
+* Use RSpec's [`expect`
+  syntax](http://myronmars.to/n/dev-blog/2012/06/rspecs-new-expectation-syntax).
 * Use scenario titles that describe the success and failure paths.
 * Use spec/features to store feature specs.
 * Use spec/support/features for support code related to feature specs.
