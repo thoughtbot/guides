@@ -103,8 +103,6 @@ Ruby
 * Use `def` with parentheses when there are arguments.
 * Use `each`, not `for`, for iteration.
 * Use heredocs for multi-line strings.
-* Use `if variable.present?` over `if variable`.
-* Use `if variable.blank?` over `unless variable` or `unless variable.present?`.
 
 ERb
 ---
@@ -133,6 +131,8 @@ Rails
 * Use `def self.method`, not the `scope :method` DSL.
 * Use the default `render 'partial'` syntax over `render partial: 'partial'`.
 * Use the `:only` option to explicitly state exposed routes.
+* Use `if variable.present?` over `if variable`.
+* Use `if variable.blank?` over `unless variable` or `unless variable.present?`.
 
 Background Jobs
 ---------------
