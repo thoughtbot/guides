@@ -58,8 +58,10 @@ Sass
 ----
 
 * Use the *Scss* syntax.
-* Use dashes when naming mixins, extends, classes or IDs: `span-columns` not `span_columns` or `spanColumns`.
-* Use descriptive names and write them in full-words: `$visual-grid-color` not `$color` or `$vslgrd-clr`.
+* Use dashes when naming mixins, extends, classes or IDs: `span-columns` not
+  `span_columns` or `spanColumns`.
+* Use descriptive names and write them in full-words: `$visual-grid-color` not
+  `$color` or `$vslgrd-clr`.
 * Use space between property and value: `width: 20px` not `width:20px`.
 * Order properties within rule sets alphabetically.
 * Leave a blank line between rule sets.
@@ -101,6 +103,8 @@ Ruby
 * Use `def` with parentheses when there are arguments.
 * Use `each`, not `for`, for iteration.
 * Use heredocs for multi-line strings.
+* Use `if variable.present?` over `if variable`.
+* Use `if variable.blank?` over `unless variable` or `unless variable.present?`.
 
 ERb
 ---
