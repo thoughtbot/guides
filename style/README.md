@@ -130,6 +130,8 @@ Rails
   [`app/views/application`](http://goo.gl/5Z8Vv) directory.
 * Use `def self.method`, not the `scope :method` DSL.
 * Use the default `render 'partial'` syntax over `render partial: 'partial'`.
+* Use `if variable.present?` over `if variable`.
+* Use `if variable.blank?` over `unless variable` or `unless variable.present?`.
 
 Rails Routes
 ------------
@@ -137,8 +139,6 @@ Rails Routes
 * Avoid the `:except` option in routes.
 * Order resourceful routes alphabetically by name.
 * Use the `:only` option to explicitly state exposed routes.
-* Use `if variable.present?` over `if variable`.
-* Use `if variable.blank?` over `unless variable` or `unless variable.present?`.
 
 Background Jobs
 ---------------
