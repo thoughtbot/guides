@@ -3,7 +3,7 @@ Guides
 
 Guides for getting things done, programming well, and programming in style.
 
-* Product Management with [Trello](/product-management/trello)
+<!--- * Product Management with [Trello](/product-management/trello) -->
 * [Protocol](/protocol)
 * [Code Review](/code-review)
 * [Best Practices](/best-practices)
@@ -26,11 +26,13 @@ A note on the language:
 Credits
 -------
 
+This is a branch of the original [Thoughtbot, inc](http://thoughtbot.com/community) [Guides](https://github.com/thoughtbot/guides)
+
+The original guides have been modified for use by [DigitalAugment Inc.](http://digitalaugment.com)
+
 Thank you, [contributors](https://github.com/thoughtbot/guides/graphs/contributors)!
 
 ![thoughtbot](http://thoughtbot.com/images/tm/logo.png)
-
-Guides is maintained by [thoughtbot, inc](http://thoughtbot.com/community).
 
 License
 -------

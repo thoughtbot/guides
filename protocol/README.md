@@ -3,6 +3,8 @@ Protocol
 
 A guide for getting things done.
 
+<!--
+
 Set up laptop
 -------------
 
@@ -79,48 +81,82 @@ Maintain a Rails app
 * Rebase frequently to incorporate upstream changes.
 * Use a [pull request](http://goo.gl/Kmdee) for code reviews.
 
+-->
+
+Setup Hub
+-----------
+Install [hub](https://github.com/defunkt/hub)
+
+    brew install hub
+
+Alias git to hub by adding this line to you ``.bash_profile`` or ``.profile``
+
+    alias git='hub'
+
+Add Git Alias'
+-------------
+
+Added the following to the ``~/.gitconfig`` file.
+
+    [alias]
+      st = status
+      pr = pull-request
+      create-branch = !sh -c 'git push origin HEAD:refs/heads/$1 && git fetch origin && git branch --track $1 origin/$1 && cd . && git checkout $1' -
+      merge-branch = !git checkout master && git merge @{-1}
+      delete-branch = !sh -c 'git push origin :refs/heads/$1 && git remote prune origin && git branch -D $1' -
+      rebase-origin = !git fetch origin && git rebase origin/master
+      irebase-origin = !git fetch origin && git rebase -i origin/master
+
 Write a feature
 ---------------
 
 Create a local feature branch based off master.
 
-    git checkout master
-    git pull
-    git checkout -b <branch-name>
+    git create-branch <your-initials>-<feature>-<JIRA-id (just number)>
 
-Prefix the branch name with your initials.
+Prefix the branch name with your initials and postfix with JIRA ticket number.
 
-Rebase frequently to incorporate upstream changes.
+Here is an example branch name:
 
-    git fetch origin
-    git rebase origin/master
+    mo-awesome-feature-123
 
-Resolve conflicts. When feature is complete and tests pass, stage the changes.
+Rebase frequently to incorporate upstream changes and resolve conflicts as needed.
 
-    rake
-    git add --all
+    git rebase-origin
 
-When you've staged the changes, commit them.
+Commit changes regularly.
 
-    git status
-    git commit --verbose
+    git st
+    git commit -av
 
 Write a [good commit message](http://goo.gl/w11us). Example format:
 
-    Present-tense summary under 50 characters
+    Present-tense summary under 50 characters. Add JIRA ticket number at end of summary.
 
     * More information about commit (under 72 characters).
     * More information about commit (under 72 characters).
 
-    http://project.management-system.com/ticket/123
+Here is an example commit message:
 
-Share your branch.
+    Allow users to sign in with username. BVR-123
 
-    git push origin <branch-name>
+When feature is complete make sure all tests and reports pass.
+
+    rake reports:all
+
+Push your branch.
+
+    git push
 
 Submit a [GitHub pull request](http://goo.gl/Kmdee).
 
-Ask for a code review in [Campfire](http://campfirenow.com).
+    git pr
+
+Link to the code review in JIRA issue comment, assign to reviewer and resolve issue.
+
+    @<Reviewer> Ready for review: http://github.com/organization/project/pull/1
+
+Ask for a code review in [Hipchat](http://hipchat.com).
 
 Review code
 -----------
@@ -130,19 +166,14 @@ A team member other than the author reviews the pull request. They follow
 miscommunication.
 
 They make comments and ask questions directly on lines of code in the Github
-web interface or in Campfire.
-
-For changes which they can make themselves, they check out the branch.
-
-    git checkout <branch-name>
-    rake db:migrate
-    rake
-    git diff staging/master..HEAD
-
-They make small changes right in the branch, test the feature in browser,
-run tests, commit, and push.
+web interface or in [Hipchat](http://hipchat.com).
 
 When satisfied, they comment on the pull request `Ready to merge.`
+
+The merge master for the project should then be asked to merge the branch.
+This can be done on Hipchat or by mentioning them in a JIRA comment.
+
+    `@<merge-master> Ready to merge.`
 
 Merge
 -----
@@ -150,25 +181,24 @@ Merge
 Rebase interactively. Squash commits like "Fix whitespace" into one or a
 small number of valuable commit(s). Edit commit messages to reveal intent.
 
-    git fetch origin
-    git rebase -i origin/master
-    rake
+    git irebase-origin
+
+Run all tests and validate code quality.
+
+    rake reports:all
 
 View a list of new commits. View changed files. Merge branch into master.
 
     git log origin/master..<branch-name>
     git diff --stat origin/master
-    git checkout master
-    git merge <branch-name> --ff-only
+    git merge-branch
     git push
 
-Delete your remote feature branch.
+Delete your local and remote feature branch.
 
-    git push origin --delete <branch-name>
+    git delete-branch <branch-name>
 
-Delete your local feature branch.
-
-    git branch --delete <branch-name>
+<!--
 
 Deploy
 ------
@@ -216,3 +246,5 @@ Set Up Production Environment
 * Create a read-only [Heroku Follower](http://goo.gl/xWDMx) for your
   production database. If a Heroku database outage occurs, Heroku can use the
   follower to get your app back up and running faster.
+
+-->

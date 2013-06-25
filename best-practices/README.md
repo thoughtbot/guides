@@ -140,10 +140,12 @@ JavaScript
 ----------
 
 * Use CoffeeScript.
+* Remove all console.log statements.
 
 HTML
 ----
 
+* Use haml.
 * Don't use a reset button for forms.
 * Prefer cancel links to cancel buttons.
 
