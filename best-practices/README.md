@@ -84,6 +84,7 @@ Rails
 Testing
 -------
 
+* Avoid `any_instance` in rspec-mocks and mocha. Prefer [dependency injection].
 * Avoid `its`, `let`, `let!`, `specify`, `before`, and `subject` in RSpec.
 * Avoid using instance variables in tests.
 * Don't test private methods.
@@ -93,6 +94,7 @@ Testing
 * Use [assertions about state] for incoming messages.
 * Use stubs and spies to assert you sent outgoing messages.
 
+[dependency injection]: http://en.wikipedia.org/wiki/Dependency_injection
 [assertions about state]: https://speakerdeck.com/skmetz/magic-tricks-of-testing-railsconf?slide=51
 [stubs and spies]: http://goo.gl/EciDJ
 
