@@ -75,6 +75,7 @@ Rails
 Testing
 -------
 
+* Avoid `any_instance` in rspec-mocks and mocha.
 * Avoid `its`, `let`, `let!`, `specify`, `before`, and `subject` in RSpec.
 * Avoid using instance variables in tests.
 * Don't test private methods.
