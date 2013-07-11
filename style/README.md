@@ -7,7 +7,9 @@ Git
 ---
 
 * Prefix feature branch names with your initials.
-* Write a [good commit message](http://goo.gl/w11us).
+* Write a [good commit message].
+
+[good commit message]: http://goo.gl/w11us
 
 Formatting
 ----------
@@ -29,9 +31,11 @@ Formatting
 * Use newlines around multi-line blocks.
 * Use spaces around operators, after commas, after colons and semicolons, around
   `{` and before `}`.
-* Use [Unix-style line endings](http://goo.gl/04ehM) (`\n`).
-* Use [uppercase for SQL key words and lowercase for SQL
-  identifiers](http://goo.gl/0WAIX).
+* Use [Unix-style line endings] (`\n`).
+* Use [uppercase for SQL key words and lowercase for SQL identifiers].
+
+[uppercase for SQL key words and lowercase for SQL identifiers]: http://goo.gl/0WAIX
+[Unix-style line endings]: http://goo.gl/04ehM
 
 Naming
 ------
@@ -126,10 +130,11 @@ Rails
 * Order ActiveRecord validations alphabetically by attribute name.
 * Order controller contents: filters, public methods, private methods.
 * Order model contents: constants, macros, public methods, private methods.
-* Put application-wide partials in the
-  [`app/views/application`](http://goo.gl/5Z8Vv) directory.
+* Put application-wide partials in the [`app/views/application`] directory.
 * Use `def self.method`, not the `scope :method` DSL.
 * Use the default `render 'partial'` syntax over `render partial: 'partial'`.
+
+[`app/views/application`]: http://goo.gl/5Z8Vv
 
 Rails Routes
 ------------
@@ -150,7 +155,9 @@ Email
 
 * Use one `ActionMailer` for the app. Name it `Mailer`.
 * Use the user's name in the `From` header and email in the `Reply-To` when
-  [delivering email on behalf of the app's users](http://goo.gl/5w1ck).
+  [delivering email on behalf of the app's users].
+
+[delivering email on behalf of the app's users]: http://goo.gl/5w1ck
 
 Testing
 -------
@@ -179,11 +186,12 @@ Testing
 * Use names like `ROLE_ACTION_spec.rb`, such as
   `user_changes_password_spec.rb`, for feature spec file names.
 * Use only one `feature` block per feature spec file.
-* Use RSpec's [`expect`
-  syntax](http://myronmars.to/n/dev-blog/2012/06/rspecs-new-expectation-syntax).
+* Use RSpec's [`expect` syntax].
 * Use scenario titles that describe the success and failure paths.
 * Use spec/features to store feature specs.
 * Use spec/support/features for support code related to feature specs.
+
+[`expect` syntax]: http://myronmars.to/n/dev-blog/2012/06/rspecs-new-expectation-syntax
 
 Objective-C
 -----------
@@ -217,4 +225,6 @@ Objective-C
 Python
 ------
 
-* Follow [PEP 8](http://www.python.org/dev/peps/pep-0008/).
+* Follow [PEP 8].
+
+[PEP 8]: http://www.python.org/dev/peps/pep-0008/
