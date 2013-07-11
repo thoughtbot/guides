@@ -77,7 +77,9 @@ Maintain a Rails app
 * Delete local and remote feature branches after merging.
 * Perform work in a feature branch.
 * Rebase frequently to incorporate upstream changes.
-* Use a [pull request](http://goo.gl/Kmdee) for code reviews.
+* Use a [pull request] for code reviews.
+
+[pull request]: http://goo.gl/Kmdee
 
 Write a feature
 ---------------
@@ -209,10 +211,11 @@ Close pull request and comment `Merged.`
 Set Up Production Environment
 -----------------------------
 
-* Make sure that your
-  [`Procfile`](https://devcenter.heroku.com/articles/procfile)
-  is set up to run Unicorn.
+* Make sure that your [`Procfile`] is set up to run Unicorn.
 * Make sure the PG Backups add-on is enabled.
-* Create a read-only [Heroku Follower](http://goo.gl/xWDMx) for your
-  production database. If a Heroku database outage occurs, Heroku can use the
-  follower to get your app back up and running faster.
+* Create a read-only [Heroku Follower] for your production database. If a Heroku
+  database outage occurs, Heroku can use the follower to get your app back up
+  and running faster.
+
+[Heroku Follower]: http://goo.gl/xWDMx
+[`Procfile`]: https://devcenter.heroku.com/articles/procfile
