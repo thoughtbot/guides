@@ -218,7 +218,7 @@ Testing
 * Separate setup, exercise, verification, and teardown phases with newlines.
 * Use one factories.rb file per project.
 * Use names like `ROLE_ACTION_spec.rb`, such as
-  `user_changes_password_spec.rb`, for feature spec file names.
+  `user_changes_password_spec.rb`, for feature spec file names, where ROLE_ACTION is in caps because...
 * Use only one `feature` block per feature spec file.
 * Use RSpec's [`expect` syntax].
 * Use scenario titles that describe the success and failure paths.
