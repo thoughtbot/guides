@@ -156,7 +156,7 @@ Rails
 -----
 
 * Avoid `member` and `collection` routes.
-* Use private instead of protected controller methods.
+* Use private instead of protected when defining controller methods.
 * Name date columns with `_on` suffixes.
 * Name datetime columns with `_at` suffixes.
 * Name initializers for their gem name.
