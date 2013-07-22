@@ -88,6 +88,7 @@ Ruby
 
 * Avoid conditional modifiers (lines that end with conditionals).
 * Avoid organizational comments (`# Validations`).
+* Avoid multiple assignments one line (`one = 1, two = 2`).
 * Avoid ternary operators (`boolean ? true : false`). Use multi-line `if`
   instead to emphasize code branches.
 * Avoid explicit return statements.
