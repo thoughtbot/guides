@@ -65,6 +65,8 @@ Rails
 * Don't change a migration after it has been merged into master if the desired
   change can be solved with another migration.
 * Don't reference a model class directly from a view.
+* Don't use instance variables in partials. Pass local variables to partials
+  from view templates.
 * Don't use SQL or SQL fragments (`where('inviter_id IS NOT NULL')`) outside of
   models.
 * If there are default values, set them in migrations.
