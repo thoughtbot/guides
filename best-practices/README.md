@@ -89,16 +89,25 @@ Testing
 * Avoid `any_instance` in rspec-mocks and mocha. Prefer [dependency injection].
 * Avoid `its`, `let`, `let!`, `specify`, `before`, and `subject` in RSpec.
 * Avoid using instance variables in tests.
+* Disable real HTTP requests to external services with
+  `WebMock.disable_net_connect!`.
 * Don't test private methods.
+* Test background jobs with a [`Delayed::Job` matcher].
 * Use [stubs and spies] (not mocks) in isolated tests.
 * Use a single level of abstraction within scenarios.
 * Use an `it` example or test method for each execution path through the method.
 * Use [assertions about state] for incoming messages.
 * Use stubs and spies to assert you sent outgoing messages.
+* Use a [Fake] to stub requests to external services.
+* Use integration tests to execute the entire app.
+* Use non-[SUT] methods in expectations when possible.
 
 [dependency injection]: http://en.wikipedia.org/wiki/Dependency_injection
-[assertions about state]: https://speakerdeck.com/skmetz/magic-tricks-of-testing-railsconf?slide=51
+[`Delayed::Job` matcher]: http://goo.gl/bzBlN
 [stubs and spies]: http://goo.gl/EciDJ
+[assertions about state]: https://speakerdeck.com/skmetz/magic-tricks-of-testing-railsconf?slide=51
+[Fake]: http://goo.gl/YR7Hh
+[SUT]: http://goo.gl/r5Ti2
 
 Bundler
 -------
@@ -147,20 +156,6 @@ Email
 [Amazon SES]: http://goo.gl/A5jAA
 [SendGrid]: http://goo.gl/Kxu9W
 [mail_view]: http://goo.gl/HhX8y
-
-Testing
--------
-
-* Disable real HTTP requests to external services with
-  `WebMock.disable_net_connect!`.
-* Test background jobs with a [`Delayed::Job` matcher].
-* Use a [Fake] to stub requests to external services.
-* Use integration tests to execute the entire app.
-* Use non-[SUT] methods in expectations when possible.
-
-[Fake]: http://goo.gl/YR7Hh
-[SUT]: http://goo.gl/r5Ti2
-[`Delayed::Job` matcher]: http://goo.gl/bzBlN
 
 JavaScript
 ----------
