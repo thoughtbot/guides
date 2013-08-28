@@ -152,6 +152,8 @@ Email
   environments.
 * Use a tool like [mail_view] to look at each created or updated mailer view
   before merging.
+* Start with one `ActionMailer` for the app; name it `Mailer`.
+* Consider multiple mailers if emails can be grouped conceptually.
 
 [Amazon SES]: http://goo.gl/A5jAA
 [SendGrid]: http://goo.gl/Kxu9W
