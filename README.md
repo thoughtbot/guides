@@ -25,11 +25,9 @@ A note on the language:
 Credits
 -------
 
-Thank you, [contributors](https://github.com/thoughtbot/guides/graphs/contributors)!
-
-![thoughtbot](http://thoughtbot.com/images/tm/logo.png)
-
-Guides is maintained by [thoughtbot, inc](http://thoughtbot.com/community).
+Thanks to [thoughtbot](http://thoughtbot.com/community) for writing the
+original [guides](https://github.com/thoughtbot/guides) that our guides are
+based on.
 
 License
 -------
