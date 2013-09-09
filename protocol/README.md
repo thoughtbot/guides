@@ -85,6 +85,10 @@ Merge
 
 Merging is done through the Github pull request interface.
 
+Before merging, make sure commits like "Fix whitespace" are squashed into one
+or a small number of valuable commit(s). If necessary, edit commit messages to
+reveal intent.
+
 If the pull request can't be merged cleanly through the web interface and
 manual intervention is needed, open the branch locally and rebase interactively
 against master. Finally, push the now cleanly mergeable branch and merge it
