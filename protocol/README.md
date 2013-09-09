@@ -104,42 +104,6 @@ Delete your local feature branch.
 
     git branch --delete <branch-name>
 
-Deploy
-------
-
-View a list of new commits. View changed files. Deploy to
-[Heroku](https://devcenter.heroku.com/articles/quickstart) staging.
-
-    git fetch staging
-    git log staging/master..master
-    git diff --stat staging/master
-    git push staging
-
-If necessary, run migrations and restart the dynos.
-
-    heroku run rake db:migrate --remote staging
-    heroku restart --remote staging
-
-[Introspect](http://goo.gl/tTgVF) to make sure everything's ok.
-
-    watch heroku ps --remote staging
-
-Test the feature in browser.
-
-Deploy to production.
-
-    git fetch production
-    git log production/master..master
-    git diff --stat production/master
-    git push production
-    heroku run rake db:migrate --remote production
-    heroku restart --remote production
-    watch heroku ps --remote production
-
-Watch logs and metrics dashboards.
-
-Close pull request and comment `Merged.`
-
 Set Up Production Environment
 -----------------------------
 
