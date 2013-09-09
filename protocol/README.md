@@ -103,15 +103,3 @@ After merging, delete your remote feature branch.
 Delete your local feature branch.
 
     git branch --delete <branch-name>
-
-Set Up Production Environment
------------------------------
-
-* Make sure that your [`Procfile`] is set up to run Unicorn.
-* Make sure the PG Backups add-on is enabled.
-* Create a read-only [Heroku Follower] for your production database. If a Heroku
-  database outage occurs, Heroku can use the follower to get your app back up
-  and running faster.
-
-[Heroku Follower]: http://goo.gl/xWDMx
-[`Procfile`]: https://devcenter.heroku.com/articles/procfile
