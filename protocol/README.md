@@ -56,7 +56,7 @@ Share your branch.
 
 Submit a [GitHub pull request](http://goo.gl/Kmdee).
 
-Ask for a code review in [Campfire](http://campfirenow.com).
+Ask team for a code review.
 
 Review code
 -----------
@@ -66,7 +66,7 @@ A team member other than the author reviews the pull request. They follow
 miscommunication.
 
 They make comments and ask questions directly on lines of code in the Github
-web interface or in Campfire.
+web interface.
 
 For changes which they can make themselves, they check out the branch.
 
