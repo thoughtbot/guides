@@ -96,10 +96,6 @@ Sass
 * Avoid nesting within a media query.
 
 ### Organization
-* Use Bourbon for a Sass Library.
-* Use Neat for a grid framework.
-* Use Bitters / Base folder for style on HTML tags, global variables, global extends and global mixins.
-* Use Normalize as a browser reset.
 * Use HTML structure for ordering of selectors. Don't just put styles at the bottom of the Sass file.
 * Prefer the same file structure that is found in app/views.
 * Avoid having files longer than 100 lines.
