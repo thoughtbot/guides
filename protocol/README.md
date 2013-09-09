@@ -3,14 +3,6 @@ Protocol
 
 A guide for getting things done.
 
-Set up laptop
--------------
-
-Install the latest version of Xcode from the App Store.
-
-Set up your laptop with [this script](https://github.com/thoughtbot/laptop)
-and [these dotfiles](https://github.com/thoughtbot/dotfiles).
-
 Create Rails app
 ----------------
 
