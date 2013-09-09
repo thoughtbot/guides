@@ -83,22 +83,20 @@ When satisfied, they comment on the pull request `Ready to merge.`
 Merge
 -----
 
-Rebase interactively. Squash commits like "Fix whitespace" into one or a
-small number of valuable commit(s). Edit commit messages to reveal intent.
+Merging is done through the Github pull request interface.
+
+If the pull request can't be merged cleanly through the web interface and
+manual intervention is needed, open the branch locally and rebase interactively
+against master. Finally, push the now cleanly mergeable branch and merge it
+through the web interface.
 
     git fetch origin
+    git checkout feature_branch
     git rebase -i origin/master
     rake
+    git push origin feature_branch
 
-View a list of new commits. View changed files. Merge branch into master.
-
-    git log origin/master..<branch-name>
-    git diff --stat origin/master
-    git checkout master
-    git merge <branch-name> --ff-only
-    git push
-
-Delete your remote feature branch.
+After merging, delete your remote feature branch.
 
     git push origin --delete <branch-name>
 
