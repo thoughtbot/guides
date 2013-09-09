@@ -130,18 +130,6 @@ Background Jobs
 * Store IDs, not `ActiveRecord` objects for cleaner serialization, then re-find
   the `ActiveRecord` object in the `perform` method.
 
-Email
------
-
-* Use [SendGrid] or [Amazon SES] to deliver email in staging and production
-  environments.
-* Use a tool like [mail_view] to look at each created or updated mailer view
-  before merging.
-
-[Amazon SES]: http://goo.gl/A5jAA
-[SendGrid]: http://goo.gl/Kxu9W
-[mail_view]: http://goo.gl/HhX8y
-
 JavaScript
 ----------
 
@@ -163,9 +151,3 @@ Browsers
 
 * Don't support clients without Javascript.
 * Don't support IE6 or IE7.
-
-Objective-C
------------
-
-* Prefer categories on `Foundation` classes to helper methods.
-* Prefer string constants to literals when providing keys or key paths to methods.
