@@ -3,26 +3,6 @@ Protocol
 
 A guide for getting things done.
 
-Create iOS app
---------------
-
-Create a new project in Xcode with these settings:
-
-* Check 'Create local git repository for this project'.
-* Check 'Use Automatic Reference Counting'.
-* Set an appropriate 2 or 3 letter class prefix.
-* Set the Base SDK to 'Latest iOS'.
-* Set the iOS Deployment Target to 6.0.
-* Use the Apple LLVM compiler.
-
-Get liftoff.
-
-    gem install liftoff
-
-Run liftoff in the project directory.
-
-    liftoff
-
 Set up Rails app
 ----------------
 
