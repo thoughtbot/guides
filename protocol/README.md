@@ -3,17 +3,6 @@ Protocol
 
 A guide for getting things done.
 
-Create Rails app
-----------------
-
-Get Suspenders.
-
-    gem install suspenders
-
-Create the app.
-
-    suspenders app --heroku true --github organization/app
-
 Create iOS app
 --------------
 
