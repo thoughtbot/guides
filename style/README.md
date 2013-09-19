@@ -35,7 +35,7 @@ Formatting
 * Use [uppercase for SQL key words and lowercase for SQL identifiers].
 
 [uppercase for SQL key words and lowercase for SQL identifiers]: http://goo.gl/0WAIX
-[Unix-style line endings]: http://goo.gl/04ehM
+[Unix-style line endings]: https://help.github.com/articles/dealing-with-line-endings
 
 Naming
 ------
