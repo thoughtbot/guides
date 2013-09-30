@@ -169,8 +169,6 @@ Rails
 * Put application-wide partials in the [`app/views/application`] directory.
 * Use `def self.method`, not the `scope :method` DSL.
 * Use the default `render 'partial'` syntax over `render partial: 'partial'`.
-* Use `db/seeds.rb` for data that is required in all environments.
-* Use `dev:prime` rake task for development environment seed data.
 
 [`app/views/application`]: http://goo.gl/5Z8Vv
 
