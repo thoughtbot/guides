@@ -9,7 +9,7 @@ Git
 * Prefix feature branch names with your initials.
 * Write a [good commit message].
 
-[good commit message]: http://goo.gl/w11us
+[good commit message]: http://tbaggery.com/2008/04/19/a-note-about-git-commit-messages.html
 
 Formatting
 ----------
@@ -34,8 +34,8 @@ Formatting
 * Use [Unix-style line endings] (`\n`).
 * Use [uppercase for SQL key words and lowercase for SQL identifiers].
 
-[uppercase for SQL key words and lowercase for SQL identifiers]: http://goo.gl/0WAIX
-[Unix-style line endings]: http://goo.gl/04ehM
+[uppercase for SQL key words and lowercase for SQL identifiers]: http://www.postgresql.org/docs/9.2/static/sql-syntax-lexical.html#SQL-SYNTAX-IDENTIFIERS
+[Unix-style line endings]: http://unix.stackexchange.com/questions/23903/should-i-end-my-text-script-files-with-a-newline
 
 Naming
 ------
@@ -170,7 +170,7 @@ Rails
 * Use `def self.method`, not the `scope :method` DSL.
 * Use the default `render 'partial'` syntax over `render partial: 'partial'`.
 
-[`app/views/application`]: http://goo.gl/5Z8Vv
+[`app/views/application`]: http://asciicasts.com/episodes/269-template-inheritance
 
 Rails Routes
 ------------
@@ -193,7 +193,7 @@ Email
 * Use the user's name in the `From` header and email in the `Reply-To` when
   [delivering email on behalf of the app's users].
 
-[delivering email on behalf of the app's users]: http://goo.gl/5w1ck
+[delivering email on behalf of the app's users]: http://robots.thoughtbot.com/post/3215611590/recipe-delivering-email-on-behalf-of-users
 
 Testing
 -------
