@@ -12,8 +12,8 @@ General
 * [Exceptions should be exceptional].
 * [Keep the code simple].
 
-[Exceptions should be exceptional]: http://rdd.me/yichhgvu
-[Keep the code simple]: http://rdd.me/ko2aqda2
+[Exceptions should be exceptional]: http://www.readability.com/~/yichhgvu
+[Keep the code simple]: http://www.readability.com/~/ko2aqda2
 
 Object-Oriented Design
 ----------------------
@@ -28,7 +28,7 @@ Object-Oriented Design
   object exceeds 100 lines, it may be doing too many things.
 * [Tell, don't ask].
 
-[Tell, don't ask]: http://goo.gl/Ztawt
+[Tell, don't ask]: http://robots.thoughtbot.com/post/27572137956/tell-dont-ask
 
 Ruby
 ----
@@ -51,9 +51,9 @@ Ruby Gems
 * Use [Travis CI] for Continuous Integration, indicators showing whether GitHub
   pull requests can be merged, and to test against multiple Ruby versions.
 
-[Appraisal]: http://github.com/thoughtbot/appraisal
-[Bundler]: http://gembundler.com/
-[Travis CI]: http://travisci.org
+[Appraisal]: https://github.com/thoughtbot/appraisal
+[Bundler]: http://bundler.io
+[Travis CI]: http://travis-ci.org
 
 Rails
 -----
@@ -103,11 +103,11 @@ Testing
 * Use non-[SUT] methods in expectations when possible.
 
 [dependency injection]: http://en.wikipedia.org/wiki/Dependency_injection
-[`Delayed::Job` matcher]: http://goo.gl/bzBlN
-[stubs and spies]: http://goo.gl/EciDJ
+[`Delayed::Job` matcher]: https://gist.github.com/3186463
+[stubs and spies]: http://robots.thoughtbot.com/post/159805295/spy-vs-spy
 [assertions about state]: https://speakerdeck.com/skmetz/magic-tricks-of-testing-railsconf?slide=51
-[Fake]: http://goo.gl/YR7Hh
-[SUT]: http://goo.gl/r5Ti2
+[Fake]: http://robots.thoughtbot.com/post/219216005/fake-it
+[SUT]: http://xunitpatterns.com/SUT.html
 
 Bundler
 -------
@@ -119,10 +119,10 @@ Bundler
   often, such as pg, thin, and debugger.
 * Use an [exact version] in the `Gemfile` for fragile gems, such as Rails.
 
-[Ruby version]: http://gembundler.com/v1.3/gemfile_ruby.html
-[exact version]: http://robots.thoughtbot.com/post/35717411108/a-healthy-bundle#exact-version
-[pessimistic version]: http://robots.thoughtbot.com/post/35717411108/a-healthy-bundle#pessimistic-version
-[versionless]: http://robots.thoughtbot.com/post/35717411108/a-healthy-bundle#versionless
+[Ruby version]: http://bundler.io/v1.3/gemfile_ruby.html
+[exact version]: http://robots.thoughtbot.com/post/35717411108/a-healthy-bundle
+[pessimistic version]: http://robots.thoughtbot.com/post/35717411108/a-healthy-bundle
+[versionless]: http://robots.thoughtbot.com/post/35717411108/a-healthy-bundle
 
 Postgres
 --------
@@ -133,10 +133,10 @@ Postgres
 * Constrain most columns as [`NOT NULL`].
 * [Index foreign keys].
 
-[`NOT NULL`]: http://goo.gl/0GeBr
-[combines multiple indexes]: http://goo.gl/pY3Po
+[`NOT NULL`]: http://www.postgresql.org/docs/9.1/static/ddl-constraints.html#AEN2444
+[combines multiple indexes]: http://www.postgresql.org/docs/9.1/static/indexes-bitmap-scans.html
 [compound index]: http://www.postgresql.org/docs/9.2/static/indexes-bitmap-scans.html
-[partial index]: http://goo.gl/YC8Jt
+[partial index]: http://www.postgresql.org/docs/9.1/static/indexes-partial.html
 [Index foreign keys]: https://tomafro.net/2009/08/using-indexes-in-rails-index-your-associations
 
 Background Jobs
@@ -153,9 +153,9 @@ Email
 * Use a tool like [mail_view] to look at each created or updated mailer view
   before merging.
 
-[Amazon SES]: http://goo.gl/A5jAA
-[SendGrid]: http://goo.gl/Kxu9W
-[mail_view]: http://goo.gl/HhX8y
+[Amazon SES]: http://robots.thoughtbot.com/post/3105121049/delivering-email-with-amazon-ses-in-a-rails-3-app
+[SendGrid]: https://devcenter.heroku.com/articles/sendgrid
+[mail_view]: https://github.com/37signals/mail_view
 
 JavaScript
 ----------
