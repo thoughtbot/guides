@@ -161,6 +161,7 @@ JavaScript
 ----------
 
 * Use CoffeeScript.
+* Preface all IDs and classes used for JavaScript hooks with js-
 
 HTML
 ----
