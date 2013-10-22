@@ -79,6 +79,7 @@ Rails
   `_path` suffixes for named routes everywhere else.
 * Validate the associated `belongs_to` object (`user`), not the database column
   (`user_id`).
+* Use ERB for HTML templates.
 
 [`.ruby-version`]: https://gist.github.com/fnichol/1912050
 [redirects]: http://www.w3.org/Protocols/rfc2616/rfc2616-sec14.html#sec14.30
