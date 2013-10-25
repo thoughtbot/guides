@@ -132,7 +132,7 @@ Ruby
 * Prefer single quotes for strings.
 * Use `_` for unused block parameters.
 * Use `%{}` for single-line strings needing interpolation and double-quotes.
-* Use `&&` and `||` for Boolean expressions.
+* Use `&&` and `||` instead of `and` and `or`.
 * Use `{...}` for single-line blocks. Use `do..end` for multi-line blocks.
 * Use `?` suffix for predicate methods.
 * Use `CamelCase` for classes and modules, `snake_case` for variables and
