@@ -207,36 +207,47 @@ Email
 Testing
 -------
 
-[Sample](samples/testing.rb)
+* Avoid the `private` keyword in specs.
+* Order ActiveRecord association tests alphabetically by attribute name.
+* Order ActiveRecord validation tests alphabetically by attribute name.
+* Prefer `eq` to `==` in RSpec.
+* Separate setup, exercise, verification, and teardown phases with newlines.
+* Use RSpec's [`expect` syntax].
+* Use `not_to` instead of `to_not` in RSpec expectations.
+
+[`expect` syntax]: http://myronmars.to/n/dev-blog/2012/06/rspecs-new-expectation-syntax
+
+#### Acceptance Tests
+
+[Sample](samples/acceptance_test.rb)
 
 * Avoid scenario titles that add no information, such as "successfully."
 * Avoid scenario titles that repeat the feature title.
-* Avoid the `private` keyword in specs.
-* Don't prefix `it` block descriptions with 'should'.
-* Include the Features module in RSpec scenarios with `:type => :feature` set.
-* Name outer `describe` blocks after the method under test. Use `.method`
-  for class methods and `#method` for instance methods.
-* Order ActiveRecord association tests alphabetically by attribute name.
-* Order ActiveRecord validation tests alphabetically by attribute name.
+* Place helper methods for feature specs directly in a top-level `Features`
+  module.
+* Use Capybara's `feature/scenario` DSL.
+* Use names like `ROLE_ACTION_spec.rb`, such as
+  `user_changes_password_spec.rb`, for feature spec file names.
+* Use only one `feature` block per feature spec file.
+* Use scenario titles that describe the success and failure paths.
+* Use spec/features directory to store feature specs.
+* Use spec/support/features for support code related to feature specs.
+
+#### Factories
+
 * Order `factories.rb` contents: sequences, traits, factory definitions.
 * Order factory attributes: implicit attributes, explicit attributes,
   child factory definitions. Each section's attributes are alphabetical.
 * Order factory definitions alphabetically by factory name.
-* Place helper methods for feature specs directly in a top-level `Features`
-  module.
-* Prefer `eq` to `==` in RSpec.
-* Use `not_to` instead of `to_not` in RSpec expectations.
-* Separate setup, exercise, verification, and teardown phases with newlines.
 * Use one factories.rb file per project.
-* Use names like `ROLE_ACTION_spec.rb`, such as
-  `user_changes_password_spec.rb`, for feature spec file names.
-* Use only one `feature` block per feature spec file.
-* Use RSpec's [`expect` syntax].
-* Use scenario titles that describe the success and failure paths.
-* Use spec/features to store feature specs.
-* Use spec/support/features for support code related to feature specs.
 
-[`expect` syntax]: http://myronmars.to/n/dev-blog/2012/06/rspecs-new-expectation-syntax
+#### Unit Tests
+
+[Sample](samples/testing.rb)
+
+* Don't prefix `it` block descriptions with 'should'.
+* Name outer `describe` blocks after the method under test. Use `.method`
+  for class methods and `#method` for instance methods.
 
 Objective-C
 -----------
