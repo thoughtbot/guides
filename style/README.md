@@ -7,7 +7,8 @@ Git
 ---
 
 * Prefix feature branch names with your initials.
-* Write a [good commit message].
+* Write a [good commit message]. Additionally, avoid adding punctuation at the
+  end of the subject line.
 
 [good commit message]: http://goo.gl/w11us
 
