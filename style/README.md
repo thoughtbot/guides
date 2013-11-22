@@ -65,7 +65,7 @@ Sass
 ----
 ### Formatting
 * Use the *Scss* syntax.
-* Use hyphens when naming mixins, extends, classes & variables: `span-columns` not `span_columns` or `spanColumns`.
+* Use hyphens when naming mixins, extends, classes, functions & variables: `span-columns` not `span_columns` or `spanColumns`.
 * Use space between property and value: `width: 20px` not `width:20px`.
 * Use a blank line above selector that has styles.
 * Prefer hex color codes `#000`.
