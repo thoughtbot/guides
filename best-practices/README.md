@@ -154,6 +154,8 @@ Email
   environments.
 * Use a tool like [MailView] to look at each created or updated mailer view
   before merging.
+* Start with one `ActionMailer` for the app; name it `Mailer`.
+* Consider multiple mailers if emails can be grouped conceptually.
 
 [Amazon SES]: http://robots.thoughtbot.com/post/3105121049/delivering-email-with-amazon-ses-in-a-rails-3-app
 [SendGrid]: https://devcenter.heroku.com/articles/sendgrid
