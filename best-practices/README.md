@@ -95,7 +95,7 @@ Testing
   `WebMock.disable_net_connect!`.
 * Don't test private methods.
 * Test background jobs with a [`Delayed::Job` matcher].
-* Use [stubs and spies] (not mocks) in isolated tests.
+* Use [stubs and spies] \(not mocks\) in isolated tests.
 * Use a single level of abstraction within scenarios.
 * Use an `it` example or test method for each execution path through the method.
 * Use [assertions about state] for incoming messages.
