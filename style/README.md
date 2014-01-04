@@ -131,6 +131,7 @@ Ruby
   instead to emphasize code branches.
 * Avoid explicit return statements.
 * Avoid using semicolons.
+* Avoid bang (!) method names. Prefer descriptive names.
 * Don't use `self` explicitly anywhere except class methods (`def self.method`)
   and assignments (`self.attribute =`).
 * Prefer `detect` over `find`.
