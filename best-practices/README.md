@@ -222,7 +222,7 @@ Shell
 * Prefer reading environment variables over process output (`$TTY` not 
   `$(tty)`, `$PWD` not `$(pwd)`, etc).
 * Use `$( ... )`, not backticks for capturing command output.
-* Use `$(( ... )`, not `expr` for executing arithmetic expressions.
+* Use `$(( ... ))`, not `expr` for executing arithmetic expressions.
 * Use `1` and `0`, not `true` and `false` to represent boolean 
   variables.
 * Use `find -print0 | xargs -0`, not `find | xargs`.
