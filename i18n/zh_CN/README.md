@@ -1,26 +1,26 @@
-Guides
+导读
 ======
 
-Guides for getting things done, programming well, and programming in style.
+以下导读是为了把事情做好，让编程更好更规范。
 
-* [Protocol](/protocol)
-* [Code Review](/code-review)
-* [Best Practices](/best-practices)
-* [Style](/style)
+* [协议](/protocol)
+* [代码审查](/code-review)
+* [最佳实践](/best-practices)
+* [风格](/style)
 
-High level guidelines:
+指导原则:
 
-* Be consistent.
-* Don't rewrite existing code to follow this guide.
-* Don't violate a guideline without a good reason.
-* A reason is good when you can convince a teammate.
+* 保持一致.
+* 不要重写已经存在的代码.
+* 没有好的原因不要违反这些规则.
+* 一个好的原因是指，你能说服你的队友.
 
-A note on the language:
+一些用词方面的注意点:
 
-* "Avoid" means don't do it unless you have good reason.
-* "Don't" means there's never a good reason.
-* "Prefer" indicates a better option and its alternative to watch out for.
-* "Use" is a positive instruction.
+* "避免（Avoid）" 意味着，如果没有好的原因请尽量不要使用它.
+* "不要（Don’t）" 意味着，没有任何要使用的必要，即使有好原因也不要去使用.
+* "宁愿（Prefer）" 是指一种更好的选择，在二选一的时候需要注意的地方。
+* "使用（Use）" 是指一种让你尽量去使用它的倾向，你可以不用.
 
 Credits
 -------
