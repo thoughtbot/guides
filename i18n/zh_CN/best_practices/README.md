@@ -1,55 +1,50 @@
-Best Practices
+最佳实践
 ==============
 
-A guide for programming well.
+为了更好的编程。
 
-General
+通用
 -------
 
-* Don't duplicate the functionality of a built-in library.
-* Don't swallow exceptions or "fail silently."
-* Don't write code that guesses at future functionality.
-* [Exceptions should be exceptional].
-* [Keep the code simple].
+* 不要重复内建库包含的功能。
+* 不要忽视异常或者容忍失败。
+* 不要写一些猜测未来功能的代码。
+* [异常应该被特殊对待].
+* [保持代码的简单].
 
-[Exceptions should be exceptional]: http://www.readability.com/~/yichhgvu
-[Keep the code simple]: http://www.readability.com/~/ko2aqda2
+[异常应该被特殊对待]: http://www.readability.com/~/yichhgvu
+[保持代码的简单]: http://www.readability.com/~/ko2aqda2
 
-Object-Oriented Design
+面向对象设计
 ----------------------
 
-* Avoid global variables.
-* Avoid long parameter lists.
-* Limit collaborators of an object (entities an object depends on).
-* Limit an object's dependencies (entities that depend on an object).
-* Prefer composition over inheritance.
-* Prefer small methods. Between one and five lines is best.
-* Prefer small objects with a single, well-defined responsibility. When an
-  object exceeds 100 lines, it may be doing too many things.
-* [Tell, don't ask].
+* 避免全局变量。
+* 避免长参数列表。
+* 限制一个对象的合作者（这个对象依赖的那些实体）。
+* 限制一个对象的依赖（依赖于这个对象的那些实体）。
+* 组合优于继承。
+* 小方法优于大方法。一到五行最好。
+* 单一明确职责的对象优于复杂的对象。当一个对象超过100行，那么可能它做的事就太多了。
+* [直接告诉对象要做什么，而不是去询问对象该做什么].
 
-[Tell, don't ask]: http://robots.thoughtbot.com/post/27572137956/tell-dont-ask
+[直接告诉对象要做什么，而不是去询问对象该做什么]: http://robots.thoughtbot.com/post/27572137956/tell-dont-ask
 
 Ruby
 ----
 
-* Avoid optional parameters. Does the method do too much?
-* Avoid monkey-patching.
-* Prefer classes to modules when designing functionality that is shared by
-  multiple models.
-* Prefer `private` when indicating scope. Use `protected` only with comparison
-  methods like `def ==(other)`, `def <(other)`, and `def >(other)`.
+* 避免可选参数。方法是不是做的太多了？
+* 避免猴子补丁（ monkey-patching）。
+* 在设计被多个模型中共享的功能时，类优于模块。
+* 在标识方法的作用范围的时候， `private`优于`protected`。  `protected`只被用来标识比较方法，类似于：`def ==(other)`, `def <(other)`, 和 `def >(other)`.
 
 Ruby Gems
 ---------
 
-* Declare dependencies in the `<PROJECT_NAME>.gemspec` file.
-* Reference the `gemspec` in the `Gemfile`.
-* Use [Appraisal] to test the gem against multiple versions of gem dependencies
-  (such as Rails in a Rails engine).
-* Use [Bundler] to manage the gem's dependencies.
-* Use [Travis CI] for Continuous Integration, indicators showing whether GitHub
-  pull requests can be merged, and to test against multiple Ruby versions.
+* 在`<PROJECT_NAME>.gemspec`文件中声明依赖。
+* `gemspec`引用放到`Gemfile`里。
+* 用[Appraisal]去测试一个gem中依赖的gem的版本（例如Rails引擎中的Rails版本检查）。
+* 用[Bundler]去管理gem的依赖。
+* 用[Travis CI]做持续集成，指示Github的pull请求是否可以合并，以及对多个Ruby版本的测试。
 
 [Appraisal]: https://github.com/thoughtbot/appraisal
 [Bundler]: http://bundler.io
@@ -58,9 +53,9 @@ Ruby Gems
 Rails
 -----
 
-* Avoid bypassing validations with methods like `save(validate: false)`,
-  `update_attribute`, and `toggle`.
-* Avoid instantiating more than one object in controllers.
+* 避免绕过一些方法的验证，像`save(validate: false)`,
+  `update_attribute`, 和 `toggle`.
+* 避免在congtrollers里面实例化多个对象。
 * Avoid naming methods after database columns in the same class.
 * Don't change a migration after it has been merged into master if the desired
   change can be solved with another migration.
