@@ -77,14 +77,13 @@ Rails
 Testing
 -------
 
-* Avoid `any_instance` in rspec-mocks and mocha. Prefer [dependency injection].
-* Avoid `its`, `let`, `let!`, `specify`, `before`, and `subject` in RSpec.
-* Avoid using instance variables in tests.
-* Disable real HTTP requests to external services with
-  `WebMock.disable_net_connect!`.
-* Don't test private methods.
-* Test background jobs with a [`Delayed::Job` matcher].
-* Use [stubs and spies] \(not mocks\) in isolated tests.
+* 在rspec-mocks和mocha中避免`any_instance`的使用，优先使用[依赖注入（dependency injection）].
+* 在RSpec中避免使用`its`, `let`, `let!`, `specify`, `before`, 和 `subject`。
+* 避免在测试中使用实例变量。
+* 使用`WebMock.disable_net_connect!`去禁用真正的外部HTTP请求。
+* 不要测试私有方法。
+* 使用[`Delayed::Job` matcher]去测试后台任务。
+* 在独立的测试中使用[stubs和spies] \(不是mocks\)。
 * Use a single level of abstraction within scenarios.
 * Use an `it` example or test method for each execution path through the method.
 * Use [assertions about state] for incoming messages.
@@ -93,9 +92,9 @@ Testing
 * Use integration tests to execute the entire app.
 * Use non-[SUT] methods in expectations when possible.
 
-[dependency injection]: http://en.wikipedia.org/wiki/Dependency_injection
+[依赖注入（dependency injection）]: http://en.wikipedia.org/wiki/Dependency_injection
 [`Delayed::Job` matcher]: https://gist.github.com/3186463
-[stubs and spies]: http://robots.thoughtbot.com/post/159805295/spy-vs-spy
+[stubs和spies]: http://robots.thoughtbot.com/post/159805295/spy-vs-spy
 [assertions about state]: https://speakerdeck.com/skmetz/magic-tricks-of-testing-railsconf?slide=51
 [Fake]: http://robots.thoughtbot.com/post/219216005/fake-it
 [SUT]: http://xunitpatterns.com/SUT.html
