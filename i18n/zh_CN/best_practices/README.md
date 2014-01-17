@@ -57,28 +57,22 @@ Rails
   `update_attribute`, 和 `toggle`.
 * 避免在congtrollers里面实例化多个对象。
 * Avoid naming methods after database columns in the same class.
-* Don't change a migration after it has been merged into master if the desired
-  change can be solved with another migration.
-* Don't reference a model class directly from a view.
-* Don't use instance variables in partials. Pass local variables to partials
-  from view templates.
-* Don't use SQL or SQL fragments (`where('inviter_id IS NOT NULL')`) outside of
-  models.
-* If there are default values, set them in migrations.
-* Keep `db/schema.rb` or `db/development_structure.sql` under version control.
-* Use only one instance variable in each view.
-* Use SQL, not `ActiveRecord` models, in migrations.
-* Use the [`.ruby-version`] file convention to specify the Ruby version and
-  patch level for a project.
-* Use `_url` suffixes for named routes in mailer views and [redirects].  Use
-  `_path` suffixes for named routes everywhere else.
-* Validate the associated `belongs_to` object (`user`), not the database column
-  (`user_id`).
-* Use `db/seeds.rb` for data that is required in all environments.
-* Use `dev:prime` rake task for development environment seed data.
+* 在一个数据迁移文件被合并到主分支（master）之后就不要再去改变它了，如果需要改变的话，就用一个新的数据迁移文件去解决。
+* 不要直接在view中去引用一个model类。
+* 不要在partials里面用实例变量，要从view模板里传递本地变量给partials。
+* 不要在models外使用SQL或SQL片段 (`where('inviter_id IS NOT NULL')`)。
+* 请把默认值设置在迁移文件中（migrations）。
+* 保持`db/schema.rb`或 `db/development_structure.sql`在版本控制下。
+* 在每一个view中仅使用一个实例变量。
+* 在数据迁移文件中要使用SQL, 而不是用`ActiveRecord` models。
+* 使用[`.ruby-version`]文件约定项目的Ruby版本和patch level。
+* 在邮件视图里和[跳转请求(redirects)]中使用`_url`后缀的命名路由，在其他任何地方均使用`_path`后缀的命名路由。
+* 验证`belongs_to`关联应该使用对象(`user`), 而不是数据库的列名(`user_id`)。
+* 使用`db/seeds.rb`去设置整个环境中的通用数据。 
+* 使用`dev:prime`rake任务去设置开发环境下的seed数据。
 
 [`.ruby-version`]: https://gist.github.com/fnichol/1912050
-[redirects]: http://www.w3.org/Protocols/rfc2616/rfc2616-sec14.html#sec14.30
+[跳转请求(redirects)]: http://www.w3.org/Protocols/rfc2616/rfc2616-sec14.html#sec14.30
 
 Testing
 -------
