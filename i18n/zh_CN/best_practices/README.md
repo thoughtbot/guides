@@ -84,7 +84,7 @@ Testing
 * 不要测试私有方法。
 * 使用[`Delayed::Job` matcher]去测试后台任务。
 * 在独立的测试中使用[stubs和spies] \(不是mocks\)。
-* 在场景（scenarios）中去使用[统一的抽象层面(Single Level of Abstraction译者加解释链接)]。
+* 在场景（scenarios）中要使用[统一的抽象层面(Single Level of Abstraction译者加解释链接)]。
 * Use an `it` example or test method for each execution path through the method.
 * Use [assertions about state] for incoming messages.
 * Use stubs and spies to assert you sent outgoing messages.
