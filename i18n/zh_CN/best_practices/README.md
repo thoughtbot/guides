@@ -84,7 +84,7 @@ Testing
 * 不要测试私有方法。
 * 使用[`Delayed::Job` matcher]去测试后台任务。
 * 在独立的测试中使用[stubs和spies] \(不是mocks\)。
-* Use a single level of abstraction within scenarios.
+* 在场景（scenarios）中去使用[统一的抽象层面(Single Level of Abstraction译者加解释链接)]。
 * Use an `it` example or test method for each execution path through the method.
 * Use [assertions about state] for incoming messages.
 * Use stubs and spies to assert you sent outgoing messages.
@@ -98,6 +98,8 @@ Testing
 [assertions about state]: https://speakerdeck.com/skmetz/magic-tricks-of-testing-railsconf?slide=51
 [Fake]: http://robots.thoughtbot.com/post/219216005/fake-it
 [SUT]: http://xunitpatterns.com/SUT.html
+[统一的抽象层面(Single Level of Abstraction译者加解释链接)]:
+http://masihjesus.wordpress.com/2013/11/02/single-level-of-abstraction/
 
 Bundler
 -------
