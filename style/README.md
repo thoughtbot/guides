@@ -176,6 +176,7 @@ Rails
 * Order ActiveRecord associations alphabetically by attribute name.
 * Order ActiveRecord validations alphabetically by attribute name.
 * Order controller contents: filters, public methods, private methods.
+* Order i18n translations alphabetically by key name.
 * Order model contents: constants, macros, public methods, private methods.
 * Put application-wide partials in the [`app/views/application`] directory.
 * Use `def self.method`, not the `scope :method` DSL.
