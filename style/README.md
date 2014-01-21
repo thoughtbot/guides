@@ -44,7 +44,7 @@ Naming
 ------
 
 * Avoid abbreviations.
-* Avoid types in names (`user_array`).
+* Avoid object types in names (`user_array`, `email_method` `CalculatorClass`, `ReportModule`).
 * Name the enumeration parameter the singular of the collection.
 * Name variables, methods, and classes to reveal intent.
 * Treat acronyms as words in names (`XmlHttpRequest` not `XMLHTTPRequest`),
