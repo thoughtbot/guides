@@ -34,7 +34,7 @@ Guides is maintained by [thoughtbot, inc](http://thoughtbot.com/community).
 License
 -------
 
-Guides is © 2013 thoughtbot, inc. It is distributed under the [Creative Commons
+Guides is © 2014 thoughtbot, inc. It is distributed under the [Creative Commons
 Attribution License](http://creativecommons.org/licenses/by/3.0/).
 
 The names and logos for thoughtbot are trademarks of thoughtbot, inc.
