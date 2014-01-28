@@ -173,7 +173,7 @@ HTML
 CSS
 ---
 
-* Use Sass.
+* Use Sass or Less
 
 Sass
 ----
