@@ -1,7 +1,7 @@
-Protocol
+协议
 ========
 
-A guide for getting things done.
+为了把事情做好
 
 Set up laptop
 -------------

@@ -3,10 +3,10 @@
 
 以下指南是为了把事情做好，让编程更好更规范。
 
-* [协议](/protocol)
-* [代码审查](/code-review)
-* [最佳实践](/best-practices)
-* [风格](/style)
+* [协议](/i18n/zh_CN/protocol)
+* [代码审查](/i18n/zh_CN/code-review)
+* [最佳实践](/i18n/zh_CN/best-practices)
+* [风格](/i18n/zh_CN/style)
 
 指导原则:
 
