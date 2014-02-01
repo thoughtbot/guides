@@ -104,17 +104,15 @@ http://masihjesus.wordpress.com/2013/11/02/single-level-of-abstraction/
 Bundler
 -------
 
-* Specify the [Ruby version] to be used on the project in the `Gemfile`.
-* Use a [pessimistic version] in the `Gemfile` for gems that follow semantic
-  versioning, such as `rspec`, `factory_girl`, and `capybara`.
-* Use a [versionless] `Gemfile` declarations for gems that are safe to update
-  often, such as pg, thin, and debugger.
-* Use an [exact version] in the `Gemfile` for fragile gems, such as Rails.
+* 在`Gemfile`中指定项目使用的[Ruby版本]。
+* 在`Gemfile`中使用[悲观版本(pessimistic version)]为一些gems指定语义化的版本，比如 `rspec`, `factory_girl`, 和 `capybara`。（译者注：这些gems不需要经常性的更新）
+* 在`Gemfile`中对一些需要经常更新的安全的gems，要[不限制版本(versionless)]，像 pg, thin, 和 debugger之类的gem。（译者注：这些gems都是向后兼容比较强的，版本之间不会有大变化，所以使用最新版本就好了，不需要指定版本号）
+* 在`Gemfile`中给一些脆弱的gems使用[确切的版本(exact version)]，比如Rails。（译者注：脆弱的gems是指版本之间变化较大，兼容性不强）
 
-[Ruby version]: http://bundler.io/v1.3/gemfile_ruby.html
-[exact version]: http://robots.thoughtbot.com/post/35717411108/a-healthy-bundle
-[pessimistic version]: http://robots.thoughtbot.com/post/35717411108/a-healthy-bundle
-[versionless]: http://robots.thoughtbot.com/post/35717411108/a-healthy-bundle
+[Ruby版本]: http://bundler.io/v1.3/gemfile_ruby.html
+[确切的版本(exact version)]: http://robots.thoughtbot.com/post/35717411108/a-healthy-bundle
+[悲观版本(pessimistic version)]: http://robots.thoughtbot.com/post/35717411108/a-healthy-bundle
+[不限制版本(versionless)]: http://robots.thoughtbot.com/post/35717411108/a-healthy-bundle
 
 Postgres
 --------
