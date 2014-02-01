@@ -1,36 +1,32 @@
-Code Review
+代码审查
 ===========
 
-A guide for reviewing code and having your code reviewed.
+审查别人的代码以及接受自己的代码被别人审查
 
-Everyone
+每个人都该知道的
 --------
 
 * Accept that many programming decisions are opinions. Discuss tradeoffs, which
   you prefer, and reach a resolution quickly.
-* Ask questions; don't make demands. ("What do you think about naming this
-  `:user_id`?")
-* Ask for clarification. ("I didn't understand. Can you clarify?")
-* Avoid selective ownership of code. ("mine", "not mine", "yours")
-* Avoid using terms that could be seen as referring to personal traits. ("dumb",
-  "stupid") Assume everyone is attractive, intelligent, and well-meaning.
-* Be explicit. Remember people don't always understand your intentions online.
-* Be humble. ("I'm not sure - let's look it up.")
-* Don't use hyperbole. ("always", "never", "endlessly", "nothing")
-* Don't use sarcasm.
-* Keep it real. If emoji, animated gifs, or humor aren't you, don't force them.
+* 提问，而不是提要求。（“你觉得`:user_id`这个命名怎么样？”）
+* 对于不清楚的地方，请求阐述。
+  ("我不太理解这个地方，你能给我阐述清楚吗？")
+* 避免选择代码所有权。 ("我的", "不是我的", "你们的")
+* 避免使用可能被看作个人特征的词语 ("哑巴","愚蠢")。假设我们每个人都是有吸引力，聪明和充满善意的。
+* 直言不讳。记住别人并不会总是能理解你的意思。
+* 要谦虚。（“我不太确定 - 让我们一起来看看它”）
+* 不要使用太夸张的词。 ("总是", "从来不", "永久的", "决不")
+* 不要嘲讽。
+* 保持真实. If emoji, animated gifs, or humor aren't you, don't force them.
   If they are, use them with aplomb.
-* Talk in person if there are too many "I didn't understand" or "Alternative
-  solution:" comments. Post a follow-up comment summarizing offline discussion.
+* 和那些回复太多“我不太理解”或者“有一个替代解决方案”的人在线下好好谈谈，然后再把谈话内容做个总结回复到线上。
 
-Having your code reviewed
+当自己的代码被别人审查
 -------------------------
 
-* Be grateful for the reviewer's suggestions. ("Good call. I'll make that
-  change.")
-* Don't take it personally. The review is of the code, not you.
-* Explain why the code exists. ("It's like that because of these reasons. Would
-  it be more clear if I rename this class/file/method/variable?")
+* 感谢审查者的意见。 ("很好的要求，我会做出这样的改变。")
+* 不要往心里去，审查的是代码，而不是你这个人。
+* 解释代码为什么存在。（“是这样的，如果我重新改变这些类/文件/方法/变量的名字，可能会更易读”） 
 * Extract some changes and refactorings into future tickets/stories.
 * Link to the code review from the ticket/story. ("Ready for review:
   https://github.com/organization/project/pull/1")
