@@ -1,7 +1,7 @@
-Style
+风格
 =====
 
-A guide for programming in style.
+编程风格
 
 Git
 ---
