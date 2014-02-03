@@ -143,6 +143,7 @@ Ruby
 * Use `def` with parentheses when there are arguments.
 * Use `each`, not `for`, for iteration.
 * Use heredocs for multi-line strings.
+* Prefer the Ruby 1.9 hash syntax where applicable.
 
 ERb
 ---
