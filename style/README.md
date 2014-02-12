@@ -149,6 +149,7 @@ Ruby
 * Use `def self.method`, not `def Class.method` or `class << self`.
 * Use `def` with parentheses when there are arguments.
 * Use `each`, not `for`, for iteration.
+* Use `rescue` without `begin`/`end` when possible.
 * Use heredocs for multi-line strings.
 
 ERb
