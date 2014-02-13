@@ -126,12 +126,15 @@ Ruby
 * Avoid explicit return statements.
 * Avoid using semicolons.
 * Don't use `self` explicitly anywhere except class methods (`def self.method`)
+* Don't use `unless` with `else`. Rewrite these with the positive case first.
   and assignments (`self.attribute =`).
 * Prefer `detect` over `find`.
 * Prefer `inject` over `reduce`.
 * Prefer `map` over `collect`.
 * Prefer `select` over `find_all`.
 * Prefer single quotes for strings.
+* Prefer JSON-style hashes (`{ key: value }`) over hash-rockets (`=>`).
+* Prefer string interpolation instead of string concatenation.
 * Use `_` for unused block parameters.
 * Use `%{}` for single-line strings needing interpolation and double-quotes.
 * Use `&&` and `||` instead of `and` and `or`.
