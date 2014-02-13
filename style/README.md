@@ -132,6 +132,7 @@ Ruby
 * Prefer `map` over `collect`.
 * Prefer `select` over `find_all`.
 * Prefer single quotes for strings.
+* Prefer JSON-style hashes (`{ key: value }`) over hash-rockets (`=>`).
 * Use `_` for unused block parameters.
 * Use `%{}` for single-line strings needing interpolation and double-quotes.
 * Use `&&` and `||` instead of `and` and `or`.
