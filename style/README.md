@@ -126,6 +126,7 @@ Ruby
 * Avoid explicit return statements.
 * Avoid using semicolons.
 * Don't use `self` explicitly anywhere except class methods (`def self.method`)
+* Don't use `unless` with `else`. Rewrite these with the positive case first.
   and assignments (`self.attribute =`).
 * Prefer `detect` over `find`.
 * Prefer `inject` over `reduce`.
