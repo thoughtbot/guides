@@ -72,12 +72,6 @@ class SomeClass
     user.ensure_authenticated!
   end
 
-  def method_which_raises_an_exception
-    behavior_that_might_raise
-  rescue ExceptionClass => exception
-    handle_exception exception
-  end
-
   def self.class_method
     method_body
   end
