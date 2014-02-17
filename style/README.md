@@ -180,6 +180,7 @@ Rails Routes
 * Avoid the `:except` option in routes.
 * Order resourceful routes alphabetically by name.
 * Use the `:only` option to explicitly state exposed routes.
+* Prefer `get` and `post` over `match`.
 
 Background Jobs
 ---------------
