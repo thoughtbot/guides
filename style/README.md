@@ -110,6 +110,7 @@ Sass
 CoffeeScript
 ------------
 
+* Avoid conditional modifiers (lines that end with conditionals).
 * Initialize arrays using `[]`.
 * Initialize empty objects and hashes using `{}`.
 * Use hyphen-separated filenames, such as `coffee-script.coffee`.
