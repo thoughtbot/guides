@@ -116,7 +116,7 @@ CoffeeScript
 * Use `PascalCase` for classes, `lowerCamelCase` for variables and functions,
   `SCREAMING_SNAKE_CASE` for constants, `_single_leading_underscore` for
   private variables and functions.
-* Prefer `is` to `== ` or `===`
+* Prefer `is` to `== `
 * Prefer `or` and `and` to `||` and `&&`
 
 Ruby
