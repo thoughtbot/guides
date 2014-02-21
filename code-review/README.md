@@ -23,7 +23,7 @@ Everyone
 * Talk in person if there are too many "I didn't understand" or "Alternative
   solution:" comments. Post a follow-up comment summarizing offline discussion.
 
-Having your code reviewed
+Having Your Code Reviewed
 -------------------------
 
 * Be grateful for the reviewer's suggestions. ("Good call. I'll make that
@@ -43,7 +43,7 @@ Having your code reviewed
 * Wait to merge the branch until Continuous Integration (TDDium, TravisCI, etc.)
   tells you the test suite is green in the branch.
 
-Reviewing code
+Reviewing Code
 --------------
 
 Understand why the code is necessary (bug, user experience, refactoring). Then:
@@ -58,7 +58,7 @@ Understand why the code is necessary (bug, user experience, refactoring). Then:
 * Seek to understand the author's perspective.
 * Sign off on the pull request with a :thumbsup: or "Ready to merge" comment.
 
-Style comments
+Style Comments
 --------------
 
 Reviewers should comment on missed [style](../style)
@@ -74,18 +74,3 @@ An example response to style comments:
 
 If you disagree with a guideline, open an issue on the guides repo rather than
 debating it within the code review. In the meantime, apply the guideline.
-
-Ruby on Rails review
---------------------
-
-* Review data integrity closely, such as migrations that make irreversible
-  changes to the data, and whether there is a related todo to make a database
-  backup during the staging and production deploys.
-* Review SQL queries for potential SQL injection.
-* Review whether dependency upgrades include a reason in the commit message,
-  such as a link to the dependency's `ChangeLog` or `NEWS` file.
-* Review whether new database indexes are necessary if new columns or SQL
-  queries were added.
-* Review whether new scheduler (`cron`) tasks have been added and whether there
-  is a related todo in the project management system to add it during the
-  staging and production deploys.
