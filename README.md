@@ -4,6 +4,9 @@ Guides
 Guides for getting things done, programming well, and programming in style.
 
 * [Protocol](/protocol)
+  * [Git](/protocol/git)
+  * [Rails](/protocol/rails)
+  * [iOS](/protocol/ios)
 * [Code Review](/code-review)
 * [Best Practices](/best-practices)
 * [Style](/style)
