@@ -251,10 +251,16 @@ Testing
 
 [Sample](samples/testing.rb)
 
-* Don't prefix `it` block descriptions with `should`. Use
-  [Imperative mood](http://en.wikipedia.org/wiki/Imperative_mood) instead.
-* Name outer `describe` blocks after the method under test. Use `.method`
-  for class methods and `#method` for instance methods.
+* Don't prefix `it` block descriptions with `should`. Use [Imperative mood]
+  instead.
+* Put one-liner specs at the beginning of the outer `describe` blocks.
+* Use `.method` to describe class methods and `#method` to describe instance
+  methods.
+* Use `context` to describe testing preconditions.
+* Use `describe '#method_name'` to group tests by method-under-test
+* Use a single, top-level `describe ClassName` block.
+
+[Imperative mood]: http://en.wikipedia.org/wiki/Imperative_mood
 
 Objective-C
 -----------
