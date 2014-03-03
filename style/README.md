@@ -251,7 +251,8 @@ Testing
 
 [Sample](samples/testing.rb)
 
-* Don't prefix `it` block descriptions with 'should'.
+* Don't prefix `it` block descriptions with `should`. Use
+  [Imperative mood](http://en.wikipedia.org/wiki/Imperative_mood) instead.
 * Name outer `describe` blocks after the method under test. Use `.method`
   for class methods and `#method` for instance methods.
 
