@@ -23,7 +23,7 @@ class SomeClass
   end
 
   def method_with_single_line_block
-    items.map(&:some_attribute)
+    items.map { |item| "#{item.prefix} #{item.description}" }
   end
 
   def method_that_returns_an_array
