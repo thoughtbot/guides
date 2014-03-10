@@ -87,6 +87,8 @@ Sass
 * Don't use ID's for style.
 * Use meaningful names: `$visual-grid-color` not `$color` or `$vslgrd-clr`.
 * Use ID and class names that are as short as possible but as long as necessary.
+* Use BEM notation for components: `.post__title`.
+* Use BEM notation for modifiers: `.button--large`.
 * Append the prefix js- to ID's that are used by Javascript.
 * Avoid using the direct descendant selector `>`.
 * Avoid nesting more than 4 selectors deep.
@@ -100,11 +102,13 @@ Sass
 
 ### Organization
 * Use Bourbon for a Sass Library.
-* Use Neat for a grid framework.
-* Use Bitters / Base folder for style on HTML tags, global variables, global extends and global mixins.
+* Use CSS Wizardry Grid for a grid framework.
 * Use Normalize as a browser reset.
 * Use HTML structure for ordering of selectors. Don't just put styles at the bottom of the Sass file.
-* Prefer the same file structure that is found in app/views.
+* Use lib folder for variables, mixins and functions.
+* Use base folder for basic UI elements: forms, lists, buttons, icons, etc.
+* Use objects folder for UI modules.
+* Modularize using as many files as necessary.
 * Avoid having files longer than 100 lines.
 
 CoffeeScript
