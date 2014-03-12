@@ -1,0 +1,3 @@
+[submodule "best-practices/objective-c"]
+	path = best-practices/objective-c
+	url = git@github.com:oscart/objective-c-conventions.git
