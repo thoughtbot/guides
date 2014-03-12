@@ -190,8 +190,9 @@ Browsers
 Objective-C
 -----------
 
-* Prefer categories on `Foundation` classes to helper methods.
-* Prefer string constants to literals when providing keys or key paths to methods.
+* See [Objective-C code conventions]
+
+[Objective-C code conventions]: https://github.com/oscart/objective-c-conventions
 
 Shell
 -----
