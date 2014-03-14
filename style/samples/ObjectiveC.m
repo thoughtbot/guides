@@ -1,32 +1,35 @@
-#import "Alpha.h"
-#import "Beta.h"
+#import "TBAlpha.h"
+#import "TBBeta.h"
 
 // Use enums when possible. They should be named similarly, with the prefix
 // coming from the defined enum type
-typedef NS_ENUM(NSInteger, MyEnum) {
-  MyEnumNumberOne,
-  MyEnumNumberTwo
+typedef NS_ENUM(NSInteger, TMEnum) {
+  TBEnumFirst,
+  TBEnumSecond,
+  TBEnumCount // Use an extra enum to obtain the number of options if applicable
 };
 
 // Use @interface extensions for private properties
 @interface TBClassName () <Protocols>
 
+// Let the compiler decide the storage type unless you need to ensure a specific type
+@property (nonatomic, weak) id<TBDelegate> delegate;
+@property (nonatomic, readonly) TBObject *someObject;
+
 // Keep @properties grouped together by function
-@property (strong, nonatomic) IBOutlet UISearchBar *searchBar;
-@property (strong, nonatomic) IBOutlet UITableView *tableView;
+@property (nonatomic) IBOutlet UISearchBar *searchBar;
+@property (nonatomic) IBOutlet UITableView *tableView;
 
-@property (strong, nonatomic) NSManagedObjectContext *managedObjectContext;
-@property (strong, nonatomic) NSFetchedResultsController *fetchedResultsController;
-
-@property (strong, nonatomic, readonly) TBObject *someObject;
+@property (nonatomic) NSManagedObjectContext *managedObjectContext;
+@property (nonatomic) NSFetchedResultsController *fetchedResultsController;
 
 @end
 
 // Use static NSString points to consts for string constants
-static NSString *const ConstantName = @"Constant";
+static NSString *const TBConstantName = @"Constant";
 
 // Prepend constants with 'k' when being used as keys
-static NSString *const kFirstName = @"FirstName";
+static NSString *const kTBFirstName = @"FirstName";
 
 // Always use an appropriate 2 or 3 letter prefix for class names
 @implementation TBClassName
@@ -64,11 +67,11 @@ static NSString *const kFirstName = @"FirstName";
 
     NSMutableArray *deckOfCards = [NSMutableArray arrayWithCapacity:52];
 
-    for (Card *card in deckOfCards) { // Newlines before and after conditionals and loops
+    for (TBCard *card in deckOfCards) { // Newlines before and after conditionals and loops
         NSLog(@"%@", [card description]);
     }
 
-    Card *jokerCard = [Card joker];
+    TBCard *jokerCard = [TBCard joker];
     [deckOfCards addObject:jokerCard];
 
     // Use ! to check for nots. Comparing to 'nil' is redundant
