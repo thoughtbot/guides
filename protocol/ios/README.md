@@ -11,22 +11,32 @@ Install the latest version of Xcode from the App Store.
 Create App
 ----------
 
-Create a new project in Xcode with these settings:
+Get Liftoff.
 
-* Check 'Create local git repository for this project'.
-* Check 'Use Automatic Reference Counting'.
-* Set an appropriate 2 or 3 letter class prefix.
-* Set the Base SDK to 'Latest iOS'.
-* Set the iOS Deployment Target to 6.0.
-* Use the Apple LLVM compiler.
+    brew tap thoughtbot/formulae
+    brew install liftoff
 
-Get liftoff.
+Get CocoaPods
 
-    gem install liftoff
+    [sudo] gem install cocoapods
 
-Run liftoff in the project directory.
+Create the app.
 
     liftoff
+
+* Be sure to set an appropriate 2 or 3 letter class prefix.
+
+Set Up App
+----------
+
+Get the code.
+
+    git clone git@github.com:organization/app.git
+
+Install the app's dependencies.
+
+    cd project
+    pod install
 
 Git Protocol
 ------------
@@ -36,4 +46,10 @@ Follow the normal [Git Protocol](/protocol/git).
 Code Review
 -----------
 
-Follow the normal [Code Review guidelines](/code-review).
+Follow the normal [Code Review guidelines](/code-review). When reviewing
+others' iOS work, look in particular for:
+
+* Review that ViewControllers are adhering to SRP
+* Watch for CoreData thread boundary violations
+* Watch for potential retain cycles with blocks
+* Ensure that methods that require parameters are using `NSParameterAssert()`
