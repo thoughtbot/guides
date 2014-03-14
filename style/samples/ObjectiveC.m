@@ -64,7 +64,7 @@ static NSString *const kFirstName = @"FirstName";
 
     NSMutableArray *deckOfCards = [NSMutableArray arrayWithCapacity:52];
 
-    for (Card *card in deckOfCards) { // Newlines before and after conditional blocks
+    for (Card *card in deckOfCards) { // Newlines before and after conditionals and loops
         NSLog(@"%@", [card description]);
     }
 
