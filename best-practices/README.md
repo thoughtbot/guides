@@ -43,6 +43,7 @@ Ruby
 Ruby Gems
 ---------
 
+* Add generated binstubs to Git.
 * Declare dependencies in the `<PROJECT_NAME>.gemspec` file.
 * Reference the `gemspec` in the `Gemfile`.
 * Use [Appraisal] to test the gem against multiple versions of gem dependencies
