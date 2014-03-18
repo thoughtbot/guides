@@ -35,15 +35,18 @@ Ruby
 
 * Avoid optional parameters. Does the method do too much?
 * Avoid monkey-patching.
+* Generate necessary [Bundler binstubs] for the project, such as `rake` and
+  `rspec`, and add them to version control.
 * Prefer classes to modules when designing functionality that is shared by
   multiple models.
 * Prefer `private` when indicating scope. Use `protected` only with comparison
   methods like `def ==(other)`, `def <(other)`, and `def >(other)`.
 
+[Bundler binstubs](https://github.com/sstephenson/rbenv/wiki/Understanding-binstubs)
+
 Ruby Gems
 ---------
 
-* Add generated binstubs to Git.
 * Declare dependencies in the `<PROJECT_NAME>.gemspec` file.
 * Reference the `gemspec` in the `Gemfile`.
 * Use [Appraisal] to test the gem against multiple versions of gem dependencies
@@ -70,6 +73,8 @@ Rails
   from view templates.
 * Don't use SQL or SQL fragments (`where('inviter_id IS NOT NULL')`) outside of
   models.
+* Generate necessary [Spring binstubs] for the project, such as `rake` and
+  `rspec`, and add them to version control.
 * If there are default values, set them in migrations.
 * Keep `db/schema.rb` or `db/development_structure.sql` under version control.
 * Use only one instance variable in each view.
@@ -85,6 +90,7 @@ Rails
 
 [`.ruby-version`]: https://gist.github.com/fnichol/1912050
 [redirects]: http://www.w3.org/Protocols/rfc2616/rfc2616-sec14.html#sec14.30
+[Spring binstubs]: https://github.com/sstephenson/rbenv/wiki/Understanding-binstubs
 
 Testing
 -------
