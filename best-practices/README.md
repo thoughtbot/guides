@@ -81,6 +81,8 @@ Rails
   (`user_id`).
 * Use `db/seeds.rb` for data that is required in all environments.
 * Use `dev:prime` rake task for development environment seed data.
+* Don't use a migration to manipulate database data, instead use a rake task.
+* Use `db:setup` rake task when you are setting up the database for the first time on an existing project.
 
 [`.ruby-version`]: https://gist.github.com/fnichol/1912050
 [redirects]: http://www.w3.org/Protocols/rfc2616/rfc2616-sec14.html#sec14.30
