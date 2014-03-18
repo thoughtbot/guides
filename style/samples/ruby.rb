@@ -72,6 +72,10 @@ class SomeClass
     user.ensure_authenticated!
   end
 
+  def method_with_alterative
+    User.first or User.default
+  end
+
   def self.class_method
     method_body
   end

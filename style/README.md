@@ -142,7 +142,8 @@ Ruby
 * Prefer single quotes for strings.
 * Use `_` for unused block parameters.
 * Use `%{}` for single-line strings needing interpolation and double-quotes.
-* Use `&&` and `||` for Boolean expressions.
+* Use `&&` and `||` instead of `and` and `or` for expressions which return
+  `true` or `false`.
 * Use `{...}` for single-line blocks. Use `do..end` for multi-line blocks.
 * Use `?` suffix for predicate methods.
 * Use `CamelCase` for classes and modules, `snake_case` for variables and
@@ -150,6 +151,8 @@ Ruby
 * Use `def self.method`, not `def Class.method` or `class << self`.
 * Use `def` with parentheses when there are arguments.
 * Use `each`, not `for`, for iteration.
+* Use `or` instead of `||` for expressions which return an alternative value for
+  `nil`.
 * Use heredocs for multi-line strings.
 
 ERb
