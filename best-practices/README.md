@@ -195,6 +195,15 @@ Objective-C
 * Prefer categories on `Foundation` classes to helper methods.
 * Prefer string constants to literals when providing keys or key paths to methods.
 
+
+Java
+-----------
+* Use [Code Style Guidelines]
+* See [Supporting Multiple Screens] 
+
+[Code Style Guidelines]: https://source.android.com/source/code-style.html
+[Supporting Multiple Screens]: http://developer.android.com/guide/practices/screens_support.html
+
 Shell
 -----
 
