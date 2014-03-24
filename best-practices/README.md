@@ -199,7 +199,6 @@ Objective-C
 Java
 -----------
 * Use [Code Style Guidelines]
-* See [Supporting Multiple Screens] 
 
 [Code Style Guidelines]: https://source.android.com/source/code-style.html
 
