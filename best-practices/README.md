@@ -164,6 +164,7 @@ Email
 JavaScript
 ----------
 
+* Use Strict Mode: `'use strict';`
 * Use CoffeeScript.
 
 HTML
