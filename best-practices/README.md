@@ -207,6 +207,7 @@ Android
 -----------
 * See [Supporting Multiple Screens]
 * See [Supporting Tablets and Handsets]
+* See [Best Practices for Testing]
 [Supporting Multiple Screens]: http://developer.android.com/guide/practices/screens_support.html
 [Supporting Tablets and Handsets]: http://developer.android.com/guide/practices/tablets-and-handsets.html
 
