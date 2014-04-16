@@ -298,8 +298,9 @@ Python
 [PEP 8]: http://www.python.org/dev/peps/pep-0008/
 
 
-Java
-------
+Android 
+-----------
+[Creating Unit Tests Sample](samples/LaunchActivityTest.java)
 
 
 
