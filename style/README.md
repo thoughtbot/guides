@@ -302,13 +302,10 @@ Android
 -----------
 [ Sample](samples/LaunchActivityTest.java)
 
-* The ActivityUnitTestCase class provides support for isolated testing of a single Activity. To create a unit test for your Activity, your test class  should extend ActivityUnitTestCase.
-
-  The Activity in an ActivityUnitTestCase is not automatically started by Android Instrumentation. To start the Activity in isolation, you need to explicitly call the startActivity() method, and pass in the Intent to launch your target Activity.
-
-
-
-
+* Verifying that LaunchActivity fires an Intent when a button is pushed clicked.
+* Verifying that the launched Intent contains the correct payload data.
+  
+  To verify if an Intent was triggered following the Button click, you can use the getStartedActivityIntent() method. By using assertion methods, you can verify that the returned Intent is not null, and that it contains the expected string value to launch the next Activity. If both assertions evaluate to true, you've successfully verified that the Intent was correctly sent by your Activity.
 
 
 
