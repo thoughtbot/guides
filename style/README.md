@@ -302,6 +302,7 @@ Android
 -----------
 [ Sample](samples/LaunchActivityTest.java)
 
+ Your unit testing goals might include:
 * Verifying that LaunchActivity fires an Intent when a button is pushed clicked.
 * Verifying that the launched Intent contains the correct payload data.
   
