@@ -212,7 +212,6 @@ Android
 [Supporting Tablets and Handsets]: http://developer.android.com/guide/practices/tablets-and-handsets.html
 
 [Best Practices for Testing]: https://developer.android.com/training/testing.html
-[Creating Unit Tests Sample](samples/LaunchActivityTest.java)
 
 Shell
 -----
