@@ -189,6 +189,16 @@ Rails
 
 [`app/views/application`]: http://asciicasts.com/episodes/269-template-inheritance
 
+Rails Migrations
+----------------
+* Set an empty string as the default constraint for non-required string and text
+  fields. [Example][default example].
+* List timestamps first when creating a new table. [Example][timestamps
+  example].
+
+[timestamps example]: /style/samples/migration.rb
+[default example]: /style/samples/migration.rb#L6
+
 Rails Routes
 ------------
 
@@ -308,10 +318,9 @@ Shell
 
 * Break long lines on `|`, `&&`, or `||` and indent the continuations.
 * Don't add an extension to executable shell scripts.
-* Don't put a line break before `then` or `do`, use `if ...; then` and 
-  `while ...; do`.
+* Don't put a line break before `then` or `do`, use `if ...; then` and `while
+  ...; do`.
 * Use `for x; do`, not `for x in "$@"; do`.
-* Use `snake_case` for variable names and `ALLCAPS` for environment 
-  variables.
+* Use `snake_case` for variable names and `ALLCAPS` for environment variables.
 * Use single quotes for strings that don't contain escapes or variables.
 * Use two-space indentation.
