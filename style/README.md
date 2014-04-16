@@ -304,7 +304,7 @@ Android
 
 * The ActivityUnitTestCase class provides support for isolated testing of a single Activity. To create a unit test for your Activity, your test class  should extend ActivityUnitTestCase.
 
-The Activity in an ActivityUnitTestCase is not automatically started by Android Instrumentation. To start the Activity in isolation, you need to explicitly call the startActivity() method, and pass in the Intent to launch your target Activity.
+  The Activity in an ActivityUnitTestCase is not automatically started by Android Instrumentation. To start the Activity in isolation, you need to explicitly call the startActivity() method, and pass in the Intent to launch your target Activity.
 
 
 
