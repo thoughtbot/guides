@@ -197,6 +197,24 @@ Objective-C
 
 [Objective-C code conventions]: https://github.com/oscart/objective-c-conventions
 
+
+Java
+-----------
+* Use [Code Style Guidelines]
+
+[Code Style Guidelines]: https://source.android.com/source/code-style.html
+
+
+Android 
+-----------
+* See [Supporting Multiple Screens]
+* See [Supporting Tablets and Handsets]
+* See [Best Practices for Testing]
+[Supporting Multiple Screens]: http://developer.android.com/guide/practices/screens_support.html
+[Supporting Tablets and Handsets]: http://developer.android.com/guide/practices/tablets-and-handsets.html
+
+[Best Practices for Testing]: https://developer.android.com/training/testing.html
+
 Shell
 -----
 

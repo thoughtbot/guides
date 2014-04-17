@@ -297,6 +297,19 @@ Python
 
 [PEP 8]: http://www.python.org/dev/peps/pep-0008/
 
+
+Android 
+-----------
+[ Sample](samples/LaunchActivityTest.java)
+
+ Your unit testing goals might include:
+* Verifying that LaunchActivity fires an Intent when a button is pushed clicked.
+* Verifying that the launched Intent contains the correct payload data.
+  
+  To verify if an Intent was triggered following the Button click, you can use the getStartedActivityIntent() method. By using assertion methods, you can verify that the returned Intent is not null, and that it contains the expected string value to launch the next Activity. If both assertions evaluate to true, you've successfully verified that the Intent was correctly sent by your Activity.
+
+
+
 Shell
 -----
 
