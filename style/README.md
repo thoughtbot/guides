@@ -3,6 +3,11 @@ Style
 
 A guide for programming in style.
 
+Use [Hound] to automatically review your code and comment on GitHub pull
+requests for violations of the Ruby portions of this style guide.
+
+[Hound]: https://houndci.com
+
 Git
 ---
 
