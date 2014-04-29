@@ -253,3 +253,9 @@ In addition to Shell best practices,
 * Prefer `[[` over `test` or `[`.
 * Prefer process substitution over a pipe in `while read` loops.
 * Use `((` or `let`, not `$((` when you don't need the result
+
+Haskell
+-------
+
+* Avoid partial functions (`head`, `read`, etc).
+* Compile code with `-Wall -Werror`.
