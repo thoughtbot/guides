@@ -15,6 +15,8 @@ Git
 * Prefix feature branch names with your initials.
 * Squash multiple trivial commits into a single commit.
 * Write a [good commit message].
+* Update constanly your feature branch with master.
+* Avoid force push.
 
 [rebase workflow]: https://github.com/thoughtbot/guides/tree/master/protocol#merge
 [good commit message]: http://tbaggery.com/2008/04/19/a-note-about-git-commit-messages.html
@@ -96,6 +98,8 @@ Sass
 * Don't use ID's for style.
 * Use meaningful names: `$visual-grid-color` not `$color` or `$vslgrd-clr`.
 * Use ID and class names that are as short as possible but as long as necessary.
+* Use BEM notation for components: `.post__title`.
+* Use BEM notation for modifiers: `.button--large`.
 * Append the prefix js- to ID's that are used by Javascript.
 * Avoid using the direct descendant selector `>`.
 * Avoid nesting more than 4 selectors deep.
@@ -109,11 +113,13 @@ Sass
 
 ### Organization
 * Use Bourbon for a Sass Library.
-* Use Neat for a grid framework.
-* Use Bitters / Base folder for style on HTML tags, global variables, global extends and global mixins.
+* Use CSS Wizardry Grid for a grid framework.
 * Use Normalize as a browser reset.
 * Use HTML structure for ordering of selectors. Don't just put styles at the bottom of the Sass file.
-* Prefer the same file structure that is found in app/views.
+* Use lib folder for variables, mixins and functions.
+* Use base folder for basic UI elements: forms, lists, buttons, icons, etc.
+* Use objects folder for UI modules.
+* Modularize using as many files as necessary.
 * Avoid having files longer than 100 lines.
 
 CoffeeScript
@@ -317,6 +323,19 @@ Python
 * Follow [PEP 8].
 
 [PEP 8]: http://www.python.org/dev/peps/pep-0008/
+
+
+Android 
+-----------
+[ Sample](samples/LaunchActivityTest.java)
+
+ Your unit testing goals might include:
+* Verifying that LaunchActivity fires an Intent when a button is pushed clicked.
+* Verifying that the launched Intent contains the correct payload data.
+  
+  To verify if an Intent was triggered following the Button click, you can use the getStartedActivityIntent() method. By using assertion methods, you can verify that the returned Intent is not null, and that it contains the expected string value to launch the next Activity. If both assertions evaluate to true, you've successfully verified that the Intent was correctly sent by your Activity.
+
+
 
 Shell
 -----
