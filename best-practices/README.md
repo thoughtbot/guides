@@ -87,10 +87,12 @@ Rails
   (`user_id`).
 * Use `db/seeds.rb` for data that is required in all environments.
 * Use `dev:prime` rake task for development environment seed data.
+* Prefer `cookies.signed` over `cookies` to [prevent tampering].
 
 [`.ruby-version`]: https://gist.github.com/fnichol/1912050
 [redirects]: http://www.w3.org/Protocols/rfc2616/rfc2616-sec14.html#sec14.30
 [Spring binstubs]: https://github.com/sstephenson/rbenv/wiki/Understanding-binstubs
+[prevent tampering]: http://blog.bigbinary.com/2013/03/19/cookies-on-rails.html
 
 Testing
 -------
