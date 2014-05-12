@@ -159,7 +159,11 @@ Ruby
 * Use `def self.method`, not `def Class.method` or `class << self`.
 * Use `def` with parentheses when there are arguments.
 * Use `each`, not `for`, for iteration.
+* Use a trailing comma after each item in a multi-line list, including the last
+  item. [Example][trailing comma example]
 * Use heredocs for multi-line strings.
+
+[trailing comma example]: /style/samples/ruby.rb#L45
 
 ERb
 ---
