@@ -297,13 +297,17 @@ Objective-C
 
 [Sample](samples/ObjectiveC.m)
 
-* `#import` linked frameworks in the prefix header (`ProjectName-Prefix.pch`).
-* Keep `.xib` files grouped with their associated view class.
+* Setup new projects using liftoff and follow provided directory structure.
+* Place `#import`s into the prefix header (`ProjectName-Prefix.pch`) only if
+  used in _many_ files.
+* Place `.xib` files under `Resources/Nibs` and their associated view files in
+  `Classes/Views`.
 * Order `#import` statements alphabetically.
 * Order `@class` directives alphabetically.
 * Order `@property` modifiers: memory management, atomicity, writability.
-* Organize classes into `models`, `views`, `controllers`, `categories`,
-  and `services` directories.
+* Leave out `@property` modifiers unless needed, `nonatomic` is the only one
+  needed in most cases except connecting views with IB in which case `weak` may
+  also be needed.
 * Prefer `@class` to `#import` when referring to external classes in a public
   `@interface`.
 * Prefer `@property` to declaring instance variables.
@@ -320,6 +324,13 @@ Objective-C
 * Use `NSAssert` in methods that require the presence of certain arguments.
 * Write methods using the happy path. Indent the exceptional cases. Keep the
   optimal case in the left-most column.
+* Prefer `enumerateObjectsUsingBlock:` when looping through arrays.
+* Always use braces with control and loop blocks unless it can easily fit on
+  one line.
+* Place opening brace for control and loop blocks on same line.
+* Prefer `NSInteger`, `CGFloat`, and similar macros over `int`, `float`, and
+  other base types.
+* Prefer AutoLayout for view layouts and constraints.
 
 Python
 ------

@@ -2,21 +2,22 @@
 #import "Beta.h"
 
 // Use @interface extensions for private properties
-@interface ClassName () <Protocols>
+@interface TBClassName () <Protocols>
 
 // Keep @properties grouped together by function
-@property (strong, nonatomic) IBOutlet UISearchBar *searchBar;
-@property (strong, nonatomic) IBOutlet UITableView *tableView;
+@property (nonatomic, weak) IBOutlet UISearchBar *searchBar;
+@property (nonatomic, weak) IBOutlet UITableView *tableView;
 
-@property (strong, nonatomic) NSManagedObjectContext *managedObjectContext;
-@property (strong, nonatomic) NSFetchedResultsController *fetchedResultsController;
+@property (nonatomic) NSManagedObjectContext *managedObjectContext;
+@property (nonatomic) NSFetchedResultsController *fetchedResultsController;
 
-@property (strong, nonatomic, readonly) TBObject *someObject;
+@property (nonatomic, readonly) TBObject *someObject;
 
 @end
 
 // Use static NSString points to consts for string constants
-static NSString *const ConstantName = @"Constant";
+static NSString *const TBConstantName = @"Constant";
+static NSUInteger const TBNumberOfCardsInDeck = 52;
 
 // Prepend constants with 'k' when being used as keys
 static NSString *const kFirstName = @"FirstName";
@@ -37,8 +38,7 @@ static NSString *const kFirstName = @"FirstName";
     // Return early if conditions prohibit the intended function of the method
     // Use conditionals for exceptional cases
     // Keep the 'optimal' path non-indented
-    if (!self)
-        return nil;
+    if (!self) return nil;
 
     return self;
 }
@@ -52,18 +52,21 @@ static NSString *const kFirstName = @"FirstName";
     NSDictionary *themeColors = @{ kRedColor : [UIColor redColor], kBlueColor : [UIColor blueColor] };
     NSArray *robots = @[ @"Ralph", @"Bender", @"The Iron Giant" ];
 
-    NSMutableArray *deckOfCards = [NSMutableArray arrayWithCapacity:52];
-
-    // Newlines before and after conditional blocks
-    for (Card *card in deckOfCards)
-        NSLog(@"%@", [card description]);
+    NSMutableArray *deckOfCards = [NSMutableArray array];
 
     Card *jokerCard = [Card joker];
     [deckOfCards addObject:jokerCard];
 
+    // Newlines before and after conditional blocks
+    // Use enumerate to loop through arrays
+    // Use explicit class in block parameters
+    // Use full word 'index'
+    [deckOfCards enumerateObjectsUsingBlock:^(Card *card, NSUInteger index, BOOL *stop) {
+        NSLog(@"%@", [card description]);
+    }];
+
     // Use ! to check for nots. Comparing to 'nil' is redundant
-    if (![creditCard isValid])
-    {
+    if (![creditCard isValid]) {
         //...
     }
 }
