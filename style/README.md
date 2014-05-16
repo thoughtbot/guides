@@ -179,6 +179,11 @@ HTML
 
 * Prefer double quotes for attributes.
 
+HAML
+----
+
+* Don't put content on the same line as the element that wraps it.
+
 Rails
 -----
 
