@@ -73,12 +73,18 @@ Rails work, look in particular for:
 Deploy
 ------
 
-View a list of new commits. View changed files. Deploy to
-[Heroku](https://devcenter.heroku.com/articles/quickstart) staging.
+View a list of new commits. View changed files.
 
     git fetch staging
     git log staging/master..master
     git diff --stat staging/master
+
+If necessary, add new environment variables.
+
+    heroku config:add NEW_VARIABLE=value --remote staging
+
+Deploy to [Heroku](https://devcenter.heroku.com/articles/quickstart) staging.
+
     git push staging
 
 If necessary, run migrations and restart the dynos.
@@ -97,6 +103,7 @@ Deploy to production.
     git fetch production
     git log production/master..master
     git diff --stat production/master
+    heroku config:add NEW_VARIABLE=value --remote production
     git push production
     heroku run rake db:migrate --remote production
     heroku restart --remote production
