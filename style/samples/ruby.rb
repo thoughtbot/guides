@@ -1,5 +1,5 @@
 class SomeClass
-  SOME_CONSTANT = 'upper case name'
+  SOME_CONSTANT = "upper case name"
 
   def initialize(attributes)
     @some_attribute = attributes[:some_attribute]
@@ -32,13 +32,13 @@ class SomeClass
   end
 
   def method_that_returns_a_hash
-    { :key => 'value' }
+    { :key => "value" }
   end
 
   def method_with_large_hash
     {
-      :one => 'value',
-      :two => 'value',
+      :one => "value",
+      :two => "value",
     }
   end
 

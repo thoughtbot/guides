@@ -152,7 +152,7 @@ Ruby
 * Prefer `inject` over `reduce`.
 * Prefer `map` over `collect`.
 * Prefer `select` over `find_all`.
-* Prefer single quotes for strings.
+* Prefer double quotes for strings.
 * Prefer `&&` and `||` over `and` and `or`.
 * Use `_` for unused block parameters.
 * Use `%{}` for single-line strings needing interpolation and double-quotes.
