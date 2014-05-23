@@ -24,7 +24,7 @@ Create a local feature branch based off master.
     git pull
     git checkout -b <branch-name>
 
-Prefix the branch name with your initials.
+When soloing, prefix the branch name with your initials.
 
 Rebase frequently to incorporate upstream changes.
 

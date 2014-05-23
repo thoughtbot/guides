@@ -12,7 +12,7 @@ Git
 ---
 
 * Avoid merge commits by using a [rebase workflow].
-* Prefix feature branch names with your initials.
+* When soloing, prefix feature branch names with your initials.
 * Squash multiple trivial commits into a single commit.
 * Write a [good commit message].
 
