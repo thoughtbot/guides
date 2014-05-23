@@ -17,6 +17,7 @@ section.application {
 
   .news {
     attribute: value;
+    attribute: ($variable * 1.5) 2em;
 
     article {
 
