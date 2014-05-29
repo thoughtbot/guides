@@ -10,6 +10,6 @@ Releasing a Ruby Gem
 * Run `bundle install` to update `Gemfile.lock`.
 * Run the test suite.
 * Edit `NEWS`, `Changelog`, or `README` files if relevant.
-* Commit changes like "Bump to 2.1.0".
+* Commit changes. Use the convention "v2.1.0" in your commit message.
 * Run `rake release`, which tags the release, pushes the tag
   to GitHub, and pushes the gem to Rubygems.org.
