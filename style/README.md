@@ -35,7 +35,7 @@ Formatting
 * Indent continued lines two spaces.
 * Indent private methods equal to public methods.
 * If you break up a chain of method invocations, keep each method invocation on
-  its own line. Place the `.` at the end of each line, except the last.
+  its own line. Place the `.` at the beginning of subsequent lines.
   [Example][dot guideline example].
 * Use 2 space indentation (no tabs).
 * Use an empty line between methods.
