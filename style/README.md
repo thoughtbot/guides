@@ -143,10 +143,7 @@ Ruby
 * Avoid explicit return statements.
 * Avoid using semicolons.
 * Avoid bang (!) method names. Prefer descriptive names.
-* Only use `self` in the following situations:
-  * class methods declarations (`def self.method`)
-  * assignments (`self.attribute =`)
-  * referencing the instance's class (`self.class`)
+* Only use self for assignments or when you need to explicitly reference the class.
 * Prefer `detect` over `find`.
 * Prefer `inject` over `reduce`.
 * Prefer `map` over `collect`.
