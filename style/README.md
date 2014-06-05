@@ -226,7 +226,6 @@ Background Jobs
 Email
 -----
 
-* Use one `ActionMailer` for the app. Name it `Mailer`.
 * Use the user's name in the `From` header and email in the `Reply-To` when
   [delivering email on behalf of the app's users].
 
