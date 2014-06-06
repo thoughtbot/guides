@@ -132,6 +132,8 @@ CoffeeScript
 * Prefer `==` and `!=` to `is` and `isnt`
 * Prefer `||` and `&&` to `or` and `and`
 * Prefer `!` over `not`
+* Prefer `@` over `this` for referencing instance properties.
+* Prefer double quotes.
 
 Ruby
 ----
