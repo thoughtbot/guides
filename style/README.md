@@ -190,6 +190,7 @@ Rails
 * Name initializers for their gem name.
 * Order ActiveRecord associations alphabetically by attribute name.
 * Order ActiveRecord validations alphabetically by attribute name.
+* Order ActiveRecord associations above ActiveRecord validations.
 * Order controller contents: filters, public methods, private methods.
 * Order i18n translations alphabetically by key name.
 * Order model contents: constants, macros, public methods, private methods.
@@ -235,8 +236,6 @@ Testing
 -------
 
 * Avoid the `private` keyword in specs.
-* Order ActiveRecord association tests alphabetically by attribute name.
-* Order ActiveRecord validation tests alphabetically by attribute name.
 * Prefer `eq` to `==` in RSpec.
 * Separate setup, exercise, verification, and teardown phases with newlines.
 * Use RSpec's [`expect` syntax].
@@ -285,6 +284,8 @@ Testing
 * Use `context` to describe testing preconditions.
 * Use `describe '#method_name'` to group tests by method-under-test
 * Use a single, top-level `describe ClassName` block.
+* Order validation, association, and method tests in the same order that they
+  appear in the class.
 
 [Imperative mood]: http://en.wikipedia.org/wiki/Imperative_mood
 
