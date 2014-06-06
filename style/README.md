@@ -100,7 +100,7 @@ Sass
 * Don't use ID's for style.
 * Use meaningful names: `$visual-grid-color` not `$color` or `$vslgrd-clr`.
 * Use ID and class names that are as short as possible but as long as necessary.
-* Append the prefix js- to ID's that are used by Javascript.
+* Prepend the prefix js- to IDs and classes that are used by Javascript.
 * Avoid using the direct descendant selector `>`.
 * Avoid nesting more than 4 selectors deep.
 * Don't nest more than 6 selectors deep.
