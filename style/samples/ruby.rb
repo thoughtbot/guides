@@ -93,6 +93,12 @@ class SomeClass
     method_body
   end
 
+  protected
+
+  attr_reader :foo
+  attr_accessor :bar
+  attr_writer :baz
+
   private
 
   def complex_condition?

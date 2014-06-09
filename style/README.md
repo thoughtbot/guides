@@ -172,6 +172,8 @@ Ruby
 * Use a trailing comma after each item in a multi-line list, including the last
   item. [Example][trailing comma example]
 * Use heredocs for multi-line strings.
+* Prefer `protected` over `private` for non-public `attr_reader`s, `attr_writer`s,
+  and `attr_accessor`s.
 
 [trailing comma example]: /style/samples/ruby.rb#L45
 
