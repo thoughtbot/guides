@@ -265,6 +265,8 @@ Testing
 -------
 
 * Avoid the `private` keyword in specs.
+* Avoid checking boolean equality directly. Instead, write predicate methods and
+  use appropriate matchers. [Example][predicate-example].
 * Prefer `eq` to `==` in RSpec.
 * Separate setup, exercise, verification, and teardown phases with newlines.
 * Use RSpec's [`expect` syntax].
@@ -276,6 +278,7 @@ Testing
 [`expect` syntax]: http://myronmars.to/n/dev-blog/2012/06/rspecs-new-expectation-syntax
 [`allow` syntax]: https://github.com/rspec/rspec-mocks#method-stubs
 [one-liners with an implicit subject]: https://github.com/rspec/rspec-expectations/blob/master/Should.md#one-liners
+[predicate-example]: /style/samples/predicate_tests.rb
 
 #### Acceptance Tests
 
