@@ -29,7 +29,8 @@ Formatting
 * Don't misspell.
 * Don't vertically align tokens on consecutive lines.
 * If you break up an argument list, keep the arguments on their own lines and
-  closing parenthesis on its own line.
+  closing parenthesis on its own line. If the method takes an options hash, you
+  may place the first argument on the same line as the method call.
 * If you break up a hash, keep the elements on their own lines and closing curly
   brace on its own line.
 * Indent continued lines two spaces.
