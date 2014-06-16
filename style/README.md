@@ -204,6 +204,7 @@ Rails
 * Put application-wide partials in the [`app/views/application`] directory.
 * Use `def self.method`, not the `scope :method` DSL.
 * Use the default `render 'partial'` syntax over `render partial: 'partial'`.
+* Use `link_to` for GET requests, and `button_to` for other HTTP verbs.
 
 [`app/views/application`]: http://asciicasts.com/episodes/269-template-inheritance
 
