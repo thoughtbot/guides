@@ -24,8 +24,8 @@ Object-Oriented Design
 * Limit an object's dependencies (entities that depend on an object).
 * Prefer composition over inheritance.
 * Prefer small methods. Between one and five lines is best.
-* Prefer small objects with a single, well-defined responsibility. When an
-  object exceeds 100 lines, it may be doing too many things.
+* Prefer small classes with a single, well-defined responsibility. When a
+  class exceeds 100 lines, it may be doing too many things.
 * [Tell, don't ask].
 
 [Tell, don't ask]: http://robots.thoughtbot.com/post/27572137956/tell-dont-ask
