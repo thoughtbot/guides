@@ -132,6 +132,7 @@ CoffeeScript
   private variables and functions.
 * Prefer `==` and `!=` to `is` and `isnt`
 * Prefer `||` and `&&` to `or` and `and`
+* Prefer `!` over `not`
 
 Ruby
 ----
@@ -154,6 +155,7 @@ Ruby
 * Prefer `select` over `find_all`.
 * Prefer double quotes for strings.
 * Prefer `&&` and `||` over `and` and `or`.
+* Prefer `!` over `not`.
 * Use `_` for unused block parameters.
 * Use `%{}` for single-line strings needing interpolation and double-quotes.
 * Use `{...}` for single-line blocks. Use `do..end` for multi-line blocks.
