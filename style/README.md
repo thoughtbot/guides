@@ -301,7 +301,6 @@ Objective-C
 
 [Sample](samples/ObjectiveC.m)
 
-* Setup new projects using liftoff and follow provided directory structure.
 * Place `#import`s into the prefix header (`ProjectName-Prefix.pch`) only if
   used in _many_ files.
 * Place `.xib` files under `Resources/Nibs` and their associated view files in
@@ -334,7 +333,7 @@ Objective-C
 * Place opening brace for control and loop blocks on same line.
 * Prefer `NSInteger`, `CGFloat`, and similar macros over `int`, `float`, and
   other base types.
-* Prefer AutoLayout for view layouts and constraints.
+* Prefer *Auto Layout* for view layouts and constraints.
 
 Python
 ------

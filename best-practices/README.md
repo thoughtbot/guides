@@ -197,6 +197,8 @@ Browsers
 Objective-C
 -----------
 
+* Setup new projects using [Liftoff](https://github.com/thoughtbot/liftoff) and
+  follow provided directory structure.
 * Prefer categories on `Foundation` classes to helper methods.
 * Prefer string constants to literals when providing keys or key paths to methods.
 
