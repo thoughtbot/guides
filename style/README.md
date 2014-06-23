@@ -149,8 +149,8 @@ Ruby
 * Avoid bang (!) method names. Prefer descriptive names.
 * Don't use `self` explicitly anywhere except class methods (`def self.method`)
   and assignments (`self.attribute =`).
-* Prefer `detect` over `find`.
-* Prefer `inject` over `reduce`.
+* Prefer `find` over `detect`.
+* Prefer `reduce` over `inject`.
 * Prefer `map` over `collect`.
 * Prefer `select` over `find_all`.
 * Prefer double quotes for strings.
