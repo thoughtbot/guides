@@ -55,15 +55,22 @@ class SomeClass
   end
 
   def invoke_method_with_arguments_on_multiple_lines
+    # Good
     some_method(
       i_am_a_long_variable_name_that_i_will_never_fit_on_one_line_with_others,
       two,
       three
     )
 
-    # Bad:
+    # Bad
     some_method(one,
                 two)
+
+    # This is okay
+    some_method(:foo,
+      first: 'option',
+      second: 'option'
+    )
   end
 
   def method_that_uses_infix_operators
