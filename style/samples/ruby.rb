@@ -23,8 +23,12 @@ class SomeClass
     some_method_after_block(should_follow_after_newline)
   end
 
-  def method_with_single_line_block
-    items.map { |item| item.some_attribute }
+  def method_with_single_method_block
+    items.map(&:some_attribute)
+  end
+
+  def method_with_oneline_combined_methods_block
+    items.map { |item| "#{item.one} #{item.two}" }
   end
 
   def method_that_returns_an_array
