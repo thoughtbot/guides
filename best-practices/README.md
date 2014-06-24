@@ -21,7 +21,7 @@ Object-Oriented Design
 * Avoid global variables.
 * Avoid long parameter lists.
 * Limit collaborators of an object (entities an object depends on).
-* Limit the dependencies on a class(entities that depend on a class).
+* Limit an object's dependencies (entities that depend on an object).
 * Prefer composition over inheritance.
 * Prefer small methods. Between one and five lines is best.
 * Prefer small classes with a single, well-defined responsibility. When a
