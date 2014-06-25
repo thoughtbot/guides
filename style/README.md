@@ -73,7 +73,9 @@ Organization
 
 Sass
 ----
+
 ### Formatting
+
 * Use the *Scss* syntax.
 * Use hyphens when naming mixins, extends, classes, functions & variables: `span-columns` not `span_columns` or `spanColumns`.
 * Use space between property and value: `width: 20px` not `width:20px`.
@@ -89,6 +91,7 @@ Sass
 * Use parentheses around individual operations in shorthand declarations: `padding: ($variable * 1.5) ($variable * 2)`
 
 ### Order
+
 * Use alphabetical order for declarations.
 * Place @extends and @includes at the top of your declaration list.
 * Place media queries directly after the declaration list.
@@ -97,6 +100,7 @@ Sass
 * Place nested selectors last.
 
 ### Selectors
+
 * Don't use ID's for style.
 * Use meaningful names: `$visual-grid-color` not `$color` or `$vslgrd-clr`.
 * Use ID and class names that are as short as possible but as long as necessary.
@@ -111,6 +115,7 @@ Sass
 * Avoid nesting within a media query.
 
 ### Organization
+
 * Use Bourbon for a Sass Library.
 * Use Neat for a grid framework.
 * Use Bitters / Base folder for style on HTML tags, global variables, global extends and global mixins.
@@ -134,6 +139,17 @@ CoffeeScript
 * Prefer `!` over `not`
 * Prefer `@` over `this` for referencing instance properties.
 * Prefer double quotes.
+
+Backbone
+--------
+
+[Sample](samples/backbone.coffee)
+
+* Organize all objects in one `window.App` namespace.
+* Name collections the plural version of the model.
+* Name models without a suffix.
+* Name the router `App.Router`.
+* Name views with a `View` suffix.
 
 Ruby
 ----
