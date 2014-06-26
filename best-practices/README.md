@@ -90,6 +90,9 @@ Rails
 * Use `db/seeds.rb` for data that is required in all environments.
 * Use `dev:prime` rake task for development environment seed data.
 * Prefer `cookies.signed` over `cookies` to [prevent tampering].
+* Prefer `Time.current` over `Time.now`
+* Prefer `Date.current` over `Date.today`
+* Prefer `Time.zone.parse("2014-07-04 16:05:37")` over `Time.parse("2014-07-04 16:05:37")`
 
 [`.ruby-version`]: https://gist.github.com/fnichol/1912050
 [redirects]: http://www.w3.org/Protocols/rfc2616/rfc2616-sec14.html#sec14.30
@@ -209,15 +212,15 @@ Objective-C
 Shell
 -----
 
-* Don't parse the output of `ls`. See [here][parsingls] for details and 
+* Don't parse the output of `ls`. See [here][parsingls] for details and
   alternatives.
-* Don't use `cat` to provide a file on `stdin` to a process that accepts 
+* Don't use `cat` to provide a file on `stdin` to a process that accepts
   file arguments itself.
-* Don't use a `/bin/sh` [shebang][] unless you plan to test and run your 
-  script on at least: Actual Sh, Dash in POSIX-compatible mode (as it 
-  will be run on Debian), and Bash in POSIX-compatible mode (as it will 
+* Don't use a `/bin/sh` [shebang][] unless you plan to test and run your
+  script on at least: Actual Sh, Dash in POSIX-compatible mode (as it
+  will be run on Debian), and Bash in POSIX-compatible mode (as it will
   be run on OSX).
-* Don't use any non-POSIX [features][bashisms] when using a `/bin/sh` 
+* Don't use any non-POSIX [features][bashisms] when using a `/bin/sh`
   [shebang][].
 * If calling `cd`, have code to handle a failure to change directories.
 * If calling `rm` with a variable, ensure the variable is not empty.
@@ -230,16 +233,16 @@ Shell
 * Prefer `printf` over `echo`.
 * Prefer `sed '/re/!d; s//.../'` to `grep re | sed 's/re/.../'`.
 * Prefer `sed 'cmd; cmd'` to `sed -e 'cmd' -e 'cmd'`.
-* Prefer checking exit statuses over output in `if` statements (`if grep 
+* Prefer checking exit statuses over output in `if` statements (`if grep
   -q ...; `, not `if [ -n "$(grep ...)" ];`).
-* Prefer reading environment variables over process output (`$TTY` not 
+* Prefer reading environment variables over process output (`$TTY` not
   `$(tty)`, `$PWD` not `$(pwd)`, etc).
 * Use `$( ... )`, not backticks for capturing command output.
 * Use `$(( ... ))`, not `expr` for executing arithmetic expressions.
-* Use `1` and `0`, not `true` and `false` to represent boolean 
+* Use `1` and `0`, not `true` and `false` to represent boolean
   variables.
 * Use `find -print0 | xargs -0`, not `find | xargs`.
-* Use quotes around every `"$variable"` and `"$( ... )"` expression 
+* Use quotes around every `"$variable"` and `"$( ... )"` expression
   unless you want them to be word-split and/or interpreted as globs.
 * Use the `local` keyword with function-scoped variables.
 * Identify common problems with [shellcheck][].
