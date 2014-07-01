@@ -40,8 +40,9 @@ Formatting
 * Use 2 space indentation (no tabs).
 * Use an empty line between methods.
 * Use empty lines around multi-line blocks.
-* Use spaces around operators, after commas, after colons and semicolons, around
-  `{` and before `}`.
+* Use spaces around operators, except for unary operators, such as `!`.
+* Use spaces after commas, after colons and semicolons, around `{` and before
+  `}`.
 * Use [Unix-style line endings] (`\n`).
 * Use [uppercase for SQL key words and lowercase for SQL identifiers].
 

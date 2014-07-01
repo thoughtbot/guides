@@ -66,8 +66,12 @@ class SomeClass
                 two)
   end
 
-  def method_that_uses_infix_operators
+  def method_which_uses_infix_operators
     left + middle - right
+  end
+
+  def method_which_uses_unary_operator
+    !signed_in?
   end
 
   def method_without_arguments
