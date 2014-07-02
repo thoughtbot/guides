@@ -172,6 +172,7 @@ Ruby
 * Use a trailing comma after each item in a multi-line list, including the last
   item. [Example][trailing comma example]
 * Use heredocs for multi-line strings.
+* Only use `raise` when re-raising exceptions. Otherwise use `fail`.
 
 [trailing comma example]: /style/samples/ruby.rb#L45
 
