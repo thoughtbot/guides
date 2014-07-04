@@ -13,6 +13,9 @@ class SomeClass
       each_method_lives_on_its_own_line
   end
 
+  def method_with_required_keyword_arguments(one:, two:)
+  end
+
   def method_with_multiline_block
     some_method_before_block(should_be_followed_by_a_newline)
 

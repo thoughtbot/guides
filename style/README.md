@@ -168,6 +168,7 @@ Ruby
   methods, `SCREAMING_SNAKE_CASE` for constants.
 * Use `def self.method`, not `def Class.method` or `class << self`.
 * Use `def` with parentheses when there are arguments.
+* Don't use spaces after required keyword arguments. [Example][required kwargs]
 * Use `each`, not `for`, for iteration.
 * Use a trailing comma after each item in a multi-line list, including the last
   item. [Example][trailing comma example]
@@ -176,6 +177,7 @@ Ruby
   and `attr_accessor`s.
 
 [trailing comma example]: /style/samples/ruby.rb#L45
+[required kwargs]: /style/samples/ruby.rb#L16
 
 ERb
 ---
