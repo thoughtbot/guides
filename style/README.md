@@ -172,8 +172,11 @@ Ruby
 * Use a trailing comma after each item in a multi-line list, including the last
   item. [Example][trailing comma example]
 * Use heredocs for multi-line strings.
+* Put parentheses around arguments when calling a method with arguments.
+  [Example][paren example]
 
 [trailing comma example]: /style/samples/ruby.rb#L45
+[paren example]: /style/samples/calling_method.rb
 
 ERb
 ---
