@@ -81,9 +81,8 @@ Sass
 * Prefer hex color codes `#000`.
 * Use `//` for comment blocks not `/* */`.
 * Use a space between selector and `{`.
-* Use single quotation marks for attribute selectors and property values.
+* Use double quotation marks.
 * Use only lowercase, including colors.
-* Use single quotes, including imports.
 * Don't add a unit specification after `0` values, unless required by a mixin.
 * Use space around operands: `$variable * 1.5`, not `$variable*1.5`
 * Avoid in-line operations in shorthand declarations (Ex. `padding: $variable * 1.5 variable * 2`)

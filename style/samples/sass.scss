@@ -1,3 +1,5 @@
+@import "bourbon";
+
 section.application {
   @extend %extend;
   @include mixin;
@@ -15,12 +17,15 @@ section.application {
     attribute: value;
   }
 
+  &:before {
+    content: ">";
+  }
+
   .news {
     attribute: value;
     attribute: ($variable * 1.5) 2em;
 
     article {
-
       @extend media(value) {
         attribute: value;
       }
