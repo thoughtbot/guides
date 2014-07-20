@@ -21,6 +21,7 @@ class SomeClass
 
     items.each do |item|
       do_something_with_item
+      perform_another_action
     end
 
     some_method_after_block(should_follow_after_newline)
