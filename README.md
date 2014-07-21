@@ -26,6 +26,16 @@ A note on the language:
 * "Prefer" indicates a better option and its alternative to watch out for.
 * "Use" is a positive instruction.
 
+Contributing
+------------
+
+Please read the [contribution guidelines] before submitting a pull request.
+
+In particular: **if you have commit access, please don't merge changes without
+waiting a week for everybody to leave feedback**.
+
+[contribution guidelines]: /CONTRIBUTING.md
+
 Credits
 -------
 
