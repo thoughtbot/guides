@@ -86,6 +86,7 @@ Sass
 * Use double quotation marks.
 * Use only lowercase, including colors.
 * Don't add a unit specification after `0` values, unless required by a mixin.
+* Use a leading zero in decimal numbers: `0.5` not `.5`
 * Use space around operands: `$variable * 1.5`, not `$variable*1.5`
 * Avoid in-line operations in shorthand declarations (Ex. `padding: $variable * 1.5 variable * 2`)
 * Use parentheses around individual operations in shorthand declarations: `padding: ($variable * 1.5) ($variable * 2)`
