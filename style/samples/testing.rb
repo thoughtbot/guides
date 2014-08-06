@@ -1,6 +1,6 @@
 describe SomeClass do
-  it { should have_one(:association) }
-  it { should validate_presence_of(:some_attribute) }
+  it { is_expected.to have_one(:association) }
+  it { is_expected.to validate_presence_of(:some_attribute) }
 
   describe '.some_class_method' do
     it 'does something' do
