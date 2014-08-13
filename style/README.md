@@ -208,6 +208,7 @@ HTML
 ----
 
 * Prefer double quotes for attributes.
+* Put scripts before the closing `body` tag.
 
 Rails
 -----
