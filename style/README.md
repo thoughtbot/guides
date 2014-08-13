@@ -209,6 +209,7 @@ HTML
 
 * Prefer double quotes for attributes.
 * Put scripts before the closing `body` tag.
+* Specify `charset` as first in the `head`.
 
 Rails
 -----
