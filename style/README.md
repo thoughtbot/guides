@@ -76,6 +76,8 @@ Organization
 Sass
 ----
 
+[Sample](samples/sass.scss)
+
 ### Formatting
 
 * Use the *Scss* syntax.
@@ -239,6 +241,9 @@ Rails
 
 Rails Migrations
 ----------------
+
+[Sample](samples/migration.rb)
+
 * Set an empty string as the default constraint for non-required string and text
   fields. [Example][default example].
 * List timestamps first when creating a new table. [Example][timestamps example].
@@ -400,6 +405,8 @@ Shell
 
 Haskell
 -------
+
+[Sample](samples/haskell.hs)
 
 * Break long expressions before operators or keywords.
 * Break long type signatures between arguments.
