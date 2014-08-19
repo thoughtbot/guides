@@ -16,7 +16,7 @@ Git
 * Squash multiple trivial commits into a single commit.
 * Write a [good commit message].
 
-[rebase workflow]: https://github.com/thoughtbot/guides/tree/master/protocol/git#merge
+[rebase workflow]: /protocol/git#merge
 [good commit message]: http://tbaggery.com/2008/04/19/a-note-about-git-commit-messages.html
 
 Formatting
@@ -46,7 +46,7 @@ Formatting
 * Use [Unix-style line endings] (`\n`).
 * Use [uppercase for SQL key words and lowercase for SQL identifiers].
 
-[dot guideline example]: https://github.com/thoughtbot/guides/blob/master/style/samples/ruby.rb#L11
+[dot guideline example]: /style/samples/ruby.rb#L11
 [uppercase for SQL key words and lowercase for SQL identifiers]: http://www.postgresql.org/docs/9.2/static/sql-syntax-lexical.html#SQL-SYNTAX-IDENTIFIERS
 [Unix-style line endings]: http://unix.stackexchange.com/questions/23903/should-i-end-my-text-script-files-with-a-newline
 
@@ -390,4 +390,4 @@ Haskell
   indented two spaces. [Example].
 
 [standard libraries]: http://www.haskell.org/ghc/docs/latest/html/libraries/index.html
-[Example]: https://github.com/thoughtbot/guides/blob/master/style/samples/haskell.hs#L41
+[Example]: /style/samples/haskell.hs#L41
