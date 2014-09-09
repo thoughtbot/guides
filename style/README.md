@@ -217,6 +217,7 @@ Rails
 * Use private instead of protected when defining controller methods.
 * Name date columns with `_on` suffixes.
 * Name datetime columns with `_at` suffixes.
+* Name time columns (referring to a time of day with no date) with `_time` suffixes.
 * Name initializers for their gem name.
 * Order ActiveRecord associations alphabetically by attribute name.
 * Order ActiveRecord validations alphabetically by attribute name.
