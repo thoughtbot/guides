@@ -241,7 +241,7 @@ Rails Migrations
   fields. [Example][default example].
 * List timestamps first when creating a new table. [Example][timestamps example].
 
-[timestamps example]: /style/samples/migration.rb#L4
+[timestamps example]: /style/samples/migration.rb
 [default example]: /style/samples/migration.rb#L6
 
 Rails Routes
