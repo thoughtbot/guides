@@ -276,12 +276,15 @@ Testing
 * Separate setup, exercise, verification, and teardown phases with newlines.
 * Use RSpec's [`expect` syntax].
 * Use RSpec's [`allow` syntax] for method stubs.
+* Use RSpec's `receive_messages` for multiple method stubs on a single object
+  (available in RSpec 3). [Example][single line syntax example].
 * Use `should` shorthand for [one-liners with an implicit subject].
 * Use `not_to` instead of `to_not` in RSpec expectations.
 * Prefer the `have_css` matcher to the `have_selector` matcher in Capybara assertions.
 
 [`expect` syntax]: http://myronmars.to/n/dev-blog/2012/06/rspecs-new-expectation-syntax
 [`allow` syntax]: https://github.com/rspec/rspec-mocks#method-stubs
+[single line syntax example]: /style/samples/allow_syntax_spec.rb
 [one-liners with an implicit subject]: https://github.com/rspec/rspec-expectations/blob/master/Should.md#one-liners
 [predicate-example]: /style/samples/predicate_tests.rb
 
