@@ -185,7 +185,6 @@ HTML
 * Prefer cancel links to cancel buttons.
 * Declare an explicit character encoding.
 * Put the meta charset tag as the first in the `head` section.
-* Put the script tags before the closing `body` tag.
 
 CSS
 ---
