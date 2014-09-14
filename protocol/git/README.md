@@ -47,7 +47,7 @@ Write a [good commit message]. Example format:
     * More information about commit (under 72 characters).
     * More information about commit (under 72 characters).
 
-    http:://project.management-system.com/ticket/123
+    http://project.management-system.com/ticket/123
 
 If you've created more than one commit, use a rebase to squash them into
 cohesive commits with good messages:
