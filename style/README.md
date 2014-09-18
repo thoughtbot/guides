@@ -55,6 +55,7 @@ Naming
 
 * Avoid abbreviations.
 * Avoid object types in names (`user_array`, `email_method` `CalculatorClass`, `ReportModule`).
+* Avoid including pattern names in class names (`NullAddress`, `ReportStrategy`, `AccountVisitor`).
 * Name the enumeration parameter the singular of the collection.
 * Name variables created by a factory after the factory (`user_factory`
   creates `user`).
