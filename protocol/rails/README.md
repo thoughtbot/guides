@@ -44,13 +44,18 @@ Use [Foreman](https://github.com/ddollar/foreman) to run the app locally.
 
     foreman start
 
-It uses your `.env` file and `Procfile` to run processes just like Heroku's
-[Cedar](https://devcenter.heroku.com/articles/cedar/) stack.
+It uses your `.env` file and `Procfile` to run processes
+like Heroku's [Cedar](https://devcenter.heroku.com/articles/cedar/) stack.
 
 Git Protocol
 ------------
 
 Follow the normal [Git Protocol](/protocol/git).
+
+Product Review
+--------------
+
+Follow the normal [Product Review protocol](/protocol/product-review).
 
 Code Review
 -----------

@@ -41,7 +41,12 @@ Install the app's dependencies.
 Git Protocol
 ------------
 
-Follow the normal [Git Protocol](/protocol/git).
+Follow the normal [Git protocol](/protocol/git).
+
+Product Review
+--------------
+
+Follow the normal [Product Review protocol](/protocol/product-review).
 
 Code Review
 -----------
