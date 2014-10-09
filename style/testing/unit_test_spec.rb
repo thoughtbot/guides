@@ -1,5 +1,4 @@
 describe SomeClass do
-
   context "when defining a subject" do
     # GOOD
     # it's okay to define a `subject` here:
