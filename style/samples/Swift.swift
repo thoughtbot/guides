@@ -24,6 +24,15 @@ let cool = yTown(5) { foo in
     }
 }
 
+// Variable/Constant Instantiation
+
+// Use type inference where the end result is obvious
+let foo = "foo"
+
+// Explicitly type collections when creating mutable empty instances
+var collection: [Object] = []
+var dictionary: [String: Object] = [:]
+
 // Optionals -----------------------------------------------------------
 
 var maybe: Bool?
@@ -41,7 +50,7 @@ func tableView(tableView: UITableView!, cellForRowAtIndexPath indexPath: NSIndex
             return cell;
         }
     }
-    
+
     return .None
 }
 
