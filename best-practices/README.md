@@ -93,6 +93,8 @@ Rails
 * Prefer `Time.current` over `Time.now`
 * Prefer `Date.current` over `Date.today`
 * Prefer `Time.zone.parse("2014-07-04 16:05:37")` over `Time.parse("2014-07-04 16:05:37")`
+* Use `ENV.fetch` for environment variables instead of `ENV[]`so that unset
+  environment variables are detected on deploy.
 
 [`.ruby-version`]: https://gist.github.com/fnichol/1912050
 [redirects]: http://www.w3.org/Protocols/rfc2616/rfc2616-sec14.html#sec14.30
