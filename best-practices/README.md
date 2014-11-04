@@ -216,6 +216,8 @@ Shell
   alternatives.
 * Don't use `cat` to provide a file on `stdin` to a process that accepts
   file arguments itself.
+* Don't use `echo` with options, escapes, or variables (use `printf` for those
+  cases).
 * Don't use a `/bin/sh` [shebang][] unless you plan to test and run your
   script on at least: Actual Sh, Dash in POSIX-compatible mode (as it
   will be run on Debian), and Bash in POSIX-compatible mode (as it will
@@ -230,7 +232,6 @@ Shell
 * Prefer `for` loops over `while read` loops.
 * Prefer `grep -c` to `grep | wc -l`.
 * Prefer `mktemp` over using `$$` to "uniquely" name a temporary file.
-* Prefer `printf` over `echo`.
 * Prefer `sed '/re/!d; s//.../'` to `grep re | sed 's/re/.../'`.
 * Prefer `sed 'cmd; cmd'` to `sed -e 'cmd' -e 'cmd'`.
 * Prefer checking exit statuses over output in `if` statements (`if grep
