@@ -60,7 +60,7 @@ class SomeClass
 
   def invoke_method_with_arguments_on_multiple_lines
     some_method(
-      i_am_a_long_variable_name_that_i_will_never_fit_on_one_line_with_others,
+      i_am_a_long_variable_name_that_will_never_fit_on_one_line_with_others,
       two,
       three
     )
