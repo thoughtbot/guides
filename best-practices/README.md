@@ -269,3 +269,12 @@ Haskell
 
 * Avoid partial functions (`head`, `read`, etc).
 * Compile code with `-Wall -Werror`.
+
+Ember
+-----
+* Avoid using `$` without scoping to `this.$` in views and components.
+* Prefer to make model lookup calls in routes instead of controllers (`find`,
+  `findAll`, etc.).
+* Prefer adding properties to controllers instead of models.
+* Don't use jQuery outside of views and components.
+* Prefer to use predefined `Ember.computed.*` functions when possible.
