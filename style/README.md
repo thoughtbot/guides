@@ -163,7 +163,6 @@ Backbone
 
 Ember
 -----
-* Don't prefix partial templates with a `-` or `_`.
 * Don't put a space between the opening handlebars braces and the variable.
 
 Ruby
