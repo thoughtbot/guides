@@ -6,6 +6,8 @@ A guide for programming well.
 General
 -------
 
+* These are not to be blindly followed; strive to understand these and ask
+  when in doubt.
 * Don't duplicate the functionality of a built-in library.
 * Don't swallow exceptions or "fail silently."
 * Don't write code that guesses at future functionality.
