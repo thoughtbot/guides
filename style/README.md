@@ -208,6 +208,9 @@ Ruby
 [trailing comma example]: /style/samples/ruby.rb#L49
 [required kwargs]: /style/samples/ruby.rb#L16
 
+Linting with Rubocop: symlink the rubocop.yml file to .rubocop.yml in your home
+directory. E.g: ln -s ~/Blake/guides/style/rubocop.yml ~/.rubocop.yml
+
 ERb
 ---
 
