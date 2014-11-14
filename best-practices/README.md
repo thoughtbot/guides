@@ -178,7 +178,15 @@ Email
 JavaScript
 ----------
 
+* Prefer utility methods from common libraries like [Lo-Dash]/[Underscore.js]
+  over methods that do the same thing from frameworks like
+  [Angular.js]/[Ember.js].
 * Use CoffeeScript.
+
+[Lo-Dash]: https://lodash.com
+[Underscore.js]: http://underscorejs.org
+[Angular.js]: https://angularjs.org
+[Ember.js]: https://emberjs.com
 
 HTML
 ----
