@@ -41,6 +41,8 @@ Ruby
   multiple models.
 * Prefer `private` when indicating scope. Use `protected` only with comparison
   methods like `def ==(other)`, `def <(other)`, and `def >(other)`.
+* Use a `Module` for related (stateless) functions. Declare `module_function` at the top
+    so that all `def foo; end` are availably pubically, or, if the module is included, then privately.
 
 [Bundler binstubs]: https://github.com/sstephenson/rbenv/wiki/Understanding-binstubs
 
@@ -49,15 +51,10 @@ Ruby Gems
 
 * Declare dependencies in the `<PROJECT_NAME>.gemspec` file.
 * Reference the `gemspec` in the `Gemfile`.
-* Use [Appraisal] to test the gem against multiple versions of gem dependencies
-  (such as Rails in a Rails engine).
 * Use [Bundler] to manage the gem's dependencies.
-* Use [Travis CI] for Continuous Integration, indicators showing whether GitHub
-  pull requests can be merged, and to test against multiple Ruby versions.
+* Only include in the gemspec `development_dependencies` that are required to run the tests. e.g. rspec yes, pry no.
 
-[Appraisal]: https://github.com/thoughtbot/appraisal
 [Bundler]: http://bundler.io
-[Travis CI]: http://travis-ci.org
 
 Rails
 -----
@@ -72,12 +69,12 @@ Rails
 * Don't return false from `ActiveModel` callbacks, but instead raise an
   exception.
 * Don't use instance variables in partials. Pass local variables to partials
-  from view templates.
-* Don't use SQL or SQL fragments (`where('inviter_id IS NOT NULL')`) outside of
-  models.
+  from view templates.  This way, unpassed variables that are expected will raise an exception.
+* Don't use SQL or SQL fragments (`where('inviter_id IS NOT NULL')`) *outside of
+  models*.
 * Generate necessary [Spring binstubs] for the project, such as `rake` and
   `rspec`, and add them to version control.
-* If there are default values, set them in migrations.
+* If there are default values, set them in migrations. e.g. `:null => false`, `:uniq => true`, `:default => nil`.
 * Keep `db/schema.rb` or `db/development_structure.sql` under version control.
 * Use only one instance variable in each view.
 * Use SQL, not `ActiveRecord` models, in migrations.
@@ -87,8 +84,8 @@ Rails
   `_path` suffixes for named routes everywhere else.
 * Validate the associated `belongs_to` object (`user`), not the database column
   (`user_id`).
-* Use `db/seeds.rb` for data that is required in all environments.
-* Use `dev:prime` rake task for development environment seed data.
+* Use `db/seeds.rb` for data that is **required in all environments**.
+* Use `dev:prime` rake task for **development environment seed data**.
 * Prefer `cookies.signed` over `cookies` to [prevent tampering].
 * Prefer `Time.current` over `Time.now`
 * Prefer `Date.current` over `Date.today`
@@ -105,11 +102,13 @@ Testing
 -------
 
 * Avoid `any_instance` in rspec-mocks and mocha. Prefer [dependency injection].
-* Avoid `its`, `let`, `let!`, `specify`, `before`, and `subject` in RSpec.
+* Avoid / limit use of `its`, `let`, `let!`, `specify`, `before`, and `subject` in RSpec.
+    * i.e. keep as much test code that is need to understand the pre and post conditions in the test block.
+        If you find your test need a lot of set up, that is a smell that the object is doing to much or knows too much.
 * Avoid using instance variables in tests.
 * Disable real HTTP requests to external services with
   `WebMock.disable_net_connect!`.
-* Don't test private methods.
+* Don't test private methods.  They are implicitly tested when you test your public methods.
 * Test background jobs with a [`Delayed::Job` matcher].
 * Use [stubs and spies] \(not mocks\) in isolated tests.
 * Use a single level of abstraction within scenarios.
@@ -131,6 +130,7 @@ Bundler
 -------
 
 * Specify the [Ruby version] to be used on the project in the `Gemfile`.
+    * This forces the team to use the same Ruby in all places. dev/production parity FTW!
 * Use a [pessimistic version] in the `Gemfile` for gems that follow semantic
   versioning, such as `rspec`, `factory_girl`, and `capybara`.
 * Use a [versionless] `Gemfile` declarations for gems that are safe to update
@@ -175,41 +175,17 @@ Email
 [SendGrid]: https://devcenter.heroku.com/articles/sendgrid
 [MailView]: https://github.com/37signals/mail_view
 
-JavaScript
-----------
-
-* Use CoffeeScript.
-
 HTML
 ----
 
 * Don't use a reset button for forms.
 * Prefer cancel links to cancel buttons.
 
-CSS
----
-
-* Use Sass.
-
-Sass
-----
-
-* Use `image-url` and `font-url`, not `url`, so the asset pipeline will re-write
-  the correct paths to assets.
-
 Browsers
 --------
 
 * Don't support clients without Javascript.
 * Don't support IE6 or IE7.
-
-Objective-C
------------
-
-* Setup new projects using [Liftoff](https://github.com/thoughtbot/liftoff) and
-  follow provided directory structure.
-* Prefer categories on `Foundation` classes to helper methods.
-* Prefer string constants to literals when providing keys or key paths to methods.
 
 Shell
 -----
@@ -265,18 +241,3 @@ In addition to Shell best practices,
 * Prefer `[[` over `test` or `[`.
 * Prefer process substitution over a pipe in `while read` loops.
 * Use `((` or `let`, not `$((` when you don't need the result
-
-Haskell
--------
-
-* Avoid partial functions (`head`, `read`, etc).
-* Compile code with `-Wall -Werror`.
-
-Ember
------
-* Avoid using `$` without scoping to `this.$` in views and components.
-* Prefer to make model lookup calls in routes instead of controllers (`find`,
-  `findAll`, etc.).
-* Prefer adding properties to controllers instead of models.
-* Don't use jQuery outside of views and components.
-* Prefer to use predefined `Ember.computed.*` functions when possible.

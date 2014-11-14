@@ -33,10 +33,11 @@ Having Your Code Reviewed
   it be more clear if I rename this class/file/method/variable?")
 * Extract some changes and refactorings into future tickets/stories.
 * Link to the code review from the ticket/story. ("Ready for review:
-  https://github.com/organization/project/pull/1")
-* Push commits based on earlier rounds of feedback as isolated commits to the
-  branch. Do not squash until the branch is ready to merge. Reviewers should be
-  able to read individual updates based on their earlier feedback.
+  https://github.com/organization/project/pull/1")  (e.g. paste link in Pivotal ticket)
+* When making changes related to the code review, add them as new commits.
+  Reviewers should be able to read individual updates based on their earlier feedback.
+  Only once the code is considered 'ready to merge', clean up the commit history by 
+  rebasing/squashing and force pushing to the merge source.
 * Seek to understand the reviewer's perspective.
 * Try to respond to every comment.
 * Wait to merge the branch until another person signs off.
@@ -48,6 +49,9 @@ Reviewing Code
 
 Understand why the code is necessary (bug, user experience, refactoring). Then:
 
+* Don't begin commenting until you've read the entire change.
+* Be clear whether your comment is a blocker, a suggestion, needs in-person discussion,
+    question, etc.
 * Communicate which ideas you feel strongly about and those you don't.
 * Identify ways to simplify the code while still solving the problem.
 * If discussions turn too philosophical or academic, move the discussion offline
@@ -72,5 +76,5 @@ An example response to style comments:
 
     Whoops. Good catch, thanks. Fixed in a4994ec.
 
-If you disagree with a guideline, open an issue on the guides repo rather than
-debating it within the code review. In the meantime, apply the guideline.
+**If you disagree with a guideline, open an issue on the guides repo rather than
+debating it within the code review**. In the meantime, apply the guideline.

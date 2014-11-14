@@ -6,6 +6,7 @@ A guide for programming within version control.
 Maintain a Repo
 ---------------
 
+* Never work directly on master.  Always work on a feature branch.
 * Avoid including files in source control that are specific to your
   development machine or process.
 * Delete local and remote feature branches after merging.
@@ -119,3 +120,9 @@ Delete your local feature branch.
     git branch --delete <branch-name>
 
 [find the pull request]: http://stackoverflow.com/a/17819027
+
+[Watch 'Deliberate Git'](http://rakeroutes.com/blog/deliberate-git/), paying
+especial attention to how commit messages tell a story, and the interactive rebase.
+
+[Excercism.io provides a nice overview of a git workflow](http://help.exercism.io/git-workflow.html).
+Take a look at the links as the bottom, as well.
