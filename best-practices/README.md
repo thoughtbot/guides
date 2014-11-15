@@ -107,7 +107,9 @@ Testing
 -------
 
 * Avoid `any_instance` in rspec-mocks and mocha. Prefer [dependency injection].
-* Avoid `its`, `let`, `let!`, `specify`, `before`, and `subject` in RSpec.
+* Avoid `its`, `let`, `let!`, `specify`, and `before` in RSpec.
+* Avoid using `subject` explicitly *inside of an* RSpec `it` block.
+  [Example][subject-example].
 * Avoid using instance variables in tests.
 * Disable real HTTP requests to external services with
   `WebMock.disable_net_connect!`.
@@ -123,6 +125,7 @@ Testing
 * Use non-[SUT] methods in expectations when possible.
 
 [dependency injection]: http://en.wikipedia.org/wiki/Dependency_injection
+[explicit subject example]: /style/samples/testing.rb#17
 [`Delayed::Job` matcher]: https://gist.github.com/3186463
 [stubs and spies]: http://robots.thoughtbot.com/post/159805295/spy-vs-spy
 [assertions about state]: https://speakerdeck.com/skmetz/magic-tricks-of-testing-railsconf?slide=51

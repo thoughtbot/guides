@@ -328,6 +328,8 @@ Testing
 
 * Don't prefix `it` block descriptions with `should`. Use [Imperative mood]
   instead.
+* Use `subject` blocks to define objects for use in one-line specs.
+  [Example][subject for one-liners example].
 * Put one-liner specs at the beginning of the outer `describe` blocks.
 * Use `.method` to describe class methods and `#method` to describe instance
   methods.
@@ -338,6 +340,7 @@ Testing
   appear in the class.
 
 [Imperative mood]: http://en.wikipedia.org/wiki/Imperative_mood
+[subject for one-liners example]: /style/samples/testing.rb#6
 
 Objective-C
 -----------
