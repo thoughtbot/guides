@@ -22,6 +22,7 @@ Ruby
 * Prefer `!` over `not`.
 * Prefer `&:method_name` to `{ |item| item.method_name }` for simple method
   calls.
+* Prefer `if` over `unless`.
 * Use `_` for unused block parameters.
 * Use `%{}` for single-line strings needing interpolation and double-quotes.
 * Use `{...}` for single-line blocks. Use `do..end` for multi-line blocks.
