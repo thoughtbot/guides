@@ -39,16 +39,20 @@ waiting a week for everybody to leave feedback**.
 Credits
 -------
 
-Thank you, [contributors](https://github.com/thoughtbot/guides/graphs/contributors)!
+Thank you, [contributors](https://github.com/theclymb/guides/graphs/contributors)!
 
-![thoughtbot](http://thoughtbot.com/images/tm/logo.png)
+Thank you, [thoughtbot](http://github.com/thoughtbot/guides) for sharing your guides.
 
-Guides is maintained by [thoughtbot, inc](http://thoughtbot.com/community).
+![The Clymb](https://s3.amazonaws.com/clymb/logos/theclymb200x250.png)
+
+Guides is maintained by [The Clymb](http://theclymb.com).
 
 License
 -------
 
-Guides is © 2014 thoughtbot, inc. It is distributed under the [Creative Commons
+Guides is © 2014 The Clymb, inc. It is distributed under the [Creative Commons
 Attribution License](http://creativecommons.org/licenses/by/3.0/).
 
-The names and logos for thoughtbot are trademarks of thoughtbot, inc.
+This is a derivative of [thoughtbot's guides](https://github.com/thoughtbot/guides)
+licensed under [CC BY 3.0](http://creativecommons.org/licenses/by/3.0/)
+
