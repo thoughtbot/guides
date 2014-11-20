@@ -40,7 +40,7 @@ Credits
 
 Thank you, [contributors](https://github.com/theclymb/guides/graphs/contributors)!
 
-Thank you, [thoughtbot](http://github.com/thoughtbot/guides) for sharing your guides.
+Thank you, [thoughtbot](http://github.com/thoughtbot/guides) for sharing your guides!
 
 ![The Clymb](https://s3.amazonaws.com/clymb/logos/theclymb200x250.png)
 
