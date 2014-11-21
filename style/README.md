@@ -285,6 +285,7 @@ Testing
   use appropriate matchers. [Example][predicate-example].
 * Prefer `eq` to `==` in RSpec.
 * Separate setup, exercise, verification, and teardown phases with newlines.
+* Prefer using the class name in the exercise phase. [Example][class-in-exercise-phase].
 * Use RSpec's [`expect` syntax].
 * Use RSpec's [`allow` syntax] for method stubs.
 * Use `should` shorthand for [one-liners with an implicit subject].
@@ -295,6 +296,7 @@ Testing
 [`allow` syntax]: https://github.com/rspec/rspec-mocks#method-stubs
 [one-liners with an implicit subject]: https://github.com/rspec/rspec-expectations/blob/master/Should.md#one-liners
 [predicate-example]: /style/samples/predicate_tests.rb
+[class-in-exercise-phase]: /style/samples/class_in_exercise_phase.rb
 
 #### Acceptance Tests
 
