@@ -287,6 +287,7 @@ Testing
 * Separate setup, exercise, verification, and teardown phases with newlines.
 * Use RSpec's [`expect` syntax].
 * Use RSpec's [`allow` syntax] for method stubs.
+* Use `described_class` instead of directly referring to the class under test.
 * Use `should` shorthand for [one-liners with an implicit subject].
 * Use `not_to` instead of `to_not` in RSpec expectations.
 * Prefer the `have_css` matcher to the `have_selector` matcher in Capybara assertions.
