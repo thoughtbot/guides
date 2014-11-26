@@ -208,7 +208,26 @@ Ruby
 [required kwargs]: /style/samples/ruby.rb#L16
 
 Linting with Rubocop: symlink the rubocop.yml file to .rubocop.yml in your home
-directory. E.g: ln -s ~/Blake/guides/style/rubocop.yml ~/.rubocop.yml
+directory. 
+
+```
+ln -s ~/Blake/guides/style/rubocop.yml ~/.rubocop.yml
+```
+
+Using Rubocop with Vim
+----------------------
+
+```
+> chruby system
+> sudo gem install rubocop
+```
+
+Open vim
+
+```
+:BundleInstall ngmy/vim-rubocop
+```
+`<Leader>ru` to run rubocop on current file
 
 ERb
 ---
