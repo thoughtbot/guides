@@ -188,7 +188,7 @@ SpecialGlobalVars:
   Enabled: false
 
 StringLiterals:
-  EnforcedStyle: double_quotes
+  Enabled: false
 
 VariableInterpolation:
   Enabled: false
