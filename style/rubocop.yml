@@ -75,6 +75,15 @@ DoubleNegation:
 EachWithObject:
   Enabled: false
 
+EmptyLinesAroundBlockBody:
+  EnforcedStyle: empty_lines
+
+EmptyLinesAroundClassBody:
+  EnforcedStyle: empty_lines
+
+EmptyLinesAroundModuleBody:
+  EnforcedStyle: empty_lines
+
 EmptyLiteral:
   Enabled: false
 
