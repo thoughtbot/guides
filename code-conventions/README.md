@@ -11,7 +11,7 @@ Objects that *do an action*, and only one action (as opposed to [workflow object
 Service classes:
 
 * Live in `app/services/service/`
-* Named like `Service::MaybeSomeContext::VerbNoun`, e.g. `Service::ConsumeResetToken` (if this was `User` specific, could also be `Service::User::ConsumeResetToken`
+* Named like `Service::MaybeSomeContext::VerbNoun`, e.g. `Service::ConsumeResetToken` (if this was `User` specific, could also be `Service::User::ConsumeResetToken`)
 * Have one public method, `#call`
 * May be initialized with many objects, encapsulating the business logic to do something with them
 
