@@ -68,6 +68,7 @@ Workflow classes:
 * Named similarly to service objects, like `Workflow::MaybeSomeContext::VerbNoun`, e.g. `Workflow::SignupTeacher`, `Workflow::Teacher::DeleteClass`
 * Have one public method, `#call`
 * May call several service objects to fulfill a business process
+* Errors should be handled such changes from earlier service calls should be rolled back when later service calls fail
 
 Example:
 
