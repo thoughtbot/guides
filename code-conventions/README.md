@@ -65,7 +65,7 @@ Objects that compose multiple [service objects](#service-objects) (and possibly 
 Workflow classes:
 
 * Live in `app/workflows/workflow/`
-* Named similarly to service objects, like `Workflow::MaybeSomeContext::Verb`, e.g. `Workflow::SignupTeacher`, `Workflow::Teacher::DeleteClass`
+* Named similarly to service objects, like `Workflow::MaybeSomeContext::VerbNoun`, e.g. `Workflow::SignupTeacher`, `Workflow::Teacher::DeleteClass`
 * Have one public method, `#call`
 * May call several service objects to fulfill a business process
 
