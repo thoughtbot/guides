@@ -88,6 +88,7 @@ module Workflow
             Workflow::SchoolClass::AddStudent.new(new_class, student).call
           end
           Service::SchoolClass::Created::NotifySubCo.new(new_class).call
+          return new_class
         end
       end
 
