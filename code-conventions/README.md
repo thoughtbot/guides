@@ -14,6 +14,7 @@ Service classes:
 * Named like `Service::MaybeSomeContext::VerbNoun`, e.g. `Service::ConsumeResetToken` (if this was `User` specific, could also be `Service::User::ConsumeResetToken`)
 * Have one public method, `#call`
 * May be initialized with many objects, encapsulating the business logic to do something with them
+* Using flags, modes, etc as parameters to switch upon probably means you want a separate class 
 
 Example:
 
