@@ -3,6 +3,11 @@ Code Conventions
 
 A guide for using small composable classes in Rails.
 
+Contents
+--------
+
+1. [Service Objects](#service-objects)
+
 Service Objects
 ---------------
 
