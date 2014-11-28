@@ -36,7 +36,7 @@ ClassAndModuleChildren:
   Enabled: false
 
 ClassLength:
-  Enabled: false
+  Enabled: true
 
 ClassVars:
   Enabled: false
@@ -151,7 +151,7 @@ OpMethod:
   Enabled: false
 
 ParameterLists:
-  Enabled: false
+  Enabled: true
 
 PercentLiteralDelimiters:
   Enabled: false
@@ -250,7 +250,7 @@ ParenthesesAsGroupedExpression:
   Enabled: false
 
 RequireParentheses:
-  Enabled: false
+  Enabled: true
 
 UnderscorePrefixedVariableName:
   Enabled: false
