@@ -1,6 +1,7 @@
 AllCops:
   Exclude:
     - db/schema.rb
+  RunRailsCops: true
 
 AccessorMethodName:
   Enabled: false
