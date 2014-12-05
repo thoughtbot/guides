@@ -24,8 +24,6 @@ Create a local feature branch based off master.
     git pull
     git checkout -b <branch-name>
 
-Prefix the branch name with your initials.
-
 Rebase frequently to incorporate upstream changes.
 
     git fetch origin
@@ -60,7 +58,7 @@ Share your branch.
 
 Submit a [GitHub pull request].
 
-Ask for a code review in the project's chat room.
+Ask for a code review in slack.
 
 [good commit message]: http://tbaggery.com/2008/04/19/a-note-about-git-commit-messages.html
 [GitHub pull request]: https://help.github.com/articles/using-pull-requests/
@@ -73,7 +71,7 @@ A team member other than the author reviews the pull request. They follow
 miscommunication.
 
 They make comments and ask questions directly on lines of code in the GitHub
-web interface or in the project's chat room.
+web interface or in slack.
 
 For changes which they can make themselves, they check out the branch.
 
