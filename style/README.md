@@ -193,7 +193,7 @@ Ruby
 [trailing comma example]: /style/samples/ruby.rb#L49
 [required kwargs]: /style/samples/ruby.rb#L16
 
-ERb
+ERb/ Slim?
 ---
 
 [Sample](samples/erb.rb)
