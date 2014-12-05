@@ -17,7 +17,7 @@ Ruby
 * Prefer `inject` over `reduce`.
 * Prefer `map` over `collect`.
 * Prefer `select` over `find_all`.
-* Prefer double quotes for strings.
+* Prefer (double or single)? quotes for strings.
 * Prefer `&&` and `||` over `and` and `or`.
 * Prefer `!` over `not`.
 * Prefer `&:method_name` to `{ |item| item.method_name }` for simple method
