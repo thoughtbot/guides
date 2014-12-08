@@ -187,6 +187,7 @@ HTML
 
 * Don't use a reset button for forms.
 * Prefer cancel links to cancel buttons.
+* Use `<button>` tags over `<a>` tags for actions.
 
 CSS
 ---
@@ -283,6 +284,7 @@ Ember
 * Prefer adding properties to controllers instead of models.
 * Don't use jQuery outside of views and components.
 * Prefer to use predefined `Ember.computed.*` functions when possible.
+* Use `href="#"` for links that have an action.
 
 Angular
 -------
