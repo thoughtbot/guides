@@ -27,8 +27,22 @@ Ruby
 * Use `{...}` for single-line blocks.
 * Use `do..end` for multi-line blocks whose return value is not used by
   the caller.
+
+```ruby
+(1..10).each do |x|
+  puts x**2
+end
+```
+
 * Use `{...}` for multi-line blocks that return values.
-  [Example][procedure/function]
+
+```ruby
+values = (1..10).to_a.map { |x|
+  some_var = transform(x)
+  some_var * 2
+}
+```
+
 * Use `?` suffix for predicate methods.
 * Use `CamelCase` for classes and modules, `snake_case` for variables and
   methods, `SCREAMING_SNAKE_CASE` for constants.
@@ -44,4 +58,3 @@ Ruby
 
 [trailing comma example]: /style/samples/ruby.rb#L49
 [required kwargs]: /style/samples/ruby.rb#L16
-[procedure/function]: /style/ruby/procedure_function.rb
