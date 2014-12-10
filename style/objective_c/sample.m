@@ -19,9 +19,6 @@
 static NSString *const TBConstantName = @"Constant";
 static NSUInteger const TBNumberOfCardsInDeck = 52;
 
-// Prepend constants with 'k' when being used as keys
-static NSString *const kFirstName = @"FirstName";
-
 @implementation ClassName
 
 /*
@@ -31,7 +28,7 @@ static NSString *const kFirstName = @"FirstName";
 */
 #pragma mark - Initialization
 
-- (id)initWithCoder:(NSCoder *)aDecoder
+- (instancetype)initWithCoder:(NSCoder *)aDecoder
 {
     self = [super initWithCoder:aDecoder];
 
@@ -49,8 +46,8 @@ static NSString *const kFirstName = @"FirstName";
 - (void)shuffleCards
 {
     // Objective-C literals are your friend
-    NSDictionary *themeColors = @{ kRedColor : [UIColor redColor], kBlueColor : [UIColor blueColor] };
-    NSArray *robots = @[ @"Ralph", @"Bender", @"The Iron Giant" ];
+    NSDictionary *themeColors = @{RedColor: [UIColor redColor], BlueColor: [UIColor blueColor]};
+    NSArray *robots = @[@"Ralph", @"Bender", @"The Iron Giant"];
 
     NSMutableArray *deckOfCards = [NSMutableArray array];
 
@@ -58,12 +55,9 @@ static NSString *const kFirstName = @"FirstName";
     [deckOfCards addObject:jokerCard];
 
     // Newlines before and after conditional blocks
-    // Use enumerate to loop through arrays
-    // Use explicit class in block parameters
-    // Use full word 'index'
-    [deckOfCards enumerateObjectsUsingBlock:^(Card *card, NSUInteger index, BOOL *stop) {
+    for (Card *card in deckOfCards) {
         NSLog(@"%@", [card description]);
-    }];
+    }
 
     // Use ! to check for nots. Comparing to 'nil' is redundant
     if (![creditCard isValid]) {
