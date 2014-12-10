@@ -11,8 +11,7 @@ Testing
 * Use `should` shorthand for [one-liners with an implicit subject].
 * Use `not_to` instead of `to_not` in RSpec expectations.
 * Prefer the `have_css` matcher to the `have_selector` matcher in Capybara assertions.
-* If you need to test invalid file handling, **do not** reference a file
-  unrelated to your unit of work. Instead, use a `Tempfile`:
+* Prefer using a `Tempfile` to test invalid file handling:
 
 ```ruby
 # bad -- references a file in an unrelated area that could change
