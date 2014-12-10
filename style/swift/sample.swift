@@ -35,15 +35,10 @@ if let definitely = maybe {
 }
 
 // If the API you are using has implicit unwrapping you should still use if-let
-func tableView(tableView: UITableView!, cellForRowAtIndexPath indexPath: NSIndexPath!) -> UITableViewCell! {
-    if let index = indexPath {
-        if let table = tableView {
-            let cell = table.dequeue....
-            return cell;
-        }
+func someUnauditedAPI(thing: String!) {
+    if let string = thing {
+        println(string)
     }
-
-    return .None
 }
 
 // Enums --------------------------------------------------------------
