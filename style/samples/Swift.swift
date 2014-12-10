@@ -1,3 +1,4 @@
+// Don't include generated header comments
 
 import Foundation // or not
 
@@ -41,7 +42,7 @@ func tableView(tableView: UITableView!, cellForRowAtIndexPath indexPath: NSIndex
             return cell;
         }
     }
-    
+
     return .None
 }
 
@@ -62,4 +63,3 @@ case let .Success(data):
 case let .Failure(error):
     println("An error occured: \(error)")
 }
-
