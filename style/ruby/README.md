@@ -24,7 +24,25 @@ Ruby
   calls.
 * Use `_` for unused block parameters.
 * Use `%{}` for single-line strings needing interpolation and double-quotes.
-* Use `{...}` for single-line blocks. Use `do..end` for multi-line blocks.
+* Use `{...}` for single-line blocks.
+* Use `do..end` for multi-line blocks whose return value is not used by
+  the caller.
+
+```ruby
+(1..10).each do |x|
+  puts x**2
+end
+```
+
+* Use `{...}` for multi-line blocks that return values.
+
+```ruby
+values = (1..10).to_a.map { |x|
+  some_var = transform(x)
+  some_var * 2
+}
+```
+
 * Use `?` suffix for predicate methods.
 * Use `CamelCase` for classes and modules, `snake_case` for variables and
   methods, `SCREAMING_SNAKE_CASE` for constants.
@@ -40,5 +58,3 @@ Ruby
 
 [trailing comma example]: /style/samples/ruby.rb#L49
 [required kwargs]: /style/samples/ruby.rb#L16
-
-
