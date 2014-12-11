@@ -14,7 +14,7 @@ Ruby
 * Don't use `self` explicitly anywhere except class methods (`def self.method`)
   and assignments (`self.attribute =`).
 * Prefer `detect` over `find`.
-* Prefer `inject` over `reduce`.
+* Prefer `reduce` over `inject`.
 * Prefer `map` over `collect`.
 * Prefer `select` over `find_all`.
 * Prefer double quotes for strings.
