@@ -17,7 +17,6 @@ Everyone
 * Be explicit. Remember people don't always understand your intentions online.
 * Be humble. ("I'm not sure - let's look it up.")
 * Don't use hyperbole. ("always", "never", "endlessly", "nothing")
-* Don't use sarcasm.
 * Keep it real. If emoji, animated gifs, or humor aren't you, don't force them.
   If they are, use them with aplomb.
 * Talk in person if there are too many "I didn't understand" or "Alternative
