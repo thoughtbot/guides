@@ -43,8 +43,10 @@ Ruby
   multiple models.
 * Prefer `private` when indicating scope. Use `protected` only with comparison
   methods like `def ==(other)`, `def <(other)`, and `def >(other)`.
+* Extract [methods for inverted conditions][if] when it improves readability.
 
 [Bundler binstubs]: https://github.com/sstephenson/rbenv/wiki/Understanding-binstubs
+[if]: /best-practices/samples/ruby.rb#L3
 
 Ruby Gems
 ---------
