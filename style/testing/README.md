@@ -13,17 +13,17 @@ Testing
 * Prefer the `have_css` matcher to the `have_selector` matcher in Capybara assertions.
 * Prefer using a `Tempfile` to test invalid file handling:
 
-   ```ruby
-   # bad -- references a file in an unrelated area that could change
-   result = ProductCode.import('spec/fixtures/image_composite/Large Jacket.jpeg')
-   expect(result).to be_invalid
+  ```ruby
+  # bad -- references a file in an unrelated area that could change
+  result = ProductCode.import('spec/fixtures/image_composite/Large Jacket.jpeg')
+  expect(result).to be_invalid
 
-   # good
-   Tempfile.create(%w(img .jpg)) do |tf|
-     result = ProductCode.import(tf.path)
-     expect(result).to be_invalid
-   end
-   ```
+  # good
+  Tempfile.create(%w(img .jpg)) do |tf|
+    result = ProductCode.import(tf.path)
+    expect(result).to be_invalid
+  end
+  ```
 
 [`expect` syntax]: http://myronmars.to/n/dev-blog/2012/06/rspecs-new-expectation-syntax
 [`allow` syntax]: https://github.com/rspec/rspec-mocks#method-stubs
