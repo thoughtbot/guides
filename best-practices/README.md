@@ -187,6 +187,8 @@ HTML
 
 * Don't use a reset button for forms.
 * Prefer cancel links to cancel buttons.
+* Declare an explicit character encoding.
+* Put the meta charset tag as the first in the `head` section.
 
 CSS
 ---
