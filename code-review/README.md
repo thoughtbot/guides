@@ -39,9 +39,9 @@ Having Your Code Reviewed
   able to read individual updates based on their earlier feedback.
 * Seek to understand the reviewer's perspective.
 * Try to respond to every comment.
-* Wait to merge the branch until another person signs off.
 * Wait to merge the branch until Continuous Integration (TDDium, TravisCI, etc.)
   tells you the test suite is green in the branch.
+* Merge once you feel confident in the code and its impact on the project.
 
 Reviewing Code
 --------------
