@@ -55,6 +55,8 @@ Naming
 
 * Avoid abbreviations.
 * Avoid object types in names (`user_array`, `email_method` `CalculatorClass`, `ReportModule`).
+* Don't "shadow" variables.
+  Name variables in inner scopes differently than variables in outer scopes.
 * Prefer naming classes after domain concepts rather than patterns they
   implement (e.g. `Guest` vs `NullUser`, `CachedRequest` vs `RequestDecorator`).
 * Name the enumeration parameter the singular of the collection.
