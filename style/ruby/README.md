@@ -11,6 +11,7 @@ Ruby
 * Avoid explicit return statements.
 * Avoid using semicolons.
 * Avoid bang (!) method names. Prefer descriptive names.
+* Avoid spaces between braces and key value pairs when nesting hashes.  `{a: {b: 1}}`, not `{ a: { b: 1 } }`
 * Don't use `self` explicitly anywhere except class methods (`def self.method`)
   and assignments (`self.attribute =`).
 * Prefer `detect` over `find`.
@@ -55,7 +56,6 @@ values = (1..10).to_a.map { |x|
 * Use heredocs for multi-line strings.
 * Prefer `protected` over `private` for non-public `attr_reader`s, `attr_writer`s,
   and `attr_accessor`s.
-* Avoid spaces between braces and key value pairs when nesting hashes.  `{a: {b: 1}}`, not `{ a: { b: 1 } }`
 
 [trailing comma example]: /style/samples/ruby.rb#L49
 [required kwargs]: /style/samples/ruby.rb#L16
