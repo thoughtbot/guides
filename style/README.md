@@ -3,8 +3,10 @@ Style
 
 A guide for programming in style.
 
-Use [Hound] to automatically review your code and comment on GitHub pull
-requests for violations of the Ruby portions of this style guide.
+Use [Hound] to automatically review your
+GitHub pull requests for
+Ruby, JavaScript, and CoffeeScript
+style guide violations.
 
 [Hound]: https://houndci.com
 
