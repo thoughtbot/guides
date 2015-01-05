@@ -5,7 +5,6 @@ A guide for programming in style.
 
 Use [Hound] to automatically review your
 GitHub pull requests for
-Ruby, JavaScript, and CoffeeScript
 style guide violations.
 
 [Hound]: https://houndci.com
