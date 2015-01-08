@@ -182,6 +182,7 @@ Ruby
 * Avoid bang (!) method names. Prefer descriptive names.
 * Don't use `self` explicitly anywhere except class methods (`def self.method`)
   and assignments (`self.attribute =`).
+* Don't write code that generates warnings with `$VERBOSE` set to true.
 * Prefer `detect` over `find`.
 * Prefer `select` over `find_all`.
 * Prefer `map` over `collect`.
