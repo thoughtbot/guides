@@ -30,9 +30,7 @@ Migrations
 
 * Set an empty string as the default constraint for non-required string and text
   fields. [Example][default example].
-* List timestamps first when creating a new table. [Example][timestamps example].
 
-[timestamps example]: migration.rb
 [default example]: migration.rb#L6
 
 Routes
