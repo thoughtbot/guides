@@ -12,7 +12,7 @@ func yTown(some: Int, withCallback callback: CoolClosure) -> Bool {
     return CoolClosure(some)
 }
 
-// It's OK to use $ variable references if the closer is very short and
+// It's OK to use $ variable references if the closure is very short and
 // readability is maintained
 let cool = yTown(5) { $0 == 6 }
 
