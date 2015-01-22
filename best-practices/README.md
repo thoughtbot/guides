@@ -214,7 +214,7 @@ Sass
 Browsers
 --------
 
-* Don't support IE6 or IE7.
+* Don't support versions of Internet Explorer before IE9.
 
 Objective-C
 -----------
