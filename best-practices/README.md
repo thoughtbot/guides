@@ -210,7 +210,7 @@ Browsers
 --------
 
 * Don't support clients without Javascript.
-* Don't support IE6 or IE7.
+* Don't support IE6, IE7, or IE8.
 
 Objective-C
 -----------
