@@ -9,3 +9,5 @@ Swift
 * Name all parameters in functions and enum cases
 * Use trailing closures
 * Let the compiler infer the type whenever possible
+* Group computed properties below stored properties
+* Use a blank line above and below computed properties
