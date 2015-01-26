@@ -125,7 +125,7 @@ Testing
 * Use non-[SUT] methods in expectations when possible.
 
 [dependency injection]: http://en.wikipedia.org/wiki/Dependency_injection
-[explicit subject example]: /style/samples/testing.rb#17
+[subject-example]: ../style/testing/unit_test_spec.rb
 [`Delayed::Job` matcher]: https://gist.github.com/3186463
 [stubs and spies]: http://robots.thoughtbot.com/post/159805295/spy-vs-spy
 [assertions about state]: https://speakerdeck.com/skmetz/magic-tricks-of-testing-railsconf?slide=51
