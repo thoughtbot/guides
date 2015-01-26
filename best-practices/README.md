@@ -14,7 +14,7 @@ General
 * [Exceptions should be exceptional].
 * [Keep the code simple].
 
-[Exceptions should be exceptional]: http://www.readability.com/~/yichhgvu
+[Exceptions should be exceptional]: http://www.jacopretorius.net/2009/10/exceptions-should-be-exceptional.html
 [Keep the code simple]: http://www.readability.com/~/ko2aqda2
 
 Object-Oriented Design
