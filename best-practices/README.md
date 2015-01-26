@@ -11,10 +11,9 @@ General
 * Don't duplicate the functionality of a built-in library.
 * Don't swallow exceptions or "fail silently."
 * Don't write code that guesses at future functionality.
-* [Exceptions should be exceptional].
+* Exceptions should be exceptional.
 * [Keep the code simple].
 
-[Exceptions should be exceptional]: http://www.readability.com/~/yichhgvu
 [Keep the code simple]: http://www.readability.com/~/ko2aqda2
 
 Object-Oriented Design
