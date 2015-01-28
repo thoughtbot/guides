@@ -38,6 +38,7 @@ Ruby
 * Use heredocs for multi-line strings.
 * Prefer `protected` over `private` for non-public `attr_reader`s, `attr_writer`s,
   and `attr_accessor`s.
+* Prefer `+` over `\` for concatenating strings.
 
 [trailing comma example]: /style/ruby/sample.rb#L49
 [required kwargs]: /style/ruby/sample.rb#L16
