@@ -20,6 +20,7 @@ Formatting
 * Use space around operands: `$variable * 1.5`, not `$variable*1.5`
 * Avoid in-line operations in shorthand declarations (Ex. `padding: $variable * 1.5 variable * 2`)
 * Use parentheses around individual operations in shorthand declarations: `padding: ($variable * 1.5) ($variable * 2)`
+* Use double colons for pseudo-elements
 
 Order
 -----
