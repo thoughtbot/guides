@@ -38,8 +38,7 @@
 * Use meaningful names: `$visual-grid-color` not `$color` or `$vslgrd-clr`.
 * Use ID and class names that are as short as possible but as long as necessary.
 * Avoid using the direct descendant selector `>`.
-* Avoid nesting more than 4 selectors deep.
-* Don't nest more than 6 selectors deep.
+* Avoid nesting more than 3 selectors deep.
 * Use HTML tags on vague classes that need a qualifier like `header.application` not `.main`.
 * Avoid using the HTML tag in the class name: `section.news` not `section.news-section`.
 * Avoid using HTML tags on classes for generic markup `<div>`, `<span>`: `.widgets` not `div.widgets`.
