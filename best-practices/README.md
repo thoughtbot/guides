@@ -64,6 +64,7 @@ Ruby Gems
 Rails
 -----
 
+* [Add foreign key constraints][fkey] in migrations.
 * Avoid bypassing validations with methods like `save(validate: false)`,
   `update_attribute`, and `toggle`.
 * Avoid instantiating more than one object in controllers.
@@ -98,6 +99,7 @@ Rails
 * Use `ENV.fetch` for environment variables instead of `ENV[]`so that unset
   environment variables are detected on deploy.
 
+[fkey]: http://robots.thoughtbot.com/referential-integrity-with-foreign-keys
 [`.ruby-version`]: https://gist.github.com/fnichol/1912050
 [redirects]: http://www.w3.org/Protocols/rfc2616/rfc2616-sec14.html#sec14.30
 [Spring binstubs]: https://github.com/sstephenson/rbenv/wiki/Understanding-binstubs
