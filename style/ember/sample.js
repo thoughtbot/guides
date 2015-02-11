@@ -5,3 +5,14 @@ App.Post = DS.Model.extend({
   createdAt: DS.attr("date"),
   title: DS.attr("string"),
 });
+
+test("checks the box", function() {
+  visit("/");
+  click(".check-box");
+
+  andThen(function() {
+    const checkBox = find(".check-box");
+
+    ok(checkBox.prop("checked"), "box is checked");
+  });
+});
