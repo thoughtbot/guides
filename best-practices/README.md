@@ -185,8 +185,10 @@ Email
 
 JavaScript
 ----------
+* Use Coffeescript, ES6 with [babel], or another language that compiles to
+  JavaScript
 
-* Use CoffeeScript.
+[babel]: http://babeljs.io/
 
 HTML
 ----
