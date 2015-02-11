@@ -8,7 +8,8 @@ Rails
 * Name time columns (referring to a time of day with no date) with `_time`
   suffixes.
 * Name initializers for their gem name.
-* Order ActiveRecord associations alphabetically by attribute name.
+* Order ActiveRecord associations alphabetically by association type, then
+  attribute name.
 * Order ActiveRecord validations alphabetically by attribute name.
 * Order ActiveRecord associations above ActiveRecord validations.
 * Order controller contents: filters, public methods, private methods.
