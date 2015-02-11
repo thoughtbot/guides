@@ -9,7 +9,7 @@ Rails
   suffixes.
 * Name initializers for their gem name.
 * Order ActiveRecord associations alphabetically by association type, then
-  attribute name.
+  attribute name. [Example][order-associations].
 * Order ActiveRecord validations alphabetically by attribute name.
 * Order ActiveRecord associations above ActiveRecord validations.
 * Order controller contents: filters, public methods, private methods.
@@ -20,6 +20,7 @@ Rails
 * Use the default `render 'partial'` syntax over `render partial: 'partial'`.
 * Use `link_to` for GET requests, and `button_to` for other HTTP verbs.
 
+[order-associations]: /style/rails/sample.rb#L2-L4
 [`app/views/application`]: http://asciicasts.com/episodes/269-template-inheritance
 
 Migrations
