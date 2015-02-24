@@ -8,12 +8,12 @@
 * Use hyphens when naming mixins, extends, classes, functions & variables: `span-columns` not `span_columns` or `spanColumns`.
 * Use one space between property and value: `width: 20px` not `width:20px`.
 * Use a blank line above a selector that has styles.
-* Prefer hex color codes `#fff`.
+* Prefer hex color codes `#fff` or `#FFF`.
 * Avoid using shorthand properties for only one value: `background-color: #ff0000;`, not `background: #ff0000;`
 * Use `//` for comment blocks not `/* */`.
 * Use one space between selector and `{`.
 * Use double quotation marks.
-* Use only lowercase, including colors.
+* Use only lowercase, except for hex or string values.
 * Don't add a unit specification after `0` values, unless required by a mixin.
 * Use a leading zero in decimal numbers: `0.5` not `.5`
 * Use space around operands: `$variable * 1.5`, not `$variable*1.5`
