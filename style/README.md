@@ -20,7 +20,7 @@ detailed, language/framework-specific style guides:
 * [Git](git)
 * [Haskell](haskell)
 * [HTML](html)
-* [Objective C](objective_c)
+* [Objective-C](objective_c)
 * [Python](python)
 * [Rails](rails)
 * [Ruby](ruby)
