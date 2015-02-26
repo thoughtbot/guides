@@ -299,6 +299,11 @@ Ember
 * Prefer dependency injection through Ember initializers over globals on window
   or namespaces.
 
+Testing
+
+* Prefer `findWithAssert` over `find` when fetching an element you expect to
+  exist
+
 Angular
 -------
 
