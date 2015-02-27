@@ -6,7 +6,7 @@ Ember
 Ember-Data
 ----------
 
-* Visually separate relationships (`DS.{hasMany,belongsTo}`) from attributes
-  (`DS.attr`) with newlines. [Example][relationships]
+* Visually separate relationships from attributes with newline.
+  [Example][relationships]
 
 [relationships]: /style/ember/sample.js
