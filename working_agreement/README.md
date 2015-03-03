@@ -16,7 +16,7 @@ A living document for our ever evolving working agreements.
 - Assignments occur during the weekly Engineer Staff meeting.
 - There is one back-end and one front-end engineer.
 - Each member has a backup.
-- Each member spends 20 hours a week.
+- Each member spends 20 hours a week dedicated to Force related tasks.
 - The two members pair and call in the back ups as needed.
 - Members are not assigned _randos_, they focus on Honey Badgers and bugs. 
 
