@@ -30,7 +30,7 @@ Credits
 
 ![smarpention](https://avatars2.githubusercontent.com/u/8361143?v=3&s=200)
 
-Guides is maintained  by [Smartpension](https://autoenrolment.co.uk).
+Guides is maintained  by [Smartpension](https://www.autoenrolment.co.uk).
 
 ![thoughtbot](http://thoughtbot.com/images/tm/logo.png)
 
