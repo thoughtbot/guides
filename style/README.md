@@ -3,38 +3,25 @@ Style
 
 A guide for programming in style.
 
-Use [Hound] to automatically review your
-GitHub pull requests for
-style guide violations.
-
-[Hound]: https://houndci.com
-
 In addition to the general guidelines below, we also have the following more
 detailed, language/framework-specific style guides:
 
-* [Android](android)
 * [Backbone](backbone)
-* [CoffeeScript](coffeescript)
-* [Ember.js](ember)
 * [ERb](erb)
 * [Git](git)
-* [Haskell](haskell)
 * [HTML](html)
 * [JavaScript](javascript)
-* [Objective C](objective_c)
-* [Python](python)
 * [Rails](rails)
 * [Ruby](ruby)
 * [Sass](sass)
 * [Shell](shell)
-* [Swift](swift)
 * [Testing](testing)
 
 Formatting
 ----------
 
 * Avoid inline comments.
-* Break long lines after 80 characters.
+* Break long lines after 120 characters.
 * Delete trailing whitespace.
 * Don't include spaces after `(`, `[` or before `]`, `)`.
 * Don't misspell.
@@ -69,12 +56,8 @@ Naming
 * Prefer naming classes after domain concepts rather than patterns they
   implement (e.g. `Guest` vs `NullUser`, `CachedRequest` vs `RequestDecorator`).
 * Name the enumeration parameter the singular of the collection.
-* Name variables created by a factory after the factory (`user_factory`
   creates `user`).
 * Name variables, methods, and classes to reveal intent.
-* Treat acronyms as words in names (`XmlHttpRequest` not `XMLHTTPRequest`),
-  even if the acronym is the entire name (`class Html` not `class HTML`).
-* Suffix variables holding a factory with `_factory` (`user_factory`).
 
 Organization
 ------------

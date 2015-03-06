@@ -11,10 +11,8 @@ General
 * Don't duplicate the functionality of a built-in library.
 * Don't swallow exceptions or "fail silently."
 * Don't write code that guesses at future functionality.
-* [Exceptions should be exceptional].
 * [Keep the code simple].
 
-[Exceptions should be exceptional]: http://www.readability.com/~/yichhgvu
 [Keep the code simple]: http://www.readability.com/~/ko2aqda2
 
 Object-Oriented Design
@@ -37,14 +35,10 @@ Ruby
 
 * Avoid optional parameters. Does the method do too much?
 * Avoid monkey-patching.
-* Generate necessary [Bundler binstubs] for the project, such as `rake` and
-  `rspec`, and add them to version control.
 * Prefer classes to modules when designing functionality that is shared by
   multiple models.
 * Prefer `private` when indicating scope. Use `protected` only with comparison
   methods like `def ==(other)`, `def <(other)`, and `def >(other)`.
-
-[Bundler binstubs]: https://github.com/sstephenson/rbenv/wiki/Understanding-binstubs
 
 Ruby Gems
 ---------
@@ -54,12 +48,9 @@ Ruby Gems
 * Use [Appraisal] to test the gem against multiple versions of gem dependencies
   (such as Rails in a Rails engine).
 * Use [Bundler] to manage the gem's dependencies.
-* Use [Travis CI] for Continuous Integration, indicators showing whether GitHub
-  pull requests can be merged, and to test against multiple Ruby versions.
 
 [Appraisal]: https://github.com/thoughtbot/appraisal
 [Bundler]: http://bundler.io
-[Travis CI]: http://travis-ci.org
 
 Rails
 -----
@@ -76,14 +67,10 @@ Rails
   exception.
 * Don't use instance variables in partials. Pass local variables to partials
   from view templates.
-* Don't use SQL or SQL fragments (`where('inviter_id IS NOT NULL')`) outside of
-  models.
-* Generate necessary [Spring binstubs] for the project, such as `rake` and
-  `rspec`, and add them to version control.
+* Don't use SQL or SQL fragments (`where('inviter_id IS NOT NULL')`)
 * If there are default values, set them in migrations.
 * Keep `db/schema.rb` or `db/development_structure.sql` under version control.
 * Use only one instance variable in each view.
-* Use SQL, not `ActiveRecord` models, in migrations.
 * Use the [`.ruby-version`] file convention to specify the Ruby version and
   patch level for a project.
 * Use `_url` suffixes for named routes in mailer views and [redirects].  Use
@@ -91,7 +78,6 @@ Rails
 * Validate the associated `belongs_to` object (`user`), not the database column
   (`user_id`).
 * Use `db/seeds.rb` for data that is required in all environments.
-* Use `dev:prime` rake task for development environment seed data.
 * Prefer `cookies.signed` over `cookies` to [prevent tampering].
 * Prefer `Time.current` over `Time.now`
 * Prefer `Date.current` over `Date.today`
@@ -102,22 +88,18 @@ Rails
 [fkey]: http://robots.thoughtbot.com/referential-integrity-with-foreign-keys
 [`.ruby-version`]: https://gist.github.com/fnichol/1912050
 [redirects]: http://www.w3.org/Protocols/rfc2616/rfc2616-sec14.html#sec14.30
-[Spring binstubs]: https://github.com/sstephenson/rbenv/wiki/Understanding-binstubs
 [prevent tampering]: http://blog.bigbinary.com/2013/03/19/cookies-on-rails.html
 
 Testing
 -------
 
 * Avoid `any_instance` in rspec-mocks and mocha. Prefer [dependency injection].
-* Avoid `its`, `let`, `let!`, `specify`, and `before` in RSpec.
 * Avoid using `subject` explicitly *inside of an* RSpec `it` block.
   [Example][subject-example].
 * Avoid using instance variables in tests.
 * Disable real HTTP requests to external services with
   `WebMock.disable_net_connect!`.
 * Don't test private methods.
-* Test background jobs with a [`Delayed::Job` matcher].
-* Use [stubs and spies] \(not mocks\) in isolated tests.
 * Use a single level of abstraction within scenarios.
 * Use an `it` example or test method for each execution path through the method.
 * Use [assertions about state] for incoming messages.
@@ -128,8 +110,6 @@ Testing
 
 [dependency injection]: http://en.wikipedia.org/wiki/Dependency_injection
 [subject-example]: ../style/testing/unit_test_spec.rb
-[`Delayed::Job` matcher]: https://gist.github.com/3186463
-[stubs and spies]: http://robots.thoughtbot.com/post/159805295/spy-vs-spy
 [assertions about state]: https://speakerdeck.com/skmetz/magic-tricks-of-testing-railsconf?slide=51
 [Fake]: http://robots.thoughtbot.com/post/219216005/fake-it
 [SUT]: http://xunitpatterns.com/SUT.html
@@ -149,21 +129,6 @@ Bundler
 [pessimistic version]: http://robots.thoughtbot.com/post/35717411108/a-healthy-bundle
 [versionless]: http://robots.thoughtbot.com/post/35717411108/a-healthy-bundle
 
-Postgres
---------
-
-* Avoid multicolumn indexes in Postgres. It [combines multiple indexes]
-  efficiently. Optimize later with a [compound index] if needed.
-* Consider a [partial index] for queries on booleans.
-* Constrain most columns as [`NOT NULL`].
-* [Index foreign keys].
-
-[`NOT NULL`]: http://www.postgresql.org/docs/9.1/static/ddl-constraints.html#AEN2444
-[combines multiple indexes]: http://www.postgresql.org/docs/9.1/static/indexes-bitmap-scans.html
-[compound index]: http://www.postgresql.org/docs/9.2/static/indexes-bitmap-scans.html
-[partial index]: http://www.postgresql.org/docs/9.1/static/indexes-partial.html
-[Index foreign keys]: https://tomafro.net/2009/08/using-indexes-in-rails-index-your-associations
-
 Background Jobs
 ---------------
 
@@ -173,22 +138,13 @@ Background Jobs
 Email
 -----
 
-* Use [SendGrid] or [Amazon SES] to deliver email in staging and production
-  environments.
+* Use [Amazon SES] to deliver email in production environments.
 * Use a tool like [ActionMailer Preview] to look at each created or updated mailer view
   before merging. Use [MailView] gem unless using Rails version 4.1.0 or later.
 
 [Amazon SES]: http://robots.thoughtbot.com/post/3105121049/delivering-email-with-amazon-ses-in-a-rails-3-app
-[SendGrid]: https://devcenter.heroku.com/articles/sendgrid
 [MailView]: https://github.com/37signals/mail_view
 [ActionMailer Preview]: http://api.rubyonrails.org/v4.1.0/classes/ActionMailer/Base.html#class-ActionMailer::Base-label-Previewing+emails
-
-JavaScript
-----------
-* Use Coffeescript, ES6 with [babel], or another language that compiles to
-  JavaScript
-
-[babel]: http://babeljs.io/
 
 HTML
 ----
@@ -214,15 +170,7 @@ Sass
 Browsers
 --------
 
-* Don't support IE6 or IE7.
-
-Objective-C
------------
-
-* Setup new projects using [Liftoff](https://github.com/thoughtbot/liftoff) and
-  follow provided directory structure.
-* Prefer categories on `Foundation` classes to helper methods.
-* Prefer string constants to literals when providing keys or key paths to methods.
+* Don't support IE6, IE7 or IE8.
 
 Shell
 -----
@@ -279,24 +227,6 @@ In addition to Shell best practices,
 * Prefer process substitution over a pipe in `while read` loops.
 * Use `((` or `let`, not `$((` when you don't need the result
 
-Haskell
--------
-
-* Avoid partial functions (`head`, `read`, etc).
-* Compile code with `-Wall -Werror`.
-
-Ember
------
-
-* Avoid using `$` without scoping to `this.$` in views and components.
-* Prefer to make model lookup calls in routes instead of controllers (`find`,
-  `findAll`, etc.).
-* Prefer adding properties to controllers instead of models.
-* Don't use jQuery outside of views and components.
-* Prefer to use predefined `Ember.computed.*` functions when possible.
-* Use `href="#"` for links that have an action.
-* Prefer dependency injection through Ember initializers over globals on window
-  or namespaces.
 
 Angular
 -------

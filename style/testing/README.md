@@ -30,16 +30,6 @@ Acceptance Tests
 * Use only one `feature` block per feature spec file.
 * Use scenario titles that describe the success and failure paths.
 * Use spec/features directory to store feature specs.
-* Use spec/support/features for support code related to feature specs.
-
-Factories
----------
-
-* Order `factories.rb` contents: sequences, traits, factory definitions.
-* Order factory attributes: implicit attributes, explicit attributes,
-  child factory definitions. Each section's attributes are alphabetical.
-* Order factory definitions alphabetically by factory name.
-* Use one factories.rb file per project.
 
 Unit Tests
 ----------

@@ -3,8 +3,6 @@ Protocol
 
 Guides for getting things done.
 
-* [Communication](/protocol/communication)
+* [Product-review](/protocol/product-review)
 * [Git](/protocol/git)
 * [Rails](/protocol/rails)
-* [iOS](/protocol/ios)
-* [Open Source](/protocol/open-source)

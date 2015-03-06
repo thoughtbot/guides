@@ -97,13 +97,11 @@ class SomeClass
     method_body
   end
 
-  protected
+  private
 
   attr_reader :foo
   attr_accessor :bar
   attr_writer :baz
-
-  private
 
   def complex_condition?
     part_one? && part_two?

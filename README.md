@@ -6,6 +6,7 @@ Guides for getting things done, programming well, and programming in style.
 * [Protocol](/protocol)
   * [Git](/protocol/git)
   * [Rails](/protocol/rails)
+  * [Product-review](/protocol/product-review)
 * [Code Review](/code-review)
 * [Best Practices](/best-practices)
 * [Style](/style)
@@ -33,7 +34,7 @@ Guides is maintained  by [Smartpension](https://autoenrolment.co.uk).
 
 ![thoughtbot](http://thoughtbot.com/images/tm/logo.png)
 
-Guides is orignally created by [thoughtbot, inc](http://thoughtbot.com/community).
+Guides was orignally created by [thoughtbot, inc](http://thoughtbot.com/community).
 
 License
 -------

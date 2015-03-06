@@ -18,13 +18,11 @@ Maintain a Repo
 Write a Feature
 ---------------
 
-Create a local feature branch based off master.
+Create a local feature branch based off root branch (master for the example).
 
     git checkout master
     git pull
     git checkout -b <branch-name>
-
-Prefix the branch name with your initials.
 
 Rebase frequently to incorporate upstream changes.
 
@@ -84,7 +82,8 @@ For changes which they can make themselves, they check out the branch.
 They make small changes right in the branch, test the feature on their machine,
 run tests, commit, and push.
 
-When satisfied, they comment on the pull request `Ready to merge.`
+When satisfied, they comment on the pull request `Ready to merge.`, `+1` or
+`looks good`
 
 Merge
 -----
