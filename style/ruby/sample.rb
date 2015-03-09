@@ -13,6 +13,14 @@ class SomeClass
       each_method_lives_on_its_own_line
   end
 
+  def method_with_long_signature(
+    the_first_arg:,
+    the_second_one:,
+    and_another_one:
+  )
+    # code here
+  end
+
   def method_with_required_keyword_arguments(one:, two:)
   end
 

@@ -39,5 +39,5 @@ Ruby
 * Prefer `protected` over `private` for non-public `attr_reader`s, `attr_writer`s,
   and `attr_accessor`s.
 
-[trailing comma example]: /style/ruby/sample.rb#L49
-[required kwargs]: /style/ruby/sample.rb#L16
+[trailing comma example]: /style/ruby/sample.rb#L57
+[required kwargs]: /style/ruby/sample.rb#L24

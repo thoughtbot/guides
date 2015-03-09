@@ -40,7 +40,8 @@ Formatting
 * Don't misspell.
 * Don't vertically align tokens on consecutive lines.
 * If you break up an argument list, keep the arguments on their own lines and
-  closing parenthesis on its own line.
+  closing parenthesis on its own line. [Example 1][multi-line arguments]
+  [Example 2][long method signature]
 * If you break up a hash, keep the elements on their own lines and closing curly
   brace on its own line.
 * Indent continued lines two spaces.
@@ -57,6 +58,9 @@ Formatting
 * Use [Unix-style line endings] (`\n`).
 * Use [uppercase for SQL key words and lowercase for SQL identifiers].
 
+
+[multi-line arguments]: /style/ruby/sample.rb#L69
+[long method signature]: /style/ruby/sample.rb#L16
 [dot guideline example]: /style/ruby/sample.rb#L11
 [uppercase for SQL key words and lowercase for SQL identifiers]: http://www.postgresql.org/docs/9.2/static/sql-syntax-lexical.html#SQL-SYNTAX-IDENTIFIERS
 [Unix-style line endings]: http://unix.stackexchange.com/questions/23903/should-i-end-my-text-script-files-with-a-newline
