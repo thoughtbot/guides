@@ -10,9 +10,9 @@ A living document for our ever evolving working agreements.
 - The individual needs to be within a half hour of a machine with internet access so that they are able to diagnose any problems.
 
 
-## The Force
+## The Badger Force
 
-- __The Force__ is a two person team responsible for fixing and cleaning Honey Badgers and bugs.
+- __The Badger Force__ is a two person team responsible for fixing and cleaning Honey Badgers and bugs.
 - Assignments occur during the weekly Engineer Staff meeting.
 - There is one back-end and one front-end engineer.
 - Each member has a backup.
