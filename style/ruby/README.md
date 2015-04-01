@@ -35,6 +35,7 @@ Ruby
 * Use a trailing comma after each item in a multi-line list, including the last
   item. [Example][trailing comma example]
 * Use heredocs for multi-line strings.
+* Don't use spaces around ```{``` and ```}``` when interpolating ```#{variable}```
 
 [trailing comma example]: /style/ruby/sample.rb#L49
 [required kwargs]: /style/ruby/sample.rb#L16
