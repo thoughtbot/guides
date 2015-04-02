@@ -11,7 +11,6 @@ Ruby
 * Avoid explicit return statements.
 * Avoid using semicolons.
 * Avoid bang (!) method names. Prefer descriptive names.
-* Avoid spaces between braces and key value pairs when nesting hashes.  `{a: {b: 1}}`, not `{ a: { b: 1 } }`
 * Don't use `self` explicitly anywhere except class methods (`def self.method`)
   and assignments (`self.attribute =`).
 * Prefer `detect` over `find`.
