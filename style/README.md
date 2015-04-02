@@ -15,6 +15,7 @@ detailed, language/framework-specific style guides:
 * [Ruby](ruby)
 * [Sass](sass)
 * [Shell](shell)
+* [Slim](slim)
 * [Testing](testing)
 
 Formatting
