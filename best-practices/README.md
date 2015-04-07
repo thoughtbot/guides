@@ -148,19 +148,13 @@ Bundler
 [pessimistic version]: http://robots.thoughtbot.com/post/35717411108/a-healthy-bundle
 [versionless]: http://robots.thoughtbot.com/post/35717411108/a-healthy-bundle
 
-Postgres
+MySQL
 --------
 
-* Avoid multicolumn indexes in Postgres. It [combines multiple indexes]
-  efficiently. Optimize later with a [compound index] if needed.
-* Consider a [partial index] for queries on booleans.
 * Constrain most columns as [`NOT NULL`].
 * [Index foreign keys].
 
 [`NOT NULL`]: http://www.postgresql.org/docs/9.1/static/ddl-constraints.html#AEN2444
-[combines multiple indexes]: http://www.postgresql.org/docs/9.1/static/indexes-bitmap-scans.html
-[compound index]: http://www.postgresql.org/docs/9.2/static/indexes-bitmap-scans.html
-[partial index]: http://www.postgresql.org/docs/9.1/static/indexes-partial.html
 [Index foreign keys]: https://tomafro.net/2009/08/using-indexes-in-rails-index-your-associations
 
 Background Jobs
@@ -172,13 +166,12 @@ Background Jobs
 Email
 -----
 
-* Use [SendGrid] or [Amazon SES] to deliver email in staging and production
+* Use Mandrill or [Amazon SES] to deliver email in staging and production
   environments.
 * Use a tool like [ActionMailer Preview] to look at each created or updated mailer view
   before merging. Use [MailView] gem unless using Rails version 4.1.0 or later.
 
 [Amazon SES]: http://robots.thoughtbot.com/post/3105121049/delivering-email-with-amazon-ses-in-a-rails-3-app
-[SendGrid]: https://devcenter.heroku.com/articles/sendgrid
 [MailView]: https://github.com/37signals/mail_view
 [ActionMailer Preview]: http://api.rubyonrails.org/v4.1.0/classes/ActionMailer/Base.html#class-ActionMailer::Base-label-Previewing+emails
 
@@ -216,14 +209,6 @@ Browsers
 --------
 
 * Don't support versions of Internet Explorer before IE9.
-
-Objective-C
------------
-
-* Setup new projects using [Liftoff](https://github.com/thoughtbot/liftoff) and
-  follow provided directory structure.
-* Prefer categories on `Foundation` classes to helper methods.
-* Prefer string constants to literals when providing keys or key paths to methods.
 
 Shell
 -----
@@ -279,44 +264,3 @@ In addition to Shell best practices,
 * Prefer `[[` over `test` or `[`.
 * Prefer process substitution over a pipe in `while read` loops.
 * Use `((` or `let`, not `$((` when you don't need the result
-
-Haskell
--------
-
-* Avoid partial functions (`head`, `read`, etc).
-* Compile code with `-Wall -Werror`.
-
-Ember
------
-
-* Avoid using `$` without scoping to `this.$` in views and components.
-* Prefer to make model lookup calls in routes instead of controllers (`find`,
-  `findAll`, etc.).
-* Prefer adding properties to controllers instead of models.
-* Don't use jQuery outside of views and components.
-* Prefer to use predefined `Ember.computed.*` functions when possible.
-* Use `href="#"` for links that have an action.
-* Prefer dependency injection through Ember initializers over globals on window
-  or namespaces.
-* Prefer sub-routes over maintaining state.
-
-Testing
-
-* Prefer `findWithAssert` over `find` when fetching an element you expect to
-  exist
-
-Angular
--------
-
-* [Avoid manual dependency annotations][annotations]. Disable mangling or use a
-  [pre-processor][ngannotate] for annotations.
-* Prefer `factory` to `service`. If you desire a singleton, wrap the singleton
-  class in a factory function and return a new instance of that class from the
-  factory.
-* Prefer the `translate` directive to the `translate` filter for [performance
-  reasons][angular-translate].
-* Don't use the `jQuery` or `$` global. Access jQuery via `angular.element`.
-
-[annotations]: http://robots.thoughtbot.com/avoid-angularjs-dependency-annotation-with-rails
-[ngannotate]: https://github.com/kikonen/ngannotate-rails
-[angular-translate]: https://github.com/angular-translate/angular-translate/wiki/Getting-Started#using-translate-directive
