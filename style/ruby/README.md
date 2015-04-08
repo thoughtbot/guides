@@ -11,7 +11,6 @@ Ruby
 * Avoid explicit return statements.
 * Avoid using semicolons.
 * Avoid bang (!) method names. Prefer descriptive names.
-* Avoid spaces between braces and key value pairs when nesting hashes.  `{a: {b: 1}}`, not `{ a: { b: 1 } }`
 * Don't use `self` explicitly anywhere except class methods (`def self.method`)
   and assignments (`self.attribute =`).
 * Prefer `detect` over `find`.
@@ -23,6 +22,14 @@ Ruby
 * Prefer `!` over `not`.
 * Prefer `&:method_name` to `{ |item| item.method_name }` for simple method
   calls.
+* Use spaces around operators, after commas, colons and semicolons, around { and before }.
+```ruby
+  sum = 1 + 2
+  a, b = 1, 2
+  1 > 2 ? true : false; puts 'Hi'
+  [1, 2, 3].each { |e| puts e }
+```
+
 * Use `_` for unused block parameters.
 * Use `%{}` for single-line strings needing interpolation and double-quotes.
 * Use `{...}` for single-line blocks.
