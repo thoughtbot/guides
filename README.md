@@ -2,7 +2,7 @@ Guides
 ======
 
 Guides for getting things done, programming well, and programming in style.
-
+* [Working Agreement](/working_agreement)
 * [Protocol](/protocol)
   * [Git](/protocol/git)
   * [Rails](/protocol/rails)
