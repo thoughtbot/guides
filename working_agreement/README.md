@@ -10,14 +10,14 @@ A living document for our ever evolving working agreements.
 - The individual needs to be within a half hour of a machine with internet access so that they are able to diagnose any problems.
 
 
-## The Badger Force
+## Badger Duty
 
-- __The Badger Force__ is a two person team responsible for fixing and cleaning Honey Badgers and bugs.
-- Assignments occur during the weekly Engineer Staff meeting.
-- There is one back-end and one front-end engineer.
-- The previous week's Badger Force members become the backup for the current week.
-- Each member spends 20 hours a week dedicated to Badger Force related tasks.
-- The two members pair and call in the back ups as needed.
-- Members are not assigned _randos_, they focus on Honey Badgers and bugs. 
-
+- Honeybadgers are assigned during Storytime
+- Each dev is assigned an HB for the week, and it it's that person's job to resolve it
+- If that person gets stuck, they have to find someone willing to pair on it
+- If you finish your HB quickly, you can let the team know so that those who are stuck can pair with you.
+- If you know who can easily fix the HB, you can pair with that person, but you are still responsible for seeing it through.
+- If it takes longer than a week to fix, it is reviewed at the next Storytime.
+- It can be turned into a larger project, or reassigned for the week.
+- Unless a special case is made, no more than 25% of a dev's time should be spent on HB's
 
