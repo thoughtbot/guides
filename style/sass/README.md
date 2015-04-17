@@ -28,8 +28,9 @@
 * Place `@extends` and `@includes` at the top of your declaration list.
 * Place media queries directly after the declaration list.
 * Place concatenated selectors second.
-* Place pseudo states and elements third.
-* Place nested selectors last.
+* Place pseudo-states and pseudo-elements third.
+* Place nested elements fourth.
+* Place nested classes fifth.
 
 ## Selectors
 

@@ -25,6 +25,10 @@ section.application {
     content: ">";
   }
 
+  h1 {
+    attribute: value;
+  }
+
   .news {
     attribute: value;
     attribute: ($variable * 1.5) 2em;
