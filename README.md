@@ -3,13 +3,16 @@ Guides
 
 Guides for getting things done, programming well, and programming in style.
 
+* [Best Practices](/best-practices)
+* [Code Review](/code-review)
 * [Protocol](/protocol)
+  * [Communication](/protocol/communication)
   * [Git](/protocol/git)
-  * [Rails](/protocol/rails)
   * [iOS](/protocol/ios)
   * [Open Source](/protocol/open-source)
-* [Code Review](/code-review)
-* [Best Practices](/best-practices)
+  * [Product Review](/protocol/product-review)
+  * [Rails](/protocol/rails)
+* [Security](/security)
 * [Style](/style)
 
 High level guidelines:
