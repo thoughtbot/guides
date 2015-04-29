@@ -6,8 +6,8 @@
   >
   <TextView
     android:id="@+id/system_name"
-    android:layout_height="48sp"
     android:layout_width="match_parent"
+    android:layout_height="48sp"
     android:background="@color/brand_red"
     android:gravity="center_vertical"
     android:layout_alignBottom="@id/system_image"
