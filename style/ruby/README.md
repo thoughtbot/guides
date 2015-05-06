@@ -42,6 +42,7 @@ Ruby
 * Prefer `protected` over `private` for non-public `attr_reader`s, `attr_writer`s,
   and `attr_accessor`s.
 * Order class methods above instance methods.
+* Prefer method invocation over instance variables.
 
 [trailing comma example]: /style/ruby/sample.rb#L49
 [required kwargs]: /style/ruby/sample.rb#L16

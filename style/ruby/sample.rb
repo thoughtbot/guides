@@ -77,7 +77,7 @@ class SomeClass
   end
 
   def method_that_uses_factory
-    user = @user_factory.new
+    user = user_factory.new
     user.ensure_authenticated!
   end
 
@@ -87,7 +87,7 @@ class SomeClass
 
   protected
 
-  attr_reader :foo
+  attr_reader :foo, :user_factory
   attr_accessor :bar
   attr_writer :baz
 
