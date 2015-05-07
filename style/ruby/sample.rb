@@ -117,3 +117,8 @@ class SomeClass
     part_one? && part_two?
   end
 end
+
+module A
+  class B
+  end
+end

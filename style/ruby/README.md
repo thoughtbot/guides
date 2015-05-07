@@ -13,6 +13,8 @@ Ruby
 * Avoid bang (!) method names. Prefer descriptive names.
 * Don't use `self` explicitly anywhere except class methods (`def self.method`)
   and assignments (`self.attribute =`).
+* Prefer nested class and module definitions over the shorthand version
+  [Example][class definition example]
 * Prefer `detect` over `find`.
 * Prefer `select` over `find_all`.
 * Prefer `map` over `collect`.
@@ -42,3 +44,4 @@ Ruby
 
 [trailing comma example]: /style/ruby/sample.rb#L57
 [required kwargs]: /style/ruby/sample.rb#L24
+[class definition example]: /style/ruby/sample.rb#L121
