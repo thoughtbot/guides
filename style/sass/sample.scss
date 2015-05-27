@@ -1,7 +1,6 @@
 @import "bourbon";
 
-section.application {
-  @extend %extend;
+.featured-article {
   @include mixin;
   attribute: value;
 
