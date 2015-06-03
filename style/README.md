@@ -55,7 +55,7 @@ Formatting
 * Use spaces around operators, except for unary operators, such as `!`.
 * Use spaces after commas, after colons and semicolons, around `{` and before
   `}`.
-* Use [Unix-style line endings] (`\n`).
+* Use [Unix-style line endings][newline explanation] (`\n`).
 * Use [uppercase for SQL key words and lowercase for SQL identifiers].
 
 
@@ -63,7 +63,7 @@ Formatting
 [long method signature]: /style/ruby/sample.rb#L16
 [dot guideline example]: /style/ruby/sample.rb#L11
 [uppercase for SQL key words and lowercase for SQL identifiers]: http://www.postgresql.org/docs/9.2/static/sql-syntax-lexical.html#SQL-SYNTAX-IDENTIFIERS
-[Unix-style line endings]: http://unix.stackexchange.com/questions/23903/should-i-end-my-text-script-files-with-a-newline
+[newline explanation]: http://unix.stackexchange.com/questions/23903/should-i-end-my-text-script-files-with-a-newline
 
 Naming
 ------
