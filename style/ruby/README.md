@@ -26,6 +26,7 @@ Ruby
   calls.
 * Prefer `if` over `unless`.
 * Use `_` for unused block parameters.
+* Prefix unused variables or parameters with underscore (`_`).
 * Use `%{}` for single-line strings needing interpolation and double-quotes.
 * Use `{...}` for single-line blocks. Use `do..end` for multi-line blocks.
 * Use `?` suffix for predicate methods.
