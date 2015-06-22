@@ -9,7 +9,7 @@ JavaScript
 * Prefer [arrow functions] `=>`, over the `function` keyword except when
   defining classes or methods.
 * Use semicolons at the end of each statement.
-* Prefer double quotes.
+* Prefer single quotes.
 * Use `PascalCase` for classes, `lowerCamelCase` for variables and functions,
   `SCREAMING_SNAKE_CASE` for constants, `_singleLeadingUnderscore` for private
   variables and functions.
