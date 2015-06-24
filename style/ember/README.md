@@ -3,6 +3,10 @@ Ember
 
 * Don't put a space between the opening handlebars braces and the variable.
 * Prefer components over partials.
+* Alias local variables to functions from `Ember` and `DS`
+([sample][local-Ember-DS])
+
+[local-Ember-DS]: sample.js#L23-L24
 
 Ember-Data
 ----------
