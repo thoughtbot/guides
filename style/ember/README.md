@@ -2,8 +2,8 @@ Ember
 =====
 
 * Don't put a space between the opening handlebars braces and the variable.
-* Prefer not using prototype extensions for `computed` or `observes`
-  ([sample][prototype extensions])
+* Use `Ember.computed`, `Ember.observes`, and `Ember.on` instead of the function
+  prototype extensions ([sample][prototype extensions])
 
 Ember-Data
 ----------
