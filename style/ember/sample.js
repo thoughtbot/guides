@@ -16,3 +16,11 @@ test("checks the box", function() {
     ok(checkBox.prop("checked"), "box is checked");
   });
 });
+
+Ember.Object.extend({
+  name: 'something',
+
+  title: Ember.computed('name', function() {
+    return this.get('name').capitalize();
+  }),
+});
