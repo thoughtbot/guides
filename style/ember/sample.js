@@ -27,3 +27,14 @@ export default DS.Model.extend({
   name: attr('string'),
   ...
 });
+
+import fetch from 'fetch';
+import Ember from 'ember';
+
+export default Ember.Route.extend({
+  model() {
+    return fetch('/my-cool-end-point.json').then(function(response) {
+      return response.json();
+    });
+  }
+});
