@@ -12,22 +12,12 @@ style guide violations.
 In addition to the general guidelines below, we also have the following more
 detailed, language/framework-specific style guides:
 
-* [Android](android)
-* [Backbone](backbone)
 * [CoffeeScript](coffeescript)
-* [Ember.js](ember)
-* [ERb](erb)
 * [Git](git)
-* [Haskell](haskell)
-* [HTML](html)
 * [JavaScript](javascript)
-* [Objective-C](objective_c)
-* [Python](python)
 * [Rails](rails)
 * [Ruby](ruby)
 * [Sass](sass)
-* [Shell](shell)
-* [Swift](swift)
 * [Testing](testing)
 
 Formatting
