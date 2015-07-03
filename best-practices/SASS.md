@@ -1,4 +1,5 @@
-S A S S
+S A S S Guidelines
+==================
 
 
 Syntax & Formatting
