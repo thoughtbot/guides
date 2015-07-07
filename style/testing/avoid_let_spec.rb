@@ -1,29 +1,29 @@
-# BAD
+# Not recommended
 describe ReportPolicy do
-  let(:user) { User.new(report_ids: [1, 2]) }
-  let(:report) { Report.new(id: 2) }
+  let(:report_id) { 2 }
+  let(:report_policy) do
+    ReportPolicy.new(
+      User.new(report_ids: [1,2]),
+      Report.new(id: report_id)
+    )
+  end
 
   describe "#allowed?" do
+    subject { report_policy.allowed? }
+    
     context "when user has access to report" do
-      it "returns true" do
-        policy = ReportPolicy.new(user, report)
-
-        expect(policy).to be_allowed
-      end
+      it { should be true }
     end
 
     context "when user does not have access to report" do
-      it "returns false" do
-        report.id = 3
-        policy = ReportPolicy.new(user, report)
-
-        expect(policy).not_to be_allowed
-      end
+      let(:report_id) { 3 }
+      
+      it { should be false }
     end
   end
 end
 
-# GOOD
+# Recommended
 describe ReportPolicy do
   describe "#allowed?" do
     context "when user has access to report" do
