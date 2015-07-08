@@ -1,4 +1,4 @@
-# BAD
+# Not recommended
 describe ReportPolicy do
   let(:report_id) { 2 }
   let(:report_policy) do
@@ -12,22 +12,18 @@ describe ReportPolicy do
     subject { report_policy.allowed? }
     
     context "when user has access to report" do
-      it "returns true" do
-        expect(subject).to eql(true)
-      end
+      it { should be true }
     end
 
     context "when user does not have access to report" do
       let(:report_id) { 3 }
       
-      it "returns false" do
-        expect(subject).to eql(false)
-      end
+      it { should be false }
     end
   end
 end
 
-# GOOD
+# Recommended
 describe ReportPolicy do
   describe "#allowed?" do
     context "when user has access to report" do
