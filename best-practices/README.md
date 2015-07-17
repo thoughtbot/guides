@@ -220,6 +220,11 @@ Browsers
 
 * Don't support versions of Internet Explorer before IE9.
 
+DNS
+---
+
+* Avoid using non-standard DNS entries (i.e. ALIAS, ANAME).
+
 Objective-C
 -----------
 
