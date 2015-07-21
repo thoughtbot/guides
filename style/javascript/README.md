@@ -19,6 +19,8 @@ JavaScript
 * Use `const` for declaring variables that will never be re-assigned, and `let`
   otherwise.
 * Avoid `var` to declare variables.
+* Do not include a space after the opening brace of an object or before the closing
+  brace.
 
 [template strings]: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/template_strings
 [arrow functions]: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions/Arrow_functions
