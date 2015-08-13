@@ -39,6 +39,7 @@ Factories
 * Order factory attributes: implicit attributes, explicit attributes,
   child factory definitions. Each section's attributes are alphabetical.
 * Order factory definitions alphabetically by factory name.
+* Order trait definitions alphabetically by trait name.
 * Use one factories.rb file per project.
 
 Unit Tests
