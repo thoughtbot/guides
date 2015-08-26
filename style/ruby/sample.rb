@@ -101,6 +101,12 @@ class SomeClass
     user.ensure_authenticated!
   end
 
+  def method_which_uses_each_with_object
+    items.each_with_object({}) do |item, hash|
+      hash[item] = true
+    end
+  end
+
   def self.class_method
     method_body
   end
