@@ -19,8 +19,11 @@ Rails
 * Use `def self.method`, not the `scope :method` DSL.
 * Use the default `render 'partial'` syntax over `render partial: 'partial'`.
 * Use `link_to` for GET requests, and `button_to` for other HTTP verbs.
+* Use new-style `validates :name, presence: true` validations, and put all
+  validations for a given column together. [Example][validations].
 
 [order-associations]: /style/rails/sample.rb#L2-L4
+[validations]: /style/rails/sample.rb#L6
 [`app/views/application`]: http://asciicasts.com/episodes/269-template-inheritance
 
 Migrations
