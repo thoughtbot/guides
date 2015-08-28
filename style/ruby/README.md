@@ -19,6 +19,8 @@ Ruby
 * Prefer `select` over `find_all`.
 * Prefer `map` over `collect`.
 * Prefer `reduce` over `inject`.
+* Prefer `each_with_object` over `reduce` for building hashes from arrays.
+  [Example][each_with_object example]
 * Prefer double quotes for strings.
 * Prefer `&&` and `||` over `and` and `or`.
 * Prefer `!` over `not`.
@@ -45,4 +47,5 @@ Ruby
 
 [trailing comma example]: /style/ruby/sample.rb#L57
 [required kwargs]: /style/ruby/sample.rb#L24
-[class definition example]: /style/ruby/sample.rb#L121
+[class definition example]: /style/ruby/sample.rb#L127
+[each_with_object example]: /style/ruby/sample.rb#L104
