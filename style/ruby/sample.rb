@@ -40,7 +40,7 @@ class SomeClass
   end
 
   def method_with_oneline_combined_methods_block
-    items.map { |item| "#{item.one} #{item.two}" }
+    items.map {|item| "#{item.one} #{item.two}"}
   end
 
   def method_that_returns_an_array
@@ -48,7 +48,7 @@ class SomeClass
   end
 
   def method_that_returns_a_hash
-    { :key => "value" }
+    {:key => "value"}
   end
 
   def method_with_large_hash

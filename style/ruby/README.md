@@ -42,6 +42,8 @@ Ruby
 * Prefer `protected` over `private` for non-public `attr_reader`s, `attr_writer`s,
   and `attr_accessor`s.
 * Order class methods above instance methods.
+* Do not include a space after an opening brace or before a closing
+  brace.
 
 [trailing comma example]: /style/ruby/sample.rb#L57
 [required kwargs]: /style/ruby/sample.rb#L24
