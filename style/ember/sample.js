@@ -28,13 +28,11 @@ export default DS.Model.extend({
   ...
 });
 
-import fetch from 'fetch';
 import Ember from 'ember';
 
 export default Ember.Route.extend({
+  ajax: Ember.inject.service(),
   model() {
-    return fetch('/my-cool-end-point.json').then(function(response) {
-      return response.json();
-    });
+    return this.get('ajax').request('/posts');
   }
 });

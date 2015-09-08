@@ -5,11 +5,11 @@ Ember
 * Prefer components over partials.
 * Alias local variables to functions from `Ember` and `DS`
 ([sample][local-Ember-DS])
-* Prefer [ember-fetch] over ic-ajax. ([sample][ember-fetch-sample])
+* Prefer [ember-ajax] over ic-ajax. ([sample][ember-ajax-sample])
 
 [local-Ember-DS]: sample.js#L23-L24
-[ember-fetch]: https://github.com/stefanpenner/ember-fetch
-[ember-fetch-sample]: sample.js#L20-L29
+[ember-ajax]: https://github.com/ember-cli/ember-ajax
+[ember-ajax-sample]: sample.js#L31-L38
 
 Ember-Data
 ----------
