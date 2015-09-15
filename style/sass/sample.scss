@@ -1,53 +1,35 @@
-@import "bourbon";
+@import "partial-name";
 
-.featured-article {
-  @include mixin;
-  attribute: value;
+.class-one {
+  background-color: $color-variable;
+  border: 0;
 
-  @include media(value) {
-    attribute: value;
-  }
-
-  &.additional-selector {
-    attribute: value;
+  @media (min-width: $screen-variable) {
+    margin: ($spacing-variable * 2) 1rem;
   }
 
   &:hover {
-    attribute: value;
+    box-shadow: 0 0 2px 1px rgba($color-variable, 0.2);
   }
 
   &::before {
-    content: "<";
+    content: "hello";
   }
+}
 
-  &::after {
-    content: ">";
-  }
+.class-two {
+  @extend %placeholder;
+  @include mixin;
+  align-items: center;
+  display: flex;
+  flex: 1 1 auto;
 
-  h1 {
-    attribute: value;
-  }
+  a {
+    text-decoration: none;
 
-  .news {
-    attribute: value;
-    attribute: ($variable * 1.5) 2em;
-
-    article {
-      @extend media(value) {
-        attribute: value;
-      }
-
-      p {
-        attribute: value;
-      }
-    }
-  }
-
-  .sidebar {
-    attribute: value;
-
-    h2 {
-      attribute: value;
+    &:focus,
+    &:hover {
+      text-decoration: underline;
     }
   }
 }
