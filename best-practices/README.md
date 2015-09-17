@@ -222,7 +222,7 @@ Sass
 Browsers
 --------
 
-* Don't support versions of Internet Explorer before IE10.
+* Avoid supporting versions of Internet Explorer before IE10.
 
 Objective-C
 -----------
