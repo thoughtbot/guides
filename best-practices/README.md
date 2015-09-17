@@ -299,14 +299,16 @@ Ember
 * Don't use jQuery outside of views and components.
 * Prefer to use predefined `Ember.computed.*` functions when possible.
 * Use `href="#"` for links that have an action.
-* Prefer dependency injection through `Ember.inject` over initializers, globals on window
-  or namespaces.
+* Prefer dependency injection through `Ember.inject` over initializers, globals
+  on window, or namespaces. ([sample][inject])
 * Prefer sub-routes over maintaining state.
 
 Testing
 
 * Prefer `findWithAssert` over `find` when fetching an element you expect to
   exist
+
+[inject]: samples/ember.js#L1-L11
 
 Angular
 -------
