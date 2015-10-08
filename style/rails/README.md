@@ -19,8 +19,15 @@ Rails
 * Use `def self.method`, not the `scope :method` DSL.
 * Use the default `render 'partial'` syntax over `render partial: 'partial'`.
 * Use `link_to` for GET requests, and `button_to` for other HTTP verbs.
+* If you break up an argument list for a macro,
+  keep the first argument on the same line as the macro,
+  and break the following arguments onto their own lines.
+  [Example 1][multi-line macro 1]
+  [Example 2][multi-line macro 2]
 
 [order-associations]: /style/rails/sample.rb#L2-L4
+[multi-line macro 1]: /style/rails/sample.rb#L4
+[multi-line macro 2]: /style/rails/sample.rb#L10
 [`app/views/application`]: http://asciicasts.com/episodes/269-template-inheritance
 
 Migrations
