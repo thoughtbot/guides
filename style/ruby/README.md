@@ -43,6 +43,6 @@ Ruby
   and `attr_accessor`s.
 * Order class methods above instance methods.
 
-[trailing comma example]: /style/ruby/sample.rb#L57
-[required kwargs]: /style/ruby/sample.rb#L24
-[class definition example]: /style/ruby/sample.rb#L121
+[trailing comma example]: /style/ruby/sample.rb#L49
+[required kwargs]: /style/ruby/sample.rb#L16
+[class definition example]: /style/ruby/sample.rb#L101
