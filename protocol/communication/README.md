@@ -1,9 +1,6 @@
 Communication
 =============
 
-A guide for communicating within thoughtbot.
+A guide for communicating within Fleet.
 
-Tickets
--------
-
-* People assign themselves to tickets. When in doubt, do not assign a ticket to someone.
+_Work in progress. We still need to figure this out._

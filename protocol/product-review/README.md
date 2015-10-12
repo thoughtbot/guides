@@ -15,8 +15,7 @@ For each change, choose one of four techniques:
 In-person
 ---------
 
-If they are sitting next to you,
-have them review the changes in person.
+If they are sitting next to you, have them review the changes in person.
 
 Screencast
 ----------

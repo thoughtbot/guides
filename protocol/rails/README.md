@@ -3,23 +3,6 @@ Rails Protocol
 
 A guide for writing great web apps.
 
-Set Up Laptop
--------------
-
-Set up your laptop with [this script](https://github.com/thoughtbot/laptop)
-and [these dotfiles](https://github.com/thoughtbot/dotfiles).
-
-Create App
-----------
-
-Get Suspenders.
-
-    gem install suspenders
-
-Create the app.
-
-    suspenders app --heroku true --github organization/app
-
 Set Up App
 ----------
 
@@ -31,21 +14,6 @@ Set up the app's dependencies.
 
     cd project
     ./bin/setup
-
-Use [Heroku config](https://github.com/ddollar/heroku-config) to get `ENV`
-variables.
-
-    heroku config:pull --remote staging
-
-Delete extra lines in `.env`, leaving only those needed for app to function
-properly. For example: `BRAINTREE_MERCHANT_ID` and `S3_SECRET`.
-
-Use [Foreman](https://github.com/ddollar/foreman) to run the app locally.
-
-    foreman start
-
-It uses your `.env` file and `Procfile` to run processes
-like Heroku's [Cedar](https://devcenter.heroku.com/articles/cedar/) stack.
 
 Git Protocol
 ------------
@@ -77,6 +45,8 @@ Rails work, look in particular for:
 
 Deploy
 ------
+
+__TODO:__ This section needs to be updated once we have a deployment process.
 
 View a list of new commits. View changed files.
 
@@ -122,6 +92,8 @@ Close pull request and comment `Merged.`
 
 Set Up Production Environment
 -----------------------------
+
+__TODO:__ This section needs to be updated once we have a production env setup
 
 * Make sure that your [`Procfile`] is set up to run Unicorn.
 * Make sure the PG Backups add-on is enabled.

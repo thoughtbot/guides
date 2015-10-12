@@ -6,7 +6,6 @@ Guides for getting things done, programming well, and programming in style.
 * [Protocol](/protocol)
   * [Git](/protocol/git)
   * [Rails](/protocol/rails)
-  * [iOS](/protocol/ios)
   * [Open Source](/protocol/open-source)
 * [Code Review](/code-review)
 * [Best Practices](/best-practices)
@@ -39,11 +38,13 @@ waiting a week for everybody to leave feedback**.
 Credits
 -------
 
-Thank you, [contributors](https://github.com/thoughtbot/guides/graphs/contributors)!
+Thank you, [contributors](https://github.com/theclymb/guides/graphs/contributors)!
 
-![thoughtbot](http://thoughtbot.com/images/tm/logo.png)
+Thank you, [thoughtbot](http://github.com/thoughtbot/guides) for sharing your guides!
 
-Guides is maintained by [thoughtbot, inc](http://thoughtbot.com/community).
+![Fleet](fleet_logo.png)
+
+Guides is maintained by [Fleet](http://tryfleet.com).
 
 License
 -------
