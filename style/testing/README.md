@@ -1,6 +1,7 @@
 Testing
 =======
 
+* Refer the [better spec guides][betterspecs].
 * Avoid the `private` keyword in specs.
 * Avoid checking boolean equality directly. Instead, write predicate methods and
   use appropriate matchers. [Example][predicate-example].
@@ -11,6 +12,7 @@ Testing
 * Use `not_to` instead of `to_not` in RSpec expectations.
 * Prefer the `have_css` matcher to the `have_selector` matcher in Capybara assertions.
 
+[betterspecs]: http://betterspecs.org/
 [`expect` syntax]: http://myronmars.to/n/dev-blog/2012/06/rspecs-new-expectation-syntax
 [`allow` syntax]: https://github.com/rspec/rspec-mocks#method-stubs
 [predicate-example]: predicate_tests_spec.rb
