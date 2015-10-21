@@ -335,3 +335,18 @@ Angular
 [annotations]: http://robots.thoughtbot.com/avoid-angularjs-dependency-annotation-with-rails
 [ngannotate]: https://github.com/kikonen/ngannotate-rails
 [angular-translate]: https://github.com/angular-translate/angular-translate/wiki/Getting-Started#using-translate-directive
+
+Ruby JSON APIs
+--------------
+
+* Review the recommended practices outlined in Heroku's [HTTP API Design Guide]
+  before designing a new API.
+* Use a fast JSON parser, e.g. [`oj`][oj]
+* Write integration tests for your API endpoints. When the primary consumer of
+  the API is a JavaScript client maintained within the same code base as the
+  provider of the API, write [feature specs]. Otherwise write [request specs].
+
+[HTTP API Design Guide]: https://github.com/interagent/http-api-design
+[oj]: https://github.com/ohler55/oj
+[feature specs]: https://www.relishapp.com/rspec/rspec-rails/docs/feature-specs/feature-spec
+[request specs]: https://www.relishapp.com/rspec/rspec-rails/docs/request-specs/request-spec
