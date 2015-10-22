@@ -19,7 +19,7 @@ Rails
 * Use `def self.method`, not the `scope :method` DSL.
 * Use the default `render 'partial'` syntax over `render partial: 'partial'`.
 * Use `link_to` for GET requests, and `button_to` for other HTTP verbs.
-* Prefer `ERb` or [`slim`][slim-lang] over `haml` for templating
+* Prefer ERb or [Slim][slim-lang] over HAML for templating
 
 [order-associations]: /style/rails/sample.rb#L2-L4
 [`app/views/application`]: http://asciicasts.com/episodes/269-template-inheritance
