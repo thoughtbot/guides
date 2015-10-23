@@ -334,7 +334,7 @@ Ruby JSON APIs
 --------------
 
 * Follow Heroku's [HTTP API Design Guide]
-* Use [`oj`][oj] for parsing JSON
+* Use a fast JSON parser, e.g. [`oj`][oj]
 * Write [request specs] for your API endpoints
 
 [HTTP API Design Guide]: https://github.com/interagent/http-api-design
