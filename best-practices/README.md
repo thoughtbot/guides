@@ -335,8 +335,11 @@ Ruby JSON APIs
 
 * Follow Heroku's [HTTP API Design Guide]
 * Use a fast JSON parser, e.g. [`oj`][oj]
-* Write [request specs] for your API endpoints
+* Write integration tests for your API endpoints. When the primary consumer of
+  your API is an in-app JavaScript client, write [feature specs]. Otherwise
+  write [request specs].
 
 [HTTP API Design Guide]: https://github.com/interagent/http-api-design
 [oj]: https://github.com/ohler55/oj
+[feature specs]: https://www.relishapp.com/rspec/rspec-rails/docs/feature-specs/feature-spec
 [request specs]: https://www.relishapp.com/rspec/rspec-rails/docs/request-specs/request-spec
