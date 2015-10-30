@@ -22,7 +22,7 @@ Formatting
 
 Ruby
 ----
-See [rubocop.ymp](/dotfiles/.rubocop.yml) - ensure that you either use a plugin with your editor or run rubocop as 
+See [rubocop.yml](/dotfiles/.rubocop.yml) - ensure that you either use a plugin with your editor or run rubocop as 
 a pre-commit hook. We are informed that a good one is https://gist.github.com/cheba/cfc46820a01db1222f54
 
 Naming
