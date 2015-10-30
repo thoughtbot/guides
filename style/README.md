@@ -65,33 +65,6 @@ CoffeeScript
 * Prefer `is` to `== ` or `===`
 * Prefer `or` and `and` to `||` and `&&`
 
-Ruby
-----
-
-[Sample](samples/ruby.rb)
-
-* Avoid conditional modifiers (lines that end with conditionals).
-* Avoid organizational comments (`# Validations`).
-* Avoid ternary operators (`boolean ? true : false`). Use multi-line `if`
-  instead to emphasize code branches.
-* Avoid explicit return statements.
-* Prefer `detect` over `find`.
-* Prefer `inject` over `reduce`.
-* Prefer `map` over `collect`.
-* Prefer `select` over `find_all`.
-* Prefer single quotes for strings.
-* Use `_` for unused block parameters.
-* Use `%{}` for single-line strings needing interpolation and double-quotes.
-* Use `&&` and `||` for Boolean expressions.
-* Use `{...}` for single-line blocks. Use `do..end` for multi-line blocks.
-* Use `?` suffix for predicate methods.
-* Use `CamelCase` for classes and modules, `snake_case` for variables and
-  methods, `SCREAMING_SNAKE_CASE` for constants.
-* Use `def self.method`, not `def Class.method` or `class << self`.
-* Use `def` with parentheses when there are arguments.
-* Use `each`, not `for`, for iteration.
-* Use heredocs for multi-line strings.
-
 ERb
 ---
 
