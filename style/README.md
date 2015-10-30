@@ -12,7 +12,6 @@ detailed, language/framework-specific style guides:
 * [HTML](html)
 * [JavaScript](javascript)
 * [Rails](rails)
-* [Ruby](ruby)
 * [Sass](sass)
 * [Shell](shell)
 * [Slim](slim)
@@ -21,33 +20,10 @@ detailed, language/framework-specific style guides:
 Formatting
 ----------
 
-* Avoid inline comments.
-* Break long lines after 120 characters.
-* Delete trailing whitespace.
-* Don't include spaces after `(`, `[` or before `]`, `)`.
-* Don't misspell.
-* Vertically align tokens on consecutive lines.
-* If you break up an argument list, keep the arguments on their own lines and
-  closing parenthesis on its own line.
-* If you break up a hash, keep the elements on their own lines and closing curly
-  brace on its own line.
-* Indent continued lines two spaces.
-* Indent private methods equal to public methods.
-* If you break up a chain of method invocations, keep each method invocation on
-  its own line. Place the `.` at the end of each line, except the last.
-  [Example][dot guideline example].
-* Use 2 space indentation (no tabs).
-* Use an empty line between methods.
-* Use empty lines around multi-line blocks.
-* Use spaces around operators, except for unary operators, such as `!`.
-* Use spaces after commas, after colons and semicolons, around `{` and before
-  `}`.
-* Use [Unix-style line endings] (`\n`).
-* Use [uppercase for SQL key words and lowercase for SQL identifiers].
-
-[dot guideline example]: /style/ruby/sample.rb#L11
-[uppercase for SQL key words and lowercase for SQL identifiers]: http://www.postgresql.org/docs/9.2/static/sql-syntax-lexical.html#SQL-SYNTAX-IDENTIFIERS
-[Unix-style line endings]: http://unix.stackexchange.com/questions/23903/should-i-end-my-text-script-files-with-a-newline
+Ruby
+----
+See [rubocop.ymp](/dotfiles/.rubocop.yml) - ensure that you either use a plugin with your editor or run rubocop as 
+a pre-commit hook. We are informed that a good one is https://gist.github.com/cheba/cfc46820a01db1222f54
 
 Naming
 ------

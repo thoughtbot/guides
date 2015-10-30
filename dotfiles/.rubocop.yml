@@ -1,0 +1,35 @@
+AllCops:
+  Exclude:
+  - "**/vendor/**/*"
+  - "**/db/**/*"
+  - "**/bin/**/*"
+  RunRailsCops: true
+  DisplayCopNames: true
+  StyleGuideCopsOnly: false
+Style/Encoding:
+  Enabled: false
+Style/Documentation:
+  Description: Document classes and non-namespace modules.
+  Enabled: false
+Metrics/LineLength:
+  Description: Limit lines to 120 characters.
+  StyleGuide: https://github.com/bbatsov/ruby-style-guide#80-character-limits
+  Enabled: true
+  Max: 120
+  AllowURI: true
+  URISchemes:
+  - http
+  - https
+Style/EmptyLinesAroundClassBody:
+  Description: Keeps track of empty lines around class bodies.
+  Enabled: true
+  EnforcedStyle: empty_lines
+  SupportedStyles:
+  - empty_lines
+  - no_empty_lines
+Style/RegexpLiteral:
+  Description: Use %r for regular expressions matching more than `MaxSlashes` '/'
+    characters. Use %r only for regular expressions matching more than `MaxSlashes`
+    '/' character.
+  StyleGuide: https://github.com/bbatsov/ruby-style-guide#percent-r
+  Enabled: false
