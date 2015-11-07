@@ -36,13 +36,10 @@ Ruby
 * Use `def` with parentheses when there are arguments.
 * Don't use spaces after required keyword arguments. [Example][required kwargs]
 * Use `each`, not `for`, for iteration.
-* Use a trailing comma after each item in a multi-line list, including the last
-  item. [Example][trailing comma example]
 * Use heredocs for multi-line strings.
 * Prefer `protected` over `private` for non-public `attr_reader`s, `attr_writer`s,
   and `attr_accessor`s.
 * Order class methods above instance methods.
 
-[trailing comma example]: /style/ruby/sample.rb#L57
 [required kwargs]: /style/ruby/sample.rb#L24
 [class definition example]: /style/ruby/sample.rb#L121
