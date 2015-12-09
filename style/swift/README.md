@@ -12,3 +12,5 @@ Swift
 * Group computed properties below stored properties
 * Use a blank line above and below computed properties
 * Group methods into specific extensions for each level of access control
+* When capitalizing acronyms or initialisms, follow the capitalization of the
+  first letter.

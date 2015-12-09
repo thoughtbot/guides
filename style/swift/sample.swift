@@ -70,3 +70,18 @@ private extension MyClass {
 
   }
 }
+
+// MARK: Capitalization
+
+// Types begin with a capital letter
+struct DopeObject {
+  // if the first letter of an acronym is lowercase, the entire thing should
+  // be lowercase
+  let json: AnyObject
+
+  // if the first letter of an acronym is uppercase, the entire thing should
+  // be uppercase
+  static func decodeFromJSON(json: AnyObject) -> DopeObject {
+    return DopeObject(json: json)
+  }
+}
