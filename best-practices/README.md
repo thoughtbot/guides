@@ -100,6 +100,7 @@ Rails
 * Use `ENV.fetch` for environment variables instead of `ENV[]`so that unset
   environment variables are detected on deploy.
 * [Use blocks][date-block] when declaring date and time attributes in FactoryGirl factories.
+* Use `touch: true` when declaring `belongs_to` relationships.
 
 [date-block]: /best-practices/samples/ruby.rb#L10
 [fkey]: http://robots.thoughtbot.com/referential-integrity-with-foreign-keys
