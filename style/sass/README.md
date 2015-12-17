@@ -1,6 +1,10 @@
 # Sass
 
-[Sample](sample.scss)
+- [Sample](sample.scss)
+- [Default SCSS-Lint configuration](.scss-lint.yml)
+  - This configuration aligns with our team-wide guides below. It does _not_,
+    however, enforce a particular class naming structure (`SelectorFormat`),
+    which is a team decision to be made on a per-project basis.
 
 ## Formatting
 
