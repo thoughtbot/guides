@@ -1,7 +1,7 @@
 Style
 =====
 
-A guide for programming in style.
+A guide for programming @ Smart Pension in style.
 
 In addition to the general guidelines below, we also have the following more
 detailed, language/framework-specific style guides:
