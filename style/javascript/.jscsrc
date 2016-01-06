@@ -71,6 +71,9 @@
   "requireSpacesInConditionalExpression": true,
   "requireSpacesInForStatement": true,
   "requireSpacesInsideObjectBrackets": "all",
+  "requireTrailingComma": {
+    "ignoreSingleLine": true
+  },
   "validateIndentation": 2,
   "validateParameterSeparator": ", ",
   "validateQuoteMarks": {
