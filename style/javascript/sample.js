@@ -5,3 +5,8 @@ class Cat {
     return false;
   }
 }
+
+const somePerson = {
+  name: 'Ralph',
+  company: 'thoughtbot',
+};
