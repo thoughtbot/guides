@@ -271,7 +271,7 @@ Shell
 * Use the `local` keyword with function-scoped variables.
 * Identify common problems with [shellcheck][].
 
-oshebang]: http://en.wikipedia.org/wiki/Shebang_(Unix)
+[shebang]: http://en.wikipedia.org/wiki/Shebang_(Unix)
 [parsingls]: http://mywiki.wooledge.org/ParsingLs
 [bashisms]: http://mywiki.wooledge.org/Bashism
 [shellcheck]: http://www.shellcheck.net/
