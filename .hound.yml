@@ -1,0 +1,8 @@
+javascript:
+  enabled: false
+jscs:
+  enabled: true
+  config_file: style/javascript/.jscsrc
+ruby:
+  enabled: true
+  config_file: style/ruby/.rubocop.yml
