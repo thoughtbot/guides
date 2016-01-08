@@ -271,7 +271,7 @@ Shell
 * Use the `local` keyword with function-scoped variables.
 * Identify common problems with [shellcheck][].
 
-[shebang]: http://en.wikipedia.org/wiki/Shebang_(Unix)
+oshebang]: http://en.wikipedia.org/wiki/Shebang_(Unix)
 [parsingls]: http://mywiki.wooledge.org/ParsingLs
 [bashisms]: http://mywiki.wooledge.org/Bashism
 [shellcheck]: http://www.shellcheck.net/
@@ -333,7 +333,8 @@ Angular
 Ruby JSON APIs
 --------------
 
-* Follow Heroku's [HTTP API Design Guide]
+* Review the recommended practices outlined in Heroku's [HTTP API Design Guide]
+  before designing a new API.
 * Use a fast JSON parser, e.g. [`oj`][oj]
 * Write integration tests for your API endpoints. When the primary consumer of
   the API is a JavaScript client maintained within the same code base as the
