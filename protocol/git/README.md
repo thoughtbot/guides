@@ -47,8 +47,9 @@ Write a [good commit message]. Example format:
 
     http://project.management-system.com/ticket/123
 
-If you've created more than one commit, use a rebase to squash them into
-cohesive commits with good messages:
+If you've created more than one commit,
+[use `git rebase` interactively](https://help.github.com/articles/about-git-rebase/)
+to squash them into cohesive commits with good messages:
 
     git rebase -i origin/master
 
