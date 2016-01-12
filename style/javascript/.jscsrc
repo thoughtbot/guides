@@ -4,7 +4,9 @@
   "disallowEmptyBlocks": true,
   "disallowKeywordsOnNewLine": ["else"],
   "disallowMultipleLineBreaks": true,
-  "disallowMultipleVarDecl": "exceptUndefined",
+  "disallowMultipleVarDecl": {
+    "allExcept": ["undefined"]
+  },
   "disallowNewlineBeforeBlockStatements": true,
   "disallowSpaceAfterObjectKeys": true,
   "disallowSpaceAfterPrefixUnaryOperators": true,
