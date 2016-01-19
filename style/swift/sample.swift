@@ -2,6 +2,17 @@
 
 import Foundation // or not
 
+// MARK: Types
+
+// Prefer structs over classes
+struct User {
+  let name: String
+}
+
+// When using classes, default to marking them as final
+final class MyViewController: UIViewController {
+}
+
 // MARK: Closures
 
 // Use typealias when closures are referenced in multiple places
