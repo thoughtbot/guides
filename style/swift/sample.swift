@@ -95,6 +95,9 @@ struct DopeObject {
   }
 }
 
+// Use () for void arguments and Void for void return types
+let f: () -> Void = { }
+
 // MARK: Guards
 
 // One expression to evaluate and short or no return

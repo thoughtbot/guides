@@ -16,3 +16,5 @@ Swift
 * Group methods into specific extensions for each level of access control
 * When capitalizing acronyms or initialisms, follow the capitalization of the
   first letter.
+* When using `Void` in function signatures, prefer `()` for arguments and
+  `Void` for return types.
