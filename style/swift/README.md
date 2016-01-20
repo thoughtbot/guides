@@ -5,6 +5,7 @@ Swift
 
 * Prefer `struct`s over `class`es wherever possible
 * Default to marking classes as `final`
+* Break long lines after 100 characters
 * Use `let` whenever possible to make immutable variables
 * Name all parameters in functions and enum cases
 * Use trailing closures
