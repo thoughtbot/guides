@@ -3,8 +3,6 @@ Swift
 
 [Sample](sample.swift)
 
-* Keep up with the Objective-C style guide above. Will highlight differences
-  here.
 * Prefer `struct`s over `class`es wherever possible
 * Default to marking classes as `final`
 * Use `let` whenever possible to make immutable variables
