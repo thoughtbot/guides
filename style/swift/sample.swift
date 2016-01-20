@@ -94,3 +94,23 @@ struct DopeObject {
     return DopeObject(json: json)
   }
 }
+
+// MARK: Guards
+
+// One expression to evaluate and short or no return
+
+guard let singleTest = somethingFailable() else { return }
+guard statementThatShouldBeTrue else { return }
+
+// If there is one long expression to guard or multiple expressions
+// move else to next line
+
+guard let oneItem = somethingFailable(),
+  let secondItem = somethingFailable2()
+  else { return }
+
+// If the return in else is long, move to next line
+
+guard let something = somethingFailable() else {
+  return someFunctionThatDoesSomethingInManyWordsOrLines()
+}
