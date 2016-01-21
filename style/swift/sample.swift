@@ -31,13 +31,13 @@ var maybe: Bool?
 
 // Use if-let syntax to unwrap optionals
 if let definitely = maybe {
-    println("This is \(definitely) here")
+    print("This is \(definitely) here")
 }
 
 // If the API you are using has implicit unwrapping you should still use if-let
 func someUnauditedAPI(thing: String!) {
     if let string = thing {
-        println(string)
+        print(string)
     }
 }
 
@@ -58,10 +58,10 @@ func doSomeWork() -> Response {
 
 switch response {
 case let .Success(data):
-    println("The response returned successfully \(data)")
+    print("The response returned successfully \(data)")
 
 case let .Failure(error):
-    println("An error occured: \(error)")
+    print("An error occured: \(error)")
 }
 
 // Group methods into specific extensions for each level of access control
