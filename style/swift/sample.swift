@@ -20,7 +20,7 @@ typealias CoolClosure = (foo: Int) -> Bool
 
 // Use aliased parameter names when function parameters are ambiguous
 func yTown(some: Int, withCallback callback: CoolClosure) -> Bool {
-    return CoolClosure(some)
+  return CoolClosure(some)
 }
 
 // It's OK to use $ variable references if the closure is very short and
@@ -29,11 +29,11 @@ let cool = yTown(5) { $0 == 6 }
 
 // Use full variable names when closures are more complex
 let cool = yTown(5) { foo in
-    if foo > 5 && foo < 0 {
-        return true
-    } else {
-      return false
-    }
+  if foo > 5 && foo < 0 {
+    return true
+  } else {
+    return false
+  }
 }
 
 // MARK: Optionals
@@ -42,44 +42,42 @@ var maybe: Bool?
 
 // Use if-let syntax to unwrap optionals
 if let definitely = maybe {
-    print("This is \(definitely) here")
+  print("This is \(definitely) here")
 }
 
 // If the API you are using has implicit unwrapping you should still use if-let
 func someUnauditedAPI(thing: String!) {
-    if let string = thing {
-        print(string)
-    }
+  if let string = thing {
+    print(string)
+  }
 }
 
 // MARK: Enums
 
 enum Response {
-    case Success(NSData)
-    case Failure(NSError)
+  case Success(NSData)
+  case Failure(NSError)
 }
 
 // When the type is known you can let the compiler infer
 let response: Response = .Success(NSData())
 
 func doSomeWork() -> Response {
-    let data = ...
-    return .Success(data)
+  let data = ...
+  return .Success(data)
 }
 
 switch response {
 case let .Success(data):
-    print("The response returned successfully \(data)")
+  print("The response returned successfully \(data)")
 
 case let .Failure(error):
-    print("An error occured: \(error)")
+  print("An error occured: \(error)")
 }
 
 // Group methods into specific extensions for each level of access control
 private extension MyClass {
-  func doSomethingPrivate() {
-
-  }
+  func doSomethingPrivate() { }
 }
 
 // MARK: Capitalization
