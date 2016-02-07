@@ -101,6 +101,10 @@ Rails
   environment variables are detected on deploy.
 * [Use blocks][date-block] when declaring date and time attributes in FactoryGirl factories.
 * Use `touch: true` when declaring `belongs_to` relationships.
+* Name service classes after the action they perform
+(e.g. `CreatePurchase`, `UpdateCreditCard`).
+* Expose one public method on services that does the work
+(i.e. `run`, `call`, or `perform`).
 
 [date-block]: /best-practices/samples/ruby.rb#L10
 [fkey]: http://robots.thoughtbot.com/referential-integrity-with-foreign-keys
