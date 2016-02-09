@@ -100,3 +100,13 @@ guard let oneItem = somethingFailable(),
 guard let something = somethingFailable() else {
   return someFunctionThatDoesSomethingInManyWordsOrLines()
 }
+
+// Break up long function calls and initializers
+let foo = Foo(
+  bar: Bar(),
+  baz: Baz(),
+  quz: Quz(
+    x: 42,
+    y: 365
+  )
+)

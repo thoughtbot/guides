@@ -25,3 +25,5 @@ Swift
 * Prefer to name `IBAction` and target/action methods using a verb describing
   the action it will trigger, instead of the user action
   (e.g., `edit:` instead of `editTapped:`)
+* Break up long initializers or function calls by adding linebreaks between
+  arguments.
