@@ -1,6 +1,8 @@
-# Up-to-date with SCSS-Lint v0.43.2
+# Up-to-date with SCSS-Lint v0.47
 
 scss_files: "**/*.scss"
+
+severity: warning
 
 linters:
   BangFormat:
@@ -54,7 +56,6 @@ linters:
 
   ExtendDirective:
     enabled: true
-    severity: warning
 
   FinalNewline:
     enabled: true
@@ -108,6 +109,10 @@ linters:
 
   PlaceholderInExtend:
     enabled: true
+
+  PrivateNamingConvention:
+    enabled: false
+    prefix: _
 
   PropertyCount:
     enabled: false
@@ -177,6 +182,10 @@ linters:
 
   SpaceAfterPropertyName:
     enabled: true
+
+  SpaceAfterVariableColon:
+    enabled: true
+    style: one_space
 
   SpaceAfterVariableName:
     enabled: true
