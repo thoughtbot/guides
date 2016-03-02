@@ -11,8 +11,8 @@ Objective-C
 * Order `@class` directives alphabetically.
 * Order `@property` modifiers: memory management, atomicity, writability.
 * Leave out `@property` modifiers unless needed, `nonatomic` is the only one
-  needed in most cases except connecting views with IB in which case `weak` may
-  also be needed.
+  needed in most cases.
+* Prefer strong IBOutlet references.
 * Prefer `@class` to `#import` when referring to external classes in a public
   `@interface`.
 * Prefer `@property` to declaring instance variables.
