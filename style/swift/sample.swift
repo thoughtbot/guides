@@ -38,6 +38,13 @@ let cool = yTown(5) { foo in
   }
 }
 
+// Strongify weak references in async closures
+APIClient.getAwesomeness { [weak self] result in
+  guard let `self` = self else { return }
+  self.stopLoadingSpinner()
+  self.show(result)
+}
+
 // MARK: Optionals
 
 var maybe: Bool?

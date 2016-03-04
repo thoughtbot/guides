@@ -20,3 +20,5 @@ Swift
 * When using `Void` in function signatures, prefer `()` for arguments and
   `Void` for return types.
 * Prefer strong IBOutlet references.
+* Avoid evaluating a weak reference multiple times in the same scope.
+  Strongify first, then use the strong reference.
