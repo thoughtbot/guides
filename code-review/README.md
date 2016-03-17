@@ -10,7 +10,7 @@ Everyone
   you prefer, and reach a resolution quickly.
 * Ask good questions; don't make demands. ("What do you think about naming this
   `:user_id`?")
-* Good questions avoid judgment and avoid assumptions about the author's perspective
+* Good questions avoid judgment and avoid assumptions about the author's perspective.
 * Ask for clarification. ("I didn't understand. Can you clarify?")
 * Avoid selective ownership of code. ("mine", "not mine", "yours")
 * Avoid using terms that could be seen as referring to personal traits. ("dumb",
