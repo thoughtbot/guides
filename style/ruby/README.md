@@ -40,8 +40,8 @@ Ruby
 * Use a trailing comma after each item in a multi-line list, including the last
   item. [Example][trailing comma example]
 * Use heredocs for multi-line strings.
-* Prefer `protected` over `private` for non-public `attr_reader`s, `attr_writer`s,
-  and `attr_accessor`s.
+* Prefer `private` over `protected` for non-public `attr_reader`s,
+  `attr_writer`s, and `attr_accessor`s.
 * Order class methods above instance methods.
 * Prefer method invocation over instance variables.
 
