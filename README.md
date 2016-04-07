@@ -5,6 +5,7 @@ Guides for getting things done, programming well, and programming in style.
 
 * [Best Practices](/best-practices)
 * [Code Review](/code-review)
+* [How to](/how-to)
 * [Protocol](/protocol)
   * [Communication](/protocol/communication)
   * [Git](/protocol/git)
