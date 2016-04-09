@@ -40,6 +40,7 @@
 
 * Don't use ID's for style.
 * Use meaningful names: `$visual-grid-color` not `$color` or `$vslgrd-clr`.
+* Be consistent about naming conventions for classes. For instance, if a project is using BEM, continue using it, and if it's not, do not introduce it.
 * Use ID and class names that are as short as possible but as long as necessary.
 * Avoid using the direct descendant selector `>`.
 * Avoid nesting more than 3 selectors deep.
