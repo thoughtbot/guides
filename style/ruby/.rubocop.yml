@@ -334,12 +334,23 @@ Style/StringLiterals:
   EnforcedStyle: double_quotes
   Enabled: true
 
-Style/TrailingComma:
-  Description: 'Checks for trailing comma in parameter lists and literals.'
+Style/TrailingCommaInArguments:
+  Description: 'Checks for trailing comma in argument lists.'
   StyleGuide: 'https://github.com/bbatsov/ruby-style-guide#no-trailing-array-commas'
   EnforcedStyleForMultiline: comma
   SupportedStyles:
     - comma
+    - consistent_comma
+    - no_comma
+  Enabled: true
+
+Style/TrailingCommaInLiteral:
+  Description: 'Checks for trailing comma in array and hash literals.'
+  StyleGuide: 'https://github.com/bbatsov/ruby-style-guide#no-trailing-array-commas'
+  EnforcedStyleForMultiline: comma
+  SupportedStyles:
+    - comma
+    - consistent_comma
     - no_comma
   Enabled: true
 
@@ -558,10 +569,6 @@ Rails/Date:
   Description: >-
                   Checks the correct usage of date aware methods,
                   such as Date.today, Date.current etc.
-  Enabled: false
-
-Rails/DefaultScope:
-  Description: 'Checks if the argument passed to default_scope is a block.'
   Enabled: false
 
 Rails/FindBy:
