@@ -20,8 +20,9 @@ Everyone
 * Don't use sarcasm.
 * Keep it real. If emoji, animated gifs, or humor aren't you, don't force them.
   If they are, use them with aplomb.
-* Talk in person if there are too many "I didn't understand" or "Alternative
-  solution:" comments. Post a follow-up comment summarizing offline discussion.
+* Talk synchronously (e.g. chat, screensharing, in person) if there are too many 
+  "I didn't understand" or "Alternative solution:" comments. Post a follow-up 
+  comment summarizing the discussion.
 
 Having Your Code Reviewed
 -------------------------
