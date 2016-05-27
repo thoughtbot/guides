@@ -106,6 +106,7 @@ View a list of new commits. View changed files. Merge branch into master.
     git log origin/master..<branch-name>
     git diff --stat origin/master
     git checkout master
+    git pull
     git merge <branch-name> --ff-only
     git push
 
