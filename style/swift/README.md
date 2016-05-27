@@ -20,3 +20,5 @@ Swift
 * When using `Void` in function signatures, prefer `()` for arguments and
   `Void` for return types.
 * Prefer strong IBOutlet references.
+* Break up long initializers or function calls by adding linebreaks between
+  arguments.
