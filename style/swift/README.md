@@ -22,3 +22,6 @@ Swift
 * Prefer strong IBOutlet references.
 * Avoid evaluating a weak reference multiple times in the same scope.
   Strongify first, then use the strong reference.
+* Prefer to name `IBAction` and target/action methods using a verb describing
+  the action it will trigger, instead of the user action
+  (e.g., `edit:` instead of `editTapped:`)
