@@ -25,6 +25,15 @@ A note on the language:
 * "Prefer" indicates a better option and its alternative to watch out for.
 * "Use" is a positive instruction.
 
+Windows OS
+----------
+
+If you are using Windows OS and want to set up a local environment for 
+working at Front-End level, you need to install some tools before making
+any change, addition to actual code or implementing a new feature.
+
+* [Windows Environment Set Up](/windows-os)
+
 Credits
 -------
 
