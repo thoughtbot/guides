@@ -239,14 +239,6 @@ Browsers
 
 * Avoid supporting versions of Internet Explorer before IE10.
 
-Objective-C
------------
-
-* Setup new projects using [Liftoff](https://github.com/thoughtbot/liftoff) and
-  follow provided directory structure.
-* Prefer categories on `Foundation` classes to helper methods.
-* Prefer string constants to literals when providing keys or key paths to methods.
-
 Shell
 -----
 
@@ -302,52 +294,12 @@ In addition to Shell best practices,
 * Prefer process substitution over a pipe in `while read` loops.
 * Use `((` or `let`, not `$((` when you don't need the result
 
-Haskell
--------
-
-* Avoid partial functions (`head`, `read`, etc).
-* Compile code with `-Wall -Werror`.
-
-Ember
------
-
-* Avoid using `$` without scoping to `this.$` in views and components.
-* Prefer to make model lookup calls in routes instead of controllers (`find`,
-  `findAll`, etc.).
-* Prefer adding properties to controllers instead of models.
-* Don't use jQuery outside of views and components.
-* Prefer to use predefined `Ember.computed.*` functions when possible.
-* Use `href="#"` for links that have an action.
-* Prefer dependency injection through `Ember.inject` over initializers, globals
-  on window, or namespaces. ([sample][inject])
-* Prefer sub-routes over maintaining state.
-* Prefer explicit setting of boolean properties over `toggleProperty`.
-* Prefer testing your application with [QUnit][ember-test-guides].
-
-[ember-test-guides]: https://guides.emberjs.com/v2.2.0/testing/
-
 Testing
 
 * Prefer `findWithAssert` over `find` when fetching an element you expect to
   exist
 
 [inject]: samples/ember.js#L1-L11
-
-Angular
--------
-
-* [Avoid manual dependency annotations][annotations]. Disable mangling or use a
-  [pre-processor][ngannotate] for annotations.
-* Prefer `factory` to `service`. If you desire a singleton, wrap the singleton
-  class in a factory function and return a new instance of that class from the
-  factory.
-* Prefer the `translate` directive to the `translate` filter for [performance
-  reasons][angular-translate].
-* Don't use the `jQuery` or `$` global. Access jQuery via `angular.element`.
-
-[annotations]: http://robots.thoughtbot.com/avoid-angularjs-dependency-annotation-with-rails
-[ngannotate]: https://github.com/kikonen/ngannotate-rails
-[angular-translate]: https://github.com/angular-translate/angular-translate/wiki/Getting-Started#using-translate-directive
 
 Ruby JSON APIs
 --------------
