@@ -1,3 +1,6 @@
+This Repository has been forked from [thoughtbot's guides](https://github.com/thoughtbot/guides). This is currently
+a work in progress!
+
 Guides
 ======
 
