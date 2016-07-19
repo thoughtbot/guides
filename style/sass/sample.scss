@@ -17,6 +17,11 @@
   }
 }
 
+$map: (
+  key-1: value-1,
+  key-2: value-2,
+);
+
 .class-two {
   @extend %placeholder;
   @include mixin;

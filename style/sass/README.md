@@ -25,6 +25,7 @@
 * Use parentheses around individual operations in shorthand declarations: `padding: ($variable * 1.5) ($variable * 2);`
 * Use double colons for pseudo-elements
 * Use a `%` unit for the amount/weight when using Sass's color functions: `darken($color, 20%)`, not `darken($color, 20)`
+* Use a trailing comma after each item in a map, including the last item.
 
 ## Order
 
