@@ -1,3 +1,6 @@
+coffeescript:
+  enabled: true
+  config_file: style/coffeescript/coffeelint.json
 javascript:
   enabled: false
 jscs:
