@@ -1,4 +1,4 @@
-# Up-to-date with SCSS-Lint v0.49
+# Up-to-date with SCSS-Lint v0.50
 
 scss_files: "**/*.scss"
 
@@ -180,6 +180,11 @@ linters:
   SpaceAfterComma:
     enabled: true
     style: one_space
+
+  SpaceAfterComment:
+    enabled: true
+    style: one_space
+    allow_empty_comments: true
 
   SpaceAfterPropertyColon:
     enabled: true
