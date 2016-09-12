@@ -3,18 +3,18 @@ Guides
 
 Guides for getting things done, programming well, and programming in style.
 
-* [Best Practices](https://github.com/thoughtbot/guides/tree/master/best-practices)
-* [Code Review](https://github.com/thoughtbot/guides/tree/master/code-review)
-* [How to](https://github.com/thoughtbot/guides/tree/master/how-to)
-* [Protocol](https://github.com/thoughtbot/guides/tree/master/protocol)
-  * [Communication](https://github.com/thoughtbot/guides/tree/master/protocol/communication)
-  * [Git](https://github.com/thoughtbot/guides/tree/master/protocol/git)
-  * [iOS](https://github.com/thoughtbot/guides/tree/master/protocol/ios)
-  * [Open Source](https://github.com/thoughtbot/guides/tree/master/protocol/open-source)
-  * [Product Review](https://github.com/thoughtbot/guides/tree/master/protocol/product-review)
-  * [Rails](https://github.com/thoughtbot/guides/tree/master/protocol/rails)
-* [Security](https://github.com/thoughtbot/guides/tree/master/security)
-* [Style](https://github.com/thoughtbot/guides/tree/master/style)
+* [Best Practices](./best-practices)
+* [Code Review](./code-review)
+* [How to](./how-to)
+* [Protocol](./protocol)
+  * [Communication](./protocol/communication)
+  * [Git](./protocol/git)
+  * [iOS](./protocol/ios)
+  * [Open Source](./protocol/open-source)
+  * [Product Review](./protocol/product-review)
+  * [Rails](./protocol/rails)
+* [Security](./security)
+* [Style](./style)
 
 High level guidelines:
 
