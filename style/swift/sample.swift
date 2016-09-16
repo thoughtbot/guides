@@ -126,3 +126,17 @@ guard let oneItem = somethingFailable(),
 guard let something = somethingFailable() else {
   return someFunctionThatDoesSomethingInManyWordsOrLines()
 }
+
+// MARK: UIKit
+
+final class MyViewController {
+  func f() {
+    guard let viewController = self.storyboard?.instantiateViewControllerWithIdentifier(
+      StoryboardIdentifiers.presentedViewController
+    ) else { return }
+    let valueToBeAwareOf = "The presented VC needs to be aware of this value"
+    viewController.property = value
+    presentViewController(viewController, animated: true, completion: .None)
+  }
+}
+

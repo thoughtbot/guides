@@ -22,3 +22,4 @@ Swift
 * Prefer strong IBOutlet references.
 * Avoid evaluating a weak reference multiple times in the same scope.
   Strongify first, then use the strong reference.
+* Prefer presenting a view controller manually over segues
