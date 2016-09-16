@@ -202,9 +202,8 @@ Style/LineEndConcatenation:
   Enabled: false
 
 Metrics/LineLength:
-  Description: 'Limit lines to 80 characters.'
-  StyleGuide: 'https://github.com/bbatsov/ruby-style-guide#80-character-limits'
-  Max: 80
+  Description: 'Limit lines to 120 characters.'
+  Max: 120
 
 Metrics/MethodLength:
   Description: 'Avoid methods longer than 10 lines of code.'
