@@ -126,3 +126,15 @@ guard let oneItem = somethingFailable(),
 guard let something = somethingFailable() else {
   return someFunctionThatDoesSomethingInManyWordsOrLines()
 }
+
+// MARK: UIKit
+
+final class MyViewController {
+  override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+    switch segue.identifier {
+    case "mySegue"?:
+      let vc = segue.destinationViewController as! MyOtherViewController
+    default: break
+    }
+  }
+}
