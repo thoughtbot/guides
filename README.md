@@ -47,7 +47,7 @@ Thank you, [contributors](https://github.com/thoughtbot/guides/graphs/contributo
 
 ![thoughtbot](http://thoughtbot.com/images/tm/logo.png)
 
-Guides is maintained by [thoughtbot, inc](http://thoughtbot.com/community).
+Guides is maintained by [thoughtbot, inc](https://thoughtbot.com).
 
 License
 -------
