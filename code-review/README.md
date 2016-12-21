@@ -11,17 +11,14 @@ Everyone
 * Ask questions; don't make demands. ("What do you think about naming this
   `:user_id`?")
 * Ask for clarification. ("I didn't understand. Can you clarify?")
-* Avoid selective ownership of code. ("mine", "not mine", "yours")
 * Avoid using terms that could be seen as referring to personal traits. ("dumb",
-  "stupid"). Assume everyone is attractive, intelligent, and well-meaning.
+  "stupid").
 * Be explicit. Remember people don't always understand your intentions online.
 * Be humble. ("I'm not sure - let's look it up.")
 * Don't use hyperbole. ("always", "never", "endlessly", "nothing")
 * Don't use sarcasm.
-* Keep it real. If emoji, animated gifs, or humor aren't you, don't force them.
-  If they are, use them with aplomb.
-* Talk synchronously (e.g. chat, screensharing, in person) if there are too many 
-  "I didn't understand" or "Alternative solution:" comments. Post a follow-up 
+* Talk synchronously (e.g. chat, screensharing, in person) if there are too many
+  "I didn't understand" or "Alternative solution:" comments. Post a follow-up
   comment summarizing the discussion.
 
 Having Your Code Reviewed
@@ -29,7 +26,6 @@ Having Your Code Reviewed
 
 * Be grateful for the reviewer's suggestions. ("Good call. I'll make that
   change.")
-* Don't take it personally. The review is of the code, not you.
 * Explain why the code exists. ("It's like that because of these reasons. Would
   it be more clear if I rename this class/file/method/variable?")
 * Extract some changes and refactorings into future tickets/stories.
