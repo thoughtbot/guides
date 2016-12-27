@@ -157,23 +157,28 @@ Bundler
 [pessimistic version]: http://robots.thoughtbot.com/post/35717411108/a-healthy-bundle
 [versionless]: http://robots.thoughtbot.com/post/35717411108/a-healthy-bundle
 
-Postgres
---------
+Relational Databases
+--------------------
 
-* Avoid multicolumn indexes in Postgres. It [combines multiple indexes]
-  efficiently. Optimize later with a [compound index] if needed.
-* Consider a [partial index] for queries on booleans.
-* Constrain most columns as [`NOT NULL`].
 * [Index foreign keys].
+* Constrain most columns as [`NOT NULL`].
 * Use an `ORDER BY` clause on queries where the results will be displayed to a
   user, as queries without one may return results in a changing, arbitrary
   order.
 
+[Index foreign keys]: https://tomafro.net/2009/08/using-indexes-in-rails-index-your-associations
 [`NOT NULL`]: http://www.postgresql.org/docs/9.1/static/ddl-constraints.html#AEN2444
+
+Postgres
+--------
+
+* Avoid multicolumn indexes. Postgres [combines multiple indexes] efficiently.
+  Optimize later with a [compound index] if needed.
+* Consider a [partial index] for queries on booleans.
+
 [combines multiple indexes]: http://www.postgresql.org/docs/9.1/static/indexes-bitmap-scans.html
 [compound index]: http://www.postgresql.org/docs/9.2/static/indexes-bitmap-scans.html
 [partial index]: http://www.postgresql.org/docs/9.1/static/indexes-partial.html
-[Index foreign keys]: https://tomafro.net/2009/08/using-indexes-in-rails-index-your-associations
 
 Background Jobs
 ---------------
