@@ -1,6 +1,9 @@
 coffeescript:
   enabled: true
   config_file: style/coffeescript/coffeelint.json
+haml:
+  enabled: true
+  config_file: style/haml/haml.yml
 javascript:
   enabled: false
 jscs:
