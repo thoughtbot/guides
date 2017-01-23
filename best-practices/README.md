@@ -230,9 +230,13 @@ CSS
 Sass
 ----
 
-* Use `image-url` and `font-url`, not `url`, so the asset pipeline will re-write
+* When using [sass-rails], use the provided [asset-helpers][asset-helpers]
+  (e.g. `image-url` and `font-url`), so that Rails' Asset Pipeline will re-write
   the correct paths to assets.
 * Prefer mixins to `@extend`.
+
+[sass-rails]: https://github.com/rails/sass-rails
+[asset-helpers]: https://github.com/rails/sass-rails#asset-helpers
 
 Browsers
 --------
