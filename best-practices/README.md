@@ -222,14 +222,14 @@ CSS
 * Use Sass.
 * Use [Autoprefixer][autoprefixer] to generate vendor prefixes based on the
   project-specific browser support that is needed.
+* Prefer `overflow: auto` to `overflow: scroll`, because `scroll` will always
+  display scrollbars outside of OS X, even when content fits in the container.
 
 [autoprefixer]: https://github.com/postcss/autoprefixer
 
 Sass
 ----
 
-* Prefer `overflow: auto` to `overflow: scroll`, because `scroll` will always
-  display scrollbars outside of OS X, even when content fits in the container.
 * Use `image-url` and `font-url`, not `url`, so the asset pipeline will re-write
   the correct paths to assets.
 * Prefer mixins to `@extend`.
