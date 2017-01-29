@@ -243,6 +243,11 @@ Browsers
 
 * Avoid supporting versions of Internet Explorer before IE11.
 
+DNS
+---
+
+* Avoid using non-standard DNS entries (i.e. ALIAS, ANAME).
+
 Objective-C
 -----------
 
