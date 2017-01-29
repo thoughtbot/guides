@@ -123,6 +123,8 @@ Testing
 * Disable real HTTP requests to external services with
   `WebMock.disable_net_connect!`.
 * Don't test private methods.
+* Don't use `expect().not_to` in Capybara specs.
+  Use `expect().to` and the `have_no_*` matchers.
 * Test background jobs with a [`Delayed::Job` matcher].
 * Use [stubs and spies] \(not mocks\) in isolated tests.
 * Use a single level of abstraction within scenarios.
