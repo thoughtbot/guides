@@ -40,9 +40,9 @@ variables.
 Delete extra lines in `.env`, leaving only those needed for app to function
 properly. For example: `BRAINTREE_MERCHANT_ID` and `S3_SECRET`.
 
-Use [Foreman](https://github.com/ddollar/foreman) to run the app locally.
+Use [Forego](https://github.com/ddollar/forego) to run the app locally.
 
-    foreman start
+    forego start
 
 It uses your `.env` file and `Procfile` to run processes
 like Heroku's [Cedar](https://devcenter.heroku.com/articles/cedar/) stack.
