@@ -8,7 +8,7 @@ Ruby
 * Avoid organizational comments (`# Validations`).
 * Avoid ternary operators (`boolean ? true : false`). Use multi-line `if`
   instead to emphasize code branches.
-* Avoid explicit return statements.
+* Prefer explicit return statements.
 * Avoid using semicolons.
 * Avoid bang (!) method names. Prefer descriptive names.
 * Don't use `self` explicitly anywhere except class methods (`def self.method`)
