@@ -29,7 +29,7 @@ Object-Oriented Design
   class exceeds 100 lines, it may be doing too many things.
 * [Tell, don't ask].
 
-[Tell, don't ask]: http://robots.thoughtbot.com/post/27572137956/tell-dont-ask
+[Tell, don't ask]: https://robots.thoughtbot.com/tell-dont-ask
 
 Ruby
 ----
