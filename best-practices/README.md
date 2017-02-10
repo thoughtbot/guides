@@ -12,9 +12,7 @@ General
 * Don't swallow exceptions or "fail silently."
 * Don't write code that guesses at future functionality.
 * Exceptions should be exceptional.
-* [Keep the code simple].
-
-[Keep the code simple]: http://www.readability.com/~/ko2aqda2
+* Keep the code simple.
 
 Object-Oriented Design
 ----------------------
