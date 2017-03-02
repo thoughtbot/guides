@@ -76,6 +76,14 @@ software on behalf of ourselves and clients.
 * Don't hash passwords using a reversible cipher.
 * Don't hash passwords using a broken cipher, such as MD5 or SHA1.
 
+### Preventing Vulnerabilities and Regressions
+
+During active development of a codebase,
+track security alerts in Continuous Integration builds
+with tools such as [Bundler Audit].
+
+[Bundler Audit]: https://robots.thoughtbot.com/handling-security-issues-in-open-source-projects#one-thing-end-users-can-do
+
 ## Handling Vulnerabilities
 
 The following guidelines apply to how we handle security incidents.
