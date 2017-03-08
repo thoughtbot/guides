@@ -45,6 +45,6 @@ Ruby
 * Order class methods above instance methods.
 * Prefer method invocation over instance variables.
 
-[trailing comma example]: /style/ruby/sample.rb#L49
+[trailing comma example]: /style/ruby/sample.rb#L53
 [required kwargs]: /style/ruby/sample.rb#L16
-[class definition example]: /style/ruby/sample.rb#L101
+[class definition example]: /style/ruby/sample.rb#L103
