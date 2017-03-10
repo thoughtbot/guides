@@ -45,7 +45,7 @@ Credits
 
 Thank you, [contributors](https://github.com/thoughtbot/guides/graphs/contributors)!
 
-![thoughtbot](http://thoughtbot.com/images/tm/logo.png)
+![thoughtbot](http://presskit.thoughtbot.com/images/thoughtbot-logo-for-readmes.svg)
 
 Guides is maintained by [thoughtbot, inc](https://thoughtbot.com).
 
