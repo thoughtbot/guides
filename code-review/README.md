@@ -31,7 +31,8 @@ Having Your Code Reviewed
 
 * Be grateful for the reviewer's suggestions. ("Good call. I'll make that
   change.")
-* Don't take it personally. The review is of the code, not you.
+* Be aware of [how hard it is to convey emotion online](https://www.fastcodesign.com/3036748/why-its-so-hard-to-detect-emotion-in-emails-and-texts) and how easy it is to
+  misinterpret feedback.
 * Explain why the code exists. ("It's like that because of these reasons. Would
   it be more clear if I rename this class/file/method/variable?")
 * Extract some changes and refactorings into future tickets/stories.
