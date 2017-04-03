@@ -31,7 +31,7 @@ Having Your Code Reviewed
 
 * Be grateful for the reviewer's suggestions. ("Good call. I'll make that
   change.")
-* Be aware of [how hard it is to convey emotion online](https://www.fastcodesign.com/3036748/why-its-so-hard-to-detect-emotion-in-emails-and-texts) and how easy it is to
+* Be aware of [how hard it is to convey emotion online] and how easy it is to
   misinterpret feedback.
 * Explain why the code exists. ("It's like that because of these reasons. Would
   it be more clear if I rename this class/file/method/variable?")
@@ -46,6 +46,8 @@ Having Your Code Reviewed
 * Wait to merge the branch until Continuous Integration (TDDium, TravisCI, etc.)
   tells you the test suite is green in the branch.
 * Merge once you feel confident in the code and its impact on the project.
+
+[how hard it is to convey emotion online]: https://www.fastcodesign.com/3036748/why-its-so-hard-to-detect-emotion-in-emails-and-texts
 
 Reviewing Code
 --------------
