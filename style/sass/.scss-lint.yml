@@ -175,7 +175,7 @@ linters:
 
   SpaceAfterComment:
     enabled: true
-    style: one_space
+    style: at_least_one_space
     allow_empty_comments: true
 
   SpaceAfterPropertyColon:
