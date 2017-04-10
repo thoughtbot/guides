@@ -12,7 +12,6 @@ linters:
 
   BemDepth:
     enabled: false
-    max_elements: 1
 
   BorderZero:
     enabled: true
@@ -67,7 +66,6 @@ linters:
 
   HexNotation:
     enabled: false
-    style: lowercase
 
   HexValidation:
     enabled: true
@@ -95,8 +93,6 @@ linters:
 
   LengthVariable:
     enabled: false
-    allowed_lengths: []
-    allowed_properties: []
 
   MergeableSelector:
     enabled: true
@@ -117,12 +113,9 @@ linters:
 
   PrivateNamingConvention:
     enabled: false
-    prefix: _
 
   PropertyCount:
     enabled: false
-    include_nested: false
-    max_properties: 10
 
   PropertySortOrder:
     enabled: true
@@ -164,7 +157,6 @@ linters:
 
   SelectorFormat:
     enabled: false
-    convention: hyphenated_BEM
 
   Shorthand:
     enabled: true
@@ -243,7 +235,6 @@ linters:
 
   VariableForProperty:
     enabled: false
-    properties: []
 
   VendorPrefix:
     enabled: true
