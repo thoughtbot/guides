@@ -65,8 +65,8 @@ Elixir
 * Use a blank line between each group of attribuets and directives.
 * Use `alias MyApp.{Thing, Anotherthing}` when aliasing multiple modules that
   are in the same namespace.
-* Use the __MODULE__ pseudo variable when a module refers to itself.
-* Use an alias for __MODULE__ if you do use it.
+* Use the `__MODULE__` pseudo variable when a module refers to itself.
+* Use an alias for `__MODULE__` if you do use it.
 * Use `@moduledoc` right after `defmodule` always before any attributes or 
   directives and follow it with a blank line.
 * Use `@moduledoc false` if you are not including documentation.
