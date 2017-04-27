@@ -40,6 +40,9 @@ Ruby
   multiple models.
 * Prefer `private` when indicating scope. Use `protected` only with comparison
   methods like `def ==(other)`, `def <(other)`, and `def >(other)`.
+* Check a .ruby-version file into the repository to indicate the expected ruby
+  version to run the project with.  Most version tools (rvm, rbenv, etc) will
+  support this file and format.
 
 [Bundler binstubs]: https://github.com/sstephenson/rbenv/wiki/Understanding-binstubs
 
