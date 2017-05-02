@@ -60,3 +60,4 @@
 * Use [Normalize](https://github.com/necolas/normalize.css) for browser rendering consistency, rather than a reset.
 * Use HTML structure for ordering of selectors. Don't just put styles at the bottom of the Sass file.
 * Avoid having files longer than 100 lines.
+* Do not use `/*` or `**/*` glob imports.
