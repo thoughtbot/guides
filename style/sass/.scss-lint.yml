@@ -78,8 +78,8 @@ linters:
 
   ImportPath:
     enabled: true
-    leading_underscore: true
-    filename_extension: true
+    leading_underscore: false
+    filename_extension: false
 
   Indentation:
     enabled: true
