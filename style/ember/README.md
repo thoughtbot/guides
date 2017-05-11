@@ -14,8 +14,8 @@ Ember
 Ember-Data
 ----------
 
-* Visually separate relationships from attributes with a newline.
-  [Example][relationships]
+* Organize your models with attributes then relationships, separated with a
+  newline [Example][relationships]
 
 [relationships]: sample.js#L1-L7
 
