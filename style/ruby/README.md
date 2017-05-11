@@ -28,7 +28,7 @@ Ruby
 * Use `_` for unused block parameters.
 * Prefix unused variables or parameters with underscore (`_`).
 * Use a leading underscore when defining instance variables for memoization.
-* Use `%{}` for single-line strings needing interpolation and double-quotes.
+* Use `%{}` for single-line strings containing double-quotes that require interpolation.
 * Use `{...}` for single-line blocks. Use `do..end` for multi-line blocks.
 * Use `?` suffix for predicate methods.
 * Use `CamelCase` for classes and modules, `snake_case` for variables and
