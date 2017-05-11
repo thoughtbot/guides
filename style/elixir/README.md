@@ -9,3 +9,4 @@ Elixir
 * Don't indent pipes when not using the match operator (`=`).
 * Prefer pattern matching and guards in function definitions over conditionals
   in the function body.
+* Break long lines after 100 characters.
