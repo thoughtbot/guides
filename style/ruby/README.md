@@ -44,6 +44,8 @@ Ruby
   `attr_writer`s, and `attr_accessor`s.
 * Order class methods above instance methods.
 * Prefer method invocation over instance variables.
+* When writing tests for a class, place tests for methods in the same order as
+  the methods themselves are listed in the class.
 
 [trailing comma example]: /style/ruby/sample.rb#L53
 [required kwargs]: /style/ruby/sample.rb#L16
