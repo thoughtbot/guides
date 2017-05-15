@@ -21,10 +21,14 @@ Rails
 * Use `link_to` for GET requests, and `button_to` for other HTTP verbs.
 * Use new-style `validates :name, presence: true` validations, and put all
   validations for a given column together. [Example][validations].
+* Avoid setting instance variables in controllers; explicitly `render`
+  views with a `locals` option to pass values to views instead.
+  [Example][rendering-views-with-locals].
 
 [order-associations]: /style/rails/sample.rb#L2-L4
 [validations]: /style/rails/sample.rb#L6
 [`app/views/application`]: http://asciicasts.com/episodes/269-template-inheritance
+[rendering-views-with-locals]: /style/rails/sample.rb#L10
 
 Migrations
 ----------
