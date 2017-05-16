@@ -4,13 +4,14 @@ Una guía para crear una web segura.
 
 ## Piensa
 
-La seguridad es importante, y no debes utilizar las reglas sin entenderlas. Asegúrate que entendiste la regla, por que existe, y cómo seguirla.
+La seguridad es importante, y no debes utilizar las reglas sin entenderlas. Asegúrate que entendiste estas reglas, por que existen, y cómo seguirlas.
 
-No seguir estas reglas, tu equipo, y tus servicios tendrán riesgo de compromiso o perdida de privacidad.
+De no seguir estas reglas, tu equipo, y tus servicios tendrán riesgo de compromiso o perdida de privacidad.
 
 ## Comunicación y acceso seguro
 
 Las siguientes reglas aplican para que tengas un acceso seguro a tus sistemas (laptop, cuentas, etc.) y comunicación (correo, etc.) 
+
 ### Uso de contraseñas
 
 * Utiliza una contraseña única para todas las cuentas que crees.
@@ -20,7 +21,7 @@ Las siguientes reglas aplican para que tengas un acceso seguro a tus sistemas (l
 
 ### Cifrado
 
-* Asegura [encriptación de disco][disco] en tu laptop.
+* Utiliza [encriptación de disco][disco] en tu laptop.
 * Utiliza PGP en un correo si quieres que alguien confíe que lo escribiste.
 * Utiliza PGP para revisar un correo si quieres saber quien lo escribió.
 * Utiliza PGP para encriptar correos si quieres estar seguro que nadie los pueda leer.
