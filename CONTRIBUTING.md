@@ -1,7 +1,7 @@
-# Contributing
+# Contibuye
 
-We love pull requests. If you have something you want to add or remove, please
-open a new pull request.
+Adoro los pull request. Si tienes algo que agregar o eliminar, por favor envia
+tu cambio
 
 ## Getting Feedback
 
