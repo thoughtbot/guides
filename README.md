@@ -15,7 +15,7 @@ Guía para hacer empezar a trabajar, hacer buen código, gestionar tu proyecto y
   * [Rails](./protocol/rails)
 * [Seguridad](./security)
 * [Estilo](./style)
-* [Gestión de Proyecto](./gestion)
+* [Gestión de Proyecto](./management)
 
 
 Guía general:
