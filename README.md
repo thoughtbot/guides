@@ -42,7 +42,7 @@ Si tienes acceso a hacer commit : por favor no hagas merge sin que todos consult
 Créditos iniciales
 ------------------
 
-Gracias a, [contributors](https://github.com/thoughtbot/guides/graphs/contributors)!
+Gracias a todos los [contributors](https://github.com/ajamaica/guides/graphs/contributors)!
 
 Traducido y mantenido por
 ------------------------

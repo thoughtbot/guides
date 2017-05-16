@@ -1,7 +1,7 @@
-Rails Protocol
-==============
+Protocolo Rails 
+===============
 
-A guide for writing great web apps.
+Una guía para hacer grandiosas apps web.
 
 Set Up Laptop
 -------------
