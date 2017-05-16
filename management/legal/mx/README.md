@@ -35,7 +35,7 @@ Requerimientos Legales Mexico
 16. Fecha De Firma De Contrato.
 
 
-## Datos Para Nda
+## Datos Para NDA
 
 1. Nombre De La Persona O Razón Social 
 2. Número De Credencial INE O IFE
@@ -46,7 +46,7 @@ Requerimientos Legales Mexico
 7. Fecha Firma De Contrato
 
 
-## InformacióN Para Contrato
+## Información Para Contrato
 
 
 1. Cotización Completa 
