@@ -3,9 +3,9 @@ Gestión de Proyecto
 
 Una guía para gestionar tu proyecto.
 
-* [Comunicacion](/protocol/communication)
+* [Guía Junta con los Clientes](/management/meetings)
 
 # Legal
 
-* [Mexico](/locale/mx)
+* [Mexico](/management/legal/mx)
 
