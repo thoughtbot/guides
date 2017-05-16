@@ -1,58 +1,56 @@
 Mejores prácticas
-==============
+=================
 
 Una guía para programar bien.
 
 General
 -------
 
-* These are not to be blindly followed; strive to understand these and ask
-  when in doubt.
-* Don't duplicate the functionality of a built-in library.
-* Don't swallow exceptions or "fail silently."
-* Don't write code that guesses at future functionality.
-* Exceptions should be exceptional.
-* Keep the code simple.
+* Esta guía no debe seguirse ciegamente; Esfuérzate para entender esto y pregunta en caso de duda.
+* No dupliques la funcionalidad de una librería que ya hayas importado.
+* No excluir u ocultar excepciones, errores y fallas (fail silently).
+* No escribir código que adivine futuras funcionalidades.
+* Las excepciones deben ser relevantes y mínimas.
+* Mantenga el código simple.
 
-Object-Oriented Design
-----------------------
+Diseño Orientado a Objetos
+--------------------------
 
-* Avoid global variables.
-* Avoid long parameter lists.
-* Limit collaborators of an object (entities an object depends on).
-* Limit an object's dependencies (entities that depend on an object).
-* Prefer composition over inheritance.
-* Prefer small methods. Between one and five lines is best.
-* Prefer small classes with a single, well-defined responsibility. When a
-  class exceeds 100 lines, it may be doing too many things.
-* [Tell, don't ask].
+* Evita variables Globales.
+* Evita muchos parámetros.que no dependan muchos 
+* Limita objetos que dependan de muchas entidades, entidades de las que depende un objeto.
+* Limita las dependencias de un objeto, entidades que dependen de un objeto.
+* Prefiere la composición en lugar de la herencia.
+* Prefiere los métodos pequeños. Entre una y cinco líneas es mejor.
+* Prefiere clases pequeñas con una sola y bien definida responsabilidad. Cuando una 
+  clase excede las 100 líneas, puede estar haciendo demasiadas cosas.
+* [Dilo, no preguntes].
 
-[Tell, don't ask]: https://robots.thoughtbot.com/tell-dont-ask
+[Dilo, no preguntes]: https://robots.thoughtbot.com/tell-dont-ask
 
 Ruby
 ----
 
-* Avoid optional parameters. Does the method do too much?
-* Avoid monkey-patching.
-* Generate necessary [Bundler binstubs] for the project, such as `rake` and
-  `rspec`, and add them to version control.
-* Prefer classes to modules when designing functionality that is shared by
-  multiple models.
-* Prefer `private` when indicating scope. Use `protected` only with comparison
-  methods like `def ==(other)`, `def <(other)`, and `def >(other)`.
+* Evita los parámetros opcionales. ¿El método hace demasiado?
+* Evita modificar el valor de una función  o constante en tiempo de ejecución(monkey-patching). 
+* Genera los [Bundler binstubs] necesarios para el proyecto, como `rake` y
+  `rspec`, y agregalos al control de versión.
+* Preferir las clases a los módulos al diseñar la funcionalidad que es compartida por múltiples modelos.
+* Preferir `private` cuando se indica el ámbito. Usar `protected` solo con métodos de comparación
+como `def ==(other)`, `def <(other)`, y `def >(other)`.
 
 [Bundler binstubs]: https://github.com/sstephenson/rbenv/wiki/Understanding-binstubs
 
 Ruby Gems
 ---------
 
-* Declare dependencies in the `<PROJECT_NAME>.gemspec` file.
-* Reference the `gemspec` in the `Gemfile`.
-* Use [Appraisal] to test the gem against multiple versions of gem dependencies
-  (such as Rails in a Rails engine).
-* Use [Bundler] to manage the gem's dependencies.
-* Use [Travis CI] for Continuous Integration, indicators showing whether GitHub
-  pull requests can be merged, and to test against multiple Ruby versions.
+* Declare las dependencias en el archivo `<PROJECT_NAME>.gemspec`.
+* Referencia la `gemspec` en el archivo `Gemfile`.
+* Utiliza [Appraisal] para probar la gema contra múltiples versiones de dependencias de gema
+(Como Rails en un motor Rails).
+* Utiliza [Bundler] para administrar las dependencias de la gema.
+* Utiliza [Travis CI] para la integración continua, los indicadores que muestran si la petición de GitHub
+se pueden combinar, y para probar contra varias versiones de Ruby.
 
 [Appraisal]: https://github.com/thoughtbot/appraisal
 [Bundler]: http://bundler.io
@@ -61,44 +59,38 @@ Ruby Gems
 Rails
 -----
 
-* [Add foreign key constraints][fkey] in migrations.
-* Avoid bypassing validations with methods like `save(validate: false)`,
-  `update_attribute`, and `toggle`.
-* Avoid instantiating more than one object in controllers.
-* Avoid naming methods after database columns in the same class.
-* Don't change a migration after it has been merged into master if the desired
-  change can be solved with another migration.
-* Don't reference a model class directly from a view.
-* Don't return false from `ActiveModel` callbacks, but instead raise an
-  exception.
-* Don't use instance variables in partials. Pass local variables to partials
-  from view templates.
-* Don't use SQL or SQL fragments (`where('inviter_id IS NOT NULL')`) outside of
-  models.
-* Generate necessary [Spring binstubs] for the project, such as `rake` and
-  `rspec`, and add them to version control.
-* If there are default values, set them in migrations.
-* Keep `db/schema.rb` or `db/development_structure.sql` under version control.
-* Use only one instance variable in each view.
-* Use SQL, not `ActiveRecord` models, in migrations.
-* Use the [`.ruby-version`] file convention to specify the Ruby version and
-  patch level for a project.
-* Use `_url` suffixes for named routes in mailer views and [redirects].  Use
-  `_path` suffixes for named routes everywhere else.
-* Use a [class constant rather than the stringified class name][class constant in association]
-  for `class_name` options on ActiveRecord association macros.
-* Validate the associated `belongs_to` object (`user`), not the database column
-  (`user_id`).
-* Use `db/seeds.rb` for data that is required in all environments.
-* Use `dev:prime` rake task for development environment seed data.
-* Prefer `cookies.signed` over `cookies` to [prevent tampering].
-* Prefer `Time.current` over `Time.now`
-* Prefer `Date.current` over `Date.today`
-* Prefer `Time.zone.parse("2014-07-04 16:05:37")` over `Time.parse("2014-07-04 16:05:37")`
-* Use `ENV.fetch` for environment variables instead of `ENV[]`so that unset
-  environment variables are detected on deploy.
-* [Use blocks][date-block] when declaring date and time attributes in FactoryGirl factories.
-* Use `touch: true` when declaring `belongs_to` relationships.
+* [Añadir restricciones a las llaves foraneas][fkey] en las migraciones.
+* Evita pasar por alto las validaciones con métodos como `save(validate: false)`,
+  `update_attribute`, y `toggle`.
+* Evita instanciar más de un objeto en los controladores
+* Evita nombrar métodos después de las columnas en la base de datos en la misma clase.
+* No cambie una migración después de que se haya combinado en Maestro, si deseas el cambio puede ser resuelto con otra migración.
+* No hagas referencia a una clase de modelo directamente desde una vista.
+* No regreses con valor falso el  `ActiveModel` callbacks, pero en lugar lanza una
+  excepción.
+* No utilices variables de instancia en partials. Pasar variables locales a partials desde las plantillas de vista.
+* No uses fragmentos SQL o SQL (`where('inviter_id IS NOT NULL')`) fuera de los modelos.
+* Generar [Spring binstubs] necesarios para el proyecto, como `rake` y
+  `rspec`, y agregalos al control de versiones.
+* Si hay valores predeterminados, establézcalos en migraciones.
+* Utiliza `db/schema.rb` o `db/development_structure.sql` bajo el control de versiones.
+* Utiliza sólo una variable de instancia en cada vista.
+* Utiliza SQL, no `ActiveRecord`, en las migraciones.
+* Utiliza las convenciones del archivo [`.ruby-version`] para especificar la versión de Ruby y el nivel de revisión de un proyecto.
+* Usa los sufijos `_url` para las rutas con nombre en las vistas de correo y [redirects]. Utiliza sufijos
+  `_path` para rutas nombradas por todas partes.
+* Utiliza una [constante de clase en lugar del nombre de clase stringificado]][class constant in association]
+  para `class_name` en las macros de asociación de ActiveRecord.
+* Validar el objeto the asociado `belongs_to` asociado (`user`), no la columna de la base de datos (`user_id`).
+* Utiliza `db/seeds.rb` para obtener los datos necesarios en todos los entornos.
+* Utiliza `dev:prime` usa variable locales para configurar el entorno de desarrollo inicial.
+* Prefiere `cookies.signed` sobre `cookies` para [prevent tampering].
+* Prefiere `Time.current` sobre `Time.now`.
+* Prefiere `Date.current` sobre `Date.today`.
+* Prefiere `Time.zone.parse("2014-07-04 16:05:37")` sobre `Time.parse("2014-07-04 16:05:37")`.
+* Utiliza `ENV.fetch` para variables de entorno en lugar de `ENV[]` para que las variables de entorno que no están inicializadas sean detectadas en el deploy.
+* [Use blocks][date-block] al declarar los atributos de fecha y hora en las fábricas de FactoryGirl.
+* Utiliza `touch: true` al declarar las relaciones `belongs_to`.
 
 [date-block]: /best-practices/samples/ruby.rb#L10
 [fkey]: http://robots.thoughtbot.com/referential-integrity-with-foreign-keys
@@ -111,25 +103,24 @@ Rails
 Testing
 -------
 
-* Avoid `any_instance` in rspec-mocks and mocha. Prefer [dependency injection].
-* Avoid `its`, `specify`, and `before` in RSpec.
-* Avoid `let` (or `let!`) in RSpec. Prefer extracting helper methods,
-  but do not re-implement the functionality of `let`. [Example][avoid-let].
-* Avoid using `subject` explicitly *inside of an* RSpec `it` block.
-  [Example][subject-example].
-* Avoid using instance variables in tests.
-* Disable real HTTP requests to external services with
+* Evita `any_instance` en rspec-mocks y mocha. Prefiere [dependency injection].
+* Evita `its`, `specify`, y `before` en RSpec.
+* Evita `let` (o `let!`) en RSpec. Utiliza métodos auxiliares de extracción,
+pero no vuelvas a implementar la funcionalidad de `let`. [Example][avoid-let].
+* Evita usar `subject` explícitamente * dentro de un bloque RSpec `it`. [Example][subject-example].
+* Evita el uso de variables de instancia en las pruebas.
+* Deshabilita las solicitudes HTTP reales a servicios externos con
   `WebMock.disable_net_connect!`.
-* Don't test private methods.
-* Test background jobs with a [`Delayed::Job` matcher].
-* Use [stubs and spies] \(not mocks\) in isolated tests.
-* Use a single level of abstraction within scenarios.
-* Use an `it` example or test method for each execution path through the method.
-* Use [assertions about state] for incoming messages.
-* Use stubs and spies to assert you sent outgoing messages.
-* Use a [Fake] to stub requests to external services.
-* Use integration tests to execute the entire app.
-* Use non-[SUT] methods in expectations when possible.
+*  No pruebe los métodos privados.
+* Prueba procesos secundarios con un [`Delayed::Job` matcher].
+* Utiliza [stubs and spies] \(not mocks\) en pruebas aisladas.
+* Utiliza un solo nivel de abstracción dentro de escenarios.
+* Utiliza `it` ejemplo o método de prueba para cada ruta de ejecución a través del método.
+* Utiliza [assertions about state] de los mensajes entrantes.
+* Utiliza stubs y espías para afirmar que se ha enviado mensajes salientes.
+* Utiliza [Fake] para enviar solicitudes a los servicios externos.
+* Utiliza pruebas de integración para ejecutar toda la aplicación.
+* Utiliza métodos non-[SUT] en las expectativas cuando sea posible.
 
 [dependency injection]: http://en.wikipedia.org/wiki/Dependency_injection
 [subject-example]: ../style/testing/unit_test_spec.rb
@@ -143,55 +134,54 @@ Testing
 Bundler
 -------
 
-* Specify the [Ruby version] to be used on the project in the `Gemfile`.
-* Use a [pessimistic version] in the `Gemfile` for gems that follow semantic
-  versioning, such as `rspec`, `factory_girl`, and `capybara`.
-* Use a [versionless] `Gemfile` declarations for gems that are safe to update
-  often, such as pg, thin, and debugger.
-* Use an [exact version] in the `Gemfile` for fragile gems, such as Rails.
+* Especifica la [versión de Ruby] del proyecto en el `Gemfile`.
+* Usa una [pessimistic version] del `Gemfile`  
+  de las gemas para permitir el uso de funciones como 
+  `rspec`, `factory_girl`, y `capybara`.
+* Usa un [versionless] `Gemfile` para gemas seguras de actualizar como
+  pg, thin, and debugger.
+* Usa un [exact version] en el `Gemfile` para gemas frágiles, como  Rails.
 
 [Ruby version]: http://bundler.io/v1.3/gemfile_ruby.html
 [exact version]: http://robots.thoughtbot.com/post/35717411108/a-healthy-bundle
 [pessimistic version]: http://robots.thoughtbot.com/post/35717411108/a-healthy-bundle
 [versionless]: http://robots.thoughtbot.com/post/35717411108/a-healthy-bundle
 
-Relational Databases
+Bases relacionables
 --------------------
 
-* [Index foreign keys].
-* Constrain most columns as [`NOT NULL`].
-* In a SQL view, only select columns you need (i.e., avoid `SELECT table.*`).
-* Use an `ORDER BY` clause on queries where the results will be displayed to a
-  user, as queries without one may return results in a changing, arbitrary
-  order.
+* [Usa Indexes para llaves foraneas].
+* Configura la mayoría de los campos como [`NOT NULL`].
+* En SQL solo selecciona columnas que necesitas (i.e., evita `SELECT table.*`).
+* Usa `ORDER BY` en consultas que necesiten ser desplegadas al usuario.
+  Ya que el evitarlo hace que el orden cambie arbitrariamente.
 
-[Index foreign keys]: https://tomafro.net/2009/08/using-indexes-in-rails-index-your-associations
+[Usa Indexes para llaves foraneas]: https://tomafro.net/2009/08/using-indexes-in-rails-index-your-associations
 [`NOT NULL`]: http://www.postgresql.org/docs/9.1/static/ddl-constraints.html#AEN2444
 
 Postgres
 --------
 
-* Avoid multicolumn indexes. Postgres [combines multiple indexes] efficiently.
-  Optimize later with a [compound index] if needed.
-* Consider a [partial index] for queries on booleans.
+* Evita varias columnas con idexes en una tabla. Postgres [combina múltiples indexes] eficientemente.
+  También puedes usar [compound index].
+* Considera usar un [partial index] para consultas de booleanos.
 
-[combines multiple indexes]: http://www.postgresql.org/docs/9.1/static/indexes-bitmap-scans.html
+[combina múltiples indexes]: http://www.postgresql.org/docs/9.1/static/indexes-bitmap-scans.html
 [compound index]: http://www.postgresql.org/docs/9.2/static/indexes-bitmap-scans.html
 [partial index]: http://www.postgresql.org/docs/9.1/static/indexes-partial.html
 
-Background Jobs
+Trabajos en segundo plano
 ---------------
 
-* Store IDs, not `ActiveRecord` objects for cleaner serialization, then re-find
-  the `ActiveRecord` object in the `perform` method.
+* Guarde IDs, no objetos `ActiveRecord` para una serialización más limpia, después reencuentre
+  el objeto `ActiveRecord` en el método `perform`.
 
 Email
 -----
 
-* Use [SendGrid] or [Amazon SES] to deliver email in staging and production
-  environments.
-* Use a tool like [ActionMailer Preview] to look at each created or updated mailer view
-  before merging. Use [MailView] gem unless using Rails version 4.1.0 or later.
+* Use [SendGrid] o [Amazon SES] para enviar emails en entornos de pruebas y de producción.
+* Use una herramienta como [ActionMailer Preview] para revisar cada vista de remitente creada o actualizada
+  antes de mezclarlas. Use la gema [MailView] a no ser que se esté usando una versión de Rails 4.1.0 o superior.
 
 [Amazon SES]: http://robots.thoughtbot.com/post/3105121049/delivering-email-with-amazon-ses-in-a-rails-3-app
 [SendGrid]: https://devcenter.heroku.com/articles/sendgrid
@@ -201,102 +191,102 @@ Email
 Web
 ---
 
-* Avoid a Flash of Unstyled Text, even when no cache is available.
-* Avoid rendering delays caused by synchronous loading.
-* Use https instead of http when linking to assets.
+* Evite usar Flash.
+* Evite renderizar retardos (delays) causados por cargas síncronas.
+* Use https en lugar de http cuando enlace a recursos.
 
 JavaScript
 ----------
-* Use the latest stable JavaScript syntax with a transpiler, such as [babel].
-* Include a `to_param` or `href` attribute when serializing ActiveRecord models,
-  and use that when constructing URLs client side, rather than the ID.
+* Use la sintaxis estable de JavaScript más reciente con un transpiler, como [babel].
+* Incluya un atributo `to_param` o `href` cuando serialice modelos ActiveRecord,
+  y úselos cuando construya URLs del lado del cliente, en lugar del ID.
 
 [babel]: http://babeljs.io/
 
 HTML
 ----
 
-* Use `<button>` tags over `<a>` tags for actions.
+* Prefiera las etiquetas `<button>` sobre las etiquetas `<a>` para realizar acciones.
 
 CSS
 ---
 
-* Document the project's CSS architecture (the README, component library or
-  style guide are good places to do this), including things such as:
-  * Organization of stylesheet directories and Sass partials
-  * Selector naming convention
-  * Code linting tools and configuration
-  * Browser support
-* Use Sass.
-* Use [Autoprefixer][autoprefixer] to generate vendor prefixes based on the
-  project-specific browser support that is needed.
-* Prefer `overflow: auto` to `overflow: scroll`, because `scroll` will always
-  display scrollbars outside of OS X, even when content fits in the container.
+* Documente la arquitectura CSS del proyecto (el README, la biblioteca de componentes
+  o la guía de estilos son un buen lugar para hacer esto), incluyendo cosas como:
+  * La organización de directorios de hojas de estilo y Sass parciales
+  * Convención de nombres para selectores
+  * Herramientas y configuración de code linting y configuración
+  * Soporte de exploradores
+* Use Saas.
+* Use [Autoprefixer][autoprefixer] para generar prefijos de proveedores basados en
+  el soporte de exploradores, específico para el proyecto, que se requiere.
+* Prefiera `overflow: auto` sobre `overflow: scroll`, porque `scroll` siempre
+  desplegará las barras de desplazamiento fuera de OS X, incluso cuando el contenido se ajuste correctamente en el contenedor.
 
 [autoprefixer]: https://github.com/postcss/autoprefixer
 
 Sass
 ----
 
-* When using [sass-rails], use the provided [asset-helpers][asset-helpers]
-  (e.g. `image-url` and `font-url`), so that Rails' Asset Pipeline will re-write
-  the correct paths to assets.
-* Prefer mixins to `@extend`.
+* Cuando se utilice [sass-rails], use los [asset-helpers][asset-helpers] provistos
+  (e.g. `image-url` and `font-url`), para que el Asset Pipeline de Rails vuelva a escribir
+  las rutas correctas a los recursos.
+* Prefiera los mixins sobre `@extend`.
 
 [sass-rails]: https://github.com/rails/sass-rails
 [asset-helpers]: https://github.com/rails/sass-rails#asset-helpers
 
-Browsers
+Exploradores
 --------
 
-* Avoid supporting versions of Internet Explorer before IE11.
+* Evite soportar versiones de Internet Explorer anteriores a IE11.
 
 Objective-C
 -----------
 
-* Setup new projects using [Liftoff](https://github.com/thoughtbot/liftoff) and
-  follow provided directory structure.
-* Prefer categories on `Foundation` classes to helper methods.
-* Prefer string constants to literals when providing keys or key paths to methods.
+* Prepare nuevos proyectos usando [Liftoff](https://github.com/thoughtbot/liftoff) y
+  siga la estructura de directorios prevista.
+* Prefiera categorías en las clases de `Foundation` a los métodos de ayuda.
+* Prefiera constantes de string a literales cuando se provean llaves o llaves de rutas a métodos.
 
 Shell
 -----
 
-* Don't parse the output of `ls`. See [here][parsingls] for details and
-  alternatives.
-* Don't use `cat` to provide a file on `stdin` to a process that accepts
-  file arguments itself.
-* Don't use `echo` with options, escapes, or variables (use `printf` for those
-  cases).
-* Don't use a `/bin/sh` [shebang][] unless you plan to test and run your
-  script on at least: Actual Sh, Dash in POSIX-compatible mode (as it
-  will be run on Debian), and Bash in POSIX-compatible mode (as it will
-  be run on OSX).
-* Don't use any non-POSIX [features][bashisms] when using a `/bin/sh`
+* No parsee la salida de `ls`. Ve [aquí][parsingls] para más detalles y 
+  alternativas.
+* No use `cat` para proveer con `stdin` un archivo a procesos que acepten 
+  archivos como argumentos.
+* No use `echo` con opciones, escapes, o variables (use `printf` para estos
+  casos).
+* No use un `/bin/sh` [shebang][] a no ser que planee probar y ejecutar su 
+  script en al menos: el Sh como tal, Dash en modo compatible con POSIX (ya que 
+  será ejecutado en Debian), y Bash en modo compatible con POSIX (ya que 
+  será ejecutado en OSX).
+* No utilice ninguna [característica][bashisms] no-POSIX cuando se use un`/bin/sh`
   [shebang][].
-* If calling `cd`, have code to handle a failure to change directories.
-* If calling `rm` with a variable, ensure the variable is not empty.
-* Prefer "$@" over "$\*" unless you know exactly what you're doing.
-* Prefer `awk '/re/ { ... }'` to `grep re | awk '{ ... }'`.
-* Prefer `find -exec {} +` to `find -print0 | xargs -0`.
-* Prefer `for` loops over `while read` loops.
-* Prefer `grep -c` to `grep | wc -l`.
-* Prefer `mktemp` over using `$$` to "uniquely" name a temporary file.
-* Prefer `sed '/re/!d; s//.../'` to `grep re | sed 's/re/.../'`.
-* Prefer `sed 'cmd; cmd'` to `sed -e 'cmd' -e 'cmd'`.
-* Prefer checking exit statuses over output in `if` statements (`if grep
-  -q ...; `, not `if [ -n "$(grep ...)" ];`).
-* Prefer reading environment variables over process output (`$TTY` not
-  `$(tty)`, `$PWD` not `$(pwd)`, etc).
-* Use `$( ... )`, not backticks for capturing command output.
-* Use `$(( ... ))`, not `expr` for executing arithmetic expressions.
-* Use `1` and `0`, not `true` and `false` to represent boolean
-  variables.
-* Use `find -print0 | xargs -0`, not `find | xargs`.
-* Use quotes around every `"$variable"` and `"$( ... )"` expression
-  unless you want them to be word-split and/or interpreted as globs.
-* Use the `local` keyword with function-scoped variables.
-* Identify common problems with [shellcheck][].
+* Si está llamando `cd`, tenga código para manejar un fallo de cambio de directorios.
+* Si está llamando `rm` con una variable, asegúrese que la variable no esté vacía.
+* Prefiera "$@" a "$\*" a no ser que sepa exactamente lo que está haciendo.
+* Prefiera `awk '/re/ { ... }'` a `grep re | awk '{ ... }'`.
+* Prefiera `find -exec {} +` a `find -print0 | xargs -0`.
+* Prefiera cliclos `for` a ciclos `while read`.
+* Prefiera `grep -c` a `grep | wc -l`.
+* Prefiera `mktemp` a usar `$$` para dar un nombre "único" a un archivo temporal.
+* Prefiera `sed '/re/!d; s//.../'` a `grep re | sed 's/re/.../'`.
+* Prefiera `sed 'cmd; cmd'` a `sed -e 'cmd' -e 'cmd'`.
+* Prefiera el revisar los status de salida a revisar la salida actual de instrucciones `if` (`if grep
+  -q ...; `, no `if [ -n "$(grep ...)" ];`).
+* Prefiera leer las variables de entorno a la salida de procesos (`$TTY` no
+  `$(tty)`, `$PWD` no `$(pwd)`, etc).
+* Use `$( ... )`, no backticks para capturar las salidas de comandos.
+* Use `$(( ... ))`, no `expr` para ejecutar expresiones aritméticas.
+* Use `1` y `0`, no `true` y `false` para representar
+  variables booleanas.
+* Use `find -print0 | xargs -0`, no `find | xargs`.
+* Use comillas alrededor de cada `"$variable"` y expresiones `"$( ... )"` 
+  a no ser que quiera que la variable sea divida en palabras o interpretada como variables globales.
+* Use la palabra clave `local` con variables cuyo ámbito esté dentro de la función.
+* Identifique problemas comúnes con [shellcheck][].
 
 [shebang]: http://en.wikipedia.org/wiki/Shebang_(Unix)
 [parsingls]: http://mywiki.wooledge.org/ParsingLs
@@ -306,61 +296,60 @@ Shell
 Bash
 ----
 
-In addition to Shell best practices,
+En adición a las mejores prácticas en Shell,
 
-* Prefer `${var,,}` and `${var^^}` over `tr` for changing case.
-* Prefer `${var//from/to}` over `sed` for simple string replacements.
-* Prefer `[[` over `test` or `[`.
-* Prefer process substitution over a pipe in `while read` loops.
-* Use `((` or `let`, not `$((` when you don't need the result
+* Prefiera `${var,,}` y `${var^^}` a `tr` para cambiar notaciones en mayúsculas o minúsculas.
+* Prefiera `${var//from/to}` sobre `a` para reemplazos simples de strings.
+* Prefiera `[[` a `test` o `[`.
+* Prefiera la sustitución de un proceso con un pipe en ciclos `while read`.
+* Use `((` o `let`, no `$((` cuando no necesite el resultado
 
 Haskell
 -------
 
-* Avoid partial functions (`head`, `read`, etc).
-* Compile code with `-Wall -Werror`.
+* Evite funciones parciales (`head`, `read`, etc).
+* Compile el código con `-Wall -Werror`.
 
 Elixir
 ------
 
-* Avoid macros.
+* Evite las macros.
 
 Ember
 -----
 
-* Avoid using `$` without scoping to `this.$` in views and components.
-* Prefer to make model lookup calls in routes instead of controllers (`find`,
+* Evite usar `$` sin limitarlo a `this.$` en vistas y componentes.
+* Prefiera hacer llamadas de búsqueda en rutas (routes) en lugar de controladores (`find`,
   `findAll`, etc.).
-* Prefer adding properties to controllers instead of models.
-* Don't use jQuery outside of views and components.
-* Prefer to use predefined `Ember.computed.*` functions when possible.
-* Use `href="#"` for links that have an action.
-* Prefer dependency injection through `Ember.inject` over initializers, globals
-  on window, or namespaces. ([sample][inject])
-* Prefer sub-routes over maintaining state.
-* Prefer explicit setting of boolean properties over `toggleProperty`.
-* Prefer testing your application with [QUnit][ember-test-guides].
+* Prefiera agregar propiedades a controladores en lugar de a los modelos.
+* No use jQuery fuera de las vistas y componentes.
+* Prefiera usar funciones `Ember.computed.*` predefinidas cuando sea posible.
+* Use `href="#"` para enlaces que tengan una acción.
+* Prefiera la inyección de dependencias a través de `Ember.inject` a los inicializadores, variables globales
+  en la ventana, o nombres de espacios ([ejemplo][inject])
+* Prefiera utilizar sub-rutas a un mantenimiento de estado.
+* Prefiera cambiar explíticamente los valores de propiedades booleanas a utilizar `toggleProperty`.
+* Prefiera probar su aplicación con [QUnit][ember-test-guides].
 
 [ember-test-guides]: https://guides.emberjs.com/v2.2.0/testing/
 
 Testing
 
-* Prefer `findWithAssert` over `find` when fetching an element you expect to
-  exist
+* Prefiera `findWithAssert` a `find` cuando recupere un elemento que espera que
+  exista
 
 [inject]: samples/ember.js#L1-L11
 
 Angular
 -------
 
-* [Avoid manual dependency annotations][annotations]. Disable mangling or use a
-  [pre-processor][ngannotate] for annotations.
-* Prefer `factory` to `service`. If you desire a singleton, wrap the singleton
-  class in a factory function and return a new instance of that class from the
+* [Evite hacer manualmente anotaciones de dependencias][annotations].
+* Prefiera `factory` a `service`. Si desea usar un singleton, envuelva la clase singleton
+  en una función factory y retorne una nueva instancia de esta clase desde la
   factory.
-* Prefer the `translate` directive to the `translate` filter for [performance
-  reasons][angular-translate].
-* Don't use the `jQuery` or `$` global. Access jQuery via `angular.element`.
+* Prefiera la directiva `translate` al filtro `translate` por [razones
+  de rendimiento][angular-translate].
+* No use la variable `jQuery` o la variable global `$`. Acceda a jQuery via `angular.element`.
 
 [annotations]: http://robots.thoughtbot.com/avoid-angularjs-dependency-annotation-with-rails
 [ngannotate]: https://github.com/kikonen/ngannotate-rails
@@ -369,14 +358,13 @@ Angular
 Ruby JSON APIs
 --------------
 
-* Review the recommended practices outlined in Heroku's [HTTP API Design Guide]
-  before designing a new API.
-* Use a fast JSON parser, e.g. [`oj`][oj]
-* Write integration tests for your API endpoints. When the primary consumer of
-  the API is a JavaScript client maintained within the same code base as the
-  provider of the API, write [feature specs]. Otherwise write [request specs].
+* Revise las prácticas recomendas resaltadas en Heroku's [Guía de Diseño de API HTTP]
+  antes de diseñar una nueva API.
+* Use un analizador JSON rápido, por ejemplo. [`oj`][oj]
+* Escriba pruebas de integración para las endpoints de tu API. Cuando el consumidor primario de
+  la API es un cliente JavaScript mantenido dentro de la misma base de código que el proveedor de la API, escriba [especificaciones de caratcerísticas]. De otro modo escriba [especificaciones de solicitud].
 
-[HTTP API Design Guide]: https://github.com/interagent/http-api-design
+[Guía de Diseño de API HTTP]: https://github.com/interagent/http-api-design
 [oj]: https://github.com/ohler55/oj
-[feature specs]: https://www.relishapp.com/rspec/rspec-rails/docs/feature-specs/feature-spec
-[request specs]: https://www.relishapp.com/rspec/rspec-rails/docs/request-specs/request-spec
+[especificaciones de caratcerísticas]: https://www.relishapp.com/rspec/rspec-rails/docs/feature-specs/feature-spec
+[especificaciones de solicitud]: https://www.relishapp.com/rspec/rspec-rails/docs/request-specs/request-spec

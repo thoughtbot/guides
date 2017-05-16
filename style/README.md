@@ -31,10 +31,8 @@ Dar Formato
 * Partir líneas mayores a 80 caracteres.
 * Borrar espacios en blanco.
 * No incluir espacios después de `(`, `[` o antes de `]`, `)`.
-* No escribir mal.
+* No escribir con faltas de ortografía.
 * No alinear verticalmente las fichas en líneas consecutivas.
-* Si se rompe un hash, Mantener los elementos sobre sus propias líneas y cerrar
-  los corchetes en su propia línea.
 * Identar, sangrado o tabular líneas continuas en dos espacios.
 * Identar, sangrado o tabular los métodos privados iguales que los métodos públicos
 * Si rompe una cadena de invocación de método, mantener cada invocación del método en
