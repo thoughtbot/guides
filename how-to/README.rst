@@ -1,12 +1,12 @@
-How do I ...
-============
+"How to"
+========
 
-.. contents::
+.. Contenido::
 
-... start a new Rails app?
---------------------------
+... corro una app en Rails ?
+----------------------------
 
-Use suspenders_:
+Usa suspenders_:
 
 .. code:: sh
 
@@ -18,10 +18,10 @@ Use suspenders_:
 
 .. _suspenders: https://github.com/thoughtbot/suspenders
 
-... feature-test a Rails app's Javascript?
+... pruebo el Javascript de una app en Rails?
 ------------------------------------------
 
-Use capybara-webkit_. In your ``Gemfile``:
+Usa capybara-webkit_. en tu ``Gemfile``:
 
 .. code:: ruby
 
@@ -37,8 +37,8 @@ In ``spec/support/capybara_webkit.rb`` (for Rspec):
     config.block_unknown_urls
   end
 
-When writing a spec, you must set the ``:js`` flag for that test to make use of
-capybara-webkit. For example, in ``spec/features/user_signs_in_spec.rb``:
+Cuando escribas un spec, bebes de poner la bandera ``:js`` a la prueba para que lo vea
+capybara-webkit. Por ejemplo, en ``spec/features/user_signs_in_spec.rb``:
 
 .. code:: ruby
 

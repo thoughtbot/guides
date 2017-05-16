@@ -1,9 +1,9 @@
-Communication
-=============
+Comunicación
+============
 
-A guide for communicating within thoughtbot.
+Una guía para comunicarse.
 
-Tickets
--------
+Tareas
+------
 
-* People assign themselves to tickets. When in doubt, do not assign a ticket to someone.
+* Cada quien se asigna sus propias tareas. Si tienen duda, no se lo asigne a nadie mas.   

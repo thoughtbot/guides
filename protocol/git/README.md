@@ -1,107 +1,107 @@
-Git Protocol
-============
+Git
+===
 
-A guide for programming within version control.
+Una guía para programar usando versionamiento.
 
 Maintain a Repo
 ---------------
 
-* Avoid including files in source control that are specific to your
-  development machine or process.
-* Delete local and remote feature branches after merging.
-* Perform work in a feature branch.
-* Rebase frequently to incorporate upstream changes.
-* Use a [pull request] for code reviews.
+* Evita agregar archivos que son específicos tu tu maquina 
+	de desarrollo o de un proceso
+* Elimina branches locales y las de funcionalidades individuales
+	después de hacer merge
+* Trabaja en un branch de funcionalidad.
+* Rebasa frecuentemente para incorporar cambios nuevos.
+* Usa [pull request] para las revisiones de código.
 
 [pull request]: https://help.github.com/articles/using-pull-requests/
 
-Write a Feature
----------------
+Crear una funcionalidad
+--------------------------
 
-Create a local feature branch based off master.
+Crea un branch local de funcionalidad basado en master
 
     git checkout master
     git pull
     git checkout -b <branch-name>
 
-Rebase frequently to incorporate upstream changes.
+Rebasa frecuentemente para incorporar cambios
 
     git fetch origin
     git rebase origin/master
 
-Resolve conflicts. When feature is complete and tests pass, stage the changes.
+Resuelve conflictos. Cuando la funcionalidad este lista y probada, agrega los cambios. 
 
     git add --all
 
-When you've staged the changes, commit them.
+Cuando agregues los cambios haz commit.
 
     git status
     git commit --verbose
 
-Write a [good commit message]. Example format:
+Escribe [un buen mensaje para tu commit] : 
 
-    Present-tense summary under 50 characters
+    En presente menos de 50 characteres
 
-    * More information about commit (under 72 characters).
-    * More information about commit (under 72 characters).
+    * Mas información (menos 72 characteres).
+    * Mas información del commit (menos 72 characteres).
 
     http://project.management-system.com/ticket/123
 
-If you've created more than one commit,
+Si haz creado mas de un commit,
 [use `git rebase` interactively](https://help.github.com/articles/about-git-rebase/)
-to squash them into cohesive commits with good messages:
+intégralos en un commit mas completo y bien explicado:
 
     git rebase -i origin/master
 
-Share your branch.
+Comparte tu branch.
 
     git push origin <branch-name>
 
-Submit a [GitHub pull request].
+Sube un [pull request].
 
-Ask for a code review in the project's chat room.
+Pide alguien que evalúe tu código.
 
-[good commit message]: http://tbaggery.com/2008/04/19/a-note-about-git-commit-messages.html
-[GitHub pull request]: https://help.github.com/articles/using-pull-requests/
+[un buen mensaje para tu commit]: http://tbaggery.com/2008/04/19/a-note-about-git-commit-messages.html
+[pull request]: https://help.github.com/articles/using-pull-requests/
 
-Review Code
------------
+Revisión de código
+------------------
 
-A team member other than the author reviews the pull request. They follow
-[Code Review](/code-review) guidelines to avoid
-miscommunication.
+Uno o varios compañeros del equipo distinto al autor debe ayudarte a revisar tu pull request.
+Deben de seguir la [guía de Revisión de código](/code-review).
 
-They make comments and ask questions directly on lines of code in the GitHub
-web interface or in the project's chat room.
+Ellos deberan hacer comentarios o hacer preguntas especificas de lineas de código.
+Ya sea en tu herramienta de versionamiento o via chat.
 
-For changes which they can make themselves, they check out the branch.
+Para cambios que se aplican por si solos (como instaladores) deben de resetear el branch
 
     git checkout <branch-name>
     ./bin/setup
     git diff staging/master..HEAD
 
-They make small changes right in the branch, test the feature on their machine,
-run tests, commit, and push.
+Hacen cambios pequeños en el branch, prueba el branch en su maquina. Una vez
+listo ejecute pruebas, haga commits y push.
 
-When satisfied, they comment on the pull request `Ready to merge.`
+Cuando estén listos con sus cambios deberán poner `Listo para Merge.`
 
 Merge
 -----
 
-Rebase interactively. Squash commits like "Fix whitespace" into one or a
-small number of valuable commit(s). Edit commit messages to reveal intent. Run
-tests.
+Rebasa. Agrupa commits como "Quite un espacio" y ponlos en un commit
+con varios de importancia. Que tus descripciones de commit revelen lo que contiene.
+Haz pruebas.
 
     git fetch origin
     git rebase -i origin/master
 
-Force push your branch. This allows GitHub to automatically close your pull
-request and mark it as merged when your commit(s) are pushed to master. It also
- makes it possible to [find the pull request] that brought in your changes.
+Haz un force-push. Esto hará que se cierre tu pull request y pon como resuelto el merge 
+cuando tus commits se suban al master. Tambien permite que [se encuente el pull request]
+que trajo esos cambios
 
     git push --force-with-lease origin <branch-name>
 
-View a list of new commits. View changed files. Merge branch into master.
+Ve la lista de nuevos commits. Ve los archivos que cambiaron. Haz merge con master
 
     git log origin/master..<branch-name>
     git diff --stat origin/master
@@ -109,12 +109,12 @@ View a list of new commits. View changed files. Merge branch into master.
     git merge <branch-name> --ff-only
     git push
 
-Delete your remote feature branch.
+Elimina tu brach de funcionalidad en el server.
 
     git push origin --delete <branch-name>
 
-Delete your local feature branch.
+Elimina tu brach de funcionalidad en tu equipo.
 
     git branch --delete <branch-name>
 
-[find the pull request]: http://stackoverflow.com/a/17819027
+[se encuente el pull request]: http://stackoverflow.com/a/17819027

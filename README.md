@@ -37,7 +37,7 @@ Por favor lee [la guía de como contibuir] antes de mandar un pull request
 
 Si tienes acceso a hacer commit : por favor no hagas merge sin que todos consulten.
 
-[contribution guidelines]: /CONTRIBUTING.md
+[la guía de como contibuir]: /CONTRIBUTING.md
 
 Créditos iniciales
 ------------------
@@ -47,7 +47,7 @@ Gracias a, [contributors](https://github.com/thoughtbot/guides/graphs/contributo
 Traducido y mantenido por
 ------------------------
 
-Arturo Jamaica de Brounie [SA de CV](https://brounie.com)
+Arturo Jamaica de [Brounie SA de CV](https://brounie.com)
 
 Licencia
 -------

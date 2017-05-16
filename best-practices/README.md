@@ -1,7 +1,7 @@
-Best Practices
+Mejores prácticas
 ==============
 
-A guide for programming well.
+Una guía para programar bien.
 
 General
 -------
