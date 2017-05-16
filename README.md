@@ -1,7 +1,7 @@
 Guía
 ====
 
-Guía para hacer empezar a trabajar, hacer buen código y mejorar tu estilo.
+Guía para hacer empezar a trabajar, hacer buen código, gestionar tu proyecto y mejorar tu estilo.
 
 * [Mejores prácticas](./best-practices)
 * [Revisión de código](./code-review)
@@ -15,6 +15,7 @@ Guía para hacer empezar a trabajar, hacer buen código y mejorar tu estilo.
   * [Rails](./protocol/rails)
 * [Seguridad](./security)
 * [Estilo](./style)
+* [Gestión de Proyecto](./gestion)
 
 
 Guía general:

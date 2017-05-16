@@ -1,110 +1,81 @@
-# Security
+# Seguridad
 
-A guide for practicing safe web.
+Una guía para crear una web segura.
 
-## Think
+## Piensa
 
-Security is important, and you can't practice these guidelines without
-understanding them. Make sure you understand each guideline, why it exists, and
-how to follow it.
+La seguridad es importante, y no debes utilizar las reglas sin entenderlas. Asegúrate que entendiste la regla, por que existe, y cómo seguirla.
 
-Failing to follow these guidelines will likely put you, your team, and your
-deployed services at risk of compromise or loss of privacy.
+No seguir estas reglas, tu equipo, y tus servicios tendrán riesgo de compromiso o perdida de privacidad.
 
-## Secure Employee Access and Communication
+## Comunicación y acceso seguro
 
-The following guidelines apply to how you as an individual
-secure access to your systems (laptop, accounts, etc.)
-and communication (email, etc.).
+Las siguientes reglas aplican para que tengas un acceso seguro a tus sistemas (laptop, cuentas, etc.) y comunicación (correo, etc.) 
+### Uso de contraseñas
 
-### Using Passwords
+* Utiliza una contraseña única para todas las cuentas que crees.
+* Utiliza una herramienta como [pwgen](https://github.com/jbernard/pwgen) o
+  [1password](https://1password.com) para generar contraseñas aleatorias.
+* Usa una herramienta como GnuPG para encriptar contraseñas si es que necesitas compartirla con alguien.
 
-* Use a unique password for every account you create.
-* Use a tool like [pwgen](https://github.com/jbernard/pwgen) or
-  [1password](https://1password.com) to generate random passwords.
-* Use a tool like GnuPG to encrypt passwords if you need to share them with
-  somebody.
+### Cifrado
 
-### Encryption
+* Asegura [encriptación de disco][disco] en tu laptop.
+* Utiliza PGP en un correo si quieres que alguien confíe que lo escribiste.
+* Utiliza PGP para revisar un correo si quieres saber quien lo escribió.
+* Utiliza PGP para encriptar correos si quieres estar seguro que nadie los pueda leer.
+* Cuida muy bien de tus llaves.
+* Confía totalmente en las llaves que has verificado en persona o mediante un video chat seguro.
+* No compartas tus llaves con nadie, incluyendo servicios como Keybase.
+* Guarda por lo menos un respaldo de tu llave privada y certificados en un lugar seguro, como memoria USB.
 
-* Ensure [disk encryption][disk] on your laptop.
-* Use a PGP signature in an email if you want somebody to trust that you wrote
-  it.
-* Use PGP to check email signatures if you want to know who wrote it.
-* Use PGP to encrypt emails if you want to be sure nobody but the recipient is
-  reading it.
-* Use ultimate trust for your own keys.
-* Use full trust for keys you have verified in person or via a secure video
-  chat.
-* Don't share your private key with anyone, including services like Keybase.
-* Keep at least one backup of your private key and revocation certificate in a
-  secure location, such as a thumb drive.
+[disco]: https://theintercept.com/2015/04/27/encrypting-laptop-like-mean/
 
-[disk]: https://theintercept.com/2015/04/27/encrypting-laptop-like-mean/
+## Seguridad física
 
-## Physical Security
+Las siguientes reglas aplican a como proteger físicamente nuestras laptops y dispositivos móviles que pueden contener datos de cliente o usuario.
 
-The following guidelines apply to how we physically secure
-our laptops and mobile devices that may contain customer or user data.
-
-* Lock your device when you are away from it.
-* Don't leave your devices unattended in an unsecured area.
-* Install a device tracking and remote data wipe tool such as [Prey].
+* Bloquea tu dispositivo cuando estés lejos de él.
+* No olvides tus dispositivos en un área no segura.
+* Instale una herramienta de rastreo de dispositivos y datos remotos como [Prey].
 
 [Prey]: https://www.preyproject.com/
 
-## Application Security
+## Seguridad de la aplicación
 
-The following guidelines apply to how we develop
-software on behalf of ourselves and clients.
+Las siguientes reglas aplican a como desarrollamos software a favor de nosotros mismos y los clientes. 
 
-### Transmitting Information
+### Transmitir información
 
-* Don't accept passwords or session tokens over HTTP.
-* Use HTTPS for all web traffic.
-* Use HTTPS in the beginning; it's harder to introduce later.
-* Use HTTPS redirects for HTTP traffic.
-* Use [HSTS](http://tools.ietf.org/html/rfc6797) headers to enforce HTTPS
-  traffic.
-* Use secure cookies.
-* Avoid protocol-relative URLs.
+* No aceptes contraseñas o tokens de sesión sobre HTTP.
+* Utiliza HTTPS para todo el tráfico web.
+* Utiliza HTTPS desde el inicio; es más complicado agregarlo después.
+* Redirecciona el tráfico HTTP a HTTPS.
+* Utiliza [HSTS](http://tools.ietf.org/html/rfc6797) para cumplir con el tráfico HTTPS.
+* Utiliza cookies de seguridad.
+* Evite las URL relativas.
+* Usa software original.
+* No visites páginas de contenido dudoso.
 
-### Storing Information
+### Almacenamiento de información
 
-* Don't log passwords.
-* Don't store passwords in plain text.
-* Don't hash passwords using a reversible cipher.
-* Don't hash passwords using a broken cipher, such as MD5 or SHA1.
+* No imprimas contraseñas en logs.
+* No guardes contraseñas en texto plano, encripta.
+* No encriptes contraseñas usando cifrado reversible.
+* No encriptes contraseñas usando métodos de cifrado rotos como MD5 o SHA1.
 
-### Preventing Vulnerabilities and Regressions
+### Prevenir vulnerabilidades
 
-During active development of a codebase,
-track security alerts in Continuous Integration builds
-with tools such as [Bundler Audit].
+Durante el desarrollo del código base, da seguimiento a las alertas de seguridad en las compilaciones de integración continua con herramientas como [Bundler Audit].
 
 [Bundler Audit]: https://robots.thoughtbot.com/handling-security-issues-in-open-source-projects#one-thing-end-users-can-do
 
-## Handling Vulnerabilities
+## Manejo de vulnerabilidades
 
-The following guidelines apply to how we handle security incidents.
+Las siguientes reglas aplican a como manejamos incidentes de seguridad.
 
-### Reporting
+### Revisión, registro y seguimiento
 
-When someone finds a possible security issue in our software,
-we encourage them to report it to our <security@thoughtbot.com> email address.
-
-When an email comes in through this channel,
-reply quickly with confirmation
-(and CC <security@thoughtbot.com> so others know that it has been handled)
-and the information for the thoughtbot PGP key,
-which is located at <https://thoughtbot.com/security>.
-
-### Reviewing, Logging and Following Up
-
-When an encrypted message comes in,
-post the exchange to a new [Constable] thread in the `security` interest,
-and keep the thread updated with new messages as they appear.
+Cuando un mensaje encriptado aparece, publica el cambio a un nuevo [Constable] thread en el interés de seguridad, y guarda el thread actualizado cuando nuevos mensajes aparezcan.
 
 [Constable]: https://constable.io
-
-Further discussion of security takes place in the `#security` channel in Slack.
