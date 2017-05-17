@@ -6,7 +6,7 @@ Una guía para programar usando versionamiento.
 Maintain a Repo
 ---------------
 
-* Evita agregar archivos que son específicos de tu máquina 
+* Evita agregar archivos que son específicos de tu máquina
 	de desarrollo o de un proceso
 * Elimina branches locales y las de funcionalidades individuales
 	después de hacer merge
@@ -30,7 +30,7 @@ Rebasa frecuentemente para incorporar cambios
     git fetch origin
     git rebase origin/master
 
-Resuelve conflictos. Cuando la funcionalidad este lista y probada, agrega los cambios. 
+Resuelve conflictos. Cuando la funcionalidad este lista y probada, agrega los cambios.
 
     git add --all
 
@@ -39,7 +39,7 @@ Cuando agregues los cambios haz commit.
     git status
     git commit --verbose
 
-Escribe [un buen mensaje para tu commit] : 
+Escribe [un buen mensaje para tu commit] :
 
     En presente menos de 50 caracteres
 
@@ -53,6 +53,45 @@ Si haz creado más de un commit,
 intégralos en un commit más completo y bien explicado:
 
     git rebase -i origin/master
+
+    * <commit-id> es el commit hasta donde quieres unificar.
+    * Incluye ~1 para incluir tambien el commit hasta donde quieres unificar.
+
+    git rebase -i <commit-id>~1
+
+    * Te va a mostrar el listado de commits del mas antiguo al mas nuevo
+
+    pick e162eb3 :soccer: Commit 3
+    pick 1b9a12d :soccer: Commit 2
+    pick 7b4d76e :soccer: Commit 1
+
+    * Y deberias cambiarlo así (en caso de querer unificarlos todos):
+
+    pick e162eb3 :soccer: Commit 3
+    s 1b9a12d :soccer: Commit 2
+    s 7b4d76e :soccer: Commit 1
+
+    * luego de unificar los commits, debes poner un solo mensaje:
+
+    # This is a combination of 3 commits.
+    # This is the 1st commit message:
+
+    :soccer: Commit 3
+
+    # This is the commit message #2:
+
+    :soccer: Commit 2
+
+    # This is the commit message #3:
+
+    :soccer: Commit 1
+
+    * Así:
+
+    # This is a combination of 3 commits.
+    # This is the 1st commit message:
+
+    :soccer: Commit 1 contains commit 2 and commit 3
 
 Comparte tu branch.
 
@@ -95,7 +134,7 @@ Haz pruebas.
     git fetch origin
     git rebase -i origin/master
 
-Haz un force-push. Esto hará que se cierre tu pull request y pon como resuelto el merge 
+Haz un force-push. Esto hará que se cierre tu pull request y pon como resuelto el merge
 cuando tus commits se suban al master. También permite que [se encuente el pull request]
 que trajo esos cambios
 
