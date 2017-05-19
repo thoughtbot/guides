@@ -1,60 +1,54 @@
-iOS Protocol
+Protocolo iOS
 ============
 
-A guide for making iPhone and iPad apps with aplomb.
+Una guía para hacer apps de iOS y android.
 
-Set Up Laptop
--------------
+Configura tu Laptop
+-------------------
 
-Install the latest version of Xcode from the App Store.
+Instala la ultima versión de Xcode de la Appstore
 
-Create App
+Crea una app
 ----------
 
-Get Liftoff.
 
-    brew tap thoughtbot/formulae
-    brew install liftoff
-
-Get CocoaPods
+Instala CocoaPods
 
     [sudo] gem install cocoapods
 
-Create the app.
+Crea un app con Xcode.
 
-    liftoff
+* Esta seguro que pertenece a el paquete, contiene los prefixes de 2 y 3 letras.
 
-* Be sure to set an appropriate 2 or 3 letter class prefix.
+Configura una app
+-----------------
 
-Set Up App
-----------
-
-Get the code.
+Baja el código.
 
     git clone git@github.com:organization/app.git
 
-Install the app's dependencies.
+Instala las dependencias.
 
     cd project
     pod install
 
-Git Protocol
-------------
+Protocolo de Git
+----------------
 
-Follow the normal [Git protocol](/protocol/git).
+Sigue el manual del [Protocolo de Git](/protocol/git).
 
-Product Review
---------------
+Revisión de producto
+--------------------
 
-Follow the normal [Product Review protocol](/protocol/product-review).
+Sigue el manual de [Revisión de producto](/protocol/product-review).
 
-Code Review
------------
+Revisión de Código
+------------------
 
-Follow the normal [Code Review guidelines](/code-review). When reviewing
-others' iOS work, look in particular for:
+Sigue el manual de [Revisión de Código](/code-review). Cuando revise a otros
+ponga atención en :
 
-* Review that ViewControllers are adhering to SRP
-* Watch for CoreData thread boundary violations
-* Watch for potential retain cycles with blocks
-* Ensure that methods that require parameters are using `NSParameterAssert()`
+* Revisar que los viewcontrollers se adhieren a el Single Responsibility Principle.
+* Revisar que CoreData no viole los limites de threads.
+* Revisa el potencial de los ciclos retenidos con bloques.
+* Revisar que los métodos que requieran parámetros usen `NSParameterAssert()`

@@ -1,58 +1,59 @@
-Guides
-======
+Guía
+====
 
-Guides for getting things done, programming well, and programming in style.
+Guía para empezar a trabajar, hacer buen código, gestionar tu proyecto y mejorar tu estilo.
 
-* [Best Practices](./best-practices)
-* [Code Review](./code-review)
-* [How to](./how-to)
-* [Protocol](./protocol)
-  * [Communication](./protocol/communication)
+* [Mejores prácticas](./best-practices)
+* [Revisión de código](./code-review)
+* ["How to"](./how-to)
+* [Protocolos](./protocol)
+  * [Comunicación](./protocol/communication)
   * [Git](./protocol/git)
   * [iOS](./protocol/ios)
   * [Open Source](./protocol/open-source)
-  * [Product Review](./protocol/product-review)
+  * [Revisión de producto](./protocol/product-review)
   * [Rails](./protocol/rails)
-* [Security](./security)
-* [Style](./style)
+* [Seguridad](./security)
+* [Estilo](./style)
+* [Gestión de Proyecto](./management)
 
-High level guidelines:
 
-* Be consistent.
-* Don't rewrite existing code to follow this guide.
-* Don't violate a guideline without a good reason.
-* A reason is good when you can convince a teammate.
+Guía general:
+* Opina de manera consistente.
+* Si tienes código existente no lo reescribas para seguir esta guía.
+* No violes la guía sin una buena razón.
+* Una buena razón es cuando convences a alguien argumentando.
 
-A note on the language:
+Aclaraciones de lenguaje (Español):
 
-* "Avoid" means don't do it unless you have good reason.
-* "Don't" means there's never a good reason.
-* "Prefer" indicates a better option and its alternative to watch out for.
-* "Use" is a positive instruction.
+* "Evita" significa no lo hagas a menos que tengas una buena razón.
+* "Nunca" significa jamás a menos que tengas una buena razón.
+* "Prefiero" significa que te parece la mejor opción y que la alternativa la vas a revisar.
+* "Usa" significa que lo recomiendas de modo positivo
 
 Contributing
 ------------
 
-Please read the [contribution guidelines] before submitting a pull request.
+Por favor lee [la guía de como contribuir] antes de mandar un pull request
 
-In particular: **if you have commit access, please don't merge changes without
-waiting a week for everybody to leave feedback**.
+Si tienes acceso a hacer commit : por favor no hagas merge sin que todos consulten.
 
-[contribution guidelines]: /CONTRIBUTING.md
+[la guía de como contibuir]: /CONTRIBUTING.md
 
-Credits
+Créditos iniciales
+------------------
+
+Gracias a todos los [contributors](https://github.com/ajamaica/guides/graphs/contributors)!
+
+Traducido y mantenido por
+------------------------
+
+Arturo Jamaica de [Brounie SA de CV](https://brounie.com)
+
+Licencia
 -------
 
-Thank you, [contributors](https://github.com/thoughtbot/guides/graphs/contributors)!
+Originalmente creado en 2014 por thoughtbot, inc.
 
-![thoughtbot](http://presskit.thoughtbot.com/images/thoughtbot-logo-for-readmes.svg)
-
-Guides is maintained by [thoughtbot, inc](https://thoughtbot.com).
-
-License
--------
-
-Guides is © 2014 thoughtbot, inc. It is distributed under the [Creative Commons
+Traducido y modificado por Brounie SA de CV. Y redistribuido por [Creative Commons
 Attribution License](http://creativecommons.org/licenses/by/3.0/).
-
-The names and logos for thoughtbot are trademarks of thoughtbot, inc.

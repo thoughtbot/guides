@@ -1,34 +1,34 @@
-Open Source Protocol
+Protocolo Open Source
 ====================
 
-A guide for releasing and maintaining open source projects.
+Una guía para liberar y mantener proyectos de código abierto.
 
-Accepting a GitHub Pull Request
+Aceptando un GitHub Pull Request
 -------------------------------
 
-Given you have this in your `~/.gitconfig`:
+Suponiendo que tienes esto en `~/.gitconfig`:
 
     [alias]
       co-pr = !sh -c 'git fetch origin pull/$1/head:pr/$1 && git checkout pr/$1' -
 
-Check out the code by its GitHub pull request number:
+Baja el código de github usando su nombre:
 
     git co-pr 123
 
-Rebase interactively, squash, and potentially improve commit messages:
+Rebasa, comprime los commits y mejora el mensaje del commit:
 
     git rebase -i master
 
-Look at changes:
+Verifica los cambios:
 
     git diff origin/master
 
-Run the code and tests. For example, on a Ruby project:
+Corre el código y haz pruebas. Por ejemplo :
 
     bundle
     rake
 
-Merge code into master:
+Haz merge con master:
 
     git checkout master
     git merge pr/123 --ff-only
@@ -37,17 +37,17 @@ Push:
 
     git push origin master
 
-Clean up:
+Elimina el branch:
 
     git branch -D pr/123
 
-Releasing a Ruby Gem
+Liberando un Ruby Gem
 --------------------
 
-* Edit the `VERSION` constant.
-* Run `bundle install` to update `Gemfile.lock`.
-* Run the test suite.
-* Edit `NEWS`, `Changelog`, or `README` files if relevant.
-* Commit changes. Use the convention "v2.1.0" in your commit message.
-* Run `rake release`, which tags the release, pushes the tag
-  to GitHub, and pushes the gem to Rubygems.org.
+* Editar el numero `VERSION`.
+* Corre `bundle install` para actualizar `Gemfile.lock`.
+* Corre las pruebas.
+* Edita los archivos`NEWS`, `Changelog`, o `README` si es necesario.
+* Sube tus cambios. Usa la convención "v2.1.0" en tu mensaje de commit.
+* Corre `rake release`, que taggea el commit y lo crea, sube el tag
+  a GitHub, sube la GEM a Rubygems.org.

@@ -1,4 +1,4 @@
 HTML
 ====
 
-* Prefer double quotes for attributes.
+* Recomendamos doble comillas para atributos "".

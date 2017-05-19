@@ -1,83 +1,87 @@
 Code Review
 ===========
 
-A guide for reviewing code and having your code reviewed.
+Una guía para revisar código y que tu código sea revisado.
 
-Everyone
---------
+Para todos
+----------
 
-* Accept that many programming decisions are opinions. Discuss tradeoffs, which
-  you prefer, and reach a resolution quickly.
-* Ask good questions; don't make demands. ("What do you think about naming this
-  `:user_id`?")
-* Good questions avoid judgment and avoid assumptions about the author's
-  perspective.
-* Ask for clarification. ("I didn't understand. Can you clarify?")
-* Avoid selective ownership of code. ("mine", "not mine", "yours")
-* Avoid using terms that could be seen as referring to personal traits. ("dumb",
-  "stupid"). Assume everyone is intelligent and well-meaning.
-* Be explicit. Remember people don't always understand your intentions online.
-* Be humble. ("I'm not sure - let's look it up.")
-* Don't use hyperbole. ("always", "never", "endlessly", "nothing")
-* Don't use sarcasm.
-* Keep it real. If emoji, animated gifs, or humor aren't you, don't force them.
-  If they are, use them with aplomb.
-* Talk synchronously (e.g. chat, screensharing, in person) if there are too many
-  "I didn't understand" or "Alternative solution:" comments. Post a follow-up
-  comment summarizing the discussion.
+* Acepta diferentes tipos de decisiones y opiniones al programar. Discute que cosas
+  perdiste que cosas prefieres. Intenta llegar a un acuerdo rápido.
+* Hagan preguntas bien intencionadas. No exijan ("¿Qué opinas sobre nombrarlo
+  de esta manera `:user_id`?")
+* Las buenas preguntas evitan juzgar y mal interpretar la perspectiva del autor.
+* Pide que te clarifiquen. ("No entiendo. ¿Podrías ser más especifico?")
+* Evita tomar tomar propiedad sobre cierta parte del código. ("mío","no mío", "tuyo")
+* Evita usar términos que ataquen personalmente a las personas.("Tonto", "Wey").
+  Todos somos inteligentes.
+* Se explícito. No todos entendemos tus intenciones en linea.
+* Se humilde ("No estoy seguro - Mirémoslo juntos").
+* No exageres ("siempre", "nunca", "nada", "infinitamente").
+* No uses sarcasmo.
+* Mantente autentico. Si los emojis, gifs o el humor no es lo tuyo no lo uses,
+  no es obligatorio. Y si lo son úsalos sin problema
+* Hablen en tiempo real ("chat", "hangout", "persona") si hay demasiados
+  "No entiendo" o "Encontré una solución alterna" en los comentarios. Después
+  publiquen lo que acordaron.
 
-Having Your Code Reviewed
--------------------------
+Si te están evaluando
+---------------------
 
-* Be grateful for the reviewer's suggestions. ("Good call. I'll make that
-  change.")
-* A common axiom is "Don't take it personally. The review is of the code, not you." We used to include this, but now prefer to say what we mean: Be aware of [how hard it is to convey emotion online] and how easy it is to misinterpret feedback. If a review seems aggressive or angry or otherwise personal, consider if it is intended to be read that way and ask the person for clarification of intent, in person if possible.
-* Keeping the previous point in mind: assume the best intention from the reviewer's comments.
-* Explain why the code exists. ("It's like that because of these reasons. Would
-  it be more clear if I rename this class/file/method/variable?")
-* Extract some changes and refactorings into future tickets/stories.
-* Link to the code review from the ticket/story. ("Ready for review:
-  https://github.com/organization/project/pull/1")
-* Push commits based on earlier rounds of feedback as isolated commits to the
-  branch. Do not squash until the branch is ready to merge. Reviewers should be
-  able to read individual updates based on their earlier feedback.
-* Seek to understand the reviewer's perspective.
-* Try to respond to every comment.
-* Wait to merge the branch until Continuous Integration (TDDium, TravisCI, etc.)
-  tells you the test suite is green in the branch.
-* Merge once you feel confident in the code and its impact on the project.
+* Agradece los comentarios y sugerencias ("¡Gracias!. Haré ese cambio")
+* Solíamos decir "No te tomes eso personal. Lo que se evalúa es el código, no a ti". Pero ahora preferimos decir : Considera que [es complicado entenderse por internet] y que fácil es malinterpretar el comentario de los demás. Si el review es enojado o agresivo o personal, intenta preguntar si lo que se escribió es tal cual lo que la persona quiere expresar e intenta pedir que se explique de menor forma, en persona de ser posible.
+* Entendiendo el punto anterior : asume que la persona que evalúa tiene las mejores intenciones.
+* Explica por que el código existe ("Existe por estas razones. ¿Seria mejor
+	si cambio el nombre a esta clase/variable/método?")
+* Toma esos cambios y sugerencias como parte de tus futuras tareas o funcionalidad a desarrollar
+* Pon un link en tu revisión de código en tus tareas ("Listo para revisión: https://github.com/organization/project/pull/1")
+* Antes de tu revisión mantén commits independientes en el branch. Cuando estén listos
+	para hacer merge comprime todos. Las personas que evalúan deben de ser capaces de revisar
+	todo lo hecho previamente individualmente.
+* Busca entender el punto de vista del auditor.
+* Trata de responder cada comentario.
+* Espera hacer el merge al branch hasta que el Sistema de integración continua (TDDium, TravisCI, etc.).
+	Te diga que esta en verde.
+* Haz merge hasta que estés seguro del código que quieres publicar.
 
-[how hard it is to convey emotion online]: https://www.fastcodesign.com/3036748/why-its-so-hard-to-detect-emotion-in-emails-and-texts
+[es complicado entenderse por internet]: https://www.fastcodesign.com/3036748/why-its-so-hard-to-detect-emotion-in-emails-and-texts
 
-Reviewing Code
---------------
+Para quien evalúa
+-----------------
 
-Understand why the change is necessary (fixes a bug, improves the user
-experience, refactors the existing code). Then:
+Entiende por que el cambio es necesario ("arreglar un bug",
+"mejorar la experiencia de usuario", "refactorización"). Ahora :
 
-* Communicate which ideas you feel strongly about and those you don't.
-* Identify ways to simplify the code while still solving the problem.
-* If discussions turn too philosophical or academic, move the discussion offline
-  to a regular Friday afternoon technique discussion. In the meantime, let the
-  author make the final decision on alternative implementations.
-* Offer alternative implementations, but assume the author already considered
-  them. ("What do you think about using a custom validator here?")
-* Seek to understand the author's perspective.
-* Sign off on the pull request with a :thumbsup: or "Ready to merge" comment.
+* Comunica que ideas creas que apoyas y cuales no.
+* Identifica maneras de simplificar el código pero resolviendo el problema
+* Si la discusión es demasiado académica o filosófica, platíquenlo
+	en una reunión offline. Por el momento dejen que el autor decida su solución.
+* Ofrece una alternativa de implementación. pero asume que el autor ya la
+	pensó ("¿Crees que implementar un validación personalizada funcionaria?")
+* Entiende la perspectiva del autor
+* Firma tu pull request con un comentario de thumbsup: o "Listo".
 
-Style Comments
---------------
+Comentarios de estilo
+---------------------
 
-Reviewers should comment on missed [style](../style)
-guidelines. Example comment:
+Para comentarios de estilo utiliza [style](../style)
+por ejemplo :
 
     [Style](../style):
 
-    > Order resourceful routes alphabetically by name.
+    > Los recursos no estan el orden alfabético.
 
-An example response to style comments:
+Y para corregirlo haz referencia al commit:
 
     Whoops. Good catch, thanks. Fixed in a4994ec.
 
-If you disagree with a guideline, open an issue on the guides repo rather than
-debating it within the code review. In the meantime, apply the guideline.
+Si no estas de acuerdo con los guidelines, abre un issue y lo podemos platicar.
+Por el momento aplica la norma.
+
+
+Créditos
+--------
+
+Traducido de la guía de Code Review de [thoughtbot].
+
+[thoughtbot]: https://github.com/thoughtbot/guides/tree/master/code-review

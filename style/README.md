@@ -1,22 +1,16 @@
-Style
-=====
+Estilo
+======
 
-A guide for programming in style.
+Una guía para programar con estilo.
 
-Use [Hound] to automatically review your
-GitHub pull requests for
-style guide violations.
-
-[Hound]: https://houndci.com
-
-In addition to the general guidelines below, we also have the following more
-detailed, language/framework-specific style guides:
+Ademas de estos lineamientos generales, existen reglas
+particulares a el uso de estilos de lenguajes/frameworks:
 
 * [Android](android)
 * [Backbone](backbone)
 * [CoffeeScript](coffeescript)
 * [Ember.js](ember)
-* [ERb](erb)
+* [ERb](erb)s
 * [Git](git)
 * [Haskell](haskell)
 * [HTML](html)
@@ -30,55 +24,52 @@ detailed, language/framework-specific style guides:
 * [Swift](swift)
 * [Testing](testing)
 
-Formatting
-----------
+Dar Formato
+-----------
 
-* Avoid inline comments.
-* Break long lines after 80 characters.
-* Delete trailing whitespace.
-* Don't include spaces after `(`, `[` or before `]`, `)`.
-* Don't misspell.
-* Don't vertically align tokens on consecutive lines.
-* If you break up a hash, keep the elements on their own lines and closing curly
-  brace on its own line.
-* Indent continued lines two spaces.
-* Indent private methods equal to public methods.
-* If you break up a chain of method invocations, keep each method invocation on
-  its own line. Place the `.` at the end of each line, except the last.
-  [Example][dot guideline example].
-* Use 2 space indentation (no tabs).
-* Use an empty line between methods.
-* Use empty lines around multi-line blocks.
-* Use spaces around operators, except for unary operators, such as `!`.
-* Use spaces after commas, after colons and semicolons, around `{` and before
-  `}`.
-* Use [Unix-style line endings][newline explanation] (`\n`).
-* Use [uppercase for SQL key words and lowercase for SQL identifiers].
+* Evitar comentarios sobre la línea.
+* Partir líneas mayores a 80 caracteres.
+* Borrar espacios en blanco.
+* No incluir espacios después de `(`, `[` o antes de `]`, `)`.
+* No escribir con faltas de ortografía.
+* No alinear verticalmente las fichas en líneas consecutivas.
+* Indentar, sangrado o tabular líneas continuas en dos espacios.
+* Indentar, sangrado o tabular los métodos privados iguales que los métodos públicos
+* Si rompe una cadena de invocación de método, mantener cada invocación del método en
+  su propia línea. Coloque el `.` al final de cada línea, excepto el último.
+  [Ejemplo][dot guideline example].
+* Utilizar la espacios (no tabs).
+* Utilizar una línea vacía entre métodos.
+* Utilizar líneas vacías alrededor de bloques de múltiples líneas.
+* Utilizar espacios alrededor de operadores, excepto para operadores unarios, como `!`.
+* Utilizar espacios después de comas, después de dos puntos y punto y coma, alrededor
+  de `{` y antes de `}`.
+* Utilizar [Unix-style line endings][newline explanation] (`\n`).
+* Utilizar [Mayúsculas para palabras clave SQL y minúsculas para identificadores SQL].
 
 
 [dot guideline example]: /style/ruby/sample.rb#L11
-[uppercase for SQL key words and lowercase for SQL identifiers]: http://www.postgresql.org/docs/9.2/static/sql-syntax-lexical.html#SQL-SYNTAX-IDENTIFIERS
-[newline explanation]: http://unix.stackexchange.com/questions/23903/should-i-end-my-text-script-files-with-a-newline
+[Mayúsculas para palabras clave SQL y minúsculas para identificadores SQL]: http://www.postgresql.org/docs/9.2/static/sql-syntax-lexical.html#SQL-SYNTAX-IDENTIFIERS
+[Explicación de línea nueva]: http://unix.stackexchange.com/questions/23903/should-i-end-my-text-script-files-with-a-newline
 
-Naming
+Nombrar
 ------
 
-* Avoid abbreviations.
-* Avoid object types in names (`user_array`, `email_method` `CalculatorClass`, `ReportModule`).
-* Prefer naming classes after domain concepts rather than patterns they
-  implement (e.g. `Guest` vs `NullUser`, `CachedRequest` vs `RequestDecorator`).
-* Name the enumeration parameter the singular of the collection.
-* Name variables created by a factory after the factory (`user_factory`
+* No utilizar abreviaturas.
+* No utilizar tipos de objetos en los nombres (`user_array`, `email_method`   `CalculatorClass`, `ReportModule`).
+* Nombrar clases después de conceptos de dominio en lugar de patrones que          
+  implementan (e.g. `Guest` vs `NullUser`, `CachedRequest` vs `RequestDecorator`).
+* Nombrar el parámetro de enumeración en la colección.
+* Nombre de variables creadas por un factory a partir de ella(`user_factory`
   creates `user`).
-* Name variables, methods, and classes to reveal intent.
-* Treat acronyms as words in names (`XmlHttpRequest` not `XMLHTTPRequest`),
-  even if the acronym is the entire name (`class Html` not `class HTML`).
-* Suffix variables holding a factory with `_factory` (`user_factory`).
+* Nombre de variables, métodos y clases para revelar la intención.
+* Tratar las siglas como palabras en los nombres (`XmlHttpRequest` no `XMLHTTPRequest`),
+  incluso si el acrónimo es el nombre entero (`class Html` no `class HTML`).
+* Variables con sufijo que sostienen una fábrica con `_factory` (`user_factory`).
 
-Organization
+Organización
 ------------
 
-* Order methods so that caller methods are earlier in the file than the methods
-  they call.
-* Order methods so that methods are as close as possible to other methods they
-  call.
+* Ordenar los métodos para que los métodos que llama sean anteriores en el archivo.
+* Ordenar los métodos para que los métodos estén lo más cerca posible de otros
+  métodos que llamen.

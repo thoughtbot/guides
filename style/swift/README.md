@@ -3,25 +3,24 @@ Swift
 
 [Sample](sample.swift)
 
-* Prefer `struct`s over `class`es wherever possible
-* Default to marking classes as `final`
-* Prefer protocol conformance to class inheritance
-* Break long lines after 100 characters
-* Use 2 spaces for indentation
-* Use `let` whenever possible to make immutable variables
-* Name all parameters in functions and enum cases
-* Use trailing closures
-* Let the compiler infer the type whenever possible
-* Group computed properties below stored properties
-* Use a blank line above and below computed properties
-* Group methods into specific extensions for each level of access control
+* Prefiere `struct`s sobre `class`es cuando sea posible.
+* Ponlas clases siempre como `final`.
+* Prefiere usar protocolos a herencia.
+* Divide las lineas después de 100 caracteres.
+* Usa 2 espacios para identado/sangrado/tabulación.
+* Usa `let` cuando sea posible para hacer variables inmutables.
+* Nombra todos parámetros en funciones y enumera los casos.
+* Usa trailing closures
+* Deja que el compilador infiera el tipo de dato cuando sea posible
+* Agrupa computed properties debajo de las propiedades.
+* Usa una linea blanca sobre y debajo de las computed properties.
+* Agrupa métodos en extensiones especificas para cada nivel de acceso.
 * When capitalizing acronyms or initialisms, follow the capitalization of the
   first letter.
 * When using `Void` in function signatures, prefer `()` for arguments and
   `Void` for return types.
-* Prefer strong IBOutlet references.
-* Avoid evaluating a weak reference multiple times in the same scope.
-  Strongify first, then use the strong reference.
-* Prefer to name `IBAction` and target/action methods using a verb describing
-  the action it will trigger, instead of the user action
-  (e.g., `edit:` instead of `editTapped:`)
+* Usa strong IBOutlet.
+* Evita evaluar una referencia weak multiples veces en el mismo ámbito. 
+	Conviertelo en strong y luego usa la referencia strong.
+* Nombra `IBAction` y target/action usando el verbo que describe lo que hacen.
+	ejemeplo (e.g., `edit:` instead of `editTouch:`)

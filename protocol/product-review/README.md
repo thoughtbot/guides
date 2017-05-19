@@ -1,46 +1,34 @@
-Product Review
-==============
+Revisión de Producto
+====================
 
-Cut down cycle time and focus on the user
-by getting a teammate to review your changes to the product
-before you get a code review or deploy to staging.
+Reduce el tiempo de desarrollo y enfócate en la experiencia de usuario. Dile a un amigo que  revise tu cambio antes que se mande a producción o a revisión.
 
-For each change, choose one of four techniques:
+Para cada cambios puedes hacer uso de:
 
-* In-person
-* Screencast
-* SSH tunnel
-* Video chat and screenshare
+* En persona
+* Video chat y screenshare
+* SSH
 
-In-person
----------
-
-If they are sitting next to you,
-have them review the changes in person.
-
-Screencast
+En persona
 ----------
 
-Use [Licecap] to share a screencast gif in the project's [Slack] channel.
+Si se sienta a lado de ti dile que te ayude a revisarlo en persona.
 
-[Licecap]: http://www.cockos.com/licecap/
+Video chat y screenshare
+------------------------
+
+Usen :
+
+[Hangout]: https://hangouts.google.com/?hl=es-419
 [Slack]: https://slack.com/
 
-SSH tunnel
-----------
+SSH
+----
 
-Use [ngrok] to set up an SSH tunnel to your work in progress on your laptop:
+Usa [ngrok] para configurar un SSH tunnel y trabajar desde tu laptop:
 
 [ngrok]: https://ngrok.com/
 
     ngrok -subdomain=feature-branch-name 3000
 
-Then, share the ngrok URL in the project's Slack channel.
-
-Video chat and screenshare
---------------------------
-
-Start a Google Hangout in the project's Slack channel:
-
-    /hangout
-
+Después comparte la liga con alguien.

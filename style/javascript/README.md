@@ -1,27 +1,24 @@
 JavaScript
 ==========
 
-[Sample](sample.js)
+[Ejemplo](sample.js)
 
-* Prefer ES6 classes over prototypes.
-* Use strict equality checks (`===` and `!==`) except when comparing against
-  (`null` or `undefined`).
-* Prefer [arrow functions] `=>`, over the `function` keyword except when
-  defining classes or methods.
-* Use semicolons at the end of each statement.
-* Prefer single quotes.
-* Use `PascalCase` for classes, `lowerCamelCase` for variables and functions,
-  `SCREAMING_SNAKE_CASE` for constants, `_singleLeadingUnderscore` for private
-  variables and functions.
-* Prefer [template strings] over string concatenation.
-* Prefer promises over callbacks.
-* Prefer array functions like `map` and `forEach` over `for` loops.
-* Use `const` for declaring variables that will never be re-assigned, and `let`
-  otherwise.
-* Avoid `var` to declare variables.
-* Use a [trailing comma] after each item in a multi-line array or object
-  literal, including the last item.
+* Prefiere las clases de ES6 sobre prototypes.
+* Usa  (`===` y `!==`) para comparaciones excepto cuando compares
+  (`null` o `undefined`).
+* Prefiere [arrow functions] `=>`, que `function`.Excepto definiendo clases o métodos..
+* Usamos punto y coma al final de cada instrucción.
+* Preferimos comilla simple.
+* Usa `PascalCase` para clases, `lowerCamelCase` para variables y funciones,
+  `SCREAMING_SNAKE_CASE` para constantes, `_singleLeadingUnderscore` para variables y funciones privadas.
+* Prefiere [template strings] sobre concatenación de strings ( "a" + 5 ).
+* Prefiere promises sobre callbacks.
+* Prefiere array functions como `map` y `forEach` sobre usar `for`.
+* Usa `const` para declarar variables que no serán resignadas, y `let`
+  de lo contrario.
+* Evita `var` para declarar variables.
+* Usa [coma] después de cada item ya sea multilinea o un objeto. No olvides ponerlo al ultimo item.
 
 [template strings]: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/template_strings
 [arrow functions]: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions/Arrow_functions
-[trailing comma]: /style/javascript/sample.js#L11
+[comma]: /style/javascript/sample.js#L11

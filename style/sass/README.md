@@ -1,62 +1,59 @@
-# Sass
+#Sass
 
-- [Sample](sample.scss)
-- [Default SCSS-Lint configuration](.scss-lint.yml)
-  - This configuration aligns with our team-wide guides below. It does _not_,
-    however, enforce a particular class naming structure (`SelectorFormat`),
-    which is a team decision to be made on a per-project basis.
+- [Sample] (sample.scss)
+- [Configuración predeterminada SCSS-Lint] (.scss-lint.yml)
 
-## Formatting
+## Formato
 
-* Use the SCSS syntax.
-* Use hyphens when naming mixins, extends, classes, functions & variables: `span-columns` not `span_columns` or `spanColumns`.
-* Use one space between property and value: `width: 20px` not `width:20px`.
-* Use a blank line above a selector that has styles.
-* Prefer hex color codes `#fff` or `#FFF`.
-* Avoid using shorthand properties for only one value: `background-color: #ff0000;`, not `background: #ff0000;`
-* Use `//` for comment blocks not `/* */`.
-* Use one space between selector and `{`.
-* Use double quotation marks.
-* Use only lowercase, except for hex or string values.
-* Don't add a unit specification after `0` values, unless required by a mixin.
-* Use a leading zero in decimal numbers: `0.5` not `.5`
-* Use space around operands: `$variable * 1.5`, not `$variable*1.5`
-* Avoid in-line operations in shorthand declarations (Ex. `padding: $variable * 1.5 variable * 2`)
-* Use parentheses around individual operations in shorthand declarations: `padding: ($variable * 1.5) ($variable * 2);`
-* Use double colons for pseudo-elements
-* Use a `%` unit for the amount/weight when using Sass's color functions: `darken($color, 20%)`, not `darken($color, 20)`
-* Use a trailing comma after each item in a map, including the last item.
+* Utilice la sintaxis SCSS.
+* Usar guiones al nombrar mixins, extends, classes, functions y variables: `span-columns` no` span_columns` o `spanColumns`.
+* Usar un espacio entre la propiedad y el valor: `width: 20px` no `width:20px`.
+* Utilice una línea en blanco encima de un selector que tiene estilos.
+* Preferible el uso de color con códigos hexadecimal `# fff` o` #FFF`.
+* Evite usar las propiedades abreviadas para un solo valor: `background-color: # ff0000;`, no `background: # ff0000;`
+* Use `//` para los bloques de comentario no `/ * * /`.
+* Utilice un espacio entre el selector y `{`.
+* Use comillas dobles.
+* Utilice sólo letras minúsculas, excepto para hexadecimal o valores de cadena.
+* No agregue una especificación de unidad después de los valores de "0", a menos que sea requerido por un mixin.
+* Utilice un cero en números decimales: `0.5` no` .5`
+* Utilizar espacio alrededor de los operandos: `$ variable * 1.5`, no` $ variable*1.5`
+* Evitar las operaciones en línea en las declaraciones taquigráficas (por ejemplo, "padding: $ variable * 1.5 variable * 2`)
+* Utilice paréntesis en torno a las operaciones individuales en las declaraciones abreviadas: `padding: ($ variable * 1.5) ($ variable * 2);`
+* Utilizar dos puntos para los pseudo-elementos
+* Utilice una unidad `%` para la cantidad / peso al usar las funciones de color de Sass: `dark ($ color, 20%)`, no `darkcolor ($ color, 20)`
+* Utilice una coma posterior después de cada elemento en un mapa, incluyendo el último elemento.
 
-## Order
+## Orden
 
-* Use alphabetical order for declarations.
-* Place `@extends` and `@includes` at the top of your declaration list.
-* Place media queries directly after the declaration list.
-* Place concatenated selectors second.
-* Place pseudo-states and pseudo-elements third.
-* Place nested elements fourth.
-* Place nested classes fifth.
+* Usar el orden alfabético para las declaraciones.
+* Coloque `@ extends` y` @ includes` en la parte superior de su lista de declaraciones.
+* Coloque consultas de medios directamente después de la lista de declaración.
+* Coloque los selectores concatenados en segundo lugar.
+* Colocar pseudo-estados y pseudo-elementos en tercer lugar.
+* Coloque los elementos anidados en cuarto lugar.
+* Coloque las clases anidadas en quinto lugar.
 
-## Selectors
+## Selectores
 
-* Don't use ID's for style.
-* Use meaningful names: `$visual-grid-color` not `$color` or `$vslgrd-clr`.
-* Be consistent about naming conventions for classes. For instance, if a project is using BEM, continue using it, and if it's not, do not introduce it.
-* Use ID and class names that are as short as possible but as long as necessary.
-* Avoid using the direct descendant selector `>`.
-* Avoid nesting more than 3 selectors deep.
-* Use HTML tags on vague classes that need a qualifier like `header.application` not `.main`.
-* Avoid using the HTML tag in the class name: `section.news` not `section.news-section`.
-* Avoid using HTML tags on classes for generic markup `<div>`, `<span>`: `.widgets` not `div.widgets`.
-* Avoid using HTML tags on classes with specific class names like `.featured-articles`.
-* Avoid using comma delimited selectors.
-* Avoid nesting within a media query.
+* No utilice ID para el estilo.
+* Use nombres significativos: `$ visual-grid-color` no` $ color` o `$ vslgrd-clr`.
+* Sea consistente con las convenciones de nombres para las clases. Por ejemplo, si un proyecto está usando BEM, continúe usándolo, y si no lo es, no lo introduzca.
+* Utilice nombres de ID y de clase que sean lo más cortos posible pero siempre que sea necesario.
+* Evite usar el selector descendente directo `>`.
+* Evite anidar más de 3 selectores de profundidad.
+* Usar etiquetas HTML en clases vagas que necesitan un calificador como `header.application` no` .main`.
+* Evite usar etiquetas HTML en el nombre de la clase: `section.news` no` section.news-section`.
+* Evite usar etiquetas HTML en las clases para el marcado genérico `<div>`, `<span>`: `.widgets` no` div.widgets`.
+* Evite usar etiquetas HTML en clases con nombres de clases específicos como `.featured-articles`.
+* Evite el uso de selectores delimitados por comas.
+* Evite anidar dentro de media query.
 
-## Organization
+## Organización
 
-* Use Bourbon for a Sass library.
-* Use Neat for a grid framework.
-* Use Bitters/`base` directory for styling element selectors, global variables, global extends and global mixins.
-* Use [Normalize](https://github.com/necolas/normalize.css) for browser rendering consistency, rather than a reset.
-* Use HTML structure for ordering of selectors. Don't just put styles at the bottom of the Sass file.
-* Avoid having files longer than 100 lines.
+* Utilice Bourbon una biblioteca Sass.
+* Utilice Neat para grid framework.
+* Utilizar el directorio Bitters/`base` para los selectores de elementos de estilo, variables globales, extensiones globales y mixins globales.
+* Utilice [Normalizar] (https://github.com/necolas/normalize.css) para la coherencia en la representación del navegador, en lugar de un restablecimiento.
+* Usar estructura HTML para ordenar selectores. No solo coloque estilos en la parte inferior del archivo Sass.
+* Evite tener archivos de más de 100 líneas.

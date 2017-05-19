@@ -3,16 +3,13 @@ Objective-C
 
 [Sample](sample.m)
 
-* Place `#import`s into the prefix header (`ProjectName-Prefix.pch`) only if
-  used in _many_ files.
-* Place `.xib` files under `Resources/Nibs` and their associated view files in
-  `Classes/Views`.
-* Order `#import` statements alphabetically.
-* Order `@class` directives alphabetically.
-* Order `@property` modifiers: memory management, atomicity, writability.
-* Leave out `@property` modifiers unless needed, `nonatomic` is the only one
-  needed in most cases.
-* Prefer strong IBOutlet references.
+* Colocar los `#import` en el prefijo del header (`ProjectName-Prefix.pch`) solo si se usa en _muchos_ archivos.
+* Colocar los archivos `.xib` en `Resources/Nibs` y sus archivos de asociaciones  en `Classes/Views`.
+* Ordenar las declaraciones del `#import` alfabéticamente.
+* Ordenar directivos de `@class` alfabéticamente.
+* Ordenar los modificadores de `@property`: manejo de memoria, atomicidad, capacidad de escritura.
+* Dejar afuera los modificadores `@property` a menos que sean necesarios, `nonatomic` es la única manera en la mayoría de los casos.
+* Se prefiren fuertes referencias a IBOutlet.
 * Prefer `@class` to `#import` when referring to external classes in a public
   `@interface`.
 * Prefer `@property` to declaring instance variables.

@@ -1,11 +1,11 @@
-Protocol
-========
+Protocolos
+==========
 
-Guides for getting things done.
+Una guía para empezar a trabajar.
 
-* [Communication](/protocol/communication)
+* [Comunicacion](/protocol/communication)
 * [Git](/protocol/git)
 * [iOS](/protocol/ios)
 * [Open Source](/protocol/open-source)
-* [Product Review](/protocol/product-review)
+* [Revisión de Producto](/protocol/product-review)
 * [Rails](/protocol/rails)

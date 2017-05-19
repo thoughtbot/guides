@@ -3,8 +3,8 @@ Backbone
 
 [Sample](sample.coffee)
 
-* Organize all objects in one `window.App` namespace.
-* Name collections the plural version of the model.
-* Name models without a suffix.
-* Name the router `App.Router`.
-* Name views with a `View` suffix.
+* Organizar todos los objetos en el namespace de un `window.App`.
+* Nombre colecciones la versión plural del modelo.
+* Nombrar modelos sin sufijo.
+* Nombrar el router `App.Router`.
+* Nombrar las vistas con un sufijo `View`.
