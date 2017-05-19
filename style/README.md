@@ -1,9 +1,9 @@
 Estilo
 ======
 
-Una guia para programar con estilo.
+Una guía para programar con estilo.
 
-Ademas de estos lineamientos generales, existen reglas 
+Ademas de estos lineamientos generales, existen reglas
 particulares a el uso de estilos de lenguajes/frameworks:
 
 * [Android](android)
@@ -33,8 +33,8 @@ Dar Formato
 * No incluir espacios después de `(`, `[` o antes de `]`, `)`.
 * No escribir con faltas de ortografía.
 * No alinear verticalmente las fichas en líneas consecutivas.
-* Identar, sangrado o tabular líneas continuas en dos espacios.
-* Identar, sangrado o tabular los métodos privados iguales que los métodos públicos
+* Indentar, sangrado o tabular líneas continuas en dos espacios.
+* Indentar, sangrado o tabular los métodos privados iguales que los métodos públicos
 * Si rompe una cadena de invocación de método, mantener cada invocación del método en
   su propia línea. Coloque el `.` al final de cada línea, excepto el último.
   [Ejemplo][dot guideline example].

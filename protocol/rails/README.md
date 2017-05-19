@@ -1,4 +1,4 @@
-Protocolo Rails 
+Protocolo Rails
 ===============
 
 Una guía para hacer grandiosas apps web.
@@ -9,101 +9,92 @@ Set Up Laptop
 Set up your laptop with [this script](https://github.com/thoughtbot/laptop)
 and [these dotfiles](https://github.com/thoughtbot/dotfiles).
 
-Create App
+Crear App
 ----------
 
-Get Suspenders.
+Obtener Suspenders.
 
     gem install suspenders
 
-Create the app.
+Crear la app.
 
     suspenders app --heroku true --github organization/app
 
-Set Up App
+Prepara la App
 ----------
 
-Get the code.
+Obtener el código.
 
     git clone git@github.com:organization/app.git
 
-Set up the app's dependencies.
+Obtener las dependencias de la app.
 
     cd project
     ./bin/setup
 
-Use [Heroku config](https://github.com/ddollar/heroku-config) to get `ENV`
+Usa [Heroku config](https://github.com/ddollar/heroku-config) para obtener `ENV`
 variables.
 
     heroku config:pull --remote staging
 
-Delete extra lines in `.env`, leaving only those needed for app to function
-properly. For example: `BRAINTREE_MERCHANT_ID` and `S3_SECRET`.
+Borra líneas extra en `.env`, dejando solo lo necesario para el buen funcionamiento de la app. Por ejemplo: `BRAINTREE_MERCHANT_ID` y `S3_SECRET`.
 
-Use [Foreman](https://github.com/ddollar/foreman) to run the app locally.
+Usa [Foreman](https://github.com/ddollar/foreman) para correr la aplicación de manera local.
 
     foreman start
 
-It uses your `.env` file and `Procfile` to run processes
-like Heroku's [Cedar](https://devcenter.heroku.com/articles/cedar/) stack.
+Usa el archivo `.env` y `Procfile` para correr los procesos como Heroku's [Cedar](https://devcenter.heroku.com/articles/cedar/) stack.
 
-Git Protocol
+Protocolo de Git
 ------------
 
-Follow the normal [Git Protocol](/protocol/git).
+Seguir el protocolo [Git Protocol](/protocol/git).
 
-Product Review
+Revisión de Producto
 --------------
 
-Follow the normal [Product Review protocol](/protocol/product-review).
+Seguir el protocolo [Product Review protocol](/protocol/product-review).
 
-Code Review
+Revisión de Código
 -----------
 
-Follow the normal [Code Review guidelines](/code-review). When reviewing others'
-Rails work, look in particular for:
+Seguir las guías [Code Review guidelines](/code-review). Al revisar el trabajo de otros en Rails, ver en particular lo siguiente:
 
-* Review data integrity closely, such as migrations that make irreversible
-  changes to the data, and whether there is a related todo to make a database
-  backup during the staging and production deploys.
-* Review SQL queries for potential SQL injection.
-* Review whether dependency upgrades include a reason in the commit message,
-  such as a link to the dependency's `ChangeLog` or `NEWS` file.
-* Review whether new database indexes are necessary if new columns or SQL
-  queries were added.
-* Review whether new scheduler (`cron`) tasks have been added and whether there
-  is a related todo in the project management system to add it during the
-  staging and production deploys.
+* Revisa cuidadosamente la integridad de las datos tales como las migraciones que hacen cambios irreversibles en la información así como si hay algo relacionado al respaldo de la base se datos en las etapas durante la implementación y el despliegue de la producción.
+* Revisa las consultas SQL buscando potenciales inyecciones de SQL.
+* Revisa si las actualizaciones de dependencia incluyen una razón en el mensaje del commit como lo es una liga al archivo de dependencia `ChangeLog` o `NEWS`.
+* Revisa si los indexes de una nueva base de datos son necesarios si fueron agregadas nuevas columnas o consultas de SQL.
+* Revisa si las tareas del nuevo programador (`cron`) se han añadido o si se relacionan en la administración del sistema para ser agregadas durante la implementación y el despliegue de producción.
 
-Deploy
+Despliegue
 ------
 
-View a list of new commits. View changed files.
+Ver una lista de los nuevos commits. Ver los archivos con cambios.
 
     git fetch staging
     git log staging/master..master
     git diff --stat staging/master
 
-If necessary, add new environment variables.
+En caso de ser necesario, ver variables de ambiente.
 
     heroku config:add NEW_VARIABLE=value --remote staging
 
-Deploy to [Heroku](https://devcenter.heroku.com/articles/quickstart) staging.
+Desplegar a [Heroku](https://devcenter.heroku.com/articles/quickstart).
 
     git push staging
 
-If necessary, run migrations and restart the dynos.
+En caso de ser necesario, correr las migraciones y reiniciar los dynos.
 
     heroku run rake db:migrate --remote staging
     heroku restart --remote staging
 
-[Introspect] to make sure everything's ok.
+[Introspección] para ver si todo es correcto.
 
     watch heroku ps --remote staging
 
-Test the feature in browser.
+Probar el feature en el navegador.
 
-Deploy to production.
+Despliegue a producción.
 
     git fetch production
     git log production/master..master
@@ -114,20 +105,19 @@ Deploy to production.
     heroku restart --remote production
     watch heroku ps --remote production
 
-Watch logs and metrics dashboards.
+Ver los logs y métricas de los dashboards.
 
-Close pull request and comment `Merged.`
+Cierra el pull request y comenta `Merged.`
 
-[Introspect]: http://blog.heroku.com/archives/2011/6/24/the_new_heroku_3_visibility_introspection/
+[Introspección]: http://blog.heroku.com/archives/2011/6/24/the_new_heroku_3_visibility_introspection/
 
-Set Up Production Environment
+Configuración del entorno de producción
 -----------------------------
 
-* Make sure that your [`Procfile`] is set up to run Unicorn.
-* Make sure the PG Backups add-on is enabled.
-* Create a read-only [Heroku Follower] for your production database. If a Heroku
-  database outage occurs, Heroku can use the follower to get your app back up
-  and running faster.
+* Asegurarse que tu [`Procfile`] está configurado para ejecutar Unicorn.
+* Asegurarse que el PG Backups add-on está habilitado.
+* Crear un read-only [Heroku Follower] para la producción de la base de datos. Si un corte de la base Heroku
+ ocurre, Heroku puede usar un seguidor para recuperar la base de datos y que ésta corra más rápido.
 
 [Heroku Follower]: https://devcenter.heroku.com/articles/improving-heroku-postgres-availability-with-followers
 [`Procfile`]: https://devcenter.heroku.com/articles/procfile

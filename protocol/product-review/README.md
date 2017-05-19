@@ -1,22 +1,18 @@
 Revisión de Producto
 ====================
 
-Reduce el tiempo de desarrollo y enfocate en la
-experiencia de usuario. Dile a un amigo que 
-revise tu cambio antes que se mande a producción
-o a revisión
+Reduce el tiempo de desarrollo y enfócate en la experiencia de usuario. Dile a un amigo que  revise tu cambio antes que se mande a producción o a revisión.
 
 Para cada cambios puedes hacer uso de:
 
 * En persona
 * Video chat y screenshare
-* SSH 
+* SSH
 
 En persona
 ----------
 
-Si se sienta a lado de ti
-dile que te ayude a revisarlo en persona
+Si se sienta a lado de ti dile que te ayude a revisarlo en persona.
 
 Video chat y screenshare
 ------------------------
@@ -36,5 +32,3 @@ Usa [ngrok] para configurar un SSH tunnel y trabajar desde tu laptop:
     ngrok -subdomain=feature-branch-name 3000
 
 Después comparte la liga con alguien.
-
-

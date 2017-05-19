@@ -10,7 +10,7 @@ De no seguir estas reglas, tu equipo, y tus servicios tendrán riesgo de comprom
 
 ## Comunicación y acceso seguro
 
-Las siguientes reglas aplican para que tengas un acceso seguro a tus sistemas (laptop, cuentas, etc.) y comunicación (correo, etc.) 
+Las siguientes reglas aplican para que tengas un acceso seguro a tus sistemas (laptop, cuentas, etc.) y comunicación (correo, etc.)
 
 ### Uso de contraseñas
 
@@ -44,7 +44,7 @@ Las siguientes reglas aplican a como proteger físicamente nuestras laptops y di
 
 ## Seguridad de la aplicación
 
-Las siguientes reglas aplican a como desarrollamos software a favor de nosotros mismos y los clientes. 
+Las siguientes reglas aplican a como desarrollamos software a favor de nosotros mismos y los clientes.
 
 ### Transmitir información
 

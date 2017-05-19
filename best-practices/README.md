@@ -17,12 +17,12 @@ Diseño Orientado a Objetos
 --------------------------
 
 * Evita variables Globales.
-* Evita muchos parámetros.que no dependan muchos 
+* Evita muchos parámetros que no dependan muchos.
 * Limita objetos que dependan de muchas entidades, entidades de las que depende un objeto.
 * Limita las dependencias de un objeto, entidades que dependen de un objeto.
 * Prefiere la composición en lugar de la herencia.
 * Prefiere los métodos pequeños. Entre una y cinco líneas es mejor.
-* Prefiere clases pequeñas con una sola y bien definida responsabilidad. Cuando una 
+* Prefiere clases pequeñas con una sola y bien definida responsabilidad. Cuando una
   clase excede las 100 líneas, puede estar haciendo demasiadas cosas.
 * [Dilo, no preguntes].
 
@@ -32,9 +32,9 @@ Ruby
 ----
 
 * Evita los parámetros opcionales. ¿El método hace demasiado?
-* Evita modificar el valor de una función  o constante en tiempo de ejecución(monkey-patching). 
+* Evita modificar el valor de una función  o constante en tiempo de ejecución(monkey-patching).
 * Genera los [Bundler binstubs] necesarios para el proyecto, como `rake` y
-  `rspec`, y agregalos al control de versión.
+  `rspec`, y agrégalos al control de versión.
 * Preferir las clases a los módulos al diseñar la funcionalidad que es compartida por múltiples modelos.
 * Preferir `private` cuando se indica el ámbito. Usar `protected` solo con métodos de comparación
 como `def ==(other)`, `def <(other)`, y `def >(other)`.
@@ -59,7 +59,7 @@ se pueden combinar, y para probar contra varias versiones de Ruby.
 Rails
 -----
 
-* [Añadir restricciones a las llaves foraneas][fkey] en las migraciones.
+* [Añadir restricciones a las llaves foráneas][fkey] en las migraciones.
 * Evita pasar por alto las validaciones con métodos como `save(validate: false)`,
   `update_attribute`, y `toggle`.
 * Evita instanciar más de un objeto en los controladores
@@ -71,7 +71,7 @@ Rails
 * No utilices variables de instancia en partials. Pasar variables locales a partials desde las plantillas de vista.
 * No uses fragmentos SQL o SQL (`where('inviter_id IS NOT NULL')`) fuera de los modelos.
 * Generar [Spring binstubs] necesarios para el proyecto, como `rake` y
-  `rspec`, y agregalos al control de versiones.
+  `rspec`, y agrégalos al control de versiones.
 * Si hay valores predeterminados, establézcalos en migraciones.
 * Utiliza `db/schema.rb` o `db/development_structure.sql` bajo el control de versiones.
 * Utiliza sólo una variable de instancia en cada vista.
@@ -136,7 +136,7 @@ Bundler
 
 * Especifica la [versión de Ruby] del proyecto en el `Gemfile`.
 * Usa una [pessimistic version] del `Gemfile`  
-  de las gemas para permitir el uso de funciones como 
+  de las gemas para permitir el uso de funciones como
   `rspec`, `factory_girl`, y `capybara`.
 * Usa un [versionless] `Gemfile` para gemas seguras de actualizar como
   pg, thin, and debugger.
@@ -150,7 +150,7 @@ Bundler
 Bases relacionables
 --------------------
 
-* [Usa Indexes para llaves foraneas].
+* [Usa Indexes para llaves foráneas].
 * Configura la mayoría de los campos como [`NOT NULL`].
 * En SQL solo selecciona columnas que necesitas (i.e., evita `SELECT table.*`).
 * Usa `ORDER BY` en consultas que necesiten ser desplegadas al usuario.
@@ -252,15 +252,15 @@ Objective-C
 Shell
 -----
 
-* No parsee la salida de `ls`. Ve [aquí][parsingls] para más detalles y 
+* No parsee la salida de `ls`. Ve [aquí][parsingls] para más detalles y
   alternativas.
-* No use `cat` para proveer con `stdin` un archivo a procesos que acepten 
+* No use `cat` para proveer con `stdin` un archivo a procesos que acepten
   archivos como argumentos.
 * No use `echo` con opciones, escapes, o variables (use `printf` para estos
   casos).
-* No use un `/bin/sh` [shebang][] a no ser que planee probar y ejecutar su 
-  script en al menos: el Sh como tal, Dash en modo compatible con POSIX (ya que 
-  será ejecutado en Debian), y Bash en modo compatible con POSIX (ya que 
+* No use un `/bin/sh` [shebang][] a no ser que planee probar y ejecutar su
+  script en al menos: el Sh como tal, Dash en modo compatible con POSIX (ya que
+  será ejecutado en Debian), y Bash en modo compatible con POSIX (ya que
   será ejecutado en OSX).
 * No utilice ninguna [característica][bashisms] no-POSIX cuando se use un`/bin/sh`
   [shebang][].
@@ -283,10 +283,10 @@ Shell
 * Use `1` y `0`, no `true` y `false` para representar
   variables booleanas.
 * Use `find -print0 | xargs -0`, no `find | xargs`.
-* Use comillas alrededor de cada `"$variable"` y expresiones `"$( ... )"` 
+* Use comillas alrededor de cada `"$variable"` y expresiones `"$( ... )"`
   a no ser que quiera que la variable sea divida en palabras o interpretada como variables globales.
 * Use la palabra clave `local` con variables cuyo ámbito esté dentro de la función.
-* Identifique problemas comúnes con [shellcheck][].
+* Identifique problemas comunes con [shellcheck][].
 
 [shebang]: http://en.wikipedia.org/wiki/Shebang_(Unix)
 [parsingls]: http://mywiki.wooledge.org/ParsingLs
@@ -358,13 +358,13 @@ Angular
 Ruby JSON APIs
 --------------
 
-* Revise las prácticas recomendas resaltadas en Heroku's [Guía de Diseño de API HTTP]
+* Revise las prácticas recomendadas resaltadas en Heroku's [Guía de Diseño de API HTTP]
   antes de diseñar una nueva API.
 * Use un analizador JSON rápido, por ejemplo. [`oj`][oj]
 * Escriba pruebas de integración para las endpoints de tu API. Cuando el consumidor primario de
-  la API es un cliente JavaScript mantenido dentro de la misma base de código que el proveedor de la API, escriba [especificaciones de caratcerísticas]. De otro modo escriba [especificaciones de solicitud].
+  la API es un cliente JavaScript mantenido dentro de la misma base de código que el proveedor de la API, escriba [especificaciones de características]. De otro modo escriba [especificaciones de solicitud].
 
 [Guía de Diseño de API HTTP]: https://github.com/interagent/http-api-design
 [oj]: https://github.com/ohler55/oj
-[especificaciones de caratcerísticas]: https://www.relishapp.com/rspec/rspec-rails/docs/feature-specs/feature-spec
+[especificaciones de características]: https://www.relishapp.com/rspec/rspec-rails/docs/feature-specs/feature-spec
 [especificaciones de solicitud]: https://www.relishapp.com/rspec/rspec-rails/docs/request-specs/request-spec

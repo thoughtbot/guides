@@ -1,7 +1,7 @@
 Git
 ===
 
-Una guía para programar usando versionamiento.
+Una guía para programar usando sistema de control de versiones.
 
 Maintain a Repo
 ---------------
@@ -55,7 +55,7 @@ intégralos en un commit más completo y bien explicado:
     git rebase -i origin/master
 
     * <commit-id> es el commit hasta donde quieres unificar.
-    * Incluye ~1 para incluir tambien el commit hasta donde quieres unificar.
+    * Incluye ~1 para incluir también el commit hasta donde quieres unificar.
 
     git rebase -i <commit-id>~1
 
@@ -65,7 +65,7 @@ intégralos en un commit más completo y bien explicado:
     pick 1b9a12d :soccer: Commit 2
     pick 7b4d76e :soccer: Commit 1
 
-    * Y deberias cambiarlo así (en caso de querer unificarlos todos):
+    * Y deberías cambiarlo así (en caso de querer unificarlos todos):
 
     pick e162eb3 :soccer: Commit 3
     s 1b9a12d :soccer: Commit 2
@@ -110,8 +110,8 @@ Revisión de código
 Uno o varios compañeros del equipo distinto al autor debe ayudarte a revisar tu pull request.
 Deben seguir la [guía de Revisión de código](/code-review).
 
-Ellos deberán hacer comentarios o hacer preguntas especifícas de líneas de código.
-Ya sea en tu herramienta de versionamiento o vía chat.
+Ellos deberán hacer comentarios o hacer preguntas específicas de líneas de código.
+Ya sea en tu herramienta de control de versiones o vía chat.
 
 Para cambios que se aplican por sí solos (como instaladores) deben resetear el branch
 
@@ -135,7 +135,7 @@ Haz pruebas.
     git rebase -i origin/master
 
 Haz un force-push. Esto hará que se cierre tu pull request y pon como resuelto el merge
-cuando tus commits se suban al master. También permite que [se encuente el pull request]
+cuando tus commits se suban al master. También permite que [se encuentre el pull request]
 que trajo esos cambios
 
     git push --force-with-lease origin <branch-name>
@@ -156,4 +156,4 @@ Elimina tu branch de funcionalidad en tu equipo.
 
     git branch --delete <branch-name>
 
-[se encuente el pull request]: http://stackoverflow.com/a/17819027
+[se encuentre el pull request]: http://stackoverflow.com/a/17819027

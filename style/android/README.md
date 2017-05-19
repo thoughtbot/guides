@@ -1,6 +1,5 @@
 Android
 =======
 
-* Properties of views should be alphabetized, with the exception of `id`,
-  `layout_width`, and `layout_height` which should be placed first in that
-  order.
+* Las propiedades de las vistas deben ser ordenadas alfabéticamente, a excepción del `id`,
+  `layout_width`, y `layout_height` que debe colocarse primero.

@@ -1,7 +1,7 @@
 Protocolo iOS
 ============
 
-Una guía para hacer apps de ios y android.
+Una guía para hacer apps de iOS y android.
 
 Configura tu Laptop
 -------------------
@@ -45,10 +45,10 @@ Sigue el manual de [Revisión de producto](/protocol/product-review).
 Revisión de Código
 ------------------
 
-Sigue el manual de [Revisión de Código](/code-review). Cuando revise a otros 
+Sigue el manual de [Revisión de Código](/code-review). Cuando revise a otros
 ponga atención en :
 
-* Revisar que los viewcontrollers se adieren a el Single Responsibility Principle
+* Revisar que los viewcontrollers se adhieren a el Single Responsibility Principle.
 * Revisar que CoreData no viole los limites de threads.
-* Watch for potential retain cycles with blocks
-* Revisar que los metodos que requieran parametros usen `NSParameterAssert()`
+* Revisa el potencial de los ciclos retenidos con bloques.
+* Revisar que los métodos que requieran parámetros usen `NSParameterAssert()`

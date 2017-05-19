@@ -3,6 +3,5 @@ ERb
 
 [Sample](sample.html.erb)
 
-* When wrapping long lines, keep the method name on the same line as the ERb
-  interpolation operator and keep each method argument on its own line.
-* Prefer double quotes for attributes.
+* Cuando se envuelve líneas largas, mantenga el nombre del método en la misma línea que el operador de interpolación ERb y mantenga cada argumento de método en su propia línea
+* Preferir comillas dobles para atributos.

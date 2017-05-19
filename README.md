@@ -1,7 +1,7 @@
 Guía
 ====
 
-Guía para hacer empezar a trabajar, hacer buen código, gestionar tu proyecto y mejorar tu estilo.
+Guía para empezar a trabajar, hacer buen código, gestionar tu proyecto y mejorar tu estilo.
 
 * [Mejores prácticas](./best-practices)
 * [Revisión de código](./code-review)
@@ -34,7 +34,7 @@ Aclaraciones de lenguaje (Español):
 Contributing
 ------------
 
-Por favor lee [la guía de como contibuir] antes de mandar un pull request
+Por favor lee [la guía de como contribuir] antes de mandar un pull request
 
 Si tienes acceso a hacer commit : por favor no hagas merge sin que todos consulten.
 
@@ -57,4 +57,3 @@ Originalmente creado en 2014 por thoughtbot, inc.
 
 Traducido y modificado por Brounie SA de CV. Y redistribuido por [Creative Commons
 Attribution License](http://creativecommons.org/licenses/by/3.0/).
-

@@ -3,18 +3,17 @@ CoffeeScript
 
 [Sample](sample.coffee)
 
-* Avoid conditional modifiers (lines that end with conditionals).
-* Avoid backticks.
-* Initialize arrays using `[]`.
-* Initialize empty objects and hashes using `{}`.
-* Prefer `==` and `!=` to `is` and `isnt`
-* Prefer `||` and `&&` to `or` and `and`
-* Prefer `!` over `not`
-* Prefer `@` over `this` for referencing instance properties.
-* Prefer double quotes.
-* Use hyphen-separated filenames, such as `coffee-script.coffee`.
-* Use `PascalCase` for classes, `lowerCamelCase` for variables and functions,
-  `SCREAMING_SNAKE_CASE` for constants, `_singleLeadingUnderscore` for
-  private variables and functions.
-* Use zero spaces before and one space after the colon in a colon assignment
-  (i.e. classes, objects).
+* Evite modificadores condicionales (líneas que terminan con condicionales).
+* Evitar backticks.
+* Inicializar los arreglos usando `[]`.
+* Inicializar los objetos y hashes vacíos usando `{}`.
+* Es preferible `==` y `!=` a `is` y `isnt`
+* Es preferible `||` y `&&` a `or` y `and`
+* Es preferible `!` sobre `not`
+* Es preferible `@` sobre `this` para referenciar las propiedades de la instancia.
+* Es preferible usar doble commilla.
+* Usar nombres de archivo separados por guiones, como `coffee-script.coffee`.
+* Usar `PascalCase` para clases, `lowerCamelCase` para variables y funciones,
+  `SCREAMING_SNAKE_CASE` para constantes, `_singleLeadingUnderscore` para variables y funciones privadas.
+* Usar cero espacios antes y un espacio después de los dos puntos en una asignación de dos puntos
+  (Es decir, clases, objetos).
