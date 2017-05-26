@@ -207,11 +207,16 @@ Web
 
 JavaScript
 ----------
+
 * Use the latest stable JavaScript syntax with a transpiler, such as [babel].
 * Include a `to_param` or `href` attribute when serializing ActiveRecord models,
   and use that when constructing URLs client side, rather than the ID.
+* Prefer `data-*` attributes over `id` and `class` attributes when targeting
+  HTML elements. #462
+* Avoid targeting HTML elements using classes intended for styling
+  purposes. #462
 
-[babel]: http://babeljs.io/
+[babel]: https://babeljs.io/
 
 HTML
 ----
