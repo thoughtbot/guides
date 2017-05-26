@@ -231,7 +231,7 @@ CSS
 * Use [Autoprefixer][autoprefixer] to generate vendor prefixes based on the
   project-specific browser support that is needed.
 * Prefer `overflow: auto` to `overflow: scroll`, because `scroll` will always
-  display scrollbars outside of OS X, even when content fits in the container.
+  display scrollbars outside of macOS, even when content fits in the container.
 
 [autoprefixer]: https://github.com/postcss/autoprefixer
 
