@@ -11,11 +11,6 @@ Style/Alias:
   StyleGuide: 'https://github.com/bbatsov/ruby-style-guide#alias-method'
   Enabled: false
 
-Style/AlignParameters:
-  Description: 'Here we check if the parameters on a multi-line method call or definition are aligned.'
-  StyleGuide: 'https://github.com/bbatsov/ruby-style-guide#no-double-indent'
-  Enabled: false
-
 Style/ArrayJoin:
   Description: 'Use Array#join instead of Array#*.'
   StyleGuide: 'https://github.com/bbatsov/ruby-style-guide#array-join'
@@ -114,11 +109,6 @@ Style/Documentation:
   Description: 'Document classes and non-namespace modules.'
   Enabled: false
 
-Style/DotPosition:
-  Description: 'Checks the position of the dot in multi-line method calls.'
-  StyleGuide: 'https://github.com/bbatsov/ruby-style-guide#consistent-multi-line-chains'
-  EnforcedStyle: trailing
-
 Style/DoubleNegation:
   Description: 'Checks for uses of double negation (!!).'
   StyleGuide: 'https://github.com/bbatsov/ruby-style-guide#no-bang-bang'
@@ -143,10 +133,6 @@ Style/EvenOdd:
   Description: 'Favor the use of Fixnum#even? && Fixnum#odd?'
   StyleGuide: 'https://github.com/bbatsov/ruby-style-guide#predicate-methods'
   Enabled: false
-
-Style/ExtraSpacing:
-  Description: 'Do not use unnecessary spacing.'
-  Enabled: true
 
 Style/FileName:
   Description: 'Use snake_case for source file names.'
@@ -227,24 +213,10 @@ Style/ModuleFunction:
   StyleGuide: 'https://github.com/bbatsov/ruby-style-guide#module-function'
   Enabled: false
 
-Style/MultilineOperationIndentation:
-  Description: >-
-                 Checks indentation of binary operations that span more than
-                 one line.
-  Enabled: true
-  EnforcedStyle: indented
-
 Style/MultilineBlockChain:
   Description: 'Avoid multi-line chains of blocks.'
   StyleGuide: 'https://github.com/bbatsov/ruby-style-guide#single-line-blocks'
   Enabled: false
-
-Style/MultilineMethodCallIndentation:
-  Description: >-
-                 Checks indentation of method calls with the dot operator
-                 that span more than one line.
-  Enabled: true
-  EnforcedStyle: indented
 
 Style/NegatedIf:
   Description: >-
@@ -367,7 +339,7 @@ Style/TrailingCommaInArguments:
   Description: 'Checks for trailing comma in argument lists.'
   StyleGuide: 'https://github.com/bbatsov/ruby-style-guide#no-trailing-array-commas'
   EnforcedStyleForMultiline: comma
-  SupportedStyles:
+  SupportedStylesForMultiline:
     - comma
     - consistent_comma
     - no_comma
@@ -377,7 +349,7 @@ Style/TrailingCommaInLiteral:
   Description: 'Checks for trailing comma in array and hash literals.'
   StyleGuide: 'https://github.com/bbatsov/ruby-style-guide#no-trailing-array-commas'
   EnforcedStyleForMultiline: comma
-  SupportedStyles:
+  SupportedStylesForMultiline:
     - comma
     - consistent_comma
     - no_comma
@@ -410,6 +382,41 @@ Style/WhileUntilModifier:
 Style/WordArray:
   Description: 'Use %w or %W for arrays of words.'
   StyleGuide: 'https://github.com/bbatsov/ruby-style-guide#percent-w'
+  Enabled: false
+
+# Layout
+
+Layout/AlignParameters:
+  Description: 'Here we check if the parameters on a multi-line method call or definition are aligned.'
+  StyleGuide: 'https://github.com/bbatsov/ruby-style-guide#no-double-indent'
+  Enabled: false
+
+Layout/DotPosition:
+  Description: 'Checks the position of the dot in multi-line method calls.'
+  StyleGuide: 'https://github.com/bbatsov/ruby-style-guide#consistent-multi-line-chains'
+  EnforcedStyle: trailing
+
+Layout/ExtraSpacing:
+  Description: 'Do not use unnecessary spacing.'
+  Enabled: true
+
+Layout/MultilineOperationIndentation:
+  Description: >-
+                 Checks indentation of binary operations that span more than
+                 one line.
+  Enabled: true
+  EnforcedStyle: indented
+
+Layout/MultilineMethodCallIndentation:
+  Description: >-
+                 Checks indentation of method calls with the dot operator
+                 that span more than one line.
+  Enabled: true
+  EnforcedStyle: indented
+
+Layout/InitialIndentation:
+  Description: >-
+    Checks the indentation of the first non-blank non-comment line in a file.
   Enabled: false
 
 # Lint
@@ -472,11 +479,6 @@ Lint/InvalidCharacterLiteral:
   Description: >-
                  Checks for invalid character literals with a non-escaped
                  whitespace character.
-  Enabled: false
-
-Style/InitialIndentation:
-  Description: >-
-    Checks the indentation of the first non-blank non-comment line in a file.
   Enabled: false
 
 Lint/LiteralInCondition:
