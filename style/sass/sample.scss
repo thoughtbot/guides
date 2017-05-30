@@ -37,4 +37,9 @@ $map: (
       text-decoration: underline;
     }
   }
+
+  // don't concatenate selectors
+  &__child {
+    color: $red;
+  }
 }

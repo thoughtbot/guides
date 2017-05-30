@@ -51,6 +51,7 @@
 * Avoid using HTML tags on classes with specific class names like `.featured-articles`.
 * Avoid using comma delimited selectors.
 * Avoid nesting within a media query.
+* Don't concatenate selectors using Sass's parent selector (`&`).
 
 ## Organization
 
