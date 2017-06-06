@@ -90,6 +90,13 @@ Metrics/AbcSize:
                  branches, and conditions.
   Enabled: false
 
+Metrics/BlockLength:
+  CountComments: true  # count full line comments?
+  Max: 25
+  ExcludedMethods: []
+  Exclude:
+    - "spec/**/*"
+
 Metrics/CyclomaticComplexity:
   Description: >-
                  A complexity metric that is strongly correlated to the number
