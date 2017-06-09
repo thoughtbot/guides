@@ -8,11 +8,11 @@ struct User {
 
   // if the first letter of an acronym is lowercase, the entire thing should
   // be lowercase
-  let json: AnyObject
+  let json: Any
 
   // if the first letter of an acronym is uppercase, the entire thing should
   // be uppercase
-  static func decodeFromJSON(json: AnyObject) -> User {
+  static func decode(from json: JSON) -> User {
     return User(json: json)
   }
 }
@@ -27,7 +27,7 @@ final class MyViewController: UIViewController {
 }
 
 // Use typealias when closures are referenced in multiple places
-typealias CoolClosure = Int -> Bool
+typealias CoolClosure = (Int) -> Bool
 
 // Use aliased parameter names when function parameters are ambiguous
 func yTown(some: Int, withCallback callback: CoolClosure) -> Bool {
