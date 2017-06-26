@@ -25,6 +25,9 @@ linters:
   HtmlAttributes:
     enabled: true
 
+  IdNames:
+    enabled: true
+
   ImplicitDiv:
     enabled: true
 
