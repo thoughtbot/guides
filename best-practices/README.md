@@ -377,6 +377,6 @@ Ruby JSON APIs
   provider of the API, write [feature specs]. Otherwise write [request specs].
 
 [HTTP API Design Guide]: https://github.com/interagent/http-api-design
-[oj]:
+[oj]: https://github.com/ohler55/oj
 [feature specs]: https://www.relishapp.com/rspec/rspec-rails/docs/feature-specs/feature-spec
 [request specs]: https://www.relishapp.com/rspec/rspec-rails/docs/request-specs/request-spec
