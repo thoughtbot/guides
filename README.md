@@ -9,7 +9,6 @@ Guides for getting things done, programming well, and programming in style.
 * [Protocol](./protocol)
   * [Communication](./protocol/communication)
   * [Git](./protocol/git)
-  * [iOS](./protocol/ios)
   * [Open Source](./protocol/open-source)
   * [Product Review](./protocol/product-review)
   * [Rails](./protocol/rails)
@@ -56,3 +55,5 @@ Guides is © 2017 thoughtbot, inc. It is distributed under the [Creative Commons
 Attribution License](http://creativecommons.org/licenses/by/3.0/).
 
 The names and logos for thoughtbot are trademarks of thoughtbot, inc.
+
+This is a custom fork of Guides for use within Bethel Media.
