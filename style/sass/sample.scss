@@ -38,7 +38,7 @@ $map: (
     }
   }
 
-  // don't concatenate selectors
+  // don't interpolate selectors
   &__child {
     color: $red;
   }
