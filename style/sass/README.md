@@ -47,7 +47,7 @@
 * Avoid nesting more than 3 selectors deep.
 * Avoid using comma delimited selectors.
 * Avoid nesting within a media query.
-* Don't concatenate selectors using Sass's parent selector (`&`).
+* Don't interpolate selectors using Sass's parent selector (`&`).
 
 ## Organization
 
