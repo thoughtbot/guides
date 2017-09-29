@@ -264,6 +264,21 @@ Objective-C
 * Prefer categories on `Foundation` classes to helper methods.
 * Prefer string constants to literals when providing keys or key paths to methods.
 
+Android
+-------
+
+* Each callback on an `Activity` should invoke methods on an instance of a
+  presenter object.
+* Unit test each presenter object.
+* Integration tests are optional and not encouraged.
+* Always prefix `R.id` with the `R`, even if Android Studio tries to remove it.
+* Divide packages by feature, not design pattern. The same package will likely
+  have one activity and one presenter.
+* Do not use `android:onClick`.
+* As you delve deeper into the system, change your naming to focus more on the
+  data and less on the user. Use the converse strategy when programming out
+  from the depths.
+
 Shell
 -----
 
