@@ -24,7 +24,7 @@ Rails
 
 [order-associations]: /style/rails/sample.rb#L2-L4
 [validations]: /style/rails/sample.rb#L6
-[`app/views/application`]: http://asciicasts.com/episodes/269-template-inheritance
+[`app/views/application`]: http://railscasts.com/episodes/269-template-inheritance
 
 Migrations
 ----------
