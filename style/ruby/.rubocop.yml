@@ -482,12 +482,6 @@ Lint/HandleExceptions:
   StyleGuide: 'https://github.com/bbatsov/ruby-style-guide#dont-hide-exceptions'
   Enabled: false
 
-Lint/InvalidCharacterLiteral:
-  Description: >-
-                 Checks for invalid character literals with a non-escaped
-                 whitespace character.
-  Enabled: false
-
 Lint/LiteralInCondition:
   Description: 'Checks of literals used in conditions.'
   Enabled: false
