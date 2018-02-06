@@ -376,12 +376,14 @@ Ruby JSON APIs
 
 * Review the recommended practices outlined in Heroku's [HTTP API Design Guide]
   before designing a new API.
-* Use a fast JSON parser, e.g. [`oj`][oj]
+* Use a fast JSON parser, e.g. [`oj`][oj].
+* Use [`fast_jsonapi`][fast_jsonapi] for serializing Ruby objects.
 * Write integration tests for your API endpoints. When the primary consumer of
   the API is a JavaScript client maintained within the same code base as the
   provider of the API, write [feature specs]. Otherwise write [request specs].
 
 [HTTP API Design Guide]: https://github.com/interagent/http-api-design
 [oj]: https://github.com/ohler55/oj
+[fast_jsonapi]: https://github.com/Netflix/fast_jsonapi
 [feature specs]: https://www.relishapp.com/rspec/rspec-rails/docs/feature-specs/feature-spec
 [request specs]: https://www.relishapp.com/rspec/rspec-rails/docs/request-specs/request-spec
