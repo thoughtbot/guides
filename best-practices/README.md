@@ -85,7 +85,7 @@ Rails
   patch level for a project.
 * Use `_url` suffixes for named routes in mailer views and [redirects].  Use
   `_path` suffixes for named routes everywhere else.
-* Use a [class constant rather than the stringified class name][class constant in association]
+* Use a [stringified class name rather than class constant][class constant in association]
   for `class_name` options on ActiveRecord association macros.
 * Validate the associated `belongs_to` object (`user`), not the database column
   (`user_id`).
