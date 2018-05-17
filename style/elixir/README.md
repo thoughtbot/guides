@@ -10,3 +10,6 @@ Elixir
 * Prefer pattern matching and guards in function definitions over conditionals
   in the function body.
 * Break long lines after 100 characters.
+* Order the dependencies of a module as: `use`, `import`, `alias`.
+* Put a empty line between each type of dependency.
+* Sort the dependencies in each section alphabetically.
