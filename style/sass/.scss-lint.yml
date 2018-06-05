@@ -1,4 +1,4 @@
-# Up-to-date with SCSS-Lint v0.47
+# Up-to-date with SCSS-Lint v0.50
 
 scss_files: "**/*.scss"
 
@@ -12,7 +12,6 @@ linters:
 
   BemDepth:
     enabled: false
-    max_elements: 1
 
   BorderZero:
     enabled: true
@@ -67,7 +66,6 @@ linters:
 
   HexNotation:
     enabled: false
-    style: lowercase
 
   HexValidation:
     enabled: true
@@ -93,6 +91,9 @@ linters:
     enabled: true
     style: include_zero
 
+  LengthVariable:
+    enabled: false
+
   MergeableSelector:
     enabled: true
     force_nesting: true
@@ -112,12 +113,9 @@ linters:
 
   PrivateNamingConvention:
     enabled: false
-    prefix: _
 
   PropertyCount:
     enabled: false
-    include_nested: false
-    max_properties: 10
 
   PropertySortOrder:
     enabled: true
@@ -127,7 +125,8 @@ linters:
 
   PropertySpelling:
     enabled: true
-    extra_properties: []
+    extra_properties:
+      - text-decoration-skip
     disabled_properties: []
 
   PropertyUnits:
@@ -159,11 +158,10 @@ linters:
 
   SelectorFormat:
     enabled: false
-    convention: hyphenated_BEM
 
   Shorthand:
     enabled: true
-    allowed_shorthands: [1, 2, 3]
+    allowed_shorthands: [1, 2, 3, 4]
 
   SingleLinePerProperty:
     enabled: true
@@ -175,6 +173,11 @@ linters:
   SpaceAfterComma:
     enabled: true
     style: one_space
+
+  SpaceAfterComment:
+    enabled: true
+    style: at_least_one_space
+    allow_empty_comments: true
 
   SpaceAfterPropertyColon:
     enabled: true
@@ -226,14 +229,13 @@ linters:
     enabled: true
 
   UrlFormat:
-    enabled: true
+    enabled: false
 
   UrlQuotes:
     enabled: true
 
   VariableForProperty:
     enabled: false
-    properties: []
 
   VendorPrefix:
     enabled: true

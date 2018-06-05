@@ -1,3 +1,12 @@
+coffeescript:
+  enabled: true
+  config_file: style/coffeescript/coffeelint.json
+eslint:
+  enabled: true
+  config_file: style/javascript/.eslintrc.json
+haml:
+  enabled: true
+  config_file: style/haml/haml.yml
 javascript:
   enabled: false
 jscs:

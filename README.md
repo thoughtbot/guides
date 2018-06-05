@@ -3,17 +3,18 @@ Guides
 
 Guides for getting things done, programming well, and programming in style.
 
-* [Best Practices](/best-practices)
-* [Code Review](/code-review)
-* [Protocol](/protocol)
-  * [Communication](/protocol/communication)
-  * [Git](/protocol/git)
-  * [iOS](/protocol/ios)
-  * [Open Source](/protocol/open-source)
-  * [Product Review](/protocol/product-review)
-  * [Rails](/protocol/rails)
-* [Security](/security)
-* [Style](/style)
+* [Best Practices](./best-practices)
+* [Code Review](./code-review)
+* [How to](./how-to)
+* [Protocol](./protocol)
+  * [Communication](./protocol/communication)
+  * [Git](./protocol/git)
+  * [iOS](./protocol/ios)
+  * [Open Source](./protocol/open-source)
+  * [Product Review](./protocol/product-review)
+  * [Rails](./protocol/rails)
+* [Security](./security)
+* [Style](./style)
 
 High level guidelines:
 
@@ -44,14 +45,14 @@ Credits
 
 Thank you, [contributors](https://github.com/thoughtbot/guides/graphs/contributors)!
 
-![thoughtbot](http://thoughtbot.com/images/tm/logo.png)
+![thoughtbot](http://presskit.thoughtbot.com/images/thoughtbot-logo-for-readmes.svg)
 
-Guides is maintained by [thoughtbot, inc](http://thoughtbot.com/community).
+Guides is maintained by [thoughtbot, inc](https://thoughtbot.com).
 
 License
 -------
 
-Guides is © 2014 thoughtbot, inc. It is distributed under the [Creative Commons
+Guides is © 2017 thoughtbot, inc. It is distributed under the [Creative Commons
 Attribution License](http://creativecommons.org/licenses/by/3.0/).
 
 The names and logos for thoughtbot are trademarks of thoughtbot, inc.

@@ -5,8 +5,9 @@
 @interface TBClassName () <Protocols>
 
 // Keep @properties grouped together by function
-@property (nonatomic, weak) IBOutlet UISearchBar *searchBar;
-@property (nonatomic, weak) IBOutlet UITableView *tableView;
+// Prefer strong IBOutlet references
+@property (nonatomic) IBOutlet UISearchBar *searchBar;
+@property (nonatomic) IBOutlet UITableView *tableView;
 
 @property (nonatomic) NSManagedObjectContext *managedObjectContext;
 @property (nonatomic) NSFetchedResultsController *fetchedResultsController;

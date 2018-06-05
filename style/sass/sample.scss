@@ -17,6 +17,11 @@
   }
 }
 
+$map: (
+  key-1: value-1,
+  key-2: value-2,
+);
+
 .class-two {
   @extend %placeholder;
   @include mixin;
@@ -31,5 +36,10 @@
     &:hover {
       text-decoration: underline;
     }
+  }
+
+  // don't concatenate selectors
+  &__child {
+    color: $red;
   }
 }

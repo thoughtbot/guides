@@ -5,6 +5,7 @@ Swift
 
 * Prefer `struct`s over `class`es wherever possible
 * Default to marking classes as `final`
+* Prefer protocol conformance to class inheritance
 * Break long lines after 100 characters
 * Use 2 spaces for indentation
 * Use `let` whenever possible to make immutable variables
@@ -18,3 +19,9 @@ Swift
   first letter.
 * When using `Void` in function signatures, prefer `()` for arguments and
   `Void` for return types.
+* Prefer strong IBOutlet references.
+* Avoid evaluating a weak reference multiple times in the same scope.
+  Strongify first, then use the strong reference.
+* Prefer to name `IBAction` and target/action methods using a verb describing
+  the action it will trigger, instead of the user action
+  (e.g., `edit:` instead of `editTapped:`)

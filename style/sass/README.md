@@ -25,6 +25,7 @@
 * Use parentheses around individual operations in shorthand declarations: `padding: ($variable * 1.5) ($variable * 2);`
 * Use double colons for pseudo-elements
 * Use a `%` unit for the amount/weight when using Sass's color functions: `darken($color, 20%)`, not `darken($color, 20)`
+* Use a trailing comma after each item in a map, including the last item.
 
 ## Order
 
@@ -39,16 +40,14 @@
 ## Selectors
 
 * Don't use ID's for style.
+* Avoid over-qualified selectors: `h1.page-title`, `div > .page-title`
 * Use meaningful names: `$visual-grid-color` not `$color` or `$vslgrd-clr`.
+* Be consistent about naming conventions for classes. For instance, if a project is using BEM, continue using it, and if it's not, do not introduce it.
 * Use ID and class names that are as short as possible but as long as necessary.
-* Avoid using the direct descendant selector `>`.
 * Avoid nesting more than 3 selectors deep.
-* Use HTML tags on vague classes that need a qualifier like `header.application` not `.main`.
-* Avoid using the HTML tag in the class name: `section.news` not `section.news-section`.
-* Avoid using HTML tags on classes for generic markup `<div>`, `<span>`: `.widgets` not `div.widgets`.
-* Avoid using HTML tags on classes with specific class names like `.featured-articles`.
 * Avoid using comma delimited selectors.
 * Avoid nesting within a media query.
+* Don't concatenate selectors using Sass's parent selector (`&`).
 
 ## Organization
 

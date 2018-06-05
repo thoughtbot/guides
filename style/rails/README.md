@@ -24,7 +24,7 @@ Rails
 
 [order-associations]: /style/rails/sample.rb#L2-L4
 [validations]: /style/rails/sample.rb#L6
-[`app/views/application`]: http://asciicasts.com/episodes/269-template-inheritance
+[`app/views/application`]: http://railscasts.com/episodes/269-template-inheritance
 
 Migrations
 ----------
@@ -33,8 +33,10 @@ Migrations
 
 * Set an empty string as the default constraint for non-required string and text
   fields. [Example][default example].
+* Set an explicit [`on_delete` behavior for foreign keys][add_foreign_key].
 
 [default example]: migration.rb#L6
+[add_foreign_key]: http://api.rubyonrails.org/classes/ActiveRecord/ConnectionAdapters/SchemaStatements.html#method-i-add_foreign_key
 
 Routes
 ------

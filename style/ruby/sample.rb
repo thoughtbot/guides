@@ -89,13 +89,11 @@ class SomeClass
     @_memoized_method ||= 1
   end
 
-  protected
+  private
 
   attr_reader :foo, :user_factory
   attr_accessor :bar
   attr_writer :baz
-
-  private
 
   def complex_condition?
     part_one? && part_two?

@@ -1,5 +1,5 @@
 class SomeClass
-  belongs_to :tree, class_name: Plant
+  belongs_to :tree, class_name: "Plant"
   has_many :apples
   has_many :watermelons
 
