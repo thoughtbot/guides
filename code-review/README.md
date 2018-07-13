@@ -43,8 +43,8 @@ Having Your Code Reviewed
   able to read individual updates based on their earlier feedback.
 * Seek to understand the reviewer's perspective.
 * Try to respond to every comment.
-* Wait to merge the branch until Continuous Integration (TDDium, TravisCI, etc.)
-  tells you the test suite is green in the branch.
+* Wait to merge the branch until continuous integration (TDDium, Travis CI,
+  CircleCI, etc.) tells you the test suite is green in the branch.
 * Merge once you feel confident in the code and its impact on the project.
 
 [how hard it is to convey emotion online]: https://www.fastcodesign.com/3036748/why-its-so-hard-to-detect-emotion-in-emails-and-texts
