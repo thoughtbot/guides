@@ -199,7 +199,6 @@ Email
 Web
 ---
 
-* Avoid a Flash of Unstyled Text, even when no cache is available.
 * Avoid rendering delays caused by synchronous loading.
 * Use HTTPS instead of HTTP when linking to assets.
 
