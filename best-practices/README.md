@@ -201,7 +201,7 @@ Web
 
 * Avoid a Flash of Unstyled Text, even when no cache is available.
 * Avoid rendering delays caused by synchronous loading.
-* Use https instead of http when linking to assets.
+* Use HTTPS instead of HTTP when linking to assets.
 
 JavaScript
 ----------
