@@ -32,10 +32,9 @@
 * Use alphabetical order for declarations.
 * Place `@extends` and `@includes` at the top of your declaration list.
 * Place media queries directly after the declaration list.
-* Place concatenated selectors second.
-* Place pseudo-classes and pseudo-elements third.
-* Place nested elements fourth.
-* Place nested classes fifth.
+* Place pseudo-classes and pseudo-elements second.
+* Place nested elements third.
+* Place nested classes fourth.
 
 ## Selectors
 
