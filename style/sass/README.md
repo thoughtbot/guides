@@ -50,9 +50,6 @@
 
 ## Organization
 
-* Use Bourbon for a Sass library.
-* Use Neat for a grid framework.
-* Use Bitters/`base` directory for styling element selectors, global variables, global extends and global mixins.
-* Use [Normalize](https://github.com/necolas/normalize.css) for browser rendering consistency, rather than a reset.
+* Use a `base` directory for styling element selectors, global variables, global extends and global mixins.
 * Use HTML structure for ordering of selectors. Don't just put styles at the bottom of the Sass file.
 * Avoid having files longer than 100 lines.
