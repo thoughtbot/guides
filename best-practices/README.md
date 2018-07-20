@@ -372,7 +372,6 @@ Ruby JSON APIs
 
 * Review the recommended practices outlined in Heroku's [HTTP API Design Guide]
   before designing a new API.
-* Use a fast JSON parser, e.g. [`oj`][oj]
 * Write integration tests for your API endpoints. When the primary consumer of
   the API is a JavaScript client maintained within the same code base as the
   provider of the API, write [feature specs]. Otherwise write [request specs].

@@ -8,3 +8,10 @@ open a new pull request.
 Since these are our guides, we want everyone at thoughtbot to see them. We have
 a lot of offices across a lot of timezones, so we leave all PRs open for at
 least a week to get feedback from everyone.
+
+## Content
+
+Decisions about which libraries to use should live in template projects such
+as [Suspenders].
+
+[Suspenders]: https://github.com/thoughtbot/suspenders
