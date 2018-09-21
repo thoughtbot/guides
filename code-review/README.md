@@ -1,7 +1,8 @@
 Code Review
 ===========
 
-A guide for reviewing code and having your code reviewed.
+A guide for reviewing code and having your code reviewed. Watch a presentation
+that covers this material from [Derek Prior at RailsConf 2015](https://www.youtube.com/watch?v=PJjmw9TRB7s).
 
 Everyone
 --------
