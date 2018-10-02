@@ -108,3 +108,8 @@ and keep the thread updated with new messages as they appear.
 [Constable]: https://constable.io
 
 Further discussion of security takes place in the `#security` channel in Slack.
+
+### Security Practice
+
+There are many hacking competitions that will help you with your security skills.
+PicoCTF and hackthis.co.uk are good ones.
