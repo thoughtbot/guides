@@ -47,7 +47,7 @@ Having Your Code Reviewed
 * Wait to merge the branch until continuous integration (TDDium, Travis CI,
   CircleCI, etc.) tells you the test suite is green in the branch.
 * Merge once you feel confident in the code and its impact on the project.
-* Final editorial control rests with the PR author.
+* Final editorial control rests with the pull request author.
 
 [how hard it is to convey emotion online]: https://www.fastcodesign.com/3036748/why-its-so-hard-to-detect-emotion-in-emails-and-texts
 
