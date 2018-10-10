@@ -47,6 +47,7 @@ Having Your Code Reviewed
 * Wait to merge the branch until continuous integration (TDDium, Travis CI,
   CircleCI, etc.) tells you the test suite is green in the branch.
 * Merge once you feel confident in the code and its impact on the project.
+* Final editorial control rests with the PR author.
 
 [how hard it is to convey emotion online]: https://www.fastcodesign.com/3036748/why-its-so-hard-to-detect-emotion-in-emails-and-texts
 
@@ -65,6 +66,7 @@ experience, refactors the existing code). Then:
   them. ("What do you think about using a custom validator here?")
 * Seek to understand the author's perspective.
 * Sign off on the pull request with a :thumbsup: or "Ready to merge" comment.
+* Remember that you are here to provide feedback, not to be a gatekeeper.
 
 Style Comments
 --------------
