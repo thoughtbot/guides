@@ -207,8 +207,11 @@ JavaScript
   HTML elements. #462
 * Avoid targeting HTML elements using classes intended for styling
   purposes. #462
+* Use [Prettier] to ensure consistent formatting across the codebase. Run
+  Prettier during CI and, if any files would be changed, fail the build.
 
 [babel]: https://babeljs.io/
+[Prettier]: https://prettier.io/
 
 HTML
 ----
