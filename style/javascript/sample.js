@@ -1,4 +1,6 @@
-object = { spacing: true }
+object = { spacing: true };
+
+array = [1, 2, 3];
 
 class Cat {
   canBark() {
@@ -7,6 +9,6 @@ class Cat {
 }
 
 const somePerson = {
-  name: 'Ralph',
-  company: 'thoughtbot',
+  name: "Ralph",
+  company: "thoughtbot"
 };

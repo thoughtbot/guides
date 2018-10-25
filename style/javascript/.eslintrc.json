@@ -104,7 +104,7 @@
     ],
     "array-bracket-spacing": [
       2,
-      "always"
+      "never"
     ],
     "indent": [
       2,
@@ -115,7 +115,7 @@
     ],
     "quotes": [
       2,
-      "single",
+      "double",
       {
         "avoidEscape": true
       }
