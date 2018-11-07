@@ -9,7 +9,7 @@ A guide for working well together.
 - Agree Scope (Pairing for two hours? Until the ticket is complete? Just get past the bug?)
 - Agree Physical/Virtual Location ("Will we both be comfortable here?")
 - Agree Working Environment (Two keyboards? Text editor and other tools)
-- Agree Pairing Style (Time-based? Ping pong? To the next traffic light?)
+- Agree Pairing Style (Time-based? Ping pong?)
 
 **During:**
 
