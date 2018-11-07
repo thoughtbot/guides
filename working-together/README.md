@@ -16,7 +16,7 @@ A guide for working well together.
 - Keep the chat going (Think aloud. Encourage/support)
 - Keep switching (Follow the pairing style)
 - Keep both involved ("Could we do this another way?")
-- Keep breaking (Have a break, have a…)
+- Keep breaking ([Have a break, have a…](https://www.youtube.com/watch?v=fejBO1HZXVQ))
 - Keep checking in ("Could we search for a guide separately?")
 
 **After:**
