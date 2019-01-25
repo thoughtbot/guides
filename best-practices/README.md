@@ -176,12 +176,6 @@ Postgres
 [compound index]: http://www.postgresql.org/docs/9.2/static/indexes-bitmap-scans.html
 [partial index]: http://www.postgresql.org/docs/9.1/static/indexes-partial.html
 
-Background Jobs
----------------
-
-* Store IDs, not `ActiveRecord` objects for cleaner serialization, then re-find
-  the `ActiveRecord` object in the `perform` method.
-
 Email
 -----
 
