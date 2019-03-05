@@ -16,5 +16,7 @@ ruby:
   enabled: true
   config_file: style/ruby/.rubocop.yml
 scss:
+  enabled: false
+stylelint:
   enabled: true
-  config_file: style/sass/.scss-lint.yml
+  config_file: style/sass/.stylelintrc.json
