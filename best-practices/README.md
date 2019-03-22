@@ -94,7 +94,7 @@ Rails
 * Prefer `Time.zone.parse("2014-07-04 16:05:37")` over `Time.parse("2014-07-04 16:05:37")`
 * Use `ENV.fetch` for environment variables instead of `ENV[]`so that unset
   environment variables are detected on deploy.
-* [Use blocks][date-block] when declaring date and time attributes in FactoryGirl factories.
+* [Use blocks][date-block] when declaring date and time attributes in FactoryBot factories.
 * Use `touch: true` when declaring `belongs_to` relationships.
 
 [date-block]: /best-practices/samples/ruby.rb#L10
@@ -142,7 +142,7 @@ Bundler
 
 * Specify the [Ruby version] to be used on the project in the `Gemfile`.
 * Use a [pessimistic version] in the `Gemfile` for gems that follow semantic
-  versioning, such as `rspec`, `factory_girl`, and `capybara`.
+  versioning, such as `rspec`, `factory_bot`, and `capybara`.
 * Use a [versionless] `Gemfile` declarations for gems that are safe to update
   often, such as pg, thin, and debugger.
 * Use an [exact version] in the `Gemfile` for fragile gems, such as Rails.

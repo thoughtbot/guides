@@ -5,7 +5,7 @@ class PostSerializer < ActiveModel::Serializer
   delegate :to_param, to: :object
 end
 
-FactoryGirl.define do
+FactoryBot.define do
   factory :event do
     start_on { 1.week.from_now }
   end
