@@ -55,34 +55,10 @@ our laptops and mobile devices that may contain customer or user data.
 
 ## Application Security
 
-The following guidelines apply to how we develop
-software on behalf of ourselves and clients.
+The [application security guidelines] apply to how we develop software on behalf
+of ourselves and clients.
 
-### Transmitting Information
-
-* Don't accept passwords or session tokens over HTTP.
-* Use HTTPS for all web traffic.
-* Use HTTPS in the beginning; it's harder to introduce later.
-* Use HTTPS redirects for HTTP traffic.
-* Use [HSTS](http://tools.ietf.org/html/rfc6797) headers to enforce HTTPS
-  traffic.
-* Use secure cookies.
-* Avoid protocol-relative URLs.
-
-### Storing Information
-
-* Don't log passwords.
-* Don't store passwords in plain text.
-* Don't hash passwords using a reversible cipher.
-* Don't hash passwords using a broken cipher, such as MD5 or SHA1.
-
-### Preventing Vulnerabilities and Regressions
-
-During active development of a codebase,
-track security alerts in Continuous Integration builds
-with tools such as [Bundler Audit].
-
-[Bundler Audit]: https://robots.thoughtbot.com/handling-security-issues-in-open-source-projects#one-thing-end-users-can-do
+[application security guidelines]: application.md
 
 ## Handling Vulnerabilities
 
