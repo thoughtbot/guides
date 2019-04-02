@@ -25,7 +25,7 @@ A guide for working well together.
 
 ## Meeting Guidelines
 
-Here are some guidelines to make people feel included and respected during 
+Here are some guidelines to help people feel included and respected during 
 meetings:
 
 * **Be kind:** Treat each other with respect.
