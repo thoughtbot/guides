@@ -28,7 +28,7 @@ A guide for working well together.
 Here are some guidelines to make people feel included and respected during 
 meetings:
 
-* **Be nice:** Treat everyone as you would like to be treated.
+* **Be kind:** Treat each other with respect.
 * **Remote matters:** Listen for and solicit input from remote members so 
 their voice is heard.
   * Ensure the space is set up so everyone can see each 
