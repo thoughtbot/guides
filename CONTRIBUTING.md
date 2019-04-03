@@ -1,7 +1,12 @@
 # Contributing
 
-We love pull requests. If you have something you want to add or remove, please
-open a new pull request.
+We love contributions from everyone. By participating in this project, you
+agree to abide by the [thoughtbot code of conduct][tb-coc].
+
+We expect everyone to follow the code of conduct anywhere in thoughtbot's
+project codebases, issue trackers, chatrooms, and mailing lists.
+
+[tb-coc]: https://thoughtbot.com/open-source-code-of-conduct
 
 ## Getting Feedback
 
