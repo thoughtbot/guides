@@ -26,7 +26,7 @@ attack, likelihood of attack, ease of mitigating the attack, and severity of
 attack.
 
 Anything not in the list are things you cannot use as a reason to do something.
-Since the list is prioritized, you can use it to help it to prioritize tickets
+Since the list is prioritized, you can use it to help to prioritize tickets
 or split tickets.
 
 ## Library updates
