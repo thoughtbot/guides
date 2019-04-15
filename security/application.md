@@ -184,7 +184,7 @@ one-direction hash. When someone finds a way to generate the same hash for two
 different inputs, the hashing function is considered insecure. The American
 National Institute of Standards and Technology (NIST) maintains [a list of
 approved hash algorithms](https://csrc.nist.gov/Projects/Hash-Functions); as of
-this writing they recommend a SHA-3 algorithm.
+this writing SHA-2 and SHA-3 are approved.
 
 Note that base64 encoding is not a hashing function, since it intentionally can
 be decoded.
