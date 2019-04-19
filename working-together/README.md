@@ -49,8 +49,8 @@ doodle to synthesize the information in a meeting.
 * **Step up, step back:** After you speak, let others speak. If you are 
 speaking often, make sure others have had a chance to say something.
 * **Apply the Shine Theory:** Notice if someone is being cut off or ignored. Help 
-shine the light back on that contributor by employing [shine 
-theory](https://www.shinetheory.com/).
+shine the light back on that contributor by repeating their idea, giving clear 
+support and credit to its source.
 * **Give credit:** Acknowledge input from others and highlight contributors. 
 Show encouragement and, if you agree with something, call it out. Ensure that 
 even the quiet voices are heard and supported.
