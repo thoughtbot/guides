@@ -37,14 +37,8 @@ others' faces.
 clearly.
 * **Introduce everyone:** Don't assume everyone has met before. Introductions 
 help break the ice and give an opportunity for voices to be heard.
-* **Non-verbal Communication:** Remember that your expressions and modes of 
-communication are important.
-  * Your facial expression can say a lot, even without words.
-  * If you're comfortable, eye contact can help keep people engaged and show 
-you're interested in what someone has to say.
-  * Distractions aren't always bad. Be mindful that others can have different 
-ways of engaging in a discussion. For example, for some it can be helpful to 
-doodle to synthesize the information in a meeting.
+* **Pay Attention:** Be present with others during a meeting, but also engage 
+and communicate in the way you feel most comfortable.
 * **Be respectful of others' schedules:** Try to start and end meetings on time.
 * **Step up, step back:** After you speak, let others speak. If you are 
 speaking often, make sure others have had a chance to say something.
