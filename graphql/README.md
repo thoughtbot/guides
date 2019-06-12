@@ -15,6 +15,9 @@ A curated list of resources for learning GraphQL.
 - **[Learning GraphQL](http://shop.oreilly.com/product/0636920137269.do)** A
   clear introduction to GraphQL technology and a walk through of building a
   GraphQL server.
+- **[GraphQL: A Query Language for your
+  API](https://www.dropbox.com/s/svqe68hpdiixf0g/presentation.pdf?dl=0)**
+  Presentation introducing GraphQL to thoughtbot.
 
 ### Public GraphQL APIs
 
