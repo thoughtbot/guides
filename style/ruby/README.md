@@ -11,8 +11,18 @@ Ruby
 * Avoid explicit return statements. [#48]
 * Avoid using semicolons. [#108]
 * Avoid bang (!) method names. Prefer descriptive names. [#122]
+* Don't include spaces after `(`, `[` or before `]`, `)`.
 * Don't use `self` explicitly anywhere except class methods (`def self.method`)
   and assignments (`self.attribute =`). [#89]
+* Don't vertically align tokens on consecutive lines.
+* If you break up a chain of method invocations, keep each method invocation on
+  its own line. Place the `.` at the end of each line, except the last.
+* If you break up a hash, keep the elements on their own lines and closing curly
+  brace on its own line.
+* Indent continued lines two spaces.
+* Indent private methods equal to public methods.
+* Name variables created by a factory after the factory (`user_factory`
+  creates `user`).
 * Prefer nested class and module definitions over the shorthand version
   [Example][class definition example] [#332]
 * Prefer `detect` over `find`. [0d819844]
@@ -27,8 +37,13 @@ Ruby
 * Prefer `if` over `unless`. [#254]
 * Use `_` for unused block parameters. [0d819844]
 * Prefix unused variables or parameters with underscore (`_`). [#335]
+* Suffix variables holding a factory with `_factory` (`user_factory`).
+* Use 2 space indentation (no tabs).
 * Use a leading underscore when defining instance variables for memoization.
   [#373]
+* Use an empty line between methods.
+* Use spaces after commas, after colons and semicolons, around `{` and before
+  `}`.
 * Use `%{}` for single-line strings containing double-quotes that require 
   interpolation. [36491dbb9]
 * Use `{...}` for single-line blocks. Use `do..end` for multi-line blocks.
