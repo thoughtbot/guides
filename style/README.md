@@ -54,6 +54,7 @@ Formatting
   `}`.
 * Use [Unix-style line endings][newline explanation] (`\n`).
 * Use [uppercase for SQL key words and lowercase for SQL identifiers].
+* Prefer `<` over `>`. [#556]
 
 
 [dot guideline example]: /style/ruby/sample.rb#L11
