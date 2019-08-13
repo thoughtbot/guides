@@ -1,7 +1,9 @@
 Web Performance
 ===============
 
-Web performance refers to the speed in which web pages are downloaded and displayed on the user's web browser. Web performance optimization (WPO), or website optimization is the field of knowledge about increasing web performance.
+Web performance refers to the speed in which web pages are downloaded and
+displayed on the user's web browser. Web performance optimization (WPO), or
+website optimization is the field of knowledge about increasing web performance.
 
 
 Resources
@@ -11,11 +13,16 @@ Resources
 * [Fast load times](https://web.dev/fast)
 * [Your first performance budget with Lighthouse](https://bitsofco.de/your-first-performance-budget-with-lighthouse/)
 * [Visualise performance impact between deploys (with Calibre)](https://calibreapp.com/blog/visualise-performance-impact-between-deploys/)
-* [CSS Wizardy Archive](https://csswizardry.com/archive/) - A reverse-chronological list of over 200 posts from CSS Wizardry covering CSS, architecture, performance, and web development.
+* [CSS Wizardy Archive](https://csswizardry.com/archive/) - A reverse-
+  chronological list of over 200 posts from CSS Wizardry covering CSS,
+  architecture, performance, and web development.
 
 
 Tools
 -----
 
-* [Google Lighthouse](https://developers.google.com/web/tools/lighthouse/) - Lighthouse is an open-source, automated tool for improving the quality of web pages.
-* [Calibre](https://calibreapp.com/) - World-class web performance monitoring for teams; powered by Google Lighthouse.
+* [Google Lighthouse](https://developers.google.com/web/tools/lighthouse/) -
+  Lighthouse is an open-source, automated tool for improving the quality of web
+  pages.
+* [Calibre](https://calibreapp.com/) - World-class web performance monitoring
+  for teams; powered by Google Lighthouse.
