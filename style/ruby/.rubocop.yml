@@ -346,7 +346,7 @@ Style/SpecialGlobalVars:
 Style/StringLiterals:
   Description: 'Checks if uses of quotes match the configured preference.'
   StyleGuide: 'https://github.com/bbatsov/ruby-style-guide#consistent-string-literals'
-  EnforcedStyle: double_quotes
+  EnforcedStyle: single_quotes
   Enabled: true
 
 Style/TrailingCommaInArguments:
