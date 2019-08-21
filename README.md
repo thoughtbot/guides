@@ -17,6 +17,7 @@ Guides for getting things done, programming well, and programming in style.
   * [Rails](./protocol/rails)
 * [Security](./security)
 * [Style](./style)
+* [Web Performance](./web-performance)
 * [Working Together](./working-together)
 
 High level guidelines:
