@@ -221,13 +221,19 @@ HTML
 * Use closing tags for all elements. Implicitly closed elements can be 
   unpredictable and have unintended consequences
 * Prefer a HTML5 doctype and UTF-8 charset
-* Ensure elements intended to be used in either the `<head>` and `<body>` 
-  elements are scoped properly
+* Ensure elements are scoped properly
+  * Elements such as `<title>` and `<meta>` should be placed within the page's 
+    `<head>` element
+  * Elements such as `<p>`, `<nav>`, `<div>`, etc. should be placed within the 
+    page's `<body>` element
 * Ensure `id`s are unique
-* Append relevant attribute values to an existing attribute value, if present
+* Prefer appending attribute values instead of declaring redunant attribute names
+  * For example, if adding a class of `c-card--featured`, add it to the existing
+    class declaration (`class="c-card c-card--featured"`, not 
+    `class="c-card" class="c-card--featured"`)
 * Avoid using emoji and other exotic characters as attribute values
 * Avoid restricting viewport zooming
-* Ensure [parent elements contain no more than 60 child elements](excessive-dom-size)
+* Ensure [parent elements contain no more than 60 child elements][excessive-dom-size]
 * Use `<button>` elements instead of `<a>` elements for actions.
   * Use `type="button"` for button elements used outside of forms to prevent the
     browser from trying to submit form data
