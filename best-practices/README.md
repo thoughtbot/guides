@@ -220,7 +220,7 @@ HTML
 * Use double quotes to wrap element attributes
 * Use closing tags for all elements. Implicitly closed elements can be 
   unpredictable and have unintended consequences
-* Prefer a HTML5 doctype and utf-8 charset
+* Prefer a HTML5 doctype and UTF-8 charset
 * Ensure elements intended to be used in either the `<head>` and `<body>` 
   elements are scoped properly
 * Ensure `id`s are unique
