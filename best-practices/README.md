@@ -216,7 +216,26 @@ JavaScript
 HTML
 ----
 
-* Use `<button>` tags over `<a>` tags for actions.
+* Use lowercase text for elements and attributes
+* Use double quotes to wrap element attributes
+* Use closing tags for all elements. Implicitly closed elements can be 
+  unpredictable and have unintended consequences
+* Prefer a HTML5 doctype and utf-8 charset
+* Ensure elements intended to be used in either the `<head>` and `<body>` 
+  elements are scoped properly
+* Ensure `id`s are unique
+* Append relevant attribute values to an existing attribute value, if present
+* Avoid using emoji and other exotic characters as attribute values
+* Avoid restricting viewport zooming
+* Ensure [parent elements contain no more than 60 child elements](excessive-dom-size)
+* Use `<button>` elements instead of `<a>` elements for actions.
+  * Use `type="button"` for button elements used outside of forms to prevent the
+    browser from trying to submit form data
+  * Use a `href` attribute for `<a>` elements with a valid location
+* Ensure heading elements are used to section content, and heading levels are 
+  not skipped
+
+[excessive-dom-size]: https://developers.google.com/web/tools/lighthouse/audits/dom-size
 
 CSS
 ---
