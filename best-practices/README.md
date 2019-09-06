@@ -232,7 +232,7 @@ CSS
   project-specific browser support that is needed.
 * Prefer `overflow: auto` to `overflow: scroll`, because `scroll` will always
   display scrollbars outside of macOS, even when content fits in the container.
-* [Create breakpoints](breakpoints) when the content "breaks," and is awkward or 
+* [Create breakpoints][breakpoints] when the content "breaks," and is awkward or 
   difficult to read,
   * Avoid creating breakpoints that target specific devices
   * Prefer `em` units instead of `px` for breakpoint values
