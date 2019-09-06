@@ -232,8 +232,15 @@ CSS
   project-specific browser support that is needed.
 * Prefer `overflow: auto` to `overflow: scroll`, because `scroll` will always
   display scrollbars outside of macOS, even when content fits in the container.
+* [Create breakpoints][breakpoints] when the content "breaks," and is awkward or 
+  difficult to read,
+  * Avoid creating breakpoints that target specific devices
+  * Prefer `em` units instead of `px` for breakpoint values
+  * Start with the smallest viewport size and work upwards using 
+    `min-width`/`min-height`
 
 [autoprefixer]: https://github.com/postcss/autoprefixer
+[breakpoints]: http://bradfrost.com/blog/post/7-habits-of-highly-effective-media-queries/
 
 Sass
 ----
@@ -242,6 +249,13 @@ Sass
   (e.g. `image-url` and `font-url`), so that Rails' Asset Pipeline will re-write
   the correct paths to assets.
 * Prefer mixins to `@extend`.
+* Use maps and variables to codify and centralize breakpoint values
+  * Prefer abstract names such as `small`, `medium`, `large`, etc. instead of 
+    specific devices
+  * Nest breakpoints inside of the relevant selector
+  * If a component needs a specific breakpoint to work, keep it with the 
+    relevant component partial. If other components need the same value, 
+    integrate it into the centralized breakpoint list
 
 [sass-rails]: https://github.com/rails/sass-rails
 [asset-helpers]: https://github.com/rails/sass-rails#asset-helpers
