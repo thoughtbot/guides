@@ -236,7 +236,8 @@ CSS
   difficult to read,
   * Avoid creating breakpoints that target specific devices
   * Prefer `em` units instead of `px` for breakpoint values
-  * Start with a mobile breakpoint and work outwards using `min-width`/`min-height`
+  * Start with the smallest viewport size and work outwards using 
+    `min-width`/`min-height`
 
 [autoprefixer]: https://github.com/postcss/autoprefixer
 [breakpoints]: http://bradfrost.com/blog/post/7-habits-of-highly-effective-media-queries/
