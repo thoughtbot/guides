@@ -222,7 +222,7 @@ HTML
   unpredictable and have unintended consequences
 * Prefer a HTML5 doctype and UTF-8 charset
 * Ensure elements are scoped properly
-  * Elements such as `<title>` and `<meta>` should be placed within the page's 
+  * Elements such as `<title>` and `<meta>` must be placed within the page's 
     `<head>` element
   * Elements such as `<p>`, `<nav>`, `<div>`, etc. should be placed within the 
     page's `<body>` element
