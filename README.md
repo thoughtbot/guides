@@ -15,6 +15,7 @@ Guides for getting things done, programming well, and programming in style.
   * [Open Source](./protocol/open-source)
   * [Product Review](./protocol/product-review)
   * [Rails](./protocol/rails)
+  * [React](./protocol/react)
 * [Security](./security)
 * [Style](./style)
 * [Web Performance](./web-performance)
