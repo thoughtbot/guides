@@ -227,7 +227,7 @@ HTML
   * Elements such as `<p>`, `<nav>`, `<div>`, etc. should be placed within the 
     page's `<body>` element
 * Ensure `id`s are unique
-* Prefer appending attribute values instead of declaring redunant attribute names
+* Prefer appending attribute values instead of declaring redundant attribute names
   * For example, if adding a class of `c-card--featured`, add it to the existing
     class declaration (`class="c-card c-card--featured"`, not 
     `class="c-card" class="c-card--featured"`)
