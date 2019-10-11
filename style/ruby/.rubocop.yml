@@ -2,6 +2,10 @@ AllCops:
   Exclude:
     - db/schema.rb
 
+require:
+  - rubocop-rails
+  - rubocop-performance
+
 Naming/AccessorMethodName:
   Description: Check the naming of accessor methods for get_/set_.
   Enabled: false
