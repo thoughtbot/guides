@@ -38,4 +38,4 @@ The benefits of Emotional Intelligence regarding a business' operations and prof
 
 ----
 
-[Return](README.md)
+[Return](emotional-intelligence.md)
