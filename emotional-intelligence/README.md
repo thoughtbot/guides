@@ -1,7 +1,7 @@
 # Emotional Intelligence
 
 thoughtbot places a high value on developing and fostering a culture of
-emotional intelligence.
+Emotional Intelligence.
 
 ## What Emotional Intelligence Is
 
