@@ -3,6 +3,7 @@ coffeescript:
 eslint:
   enabled: true
   config_file: style/javascript/.eslintrc.json
+  version: 6.3.0
 haml:
   enabled: true
   config_file: style/haml/haml.yml
