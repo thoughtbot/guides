@@ -96,6 +96,7 @@ Rails
   environment variables are detected on deploy.
 * [Use blocks][date-block] when declaring date and time attributes in FactoryBot factories.
 * Use `touch: true` when declaring `belongs_to` relationships.
+* Use `app/models` for model objects and `app/services` for command objects.
 
 [date-block]: /best-practices/samples/ruby.rb#L10
 [fkey]: http://robots.thoughtbot.com/referential-integrity-with-foreign-keys
