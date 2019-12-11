@@ -10,6 +10,7 @@ Guides for getting things done, programming well, and programming in style.
 * [How to](./how-to)
 * [Protocol](./protocol)
   * [Communication](./protocol/communication)
+  * [Accessibility](./protocol/accessibility)
   * [Git](./protocol/git)
   * [iOS](./protocol/ios)
   * [Open Source](./protocol/open-source)
