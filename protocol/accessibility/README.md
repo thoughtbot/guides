@@ -43,7 +43,7 @@ Quick checks
 
 ### Development 
 
-* Ensure semantic markup is to describe content
+* Ensure semantic markup is used to describe content
 * Ensure content does not disappear off the screen when zoomed
 * Ensure that interactive content can be tabbed to and activated using the keyboard, and that the tab order matches reading order
 * Ensure that heading elements are used, and that heading levels are placed in a logical order
