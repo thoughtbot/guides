@@ -12,8 +12,8 @@ thoughtbot strives for AA level [Web Content Accessibility Guideline (WCAG)][wca
 
 Automated checks can catch a lot of common issues before they reach production.
 
-* Prefer running audits on your local build using a tool such as [WAVE][wave] or the [axe Chrome extension][axe-chrome]
-* Prefer using a CI/CD solution such as [AccessLint][accesslint] or [axe][axe]
+* Use a tool such as [WAVE][wave] or the [axe Chrome extension][axe-chrome] to run audits on your local build 
+* Use a CI/CD solution such as [AccessLint][accesslint] or [axe][axe]
 
 ### Usability
 
