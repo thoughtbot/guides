@@ -73,7 +73,7 @@ If a thorough analysis needs to be performed, use the following workflow to perf
     * **N/A**: This test does not apply to this component
     * **Pass**: This component meets this test's criteria
     * **Moderate**: This component does not meet this test's criteria, but can worked around
-    * **Critical**: This component does not meet this test's criteria, but cannot be worked around
+    * **Critical**: This component does not meet this test's criteria, and cannot be worked around
 1. Once a component is completed, update its status
 1. Continue until all user flows have been audited
 
