@@ -63,7 +63,7 @@ Full audit
 
 When at all possible, use the guidelines in the basics and quick check sections to attempt to address accessibility in a proactive way. 
 
-If a thorough analysis needs to be performed, use the following workflow to perform a "deep" accessibility audit that checks against most WCAG criterion:
+If a thorough analysis needs to be performed, use the following workflow to perform a comprehensive accessibility audit that checks against most WCAG criterion:
 
 1. Create a copy of [the Accessibility Audit Template][accessibility-audit-template] spreadsheet in Google Drive
 1. Break apart the site or app to be audited into discrete user flow sections, ordered by importance
