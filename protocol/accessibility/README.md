@@ -19,7 +19,7 @@ Automated checks can catch a lot of common issues before they reach production.
 
 Manual usability testing ensures things [work as intended][manual-testing].
 
-* Prefer testing your local build using a screen reader such as [VoiceOver][voiceover] or [NVDA][nvda]
+* Test your local build using a screen reader such as [VoiceOver][voiceover] or [NVDA][nvda]
 * Prefer hiring assistive technology users to user test your product
 
 Quick checks
