@@ -51,7 +51,7 @@ Quick checks
 * Ensure that alternative descriptions for image content are concise, descriptive, and use punctuation (`alt` attributes for images, `title` elements for SVGs)
 * Ensure labels are programmatically associated with their inputs
 * Prefer implementing a method to allow users to skip sections of repeated content
-* Each page or view has a unique title that describes the content it contains
+* Ensure each page or view has a unique title that describes the content it contains
 * The `title` attribute is only used to describe `iframe` element contents
 * Ensure that links are used to navigate to other locations and buttons are used to trigger actions
 * Ensure that focus is trapped inside of modal interactions
