@@ -50,4 +50,4 @@ At thoughtbot, we value human-centric work, and believe that the way we work can
 
 thoughtbot is continuously establishing new strategies and techniques to develop our Emotional Intelligence values. We use these to develop our personal EQ, and are always working to uncover more.
 
-[How Might We Develop Emotional Intelligence?](how_might_we_develop_emotional_intelligence.md)
+[How Might We Continuously Improve Our Emotional Intelligence?](how_might_we_develop_emotional_intelligence.md)
