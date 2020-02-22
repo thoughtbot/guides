@@ -265,9 +265,11 @@ CSS
   * Prefer `em` units instead of `px` for breakpoint values
   * Start with the smallest viewport size and work upwards using 
     `min-width`/`min-height`
+* Use [double colon syntax][pseudo-element-syntax] for pseudo-elements
 
 [autoprefixer]: https://github.com/postcss/autoprefixer
 [breakpoints]: http://bradfrost.com/blog/post/7-habits-of-highly-effective-media-queries/
+[pseudo-element-syntax]: https://developer.mozilla.org/en-US/docs/Web/CSS/Pseudo-elements#Syntax
 
 Sass
 ----
