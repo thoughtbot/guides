@@ -53,3 +53,16 @@ capybara-webkit. For example, in ``spec/features/user_signs_in_spec.rb``:
   end
 
 .. _capybara-webkit: https://github.com/thoughtbot/capybara-webkit
+
+... release a Ruby gem
+--------------------------
+
+* Edit the ``VERSION`` constant.
+* Run ``bundle install`` to update ``Gemfile.lock``.
+* Run the test suite.
+* Edit ``NEWS``, ``CHANGELOG``, or ``README`` files if relevant.
+* Commit changes. Use the convention "v2.1.0" in your commit message.
+* Run ``rake release``, which tags the release, pushes the tag
+  to GitHub, and pushes the gem to RubyGems.org_.
+
+.. _RubyGems.org: https://rubygems.org/
