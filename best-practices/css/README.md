@@ -1,5 +1,13 @@
 # CSS Best Practices
 
+## Linting
+
+- Use stylelint to lint CSS & Sass
+    - We maintain a [sharable stylelint configuration][stylelint-config]
+      which enforces our guides found in this repo
+
+[stylelint-config]: https://github.com/thoughtbot/stylelint-config
+
 ## Selectors
 
 ### Selector specificity

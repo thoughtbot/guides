@@ -10,16 +10,8 @@
 
 * Use the SCSS syntax.
 * Use hyphens when naming mixins, extends, functions & variables: `span-columns` not `span_columns` or `spanColumns`.
-* Use one space between property and value: `width: 20px` not `width:20px`.
-* Use a blank line above a selector that has styles.
 * Avoid using shorthand properties for only one value: `background-color: #ff0000;`, not `background: #ff0000;`
 * Use `//` for comment blocks not `/* */`.
-* Use one space between selector and `{`.
-* Use double quotation marks.
-* Use only lowercase, except for hex or string values.
-* Don't add a unit specification after `0` values, unless required by a mixin.
-* Use a leading zero in decimal numbers: `0.5` not `.5`
-* Use space around operands: `$variable * 1.5`, not `$variable*1.5`
 * Avoid in-line operations in shorthand declarations (Ex. `padding: $variable * 1.5 variable * 2`)
 * Use parentheses around individual operations in shorthand declarations: `padding: ($variable * 1.5) ($variable * 2);`
 * Use a `%` unit for the amount/weight when using Sass's color functions: `darken($color, 20%)`, not `darken($color, 20)`
