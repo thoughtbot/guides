@@ -12,7 +12,6 @@
 * Use hyphens when naming mixins, extends, functions & variables: `span-columns` not `span_columns` or `spanColumns`.
 * Use one space between property and value: `width: 20px` not `width:20px`.
 * Use a blank line above a selector that has styles.
-* Prefer hex color codes `#fff` or `#FFF`.
 * Avoid using shorthand properties for only one value: `background-color: #ff0000;`, not `background: #ff0000;`
 * Use `//` for comment blocks not `/* */`.
 * Use one space between selector and `{`.
