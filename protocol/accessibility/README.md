@@ -20,6 +20,8 @@ Automated checks can catch a lot of common issues before they reach production.
 Manual usability testing ensures things [work as intended][manual-testing].
 
 * Test your local build using a screen reader such as [VoiceOver][voiceover] or [NVDA][nvda]
+* Use tools such as [Accessibility Insights][accessibility-insights] to catch
+  issues that cannot be found using automated checks
 * Hire assistive technology users to user test your product
 
 Quick checks
@@ -86,6 +88,7 @@ Use the Notes sheet to leave per-cell comments when necessary, referencing them 
 [color-contrast]: https://webaim.org/resources/linkcontrastchecker/
 [manual-testing]: https://www.smashingmagazine.com/2018/09/importance-manual-accessibility-testing/
 [nvda]: https://a11yproject.com/posts/getting-started-with-nvda/
+[accessibility-insights]: https://accessibilityinsights.io
 [readability]: https://datayze.com/readability-analyzer.php
 [vestibular-seizure]: https://alistapart.com/article/designing-safer-web-animation-for-motion-sensitivity/
 [voiceover]: https://a11yproject.com/posts/getting-started-with-voiceover/
