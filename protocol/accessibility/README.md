@@ -12,7 +12,7 @@ thoughtbot strives for AA level [Web Content Accessibility Guideline (WCAG)][wca
 
 Automated checks can catch a lot of common issues before they reach production.
 
-* Use a tool such as [WAVE][wave] or the [axe Chrome extension][axe-chrome] to run audits on your local build 
+* Use tools such as [WAVE][wave] or [axe's browser extensions][axe-web] to run audits on your local build
 * Use a CI/CD solution such as [AccessLint][accesslint] or [axe][axe]
 
 ### Usability
@@ -82,7 +82,7 @@ Use the Notes sheet to leave per-cell comments when necessary, referencing them 
 [accessibility-audit-template]: https://docs.google.com/spreadsheets/d/1Ys-0U5BY-Ct_phy7gk9XJmn4nBTMFTh08aTQ6U1kB_4/edit?usp=sharing
 [accesslint]: https://github.com/marketplace/accesslint
 [axe]: https://www.deque.com/axe/axe-for-web/integrations/
-[axe-chrome]: https://chrome.google.com/webstore/detail/axe-web-accessibility-tes/lhdoppojpmngadmnindnejefpokejbdd?hl=en-US
+[axe-web]: https://www.deque.com/axe/axe-for-web/
 [color-contrast]: https://webaim.org/resources/linkcontrastchecker/
 [manual-testing]: https://www.smashingmagazine.com/2018/09/importance-manual-accessibility-testing/
 [nvda]: https://a11yproject.com/posts/getting-started-with-nvda/
