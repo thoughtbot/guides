@@ -7,6 +7,7 @@ Guides for getting things done, programming well, and programming in style.
 
 * [Best Practices](./best-practices)
 * [Code Review](./code-review)
+* [Tech Stack](./stack)
 * [How to](./how-to)
 * [Protocol](./protocol)
   * [Communication](./protocol/communication)
