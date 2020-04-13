@@ -41,12 +41,16 @@ decisions made for other layers.
 ### Web
 
 * Use Ruby on Rails for new applications.
+* Use [Suspenders] to generate new Rails applications and as a reference for
+  preferred library choices.
 * Use Heroku with git deploys and pipelines for deploying applications.
 * Use test-driven development to ensure quality.
 * Use GitHub pull-requests to conduct peer code review.
 * Use continuous integration to ensure tests continue to pass.
 * Use a staging server to ensure new features work as expected before deploying
   to production.
+
+[Suspenders]: https://github.com/thoughtbot/suspenders
 
 ### Storage
 
