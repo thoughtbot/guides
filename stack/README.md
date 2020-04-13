@@ -32,6 +32,7 @@ decisions made for other layers.
 * Use Kotlin for writing native app code.
 * Use Gradle with Android Studio for building.
 * Use MVVM to model views.
+* Use Apollo when consuming a GraphQL API.
 
 ### API
 
