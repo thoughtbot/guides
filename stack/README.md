@@ -77,3 +77,13 @@ We recommend learning at least one of the following:
 ### Storage
 
 * Use Postgres to store most data.
+
+### Messaging
+
+* Use Kafka when producing and consuming messages between services.
+* Use ruby-kafka by default when connecting to Kafka from Ruby applications.
+
+### Data
+
+* Use services in the same Rails application for building data pipelines on top
+  of Kafka.
