@@ -1,8 +1,8 @@
-JavaScript
-==========
+# JavaScript
 
 [Sample](sample.js)
 
+* Use [Jest](../testing-jest/README.md) for unit testing
 * Prefer ES6 classes over prototypes.
 * Use strict equality checks (`===` and `!==`) except when comparing against
   (`null` or `undefined`).
