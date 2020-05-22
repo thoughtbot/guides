@@ -2,6 +2,7 @@
 
 [Sample](sample.js)
 
+* Use [ESlint] and [Prettier] for auto-formatting and auto-fixing
 * Use [Jest](../testing-jest/README.md) for unit testing
 * Prefer ES6 classes over prototypes.
 * Use strict equality checks (`===` and `!==`) except when comparing against
@@ -24,6 +25,8 @@
 * Use a [trailing comma] after each item in a multi-line array or object
   literal, including the last item.
 
+[eslint]: https://eslint.org/
+[prettier]: https://prettier.io/
 [template strings]: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/template_strings
 [arrow functions]: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions/Arrow_functions
 [destructuring]: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Destructuring_assignment
