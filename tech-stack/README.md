@@ -15,46 +15,23 @@ inappropriate for the task at hand. This allows us to practice our value of
 [continuous improvement]: https://thoughtbot.com/purpose#continuous-improvement
 [quality]: https://thoughtbot.com/purpose#quality
 
-## Layers
+## Core Stack
 
-Our stack is broken up into layers. Each layer depends on another layer. This
-allows us to swap out an entire layer when necessary without losing all the
-decisions made for other layers.
+Most developers at thoughtbot learn our Core Stack. The stack is broken up into
+layers and each layer depends on another layer. This allows us to swap out an
+entire layer when necessary without losing all the decisions made for other
+layers. Developers will have varying levels of experience with each layer, but
+the gaps between layers are small enough that developers can learn a new layer
+while building applications.
 
 ### UI
 
-#### Web
-
 - Use server-rendered HTML when possible as a UI layer.
-
-### Android (Native)
-
-- Use Kotlin for writing native app code.
-- Use Gradle with Android Studio for building.
-- Use MVVM to model views.
-- Use Apollo when consuming a GraphQL API.
-
-### iOS (Native)
-
-- Use Swift for writing native app code.
-- Use Xcode and `xcodebuild` for building iOS apps.
-- Use `xcpretty` to format `xcodebuild` output.
-- Use Xcode automatic provisioning when possible.
-- Use UIKit with Storyboards and MVVM for creating UIs.
-- Use Dispatch and OperationQueue for concurrency.
-- Support VoiceOver and VoiceControl for accessibility.
-- Use Swift Package Manager for dependencies when possible.
-- Manually test on both iPhone and iPad to ensure the app is functional.
-- Work closely with designers on UI components.
-- Prefer standard UIKit components to custom views.
-
-We recommend learning at least one of the following:
-
-- MapKit or Google Maps
-- Core Location
-- Core Bluetooth
-- PhotoKit
-- UserNotifications
+- Use React when building components with a client-side framework.
+- Use TypeScript when writing client-side code.
+- Avoid building single-page applications for the web.
+- When building a cross-platform mobile app that will be delivered via an app
+  store, use React Native.
 
 ### API
 
@@ -87,3 +64,42 @@ We recommend learning at least one of the following:
 
 - Use services in the same Rails application for building data pipelines on top
   of Kafka.
+
+## Specialized Stacks
+
+Some applications require functionality that is difficult or impossible to
+provide using the Core Stack, or would require an unacceptable compromise on
+quality or user experience. In these cases, we utilize alternate, specialized
+stacks. Because the gaps between stacks are larger than the gaps between layers
+in the Core Stack, most developers won't learn these technologies, and the
+specialists who learn these stacks are unlikely to be able to learn many layers
+in the Core Stack.
+
+### Android (Native)
+
+- Use Kotlin for writing native app code.
+- Use Gradle with Android Studio for building.
+- Use MVVM to model views.
+- Use Apollo when consuming a GraphQL API.
+
+### iOS (Native)
+
+- Use Swift for writing native app code.
+- Use Xcode and `xcodebuild` for building iOS apps.
+- Use `xcpretty` to format `xcodebuild` output.
+- Use Xcode automatic provisioning when possible.
+- Use UIKit with Storyboards and MVVM for creating UIs.
+- Use Dispatch and OperationQueue for concurrency.
+- Support VoiceOver and VoiceControl for accessibility.
+- Use Swift Package Manager for dependencies when possible.
+- Manually test on both iPhone and iPad to ensure the app is functional.
+- Work closely with designers on UI components.
+- Prefer standard UIKit components to custom views.
+
+We recommend learning at least one of the following:
+
+- MapKit or Google Maps
+- Core Location
+- Core Bluetooth
+- PhotoKit
+- UserNotifications
