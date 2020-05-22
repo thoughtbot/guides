@@ -1,0 +1,48 @@
+{
+  "extends": ["@thoughtbot/eslint-config", "plugin:@typescript-eslint/recommended", "plugin:jest/recommended"],
+  "plugins": ["@typescript-eslint/eslint-plugin", "plugin:import/errors", "plugin:import/warnings", "plugin:import/typescript", "jest"],
+  "env": {
+      "browser": true,
+      "jest/globals": true
+  },
+  "parser": "@typescript-eslint/parser",
+  "parserOptions": {
+    "ecmaVersion": 2017,
+    "sourceType": "module"
+  },
+  "rules": {
+    "@typescript-eslint/member-naming": ["error", {
+      "private": "^_"
+    }],
+    "@typescript-eslint/explicit-function-return-type": {
+        "allowExpressions": true
+    },
+    "@typescript-eslint/consistent-type-assertions": {
+        "assertionStyle": "as",
+        "objectLiteralTypeAssertions": "never"
+    },
+    "@typescript-eslint/no-empty-function": "off",
+    "@typescript-eslint/no-explicit-any": "error",
+    "@typescript-eslint/no-non-null-assertion": "error",
+    "@typescript-eslint/no-unused-vars": [
+      "error",
+      {
+        "args": "none",
+        "ignoreRestSiblings": true
+      }
+    ],
+    "arrow-body-style": "off",
+    "import/no-extraneous-dependencies": "error",
+    "import/no-deprecated": "warn",
+    "import/no-useless-path-segments": ["error", { "noUselessIndex": true }],
+    "import/first": "error",
+    "import/no-duplicates": "error",
+    "import/newline-after-import": "error",
+    "import/no-unused-modules": "error",
+    "import/no-named-default": "error",
+    "jest/no-disabled-tests": "error",
+    "jest/no-focused-tests": "error",
+    "jest/no-identical-title": "error",
+    "jest/no-commented-out-tests": "error"
+  }
+}
