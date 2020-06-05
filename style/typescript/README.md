@@ -21,9 +21,10 @@
 - Prefer explicitly defining interfaces over [Extending Interfaces]
 - Avoid the use of the [any] type
 - Avoid the [Non-null assertion operator]
+- Avoid [Type Assertions]
+- Prefer the `as`-syntax for [Type Assertions] over the angle-bracket syntax
 - Use the [Nullish coalescing operator]
 - Prefer [Type Guards] over [Type Assertions]
-- Prefer the `as`-syntax for [Type Assertions] over the angle-bracket syntax
 - Prefer [Union Types], [Lookup Types], [Mapped Types] and [Const Assertions] over [Enums]
 
 [eslint]: https://eslint.org/
