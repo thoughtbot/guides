@@ -7,6 +7,7 @@
 - Use [ESlint] and [Prettier] for auto-formatting and auto-fixing
 - Use [Jest](../testing-jest/README.md) for unit testing
 - Prefer [Functions] over [Classes]
+- Prefer functional style (map/filter/reduce) over iteration (for/while/.each)
 - Prefer [arrow functions] `=>`, over the `function` keyword except when using [Generics]
 - Use [Generic Constraints] when possible
 - Use `PascalCase` for [Interfaces] and [Type Aliases]
