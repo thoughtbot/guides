@@ -15,7 +15,7 @@
  * Use pre-built hooks when possible (e.g. [streamich/react-use])
  * Use [custom hooks] to encapsulate stateful logic outside a component
  * Avoid [Forwarding Refs]
- * Avoid [Higher-Order Components] and [recompose]
+ * Avoid [Higher-Order Components] and [recompose]. See hooks above as an alternative.
  * Prefer the `children` prop over [render props]
  * Prefer using [TypeScript prop interfaces] over [PropTypes]
  * Prefer the [short syntax] when using [Fragments]
