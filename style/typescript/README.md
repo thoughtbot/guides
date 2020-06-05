@@ -1,7 +1,5 @@
 # TypeScript
 
-[Sample TSX](sample.tsx) [ESLint Config](.eslintrc.json) [Prettier Config](.prettierrc)
-
 - Use the guidelines for [JavaScript](../javascript/README.md)
 - Use TypeScript in [strict mode]
 - Use [ESlint] and [Prettier] for auto-formatting and auto-fixing
