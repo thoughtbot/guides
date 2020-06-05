@@ -1,5 +1,6 @@
 # React
 
+ * Start new projects with [react-suspenders]
  * Use React in [Strict Mode]
  * Use React with [TypeScript](../typescript/README.md)
  * Use [Jest](../testing-jest/README.md) for unit testing
@@ -23,6 +24,7 @@
  * Avoid using indexes as the value for [keys]
  * Prefer [component composition over component inheritance]
 
+[react-suspenders]: https://github.com/thoughtbot/react-suspenders
 [Strict Mode]: https://reactjs.org/docs/strict-mode.html
 [styled-components]: https://styled-components.com/
 [React Hooks]: https://reactjs.org/docs/hooks-overview.html
