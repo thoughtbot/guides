@@ -20,6 +20,7 @@ Guides for getting things done, programming well, and programming in style.
   * [React](./protocol/react)
 * [Security](./security)
 * [Style](./style)
+* [Terminology](./terminology)
 * [Web Performance](./web-performance)
 * [Working Together](./working-together)
 
