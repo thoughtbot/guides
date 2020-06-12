@@ -32,8 +32,6 @@ Ruby
 * Use `def self.method`, not `class << self`. [40090e22]
 * Use `def` with parentheses when there are arguments. [36491dbb9]
 * Use heredocs for multi-line strings. [36491dbb9]
-* Prefer `private` over `protected` for non-public `attr_reader`s,
-  `attr_writer`s, and `attr_accessor`s. [#417], [#190]
 * Order class methods above instance methods. [#320]
 * Prefer method invocation over instance variables. [#331]
 
@@ -41,14 +39,12 @@ Ruby
 [#109]: https://github.com/thoughtbot/guides/pull/109
 [#122]: https://github.com/thoughtbot/guides/pull/122
 [#183]: https://github.com/thoughtbot/guides/pull/183
-[#190]: https://github.com/thoughtbot/guides/pull/190
 [#237]: https://github.com/thoughtbot/guides/pull/237
 [#320]: https://github.com/thoughtbot/guides/pull/320
 [#331]: https://github.com/thoughtbot/guides/pull/331
 [#332]: https://github.com/thoughtbot/guides/pull/332
 [#335]: https://github.com/thoughtbot/guides/pull/335
 [#373]: https://github.com/thoughtbot/guides/pull/373
-[#417]: https://github.com/thoughtbot/guides/pull/417
 [0d819844]: https://github.com/thoughtbot/guides/commit/0d819844
 [36491dbb9]: https://github.com/thoughtbot/guides/commit/36491dbb9
 [40090e22]: https://github.com/thoughtbot/guides/commit/40090e22
