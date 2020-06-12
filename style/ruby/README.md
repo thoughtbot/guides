@@ -11,8 +11,6 @@ Ruby
 * Avoid ternary operators (`boolean ? true : false`). Use multi-line `if`
   instead to emphasize code branches. [36491dbb9]
 * Avoid bang (!) method names. Prefer descriptive names. [#122]
-* Name variables created by a factory after the factory (`user_factory`
-  creates `user`).
 * Prefer nested class and module definitions over the shorthand version
   [Example][class definition example] [#332]
 * Prefer `detect` over `find`. [0d819844]
@@ -23,7 +21,6 @@ Ruby
   calls. [#183]
 * Use `_` for unused block parameters. [0d819844]
 * Prefix unused variables or parameters with underscore (`_`). [#335]
-* Suffix variables holding a factory with `_factory` (`user_factory`).
 * Use a leading underscore when defining instance variables for memoization.
   [#373]
 * Use `%()` for single-line strings containing double-quotes that require 
