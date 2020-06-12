@@ -15,10 +15,6 @@ Ruby
   creates `user`).
 * Prefer nested class and module definitions over the shorthand version
   [Example][class definition example] [#332]
-* Prefer `detect` over `find`. [0d819844]
-* Prefer `select` over `find_all`. [0d819844]
-* Prefer `map` over `collect`. [0d819844]
-* Prefer `reduce` over `inject`. [#237]
 * Prefer `&:method_name` to `{ |item| item.method_name }` for simple method
   calls. [#183]
 * Use `_` for unused block parameters. [0d819844]
@@ -42,7 +38,6 @@ Ruby
 [#122]: https://github.com/thoughtbot/guides/pull/122
 [#183]: https://github.com/thoughtbot/guides/pull/183
 [#190]: https://github.com/thoughtbot/guides/pull/190
-[#237]: https://github.com/thoughtbot/guides/pull/237
 [#320]: https://github.com/thoughtbot/guides/pull/320
 [#331]: https://github.com/thoughtbot/guides/pull/331
 [#332]: https://github.com/thoughtbot/guides/pull/332
