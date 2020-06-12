@@ -28,7 +28,7 @@ detailed, language/framework-specific style guides:
 * [Sass](sass)
 * [Shell](shell)
 * [Swift](swift)
-* [Testing](testing)
+* [Testing with RSpec](testing-rspec)
 
 Formatting
 ----------
@@ -42,7 +42,6 @@ Formatting
 * Use spaces around operators, except for unary operators, such as `!`.
 * Use [Unix-style line endings][newline explanation] (`\n`).
 * Use [uppercase for SQL key words and lowercase for SQL identifiers].
-
 
 [dot guideline example]: /style/ruby/sample.rb#L11
 [uppercase for SQL key words and lowercase for SQL identifiers]: http://www.postgresql.org/docs/9.2/static/sql-syntax-lexical.html#SQL-SYNTAX-IDENTIFIERS
