@@ -13,9 +13,3 @@ The language we use has power. Being as concise and descriptive as possible help
 * Use terms such as `excused` or `exempted` in place of `grandfathered`.
 * Use `negative space`, and not `white space`.
 * Use `billable hours`, and not `man hours`.
-
-[google-io-video]: https://www.youtube.com/watch?v=mLjxXPHuIJo
-[web-dev-fast]: https://web.dev/fast
-[lighthouse-budgets]: https://bitsofco.de/your-first-performance-budget-with-lighthouse/
-[css-wizardry]: https://csswizardry.com/archive/
-[calibre-impact]: https://calibreapp.com/blog/visualise-performance-impact-between-deploys
