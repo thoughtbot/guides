@@ -20,67 +20,67 @@ Guides for working together, getting things done, programming well, and programm
 
 ## Guides by category
 
-[thoughtbot Tech Stack](/tech_stack.md)
-[General](/general/README.md)
+ * [thoughtbot Tech Stack](/tech_stack.md)
+ * [General](/general/README.md)
 
 ### Collaboration
 
-[Code Review](/code-review/README.md)
-[Communication](/communication/README.md)
-[Inclusive Culture](/inclusive-culture/README.md)
-[Open Source](/open-source/README.md)
-[Product Review](/product-review/README.md)
-[Working Together](/working-together/README.md)
+ * [Code Review](/code-review/README.md)
+ * [Communication](/communication/README.md)
+ * [Inclusive Culture](/inclusive-culture/README.md)
+ * [Open Source](/open-source/README.md)
+ * [Product Review](/product-review/README.md)
+ * [Working Together](/working-together/README.md)
 
 ### Protocols
 
-[Accessibility](/accessibility/README.md)
-[Data](/data/README.md)
-[Email](/email/README.md)
-[Object-Oriented Design](/object-oriented-design/README.md)
-[Security](/security/README.md)
-[Web](/web/README.md)
-[Web Performance](/web-performance/README.md)
+ * [Accessibility](/accessibility/README.md)
+ * [Data](/data/README.md)
+ * [Email](/email/README.md)
+ * [Object-Oriented Design](/object-oriented-design/README.md)
+ * [Security](/security/README.md)
+ * [Web](/web/README.md)
+ * [Web Performance](/web-performance/README.md)
 
 ### Languages
 
-[Bash](/bash/README.md)
-[CoffeeScript](/coffeescript/README.md)
-[CSS](/css/README.md)
-[Elixir](/elixir/README.md)
-[ERB](/erb/README.md)
-[HAML](/haml/README.md)
-[Handlebars](/handlebars/README.md)
-[Haskell](/haskell/README.md)
-[HTML](/html/README.md)
-[Java](/java/README.md)
-[JavaScript](/javascript/README.md)
-[Objective-C](/objective-c/README.md)
-[Python](/python/README.md)
-[Ruby](/ruby/README.md)
-[SASS](/sass/README.md)
-[Scala](/scala/README.md)
-[Shell](/shell/README.md)
-[Swift](/swift/README.md)
-[TypeScript](/typescript/README.md)
+ * [Bash](/bash/README.md)
+ * [CoffeeScript](/coffeescript/README.md)
+ * [CSS](/css/README.md)
+ * [Elixir](/elixir/README.md)
+ * [ERB](/erb/README.md)
+ * [HAML](/haml/README.md)
+ * [Handlebars](/handlebars/README.md)
+ * [Haskell](/haskell/README.md)
+ * [HTML](/html/README.md)
+ * [Java](/java/README.md)
+ * [JavaScript](/javascript/README.md)
+ * [Objective-C](/objective-c/README.md)
+ * [Python](/python/README.md)
+ * [Ruby](/ruby/README.md)
+ * [SASS](/sass/README.md)
+ * [Scala](/scala/README.md)
+ * [Shell](/shell/README.md)
+ * [Swift](/swift/README.md)
+ * [TypeScript](/typescript/README.md)
 
 ### Frameworks and platforms
 
-[Android](/android/README.md)
-[Angular](/angular/README.md)
-[Ember](/ember/README.md)
-[iOS](/ios/README.md)
-[Rails](/rails/README.md)
-[React](/react/README.md)
-[Testing with Jest](/testing-jest/README.md)
-[Testing with RSpec](/testing-rspec/README.md)
+ * [Android](/android/README.md)
+ * [Angular](/angular/README.md)
+ * [Ember](/ember/README.md)
+ * [iOS](/ios/README.md)
+ * [Rails](/rails/README.md)
+ * [React](/react/README.md)
+ * [Testing with Jest](/testing-jest/README.md)
+ * [Testing with RSpec](/testing-rspec/README.md)
 
 ### Tools
 
-[Git](/git/README.md)
-[GraphQL](/graphql/README.md)
-[Postgres](/postgres/README.md)
-[Relational Databases](/relational-databases/README.md)
+ * [Git](/git/README.md)
+ * [GraphQL](/graphql/README.md)
+ * [Postgres](/postgres/README.md)
+ * [Relational Databases](/relational-databases/README.md)
 
 ## Contributing
 
