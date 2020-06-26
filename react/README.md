@@ -43,7 +43,7 @@
 
 ## General Philosophies
 
-- For greenfield React projects we like to use TypeScript. TypeScript is a typed superset of JavaScript that compiles to
+- For greenfield React projects we like to use [TypeScript](https://www.typescriptlang.org/). TypeScript is a typed superset of JavaScript that compiles to
   plain JavaScript. For a quick introduction, check out
   [TypeScript in 5 minutes](https://www.typescriptlang.org/docs/handbook/typescript-in-5-minutes.html).
 - If our app needs to make network requests and hold state outside of a component, we like using GraphQL and our
