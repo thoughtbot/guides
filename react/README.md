@@ -1,6 +1,5 @@
 # React
 
-- Start new projects with [react-suspenders]
 - Use React in [Strict Mode]
 - Use React with [TypeScript](/typescript/)
 - Avoid nested routing if using [React Router]
@@ -19,7 +18,6 @@
 - Avoid using indexes as the value for [keys]
 - Prefer [component composition over component inheritance]
 
-[react-suspenders]: https://github.com/thoughtbot/react-suspenders
 [strict mode]: https://reactjs.org/docs/strict-mode.html
 [react hooks]: https://reactjs.org/docs/hooks-overview.html
 [custom hooks]: https://reactjs.org/docs/hooks-overview.html#building-your-own-hooks
@@ -51,11 +49,3 @@
   Guides.
 - When building React apps with TypeScript and Apollo, we've found working in [VSCode](https://code.visualstudio.com/)
   to be a mostly-good experience.
-
-## Create App
-
-Use [react-suspenders](https://github.com/thoughtbot/react-suspenders):
-
-    react-suspenders --create <project_dir>
-
-This includes the thoughtbot ESLint and Prettier configs for auto formatting.
