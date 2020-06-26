@@ -20,3 +20,9 @@ Decisions about which libraries to use should live in template projects such
 as [Suspenders].
 
 [Suspenders]: https://github.com/thoughtbot/suspenders
+
+### The Anatomy of a Guide
+
+Whether you're creating a new guide or adding to an existing one, you can reference [the template guide] if you're unsure where to put things.
+
+[the template guide]: /_template/

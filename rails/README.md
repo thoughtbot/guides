@@ -60,20 +60,6 @@
 [validations]: /rails/sample.rb#L6
 [`app/views/application`]: http://railscasts.com/episodes/269-template-inheritance
 
-## Starting a new Rails app
-
-Use [Suspenders][suspenders]:
-
-```sh
-$ gem install suspenders
-$ suspenders the-name-of-your-project-here
-$ cd the-name-of-your-project-here/
-$ bin/setup
-$ rake
-```
-
-[suspenders]: https://github.com/thoughtbot/suspenders
-
 ## Migrations
 
 [Sample](migration.rb)
@@ -105,41 +91,6 @@ $ rake
 [delivering email on behalf of the app's users]:
   http://robots.thoughtbot.com/post/3215611590/recipe-delivering-email-on-behalf-of-users
 
-## Feature-testing Rails app Javascript
-
-Use [capybara-webkit][capybara-webkit]. In your `Gemfile`:
-
-```ruby
-gem "capybara-webkit"
-```
-
-In `spec/support/capybara_webkit.rb` (for RSpec):
-
-```ruby
-Capybara.javascript_driver = :webkit
-
-Capybara::Webkit.configure do |config|
-  config.block_unknown_urls
-end
-```
-
-When writing a spec, you must set the `:js` flag for that test to make use of capybara-webkit. For example, in
-`spec/features/user_signs_in_spec.rb`:
-
-```ruby
-feature "Authentication", :js do
-  scenario "A user signing in" do
-    create(:user, email: "me@example.com", password: "sekrit")
-
-    sign_in_as email: "me@example.com", password: "sekrit"
-
-    expect(page).to have_text("Welcome!")
-  end
-end
-```
-
-[capybara-webkit]: https://github.com/thoughtbot/capybara-webkit
-
 ## Code Review
 
 Follow the normal [Code Review guidelines](/code-review/). When reviewing others' Rails work, look in particular for:
@@ -152,57 +103,9 @@ Follow the normal [Code Review guidelines](/code-review/). When reviewing others
 - Review whether new database indexes are necessary if new columns or SQL queries were added.
 - Review whether new scheduler (`cron`) tasks have been added and whether there is a related todo in the project
   management system to add it during the staging and production deploys.
+  
+## How to...
 
-## Deploy to Heroku
-
-View a list of new commits. View changed files.
-
-    git fetch staging
-    git log staging/master..master
-    git diff --stat staging/master
-
-If necessary, add new environment variables.
-
-    heroku config:add NEW_VARIABLE=value --remote staging
-
-Deploy to [Heroku](https://devcenter.heroku.com/articles/quickstart) staging.
-
-    git push staging
-
-If necessary, run migrations and restart the dynos.
-
-    heroku run rake db:migrate --remote staging
-    heroku restart --remote staging
-
-[Introspect] to make sure everything's ok.
-
-    watch heroku ps --remote staging
-
-Test the feature in browser.
-
-Deploy to production.
-
-    git fetch production
-    git log production/master..master
-    git diff --stat production/master
-    heroku config:add NEW_VARIABLE=value --remote production
-    git push production
-    heroku run rake db:migrate --remote production
-    heroku restart --remote production
-    watch heroku ps --remote production
-
-Watch logs and metrics dashboards.
-
-Close pull request and comment `Merged.`
-
-[introspect]: http://blog.heroku.com/archives/2011/6/24/the_new_heroku_3_visibility_introspection/
-
-## Set Up Production Environment
-
-- Make sure that your [`Procfile`] is set up to run Unicorn.
-- Make sure the PG Backups add-on is enabled.
-- Create a read-only [Heroku Follower] for your production database. If a Heroku database outage occurs, Heroku can use
-  the follower to get your app back up and running faster.
-
-[heroku follower]: https://devcenter.heroku.com/articles/improving-heroku-postgres-availability-with-followers
-[`procfile`]: https://devcenter.heroku.com/articles/procfile
+ - [Start a New Rails App](./how-to/start_a_new_rails_app.md)
+ - [Deploy a Rails App to Heroku](./how-to/deploy_a_rails_app_to_heroku.md)
+ - [Feature-test JavaScript in a Rails App](./how-to/feature_test_javascript_in_a_rails_app.md)
