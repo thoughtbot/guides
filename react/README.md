@@ -2,7 +2,7 @@
 
 - Start new projects with [react-suspenders]
 - Use React in [Strict Mode]
-- Use React with [TypeScript](/typescript/README.md)
+- Use React with [TypeScript](/typescript/)
 - Avoid nested routing if using [React Router]
 - Prefer [Function Components] over [Class Components]
 - Prefer keeping a single component in each file
@@ -41,23 +41,18 @@
 [component composition over component inheritance]: https://reactjs.org/docs/composition-vs-inheritance.html
 [react router]: https://reacttraining.com/react-router/
 
-General Philosophies
---------------------
+## General Philosophies
 
-* For greenfield React projects we like to use TypeScript. TypeScript is a
-  typed superset of JavaScript that compiles to plain JavaScript. For a quick
-introduction, check out [TypeScript in 5
-minutes](https://www.typescriptlang.org/docs/handbook/typescript-in-5-minutes.html).
-* If our app needs to make network requests and hold state outside of a
-  component, we like using GraphQL and our preferred library is
-[Apollo](https://www.apollographql.com). We have a [section on
-`GraphQL`](/graphql/README.md)
-in our Guides.
-* When building React apps with TypeScript and Apollo, we've found working
-  in [VSCode](https://code.visualstudio.com/) to be a mostly-good experience.
+- For greenfield React projects we like to use TypeScript. TypeScript is a typed superset of JavaScript that compiles to
+  plain JavaScript. For a quick introduction, check out
+  [TypeScript in 5 minutes](https://www.typescriptlang.org/docs/handbook/typescript-in-5-minutes.html).
+- If our app needs to make network requests and hold state outside of a component, we like using GraphQL and our
+  preferred library is [Apollo](https://www.apollographql.com). We have a [section on `GraphQL`](/graphql/) in our
+  Guides.
+- When building React apps with TypeScript and Apollo, we've found working in [VSCode](https://code.visualstudio.com/)
+  to be a mostly-good experience.
 
-Create App
-----------
+## Create App
 
 Use [react-suspenders](https://github.com/thoughtbot/react-suspenders):
 

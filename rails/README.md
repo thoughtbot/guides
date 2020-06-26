@@ -142,8 +142,7 @@ end
 
 ## Code Review
 
-Follow the normal [Code Review guidelines](/code-review/README.md). When reviewing others' Rails work, look in
-particular for:
+Follow the normal [Code Review guidelines](/code-review/). When reviewing others' Rails work, look in particular for:
 
 - Review data integrity closely, such as migrations that make irreversible changes to the data, and whether there is a
   related todo to make a database backup during the staging and production deploys.

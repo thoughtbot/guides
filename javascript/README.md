@@ -4,7 +4,7 @@
 
 - Use the latest stable JavaScript syntax with a transpiler, such as [babel].
 - Use [ESlint] and [Prettier] for auto-formatting and auto-fixing
-- Use [Jest](/testing-jest/README.md) for unit testing
+- Use [Jest](/testing-jest/) for unit testing
 - Prefer ES6 classes over prototypes.
 - Use strict equality checks (`===` and `!==`) except when comparing against (`null` or `undefined`).
 - Prefer [arrow functions] `=>`, over the `function` keyword except when defining classes or methods.

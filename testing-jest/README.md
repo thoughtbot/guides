@@ -2,7 +2,7 @@
 
 - Use [eslint-plugin-jest] to enforce testing style
 - Use [testing-library/jest-dom] and [jest-community/jest-extended] for supplemental expectation matchers
-- Use [React Testing Library] for testing [React](../react/README.md) components
+- Use [React Testing Library] for testing [React](/react/) components
 - Use [React Hooks Testing Library] for testing [React Hooks]
 - Use [User Event] for simulating DOM events on React components under test
 - Use [Fishery] for building factories

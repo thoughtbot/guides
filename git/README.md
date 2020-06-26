@@ -70,8 +70,8 @@ Ask for a code review in the project's chat room.
 
 ## Review Code
 
-A team member other than the author reviews the pull request. They follow [Code Review](/code-review/README.md)
-guidelines to avoid miscommunication.
+A team member other than the author reviews the pull request. They follow [Code Review](/code-review/) guidelines to
+avoid miscommunication.
 
 They make comments and ask questions directly on lines of code in the GitHub web interface or in the project's chat
 room.
