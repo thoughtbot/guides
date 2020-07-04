@@ -1,6 +1,6 @@
 # How to Start a New Rails App
 
-Use [Suspenders][suspenders]:
+Use [Suspenders]:
 
 ```sh
 $ gem install suspenders

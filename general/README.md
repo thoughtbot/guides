@@ -22,16 +22,16 @@ Use [Hound] to automatically review your GitHub pull requests for style guide vi
 - Avoid inline comments.
 - Break long lines after 80 characters.
 - Delete trailing whitespace.
-- Don't misspell. [Example][dot guideline example].
+- Don't misspell. [Example](/ruby/sample.rb#L11).
 - Use empty lines around multi-line blocks.
 - Use spaces around operators, except for unary operators, such as `!`.
-- Use [Unix-style line endings][newline explanation] (`\n`).
+- Use [Unix-style line endings](`\n`).
 - Use [uppercase for SQL key words and lowercase for SQL identifiers].
 
-[dot guideline example]: /ruby/sample.rb#L11
 [uppercase for sql key words and lowercase for sql identifiers]:
   http://www.postgresql.org/docs/9.2/static/sql-syntax-lexical.html#SQL-SYNTAX-IDENTIFIERS
-[newline explanation]: http://unix.stackexchange.com/questions/23903/should-i-end-my-text-script-files-with-a-newline
+[unix-style line endings]:
+  http://unix.stackexchange.com/questions/23903/should-i-end-my-text-script-files-with-a-newline
 
 ## Naming
 

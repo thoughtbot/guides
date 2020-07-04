@@ -7,7 +7,7 @@
 - Name time columns (referring to a time of day with no date) with `_time` suffixes.
 - Name initializers for their gem name.
 - Order ActiveRecord associations alphabetically by association type, then attribute name.
-  [Example][order-associations].
+  [Example](/rails/sample.rb#L2-L4).
 - Order ActiveRecord validations alphabetically by attribute name.
 - Order ActiveRecord associations above ActiveRecord validations.
 - Order controller contents: filters, public methods, private methods.
@@ -18,8 +18,8 @@
 - Use the default `render 'partial'` syntax over `render partial: 'partial'`.
 - Use `link_to` for GET requests, and `button_to` for other HTTP verbs.
 - Use new-style `validates :name, presence: true` validations, and put all validations for a given column together.
-  [Example][validations].
-- [Add foreign key constraints][fkey] in migrations.
+  [Example](/rails/sample.rb#L6).
+- [Add foreign key constraints] in migrations.
 - Avoid bypassing validations with methods like `save(validate: false)`, `update_attribute`, and `toggle`.
 - Avoid instantiating more than one object in controllers.
 - Avoid naming methods after database columns in the same class.
@@ -46,29 +46,24 @@
 - Prefer `Time.zone.parse("2014-07-04 16:05:37")` over `Time.parse("2014-07-04 16:05:37")`
 - Use `ENV.fetch` for environment variables instead of `ENV[]`so that unset environment variables are detected on
   deploy.
-- [Use blocks][date-block] when declaring date and time attributes in FactoryBot factories.
+- [Use blocks](/ruby/sample_2.rb#L10) when declaring date and time attributes in FactoryBot factories.
 - Use `touch: true` when declaring `belongs_to` relationships.
 
-[date-block]: /ruby/sample_2.rb#L10
-[fkey]: http://robots.thoughtbot.com/referential-integrity-with-foreign-keys
+[add foreign key constraints]: http://robots.thoughtbot.com/referential-integrity-with-foreign-keys
 [`.ruby-version`]: https://gist.github.com/fnichol/1912050
 [redirects]: http://www.w3.org/Protocols/rfc2616/rfc2616-sec14.html#sec14.30
 [spring binstubs]: https://github.com/sstephenson/rbenv/wiki/Understanding-binstubs
 [prevent tampering]: http://blog.bigbinary.com/2013/03/19/cookies-on-rails.html
-[class constant in association]: /rails/sample.rb
-[order-associations]: /rails/sample.rb#L2-L4
-[validations]: /rails/sample.rb#L6
 [`app/views/application`]: http://railscasts.com/episodes/269-template-inheritance
 
 ## Migrations
 
 [Sample](migration.rb)
 
-- Set an empty string as the default constraint for non-required string and text fields. [Example][default example].
-- Set an explicit [`on_delete` behavior for foreign keys][add_foreign_key].
+- Set an empty string as the default constraint for non-required string and text fields. [Example](migration.rb#L6).
+- Set an explicit [`on_delete` behavior for foreign keys].
 
-[default example]: migration.rb#L6
-[add_foreign_key]:
+[`on_delete` behavior for foreign keys]:
   http://api.rubyonrails.org/classes/ActiveRecord/ConnectionAdapters/SchemaStatements.html#method-i-add_foreign_key
 
 ## Routes
@@ -103,9 +98,9 @@ Follow the normal [Code Review guidelines](/code-review/). When reviewing others
 - Review whether new database indexes are necessary if new columns or SQL queries were added.
 - Review whether new scheduler (`cron`) tasks have been added and whether there is a related todo in the project
   management system to add it during the staging and production deploys.
-  
+
 ## How to...
 
- - [Start a New Rails App](./how-to/start_a_new_rails_app.md)
- - [Deploy a Rails App to Heroku](./how-to/deploy_a_rails_app_to_heroku.md)
- - [Feature-test JavaScript in a Rails App](./how-to/feature_test_javascript_in_a_rails_app.md)
+- [Start a New Rails App](./how-to/start_a_new_rails_app.md)
+- [Deploy a Rails App to Heroku](./how-to/deploy_a_rails_app_to_heroku.md)
+- [Feature-test JavaScript in a Rails App](./how-to/feature_test_javascript_in_a_rails_app.md)

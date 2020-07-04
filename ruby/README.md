@@ -2,8 +2,7 @@
 
 [Sample 1](sample_1.rb) [Sample 2](sample_2.rb)
 
-- Use [standard](https://github.com/testdouble/standard)
-
+- Use [standard]
 - Avoid conditional modifiers (lines that end with conditionals). [36491dbb9]
 - Avoid multiple assignments per line (`one, two = 1, 2`). [#109]
 - Avoid organizational comments (`# Validations`). [#63]
@@ -11,7 +10,7 @@
   [36491dbb9]
 - Avoid bang (!) method names. Prefer descriptive names. [#122]
 - Name variables created by a factory after the factory (`user_factory` creates `user`).
-- Prefer nested class and module definitions over the shorthand version [Example][class definition example] [#332]
+- Prefer nested class and module definitions over the shorthand version [Example](/ruby/sample.rb#L103) [#332]
 - Prefer `detect` over `find`. [0d819844]
 - Prefer `select` over `find_all`. [0d819844]
 - Prefer `map` over `collect`. [0d819844]
@@ -35,6 +34,7 @@
 - Prefer `private` when indicating scope. Use `protected` only with comparison methods like `def ==(other)`,
   `def <(other)`, and `def >(other)`.
 
+[standard]: https://github.com/testdouble/standard
 [#63]: https://github.com/thoughtbot/guides/pull/63
 [#109]: https://github.com/thoughtbot/guides/pull/109
 [#122]: https://github.com/thoughtbot/guides/pull/122
@@ -48,7 +48,6 @@
 [0d819844]: https://github.com/thoughtbot/guides/commit/0d819844
 [36491dbb9]: https://github.com/thoughtbot/guides/commit/36491dbb9
 [40090e22]: https://github.com/thoughtbot/guides/commit/40090e22
-[class definition example]: /ruby/sample.rb#L103
 [bundler binstubs]: https://github.com/sstephenson/rbenv/wiki/Understanding-binstubs
 
 ## Bundler
@@ -89,4 +88,4 @@
 
 ## How to...
 
- - [Release a Ruby gem](./how-to/release_a_ruby_gem.md)
+- [Release a Ruby gem](./how-to/release_a_ruby_gem.md)

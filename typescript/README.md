@@ -2,7 +2,7 @@
 
 - Use the guidelines for [JavaScript](/javascript/)
 - Use TypeScript in [strict mode]
-- Use [ESlint] and [Prettier] for auto-formatting and auto-fixing
+- Use [ESLint] and [Prettier] for auto-formatting and auto-fixing
 - Use [Jest](/testing-jest/) for unit testing
 - Prefer [Functions] over [Classes]
 - Prefer functional style (map/filter/reduce) over iteration (for/while/.each)

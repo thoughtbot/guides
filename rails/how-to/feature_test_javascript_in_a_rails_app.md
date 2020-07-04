@@ -1,7 +1,6 @@
-
 # How to Feature-test JavaScript in a Rails App
 
-Use [capybara-webkit][capybara-webkit]. In your `Gemfile`:
+Use [capybara-webkit]. In your `Gemfile`:
 
 ```ruby
 gem "capybara-webkit"

@@ -58,7 +58,7 @@ Guides for working together, getting things done, programming well, and programm
 - [Objective-C](/objective-c/)
 - [Python](/python/)
 - [Ruby](/ruby/)
-- [SASS](/sass/)
+- [Sass](/sass/)
 - [Scala](/scala/)
 - [Shell](/shell/)
 - [Swift](/swift/)
@@ -84,12 +84,10 @@ Guides for working together, getting things done, programming well, and programm
 
 ## Contributing
 
-Please read the [contribution guidelines] before submitting a pull request.
+Please read the [contribution guidelines](/CONTRIBUTING.md) before submitting a pull request.
 
 In particular: **if you have commit access, please don't merge changes without waiting a week for everybody to leave
 feedback**.
-
-[contribution guidelines]: /CONTRIBUTING.md
 
 ## Credits
 

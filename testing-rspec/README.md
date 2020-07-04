@@ -2,18 +2,18 @@
 
 - Avoid the `private` keyword in specs.
 - Avoid checking boolean equality directly. Instead, write predicate methods and use appropriate matchers.
-  [Example][predicate-example].
+  [Example](predicate_tests_spec.rb).
 - Prefer `eq` to `==` in RSpec.
 - Separate setup, exercise, verification, and teardown phases with newlines.
 - Use RSpec's [`expect` syntax].
 - Use RSpec's [`allow` syntax] for method stubs.
 - Use `not_to` instead of `to_not` in RSpec expectations.
 - Prefer the `have_css` matcher to the `have_selector` matcher in Capybara assertions.
-- Avoid `any_instance` in rspec-mocks and mocha. Prefer [dependency injection].
+- Avoid `any_instance` in `rspec-mocks` and `mocha`; Prefer [dependency injection].
 - Avoid `its`, `specify`, and `before` in RSpec.
 - Avoid `let` (or `let!`) in RSpec. Prefer extracting helper methods, but do not re-implement the functionality of
-  `let`. [Example][avoid-let].
-- Avoid using `subject` explicitly _inside of an_ RSpec `it` block. [Example][subject-example].
+  `let`. [Example](/testing-rspec/avoid_let_spec.rb).
+- Avoid using `subject` explicitly _inside of an_ RSpec `it` block. [Example](/testing-rspec/unit_test_spec.rb).
 - Avoid using instance variables in tests.
 - Disable real HTTP requests to external services with `WebMock.disable_net_connect!`.
 - Don't test private methods.
@@ -29,10 +29,7 @@
 
 [`expect` syntax]: http://myronmars.to/n/dev-blog/2012/06/rspecs-new-expectation-syntax
 [`allow` syntax]: https://github.com/rspec/rspec-mocks#method-stubs
-[predicate-example]: predicate_tests_spec.rb
 [dependency injection]: http://en.wikipedia.org/wiki/Dependency_injection
-[subject-example]: /testing-rspec/unit_test_spec.rb
-[avoid-let]: /testing-rspec/avoid_let_spec.rb
 [`delayed::job` matcher]: https://gist.github.com/3186463
 [stubs and spies]: http://robots.thoughtbot.com/post/159805295/spy-vs-spy
 [assertions about state]: https://speakerdeck.com/skmetz/magic-tricks-of-testing-railsconf?slide=51
@@ -66,7 +63,7 @@
 [Sample](unit_test_spec.rb)
 
 - Don't prefix `it` block descriptions with `should`. Use [Imperative mood] instead.
-- Use `subject` blocks to define objects for use in one-line specs. [Example][subject for one-liners example].
+- Use `subject` blocks to define objects for use in one-line specs. [Example](unit_test_spec.rb#6).
 - Put one-liner specs at the beginning of the outer `describe` blocks.
 - Use `.method` to describe class methods and `#method` to describe instance methods.
 - Use `context` to describe testing preconditions.
@@ -75,4 +72,3 @@
 - Order validation, association, and method tests in the same order that they appear in the class.
 
 [imperative mood]: http://en.wikipedia.org/wiki/Imperative_mood
-[subject for one-liners example]: unit_test_spec.rb#6

@@ -1,4 +1,4 @@
-## Bash
+# Bash
 
 In addition to [shell](/shell/) best practices:
 

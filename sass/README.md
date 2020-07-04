@@ -1,50 +1,49 @@
 # Sass
 
 - [Sample](sample.scss)
-- [Default stylelint configuration](.stylelintrc.json)
-  - This configuration aligns with our team-wide guides below. It does _not_,
-    however, enforce a particular class naming structure,
-    which is a team decision to be made on a per-project basis.
-    
-* When using [sass-rails], use the provided [asset-helpers][asset-helpers]
-  (e.g. `image-url` and `font-url`), so that Rails' Asset Pipeline will re-write
-  the correct paths to assets.
-* Prefer mixins to `@extend`.
-* Use maps and variables to codify and centralize breakpoint values
-  * Prefer abstract names such as `small`, `medium`, `large`, etc. instead of 
-    specific devices
-  * Nest breakpoints inside of the relevant selector
-  * If a component needs a specific breakpoint to work, keep it with the 
-    relevant component partial. If other components need the same value, 
-    integrate it into the centralized breakpoint list
+- [Shared stylelint configuration]
 
+  - This configuration aligns with our team-wide guides below. It does _not_, however, enforce a particular class naming
+    structure, which is a team decision to be made on a per-project basis.
+
+- When using [sass-rails], use the provided [asset-helpers] (e.g. `image-url` and `font-url`), so that Rails' Asset
+  Pipeline will re-write the correct paths to assets.
+- Prefer mixins to `@extend`.
+- Use maps and variables to codify and centralize breakpoint values
+  - Prefer abstract names such as `small`, `medium`, `large`, etc. instead of specific devices
+  - Nest breakpoints inside of the relevant selector
+  - If a component needs a specific breakpoint to work, keep it with the relevant component partial. If other components
+    need the same value, integrate it into the centralized breakpoint list
+
+[shared stylelint configuration]: https://github.com/thoughtbot/stylelint-config
 [sass-rails]: https://github.com/rails/sass-rails
 [asset-helpers]: https://github.com/rails/sass-rails#asset-helpers
 
 ## Formatting
 
-* Use the SCSS syntax.
-* Use hyphens when naming mixins, extends, functions & variables: `span-columns` not `span_columns` or `spanColumns`.
-* Avoid using shorthand properties for only one value: `background-color: #ff0000;`, not `background: #ff0000;`
-* Use `//` for comment blocks not `/* */`.
-* Avoid in-line operations in shorthand declarations (Ex. `padding: $variable * 1.5 variable * 2`)
-* Use parentheses around individual operations in shorthand declarations: `padding: ($variable * 1.5) ($variable * 2);`
-* Use a `%` unit for the amount/weight when using Sass's color functions: `darken($color, 20%)`, not `darken($color, 20)`
-* Use a trailing comma after each item in a map, including the last item.
+- Use the SCSS syntax.
+- Use hyphens when naming mixins, extends, functions & variables: `span-columns` not `span_columns` or `spanColumns`.
+- Avoid using shorthand properties for only one value: `background-color: #ff0000;`, not `background: #ff0000;`
+- Use `//` for comment blocks not `/* */`.
+- Avoid in-line operations in shorthand declarations (Ex. `padding: $variable * 1.5 variable * 2`)
+- Use parentheses around individual operations in shorthand declarations: `padding: ($variable * 1.5) ($variable * 2);`
+- Use a `%` unit for the amount/weight when using Sass's color functions: `darken($color, 20%)`, not
+  `darken($color, 20)`
+- Use a trailing comma after each item in a map, including the last item.
 
 ## Selectors
 
-* Use meaningful names: `$visual-grid-color` not `$color` or `$vslgrd-clr`.
-* Use ID and class names that are as short as possible but as long as necessary.
-* Avoid nesting more than 3 selectors deep.
-* Avoid using comma delimited selectors.
-* Avoid nesting within a media query.
+- Use meaningful names: `$visual-grid-color` not `$color` or `$vslgrd-clr`.
+- Use ID and class names that are as short as possible but as long as necessary.
+- Avoid nesting more than 3 selectors deep.
+- Avoid using comma delimited selectors.
+- Avoid nesting within a media query.
 
 ## Organization
 
-* Use a `base` directory for styling element selectors, global variables, global extends and global mixins.
-* Use HTML structure for ordering of selectors. Don't just put styles at the bottom of the Sass file.
-* Avoid having files longer than 100 lines.
+- Use a `base` directory for styling element selectors, global variables, global extends and global mixins.
+- Use HTML structure for ordering of selectors. Don't just put styles at the bottom of the Sass file.
+- Avoid having files longer than 100 lines.
 
 ## General syntax and formatting
 
@@ -52,12 +51,12 @@
 
 - Order declarations alphabetically.
 - Order items within the declaration block in the following order:
-    1. Sass at-rules, e.g. `@include`
-    1. CSS properties
-    1. Media queries
-    1. Pseudo-classes
-    1. Pseudo-elements
-    1. Nested elements
+  1. Sass at-rules, e.g. `@include`
+  1. CSS properties
+  1. Media queries
+  1. Pseudo-classes
+  1. Pseudo-elements
+  1. Nested elements
 
 <details>
 
@@ -101,7 +100,7 @@ Comprehensive example of ordering items within a declaration block:
   }
 
   &::before {
-    content: "";
+    content: '';
   }
 
   .nested-element {
@@ -112,24 +111,20 @@ Comprehensive example of ordering items within a declaration block:
 
 #### Motivation
 
-Alphabetizing is automatable and is commonly a feature built into
-code editors (see Resources below).
+Alphabetizing can be automated and is commonly a feature built into code editors (see Resources below).
 
 #### Linting
 
-Alphabetical declaration ordering can be linted using stylelint with the
-[stylelint-order][stylelint-order] plugin and its
+Alphabetical declaration ordering can be linted using stylelint with the [stylelint-order] plugin and its
 `order/properties-alphabetical-order` rule.
 
 [stylelint-order]: https://github.com/hudochenkov/stylelint-order
 
 #### Resources
 
-- Atom users can use the [Sort Lines package][sort-lines], which provides
-  commands and keybindings for alphabetical sorting.
-- Sublime Text users can use the `Edit > Sort Lines` menu item, or press
-  <kbd>F5</kbd> to sort lines alphabetically.
+- Atom users can use the [Sort Lines package], which provides commands and keybindings for alphabetical sorting.
+- Sublime Text users can use the `Edit > Sort Lines` menu item, or press <kbd>F5</kbd> to sort lines alphabetically.
 
-[sort-lines]: https://github.com/atom/sort-lines
+[sort lines package]: https://github.com/atom/sort-lines
 
 </details>

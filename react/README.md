@@ -41,11 +41,13 @@
 
 ## General Philosophies
 
-- For greenfield React projects we like to use [TypeScript](https://www.typescriptlang.org/). TypeScript is a typed superset of JavaScript that compiles to
-  plain JavaScript. For a quick introduction, check out
-  [TypeScript in 5 minutes](https://www.typescriptlang.org/docs/handbook/typescript-in-5-minutes.html).
+- For greenfield React projects we like to use [TypeScript]. TypeScript is a typed superset of JavaScript that compiles
+  to plain JavaScript. For a quick introduction, check out [TypeScript in 5 minutes].
 - If our app needs to make network requests and hold state outside of a component, we like using GraphQL and our
-  preferred library is [Apollo](https://www.apollographql.com). We have a [section on `GraphQL`](/graphql/) in our
-  Guides.
-- When building React apps with TypeScript and Apollo, we've found working in [VSCode](https://code.visualstudio.com/)
-  to be a mostly-good experience.
+  preferred library is [Apollo]. We have a [section on `GraphQL`](/graphql) in our Guides.
+- When building React apps with TypeScript and Apollo, we've found working in [VSCode] to be a mostly-good experience.
+
+[typescript]: https://www.typescriptlang.org/
+[typescript in 5 minutes]: https://www.typescriptlang.org/docs/handbook/typescript-in-5-minutes.html
+[apollo]: https://www.apollographql.com
+[vscode]: https://code.visualstudio.com/

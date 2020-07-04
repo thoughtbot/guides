@@ -10,16 +10,22 @@ Install the latest version of Xcode from the App Store.
 
 Get Liftoff.
 
-    brew tap thoughtbot/formulae
-    brew install liftoff
+```console
+brew tap thoughtbot/formulae
+brew install liftoff
+```
 
 Get CocoaPods
 
-    [sudo] gem install cocoapods
+```console
+[sudo] gem install cocoapods
+```
 
 Create the app.
 
-    liftoff
+```console
+liftoff
+```
 
 - Be sure to set an appropriate 2 or 3 letter class prefix.
 
@@ -27,12 +33,16 @@ Create the app.
 
 Get the code.
 
-    git clone git@github.com:organization/app.git
+```console
+git clone git@github.com:organization/app.git
+```
 
 Install the app's dependencies.
 
-    cd project
-    pod install
+```console
+cd project
+pod install
+```
 
 ## Git Protocol
 
