@@ -110,7 +110,7 @@ Comprehensive example of ordering items within a declaration block:
   }
 
   &::before {
-    content: '';
+    content: "";
   }
 
   .nested-element {
