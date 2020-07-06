@@ -12,7 +12,8 @@ A guide for programming within version control.
 
 ## Maintain a Repo
 
-- Avoid including files in source control that are specific to your development machine or process.
+- Avoid including files in source control that are specific to your development
+  machine or process.
 - Delete local and remote feature branches after merging.
 - Perform work in a feature branch.
 - Rebase frequently to incorporate upstream changes.
@@ -82,11 +83,11 @@ Ask for a code review in the project's chat room.
 
 ## Review Code
 
-A team member other than the author reviews the pull request. They follow [Code Review](/code-review/) guidelines to
-avoid miscommunication.
+A team member other than the author reviews the pull request. They follow [Code
+Review](/code-review/) guidelines to avoid miscommunication.
 
-They make comments and ask questions directly on lines of code in the GitHub web interface or in the project's chat
-room.
+They make comments and ask questions directly on lines of code in the GitHub web
+interface or in the project's chat room.
 
 For changes which they can make themselves, they check out the branch.
 
@@ -96,22 +97,24 @@ git checkout <branch-name>
 git diff staging/master..HEAD
 ```
 
-They make small changes right in the branch, test the feature on their machine, run tests, commit, and push.
+They make small changes right in the branch, test the feature on their machine,
+run tests, commit, and push.
 
 When satisfied, they comment on the pull request `Ready to merge.`
 
 ## Merge
 
-Rebase interactively. Squash commits like "Fix whitespace" into one or a small number of valuable commit(s). Edit commit
-messages to reveal intent. Run tests.
+Rebase interactively. Squash commits like "Fix whitespace" into one or a small
+number of valuable commit(s). Edit commit messages to reveal intent. Run tests.
 
 ```console
 git fetch origin
 git rebase -i origin/master
 ```
 
-Force push your branch. This allows GitHub to automatically close your pull request and mark it as merged when your
-commit(s) are pushed to master. It also makes it possible to [find the pull request] that brought in your changes.
+Force push your branch. This allows GitHub to automatically close your pull
+request and mark it as merged when your commit(s) are pushed to master. It also
+makes it possible to [find the pull request] that brought in your changes.
 
 ```console
 git push --force-with-lease origin <branch-name>

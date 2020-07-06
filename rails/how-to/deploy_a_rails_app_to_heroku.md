@@ -59,8 +59,9 @@ Close pull request and comment `Merged.`
 
 - Make sure that your [`Procfile`] is set up to run Unicorn.
 - Make sure the PG Backups add-on is enabled.
-- Create a read-only [Heroku Follower] for your production database. If a Heroku database outage occurs, Heroku can use
-  the follower to get your app back up and running faster.
+- Create a read-only [Heroku Follower] for your production database. If a Heroku
+  database outage occurs, Heroku can use the follower to get your app back up
+  and running faster.
 
 [heroku follower]: https://devcenter.heroku.com/articles/improving-heroku-postgres-availability-with-followers
 [`procfile`]: https://devcenter.heroku.com/articles/procfile

@@ -1,13 +1,14 @@
 # Ember
 
 - Avoid using `$` without scoping to `this.$` in views and components.
-- Prefer to make model lookup calls in routes instead of controllers (`find`, `findAll`, etc.).
+- Prefer to make model lookup calls in routes instead of controllers (`find`,
+  `findAll`, etc.).
 - Prefer adding properties to controllers instead of models.
 - Don't use jQuery outside of views and components.
 - Prefer to use predefined `Ember.computed.*` functions when possible.
 - Use `href="#"` for links that have an action.
-- Prefer dependency injection through `Ember.inject` over initializers, globals on window, or namespaces.
-  ([sample](ember.js#L1-L11))
+- Prefer dependency injection through `Ember.inject` over initializers, globals
+  on window, or namespaces. ([sample](ember.js#L1-L11))
 - Prefer sub-routes over maintaining state.
 - Prefer explicit setting of boolean properties over `toggleProperty`.
 - Prefer testing your application with [QUnit].
@@ -16,4 +17,5 @@
 
 ## Testing
 
-- Prefer `findWithAssert` over `find` when fetching an element you expect to exist
+- Prefer `findWithAssert` over `find` when fetching an element you expect to
+  exist

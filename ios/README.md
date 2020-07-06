@@ -54,7 +54,8 @@ Follow the normal [Product Review protocol](/product-review/).
 
 ## Code Review
 
-Follow the normal [Code Review guidelines](/code-review/). When reviewing others' iOS work, look in particular for:
+Follow the normal [Code Review guidelines](/code-review/). When reviewing
+others' iOS work, look in particular for:
 
 - Review that ViewControllers are adhering to SRP
 - Watch for CoreData thread boundary violations

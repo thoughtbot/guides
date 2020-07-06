@@ -10,7 +10,8 @@
 - Use pre-built hooks when possible (e.g. [streamich/react-use])
 - Use [custom hooks] to encapsulate stateful logic outside a component
 - Avoid nesting [Forward Refs]
-- Avoid [Higher-Order Components] and [recompose] (see hooks above as an alternative)
+- Avoid [Higher-Order Components] and [recompose] (see hooks above as an
+  alternative)
 - Prefer the `children` prop over [render props]
 - Prefer using [TypeScript prop interfaces] over [PropTypes]
 - Prefer the [short syntax] when using [Fragments]
@@ -41,11 +42,14 @@
 
 ## General Philosophies
 
-- For greenfield React projects we like to use [TypeScript]. TypeScript is a typed superset of JavaScript that compiles
-  to plain JavaScript. For a quick introduction, check out [TypeScript in 5 minutes].
-- If our app needs to make network requests and hold state outside of a component, we like using GraphQL and our
-  preferred library is [Apollo]. We have a [section on `GraphQL`](/graphql) in our Guides.
-- When building React apps with TypeScript and Apollo, we've found working in [VSCode] to be a mostly-good experience.
+- For greenfield React projects we like to use [TypeScript]. TypeScript is a
+  typed superset of JavaScript that compiles to plain JavaScript. For a quick
+  introduction, check out [TypeScript in 5 minutes].
+- If our app needs to make network requests and hold state outside of a
+  component, we like using GraphQL and our preferred library is [Apollo]. We
+  have a [section on `GraphQL`](/graphql) in our Guides.
+- When building React apps with TypeScript and Apollo, we've found working in
+  [VSCode] to be a mostly-good experience.
 
 [typescript]: https://www.typescriptlang.org/
 [typescript in 5 minutes]: https://www.typescriptlang.org/docs/handbook/typescript-in-5-minutes.html

@@ -1,7 +1,7 @@
 # Product Review
 
-Cut down cycle time and focus on the user by getting a teammate to review your changes to the product before you get a
-code review or deploy to staging.
+Cut down cycle time and focus on the user by getting a teammate to review your
+changes to the product before you get a code review or deploy to staging.
 
 For each change, choose one of four techniques:
 

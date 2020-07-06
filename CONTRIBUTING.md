@@ -1,25 +1,28 @@
 # Contributing
 
-We love contributions from everyone. By participating in this project, you agree to abide by the [thoughtbot code of
-conduct].
+We love contributions from everyone. By participating in this project, you agree
+to abide by the [thoughtbot code of conduct].
 
-We expect everyone to follow the code of conduct anywhere in thoughtbot's project codebases, issue trackers, chatrooms,
-and mailing lists.
+We expect everyone to follow the code of conduct anywhere in thoughtbot's
+project codebases, issue trackers, chatrooms, and mailing lists.
 
 [thoughtbot code of conduct]: https://thoughtbot.com/open-source-code-of-conduct
 
 ## Getting Feedback
 
-Since these are our guides, we want everyone at thoughtbot to see them. We have a lot of offices across a lot of
-timezones, so we leave all PRs open for at least a week to get feedback from everyone.
+Since these are our guides, we want everyone at thoughtbot to see them. We have
+a lot of offices across a lot of timezones, so we leave all PRs open for at
+least a week to get feedback from everyone.
 
 ## Content
 
-Decisions about which libraries to use should live in template projects such as [Suspenders].
+Decisions about which libraries to use should live in template projects such as
+[Suspenders].
 
 [suspenders]: https://github.com/thoughtbot/suspenders
 
 ### The Anatomy of a Guide
 
-Whether you're creating a new guide or adding to an existing one, you can reference [the template guide](/_template/) if
-you're unsure where to put things.
+Whether you're creating a new guide or adding to an existing one, you can
+reference [the template guide](/_template/) if you're unsure where to put
+things.
