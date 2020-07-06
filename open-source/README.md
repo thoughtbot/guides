@@ -20,13 +20,13 @@ git co-pr 123
 Rebase interactively, squash, and potentially improve commit messages:
 
 ```console
-git rebase -i master
+git rebase -i main
 ```
 
 Look at changes:
 
 ```console
-git diff origin/master
+git diff origin/main
 ```
 
 Run the code and tests. For example, on a Ruby project:
@@ -36,17 +36,17 @@ bundle
 rake
 ```
 
-Merge code into master:
+Merge code into main:
 
 ```console
-git checkout master
+git checkout main
 git merge pr/123 --ff-only
 ```
 
 Push:
 
 ```console
-git push origin master
+git push origin main
 ```
 
 Clean up:

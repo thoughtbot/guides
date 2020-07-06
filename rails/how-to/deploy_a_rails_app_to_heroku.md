@@ -4,8 +4,8 @@ View a list of new commits. View changed files.
 
 ```console
 git fetch staging
-git log staging/master..master
-git diff --stat staging/master
+git log staging/main..main
+git diff --stat staging/main
 ```
 
 If necessary, add new environment variables.
@@ -39,8 +39,8 @@ Deploy to production.
 
 ```console
 git fetch production
-git log production/master..master
-git diff --stat production/master
+git log production/main..main
+git diff --stat production/main
 heroku config:add NEW_VARIABLE=value --remote production
 git push production
 heroku run rake db:migrate --remote production

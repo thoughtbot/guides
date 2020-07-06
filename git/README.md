@@ -23,10 +23,10 @@ A guide for programming within version control.
 
 ## Write a Feature
 
-Create a local feature branch based off master.
+Create a local feature branch based off `main`.
 
 ```console
-git checkout master
+git checkout main
 git pull
 git checkout -b <branch-name>
 ```
@@ -35,7 +35,7 @@ Rebase frequently to incorporate upstream changes.
 
 ```console
 git fetch origin
-git rebase origin/master
+git rebase origin/main
 ```
 
 Resolve conflicts. When feature is complete and tests pass, stage the changes.
@@ -64,7 +64,7 @@ If you've created more than one commit, [use `git rebase` interactively] to squa
 messages:
 
 ```console
-git rebase -i origin/master
+git rebase -i origin/main
 ```
 
 Share your branch.
@@ -94,7 +94,7 @@ For changes which they can make themselves, they check out the branch.
 ```console
 git checkout <branch-name>
 ./bin/setup
-git diff staging/master..HEAD
+git diff staging/main..HEAD
 ```
 
 They make small changes right in the branch, test the feature on their machine,
@@ -109,23 +109,23 @@ number of valuable commit(s). Edit commit messages to reveal intent. Run tests.
 
 ```console
 git fetch origin
-git rebase -i origin/master
+git rebase -i origin/main
 ```
 
 Force push your branch. This allows GitHub to automatically close your pull
-request and mark it as merged when your commit(s) are pushed to master. It also
+request and mark it as merged when your commit(s) are pushed to `main`. It also
 makes it possible to [find the pull request] that brought in your changes.
 
 ```console
 git push --force-with-lease origin <branch-name>
 ```
 
-View a list of new commits. View changed files. Merge branch into master.
+View a list of new commits. View changed files. Merge branch into `main`.
 
 ```console
-git log origin/master..<branch-name>
-git diff --stat origin/master
-git checkout master
+git log origin/main..<branch-name>
+git diff --stat origin/main
+git checkout main
 git merge <branch-name> --ff-only
 git push
 ```
