@@ -30,14 +30,7 @@ that covers this material from [Derek Prior at RailsConf
 
 - Be grateful for the reviewer's suggestions. ("Good call. I'll make that
   change.")
-- A common axiom is "Don't take it personally. The review is of the code, not
-  you." We used to include this, but now prefer to say what we mean: Be aware of
-  [how hard it is to convey emotion online] and how easy it is to misinterpret
-  feedback. If a review seems aggressive or angry or otherwise personal,
-  consider if it is intended to be read that way and ask the person for
-  clarification of intent, in person if possible.
-- Keeping the previous point in mind: assume the best intention from the
-  reviewer's comments.
+- Be aware that it can be [challenging to convey emotion and intention online]
 - Explain why the code exists. ("It's like that because of these reasons. Would
   it be more clear if I rename this class/file/method/variable?")
 - Extract some changes and refactoring into future tickets/stories.
@@ -53,7 +46,7 @@ that covers this material from [Derek Prior at RailsConf
 - Merge once you feel confident in the code and its impact on the project.
 - Final editorial control rests with the pull request author.
 
-[how hard it is to convey emotion online]: https://www.fastcodesign.com/3036748/why-its-so-hard-to-detect-emotion-in-emails-and-texts
+[challenging to convey emotion and intention online]: https://thoughtbot.com/blog/empathy-online
 
 ## Reviewing Code
 
