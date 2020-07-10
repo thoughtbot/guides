@@ -2,7 +2,8 @@
 
 [![Reviewed by Hound](https://img.shields.io/badge/Reviewed_by-Hound-8E64B0.svg)](https://houndci.com)
 
-Guides for working together, getting things done, programming well, and programming in style.
+Guides for working together, getting things done, programming well, and
+programming in style.
 
 ## High level guidelines
 
@@ -58,7 +59,7 @@ Guides for working together, getting things done, programming well, and programm
 - [Objective-C](/objective-c/)
 - [Python](/python/)
 - [Ruby](/ruby/)
-- [SASS](/sass/)
+- [Sass](/sass/)
 - [Scala](/scala/)
 - [Shell](/shell/)
 - [Swift](/swift/)
@@ -84,16 +85,16 @@ Guides for working together, getting things done, programming well, and programm
 
 ## Contributing
 
-Please read the [contribution guidelines] before submitting a pull request.
+Please read the [contribution guidelines](/CONTRIBUTING.md) before submitting a
+pull request.
 
-In particular: **if you have commit access, please don't merge changes without waiting a week for everybody to leave
-feedback**.
-
-[contribution guidelines]: /CONTRIBUTING.md
+In particular: **if you have commit access, please don't merge changes without
+waiting a week for everybody to leave feedback**.
 
 ## Credits
 
-Thank you, [contributors](https://github.com/thoughtbot/guides/graphs/contributors)!
+Thank you,
+[contributors](https://github.com/thoughtbot/guides/graphs/contributors)!
 
 ![thoughtbot](http://presskit.thoughtbot.com/images/thoughtbot-logo-for-readmes.svg)
 
@@ -101,7 +102,7 @@ Guides is maintained by [thoughtbot, inc](https://thoughtbot.com).
 
 ## License
 
-Guides is © 2020 thoughtbot, inc. It is distributed under the
-[Creative Commons Attribution License](http://creativecommons.org/licenses/by/3.0/).
+Guides is © 2020 thoughtbot, inc. It is distributed under the [Creative Commons
+Attribution License](http://creativecommons.org/licenses/by/3.0/).
 
 The names and logos for thoughtbot are trademarks of thoughtbot, inc.

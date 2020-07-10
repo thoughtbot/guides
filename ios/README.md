@@ -10,16 +10,22 @@ Install the latest version of Xcode from the App Store.
 
 Get Liftoff.
 
-    brew tap thoughtbot/formulae
-    brew install liftoff
+```console
+brew tap thoughtbot/formulae
+brew install liftoff
+```
 
 Get CocoaPods
 
-    [sudo] gem install cocoapods
+```console
+[sudo] gem install cocoapods
+```
 
 Create the app.
 
-    liftoff
+```console
+liftoff
+```
 
 - Be sure to set an appropriate 2 or 3 letter class prefix.
 
@@ -27,12 +33,16 @@ Create the app.
 
 Get the code.
 
-    git clone git@github.com:organization/app.git
+```console
+git clone git@github.com:organization/app.git
+```
 
 Install the app's dependencies.
 
-    cd project
-    pod install
+```console
+cd project
+pod install
+```
 
 ## Git Protocol
 
@@ -44,7 +54,8 @@ Follow the normal [Product Review protocol](/product-review/).
 
 ## Code Review
 
-Follow the normal [Code Review guidelines](/code-review/). When reviewing others' iOS work, look in particular for:
+Follow the normal [Code Review guidelines](/code-review/). When reviewing
+others' iOS work, look in particular for:
 
 - Review that ViewControllers are adhering to SRP
 - Watch for CoreData thread boundary violations

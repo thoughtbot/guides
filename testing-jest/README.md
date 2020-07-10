@@ -1,12 +1,14 @@
 # Testing with Jest
 
 - Use [eslint-plugin-jest] to enforce testing style
-- Use [testing-library/jest-dom] and [jest-community/jest-extended] for supplemental expectation matchers
+- Use [testing-library/jest-dom] and [jest-community/jest-extended] for
+  supplemental expectation matchers
 - Use [React Testing Library] for testing [React](/react/) components
 - Use [React Hooks Testing Library] for testing [React Hooks]
 - Use [User Event] for simulating DOM events on React components under test
 - Use [Fishery] for building factories
-- Prefer placing test suite files alongside source files (e.g. `Thing.tsx` / `Thing.test.tsx`)
+- Prefer placing test suite files alongside source files (e.g. `Thing.tsx` /
+  `Thing.test.tsx`)
 - Prefer writing specific unit tests over [Snapshot Testing]
 - Prefer `describe` and `it` blocks over `test` blocks
 - Prefer [.resolves/.rejects] over awaiting promises in tests

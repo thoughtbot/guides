@@ -2,11 +2,12 @@
 
 - Use the guidelines for [JavaScript](/javascript/)
 - Use TypeScript in [strict mode]
-- Use [ESlint] and [Prettier] for auto-formatting and auto-fixing
+- Use [ESLint] and [Prettier] for auto-formatting and auto-fixing
 - Use [Jest](/testing-jest/) for unit testing
 - Prefer [Functions] over [Classes]
 - Prefer functional style (map/filter/reduce) over iteration (for/while/.each)
-- Prefer [arrow functions] `=>`, over the `function` keyword except when using [Generics]
+- Prefer [arrow functions] `=>`, over the `function` keyword except when using
+  [Generics]
 - Use [Generic Constraints] when possible
 - Use `PascalCase` for [Interfaces] and [Type Aliases]
 - Use [readonly] properties where applicable
@@ -16,7 +17,8 @@
 - Avoid [Decorators]
 - Avoid [Overloading Functions]
 - Prefer [async/await] over traditional promise syntax
-- Prefer [Optional Properties] in an interface rather than declaring the property type as `T | undefined`
+- Prefer [Optional Properties] in an interface rather than declaring the
+  property type as `T | undefined`
 - Prefer explicitly defining interfaces over [Extending Interfaces]
 - Avoid the use of the [any] type
 - Avoid the [Non-null assertion operator]
@@ -24,7 +26,8 @@
 - Prefer the `as`-syntax for [Type Assertions] over the angle-bracket syntax
 - Use the [Nullish coalescing operator]
 - Prefer [Type Guards] over [Type Assertions]
-- Prefer [Union Types], [Lookup Types], [Mapped Types] and [Const Assertions] over [Enums]
+- Prefer [Union Types], [Lookup Types], [Mapped Types] and [Const Assertions]
+  over [Enums]
 
 [eslint]: https://eslint.org/
 [prettier]: https://prettier.io/
@@ -35,10 +38,8 @@
 [generic constraints]: https://www.typescriptlang.org/docs/handbook/generics.html#generic-constraints
 [readonly]: https://www.typescriptlang.org/docs/handbook/interfaces.html#readonly-properties
 [strict mode]: https://www.typescriptlang.org/docs/handbook/compiler-options.html
-[non-null assertion operator]:
-  https://www.typescriptlang.org/docs/handbook/release-notes/typescript-2-0.html#non-null-assertion-operator
-[nullish coalescing operator]:
-  https://www.typescriptlang.org/docs/handbook/release-notes/typescript-3-7.html#nullish-coalescing
+[non-null assertion operator]: https://www.typescriptlang.org/docs/handbook/release-notes/typescript-2-0.html#non-null-assertion-operator
+[nullish coalescing operator]: https://www.typescriptlang.org/docs/handbook/release-notes/typescript-3-7.html#nullish-coalescing
 [extending interfaces]: https://www.typescriptlang.org/docs/handbook/interfaces.html#extending-interfaces
 [optional properties]: https://www.typescriptlang.org/docs/handbook/interfaces.html#optional-properties
 [interfaces]: https://www.typescriptlang.org/docs/handbook/interfaces.html
