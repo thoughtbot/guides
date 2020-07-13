@@ -12,7 +12,7 @@
 - Name variables created by a factory after the factory (`user_factory` creates
   `user`).
 - Prefer nested class and module definitions over the shorthand version
-  [Example](/ruby/sample.rb#L103) [#332]
+  [Example](/ruby/sample_1.rb#L103) [#332]
 - Prefer `detect` over `find`. [0d819844]
 - Prefer `select` over `find_all`. [0d819844]
 - Prefer `map` over `collect`. [0d819844]
