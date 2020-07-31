@@ -24,7 +24,7 @@
 [custom hooks]: https://reactjs.org/docs/hooks-overview.html#building-your-own-hooks
 [streamich/react-use]: https://github.com/streamich/react-use
 [graphql]: https://graphql.org/
-[function components]: https://reactjs.org/docs/components-and-props.tml
+[function components]: https://reactjs.org/docs/components-and-props.html
 [class components]: https://reactjs.org/docs/react-component.html
 [forward refs]: https://reactjs.org/docs/forwarding-refs.html
 [higher-order components]: https://reactjs.org/docs/higher-order-components.html
