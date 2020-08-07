@@ -9,9 +9,6 @@ haml:
   config_file: haml/haml.yml
 javascript:
   enabled: false
-jscs:
-  enabled: true
-  config_file: style/javascript/.jscsrc
 rubocop:
   enabled: true
   config_file: ruby/.rubocop.yml
