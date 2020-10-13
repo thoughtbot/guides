@@ -1,5 +1,6 @@
 # HTML
 
+- Use the [W3C's Markup Validation Service][html-validator] to validate HTML
 - Prefer double quotes for attributes.
 - Use lowercase text for elements and attributes
 - Use double quotes to wrap element attributes
@@ -27,5 +28,6 @@
 - Ensure heading elements are used to section content, and heading levels are
   not skipped
 
+[html-validator]: https://validator.w3.org/
 [normal elements]: https://html.spec.whatwg.org/multipage/syntax.html#normal-elements
 [parent elements contain no more than 60 child elements]: https://developers.google.com/web/tools/lighthouse/audits/dom-size
