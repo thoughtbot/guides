@@ -10,3 +10,4 @@
 - Use string resources for all user-visible text.
 - Prefer vector drawables over PNGs or JPEGs.
 - Prefer Model-View-ViewModel (MVVM) for your app architecture.
+- Prefer `.forEach` over the `for` keyword.
