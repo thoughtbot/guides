@@ -62,5 +62,6 @@ be used.
 - Provide the ID of the deleted object as a field in mutations that delete
   objects.
 - Use JSON as a default transport format.
+- Avoid returning null from operations. [#630]
 
 [graphql specification]: https://graphql.github.io/graphql-spec/
