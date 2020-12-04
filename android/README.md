@@ -11,3 +11,4 @@
 - Prefer vector drawables over PNGs or JPEGs.
 - Prefer Model-View-ViewModel (MVVM) for your app architecture.
 - Prefer `.forEach` over the `for` keyword.
+- Document each `@SuppressLint` with a comment.
