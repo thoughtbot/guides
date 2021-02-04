@@ -112,6 +112,13 @@ others' Rails work, look in particular for:
   is a related todo in the project management system to add it during the
   staging and production deploys.
 
+## Asset Management
+
+- Use [ActiveStorage] to manage file uploads that live on ActiveRecord objects.
+- Don't use live storage backends like S3 or Azure in tests.
+
+[ActiveStorage]: https://guides.rubyonrails.org/active_storage_overview.html
+
 ## How to...
 
 - [Start a New Rails App](./how-to/start_a_new_rails_app.md)
