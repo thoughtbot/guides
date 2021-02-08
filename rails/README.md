@@ -58,6 +58,15 @@
 - [Use blocks](/ruby/sample_2.rb#L10) when declaring date and time attributes in
   FactoryBot factories.
 - Use `touch: true` when declaring `belongs_to` relationships.
+- When building queries with the ActiveRecord interface, sort your method chain
+  as follows since this mirrors the [order SQL actually executes a query]:
+  - `from`
+  - `joins`
+  - `where`
+  - `group`
+  - `having`
+  - `order`
+  - `select`
 
 [add foreign key constraints]: http://robots.thoughtbot.com/referential-integrity-with-foreign-keys
 [`.ruby-version`]: https://gist.github.com/fnichol/1912050
@@ -65,6 +74,7 @@
 [spring binstubs]: https://github.com/sstephenson/rbenv/wiki/Understanding-binstubs
 [prevent tampering]: http://blog.bigbinary.com/2013/03/19/cookies-on-rails.html
 [`app/views/application`]: http://railscasts.com/episodes/269-template-inheritance
+[order SQL actually executes a query]: https://jvns.ca/blog/2019/10/03/sql-queries-don-t-start-with-select
 
 ## Migrations
 
