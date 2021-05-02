@@ -11,5 +11,5 @@
   in the function body.
 - Break long lines after 100 characters.
 - Order the dependencies of a module as: `use`, `import`, `alias`.
-- Put a empty line between each type of dependency.
+- Put an empty line between each type of dependency.
 - Sort the dependencies in each section alphabetically.
