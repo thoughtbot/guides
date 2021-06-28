@@ -8,6 +8,7 @@ A guide for programming within version control.
 - Squash multiple trivial commits into a single commit.
 - Write a [good commit message].
 
+[rebase workflow]: https://github.com/thoughtbot/guides/blob/main/git/README.md#merge
 [good commit message]: http://tbaggery.com/2008/04/19/a-note-about-git-commit-messages.html
 
 ## Maintain a Repo
