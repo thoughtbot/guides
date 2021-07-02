@@ -1,3 +1,3 @@
 # HAML
 
-See [haml.yml](haml.yml])
+See [haml.yml](haml.yml)
