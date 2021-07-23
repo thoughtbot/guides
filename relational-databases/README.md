@@ -7,5 +7,5 @@
   user, as queries without one may return results in a changing, arbitrary
   order.
 
-[index foreign keys]: https://tomafro.net/2009/08/using-indexes-in-rails-index-your-associations
+[index foreign keys]: https://thoughtbot.com/blog/a-grand-piano-for-your-violin
 [`not null`]: http://www.postgresql.org/docs/9.1/static/ddl-constraints.html#AEN2444
