@@ -61,3 +61,7 @@ others' iOS work, look in particular for:
 - Watch for CoreData thread boundary violations
 - Watch for potential retain cycles with blocks
 - Ensure that methods that require parameters are using `NSParameterAssert()`
+
+## Submit to the App Store
+
+- Determine if you need to [report your app's use of encryption](https://getonthestore.com/export-compliance/).
