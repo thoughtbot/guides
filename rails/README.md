@@ -81,6 +81,10 @@
 - Avoid the `:except` option in routes.
 - Order resourceful routes alphabetically by name.
 - Use the `:only` option to explicitly state exposed routes.
+- Prefer [resource routing] over [generating routes] individually
+
+[resource routing]: https://guides.rubyonrails.org/routing.html#resource-routing-the-rails-default
+[generating routes]: https://guides.rubyonrails.org/routing.html#generating-paths-and-urls-from-code
 
 ## Background Jobs
 
