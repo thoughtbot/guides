@@ -15,7 +15,7 @@
 - Order i18n translations alphabetically by key name.
 - Order model contents: constants, macros, public methods, private methods.
 - Put application-wide partials in the [`app/views/application`] directory.
-- Use `def self.method`, not the `scope :method` DSL.
+- Use `def self.method`, not the `scope :method` DSL. [Discussion].
 - Use the default `render 'partial'` syntax over `render partial: 'partial'`.
 - Use `link_to` for GET requests, and `button_to` for other HTTP verbs.
 - Use new-style `validates :name, presence: true` validations, and put all
@@ -54,6 +54,7 @@
   FactoryBot factories.
 - Use `touch: true` when declaring `belongs_to` relationships.
 
+[Discussion]: https://github.com/thoughtbot/guides/pull/643
 [`.ruby-version`]: https://gist.github.com/fnichol/1912050
 [redirects]: http://www.w3.org/Protocols/rfc2616/rfc2616-sec14.html#sec14.30
 [spring binstubs]: https://github.com/sstephenson/rbenv/wiki/Understanding-binstubs
