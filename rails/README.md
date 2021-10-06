@@ -54,7 +54,6 @@
   FactoryBot factories.
 - Use `touch: true` when declaring `belongs_to` relationships.
 
-[Discussion]: https://github.com/thoughtbot/guides/pull/643
 [`.ruby-version`]: https://gist.github.com/fnichol/1912050
 [redirects]: http://www.w3.org/Protocols/rfc2616/rfc2616-sec14.html#sec14.30
 [spring binstubs]: https://github.com/sstephenson/rbenv/wiki/Understanding-binstubs
