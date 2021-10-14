@@ -27,7 +27,7 @@ violations.
 - Don't misspell. [Example](/ruby/sample.rb#L11).
 - Use empty lines around multi-line blocks.
 - Use spaces around operators, except for unary operators, such as `!`.
-- Use [Unix-style line endings](`\n`).
+- Use [Unix-style line endings] (`\n`).
 - Use [uppercase for SQL key words and lowercase for SQL identifiers].
 
 [uppercase for sql key words and lowercase for sql identifiers]: http://www.postgresql.org/docs/9.2/static/sql-syntax-lexical.html#SQL-SYNTAX-IDENTIFIERS
