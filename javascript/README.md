@@ -2,6 +2,7 @@
 
 [Sample](sample.js)
 
+- Use [TypeScript](/typescript/)
 - Use the latest stable JavaScript syntax with a transpiler, such as [babel].
 - Use [ESLint] and [Prettier] for auto-formatting and auto-fixing
 - Use [Jest] for unit testing
@@ -10,8 +11,6 @@
   (`null` or `undefined`).
 - Prefer [arrow functions] `=>`, over the `function` keyword except when
   defining classes or methods.
-- Use semicolons at the end of each statement.
-- Prefer single quotes.
 - Prefer ES6 [destructuring] over object literal notation.
 - Use ES6 [spread] and [rest] operator wherever possible for a cleaner code.
 - Use `PascalCase` for classes, `lowerCamelCase` for variables and functions,
@@ -23,14 +22,24 @@
 - Use `const` for declaring variables that will never be re-assigned, and `let`
   otherwise.
 - Avoid `var` to declare variables.
-- Use a [trailing comma] after each item in a multi-line array or object
-  literal, including the last item.
-- Include a `to_param` or `href` attribute when serializing ActiveRecord models,
-  and use that when constructing URLs client side, rather than the ID.
-- Prefer `data-*` attributes over `id` and `class` attributes when targeting
-  HTML elements. #462
-- Avoid targeting HTML elements using classes intended for styling purposes.
-  #462
+  
+## Formatting
+
+- Use [Prettier defaults](https://prettier.io/docs/en/options.html) with the following additional configuration (.prettierrc):
+
+	```json
+	{
+	  "singleQuote": true
+	}
+	```
+  
+  This configuration includes:
+  - Use semicolons at the end of each statement ([sample](/javascript/sample.js#L5))
+  - Prefer single quotes ([sample](/javascript/sample.js#L11))
+  - Use a trailing comma after each item in a multi-line array or object literal, including the last item. ([sample](/javascript/sample.js#L11)) 
+ 
+If ESLint is used along with Prettier, the ESLInt plugin [eslint-config-prettier](https://github.com/prettier/eslint-config-prettier) should also be used to turn off all ESLint style rules that are already handled by Prettier.
+
 
 [babel]: https://babeljs.io/
 [eslint]: https://eslint.org/
@@ -41,4 +50,3 @@
 [destructuring]: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Destructuring_assignment
 [spread]: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Spread_syntax
 [rest]: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions/rest_parameters
-[trailing comma]: /javascript/sample.js#L11
