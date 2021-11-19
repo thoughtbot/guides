@@ -22,26 +22,45 @@
 - Use `const` for declaring variables that will never be re-assigned, and `let`
   otherwise.
 - Avoid `var` to declare variables.
-  
+
 ## Formatting
 
 - Use [Prettier defaults](https://prettier.io/docs/en/options.html) with the following additional configuration (.prettierrc):
 
-	```json
-	{
-	  "singleQuote": true
-	}
-	```
-  
+  ```json
+  {
+    "singleQuote": true
+  }
+  ```
+
   This configuration includes:
+
   - Use semicolons at the end of each statement ([sample](/javascript/sample.js#L5))
   - Prefer single quotes ([sample](/javascript/sample.js#L11))
-  - Use a trailing comma after each item in a multi-line array or object literal, including the last item. ([sample](/javascript/sample.js#L11)) 
- 
+  - Use a trailing comma after each item in a multi-line array or object literal, including the last item. ([sample](/javascript/sample.js#L11))
+
 ## Linting
 
 Use [ESLint] for linting JavaScript. If Prettier is used, the ESLint plugin [eslint-config-prettier](https://github.com/prettier/eslint-config-prettier) should also be used. This turns off all ESLint style rules that are already handled by Prettier, which prevents conflicts between ESLint and Prettier rules, simplifies ESLint configuration, and reduces the potential for errors to be reported by both ESLint and Prettier.
 
+## package.json scripts
+
+Scripts should be added to `package.json` for linting, formatting, and running tests. Continuous integration should be set up to run these checks and fail if any of them are not successful.
+
+```json
+{
+  "scripts": {
+    "test": "jest",
+    "test:all": "yarn lint:all && yarn test",
+    "lint:all": "yarn tsc && yarn lint && yarn pretty:check",
+    "lint": "eslint --max-warnings=0 . --ext .js,.jsx,.ts,.tsx",
+    "pretty": "prettier --write .",
+    "pretty:check": "prettier --check ."
+  }
+}
+```
+
+In some cases, globs may need to be used to explicitly include/exclude directories or files from ESLint and Prettier checks.
 
 [babel]: https://babeljs.io/
 [eslint]: https://eslint.org/
