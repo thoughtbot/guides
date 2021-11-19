@@ -38,7 +38,9 @@
   - Prefer single quotes ([sample](/javascript/sample.js#L11))
   - Use a trailing comma after each item in a multi-line array or object literal, including the last item. ([sample](/javascript/sample.js#L11)) 
  
-If ESLint is used along with Prettier, the ESLInt plugin [eslint-config-prettier](https://github.com/prettier/eslint-config-prettier) should also be used to turn off all ESLint style rules that are already handled by Prettier.
+## Linting
+
+Use [ESLint] for linting JavaScript. If Prettier is used, the ESLint plugin [eslint-config-prettier](https://github.com/prettier/eslint-config-prettier) should also be used. This turns off all ESLint style rules that are already handled by Prettier, which prevents conflicts between ESLint and Prettier rules, simplifies ESLint configuration, and reduces the potential for errors to be reported by both ESLint and Prettier.
 
 
 [babel]: https://babeljs.io/
