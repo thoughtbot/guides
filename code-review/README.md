@@ -76,3 +76,7 @@ An example response to style comments:
 
 If you disagree with a guideline, open an issue on the guides repo rather than
 debating it within the code review. In the meantime, apply the guideline.
+It's often helpful to set up a linter like [standard] to automatically format code
+and avoid debating personal preferences on PRs.
+
+[standard]: https://github.com/testdouble/standard
