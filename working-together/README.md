@@ -36,7 +36,7 @@ and valued during remote meetings that happen over video conferencing software.
     time respectful of everyone's work schedule?
 - **Be Courteous:** Be respectful of others on your team.
   - Mute yourself when not talking to minimize background noise.
-  - Ensure everyone on your team can hear and understand you clearly.
+  - Confirm that everyone on your team can hear and understand you clearly.
   - Consider calling in if you have an unreliable internet connection.
   - Be understanding of interruptions that may happen with remote work,
     e.g. children, pets, other people who might be sharing space with your teammate.
