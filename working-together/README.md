@@ -27,10 +27,52 @@ A guide for working well together.
 - Ask for Feedback (What did we do well? What could we have done better? It’ll
   feel weird, do it anyway)
 
-## Meeting Guidelines
+## Remote Meeting Guidelines
 
 We've compiled some guidelines from various sources to help people feel included
-and respected during meetings. You can [download a double-sided printout] of
+and valued during remote meetings that happen over video conferencing software.
+
+- **Time zones:** Consider time zones when scheduling meetings - is the meeting 
+    time respectful of everyone's work schedule?
+- **Be Courteous::** Be respectful of others on your team.
+  - Mute yourself when not talking to minimize background noise.
+  - Ensure everyone on your team can hear and understand you clearly.
+  - Consider calling in if you have an unreliable internet connection.
+  - Be understanding of interruptions that may happen with remote work,
+    e.g. children, pets, other people who might be sharing space with your teammate.
+- **Video Optional:** Everyone has different privacy needs when it comes to video
+  conferencing.
+  - Don't require participants to turn their camera on.
+  - Encourage the use of virtual backgrounds.
+- **Documentation:** Share what was discussed after the meeting with your team.
+  Documenting meetings is in line with the flexibility of remote work.
+  - Record the meeting if possible.
+  - If recording isn't possible, have a designated note taker and rotate the position.
+- **Share the Plan:** Let everyone know ahead of time what they can expect. Create a
+  calendar invite with links to the video call, dial-in information and a meeting agenda
+  or note about what the meeting will cover.
+- **Share the mic:** Make sure everyone who wants to has an opportunity to speak.
+  - Be on the lookout for raised hands and folks who unmute their mics, they may 
+    be trying to speak without interrupting.
+  - Use the chat for questions and have someone monitor the chat to make sure
+    all questions are addressed.
+  - If you notice someone is being ignored or spoken over, speak up so they have
+  the opportunity to share their thoughts.
+  - Be mindful of those dialing in by phone, as they might not have access to certain
+  software features (e.g. hand raising)
+- **Why am I talking?:** Make sure that the thing you're about to say has not
+  already been said. Consider if your voice is dominating the conversation.
+  - Write down all of your ideas before and/or during the meeting. At the end of the meeting, 
+  speak on any ideas that have not already been brought up by others.
+  - If you're speaking on something that has been brought up but overlooked, say that you're
+  amplifying an under-represented idea and give the idea's originator credit.
+
+[download a double-sided printout]: https://www.dropbox.com/s/2wswgfeivd93vn5/inclusive-meetings.pdf?dl=0
+
+## In-Person Meeting Guidelines
+
+We've compiled some guidelines from various sources to help people feel included
+and respected during meetings in person. You can [download a double-sided printout] of
 these guides to display in your meeting rooms.
 
 - **Be kind:** Treat each other with respect.
@@ -38,6 +80,7 @@ these guides to display in your meeting rooms.
   voice is heard.
   - Ensure the space is set up so everyone can see each others' faces.
   - Enunciate and speak loud enough so that remote members can hear you clearly.
+  - Consider time zones when scheduling your meeting.
 - **Introduce everyone:** Don't assume everyone has met before. Introductions
   help break the ice and give an opportunity for voices to be heard.
 - **Pay Attention:** Be present with others during a meeting, but also engage
