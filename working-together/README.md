@@ -67,7 +67,7 @@ and valued during remote meetings that happen over video conferencing software.
   - If you're speaking on something that has been brought up but overlooked, say that you're
   amplifying an under-represented idea and give the idea's originator credit.
 
-[download a double-sided printout]: https://www.dropbox.com/s/2wswgfeivd93vn5/inclusive-meetings.pdf?dl=0
+Guidelines adapted from [Paradigm](https://www.paradigmiq.com/)'s Remote Inclusion Checklist
 
 ## In-Person Meeting Guidelines
 
