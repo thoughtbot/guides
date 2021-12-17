@@ -34,7 +34,7 @@ and valued during remote meetings that happen over video conferencing software.
 
 - **Time zones:** Consider time zones when scheduling meetings - is the meeting 
     time respectful of everyone's work schedule?
-- **Be Courteous::** Be respectful of others on your team.
+- **Be Courteous:** Be respectful of others on your team.
   - Mute yourself when not talking to minimize background noise.
   - Ensure everyone on your team can hear and understand you clearly.
   - Consider calling in if you have an unreliable internet connection.
