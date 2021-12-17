@@ -59,7 +59,7 @@ and valued during remote meetings that happen over video conferencing software.
   - If you notice someone is being ignored or spoken over, speak up so they have
   the opportunity to share their thoughts.
   - Be mindful of those dialing in by phone, as they might not have access to certain
-  software features (e.g. hand raising)
+  software features (e.g. hand raising).
 - **Why am I talking?:** Make sure that the thing you're about to say has not
   already been said. Consider if your voice is dominating the conversation.
   - Write down all of your ideas before and/or during the meeting. At the end of the meeting, 
@@ -76,10 +76,10 @@ and respected during meetings in person. You can [download a double-sided printo
 these guides to display in your meeting rooms.
 
 - **Be kind:** Treat each other with respect.
-- **Remote matters:** Listen for and solicit input from remote members so their
-  voice is heard.
+- **Remote matters:** Listen for and solicit input from members joining in-person
+  meetings remotely so their voice is heard.
   - Ensure the space is set up so everyone can see each others' faces.
-  - Enunciate and speak loud enough so that remote members can hear you clearly.
+  - Enunciate and speak loud enough so that members joining remotely can hear you clearly.
   - Consider time zones when scheduling your meeting.
 - **Introduce everyone:** Don't assume everyone has met before. Introductions
   help break the ice and give an opportunity for voices to be heard.
