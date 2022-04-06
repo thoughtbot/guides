@@ -10,7 +10,7 @@ A guide for working well together.
   past the bug?)
 - Agree Physical/Virtual Location ("Will we both be comfortable here?")
 - Agree Working Environment (Two keyboards? Text editor and other tools)
-- Agree Pairing Style (Time-based? Ping pong?)
+- Agree Pairing Style (Time-based? [Ping pong]?)
 
 **During:**
 
@@ -21,6 +21,7 @@ A guide for working well together.
 - Keep checking in ("Could we search for a guide separately?")
 
 [have a break, have a…]: https://www.youtube.com/watch?v=fejBO1HZXVQ
+[ping pong]: https://thoughtbot.com/upcase/videos/ping-pong-paired-programing
 
 **After:**
 
