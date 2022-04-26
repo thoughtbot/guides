@@ -145,6 +145,34 @@ this:
 - You probably don't need the user's sex, gender, date of birth, middle name,
   and so on. You might, but ask yourself first: do you?
 
+When you must store PII:
+
+- Use [password best practices] for any account with access to PII,
+  including developer accounts which have access to production.
+- Avoid using shared logins with access to PII, even if such logins are managed
+  by a service like 1Password.
+- If you must own a shared login, such as AWS account root credentials, store a
+  password and OTP secret separately so that two people are required when
+  accessing the account.
+- Use multi-factor authentication for all accounts with access to PII,
+  including developer accounts with access to production.
+- Use an audit log documented when PII was accessed and why.
+- Use a documented procedure for onboarding and offboarding users with access to
+  PII, including developers.
+- Avoid granting access to PII until necessary; only users that require access
+  should be granted access.
+- Use [application-level encryption] to encrypt all PII.
+- Use in-transit and at-rest encryption for any database containing PII.
+- Use network isolation, such as an [AWS VPC], for databases containing PII.
+- Use a unique encryption key, such as an [AWS Customer Managed Key] for each database containing PII.
+- Use automatic rotation for any passwords with access to PII, such as Postgres
+  credentials.
+
+[password best practices]: ./README.md#using-passwords
+[application-level encryption]: https://edgeguides.rubyonrails.org/active_record_encryption.html
+[AWS VPC]: https://docs.aws.amazon.com/vpc/latest/userguide/what-is-amazon-vpc.html
+[AWS Customer Managed Key]: https://docs.aws.amazon.com/kms/latest/developerguide/concepts.html#customer-cmk
+
 ## Randomization
 
 Most modern cryptography is dependent on really big prime numbers and access to
