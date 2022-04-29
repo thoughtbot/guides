@@ -56,6 +56,8 @@
 - Use spec/system directory to store system specs.
 - Use spec/support/system for support code related to system specs.
 
+> system specs were previously called feature specs and lived in `spec/features`
+
 ## Factories
 
 - Order `factories.rb` contents: sequences, traits, factory definitions.
