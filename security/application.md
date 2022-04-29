@@ -571,9 +571,16 @@ is initially communicated, and otherwise using it is offline and out of band.
 
 Sending an OTP from the server is less secure since it provides a window of
 attack each time the user authenticates. If you can send it securely, such as
-via an encrypted email or over Signal, that will reduce the attack. Plain text
-emails and SMS are open to the public and can be read or spoofed by anyone,
+via an encrypted email or over Signal, that will reduce the attack.
+
+Plain text emails are open to the public and can be read or spoofed by anyone,
 making them effectively useless for communicating a one-time password.
+
+Using SMS is [categorised as "RESTRICTED" by NIST][nist], since they are open to
+exploitation from a variety of methods (e.g device swap, SIM swap, number
+porting, etc).
 
 Sending a one-time password via SMS is more secure than only a single form of
 authentication.
+
+[nist]: https://pages.nist.gov/800-63-3/sp800-63b.html#pstnOOB
