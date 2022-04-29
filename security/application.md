@@ -612,3 +612,14 @@ Sending a one-time password via SMS is more secure than only a single form of
 authentication.
 
 [nist]: https://pages.nist.gov/800-63-3/sp800-63b.html#pstnOOB
+
+## Rate-limiting
+
+An attacker could try many passwords, OTP codes, emails, or any kind of input
+to compromise your system.
+
+An attacker could also request slow endpoints of your application to make it
+use its limited-resources.
+
+Tools like [rack-attack](https://github.com/rack/rack-attack) can help you
+minimize this attack surface.
