@@ -24,7 +24,7 @@
 - Don't test private methods.
 - Test background jobs with a [`Delayed::Job` matcher].
 - Use [stubs and spies] \(not mocks\) in isolated tests.
-- Use a single level of abstraction within scenarios.
+- Use a single level of abstraction within `it` examples.
 - Use an `it` example or test method for each execution path through the method.
 - Use [assertions about state] for incoming messages.
 - Use stubs and spies to assert you sent outgoing messages.
@@ -45,17 +45,16 @@
 
 [Sample](acceptance_test_spec.rb)
 
-- Avoid scenario titles that add no information, such as "successfully."
-- Avoid scenario titles that repeat the feature title.
-- Place helper methods for feature specs directly in a top-level `Features`
-  module.
-- Use Capybara's `feature/scenario` DSL.
+- Avoid `it` block descriptions that add no information, such as "successfully."
+- Avoid `it` block descriptions that repeat the top-level `describe` block
+  description.
+- Place helper methods for system specs directly in a top-level `System` module.
 - Use names like `ROLE_ACTION_spec.rb`, such as `user_changes_password_spec.rb`,
-  for feature spec file names.
-- Use only one `feature` block per feature spec file.
-- Use scenario titles that describe the success and failure paths.
-- Use spec/features directory to store feature specs.
-- Use spec/support/features for support code related to feature specs.
+  for system spec file names.
+- Use only one `describe` block per system spec file.
+- Use `it` block descriptions that describe the success and failure paths.
+- Use spec/system directory to store system specs.
+- Use spec/support/system for support code related to system specs.
 
 ## Factories
 

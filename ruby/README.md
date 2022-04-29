@@ -90,11 +90,11 @@
   before designing a new API.
 - Write integration tests for your API endpoints. When the primary consumer of
   the API is a JavaScript client maintained within the same code base as the
-  provider of the API, write [feature specs]. Otherwise write [request specs].
+  provider of the API, write [system specs]. Otherwise write [request specs].
 
 [http api design guide]: https://github.com/interagent/http-api-design
 [oj]: https://github.com/ohler55/oj
-[feature specs]: https://www.relishapp.com/rspec/rspec-rails/docs/feature-specs/feature-spec
+[system specs]: https://relishapp.com/rspec/rspec-rails/docs/system-specs/system-spec
 [request specs]: https://www.relishapp.com/rspec/rspec-rails/docs/request-specs/request-spec
 
 ## How to...
