@@ -577,3 +577,14 @@ making them effectively useless for communicating a one-time password.
 
 Sending a one-time password via SMS is more secure than only a single form of
 authentication.
+
+## Rate-limiting
+
+An attacker could try many passwords, OTP codes, emails, or any kind of input
+to compromise your system.
+
+An attacker could also request slow endpoints of your application to make it
+use its limited-resources.
+
+Tools like [rack-attack](https://github.com/rack/rack-attack) can help you
+minimize this attack surface.
