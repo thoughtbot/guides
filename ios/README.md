@@ -57,7 +57,7 @@ Follow the normal [Product Review protocol](/product-review/).
 Follow the normal [Code Review guidelines](/code-review/). When reviewing
 others' iOS work, look in particular for:
 
-- Review that ViewControllers are adhering to SRP
+- Review that ViewControllers are adhering to the Single Responsibility Principle
 - Watch for CoreData thread boundary violations
 - Watch for potential retain cycles with blocks
 - Ensure that methods that require parameters are using `NSParameterAssert()`
