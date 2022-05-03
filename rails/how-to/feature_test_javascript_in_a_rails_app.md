@@ -17,11 +17,11 @@ end
 ```
 
 When writing a spec, you must set the `:js` flag for that test to make use of
-capybara-webkit. For example, in `spec/features/user_signs_in_spec.rb`:
+capybara-webkit. For example, in `spec/system/user_signs_in_spec.rb`:
 
 ```ruby
-feature "Authentication", :js do
-  scenario "A user signing in" do
+describe "Authentication", :js do
+  it "signs in a user" do
     create(:user, email: "me@example.com", password: "sekrit")
 
     sign_in_as email: "me@example.com", password: "sekrit"
