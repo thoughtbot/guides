@@ -21,7 +21,7 @@ capybara-webkit. For example, in `spec/system/user_signs_in_spec.rb`:
 
 ```ruby
 describe "Authentication", :js do
-  it "A user signing in" do
+  it "signs in a user" do
     create(:user, email: "me@example.com", password: "sekrit")
 
     sign_in_as email: "me@example.com", password: "sekrit"
