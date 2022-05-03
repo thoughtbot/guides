@@ -1,9 +1,9 @@
-# spec/system/user_signing_up_spec.rb
+# spec/system/user_signs_up_spec.rb
 
 require "spec_helper"
 
-describe "User signing up" do
-  it "with valid email and password" do
+describe "User signs up" do
+  it "signs up the user with valid details" do
     visit sign_up_path
 
     within "#sign_up" do
