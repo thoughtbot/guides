@@ -45,6 +45,10 @@
 
 [Sample](acceptance_test_spec.rb)
 
+- Don't locate elements with CSS selectors or `[id]` attributes.
+- Use [accessible names and descriptions][names_and_descriptions] to locate
+  elements, to interact with form controls, buttons, and links, or to scope
+  blocks of actions and assertions.
 - Avoid `it` block descriptions that add no information, such as "successfully."
 - Avoid `it` block descriptions that repeat the top-level `describe` block
   description.
@@ -57,6 +61,8 @@
 - Use spec/support/system for support code related to system specs.
 
 > system specs were previously called feature specs and lived in `spec/features`
+
+[names_and_descriptions]: https://www.w3.org/TR/wai-aria-practices/#names_and_descriptions
 
 ## Factories
 
