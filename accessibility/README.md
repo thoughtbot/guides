@@ -33,6 +33,7 @@ Automated checks can catch a lot of common issues before they reach production.
   for the background color they are placed over
 - Ensure all interactive content has distinct hover and focus states to help
   indicate interactivity
+- Ensure interactive elements [have a visible text label][rule-2]
 - Ensure color is not the only way to determine meaning
 - Ensure interactive components use common UI affordances where applicable, to
   help users understand how they can be operated
