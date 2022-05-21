@@ -1,6 +1,5 @@
 # Rails
 
-- Avoid `member` and `collection` routes.
 - Use private instead of protected when defining controller methods.
 - Name date columns with `_on` suffixes.
 - Name datetime columns with `_at` suffixes.
@@ -81,6 +80,7 @@
 ## Routes
 
 - Avoid the `:except` option in routes.
+- Avoid `member` and `collection` routes.
 - Order resourceful routes alphabetically by name.
 - Use the `:only` option to explicitly state exposed routes.
 - Prefer [resource routing] over [generating routes] individually
