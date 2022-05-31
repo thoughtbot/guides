@@ -12,6 +12,8 @@ accessible.
 
 Automated checks can catch a lot of common issues before they reach production.
 
+- Test the application in a browser (like Capybara-driven [Acceptance
+  Tests](./testing-rspec/README.md#acceptance-tests))
 - Use tools such as [WAVE] or [axe's browser extensions] to run audits on your
   local build
 - Use a CI/CD solution such as [AccessLint] or [axe]
