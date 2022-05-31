@@ -45,6 +45,7 @@
 
 [Sample](acceptance_test_spec.rb)
 
+- Use the most specific [selectors][] available.
 - Avoid `it` block descriptions that add no information, such as "successfully."
 - Avoid `it` block descriptions that repeat the top-level `describe` block
   description.
@@ -57,6 +58,8 @@
 - Use spec/support/system for support code related to system specs.
 
 > system specs were previously called feature specs and lived in `spec/features`
+
+[selectors]: https://rubydoc.info/github/teamcapybara/capybara/master/Capybara/Selector
 
 ## Factories
 
