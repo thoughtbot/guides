@@ -62,7 +62,7 @@
 
 > system specs were previously called feature specs and lived in `spec/features`
 
-[names_and_descriptions]: https://www.w3.org/TR/wai-aria-practices/#names_and_descriptions
+[names_and_descriptions]: https://www.w3.org/WAI/ARIA/apg/practices/names-and-descriptions/
 
 ## Factories
 
