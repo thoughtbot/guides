@@ -1,6 +1,5 @@
 # Rails
 
-- Avoid `member` and `collection` routes.
 - Use private instead of protected when defining controller methods.
 - Name date columns with `_on` suffixes.
 - Name datetime columns with `_at` suffixes.
@@ -15,7 +14,9 @@
 - Order i18n translations alphabetically by key name.
 - Order model contents: constants, macros, public methods, private methods.
 - Put application-wide partials in the [`app/views/application`] directory.
-- Use `def self.method`, not the `scope :method` DSL. #643
+- Use `lib` for code that is not app-specific and could later be extracted into a gem.
+- Use `app/jobs` for code that doesn't need to return anything and can be run asynchronously.
+- Use `def self.method`, not the `scope :method` DSL. [#643](https://github.com/thoughtbot/guides/pull/643)
 - Use the default `render 'partial'` syntax over `render partial: 'partial'`.
 - Use `link_to` for GET requests, and `button_to` for other HTTP verbs.
 - Use new-style `validates :name, presence: true` validations, and put all
@@ -79,6 +80,7 @@
 ## Routes
 
 - Avoid the `:except` option in routes.
+- Avoid `member` and `collection` routes.
 - Order resourceful routes alphabetically by name.
 - Use the `:only` option to explicitly state exposed routes.
 - Prefer [resource routing] over [generating routes] individually

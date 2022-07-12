@@ -129,7 +129,7 @@ Make sure not to log passwords, credit card numbers, or any other information
 that you do not strictly need. Err on the side of not logging any strings, if
 possible.
 
-In Rails, use the `filter_paramters` configuration setting to remove known
+In Rails, use the `filter_parameters` configuration setting to remove known
 attributes from the logs.
 
 In addition, if you are logging to a service over a network connection, make

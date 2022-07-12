@@ -24,7 +24,7 @@ violations.
 - Avoid inline comments.
 - Break long lines after 80 characters.
 - Delete trailing whitespace.
-- Don't misspell. [Example](/ruby/sample.rb#L11).
+- Don't misspell.
 - Use empty lines around multi-line blocks.
 - Use spaces around operators, except for unary operators, such as `!`.
 - Use [Unix-style line endings] (`\n`).

@@ -12,6 +12,8 @@ accessible.
 
 Automated checks can catch a lot of common issues before they reach production.
 
+- Test the application in a browser (like Capybara-driven [Acceptance
+  Tests](./testing-rspec/README.md#acceptance-tests))
 - Use tools such as [WAVE] or [axe's browser extensions] to run audits on your
   local build
 - Use a CI/CD solution such as [AccessLint] or [axe]
@@ -33,6 +35,7 @@ Automated checks can catch a lot of common issues before they reach production.
   for the background color they are placed over
 - Ensure all interactive content has distinct hover and focus states to help
   indicate interactivity
+- Ensure interactive elements [have a visible text label][rule-2]
 - Ensure color is not the only way to determine meaning
 - Ensure interactive components use common UI affordances where applicable, to
   help users understand how they can be operated
@@ -52,6 +55,13 @@ Automated checks can catch a lot of common issues before they reach production.
 
 ### Development
 
+- Ensure every focusable or interactive element has an [accessible name][]
+- Follow the [Cardinal Rules of Naming][]:
+  1. [Heed Warnings and Test Thoroughly][rule-1]
+  2. [Prefer Visible Text][rule-2]
+  3. [Prefer Native Techniques][rule-3]
+  4. [Avoid Browser Fallback][rule-4]
+  5. [Compose Brief, Useful Names][rule-5]
 - Ensure semantic markup is used to describe content
 - Ensure content does not disappear off the screen when zoomed
 - Ensure that interactive content can be tabbed to and activated using the
@@ -76,6 +86,14 @@ Automated checks can catch a lot of common issues before they reach production.
   label them
 - Ensure form feedback messaging is programmatically associated with the
   relevant inputs
+
+[accessible name]: https://www.w3.org/TR/wai-aria-practices/#names_and_descriptions
+[Cardinal Rules of Naming]: https://www.w3.org/TR/wai-aria-practices/#naming_cardinal_rules
+[rule-1]: https://www.w3.org/TR/wai-aria-practices/#naming_rule_heed_warnings
+[rule-2]: https://www.w3.org/TR/wai-aria-practices/#naming_rule_visible_text
+[rule-3]: https://www.w3.org/TR/wai-aria-practices/#naming_rule_native_techniques
+[rule-4]: https://www.w3.org/TR/wai-aria-practices/#naming_rule_avoid_fallback
+[rule-5]: https://www.w3.org/TR/wai-aria-practices/#naming_rule_brief_names
 
 ## Full audit
 
