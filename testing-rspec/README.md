@@ -46,6 +46,10 @@
 [Sample](acceptance_test_spec.rb)
 
 - Use the most specific [selectors][] available.
+- Don't locate elements with CSS selectors or `[id]` attributes.
+- Use [accessible names and descriptions][names_and_descriptions] to locate
+  elements, to interact with form controls, buttons, and links, or to scope
+  blocks of actions and assertions.
 - Avoid `it` block descriptions that add no information, such as "successfully."
 - Avoid `it` block descriptions that repeat the top-level `describe` block
   description.
@@ -60,6 +64,7 @@
 > system specs were previously called feature specs and lived in `spec/features`
 
 [selectors]: https://rubydoc.info/github/teamcapybara/capybara/master/Capybara/Selector
+[names_and_descriptions]: https://www.w3.org/WAI/ARIA/apg/practices/names-and-descriptions/
 
 ## Factories
 
