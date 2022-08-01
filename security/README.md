@@ -74,11 +74,8 @@ the information for the thoughtbot PGP key, which is located at <https://thought
 
 ### Reviewing, Logging and Following Up
 
-When an encrypted message comes in, post the exchange to a new [Constable]
-thread in the `security` interest, and keep the thread updated with new messages
+When an encrypted message comes in, post the exchange to a new [Hub Message](https://hub.thoughtbot.com/messages/new) in the `security` interest, and keep the thread updated with new messages
 as they appear.
-
-[constable]: https://constable.io
 
 Further discussion of security takes place in the [Security Basecamp].
 
