@@ -87,13 +87,13 @@ Automated checks can catch a lot of common issues before they reach production.
 - Ensure form feedback messaging is programmatically associated with the
   relevant inputs
 
-[accessible name]: https://www.w3.org/TR/wai-aria-practices/#names_and_descriptions
-[Cardinal Rules of Naming]: https://www.w3.org/TR/wai-aria-practices/#naming_cardinal_rules
-[rule-1]: https://www.w3.org/TR/wai-aria-practices/#naming_rule_heed_warnings
-[rule-2]: https://www.w3.org/TR/wai-aria-practices/#naming_rule_visible_text
-[rule-3]: https://www.w3.org/TR/wai-aria-practices/#naming_rule_native_techniques
-[rule-4]: https://www.w3.org/TR/wai-aria-practices/#naming_rule_avoid_fallback
-[rule-5]: https://www.w3.org/TR/wai-aria-practices/#naming_rule_brief_names
+[accessible name]: https://www.w3.org/WAI/ARIA/apg/practices/names-and-descriptions/
+[Cardinal Rules of Naming]: https://www.w3.org/WAI/ARIA/apg/practices/names-and-descriptions/#x5-3-cardinal-rules-of-naming
+[rule-1]: https://www.w3.org/WAI/ARIA/apg/practices/names-and-descriptions/#x5-3-1-rule-1-heed-warnings-and-test-thoroughly
+[rule-2]: https://www.w3.org/WAI/ARIA/apg/practices/names-and-descriptions/#x5-3-2-rule-2-prefer-visible-text
+[rule-3]: https://www.w3.org/WAI/ARIA/apg/practices/names-and-descriptions/#x5-3-3-rule-3-prefer-native-techniques
+[rule-4]: https://www.w3.org/WAI/ARIA/apg/practices/names-and-descriptions/#x5-3-4-rule-4-avoid-browser-fallback
+[rule-5]: https://www.w3.org/WAI/ARIA/apg/practices/names-and-descriptions/#x5-3-5-rule-5-compose-brief-useful-names
 
 ## Full audit
 
