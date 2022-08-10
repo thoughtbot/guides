@@ -102,3 +102,8 @@ Concatenating selector names makes it more difficult to search and find
 selectors in the codebase.
 
 </details>
+
+## More resources
+
+- [Google HTML/CSS Style Guide](https://google.github.io/styleguide/htmlcssguide.html)
+- [CSS Style Guides](https://css-tricks.com/css-style-guides/) by *css-tricks*
