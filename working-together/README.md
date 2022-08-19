@@ -111,4 +111,19 @@ these guides to display in your meeting rooms.
   don't feel comfortable addressing someone directly, speak with your manager or
   Chief People Officer.
 
+## Pronoun guidelines
+
+At thoughtbot, we strive to make everyone feel included and able to bring their entire self to work. One of the ways we do this is by providing space for people to feel comfortable sharing their pronouns. Pronouns are often shared during introductions and can also be added to your Slack profile, Hub profile, Zoom display name, email signature, etc.
+
+An important aspect of making everyone comfortable is keeping in mind that sharing pronouns is ALWAYS optional. A person may have many reasons they don’t want to share pronouns. Gender identity is a complex and personal subject and not everyone is comfortable addressing it at work.
+
+While we don’t require sharing pronouns, the widespread practice of sharing them can make people feel pressured to share their own. Here are some guidelines for reducing that pressure:
+
+- Never ask someone directly what their pronouns are. If you’d like to create an opportunity to share, you can share your own, but leave it up to individuals to decide whether they want to share.
+- When proposing round robin introductions, don’t include pronouns in the list of things you’re asking people to share. “Share your name, your role, and your favorite breakfast food” is more inclusive than “Share your name, your role, and your pronouns.” Individuals can choose whether or not to include their pronouns in their introductions.
+- If you don’t know someone’s pronouns and they haven’t proactively shared them, don’t assume. Use their name or “they/them” if you need to.
+- Sometimes people’s pronouns change. If a person introduces themself with pronouns that are different from what they used previously, there’s no need to comment on the change.
+- When everyone in a meeting or group shares their pronouns every time, it can implicitly ‘out’ a person who is the only one not sharing their pronouns. If you’re comfortable, you can help by occasionally not sharing your pronouns, especially when the majority of the group is sharing theirs. This can normalize the idea that pronouns are optional and opting out doesn’t imply a specific identity.
+- If you’re asked to share your pronouns and you’d rather not, you do not need to provide an explanation. A simple “I’m not sharing my pronouns today” or “I’m fine with you addressing me by my name.” is enough.
+
 [download a double-sided printout]: https://www.dropbox.com/s/2wswgfeivd93vn5/inclusive-meetings.pdf?dl=0
