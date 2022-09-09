@@ -154,6 +154,7 @@ While we don’t require sharing pronouns, the widespread practice of sharing th
 - Sometimes people’s pronouns change. If a person introduces themself with pronouns that are different from what they used previously, there’s no need to comment on the change.
 - When everyone in a meeting or group shares their pronouns every time, it can implicitly ‘out’ a person who is the only one not sharing their pronouns. If you’re comfortable, you can help by occasionally not sharing your pronouns, especially when the majority of the group is sharing theirs. This can normalize the idea that pronouns are optional and opting out doesn’t imply a specific identity.
 - If you’re asked to share your pronouns and you’d rather not, you do not need to provide an explanation. A simple “I’m not sharing my pronouns today” or “I’m fine with you addressing me by my name.” is enough.
+- If someone has shared their pronouns with you, think carefully before sharing their pronouns in other contexts, especially when such information might be publicly visible. That person may not be comfortable with other people knowing their pronouns, and/or it could put them in danger to be [outed](https://www.hrc.org/resources/glossary-of-terms) (for example, if their housing is dependent on a transphobic person who might evict them upon learning that they're trans).
 
 [Here's a good example by pudding.cool]: https://pudding.cool/2022/02/plain/
 [AAAL (American Association for Applied Linguistics)]: https://www.aaal.org/guidelines-for-communication-rights##
