@@ -138,6 +138,10 @@ and respected during meetings in person.
   - Consider time zones when scheduling your meeting.
 - **One speaker:** Let one person speak at a time, and let them complete their full
   thought before responding. Don't interrupt.
+- **Respect physical boundaries:** Do not make physical contact with someone
+  unless you have their consent.
+- **Eye contact:** Try to be aware of others' comfort level with eye contact;
+  err on the side of less eye contact.
 
 ## Pronoun guidelines
 
