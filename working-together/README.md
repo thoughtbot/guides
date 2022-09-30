@@ -160,7 +160,10 @@ While we don’t require sharing pronouns, the widespread practice of sharing th
   their pronouns, or it could put them in danger to be
   [outed](https://www.hrc.org/resources/glossary-of-terms) (for example, if
   their housing is dependent on a transphobic person who might evict them upon
-  learning that they're trans).
+  learning that they're trans). If possible, ask in advance how they would like
+  to be referred to; if not possible, try to imagine what they would say based
+  on what you know about them and their relationships with you, the people
+  you're talking to, and the broader world.
 
 [Here's a good example by pudding.cool]: https://pudding.cool/2022/02/plain/
 [AAAL (American Association for Applied Linguistics)]: https://www.aaal.org/guidelines-for-communication-rights##
