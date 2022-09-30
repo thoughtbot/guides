@@ -66,8 +66,7 @@ and valued during remote meetings that happen over video conferencing software.
     - Endeavor to use platforms that provide automatic closed captions.
     - Developing awareness of when particular phrasing might be perceived by others
       as harsh, and err on the side of being more flowery. Likewise, if others use language
-      that you perceive as harsh, consider that it might be a cultural difference;
-      but feel welcome to express if it makes you uncomfortable.
+      that you perceive as harsh, consider that it might be a cultural difference, and consider asking for further clarification.
     - Always try to be explicit rather than implicit with regards to expressing emotions or intent,
       especially in text-based communication (where emojis and tone tags can be helpful).
       When others' intent is not explicit, assume positive or neutral intent instead of negative intent.
