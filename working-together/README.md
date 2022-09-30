@@ -41,6 +41,35 @@ and valued during remote meetings that happen over video conferencing software.
   - Consider calling in if you have an unreliable internet connection.
   - Be understanding of interruptions that may happen with remote work,
     e.g. children, pets, other people who might be sharing space with your teammate.
+- **Cultural Diversity:** In a diverse workplace, people will have 
+  diverse cultures, accents and forms of speech, and this is totally fine.
+  Always try to make communication as clear as possible.
+  - **Avoid** whenever possible:
+    - Using slang when talking about an important subject.
+    - Using passive voice (i.e. *"You will be asked some questions"*).
+      - It could sound like *"You will be ask some questions"*, which could 
+        lead to a potential misunderstanding of *"You will be asking some questions"*.
+    - Ambiguous phrases or words with multiple meanings.
+  - **Prioritize** whenever possible:
+    - Short, direct sentences over long sentences. [Here's a good example by pudding.cool].
+    - Using simple words, as people are more used to them.
+    - Using active voice (i.e. *"They will ask you some questions"*)
+      as suggested by [AAAL (American Association for Applied Linguistics)].
+    - Making sure that others feel comfortable taking more time to express their thoughts.
+    - Speaking slowly, as it helps both native and non-native speakers to
+      understand each other better.
+    - Taking a brief pause when changing subjects to make sure 
+      that the information isn’t getting mixed up.
+    - Be understanding regarding whether others initiate or are comfortable 
+      participating in "small talk". If they do initiate it, and if you're comfortable,
+      then it's encouraged to participate.
+    - Endeavor to use platforms that provide automatic closed captions.
+    - Developing awareness of when particular phrasing might be perceived by others
+      as harsh, and err on the side of being more flowery. Likewise, if others use language
+      that you perceive as harsh, consider that it might be a cultural difference, and consider asking for further clarification.
+    - Always try to be explicit rather than implicit with regards to expressing emotions or intent,
+      especially in text-based communication (where emojis and tone tags can be helpful).
+      When others' intent is not explicit, assume positive or neutral intent instead of negative intent.
 - **Video Optional:** Everyone has different privacy needs when it comes to video
   conferencing.
   - Don't require participants to turn their camera on.
@@ -126,4 +155,6 @@ While we don’t require sharing pronouns, the widespread practice of sharing th
 - When everyone in a meeting or group shares their pronouns every time, it can implicitly ‘out’ a person who is the only one not sharing their pronouns. If you’re comfortable, you can help by occasionally not sharing your pronouns, especially when the majority of the group is sharing theirs. This can normalize the idea that pronouns are optional and opting out doesn’t imply a specific identity.
 - If you’re asked to share your pronouns and you’d rather not, you do not need to provide an explanation. A simple “I’m not sharing my pronouns today” or “I’m fine with you addressing me by my name.” is enough.
 
+[Here's a good example by pudding.cool]: https://pudding.cool/2022/02/plain/
+[AAAL (American Association for Applied Linguistics)]: https://www.aaal.org/guidelines-for-communication-rights##
 [download a double-sided printout]: https://www.dropbox.com/s/2wswgfeivd93vn5/inclusive-meetings.pdf?dl=0
