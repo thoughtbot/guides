@@ -33,7 +33,7 @@ A guide for working well together.
 We've compiled some guidelines from various sources to help people feel included
 and valued during remote meetings that happen over video conferencing software.
 
-- **Time zones:** Consider time zones when scheduling meetings - is the meeting 
+- **Time zones:** Consider time zones when scheduling meetings - is the meeting
     time respectful of everyone's work schedule?
 - **Be Courteous:** Be respectful of others on your team.
   - Mute yourself when not talking to minimize background noise.
@@ -41,13 +41,13 @@ and valued during remote meetings that happen over video conferencing software.
   - Consider calling in if you have an unreliable internet connection.
   - Be understanding of interruptions that may happen with remote work,
     e.g. children, pets, other people who might be sharing space with your teammate.
-- **Cultural Diversity:** In a diverse workplace, people will have 
+- **Cultural Diversity:** In a diverse workplace, people will have
   diverse cultures, accents and forms of speech, and this is totally fine.
   Always try to make communication as clear as possible.
   - **Avoid** whenever possible:
     - Using slang when talking about an important subject.
     - Using passive voice (i.e. *"You will be asked some questions"*).
-      - It could sound like *"You will be ask some questions"*, which could 
+      - It could sound like *"You will be ask some questions"*, which could
         lead to a potential misunderstanding of *"You will be asking some questions"*.
     - Ambiguous phrases or words with multiple meanings.
   - **Prioritize** whenever possible:
@@ -58,9 +58,9 @@ and valued during remote meetings that happen over video conferencing software.
     - Making sure that others feel comfortable taking more time to express their thoughts.
     - Speaking slowly, as it helps both native and non-native speakers to
       understand each other better.
-    - Taking a brief pause when changing subjects to make sure 
+    - Taking a brief pause when changing subjects to make sure
       that the information isn’t getting mixed up.
-    - Be understanding regarding whether others initiate or are comfortable 
+    - Be understanding regarding whether others initiate or are comfortable
       participating in "small talk". If they do initiate it, and if you're comfortable,
       then it's encouraged to participate.
     - Endeavor to use platforms that provide automatic closed captions.
@@ -82,7 +82,7 @@ and valued during remote meetings that happen over video conferencing software.
   calendar invite with links to the video call, dial-in information and a meeting agenda
   or note about what the meeting will cover.
 - **Share the mic:** Make sure everyone who wants to has an opportunity to speak.
-  - Be on the lookout for raised hands and folks who unmute their mics, they may 
+  - Be on the lookout for raised hands and folks who unmute their mics, they may
     be trying to speak without interrupting.
   - Use the chat for questions and have someone monitor the chat to make sure
     all questions are addressed.
@@ -92,7 +92,7 @@ and valued during remote meetings that happen over video conferencing software.
   software features (e.g. hand raising).
 - **Why am I talking?:** Make sure that the thing you're about to say has not
   already been said. Consider if your voice is dominating the conversation.
-  - Write down all of your ideas before and/or during the meeting. At the end of the meeting, 
+  - Write down all of your ideas before and/or during the meeting. At the end of the meeting,
   speak on any ideas that have not already been brought up by others.
   - If you're speaking on something that has been brought up but overlooked, say that you're
   amplifying an under-represented idea and give the idea's originator credit.
@@ -156,8 +156,9 @@ While we don’t require sharing pronouns, the widespread practice of sharing th
 - If you’re asked to share your pronouns and you’d rather not, you do not need to provide an explanation. A simple “I’m not sharing my pronouns today” or “I’m fine with you addressing me by my name.” is enough.
 - If someone has shared their pronouns with you, think carefully before sharing
   their pronouns in other contexts, especially when such information might be
-  publicly visible. That person may not be comfortable with other people knowing
-  their pronouns, or it could put them in danger to be
+  publicly visible. That person may only be comfortable with specific people
+  (for example, their team, a specific group, specific individuals, or only
+  coworkers) knowing their pronouns, or it could put them in danger to be
   [outed](https://www.hrc.org/resources/glossary-of-terms) (for example, if
   their housing is dependent on a transphobic person who might evict them upon
   learning that they're trans). If possible, ask in advance how they would like
