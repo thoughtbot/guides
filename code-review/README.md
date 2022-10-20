@@ -25,6 +25,8 @@ that covers this material from [Derek Prior at RailsConf
 - Talk synchronously (e.g. chat, screen-sharing, in person) if there are too
   many "I didn't understand" or "Alternative solution:" comments. Post a
   follow-up comment summarizing the discussion.
+- If you learned something new, share your appreciation. 
+   ("I did not know about this. Thank you for sharing it".)
 
 ## Having Your Code Reviewed
 
