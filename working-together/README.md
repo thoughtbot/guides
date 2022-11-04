@@ -48,7 +48,7 @@ You can [download a double-sided printout] of these guides to display in your me
   even the quiet voices are heard and supported.
 - **Why am I talking?:** Make sure that the thing you're about to say has not
   already been said. Consider if your voice is dominating the conversation.
-  - Write down all of your ideas before and/or during the meeting. At the end of the meeting, 
+  - Write down all of your ideas before and/or during the meeting. At the end of the meeting,
   speak on any ideas that have not already been brought up by others.
   - If you're speaking on something that has been brought up but overlooked, say that you're
   amplifying an under-represented idea and give the idea's originator credit.
@@ -62,13 +62,13 @@ You can [download a double-sided printout] of these guides to display in your me
 - **Speak up:** Follow up if team members treat others disrespectfully. If you
   don't feel comfortable addressing someone directly, speak with your manager or
   Chief People Officer.
-- **Cultural Diversity:** In a diverse workplace, people will have 
+- **Cultural Diversity:** In a diverse workplace, people will have
   diverse cultures, accents and forms of speech, and this is totally fine.
   Always try to make communication as clear as possible.
   - **Avoid** whenever possible:
     - Using slang when talking about an important subject.
     - Using passive voice (i.e. *"You will be asked some questions"*).
-      - It could sound like *"You will be ask some questions"*, which could 
+      - It could sound like *"You will be ask some questions"*, which could
         lead to a potential misunderstanding of *"You will be asking some questions"*.
     - Ambiguous phrases or words with multiple meanings.
   - **Prioritize** whenever possible:
@@ -79,9 +79,9 @@ You can [download a double-sided printout] of these guides to display in your me
     - Making sure that others feel comfortable taking more time to express their thoughts.
     - Speaking slowly, as it helps both native and non-native speakers to
       understand each other better.
-    - Taking a brief pause when changing subjects to make sure 
+    - Taking a brief pause when changing subjects to make sure
       that the information isn’t getting mixed up.
-    - Be understanding regarding whether others initiate or are comfortable 
+    - Be understanding regarding whether others initiate or are comfortable
       participating in "small talk". If they do initiate it, and if you're comfortable,
       then it's encouraged to participate.
     - Endeavor to use platforms that provide automatic closed captions.
@@ -104,7 +104,7 @@ You can [download a double-sided printout] of these guides to display in your me
 We've compiled some guidelines from various sources to help people feel included
 and valued during remote meetings that happen over video conferencing software.
 
-- **Time zones:** Consider time zones when scheduling meetings - is the meeting 
+- **Time zones:** Consider time zones when scheduling meetings - is the meeting
     time respectful of everyone's work schedule?
 - **Environment differences:** Be mindful of everyone's environments, including your own.
   - Mute yourself when not talking to minimize background noise.
@@ -117,7 +117,7 @@ and valued during remote meetings that happen over video conferencing software.
   - Don't require participants to turn their camera on.
   - Encourage the use of virtual backgrounds.
 - **Share the mic:** Make sure everyone who wants to has an opportunity to speak.
-  - Be on the lookout for raised hands and folks who unmute their mics, they may 
+  - Be on the lookout for raised hands and folks who unmute their mics, they may
     be trying to speak without interrupting.
   - Use the chat for questions and have someone monitor the chat to make sure
     all questions are addressed.
@@ -157,6 +157,17 @@ While we don’t require sharing pronouns, the widespread practice of sharing th
 - Sometimes people’s pronouns change. If a person introduces themself with pronouns that are different from what they used previously, there’s no need to comment on the change.
 - When everyone in a meeting or group shares their pronouns every time, it can implicitly ‘out’ a person who is the only one not sharing their pronouns. If you’re comfortable, you can help by occasionally not sharing your pronouns, especially when the majority of the group is sharing theirs. This can normalize the idea that pronouns are optional and opting out doesn’t imply a specific identity.
 - If you’re asked to share your pronouns and you’d rather not, you do not need to provide an explanation. A simple “I’m not sharing my pronouns today” or “I’m fine with you addressing me by my name.” is enough.
+- If someone has shared their pronouns with you, think carefully before sharing
+  their pronouns in other contexts, especially when such information might be
+  publicly visible. That person may only be comfortable with specific people
+  (for example, their team, a specific group, specific individuals, or only
+  coworkers) knowing their pronouns, or it could put them in danger to be
+  [outed](https://www.hrc.org/resources/glossary-of-terms) (for example, if
+  their housing is dependent on a transphobic person who might evict them upon
+  learning that they're trans). If possible, ask in advance how they would like
+  to be referred to; if not possible, try to imagine what they would say based
+  on what you know about them and their relationships with you, the people
+  you're talking to, and the broader world.
 
 [Here's a good example by pudding.cool]: https://pudding.cool/2022/02/plain/
 [AAAL (American Association for Applied Linguistics)]: https://www.aaal.org/guidelines-for-communication-rights##
