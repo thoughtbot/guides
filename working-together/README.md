@@ -25,6 +25,8 @@ A guide for working well together.
 
 **After:**
 
+- Share with each other the end results, such as code changes or screenshots,
+  if they're not already accessible by both parties.
 - Ask for Feedback (What did we do well? What could we have done better? It’ll
   feel weird, do it anyway)
 
