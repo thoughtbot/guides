@@ -126,7 +126,7 @@ assign it one of four ratings:
 Use the Notes sheet to leave per-cell comments when necessary, referencing them
 with a link. The next steps for an audit are handled on a per-project basis.
 
-[accessibility audit template]: https://docs.google.com/spreadsheets/d/1Ys-0U5BY-Ct_phy7gk9XJmn4nBTMFTh08aTQ6U1kB_4/edit?usp=sharing
+[accessibility audit template]: https://www.fsb.org.uk/resources-page/accessibility-audit-template.html
 [accesslint]: https://github.com/marketplace/accesslint
 [axe]: https://www.deque.com/axe/axe-for-web/integrations/
 [axe's browser extensions]: https://www.deque.com/axe/axe-for-web/
