@@ -102,3 +102,13 @@ Concatenating selector names makes it more difficult to search and find
 selectors in the codebase.
 
 </details>
+
+## Other style guides
+
+- [Google HTML/CSS Style Guide](https://google.github.io/styleguide/htmlcssguide.html)
+- [Principles of writing consistent, idiomatic CSS](https://github.com/necolas/idiomatic-css)
+- [My HTML/CSS coding style](https://csswizardry.com/2012/04/my-html-css-coding-style/)
+- [Improving Code Readability With CSS Styleguides](https://www.smashingmagazine.com/2008/05/improving-code-readability-with-css-styleguides/)
+- [Code Style Guide: CSS](https://github.com/ThinkUpLLC/ThinkUp/wiki/Code-Style-Guide:-CSS)
+- [CSS Coding Standards](https://developer.wordpress.org/coding-standards/wordpress-coding-standards/css/)
+- [Scalable and Modular Architecture for CSS](http://smacss.com/)
