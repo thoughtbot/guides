@@ -65,6 +65,10 @@ experience, refactors the existing code). Then:
 - Seek to understand the author's perspective.
 - Sign off on the pull request with a 👍 or "Ready to merge" comment.
 - Remember that you are here to provide feedback, not to be a gatekeeper.
+- When suggesting changes:
+  - Communicate clearly which lines you suggest adding/removing.
+  - Test the suggested changes to validate it works whenever possible.
+  - When not possible, let the pull request author know that you did not test the suggestion.
 
 ## Style Comments
 
