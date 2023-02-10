@@ -69,6 +69,7 @@ experience, refactors the existing code). Then:
   - Communicate clearly which lines you suggest adding/removing.
   - Test the suggested changes to validate it works whenever possible.
   - When not possible, let the pull request author know that you did not test the suggestion.
+  - Provide some context to let the author know why you're suggesting the change.
 
 ## Style Comments
 
