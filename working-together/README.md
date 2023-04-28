@@ -42,6 +42,10 @@ You can [download a double-sided printout] of these guides to display in your me
 - **Be respectful of others' schedules:** Try to start and end meetings on time.
 - **Step up, step back:** After you speak, let others speak. If you are speaking
   often, make sure others have had a chance to say something.
+- **Practice feeling comfortable with silence:** We commonly feel the urge to
+  fill in the voids of silence. Gaps in conversation are not necessarily bad,
+  and they allow people to have time to think and step up when they feel
+  comfortable speaking.
 - **Apply the Shine Theory:** Notice if someone is being cut off or ignored.
   Help shine the light back on that contributor by repeating their idea, giving
   clear support and credit to its source.
@@ -93,6 +97,12 @@ You can [download a double-sided printout] of these guides to display in your me
     - Always try to be explicit rather than implicit with regards to expressing emotions or intent,
       especially in text-based communication (where emojis and tone tags can be helpful).
       When others' intent is not explicit, assume positive or neutral intent instead of negative intent.
+- **Be mindful of power dynamics:** Be aware of power dynamics that may be
+  present in the meeting, such as those based on race, gender, or seniority.
+  Ensure that all participants have an opportunity to share their perspectives,
+  respectfully disagree, and that their contributions are valued equally.
+  - If you are in a position of power, consider speaking last to ensure that
+    others have an opportunity to share their perspectives.
 - **Documentation:** Share what was discussed after the meeting with your team.
   Documenting meetings is in line with the flexibility of asynchronous work.
   - Record the meeting if possible.
