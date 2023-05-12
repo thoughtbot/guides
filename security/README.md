@@ -16,6 +16,14 @@ deployed services at risk of compromise or loss of privacy.
 The following guidelines apply to how you as an individual secure access to your
 systems (laptop, accounts, etc.) and communication (email, etc.).
 
+## Protecting Personal or Identifying Information
+
+Some individuals, due to their backgrounds or circumstances, might be at a
+higher risk of harmful consequences from privacy violations.
+
+Data privacy and security should be made a priority when developing software in
+an effort to protect personal or identifying information.
+
 ### Using Passwords
 
 - Use a unique password for every account you create.
