@@ -18,11 +18,7 @@ systems (laptop, accounts, etc.) and communication (email, etc.).
 
 ## Protecting Personal or Identifying Information
 
-Some individuals, due to their backgrounds or circumstances, might be at a
-higher risk of harmful consequences from privacy violations.
-
-Data privacy and security should be made a priority when developing software in
-an effort to protect personal or identifying information.
+See [protecting personal or identifying information][].
 
 ### Using Passwords
 
@@ -33,6 +29,7 @@ an effort to protect personal or identifying information.
 
 [pwgen]: https://github.com/jbernard/pwgen
 [1password]: https://1password.com
+[protecting personal or identifying information]: ./protecting-personal-or-identifying-information.md
 
 ### Encryption
 
