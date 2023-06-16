@@ -3,8 +3,7 @@
 Data privacy and security should be made a priority when developing software in
 an effort to protect personal or identifying information.
 
-Some individuals, due to their backgrounds or circumstances, might be at a
-higher risk of harmful consequences from privacy violations.
+Data privacy and security is important for everyone. It is especially vital for individuals who, due to their backgrounds or circumstances, might be at a higher risk of harmful consequences from privacy violations.
 
 Examples include:
 
