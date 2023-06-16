@@ -9,9 +9,7 @@ higher risk of harmful consequences from privacy violations.
 Examples include:
 
 - Survivors of domestic abuse or those who are trying to escape domestic abuse
-- LGBTQIA+ individuals, especially if their housing is dependent on someone who
-  might evict them upon learning this, or if they're in a number of other unsafe
-circumstances
+- LGBTQIA+ individuals who might be in an unsafe circumstance in relation to their identity, including if their housing is dependent on someone who might evict them because of it
 - Political dissidents, asylum seekers, targets of government-sanctioned
   violence
 - Undocumented immigrants
