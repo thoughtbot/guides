@@ -13,5 +13,5 @@ Examples include:
   might evict them upon learning this, or if they're in a number of other unsafe
 circumstances
 - Political dissidents, asylum seekers, targets of government-sanctioned
-  violence.
-- Undocumented immigrants.
+  violence
+- Undocumented immigrants
