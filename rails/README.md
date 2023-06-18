@@ -58,7 +58,7 @@
 [`.ruby-version`]: https://gist.github.com/fnichol/1912050
 [redirects]: http://www.w3.org/Protocols/rfc2616/rfc2616-sec14.html#sec14.30
 [spring binstubs]: https://github.com/sstephenson/rbenv/wiki/Understanding-binstubs
-[prevent tampering]: http://blog.bigbinary.com/2013/03/19/cookies-on-rails.html
+[prevent tampering]: https://www.bigbinary.com/blog/cookies-on-rails
 [`app/views/application`]: http://railscasts.com/episodes/269-template-inheritance
 
 ## Migrations
