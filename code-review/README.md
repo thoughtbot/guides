@@ -32,7 +32,7 @@ that covers this material from [Derek Prior at RailsConf
 
 - Be grateful for the reviewer's suggestions. ("Good call. I'll make that
   change.")
-- Be aware that it can be [challenging to convey emotion and intention online]
+- Be aware that it can be [challenging to convey emotion and intention online], you may want to consider [using labels] to convey intention and tone.
 - Explain why the code exists. ("It's like that because of these reasons. Would
   it be more clear if I rename this class/file/method/variable?")
 - Extract some changes and refactoring into future tickets/stories.
@@ -49,6 +49,7 @@ that covers this material from [Derek Prior at RailsConf
 - Final editorial control rests with the pull request author.
 
 [challenging to convey emotion and intention online]: https://thoughtbot.com/blog/empathy-online
+[using labels]: https://conventionalcomments.org/
 
 ## Reviewing Code
 
