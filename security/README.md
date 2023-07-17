@@ -16,6 +16,10 @@ deployed services at risk of compromise or loss of privacy.
 The following guidelines apply to how you as an individual secure access to your
 systems (laptop, accounts, etc.) and communication (email, etc.).
 
+## Protecting Personal or Identifying Information
+
+See [protecting personal or identifying information][].
+
 ### Using Passwords
 
 - Use a unique password for every account you create.
@@ -25,6 +29,7 @@ systems (laptop, accounts, etc.) and communication (email, etc.).
 
 [pwgen]: https://github.com/jbernard/pwgen
 [1password]: https://1password.com
+[protecting personal or identifying information]: ./protecting-personal-or-identifying-information.md
 
 ### Encryption
 
