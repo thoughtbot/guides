@@ -10,7 +10,8 @@ A guide for working well together.
   past the bug?)
 - Agree Physical/Virtual Location ("Will we both be comfortable here?")
 - Agree Working Environment (Two keyboards? Text editor and other tools)
-- Agree Pairing Style (Time-based? [Ping pong]?)
+- Agree Pairing Style (Time-based? [Ping pong]? (writing test for each other to
+  pass))
 
 **During:**
 
