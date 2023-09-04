@@ -12,7 +12,7 @@ A guide for working well together.
   - Just get past the bug?
 
 - **Agree Physical/Virtual Location**
-  - "Will we both be comfortable here?"
+  - Will we both be comfortable here?
 
 - **Agree Working Environment**
   - Two keyboards?
