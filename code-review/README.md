@@ -64,7 +64,7 @@ experience, refactors the existing code). Then:
 - Offer alternative implementations, but assume the author already considered
   them. ("What do you think about using a custom validator here?")
 - Seek to understand the author's perspective.
-- Sign off on the pull request with a 👍, submitting an Approval, or a "Ready to merge" comment.
+- Approve the pull request.
 - Remember that you are here to provide feedback, not to be a gatekeeper.
 - When suggesting changes using the "Add a suggestion" feature:
   - Communicate clearly which lines you suggest adding/removing.
