@@ -183,12 +183,14 @@ We've compiled some guidelines from various sources to help people feel included
   - Be mindful of those dialing in by phone, as they might not have access to certain software features (e.g. hand raising).
 
 - **Meeting Recordings**
-  - Before recording a meeting let everyone know you are planning to record the meeting and only do so once you have consent from all participants.
+  - Indicate ahead of time that the meeting or portions of the meeting will be recorded. This gives others the opportunity not to attend. 
+  - Only record the meeting once you have consent from all participants.
   - Let people know when the recording has started and when it has finished.
 
 - **Audio Transcriptions**
   - Some people may want to use meeting transcription software to transcribe and summarize online meetings.
   - Before activating the transcription software let everyone know you are planning to use the transcription software for the meeting and only do so once you have consent from all participants.
+  - Some people may not be comfortable with the transcription software because data will be sent to a third-party service.
   - Let people know when the transription has started and when it has finished.
 
 
