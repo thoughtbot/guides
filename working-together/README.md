@@ -139,7 +139,7 @@ You can [download a double-sided printout] of these guides to display in your me
     - Be explicit rather than implicit with regards to expressing emotions or intent, especially in text-based communication.
       - Emojis and tone tags can be helpful.
       - When others' intent is not explicit, assume positive or neutral intent instead of negative intent.
-    - Use inclusive language and get familiar with the pronouns of the attendees when possible.
+    - Use inclusive language and get familiar with the pronouns of the attendees.
 
 - **Be mindful of power dynamics**
   - Be aware of power dynamics that may be present in the meeting, such as those based on race, gender, or seniority.
