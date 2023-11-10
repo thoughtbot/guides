@@ -120,6 +120,8 @@ You can [download a double-sided printout] of these guides to display in your me
   - **Avoid** whenever possible:
     - Using slang when talking about an important subject.
     - Ambiguous phrases or words with multiple meanings.
+    - Using acronyms during the conversation. Don't assume everyone knows them.
+    - Using general non-inclusive terms like "guys" when referring to the group.
   - **Prioritize** whenever possible:
     - Short, direct sentences over long sentences.
       - [Here's a good example by pudding.cool].
@@ -137,6 +139,7 @@ You can [download a double-sided printout] of these guides to display in your me
     - Be explicit rather than implicit with regards to expressing emotions or intent, especially in text-based communication.
       - Emojis and tone tags can be helpful.
       - When others' intent is not explicit, assume positive or neutral intent instead of negative intent.
+    - Use inclusive language and get familiar with the pronouns of the attendees when possible.
 
 - **Be mindful of power dynamics**
   - Be aware of power dynamics that may be present in the meeting, such as those based on race, gender, or seniority.
