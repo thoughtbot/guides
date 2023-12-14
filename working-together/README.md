@@ -257,4 +257,4 @@ While we don’t require sharing pronouns, the widespread practice of sharing th
 [have a break, have a…]: https://www.youtube.com/watch?v=fejBO1HZXVQ
 [ping pong]: https://thoughtbot.com/upcase/videos/ping-pong-paired-programing
 [here's a good example by pudding.cool]: https://pudding.cool/2022/02/plain
-[download a double-sided printout]: https://www.dropbox.com/s/2wswgfeivd93vn5/inclusive-meetings.pdf?dl=0
+[download a double-sided printout]: https://tbot.io/inclusive-meetings-pdf
