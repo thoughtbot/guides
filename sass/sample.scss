@@ -1,10 +1,16 @@
 @import "partial-name";
 
+$color-variable: #ffffff;
+
+/* I'm here to explain what this class does */
 .class-one {
   background-color: $color-variable;
   border: 0;
+  line-height: 1.5;
+  text-size: 0.5rem;
+  transition: background-color 0.5s ease;
 
-  @media (min-width: $screen-variable) {
+  @media (width >= 1px) {
     margin: ($spacing-variable * 2) 1rem;
   }
 
@@ -18,13 +24,14 @@
 }
 
 $map: (
-  key-1: value-1,
-  key-2: value-2,
+  "key-1": value-1,
+  "key-2": value-2,
 );
 
 .class-two {
   @extend %placeholder;
   @include mixin;
+
   align-items: center;
   display: flex;
   flex: 1 1 auto;
@@ -38,8 +45,7 @@ $map: (
     }
   }
 
-  // don't concatenate selectors
-  &__child {
+  &.child {
     color: $red;
   }
 }
