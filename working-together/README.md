@@ -277,6 +277,14 @@ While we don’t require sharing pronouns, the widespread practice of sharing th
   - That person may only be comfortable with specific people (for example, their team, a specific group, specific individuals, or only coworkers) knowing their pronouns, or it could put them in danger to be [outed](https://www.hrc.org/resources/glossary-of-terms) (for example, if their housing is dependent on a transphobic person who might evict them upon learning that they're trans).
   - If possible, ask in advance how they would like to be referred to; if not possible, try to imagine what they would say based on what you know about them and their relationships with you, the people you're talking to, and the broader world.
 
+## Inclusive language guidelines
+
+- **Acronyms**
+  - The use of acronyms makes it hard for someone who doesn't know their meaning to engage in conversations or have total clarity on some code.
+  - Avoid using acronyms in code, conversations, or documentation as much as possible.
+  - If the use of specific acronyms is inevitable for any reason...
+    - Make sure to document their meanings so that everyone can see them anytime.
+    - When mentioning them in conversations, check if people involved in the conversation know what they mean.
 
 [have a break, have a…]: https://www.youtube.com/watch?v=fejBO1HZXVQ
 [ping pong]: https://thoughtbot.com/upcase/videos/ping-pong-paired-programing
