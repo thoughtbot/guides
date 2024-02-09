@@ -58,6 +58,9 @@ Watch a presentation that covers this material from [Derek Prior at RailsConf 20
   - "It's like that because of these reasons. Would it be more clear if I rename this class/file/method/variable?"
 
 - **Extract some changes and refactoring into future tickets/stories**
+- **When making visual changes, include screenshots or screencasts to show the effect of the changes**
+  - You may want to consider before/after screenshots or screencasts whenever applicable.
+
 - **Link to the code review from the ticket/story**
   - "Ready for review: https://github.com/organization/project/pull/1"
 
