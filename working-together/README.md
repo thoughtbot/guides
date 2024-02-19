@@ -256,7 +256,7 @@ We've compiled some guidelines from various sources to help people feel included
 
 ### Pronoun guidelines
 
-At thoughtbot, we strive to make everyone feel included and able to bring their entire self to work. One of the ways we do this is by providing space for people to feel comfortable sharing their pronouns. Pronouns are often shared during introductions and can also be added to your Slack profile, Hub profile, Zoom display name, email signature, etc.
+At thoughtbot, we strive to make everyone feel included and able to show up as the most authentic self that they feel comfortable bringing to work. One of the ways we do this is by providing space for people to feel comfortable sharing their pronouns. Pronouns are often shared during introductions and can also be added to your Slack profile, Hub profile, Zoom display name, email signature, etc.
 
 An important aspect of making everyone comfortable is keeping in mind that sharing pronouns is ALWAYS optional. A person may have many reasons they don’t want to share pronouns. Gender identity is a complex and personal subject and not everyone is comfortable addressing it at work.
 
