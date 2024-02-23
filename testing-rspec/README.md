@@ -36,9 +36,9 @@
 [`allow` syntax]: https://github.com/rspec/rspec-mocks#method-stubs
 [dependency injection]: http://en.wikipedia.org/wiki/Dependency_injection
 [`delayed::job` matcher]: https://gist.github.com/3186463
-[stubs and spies]: http://robots.thoughtbot.com/post/159805295/spy-vs-spy
+[stubs and spies]: http://thoughtbot.com/blog/spy-vs-spy
 [assertions about state]: https://speakerdeck.com/skmetz/magic-tricks-of-testing-railsconf?slide=51
-[fake]: http://robots.thoughtbot.com/post/219216005/fake-it
+[fake]: http://thoughtbot.com/blog/fake-it
 [sut]: http://xunitpatterns.com/SUT.html
 
 ## Acceptance Tests

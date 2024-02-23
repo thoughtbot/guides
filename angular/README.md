@@ -9,6 +9,6 @@
   reasons].
 - Don't use the `jQuery` or `$` global. Access jQuery via `angular.element`.
 
-[avoid manual dependency annotations]: http://robots.thoughtbot.com/avoid-angularjs-dependency-annotation-with-rails
+[avoid manual dependency annotations]: http://thoughtbot.com/blog/avoid-angularjs-dependency-annotation-with-rails
 [ngannotate]: https://github.com/kikonen/ngannotate-rails
 [performance reasons]: https://github.com/angular-translate/angular-translate/wiki/Getting-Started#using-translate-directive

@@ -10,4 +10,4 @@
   exceeds 100 lines, it may be doing too many things.
 - [Tell, don't ask].
 
-[tell, don't ask]: https://robots.thoughtbot.com/tell-dont-ask
+[tell, don't ask]: https://thoughtbot.com/blog/tell-dont-ask

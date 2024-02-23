@@ -67,9 +67,9 @@
 - Use an [exact version] in the `Gemfile` for fragile gems, such as Rails.
 
 [ruby version]: http://bundler.io/v1.3/gemfile_ruby.html
-[exact version]: http://robots.thoughtbot.com/post/35717411108/a-healthy-bundle
-[pessimistic version]: http://robots.thoughtbot.com/post/35717411108/a-healthy-bundle
-[versionless]: http://robots.thoughtbot.com/post/35717411108/a-healthy-bundle
+[exact version]: http://thoughtbot.com/blog/a-healthy-bundle
+[pessimistic version]: http://thoughtbot.com/blog/a-healthy-bundle
+[versionless]: http://thoughtbot.com/blog/a-healthy-bundle
 
 ## Ruby Gems
 
