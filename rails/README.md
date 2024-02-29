@@ -65,8 +65,8 @@
 
 [Sample](migration.rb)
 
-- Set an empty string as the default constraint for non-required string and text
-  fields. [Example](migration.rb#L6).
+- Set an empty string as the default constraint for **non-required** string and text
+  fields. [Example](migration.rb#L6). [#159](https://github.com/thoughtbot/guides/pull/159)
 - Set an explicit [`on_delete` behavior for foreign keys].
 - Don't change a migration after it has been merged into `main` if the desired
   change can be solved with another migration.
