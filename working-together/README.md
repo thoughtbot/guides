@@ -247,12 +247,13 @@ We've compiled some guidelines from various sources to help people feel included
 
 ## Inclusive language guidelines
 
-- **Acronyms**
-  - The use of acronyms makes it hard for someone who doesn't know their meaning to engage in conversations or have total clarity on some code.
-  - Avoid using acronyms in code, conversations, or documentation as much as possible.
-  - If the use of specific acronyms is inevitable for any reason...
-    - Make sure to document their meanings so that everyone can see them anytime.
-    - When mentioning them in conversations, check if people involved in the conversation know what they mean.
+### Acronyms
+The use of acronyms could make it hard for someone who doesn't know their meaning to engage in conversations or have total clarity on some code.
+- Avoid using acronyms that could be perceived as exclusive or only relevant to certain groups of people.
+- Consider using the full term instead of the acronym. It may also be useful to use alternative forms of communication, such as providing explanations or examples in plain language.
+- When the use of specific acronyms is inevitable for any reason...
+  - Make sure to document their meanings so that everyone can see them anytime.
+  - When mentioning them in conversations, check if people involved in the conversation know what they mean.
 
 ### Pronoun guidelines
 
