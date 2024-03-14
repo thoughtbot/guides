@@ -75,7 +75,7 @@
 - [Add foreign key constraints] in migrations.
 
 [`on_delete` behavior for foreign keys]: http://api.rubyonrails.org/classes/ActiveRecord/ConnectionAdapters/SchemaStatements.html#method-i-add_foreign_key
-[add foreign key constraints]: http://robots.thoughtbot.com/referential-integrity-with-foreign-keys
+[add foreign key constraints]: http://thoughtbot.com/blog/referential-integrity-with-foreign-keys
 
 ## Routes
 
@@ -99,7 +99,7 @@
 - Use the user's name in the `From` header and email in the `Reply-To` when
   [delivering email on behalf of the app's users].
 
-[delivering email on behalf of the app's users]: http://robots.thoughtbot.com/post/3215611590/recipe-delivering-email-on-behalf-of-users
+[delivering email on behalf of the app's users]: http://thoughtbot.com/blog/post/delivering-email-on-behalf-of-users
 
 ## Code Review
 
