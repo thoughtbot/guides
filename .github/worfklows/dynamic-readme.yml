@@ -1,0 +1,17 @@
+name: update-templates
+
+on: 
+  push:
+    branches:
+      - main
+  workflow_dispatch:
+
+jobs:
+  update-templates:
+    permissions:
+      contents: write
+      pull-requests: write
+      pages: write
+    uses: thoughtbot/templates/.github/workflows/dynamic-readme.yaml@main
+    secrets:
+      token: ${{ secrets.GITHUB_TOKEN }}
