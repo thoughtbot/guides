@@ -13,7 +13,7 @@
   `user`).
 - Prefer nested class and module definitions over the shorthand version
   [Example](/ruby/sample_1.rb#L103) [#332]
-- Prefer `detect` over `find`. [0d819844]
+- Prefer `find` over `detect`.
 - Prefer `select` over `find_all`. [0d819844]
 - Prefer `map` over `collect`. [0d819844]
 - Prefer `reduce` over `inject`. [#237]
