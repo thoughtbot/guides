@@ -98,13 +98,10 @@ waiting a week for everybody to leave feedback**.
 Thank you,
 [contributors](https://github.com/thoughtbot/guides/graphs/contributors)!
 
-![thoughtbot](https://thoughtbot.com/brand_assets/93:44.svg)
-
-Guides is maintained by [thoughtbot, inc](https://thoughtbot.com).
-
 ## License
 
-Guides is © 2020 thoughtbot, inc. It is distributed under the [Creative Commons
+Guides is © 2020-2024 thoughtbot, inc. It is distributed under the [Creative Commons
 Attribution License](http://creativecommons.org/licenses/by/3.0/).
 
-The names and logos for thoughtbot are trademarks of thoughtbot, inc.
+<!-- START /templates/footer.md -->
+<!-- END /templates/footer.md -->
