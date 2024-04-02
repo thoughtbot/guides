@@ -18,7 +18,7 @@
 * Use [Redux Toolkit](https://redux-toolkit.js.org/) for global state
   * Do not use global store for API state -- use API client library instead
 * Use [React Native Firebase](https://rnfirebase.io/) for push notifications
-* Use Sentry for error reporting
+* Use [Sentry](https://docs.sentry.io/platforms/react-native/) for error reporting
 * Prefer [RevenueCat](https://www.revenuecat.com/) for in-app payments
   * If RevenueCat pricing is not acceptable (percentage of revenue), use [react-native-iap](https://react-native-iap.dooboolab.com/docs/get-started/)
 
@@ -36,7 +36,7 @@
 
 ## Testing
 
-- Test using React Native Testing Library and Jest
+- Test using React Native [Testing Library](https://callstack.github.io/react-native-testing-library/) and [Jest](https://jestjs.io/)
 - Mock API calls in tests using [MSW](https://mswjs.io/). If using Apollo Client, mock using the built-in `MockProvider`
 - Prefer testing on physical devices.
 - Use [detox] for integration tests.
