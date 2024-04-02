@@ -6,6 +6,22 @@
 
 [core components and apis]: https://reactnative.dev/docs/components-and-apis
 
+## Tooling
+
+* Start new projects with [create-belt-app](https://www.npmjs.com/package/create-belt-app)
+* Use [Expo](https://expo.dev)
+* Use [Expo EAS](https://expo.dev/eas) for continuous deployment
+* Use [Expo Secure Store](https://docs.expo.dev/versions/latest/sdk/securestore/) for storing sensitive data like auth and refresh tokens
+* Use [React Navigation](https://reactnavigation.org/) for routing
+* Use [TanStack React Query](https://tanstack.com/query/v4/docs/framework/react/overview) as API client for REST APIs
+* Use [Apollo Client](https://www.apollographql.com/docs/react/) as API client for GraphQL APIs
+* Use [Redux Toolkit](https://redux-toolkit.js.org/) for global state
+  * Do not use global store for API state -- use API client library instead
+* Use [React Native Firebase](https://rnfirebase.io/) for push notifications
+* Use Sentry for error reporting
+* Prefer [RevenueCat](https://www.revenuecat.com/) for in-app payments
+  * If RevenueCat pricing is not acceptable (percentage of revenue), use [react-native-iap](https://react-native-iap.dooboolab.com/docs/get-started/)
+
 ## Style
 
 - Prefer using [StyleSheets]
@@ -20,6 +36,8 @@
 
 ## Testing
 
+- Test using React Native Testing Library and Jest
+- Mock API calls in tests using [MSW](https://mswjs.io/). If using Apollo Client, mock using the built-in `MockProvider`
 - Prefer testing on physical devices.
 - Use [detox] for integration tests.
 
