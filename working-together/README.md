@@ -174,10 +174,21 @@ We've compiled some guidelines from various sources to help people feel included
   - Be understanding of interruptions that may happen with remote work.
     - e.g. children, pets, other people who might be sharing space with your teammate.
 
-- **Video Optional**
+- **Video Optional & Unreliable**
   - Everyone has different privacy needs when it comes to video conferencing.
   - Don't require participants to turn their camera on.
   - Encourage the use of virtual backgrounds.
+  - Don't assume that others can see you. Audio is generally prioritized over
+    video on slow connections; particpants may be looking at a different
+    window; etc. For example, instead of showing a "thumbs-up" gesture to the
+    camera, consider an alternative:
+    - In small groups, verbal communication is often best. Unmute yourself and
+      say "yes".
+    - In large groups, if the platform supports it, emoji reactions can be
+      useful. Send a 👍 emoji.
+    - Use the platform's in-call text chat if available. Send "yes".
+    - As always, consider everyone's accessibility needs when choosing how to
+      communicate.
 
 - **Share the mic**
   - Make sure everyone who wants to has an opportunity to speak.
