@@ -222,7 +222,7 @@ We've compiled some guidelines from various sources to help people feel included
   - Err on the side of less eye contact.
 
 - **Bathrooms**
-  - Provide access to all-gender, accessible bathrooms
+  - Provide access to all-gender, accessible bathrooms.
 
 
 ## Pronoun guidelines
