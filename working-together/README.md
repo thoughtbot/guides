@@ -161,6 +161,9 @@ You can [download a double-sided printout] of these guides to display in your me
     [panic attacks](https://en.wikipedia.org/wiki/Panic_attack).
     - If you're incapable of sharing an overview or topic, at least share the
       tone: congratulatory, informational, disciplinary, etc.
+    - Descriptive invitations also provide a
+      [curb cut effect](https://en.wikipedia.org/wiki/Curb_cut_effect) of
+      helping people decide whether they should attend.
 
 
 ### Remote Meetings
