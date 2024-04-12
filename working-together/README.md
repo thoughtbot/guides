@@ -156,8 +156,8 @@ You can [download a double-sided printout] of these guides to display in your me
   - Let everyone know ahead of time what they can expect.
   - Create a calendar invite with links to the video call and dial-in information (if applicable)
   - Create a meeting agenda or note about what the meeting will cover.
-  - Strongly avoid vague meeting invitations. For people with anxiety, vague
-    invitations can cause huge amounts of stress or
+  - Strongly avoid vague meeting invitations. These can be stress-inducing for
+    anyone; and for people with anxiety, they can cause
     [panic attacks](https://en.wikipedia.org/wiki/Panic_attack).
     - If you're incapable of sharing an overview or topic, at least share the
       tone: congratulatory, informational, disciplinary, etc.
