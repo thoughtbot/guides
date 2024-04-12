@@ -232,6 +232,9 @@ We've compiled some guidelines from various sources to help people feel included
   - Try to be aware of others' comfort level with eye contact.
   - Err on the side of less eye contact.
 
+- **Bathrooms**
+  - Provide access to all-gender, accessible bathrooms.
+
 
 ## Pronoun guidelines
 
