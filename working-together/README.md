@@ -156,6 +156,16 @@ You can [download a double-sided printout] of these guides to display in your me
   - Let everyone know ahead of time what they can expect.
   - Create a calendar invite with links to the video call and dial-in information (if applicable)
   - Create a meeting agenda or note about what the meeting will cover.
+  - Don't send vague meeting invitations. These can be stress-inducing for
+    anyone; and for people with anxiety, they can cause
+    [panic attacks](https://en.wikipedia.org/wiki/Panic_attack).
+    - If you're unable to share an overview or topic, at least share the tone:
+      congratulatory, informational, disciplinary, etc.
+      - You could also consider setting the invitation as private or sharing
+        context via a separate message.
+    - Descriptive invitations also provide a
+      [curb cut effect](https://en.wikipedia.org/wiki/Curb_cut_effect) of
+      helping people decide whether they should attend.
 
 
 ### Remote Meetings
