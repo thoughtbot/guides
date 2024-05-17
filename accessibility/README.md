@@ -126,13 +126,6 @@ assign it one of four ratings:
 Use the Notes sheet to leave per-cell comments when necessary, referencing them
 with a link. The next steps for an audit are handled on a per-project basis.
 
-## Translations
-
-- Ensure that the application is setup to support multiple locales.
-- Ensure that the application raises an error when a translation is missing for a
-  given locale in development.
-
-
 [accessibility audit template]: https://www.fsb.org.uk/resources-page/accessibility-audit-template.html
 [accesslint]: https://github.com/marketplace/accesslint
 [axe]: https://www.deque.com/axe/axe-for-web/integrations/
