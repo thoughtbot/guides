@@ -245,10 +245,68 @@ We've compiled some guidelines from various sources to help people feel included
 - **Bathrooms**
   - Provide access to all-gender, accessible bathrooms.
 
+## Giving and Receiving Feedback
 
-## Pronoun guidelines
+Feedback is an important tool to help everyone grow and improve. It's important to be mindful of how we give and receive feedback to ensure that it's constructive and helpful.
 
-At thoughtbot, we strive to make everyone feel included and able to bring their entire self to work. One of the ways we do this is by providing space for people to feel comfortable sharing their pronouns. Pronouns are often shared during introductions and can also be added to your Slack profile, Hub profile, Zoom display name, email signature, etc.
+When giving feedback:
+- **Ask permission to give feedback first**
+  - This avoids surprises and prepares the recipient to receive feedback.
+  - It shows your intention is to help.
+  - Also, it ensures time and space for a full conversation.
+  - For example:
+    - "Do you have a few minutes to debrief on the meeting?"
+    - "Can I share some feedback on the presentation?"
+- **Be specific about what you're giving feedback on**
+  - Describe the behavior or situation you're giving feedback on.
+  - Avoid using "blurry" words, for example:
+    - "You're not thinking strategically"
+      - Prefer something like: "When you launched the new initiative you did not consider the unintentional consequences."
+    - "Your email is too sloppy."
+      - "I noticed your email had a few spelling mistakes. Maybe do a quick spell check before sending."
+- **Be kind**
+  - While it's important to be honest, your word choice has impact on how your feedback is received and addressed. Remember that the goal of the feedback is to help each other improve.
+- **Be timely**
+  - Provide feedback as soon as possible after the event or behavior you're giving feedback on.
+
+Consider using the BIQ model (Behavior, Impact, Question) when structuring your feedback:
+- **Behavior:** What did you actually see? Don't make assumptions about intent.
+- **Impact statement:** What was the consequence? Why does it matter and who was affected?
+- **Question:** What question do you want to ask to open the dialog?
+
+When receiving feedback:
+- **Ask questions**
+  - To fully understand the feedback.
+  - To show that you value their perspective.
+  - To encourage open and honest feedback in the future.
+- **Try to understand rather than responding defensively**
+  - Pause and reflect before speaking.
+  - Ask for specific examples.
+- **Always close the feedback loop**
+  - Follow up on the feedback you received.
+  - This shows how the feedback has been useful and encourages continued feedback.
+  - If it's helpful, you can commit to a deadline for addressing the feedback.
+
+### Feedback preferences
+Everyone has different preferences for receiving feedback; having feedback preferences intentionally disclosed fosters collaborative improvements and helps to build trust among team members.
+
+Consider creating a process or a shared document where team members can share their feedback preferences. You might want to look into creating a Team Charter or a Team Contract with your team addressing that.
+
+Some guidelines were adapted from [Culture AMP's Essential feedback skills course](https://id.cultureamp.com/app/skills-coach/course/essentialfeedback).
+
+## Inclusive language guidelines
+
+### Acronyms
+The use of acronyms could make it hard for someone who doesn't know their meaning to engage in conversations or have total clarity on some code.
+- Avoid using acronyms that could be perceived as exclusive or only relevant to certain groups of people.
+- Prefer using the full term instead of the acronym. It may also be useful to use alternative forms of communication, such as providing explanations or examples in plain language.
+- When the use of specific acronyms is inevitable for any reason...
+  - Make sure to document their meanings so that everyone can see them anytime.
+  - When mentioning them in conversations, check if people involved in the conversation know what they mean.
+
+### Pronoun guidelines
+
+At thoughtbot, we strive to make everyone feel included and able to show up as the most authentic self that they feel comfortable bringing to work. One of the ways we do this is by providing space for people to feel comfortable sharing their pronouns. Pronouns are often shared during introductions and can also be added to your Slack profile, Hub profile, Zoom display name, email signature, etc.
 
 An important aspect of making everyone comfortable is keeping in mind that sharing pronouns is ALWAYS optional. A person may have many reasons they don’t want to share pronouns. Gender identity is a complex and personal subject and not everyone is comfortable addressing it at work.
 
@@ -276,7 +334,6 @@ While we don’t require sharing pronouns, the widespread practice of sharing th
 - If someone has shared their pronouns with you, think carefully before sharing their pronouns in other contexts, especially when such information might be publicly visible.
   - That person may only be comfortable with specific people (for example, their team, a specific group, specific individuals, or only coworkers) knowing their pronouns, or it could put them in danger to be [outed](https://www.hrc.org/resources/glossary-of-terms) (for example, if their housing is dependent on a transphobic person who might evict them upon learning that they're trans).
   - If possible, ask in advance how they would like to be referred to; if not possible, try to imagine what they would say based on what you know about them and their relationships with you, the people you're talking to, and the broader world.
-
 
 [have a break, have a…]: https://www.youtube.com/watch?v=fejBO1HZXVQ
 [ping pong]: https://thoughtbot.com/upcase/videos/ping-pong-paired-programing
