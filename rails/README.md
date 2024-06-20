@@ -55,6 +55,12 @@
   FactoryBot factories.
 - Use `touch: true` when declaring `belongs_to` relationships.
 
+## Translations
+
+- Ensure that the application is setup to support multiple locales.
+- Ensure that the application raises an error when a translation is missing for a
+  given locale in development and tests.
+
 [`.ruby-version`]: https://gist.github.com/fnichol/1912050
 [redirects]: http://www.w3.org/Protocols/rfc2616/rfc2616-sec14.html#sec14.30
 [spring binstubs]: https://github.com/sstephenson/rbenv/wiki/Understanding-binstubs
