@@ -15,23 +15,26 @@ Watch a presentation that covers this material from [Derek Prior at RailsConf 20
 - **Good questions avoid judgment and avoid assumptions about the author's
   perspective**
 - **Ask for clarification**
-   - "I didn't understand. Can you clarify?"
+  - "I didn't understand. Can you clarify?"
 
 - **Avoid selective ownership of code**
-   - "Mine", "not mine", "yours"
+  - "Mine", "not mine", "yours"
 
 - **Avoid using terms that could be seen as referring to personal traits**
   - "Dumb", "stupid".
   - Assume everyone is intelligent and well-meaning.
 
+- **Avoid diminishing words**
+  - "simply", "simple", "just"
+
 - **Be explicit**
-   - Remember people don't always understand your intentions online.
+  - Remember people don't always understand your intentions online.
 
 - **Be humble**
-   - "I'm not sure - let's look it up."
+  - "I'm not sure - let's look it up."
 
 - **Don't use hyperbole**
-   - "Always", "never", "endlessly", "nothing"
+  - "Always", "never", "endlessly", "nothing"
 
 - **Don't use sarcasm**
 - **Keep it real**
@@ -43,8 +46,12 @@ Watch a presentation that covers this material from [Derek Prior at RailsConf 20
   - Post a follow-up comment summarizing the discussion.
 
 - **If you learned something new, share your appreciation**
-   - "I did not know about this. Thank you for sharing it."
+  - "I did not know about this. Thank you for sharing it."
 
+- **Avoid the "since you're at it" attitude**
+  - If you would like to recommend a code change unrelated to the current
+  pull request, suggest it in the appropriate place or open a ticket for it
+  (on Trello, JIRA, GitHub project...)
 
 ## Having Your Code Reviewed
 
@@ -71,10 +78,13 @@ Watch a presentation that covers this material from [Derek Prior at RailsConf 20
 - **Seek to understand the reviewer's perspective**
 - **Try to respond to every comment**
 - **Wait to merge the branch until continuous integration tells you the test suite is green in the branch**
-  - TDDium, Travis CI, CircleCI, Github Actions, etc.
+  - TDDium, Travis CI, CircleCI, GitHub Actions, etc.
 
 - **Merge once you feel confident in the code and its impact on the project**
 - **Final editorial control rests with the pull request author**
+
+- **Recognize the work of your teammates when you are pairing**
+  - Use `Co-Authored-By: <name> <email>` at the end of your commit message.
 
 ## Reviewing Code
 
@@ -113,6 +123,12 @@ An example response to style comments:
 If you disagree with a guideline, open an issue on the guides repo rather than debating it within the code review. In the meantime, apply the guideline. It's often helpful to set up a linter like [standard] to format code automatically.
 
 This helps us have more meaningful conversations on PRs rather than debating personal style preferences.
+
+- **Leave one comment only, for multiple stylistic offenses of the same kind**
+  - If there are a few occurrences of the same change needed, do not
+  leave multiple comments for the same change, rather suggest running the linter,
+  and/or leave one comment only, mentioning the line and elsewhere,
+  as long as the other files are being edited in the pull request.
 
 [challenging to convey emotion and intention online]: https://thoughtbot.com/blog/empathy-online
 [using labels]: https://conventionalcomments.org
