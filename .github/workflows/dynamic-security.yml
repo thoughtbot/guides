@@ -1,0 +1,19 @@
+name: update-security
+
+on:
+  push:
+    paths:
+      - SECURITY.md
+    branches:
+      - main
+  workflow_dispatch:
+
+jobs:
+  update-security:
+    permissions:
+      contents: write
+      pull-requests: write
+      pages: write
+    uses: thoughtbot/templates/.github/workflows/dynamic-security.yaml@main
+    secrets:
+      token: ${{ secrets.GITHUB_TOKEN }}
