@@ -31,7 +31,6 @@ programming in style.
 - [Inclusive Culture](/inclusive-culture/)
 - [Open Source](/open-source/)
 - [Product Review](/product-review/)
-- [Working Together](/working-together/)
 
 ### Protocols
 
