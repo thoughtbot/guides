@@ -27,7 +27,6 @@ programming in style.
 ### Collaboration
 
 - [Code Review](/code-review/)
-- [Inclusive Culture](/inclusive-culture/)
 - [Open Source](/open-source/)
 - [Product Review](/product-review/)
 
