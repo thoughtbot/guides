@@ -45,9 +45,10 @@
 - For greenfield React projects we like to use [TypeScript]. TypeScript is a
   typed superset of JavaScript that compiles to plain JavaScript. For a quick
   introduction, check out [TypeScript in 5 minutes].
-- If our app needs to make network requests and hold state outside of a
-  component, we like using GraphQL and our preferred library is [Apollo]. We
-  have a [section on `GraphQL`](/graphql) in our Guides.
+- When designing an API that requires pulling data from multiple sources, we 
+  recommend using GraphQL for more efficient and flexible data fetching. Our 
+  preferred library is [Apollo], and for more details, you can check out our 
+  [`GraphQL`](/graphql) guide.
 - When building React apps with TypeScript and Apollo, we've found working in
   [VSCode] to be a mostly-good experience.
 
