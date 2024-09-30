@@ -41,7 +41,7 @@ violations.
 - Prefer naming classes after domain concepts rather than patterns they
   implement (e.g. `Guest` vs `NullUser`, `CachedRequest` vs `RequestDecorator`).
 - Name the enumeration parameter the singular of the collection (`users.each { |user| greet(user) }`).
-- Name variables, methods, and classes to reveal intent.
+- Name variables, methods, and classes to reveal intent. This includes documentation and examples (e.g. don't use `foo`, `bar`, `baz` in examples).
 - Treat acronyms as words in names (`XmlHttpRequest` not `XMLHTTPRequest`), even
   if the acronym is the entire name (`class Html` not `class HTML`).
 
