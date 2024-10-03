@@ -105,7 +105,7 @@
 - Use the user's name in the `From` header and email in the `Reply-To` when
   [delivering email on behalf of the app's users].
 
-[delivering email on behalf of the app's users]: http://thoughtbot.com/blog/post/delivering-email-on-behalf-of-users
+[delivering email on behalf of the app's users]: http://thoughtbot.com/blog/delivering-email-on-behalf-of-users
 
 ## Code Review
 
