@@ -36,6 +36,7 @@ while building applications.
 ### API
 
 - Use GraphQL as an API layer when connecting a mobile app to a web service.
+- Use a schema to describe the shape of the inputs and outputs of an API endpoint.
 
 ### Web
 
