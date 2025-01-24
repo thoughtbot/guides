@@ -33,10 +33,6 @@ while building applications.
 - When building a cross-platform mobile app that will be delivered via an app
   store, use React Native.
 
-### API
-
-- Use GraphQL as an API layer when connecting a mobile app to a web service.
-
 ### Web
 
 - Use Ruby on Rails for new applications.
