@@ -54,6 +54,9 @@
 - [Use blocks](/ruby/sample_2.rb#L10) when declaring date and time attributes in
   FactoryBot factories.
 - Use `touch: true` when declaring `belongs_to` relationships.
+- Use [Pundit][] when you need to restrict access to models and data.
+
+[Pundit]: https://github.com/varvet/pundit
 
 ## Translations
 
