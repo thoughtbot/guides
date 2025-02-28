@@ -15,7 +15,7 @@
 * Use [React Navigation](https://reactnavigation.org/) for routing
 * Use [TanStack React Query](https://tanstack.com/query/v4/docs/framework/react/overview) as an API client for REST APIs
 * Use [Apollo Client](https://www.apollographql.com/docs/react/) as an API client for GraphQL APIs
-* Use [Redux Toolkit](https://redux-toolkit.js.org/) for global state
+* Use [Zustand](https://github.com/pmndrs/zustand) for global state
   * Avoid storing API data in a global store. Instead, use a dedicated API client.
 * Use [React Native Firebase](https://rnfirebase.io/) for push notifications
 * Use [Sentry](https://docs.sentry.io/platforms/react-native/) for error reporting

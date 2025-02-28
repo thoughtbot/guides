@@ -15,7 +15,7 @@
 - Prefer the `children` prop over [render props]
 - Prefer using [TypeScript prop interfaces] over [PropTypes]
 - Prefer the [short syntax] when using [Fragments]
-- Prefer [React Contexts] over [Redux]
+- Prefer [React Contexts] over [Zustand] when a trivial amount of values that don't get updated often need to be available to other components 
 - Avoid using indexes as the value for [keys]
 - Prefer [component composition over component inheritance]
 
@@ -34,7 +34,7 @@
 [short syntax]: https://reactjs.org/docs/fragments.html#short-syntax
 [fragments]: https://reactjs.org/docs/fragments.html
 [react contexts]: https://reactjs.org/docs/context.html
-[redux]: https://react-redux.js.org/
+[zustand]: https://github.com/pmndrs/zustand
 [keys]: https://reactjs.org/docs/lists-and-keys.html#keys
 [component composition over component inheritance]: https://reactjs.org/docs/composition-vs-inheritance.html
 [react router]: https://reacttraining.com/react-router/
