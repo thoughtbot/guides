@@ -43,7 +43,7 @@
 - Validate the associated `belongs_to` object (`user`), not the database column
   (`user_id`).
 - Use `db/seeds.rb` for data that is required in all environments.
-- Use `dev:prime` rake task for development environment seed data.
+- Use `development:seed` rake task for development environment seed data.
 - Prefer `cookies.signed` over `cookies` to [prevent tampering].
 - Prefer `Time.current` over `Time.now`
 - Prefer `Date.current` over `Date.today`
