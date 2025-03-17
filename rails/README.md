@@ -3,6 +3,8 @@
 - Use private instead of protected when defining controller methods.
 - Name date columns with `_on` suffixes.
 - Name datetime columns with `_at` suffixes.
+- Back boolean concepts like deleted?, published?, or active? with timestamps
+  via [Time for A Boolean](https://github.com/calebhearth/time_for_a_boolean)
 - Name time columns (referring to a time of day with no date) with `_time`
   suffixes.
 - Name initializers for their gem name.
