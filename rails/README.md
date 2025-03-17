@@ -97,12 +97,6 @@
 [resource routing]: https://guides.rubyonrails.org/routing.html#resource-routing-the-rails-default
 [generating routes]: https://guides.rubyonrails.org/routing.html#generating-paths-and-urls-from-code
 
-## Background Jobs
-
-- Define a `PRIORITY` constant at the top of delayed job classes.
-- Define two public methods: `self.enqueue` and `perform`.
-- Put delayed job classes in `app/jobs`.
-
 ## Email
 
 - Use the user's name in the `From` header and email in the `Reply-To` when
