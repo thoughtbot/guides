@@ -3,7 +3,7 @@
 - Use private instead of protected when defining controller methods.
 - Name date columns with `_on` suffixes.
 - Name datetime columns with `_at` suffixes.
-- Back boolean concepts like deleted?, published?, or active? with timestamps columns in the database `deleted_at`, `published_at`, `active_at`.
+- Back boolean concepts like deleted? or published? with timestamps columns in the database `deleted_at`, `published_at`.
   This can be valuable when you need to know **when** something took place. [Time for A Boolean](https://github.com/calebhearth/time_for_a_boolean) provides a nice interface for this.
 - Name time columns (referring to a time of day with no date) with `_time`
   suffixes.
