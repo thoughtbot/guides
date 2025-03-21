@@ -8,19 +8,19 @@
 
 ## Tooling
 
-* Start new projects with [create-belt-app](https://www.npmjs.com/package/create-belt-app)
-* Use [Expo](https://expo.dev)
-* Use [Expo EAS](https://expo.dev/eas) for continuous deployment
-* Use [Expo Secure Store](https://docs.expo.dev/versions/latest/sdk/securestore/) for storing sensitive data like auth and refresh tokens
-* Use [React Navigation](https://reactnavigation.org/) for routing
-* Use [TanStack React Query](https://tanstack.com/query/v4/docs/framework/react/overview) as an API client for REST APIs
-* Use [Apollo Client](https://www.apollographql.com/docs/react/) as an API client for GraphQL APIs
-* Use [Redux Toolkit](https://redux-toolkit.js.org/) for global state
-  * Avoid storing API data in a global store. Instead, use a dedicated API client.
-* Use [React Native Firebase](https://rnfirebase.io/) for push notifications
-* Use [Sentry](https://docs.sentry.io/platforms/react-native/) for error reporting
-* Prefer [RevenueCat](https://www.revenuecat.com/) for in-app payments
-  * If RevenueCat pricing is not acceptable since it collects a percentage of revenue, use [react-native-iap](https://react-native-iap.dooboolab.com/docs/get-started/)
+- Start new projects with [create-belt-app](https://www.npmjs.com/package/create-belt-app)
+- Use [Expo](https://expo.dev)
+- Use [Expo EAS](https://expo.dev/eas) for continuous deployment
+- Use [Expo Secure Store](https://docs.expo.dev/versions/latest/sdk/securestore/) for storing sensitive data like auth and refresh tokens
+- Use [React Navigation](https://reactnavigation.org/) for routing
+- Use [TanStack React Query](https://tanstack.com/query/v4/docs/framework/react/overview) as an API client for REST APIs
+- Use [Apollo Client](https://www.apollographql.com/docs/react/) as an API client for GraphQL APIs
+- Use [Redux Toolkit](https://redux-toolkit.js.org/) for global state
+  - Avoid storing API data in a global store. Instead, use a dedicated API client.
+- Use [React Native Firebase](https://rnfirebase.io/) for push notifications
+- Use [Sentry](https://docs.sentry.io/platforms/react-native/) for error reporting
+- Prefer [RevenueCat](https://www.revenuecat.com/) for in-app payments
+  - If RevenueCat pricing is not acceptable since it collects a percentage of revenue, use [react-native-iap](https://react-native-iap.dooboolab.com/docs/get-started/)
 
 ## Style
 
