@@ -89,9 +89,10 @@
     /* MD032 - Lists should be surrounded by blank lines */
     "blanks-around-lists": true,
 
-    // FIXME: enable and configure
     /* MD033 - Inline HTML */
-    "no-inline-html": false,
+    "no-inline-html": {
+      "allowed_elements": ["dl", "dt", "dd", "kbd", "details"]
+    },
 
     // FIXME: enable and configure
     /* MD034 - Bare URL used */
