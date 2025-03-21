@@ -65,3 +65,4 @@ be used.
 - Avoid returning null from operations. [#630]
 
 [graphql specification]: https://graphql.github.io/graphql-spec/
+[#630]: https://github.com/thoughtbot/guides/pull/630

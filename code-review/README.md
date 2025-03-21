@@ -69,7 +69,7 @@ Watch a presentation that covers this material from [Derek Prior at RailsConf 20
   - You may want to consider before/after screenshots or screencasts whenever applicable.
 
 - **Link to the code review from the ticket/story**
-  - "Ready for review: https://github.com/organization/project/pull/1"
+  - "Ready for review: `https://github.com/organization/project/pull/1`
 
 - **Push commits based on earlier rounds of feedback as isolated commits to the branch**
   - Do not squash until the branch is ready to merge.

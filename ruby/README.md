@@ -93,10 +93,9 @@
   provider of the API, write [system specs]. Otherwise write [request specs].
 
 [http api design guide]: https://github.com/interagent/http-api-design
-[oj]: https://github.com/ohler55/oj
 [system specs]: https://web.archive.org/web/20230131005307/https://relishapp.com/rspec/rspec-rails/docs/system-specs/system-spec
 [request specs]: https://web.archive.org/web/20221207001104/https://www.relishapp.com/rspec/rspec-rails/docs/request-specs/request-spec
 
-## How to...
+## How To Guides
 
 - [Release a Ruby gem](./how-to/release_a_ruby_gem.md)
