@@ -115,9 +115,8 @@
     /* MD040 - Fenced code blocks should have a language specified */
     "fenced-code-language": true,
 
-    // FIXME: enable and configure
     /* MD041 - First line in a file should be a top-level heading */
-    "first-line-heading": false,
+    "first-line-heading": true,
 
     /* MD042 - No empty links */
     "no-empty-links": true,
