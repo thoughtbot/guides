@@ -12,7 +12,10 @@
   "dependencies": {
     "markdownlint-cli2": "^0.17.2"
   },
-  "scripts" : {
+  "scripts": {
     "lint": "markdownlint-cli2 \"./**/*.md\""
+  },
+  "devDependencies": {
+    "lefthook": "^1.11.3"
   }
 }
