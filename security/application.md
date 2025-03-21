@@ -342,7 +342,7 @@ anyone with your private key). The Debian package system is built around this.
 SSH defaults to a trust-on-first-use (TOFU) policy: the first time you connect
 to a server you are asked to confirm the server's public key fingerprint:
 
-```
+```text
 The authenticity of host heroku.com can't be established.
 RSA key fingerprint is 8tF0wX2WquK45aGKs/Bh1dKmBXH08vxUe0VCJJWOA/o.
 Are you sure you want to continue connecting (yes/no)?

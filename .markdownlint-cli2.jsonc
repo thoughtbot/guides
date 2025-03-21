@@ -112,9 +112,8 @@
     /* MD039 - Spaces inside link text */
     "no-space-in-links": true,
 
-    // FIXME: enable and configure
     /* MD040 - Fenced code blocks should have a language specified */
-    "fenced-code-language": false,
+    "fenced-code-language": true,
 
     // FIXME: enable and configure
     /* MD041 - First line in a file should be a top-level heading */
