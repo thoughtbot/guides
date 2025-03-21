@@ -30,9 +30,8 @@
     /* MD011 - Reversed link syntax */
     "no-reversed-links": true,
 
-    // FIXME: enable and configure?
     /* MD012 - Multiple consecutive blank lines */
-    "no-multiple-blanks": false,
+    "no-multiple-blanks": true,
 
     // FIXME: enable and configure?
     /* MD013 - Line length */

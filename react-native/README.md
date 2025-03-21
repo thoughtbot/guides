@@ -42,4 +42,3 @@
 - Use [detox] for integration tests.
 
 [detox]: https://github.com/wix/Detox
-

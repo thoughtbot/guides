@@ -40,7 +40,6 @@
 
 If ESLint is used along with Prettier, the ESLInt plugin [eslint-config-prettier](https://github.com/prettier/eslint-config-prettier) should also be used to turn off all ESLint style rules that are already handled by Prettier.
 
-
 [babel]: https://babeljs.io/
 [eslint]: https://eslint.org/
 [prettier]: https://prettier.io/
