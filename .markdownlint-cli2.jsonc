@@ -11,7 +11,6 @@
     /* MD003 - Heading style */
     "heading-style": true,
 
-    // FIXME: enable and configure?
     /* MD004 - Unordered list style */
     "ul-style": true,
 
@@ -22,9 +21,8 @@
     "ul-indent": true,
     // { "indent": 2, "start_indented": false },
 
-    // FIXME: enable and configure?
     /* MD009 - Trailing spaces */
-    "no-trailing-spaces": false,
+    "no-trailing-spaces": true,
 
     // FIXME: enable and configure?
     /* MD010 - Hard tabs */
