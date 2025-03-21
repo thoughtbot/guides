@@ -133,9 +133,8 @@
     /* MD046 - Code block style */
     "code-block-style": true,
 
-    // FIXME: enable and configure
     /* MD047 - Files should end with a single newline character */
-    "single-trailing-newline": false,
+    "single-trailing-newline": true,
 
     /* MD048 - Code fence style */
     "code-fence-style": true,
@@ -150,11 +149,12 @@
     "link-fragments": true,
 
     /* MD052 - Reference links and images should use a label that is defined */
-    "reference-links-images": true,
+    "reference-links-images": {
+      "shortcut_syntax": true
+    },
 
-    // FIXME: enable and configure
     /* MD053 - Link and image reference definitions should be needed */
-    "link-image-reference-definitions": false,
+    "link-image-reference-definitions": true,
 
     /* MD054 - Link and image style */
     "link-image-style": true

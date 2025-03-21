@@ -80,7 +80,6 @@ Submit a [GitHub pull request].
 
 Ask for a code review in the project's chat room.
 
-[good commit message]: http://tbaggery.com/2008/04/19/a-note-about-git-commit-messages.html
 [use `git rebase` interactively]: https://help.github.com/articles/about-git-rebase/
 [github pull request]: https://help.github.com/articles/using-pull-requests/
 
