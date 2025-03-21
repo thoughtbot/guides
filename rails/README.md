@@ -31,7 +31,6 @@
 
 ## Views and UI
 
-Guidance on Active View and the User Interface
 
 - Put application-wide partials in the [`app/views/application`] directory.
 - Use the default `render 'partial'` syntax over `render partial: 'partial'`.
