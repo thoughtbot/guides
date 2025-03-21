@@ -12,6 +12,10 @@
 - Use `ENV.fetch` for environment variables instead of `ENV[]`so that unset
   environment variables are detected on deploy.
 
+[spring binstubs]: https://github.com/sstephenson/rbenv/wiki/Understanding-binstubs
+[`.ruby-version`]: https://gist.github.com/fnichol/1912050
+[prevent tampering]: https://www.bigbinary.com/blog/cookies-on-rails
+
 ## Routes
 
 - Avoid the `:except` option in routes.
@@ -23,6 +27,7 @@
 
 [resource routing]: https://guides.rubyonrails.org/routing.html#resource-routing-the-rails-default
 [generating routes]: https://guides.rubyonrails.org/routing.html#generating-paths-and-urls-from-code
+[redirects]: http://www.w3.org/Protocols/rfc2616/rfc2616-sec14.html#sec14.30
 
 ## Views and UI
 
@@ -34,6 +39,8 @@ Guidance on Active View and the User Interface
 - Don't reference a model class directly from a view.
 - Don't use instance variables in partials. Pass local variables to partials from view templates.
 - Use only one instance variable in each view.
+
+[`app/views/application`]: http://railscasts.com/episodes/269-template-inheritance
 
 ## Controllers
 
@@ -146,9 +153,3 @@ others' Rails work, look in particular for:
 - [Start a New Rails App](./how-to/start_a_new_rails_app.md)
 - [Deploy a Rails App to Heroku](./how-to/deploy_a_rails_app_to_heroku.md)
 - [Feature-test JavaScript in a Rails App](./how-to/feature_test_javascript_in_a_rails_app.md)
-
-[`.ruby-version`]: https://gist.github.com/fnichol/1912050
-[redirects]: http://www.w3.org/Protocols/rfc2616/rfc2616-sec14.html#sec14.30
-[spring binstubs]: https://github.com/sstephenson/rbenv/wiki/Understanding-binstubs
-[prevent tampering]: https://www.bigbinary.com/blog/cookies-on-rails
-[`app/views/application`]: http://railscasts.com/episodes/269-template-inheritance
