@@ -60,14 +60,14 @@
     /* MD023 - Headings must start at the beginning of the line */
     "heading-start-left": true,
 
-    // FIXME: enable and configure
     /* MD024 - Multiple headings with the same content */
-    "no-duplicate-heading": false,
+    "no-duplicate-heading": {
+      "siblings_only": true
+    },
 
     /* MD025 - Multiple top-level headings in the same document */
     "single-title": true,
 
-    // FIXME: enable and configure
     /* MD026 - Trailing punctuation in heading */
     "no-trailing-punctuation": true,
 
