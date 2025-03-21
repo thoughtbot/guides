@@ -1,5 +1,7 @@
 {
-  // See: https://github.com/DavidAnson/markdownlint/blob/v0.32.1/README.md#rules--aliases
+  // https://github.com/DavidAnson/markdownlint/blob/v0.32.1/README.md#rules--aliases
+  // https://github.com/DavidAnson/markdownlint-cli2/blob/main/test/markdownlint-cli2-jsonc-example/.markdownlint-cli2.jsonc
+  // https://github.com/DavidAnson/markdownlint-cli2/blob/main/schema/markdownlint-config-schema.json
   "$schema": "https://raw.githubusercontent.com/DavidAnson/markdownlint-cli2/refs/heads/main/schema/markdownlint-cli2-config-schema.json",
   "gitignore": true,
   "config": {
