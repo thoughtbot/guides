@@ -69,7 +69,7 @@
 
     // FIXME: enable and configure
     /* MD026 - Trailing punctuation in heading */
-    "no-trailing-punctuation": false,
+    "no-trailing-punctuation": true,
 
     /* MD027 - Multiple spaces after blockquote symbol */
     "no-multiple-space-blockquote": true,

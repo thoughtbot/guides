@@ -16,7 +16,7 @@ This typically takes one of three forms:
 2. Primarily textual sections
 3. A combination of both
 
-## How to...
+## How To Guides
 
 This section, if applicable, should index a list of "How-to" guides for this
 guide's topic. These should be stored relative to this `README.md` file in a

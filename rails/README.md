@@ -130,7 +130,7 @@ others' Rails work, look in particular for:
 
 [ActiveStorage]: https://guides.rubyonrails.org/active_storage_overview.html
 
-## How to...
+## How To Guides
 
 - [Start a New Rails App](./how-to/start_a_new_rails_app.md)
 - [Deploy a Rails App to Heroku](./how-to/deploy_a_rails_app_to_heroku.md)
