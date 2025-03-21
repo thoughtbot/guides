@@ -40,7 +40,7 @@
 
     // FIXME: enable and configure?
     /* MD014 - Dollar signs used before commands without showing output */
-    "commands-show-output": false,
+    "commands-show-output": true,
 
     /* MD018 - No space after hash on atx style heading */
     "no-missing-space-atx": true,
