@@ -27,11 +27,11 @@
 
 - Use [Prettier defaults](https://prettier.io/docs/en/options.html) with the following additional configuration (.prettierrc):
 
-	```json
-	{
-	  "singleQuote": true
-	}
-	```
+  ```json
+  {
+    "singleQuote": true
+  }
+  ```
   
   This configuration includes:
   - Use semicolons at the end of each statement ([sample](/javascript/sample.js#L5))

@@ -24,9 +24,8 @@
     /* MD009 - Trailing spaces */
     "no-trailing-spaces": true,
 
-    // FIXME: enable and configure?
     /* MD010 - Hard tabs */
-    "no-hard-tabs": false,
+    "no-hard-tabs": true,
 
     /* MD011 - Reversed link syntax */
     "no-reversed-links": true,
