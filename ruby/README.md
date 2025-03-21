@@ -2,7 +2,8 @@
 
 [Sample 1](sample_1.rb) [Sample 2](sample_2.rb)
 
-- Use [standard]
+- Use an opinionated set of rules for Rubocop. Prefer [standard] for new projects.
+  - Having an already decided configuration removes bikeshedding on what a Rubocop configuration should be.
 - Avoid conditional modifiers (lines that end with conditionals). [36491dbb9]
 - Avoid multiple assignments per line (`one, two = 1, 2`). [#109]
 - Avoid organizational comments (`# Validations`). [#63]
