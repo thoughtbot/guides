@@ -94,9 +94,8 @@
       "allowed_elements": ["dl", "dt", "dd", "kbd", "details"]
     },
 
-    // FIXME: enable and configure
     /* MD034 - Bare URL used */
-    "no-bare-urls": false,
+    "no-bare-urls": true,
 
     /* MD035 - Horizontal rule style */
     "hr-style": true,
