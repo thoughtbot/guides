@@ -13,7 +13,7 @@
 
     // FIXME: enable and configure?
     /* MD004 - Unordered list style */
-    "ul-style": false,
+    "ul-style": true,
 
     /* MD005 - Inconsistent indentation for list items at the same level */
     "list-indent": true,
