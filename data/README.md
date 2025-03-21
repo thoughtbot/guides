@@ -24,6 +24,7 @@ A guide for managing a series of tubes.
   messages from different partitions to be processed out of order.
 
 ## Glossary
+
 <dl>
   <dt>Data Engineering</dt>
   <dd>

@@ -38,7 +38,6 @@
     // NOTE: Unable to disable this without some files being caught still
     "line-length": false,
 
-    // FIXME: enable and configure?
     /* MD014 - Dollar signs used before commands without showing output */
     "commands-show-output": true,
 
@@ -55,9 +54,8 @@
     /* MD021 - Multiple spaces inside hashes on closed atx style heading */
     "no-multiple-space-closed-atx": true,
 
-    // FIXME: enable and configure
     /* MD022 - Headings should be surrounded by blank lines */
-    "blanks-around-headings": false,
+    "blanks-around-headings": true,
 
     /* MD023 - Headings must start at the beginning of the line */
     "heading-start-left": true,
