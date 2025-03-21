@@ -8,4 +8,4 @@ jobs:
     - uses: DavidAnson/markdownlint-cli2-action@v19
       with:
         globs: |
-          *.md
+          ./**/*.md
