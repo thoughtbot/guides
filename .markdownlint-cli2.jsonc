@@ -33,9 +33,8 @@
     /* MD012 - Multiple consecutive blank lines */
     "no-multiple-blanks": true,
 
-    // FIXME: enable and configure?
     /* MD013 - Line length */
-    // NOTE: Unable to disable this without some files being caught still
+    // NOTE: Disabled to allow lines of any length; could be enabled in a separate PR after discussion
     "line-length": false,
 
     /* MD014 - Dollar signs used before commands without showing output */
