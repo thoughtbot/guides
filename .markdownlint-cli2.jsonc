@@ -130,9 +130,8 @@
     /* MD045 - Images should have alternate text (alt text) */
     "no-alt-text": true,
 
-    // FIXME: enable and configure
     /* MD046 - Code block style */
-    "code-block-style": false,
+    "code-block-style": true,
 
     // FIXME: enable and configure
     /* MD047 - Files should end with a single newline character */

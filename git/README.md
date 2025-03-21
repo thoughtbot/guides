@@ -54,12 +54,14 @@ git commit --verbose
 
 Write a [good commit message]. Example format:
 
-    Present-tense summary under 50 characters
+```text
+Present-tense summary under 50 characters
 
-    - More information about commit (under 72 characters).
-    - More information about commit (under 72 characters).
+- More information about commit (under 72 characters).
+- More information about commit (under 72 characters).
 
-    http://project.management-system.com/ticket/123
+http://project.management-system.com/ticket/123
+```
 
 If you've created more than one commit, [use `git rebase` interactively] to squash them into cohesive commits with good
 messages:
