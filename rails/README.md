@@ -130,6 +130,15 @@ others' Rails work, look in particular for:
 
 [ActiveStorage]: https://guides.rubyonrails.org/active_storage_overview.html
 
+## Authentication
+
+- Prefer [Devise][] over the [authentication generator][], due to its wide
+  adoption, rich [ecosystem][], and security maintenance.
+
+[Devise]: https://github.com/heartcombo/devise
+[authentication generator]: https://guides.rubyonrails.org/security.html#authentication
+[ecosystem]: https://github.com/heartcombo/devise?tab=readme-ov-file#extensions
+
 ## How to...
 
 - [Start a New Rails App](./how-to/start_a_new_rails_app.md)
