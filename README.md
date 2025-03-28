@@ -96,7 +96,7 @@ Thank you,
 
 ## License
 
-Guides is © 2020-2024 thoughtbot, inc. It is distributed under the [Creative Commons
+Guides is © 2020-2025 thoughtbot, inc. It is distributed under the [Creative Commons
 Attribution License](http://creativecommons.org/licenses/by/3.0/).
 
 <!-- START /templates/footer.md -->
