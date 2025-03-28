@@ -1,76 +1,85 @@
 # Rails
 
+## Application
+
+- Name initializers for their gem name.
+- Use `lib` for code that is not app-specific and could later be extracted into a gem.
+- Use `app/jobs` for code that doesn't need to return anything and can be run asynchronously.
+- Generate necessary [Spring binstubs] for the project, such as `rake` and
+  `rspec`, and add them to version control.
+- Use the [`.ruby-version`] file convention to specify the Ruby version and patch level for a project.
+- Prefer `cookies.signed` over `cookies` to [prevent tampering].
+- Use `ENV.fetch` for environment variables instead of `ENV[]`so that unset
+  environment variables are detected on deploy.
+
+[spring binstubs]: https://github.com/sstephenson/rbenv/wiki/Understanding-binstubs
+[`.ruby-version`]: https://gist.github.com/fnichol/1912050
+[prevent tampering]: https://www.bigbinary.com/blog/cookies-on-rails
+
+## Routes
+
+- Avoid the `:except` option in routes.
+- Avoid `member` and `collection` routes.
+- Order resourceful routes alphabetically by name.
+- Use the `:only` option to explicitly state exposed routes.
+- Prefer [resource routing] over [generating routes] individually
+- Use `_url` suffixes for named routes in mailer views and [redirects]. Use `_path` suffixes for named routes everywhere else.
+
+[resource routing]: https://guides.rubyonrails.org/routing.html#resource-routing-the-rails-default
+[generating routes]: https://guides.rubyonrails.org/routing.html#generating-paths-and-urls-from-code
+[redirects]: http://www.w3.org/Protocols/rfc2616/rfc2616-sec14.html#sec14.30
+
+## Views and UI
+
+- Put application-wide partials in the [`app/views/application`] directory.
+- Use the default `render 'partial'` syntax over `render partial: 'partial'`.
+- Use `link_to` for GET requests, and `button_to` for other HTTP verbs.
+- Don't reference a model class directly from a view.
+- Don't use instance variables in partials. Pass local variables to partials from view templates.
+- Use only one instance variable in each view.
+
+[`app/views/application`]: http://railscasts.com/episodes/269-template-inheritance
+
+## Controllers
+
 - Use private instead of protected when defining controller methods.
+- Order controller contents: filters, public methods, private methods.
+- Avoid instantiating more than one object in controllers.
+
+## Models
+
+Guidance on ActiveRecord, ActiveModel, and other model objects.
+
+- Order ActiveRecord associations alphabetically by association type, then
+  attribute name. [Example](/rails/sample.rb#L2-L4).
+- Order ActiveRecord validations alphabetically by attribute name.
+- Order ActiveRecord associations above ActiveRecord validations.
+- Order model contents: constants, macros, public methods, private methods.
+- Use `def self.method`, not the `scope :method` DSL. [#643](https://github.com/thoughtbot/guides/pull/643)
+- Use new-style `validates :name, presence: true` validations, and put all
+  validations for a given column together. [Example](/rails/sample.rb#L6).
+- Avoid bypassing validations with methods like `save(validate: false)`,
+  `update_attribute`, and `toggle`.
+- Avoid naming methods after database columns in the same class.
+- Don't return false from `ActiveModel` callbacks, but instead raise an exception.
+- Don't use SQL or SQL fragments (`where('inviter_id IS NOT NULL')`) outside of models.
+- Validate the associated `belongs_to` object (`user`), not the database column (`user_id`).
+- Use `touch: true` when declaring `belongs_to` relationships.
+- Use [Pundit][] when you need to restrict access to models and data.
+
+[Pundit]: https://github.com/varvet/pundit
+
+## Database and Persistence
+
 - Name date columns with `_on` suffixes.
 - Name datetime columns with `_at` suffixes.
 - Back boolean concepts like deleted? or published? with timestamps columns in the database `deleted_at`, `published_at`.
   This can be valuable when you need to know **when** something took place. [Time for A Boolean](https://github.com/calebhearth/time_for_a_boolean) provides a nice interface for this.
 - Name time columns (referring to a time of day with no date) with `_time`
   suffixes.
-- Name initializers for their gem name.
-- Order ActiveRecord associations alphabetically by association type, then
-  attribute name. [Example](/rails/sample.rb#L2-L4).
-- Order ActiveRecord validations alphabetically by attribute name.
-- Order ActiveRecord associations above ActiveRecord validations.
-- Order controller contents: filters, public methods, private methods.
-- Order i18n translations alphabetically by key name.
-- Order model contents: constants, macros, public methods, private methods.
-- Put application-wide partials in the [`app/views/application`] directory.
-- Use `lib` for code that is not app-specific and could later be extracted into a gem.
-- Use `app/jobs` for code that doesn't need to return anything and can be run asynchronously.
-- Use `def self.method`, not the `scope :method` DSL. [#643](https://github.com/thoughtbot/guides/pull/643)
-- Use the default `render 'partial'` syntax over `render partial: 'partial'`.
-- Use `link_to` for GET requests, and `button_to` for other HTTP verbs.
-- Use new-style `validates :name, presence: true` validations, and put all
-  validations for a given column together. [Example](/rails/sample.rb#L6).
-- Avoid bypassing validations with methods like `save(validate: false)`,
-  `update_attribute`, and `toggle`.
-- Avoid instantiating more than one object in controllers.
-- Avoid naming methods after database columns in the same class.
-- Don't reference a model class directly from a view.
-- Don't return false from `ActiveModel` callbacks, but instead raise an
-  exception.
-- Don't use instance variables in partials. Pass local variables to partials
-  from view templates.
-- Don't use SQL or SQL fragments (`where('inviter_id IS NOT NULL')`) outside of
-  models.
-- Generate necessary [Spring binstubs] for the project, such as `rake` and
-  `rspec`, and add them to version control.
 - Keep `db/schema.rb` or `db/development_structure.sql` under version control.
-- Use only one instance variable in each view.
-- Use the [`.ruby-version`] file convention to specify the Ruby version and
-  patch level for a project.
-- Use `_url` suffixes for named routes in mailer views and [redirects]. Use
-  `_path` suffixes for named routes everywhere else.
-- Validate the associated `belongs_to` object (`user`), not the database column
-  (`user_id`).
 - Use `db/seeds.rb` for data that is required in all environments.
 - Use `dev:prime` rake task for development environment seed data.
-- Prefer `cookies.signed` over `cookies` to [prevent tampering].
-- Prefer `Time.current` over `Time.now`
-- Prefer `Date.current` over `Date.today`
-- Prefer `Time.zone.parse("2014-07-04 16:05:37")` over `Time.parse("2014-07-04
-  16:05:37")`
-- Use `ENV.fetch` for environment variables instead of `ENV[]`so that unset
-  environment variables are detected on deploy.
-- [Use blocks](/ruby/sample_2.rb#L10) when declaring date and time attributes in
-  FactoryBot factories.
-- Use `touch: true` when declaring `belongs_to` relationships.
-- Use [Pundit][] when you need to restrict access to models and data.
-
-[Pundit]: https://github.com/varvet/pundit
-
-## Translations
-
-- Ensure that the application is setup to support multiple locales.
-- Ensure that the application raises an error when a translation is missing for a
-  given locale in development and tests.
-
-[`.ruby-version`]: https://gist.github.com/fnichol/1912050
-[redirects]: http://www.w3.org/Protocols/rfc2616/rfc2616-sec14.html#sec14.30
-[spring binstubs]: https://github.com/sstephenson/rbenv/wiki/Understanding-binstubs
-[prevent tampering]: https://www.bigbinary.com/blog/cookies-on-rails
-[`app/views/application`]: http://railscasts.com/episodes/269-template-inheritance
 
 ## Migrations
 
@@ -88,16 +97,23 @@
 [`on_delete` behavior for foreign keys]: http://api.rubyonrails.org/classes/ActiveRecord/ConnectionAdapters/SchemaStatements.html#method-i-add_foreign_key
 [add foreign key constraints]: http://thoughtbot.com/blog/referential-integrity-with-foreign-keys
 
-## Routes
+## Factories
 
-- Avoid the `:except` option in routes.
-- Avoid `member` and `collection` routes.
-- Order resourceful routes alphabetically by name.
-- Use the `:only` option to explicitly state exposed routes.
-- Prefer [resource routing] over [generating routes] individually
+- [Use blocks](/ruby/sample_2.rb#L10) when declaring date and time attributes in FactoryBot factories.
 
-[resource routing]: https://guides.rubyonrails.org/routing.html#resource-routing-the-rails-default
-[generating routes]: https://guides.rubyonrails.org/routing.html#generating-paths-and-urls-from-code
+## Temporal
+
+- Prefer `Time.current` over `Time.now`
+- Prefer `Date.current` over `Date.today`
+- Prefer `Time.zone.parse("2014-07-04 16:05:37")` over `Time.parse("2014-07-04
+  16:05:37")`
+
+## Translations
+
+- Ensure that the application is setup to support multiple locales.
+- Ensure that the application raises an error when a translation is missing for a
+  given locale in development and tests.
+- Order i18n translations alphabetically by key name.
 
 ## Email
 
