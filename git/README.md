@@ -4,6 +4,7 @@ A guide for programming within version control.
 
 ## Best Practices
 
+- Treat the version history as a resource for the future.
 - Avoid merge commits by using a [rebase workflow].
 - Squash multiple trivial commits into a single commit.
 - Write a [good commit message].
