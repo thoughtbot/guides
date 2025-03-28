@@ -14,10 +14,8 @@ Style and best practices that apply to all languages and frameworks.
 
 ## Code Review
 
-Use [Hound] to automatically review your GitHub pull requests for style guide
+Use a linter to automatically review your GitHub pull requests for style guide
 violations.
-
-[hound]: https://houndci.com
 
 ## Formatting
 
