@@ -5,7 +5,7 @@ to abide by the [thoughtbot Code Of Conduct].
 
 We expect everyone to follow the code of conduct anywhere in thoughtbot's
 project codebases, issue trackers, chatrooms, mailing lists, meetups, at other events, and in-person.
-Violators will be warned by the core team. 
+Violators will be warned by the core team.
 Repeat violations will result in being blocked or banned by the core team at or before the 3rd violation.
 
 [thoughtbot code of conduct]: https://thoughtbot.com/open-source-code-of-conduct

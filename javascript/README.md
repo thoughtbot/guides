@@ -27,19 +27,18 @@
 
 - Use [Prettier defaults](https://prettier.io/docs/en/options.html) with the following additional configuration (.prettierrc):
 
-	```json
-	{
-	  "singleQuote": true
-	}
-	```
+  ```json
+  {
+    "singleQuote": true
+  }
+  ```
   
   This configuration includes:
   - Use semicolons at the end of each statement ([sample](/javascript/sample.js#L5))
   - Prefer single quotes ([sample](/javascript/sample.js#L11))
-  - Use a trailing comma after each item in a multi-line array or object literal, including the last item. ([sample](/javascript/sample.js#L11)) 
- 
-If ESLint is used along with Prettier, the ESLInt plugin [eslint-config-prettier](https://github.com/prettier/eslint-config-prettier) should also be used to turn off all ESLint style rules that are already handled by Prettier.
+  - Use a trailing comma after each item in a multi-line array or object literal, including the last item. ([sample](/javascript/sample.js#L11))
 
+If ESLint is used along with Prettier, the ESLInt plugin [eslint-config-prettier](https://github.com/prettier/eslint-config-prettier) should also be used to turn off all ESLint style rules that are already handled by Prettier.
 
 [babel]: https://babeljs.io/
 [eslint]: https://eslint.org/

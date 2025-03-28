@@ -1,0 +1,21 @@
+{
+  "name": "guides",
+  "description": "[![Reviewed by Hound](https://img.shields.io/badge/Reviewed_by-Hound-8E64B0.svg)](https://houndci.com)",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/thoughtbot/guides.git"
+  },
+  "bugs": {
+    "url": "https://github.com/thoughtbot/guides/issues"
+  },
+  "homepage": "https://github.com/thoughtbot/guides#readme",
+  "dependencies": {
+    "markdownlint-cli2": "^0.17.2"
+  },
+  "scripts": {
+    "lint": "markdownlint-cli2 \"./**/*.md\""
+  },
+  "devDependencies": {
+    "lefthook": "^1.11.3"
+  }
+}
