@@ -31,7 +31,6 @@
 
 ## Views and UI
 
-
 - Put application-wide partials in the [`app/views/application`] directory.
 - Use the default `render 'partial'` syntax over `render partial: 'partial'`.
 - Use `link_to` for GET requests, and `button_to` for other HTTP verbs.
