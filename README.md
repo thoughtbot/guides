@@ -43,7 +43,6 @@ programming in style.
 ### Languages
 
 - [Bash](/bash/)
-- [CoffeeScript](/coffeescript/)
 - [CSS](/css/)
 - [Elixir](/elixir/)
 - [ERB](/erb/)
