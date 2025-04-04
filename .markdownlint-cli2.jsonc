@@ -80,7 +80,7 @@
     "ol-prefix": true,
 
     /* MD030 - Spaces after list markers */
-    "list-marker-space": true,
+    "list-marker-space": "mixed",
 
     /* MD031 - Fenced code blocks should be surrounded by blank lines */
     "blanks-around-fences": true,
