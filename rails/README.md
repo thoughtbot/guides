@@ -81,6 +81,12 @@ Guidance on ActiveRecord, ActiveModel, and other model objects.
 - Use `db/seeds.rb` for data that is required in all environments.
 - Use `dev:prime` rake task for development environment seed data.
 
+## Console
+
+- Access production-like [console][] sessions in "sandbox" mode: `bin/rails console --sandbox`
+
+[console]: https://guides.rubyonrails.org/command_line.html#bin-rails-console
+
 ## Migrations
 
 [Sample](migration.rb)
