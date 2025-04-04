@@ -40,6 +40,8 @@
   multiple models.
 - Prefer `private` when indicating scope. Use `protected` only with comparison
   methods like `def ==(other)`, `def <(other)`, and `def >(other)`.
+- Use empty lines around multi-line blocks.
+- Use spaces around operators, except for unary operators, such as `!`.
 
 [standard]: https://github.com/testdouble/standard
 [#63]: https://github.com/thoughtbot/guides/pull/63
