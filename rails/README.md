@@ -146,6 +146,13 @@ others' Rails work, look in particular for:
 
 [ActiveStorage]: https://guides.rubyonrails.org/active_storage_overview.html
 
+## Testing
+
+- Prefer [webmock][] over [VCR][].
+
+[webmock]: https://github.com/webmock/webmock
+[VCR]: https://github.com/vcr/vcr
+
 ## How To Guides
 
 - [Start a New Rails App](./how-to/start_a_new_rails_app.md)
