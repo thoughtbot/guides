@@ -1,14 +1,22 @@
 # Ruby
 
-[Sample 1](sample_1.rb) [Sample 2](sample_2.rb)
+- [How to](how-to.md)
+- [Sample 1](sample_1.rb)
+- [Sample 2](sample_2.rb)
 
-- Use [standard]
-- Avoid conditional modifiers (lines that end with conditionals). [36491dbb9]
-- Avoid multiple assignments per line (`one, two = 1, 2`). [#109]
-- Avoid organizational comments (`# Validations`). [#63]
-- Avoid ternary operators (`boolean ? true : false`). Use multi-line `if`
-  instead to emphasize code branches. [36491dbb9]
-- Avoid bang (!) method names. Prefer descriptive names. [#122]
+---
+
+- [Avoid conditional modifiers (lines that end with conditionals)](how-to.md#conditional-modifiers)
+- [Avoid multiple assignments per line](how-to.md#multiple-assignments)
+- [Avoid organizational comments](how-to.md#organizational-comments)
+- [Avoid ternary operators. Use multi-line `if` instead to emphasize code branches](how-to.md#ternary-operators)
+- [Avoid bang (!) method names. Prefer descriptive names](how-to.md#bang-method-names)
+
+
+
+
+- Avoid optional parameters. Does the method do too much?
+- Avoid monkey-patching.
 - Name variables created by a factory after the factory (`user_factory` creates
   `user`).
 - Prefer nested class and module definitions over the shorthand version
@@ -30,10 +38,9 @@
 - Use `def self.method`, not `class << self`. [40090e22]
 - Use `def` with parentheses when there are arguments. [36491dbb9]
 - Use heredocs for multi-line strings. [36491dbb9]
+- Use [standard]
 - Order class methods above instance methods. [#320]
 - Prefer method invocation over instance variables. [#331]
-- Avoid optional parameters. Does the method do too much?
-- Avoid monkey-patching.
 - Generate necessary [Bundler binstubs] for the project, such as `rake` and
   `rspec`, and add them to version control.
 - Prefer classes to modules when designing functionality that is shared by
@@ -42,9 +49,6 @@
   methods like `def ==(other)`, `def <(other)`, and `def >(other)`.
 
 [standard]: https://github.com/testdouble/standard
-[#63]: https://github.com/thoughtbot/guides/pull/63
-[#109]: https://github.com/thoughtbot/guides/pull/109
-[#122]: https://github.com/thoughtbot/guides/pull/122
 [#183]: https://github.com/thoughtbot/guides/pull/183
 [#237]: https://github.com/thoughtbot/guides/pull/237
 [#320]: https://github.com/thoughtbot/guides/pull/320
