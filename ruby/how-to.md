@@ -64,6 +64,7 @@ Avoid ternary operators. Use multi-line `if` instead to emphasize code branches.
 ## [Bang method names](#bang-method-names)
 
 Avoid bang (!) method names. Prefer descriptive names.
+
 Example: in a method like 'invite!`, it is unclear if the author is going to
 modify the user, raise an exception, or do something else.
 
@@ -75,10 +76,31 @@ modify the user, raise an exception, or do something else.
   def send_invitation_email
 ```
 
+## [Unused block parameters](#unused-block-params)
+
+```ruby
+  # unfavorable choice
+  hash.map { |key, value| v + 1 }
+
+  # preferred choice
+  hash.map { |_, value| value + 1 }
+  hash.map { |_key, v| v + 1 }
+```
+
+## [Unused variables](#unused-variables)
+
+```ruby
+  # unfavorable choice
+  user = create(:user)
+
+  # preferred choice
+  _user = create(:user)
+```
 
 
 
 
+---
 
 * Avoid `%q`, `%Q`, `%x`, `%s`, and `%W`.
 * Avoid hashes as optional parameters. Does the method do too much?
@@ -101,8 +123,6 @@ modify the user, raise an exception, or do something else.
   with ActiveRecord and keep `select`/`reject` symmetry.
 * Prefer `map` over `collect` and `reduce` over `inject` due to symmetry and
   familarity with mapping and reducing in other technologies.
-* Use `_` for unused block parameters.
-        hash.map { |_, v| v + 1 }
 * Use `%{}` for single-line strings needing interpolation and double-quotes.
 * Use `%w()` over `['', '']` for an array of words.
 * Use `&&` and `||` for boolean expressions.

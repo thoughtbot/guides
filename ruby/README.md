@@ -11,9 +11,11 @@
 - [Avoid organizational comments](how-to.md#organizational-comments)
 - [Avoid ternary operators. Use multi-line `if` instead to emphasize code branches](how-to.md#ternary-operators)
 - [Avoid bang (!) method names. Prefer descriptive names](how-to.md#bang-method-names)
+- [Use `_` for unused block parameters](how-to.md#unused-block-params)
+- [Prefix unused variables or parameters with underscore](how-to.md#unused-variables)
 
 
-
+---
 
 - Avoid optional parameters. Does the method do too much?
 - Avoid monkey-patching.
@@ -27,8 +29,7 @@
 - Prefer `reduce` over `inject`. [#237]
 - Prefer `&:method_name` to `{ |item| item.method_name }` for simple method
   calls. [#183]
-- Use `_` for unused block parameters. [0d819844]
-- Prefix unused variables or parameters with underscore (`_`). [#335]
+
 - Suffix variables holding a factory with `_factory` (`user_factory`).
 - Use a leading underscore when defining instance variables for memoization.
   [#373]
@@ -54,7 +55,6 @@
 [#320]: https://github.com/thoughtbot/guides/pull/320
 [#331]: https://github.com/thoughtbot/guides/pull/331
 [#332]: https://github.com/thoughtbot/guides/pull/332
-[#335]: https://github.com/thoughtbot/guides/pull/335
 [#373]: https://github.com/thoughtbot/guides/pull/373
 [0d819844]: https://github.com/thoughtbot/guides/commit/0d819844
 [36491dbb9]: https://github.com/thoughtbot/guides/commit/36491dbb9
