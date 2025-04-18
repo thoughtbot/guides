@@ -1,5 +1,7 @@
 # Examples of using Alerts, Admonitions, or Callouts
 
+## Examples
+
 A note...
 
 > [!NOTE]  
@@ -35,3 +37,8 @@ Embedding a code-block in an alert:
 >   return 'bar';  
 > }
 > ```
+
+## Resources
+
+- <https://docs.github.com/en/get-started/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax#alerts>
+- <https://help.obsidian.md/callouts>
