@@ -38,16 +38,18 @@
 > }
 > ```
 
+## Syntax Incompatible With GitHub
+
 ### Callout With Custom Title
+
+Obsidian supports rendering callouts with a custom title. GitHub, however, does not.
 
 > [!IMPORTANT] Pay Attention!
 > Crucial information necessary for users to succeed.
 
-## Syntax Incompatible With GitHub
-
 ### Nested Alerts
 
-While Obsidian supports rendering nested callouts, at the time of writing GitHub does not:
+Obsidian supports rendering nested callouts. GitHub, at the time of writing, does not:
 
 > [!NOTE]  
 > Highlights information that users should take into account, even when skimming.
