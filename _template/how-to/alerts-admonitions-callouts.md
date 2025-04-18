@@ -24,3 +24,14 @@ Caution...
 
 > [!CAUTION]
 > Negative potential consequences of an action.
+
+Embedding a code-block in an alert:
+
+> [!TIP]
+> Some useful Javascript:
+>
+> ```js
+> function foo() {
+>   return 'bar';  
+> }
+> ```
