@@ -2,6 +2,8 @@
 
 ## Alert Examples
 
+The examples below should work in GitHub, Visual Studio Code, and Obsidian.
+
 ### Note
 
 > [!NOTE]  
@@ -42,14 +44,26 @@
 
 ### Callout With Custom Title
 
-Obsidian supports rendering callouts with a custom title. GitHub, however, does not.
+Obsidian and Visual Studio Code supports rendering callouts with a custom title.
+GitHub, at the time of writing, does not.
 
 > [!IMPORTANT] Pay Attention!
 > Crucial information necessary for users to succeed.
 
+#### Syntax
+
+```markdown
+> [!IMPORTANT] Pay Attention!
+> Crucial information necessary for users to succeed.
+```
+
+#### Screenshot
+
+![example of an alert with a custom title as rendered in Obsidian](./assets/custom-title-alert.png)
+
 ### Nested Alerts
 
-Obsidian supports rendering nested callouts. GitHub, at the time of writing, does not:
+Obsidian supports rendering nested callouts. GitHub and Visual Studio Code, at the time of writing, do not:
 
 > [!NOTE]  
 > Highlights information that users should take into account, even when skimming.
@@ -61,6 +75,25 @@ Obsidian supports rendering nested callouts. GitHub, at the time of writing, doe
 > > > > Critical content demanding immediate user attention due to potential risks.
 > > > > > [!CAUTION]
 > > > > > Negative potential consequences of an action.
+
+#### Syntax
+
+```markdown
+> [!NOTE]  
+> Highlights information that users should take into account, even when skimming.
+> > [!TIP]
+> > Optional information to help a user be more successful.
+> > > [!IMPORTANT]  
+> > > Crucial information necessary for users to succeed.
+> > > > [!WARNING]  
+> > > > Critical content demanding immediate user attention due to potential risks.
+> > > > > [!CAUTION]
+> > > > > Negative potential consequences of an action.
+```
+
+#### Screenshot
+
+![example of nested alerts rendered in Obsidian](./assets/nested-alerts.png)
 
 ## Resources
 
