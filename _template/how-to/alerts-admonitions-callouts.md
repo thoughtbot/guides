@@ -1,33 +1,33 @@
 # Examples of using Alerts, Admonitions, or Callouts
 
-## Examples
+## Alert Examples
 
-A note...
+### Note
 
 > [!NOTE]  
 > Highlights information that users should take into account, even when skimming.
 
-A tip...
+### Tip
 
 > [!TIP]
 > Optional information to help a user be more successful.
 
-Something important...
+### Important
 
 > [!IMPORTANT]  
 > Crucial information necessary for users to succeed.
 
-A warning...
+### Warning
 
 > [!WARNING]  
 > Critical content demanding immediate user attention due to potential risks.
 
-Caution...
+### Caution
 
 > [!CAUTION]
 > Negative potential consequences of an action.
 
-Embedding a code-block in an alert:
+### Embedded Code-block
 
 > [!TIP]
 > Some useful Javascript:
@@ -37,6 +37,19 @@ Embedding a code-block in an alert:
 >   return 'bar';  
 > }
 > ```
+
+### Nested Alerts
+
+> [!NOTE]  
+> Highlights information that users should take into account, even when skimming.
+> > [!TIP]
+> > Optional information to help a user be more successful.
+> > > [!IMPORTANT]  
+> > > Crucial information necessary for users to succeed.
+> > > > [!WARNING]  
+> > > > Critical content demanding immediate user attention due to potential risks.
+> > > > > [!CAUTION]
+> > > > > Negative potential consequences of an action.
 
 ## Resources
 
