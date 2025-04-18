@@ -38,7 +38,16 @@
 > }
 > ```
 
+### Callout With Custom Title
+
+> [!IMPORTANT] Pay Attention!
+> Crucial information necessary for users to succeed.
+
+## Syntax Incompatible With GitHub
+
 ### Nested Alerts
+
+While Obsidian supports rendering nested callouts, at the time of writing GitHub does not:
 
 > [!NOTE]  
 > Highlights information that users should take into account, even when skimming.
