@@ -59,6 +59,8 @@ GitHub, at the time of writing, does not.
 
 #### Screenshot
 
+The screenshot below shows a callout with a custom title as rendered in Obsidian:
+
 ![example of an alert with a custom title as rendered in Obsidian](./assets/custom-title-alert.png)
 
 ### Nested Alerts
@@ -92,6 +94,8 @@ Obsidian supports rendering nested callouts. GitHub and Visual Studio Code, at t
 ```
 
 #### Screenshot
+
+The screenshot below shows a set of nested callouts as rendered in Obsidian:
 
 ![example of nested alerts rendered in Obsidian](./assets/nested-alerts.png)
 
