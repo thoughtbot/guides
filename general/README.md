@@ -23,6 +23,7 @@ violations.
 - Delete trailing spaces.
 - Don't misspell.
 - Use [Unix-style line endings] (`\n`).
+- Use spaces around operators, except for unary operators, such as `!`.
 
 [unix-style line endings]: http://unix.stackexchange.com/questions/23903/should-i-end-my-text-script-files-with-a-newline
 
