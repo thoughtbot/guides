@@ -48,7 +48,7 @@ programming in style.
 - [Haskell](/haskell/)
 - [HTML](/html/)
 - [Java](/java/)
-- [JavaScript](/javascript/)
+- [JavaScript & TypeScript](/javascript-typescript/)
 - [Objective-C](/objective-c/)
 - [Python](/python/)
 - [Ruby](/ruby/)
@@ -56,7 +56,6 @@ programming in style.
 - [Scala](/scala/)
 - [Shell](/shell/)
 - [Swift](/swift/)
-- [TypeScript](/typescript/)
 
 ### Frameworks and platforms
 

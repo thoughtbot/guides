@@ -1,7 +1,7 @@
 # React
 
 - Use React in [Strict Mode]
-- Use React with [TypeScript](/typescript/)
+- Use React with [TypeScript](/javascript-typescript/README.md#typescript)
 - Avoid nested routing if using [React Router]
 - Prefer [Function Components] over [Class Components]
 - Prefer keeping a single component in each file
@@ -17,6 +17,7 @@
 - Prefer the [short syntax] when using [Fragments]
 - Prefer [React Contexts] over [Redux]
 - Avoid using indexes as the value for [keys]
+- Avoid complex conditionals inside component logic
 - Prefer [component composition over component inheritance]
 
 [strict mode]: https://reactjs.org/docs/strict-mode.html
