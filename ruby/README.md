@@ -2,7 +2,7 @@
 
 [Sample 1](sample_1.rb) [Sample 2](sample_2.rb)
 
-- Use [standard]
+- [Use an opinionated set of rules for Rubocop](./Use an opinionated set of rules for Rubocop.md)
 - Avoid conditional modifiers (lines that end with conditionals). [36491dbb9]
 - Avoid multiple assignments per line (`one, two = 1, 2`). [#109]
 - Avoid organizational comments (`# Validations`). [#63]
@@ -41,7 +41,6 @@
 - Prefer `private` when indicating scope. Use `protected` only with comparison
   methods like `def ==(other)`, `def <(other)`, and `def >(other)`.
 
-[standard]: https://github.com/testdouble/standard
 [#63]: https://github.com/thoughtbot/guides/pull/63
 [#109]: https://github.com/thoughtbot/guides/pull/109
 [#122]: https://github.com/thoughtbot/guides/pull/122
