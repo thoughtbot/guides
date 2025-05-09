@@ -149,7 +149,7 @@
 
     /* MD052 - Reference links and images should use a label that is defined */
     "reference-links-images": {
-      "shortcut_syntax": true
+      "shortcut_syntax": false
     },
 
     /* MD053 - Link and image reference definitions should be needed */
