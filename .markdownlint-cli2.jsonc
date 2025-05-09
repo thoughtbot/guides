@@ -1,0 +1,161 @@
+{
+  // https://github.com/DavidAnson/markdownlint/blob/v0.32.1/README.md#rules--aliases
+  // https://github.com/DavidAnson/markdownlint-cli2/blob/main/test/markdownlint-cli2-jsonc-example/.markdownlint-cli2.jsonc
+  // https://github.com/DavidAnson/markdownlint-cli2/blob/main/schema/markdownlint-config-schema.json
+  "$schema": "https://raw.githubusercontent.com/DavidAnson/markdownlint-cli2/refs/heads/main/schema/markdownlint-cli2-config-schema.json",
+  "gitignore": true,
+  "config": {
+    /* MD001 - Heading levels should only increment by one level at a time */
+    "heading-increment": true,
+
+    /* MD003 - Heading style */
+    "heading-style": true,
+
+    /* MD004 - Unordered list style */
+    "ul-style": true,
+
+    /* MD005 - Inconsistent indentation for list items at the same level */
+    "list-indent": true,
+
+    /* MD007 - Unordered list indentation */
+    "ul-indent": true,
+    // { "indent": 2, "start_indented": false },
+
+    /* MD009 - Trailing spaces */
+    "no-trailing-spaces": true,
+
+    /* MD010 - Hard tabs */
+    "no-hard-tabs": true,
+
+    /* MD011 - Reversed link syntax */
+    "no-reversed-links": true,
+
+    /* MD012 - Multiple consecutive blank lines */
+    "no-multiple-blanks": true,
+
+    /* MD013 - Line length */
+    // NOTE: Disabled to allow lines of any length; could be enabled in a separate PR after discussion
+    "line-length": false,
+
+    /* MD014 - Dollar signs used before commands without showing output */
+    "commands-show-output": true,
+
+    /* MD018 - No space after hash on atx style heading */
+    "no-missing-space-atx": true,
+
+
+    /* MD019 - Multiple spaces after hash on atx style heading */
+    "no-multiple-space-atx": true,
+
+    /* MD020 - No space inside hashes on closed atx style heading */
+    "no-missing-space-closed-atx": true,
+
+    /* MD021 - Multiple spaces inside hashes on closed atx style heading */
+    "no-multiple-space-closed-atx": true,
+
+    /* MD022 - Headings should be surrounded by blank lines */
+    "blanks-around-headings": true,
+
+    /* MD023 - Headings must start at the beginning of the line */
+    "heading-start-left": true,
+
+    /* MD024 - Multiple headings with the same content */
+    "no-duplicate-heading": {
+      "siblings_only": true
+    },
+
+    /* MD025 - Multiple top-level headings in the same document */
+    "single-title": true,
+
+    /* MD026 - Trailing punctuation in heading */
+    "no-trailing-punctuation": true,
+
+    /* MD027 - Multiple spaces after blockquote symbol */
+    "no-multiple-space-blockquote": true,
+
+    /* MD028 - Blank line inside blockquote */
+    "no-blanks-blockquote": true,
+
+    /* MD029 - Ordered list item prefix */
+    "ol-prefix": true,
+
+    /* MD030 - Spaces after list markers */
+    "list-marker-space": true,
+
+    /* MD031 - Fenced code blocks should be surrounded by blank lines */
+    "blanks-around-fences": true,
+
+    /* MD032 - Lists should be surrounded by blank lines */
+    "blanks-around-lists": true,
+
+    /* MD033 - Inline HTML */
+    "no-inline-html": {
+      "allowed_elements": ["dl", "dt", "dd", "kbd", "details"]
+    },
+
+    /* MD034 - Bare URL used */
+    "no-bare-urls": true,
+
+    /* MD035 - Horizontal rule style */
+    "hr-style": true,
+
+    /* MD036 - Emphasis used instead of a heading */
+    "no-emphasis-as-heading": true,
+
+    /* MD037 - Spaces inside emphasis markers */
+    "no-space-in-emphasis": true,
+
+    /* MD038 - Spaces inside code span elements */
+    "no-space-in-code": true,
+
+    /* MD039 - Spaces inside link text */
+    "no-space-in-links": true,
+
+    /* MD040 - Fenced code blocks should have a language specified */
+    "fenced-code-language": true,
+
+    /* MD041 - First line in a file should be a top-level heading */
+    "first-line-heading": true,
+
+    /* MD042 - No empty links */
+    "no-empty-links": true,
+
+    /* MD043 - Required heading structure */
+    "required-headings": true,
+
+    /* MD044 - Proper names should have the correct capitalization */
+    "proper-names": true,
+
+    /* MD045 - Images should have alternate text (alt text) */
+    "no-alt-text": true,
+
+    /* MD046 - Code block style */
+    "code-block-style": true,
+
+    /* MD047 - Files should end with a single newline character */
+    "single-trailing-newline": true,
+
+    /* MD048 - Code fence style */
+    "code-fence-style": true,
+
+    /* MD049 - Emphasis style */
+    "emphasis-style": true,
+
+    /* MD050 - Strong style */
+    "strong-style": true,
+
+    /* MD051 - Link fragments should be valid */
+    "link-fragments": true,
+
+    /* MD052 - Reference links and images should use a label that is defined */
+    "reference-links-images": {
+      "shortcut_syntax": false
+    },
+
+    /* MD053 - Link and image reference definitions should be needed */
+    "link-image-reference-definitions": true,
+
+    /* MD054 - Link and image style */
+    "link-image-style": true
+  }
+}

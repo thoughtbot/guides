@@ -24,6 +24,7 @@ A guide for managing a series of tubes.
   messages from different partitions to be processed out of order.
 
 ## Glossary
+
 <dl>
   <dt>Data Engineering</dt>
   <dd>
@@ -174,6 +175,6 @@ A guide for managing a series of tubes.
   <dt>Consumer</dt>
   <dd>An application or process that reads from a data stream.</dd>
 
-  <dt>Producer</dt> 
+  <dt>Producer</dt>
   <dd>An application or process that writes to a data stream.</dd>
 </dl>

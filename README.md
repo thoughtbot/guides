@@ -1,7 +1,5 @@
 # Guides
 
-[![Reviewed by Hound](https://img.shields.io/badge/Reviewed_by-Hound-8E64B0.svg)](https://houndci.com)
-
 Guides for working together, getting things done, programming well, and
 programming in style.
 
@@ -43,16 +41,14 @@ programming in style.
 ### Languages
 
 - [Bash](/bash/)
-- [CoffeeScript](/coffeescript/)
 - [CSS](/css/)
 - [Elixir](/elixir/)
 - [ERB](/erb/)
 - [HAML](/haml/)
-- [Handlebars](/handlebars/)
 - [Haskell](/haskell/)
 - [HTML](/html/)
 - [Java](/java/)
-- [JavaScript](/javascript/)
+- [JavaScript & TypeScript](/javascript-typescript/)
 - [Objective-C](/objective-c/)
 - [Python](/python/)
 - [Ruby](/ruby/)
@@ -60,12 +56,10 @@ programming in style.
 - [Scala](/scala/)
 - [Shell](/shell/)
 - [Swift](/swift/)
-- [TypeScript](/typescript/)
 
 ### Frameworks and platforms
 
 - [Android](/android/)
-- [Angular](/angular/)
 - [Ember](/ember/)
 - [iOS](/ios/)
 - [Rails](/rails/)
@@ -96,8 +90,8 @@ Thank you,
 
 ## License
 
-Guides is © 2020-2024 thoughtbot, inc. It is distributed under the [Creative Commons
-Attribution License](http://creativecommons.org/licenses/by/3.0/).
+Guides is © 2020-2025 thoughtbot, inc. It is distributed under the [Creative
+Commons Attribution License](http://creativecommons.org/licenses/by/3.0/).
 
 <!-- START /templates/footer.md -->
 ## About thoughtbot
@@ -113,6 +107,5 @@ We are [available for hire][hire].
 
 [community]: https://thoughtbot.com/community?utm_source=github
 [hire]: https://thoughtbot.com/hire-us?utm_source=github
-
 
 <!-- END /templates/footer.md -->

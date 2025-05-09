@@ -1,6 +1,6 @@
 name: update-templates
 
-on: 
+on:
   push:
     branches:
       - main

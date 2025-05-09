@@ -7,7 +7,7 @@
 > Click on the linked pull request, commit, or the guideline itself to read more
 > detailed explanations with examples and reasoning behind these recommendations.
 
-- Use [standard]
+- [Use an opinionated set of rules for Rubocop](./Use an opinionated set of rules for Rubocop.md)
 - [Limit use of conditional modifiers to short, simple cases.](./conditional_modifiers.md)
 - Avoid multiple assignments per line (`one, two = 1, 2`). [#109]
 - Avoid organizational comments (`# Validations`). [#63]
@@ -46,7 +46,6 @@
 - Prefer `private` when indicating scope. Use `protected` only with comparison
   methods like `def ==(other)`, `def <(other)`, and `def >(other)`.
 
-[standard]: https://github.com/testdouble/standard
 [#63]: https://github.com/thoughtbot/guides/pull/63
 [#109]: https://github.com/thoughtbot/guides/pull/109
 [#122]: https://github.com/thoughtbot/guides/pull/122
@@ -98,10 +97,9 @@
   provider of the API, write [system specs]. Otherwise write [request specs].
 
 [http api design guide]: https://github.com/interagent/http-api-design
-[oj]: https://github.com/ohler55/oj
 [system specs]: https://web.archive.org/web/20230131005307/https://relishapp.com/rspec/rspec-rails/docs/system-specs/system-spec
 [request specs]: https://web.archive.org/web/20221207001104/https://www.relishapp.com/rspec/rspec-rails/docs/request-specs/request-spec
 
-## How to...
+## How To Guides
 
 - [Release a Ruby gem](./how-to/release_a_ruby_gem.md)

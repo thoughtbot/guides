@@ -1,3 +1,0 @@
-# Handlebars
-
-[Example](handlebars.hbs)
