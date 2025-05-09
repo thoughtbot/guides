@@ -2,8 +2,7 @@
 
 [Sample 1](sample_1.rb) [Sample 2](sample_2.rb)
 
-> **TIP**
->
+> [!TIP]
 > Click on the linked pull request, commit, or the guideline itself to read more
 > detailed explanations with examples and reasoning behind these recommendations.
 
