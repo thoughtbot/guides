@@ -7,7 +7,7 @@
 > detailed explanations with examples and reasoning behind these recommendations.
 
 - [Use an opinionated set of rules for Rubocop](./Use an opinionated set of rules for Rubocop.md)
-- [Limit use of conditional modifiers to short, simple cases.](./conditional_modifiers.md)
+- [Limit use of conditional modifiers to short, simple cases](./Limit use of conditional modifiers to short, simple cases.md)
 - Avoid multiple assignments per line (`one, two = 1, 2`). [#109]
 - Avoid organizational comments (`# Validations`). [#63]
 - Avoid ternary operators (`boolean ? true : false`). Use multi-line `if`
