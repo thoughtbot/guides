@@ -2,7 +2,7 @@ coffeescript:
   enabled: false
 eslint:
   enabled: true
-  config_file: javascript/.eslintrc.json
+  config_file: javascript-typescript/.eslintrc.json
   version: 6.3.0
 haml:
   enabled: true

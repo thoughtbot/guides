@@ -1,7 +1,7 @@
 # React Native
 
 - Use React following the [React Guide](/react/)
-- Use [TypeScript](/typescript/)
+- Use [TypeScript](/javascript-typescript/README.md#typescript)
 - Prefer using [core components and apis] over writing bespoke components.
 
 [core components and apis]: https://reactnative.dev/docs/components-and-apis
