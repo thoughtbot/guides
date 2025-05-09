@@ -2,8 +2,12 @@
 
 [Sample 1](sample_1.rb) [Sample 2](sample_2.rb)
 
+> [!TIP]
+> Click on the linked pull request, commit, or the guideline itself to read more
+> detailed explanations with examples and reasoning behind these recommendations.
+
 - [Use an opinionated set of rules for Rubocop](./Use an opinionated set of rules for Rubocop.md)
-- Avoid conditional modifiers (lines that end with conditionals). [36491dbb9]
+- [Limit use of conditional modifiers to short, simple cases](./Limit use of conditional modifiers to short, simple cases.md)
 - Avoid multiple assignments per line (`one, two = 1, 2`). [#109]
 - Avoid organizational comments (`# Validations`). [#63]
 - Avoid ternary operators (`boolean ? true : false`). Use multi-line `if`
