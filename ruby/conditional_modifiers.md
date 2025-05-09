@@ -84,3 +84,7 @@ def action
   destroy_all
 end
 ```
+
+## References
+
+- You can see further discussion of this guideline here: [#738](https://github.com/thoughtbot/guides/pull/738)
