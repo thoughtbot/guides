@@ -44,6 +44,7 @@
   multiple models.
 - Prefer `private` when indicating scope. Use `protected` only with comparison
   methods like `def ==(other)`, `def <(other)`, and `def >(other)`.
+- Use empty lines around multi-line blocks.
 
 [#63]: https://github.com/thoughtbot/guides/pull/63
 [#109]: https://github.com/thoughtbot/guides/pull/109
