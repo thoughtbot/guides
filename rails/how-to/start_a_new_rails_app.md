@@ -13,6 +13,5 @@ Suspenders, we recommend using the default Rails commands instead:
 And adding the gems we find useful, like:
 factory_bot
 rspec-rails
-capybara
 shoulda-matchers
 standard
