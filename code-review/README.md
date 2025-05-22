@@ -27,6 +27,10 @@ Watch a presentation that covers this material from [Derek Prior at RailsConf 20
 - **Avoid diminishing words**
   - "simply", "simple", "just"
 
+- **Avoid [weasel words]/[justification filler phrases]**
+  - "Researchers say that", "it's a best practice".
+  - Be cliear and explain the tradeoffs and impacts of a particular solution.
+
 - **Be explicit**
   - Remember people don't always understand your intentions online.
 
@@ -133,3 +137,5 @@ This helps us have more meaningful conversations on PRs rather than debating per
 [challenging to convey emotion and intention online]: https://thoughtbot.com/blog/empathy-online
 [using labels]: https://conventionalcomments.org
 [standard]: https://github.com/testdouble/standard
+[weasel words]: https://en.wikipedia.org/wiki/Weasel_word
+[justification filler phrases]: https://serce.me/posts/2025-05-19-justification-filler-phrases
