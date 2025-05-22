@@ -29,7 +29,7 @@ Watch a presentation that covers this material from [Derek Prior at RailsConf 20
 
 - **Avoid [weasel words]/[justification filler phrases]**
   - "Researchers say that", "it's a best practice".
-  - Be cliear and explain the tradeoffs and impacts of a particular solution.
+  - Be clear and explain the tradeoffs and impacts of a particular solution.
 
 - **Be explicit**
   - Remember people don't always understand your intentions online.
