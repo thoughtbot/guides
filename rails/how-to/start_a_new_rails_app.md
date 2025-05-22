@@ -14,4 +14,3 @@ And adding the gems we find useful, like:
 factory_bot
 rspec-rails
 shoulda-matchers
-standard
