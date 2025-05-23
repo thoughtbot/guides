@@ -6,8 +6,8 @@
 > Click on the linked pull request, commit, or the guideline itself to read more
 > detailed explanations with examples and reasoning behind these recommendations.
 
-- [Use an opinionated set of rules for Rubocop](Use%20an%20opinionated%20set%20of%20rules%20for%20Rubocop.md)
-- [Limit use of conditional modifiers to short, simple cases](Limit%20use%20of%20conditional%20modifiers%20to%20short,%20simple%20cases.md)
+- [Use an opinionated set of rules for Rubocop](Use-an-opinionated-set-of-rules-for-Rubocop.md)
+- [Limit use of conditional modifiers to short, simple cases](Limit-use-of-conditional-modifiers-to-short-simple-cases.md)
 - Avoid multiple assignments per line (`one, two = 1, 2`). [#109]
 - Avoid organizational comments (`# Validations`). [#63]
 - Avoid ternary operators (`boolean ? true : false`). Use multi-line `if`
