@@ -43,7 +43,6 @@ while building applications.
 - Use a staging server to ensure new features work as expected before deploying
   to production.
 
-
 ### Storage
 
 - Use Postgres to store most data.
