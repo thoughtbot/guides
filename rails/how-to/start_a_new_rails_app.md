@@ -1,13 +1,16 @@
 # How to Start a New Rails App
 
-Use [Suspenders]:
+We used to use [Suspenders](https://github.com/thoughtbot/suspenders) to start
+new Rails apps, but we're currently re-evaluating and upgrading it.
+
+In the meantime, to avoid potential conflicts when creating a new app with
+Suspenders, we recommend using the default Rails commands instead:
 
 ```sh
-gem install suspenders
-suspenders the-name-of-your-project-here
-cd the-name-of-your-project-here/
-bin/setup
-rake
+  rails new <app_name> -d=postgresql
 ```
 
-[suspenders]: https://github.com/thoughtbot/suspenders
+And adding the gems we find useful, like:
+factory_bot
+rspec-rails
+shoulda-matchers
