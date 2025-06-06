@@ -30,6 +30,10 @@ Watch a presentation that covers this material from [Derek Prior at RailsConf 20
 - **Be explicit**
   - Remember people don't always understand your intentions online.
 
+- **When disagreeing, provide alternative solutions**
+  - Don't simply reject an idea. Explain your reasoning and [suggest alternative
+    approaches][dont-mcblock-me].
+
 - **Be humble**
   - "I'm not sure - let's look it up."
 
@@ -133,3 +137,4 @@ This helps us have more meaningful conversations on PRs rather than debating per
 [challenging to convey emotion and intention online]: https://thoughtbot.com/blog/empathy-online
 [using labels]: https://conventionalcomments.org
 [standard]: https://github.com/testdouble/standard
+[dont-mcblock-me]: https://www.schneems.com/2025/06/03/dont-mcblock-me
