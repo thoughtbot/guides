@@ -31,8 +31,7 @@ Watch a presentation that covers this material from [Derek Prior at RailsConf 20
   - Remember people don't always understand your intentions online.
 
 - **When disagreeing, provide alternative solutions**
-  - Don't simply reject an idea. Explain your reasoning and [suggest alternative
-    approaches][dont-mcblock-me].
+  - Don't [simply reject an idea][dont-mcblock-me]. [Explain your reasoning](https://thoughtbot.com/blog/don-t-review-prs-like-a-space-wizard) and [suggest alternative approaches](https://github.com/thoughtbot/guides/pull/762#discussion_r2135772338).
 
 - **Be humble**
   - "I'm not sure - let's look it up."
