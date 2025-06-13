@@ -81,6 +81,12 @@ Guidance on ActiveRecord, ActiveModel, and other model objects.
 - Use `db/seeds.rb` for data that is required in all environments.
 - Use `development:db:seed` rake task for development environment seed data. [Example](/rails/how-to/seed-data.md).
 
+## Security
+
+- Set [config.sandbox_by_default][sandbox] to `true` in production-like environments to avoid accidental writing to the production database.
+
+[sandbox]: https://guides.rubyonrails.org/configuring.html#config-sandbox-by-default
+
 ## Migrations
 
 [Sample](migration.rb)
