@@ -111,6 +111,8 @@ Then:
   - **Communicate clearly which lines you suggest adding/removing**
   - **Test the suggested changes to validate it works whenever possible**
   - **When not possible, let the pull request author know that you did not test the suggestion**
+    - This applies to code and information in general.
+    - Be cautious with information you got from an unofficial source _like an LLM or blog post_.
   - **Provide some context to let the author know why you're suggesting the change**
 
 ## Style Comments
