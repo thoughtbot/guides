@@ -60,7 +60,6 @@ programming in style.
 ### Frameworks and platforms
 
 - [Android](/android/)
-- [Ember](/ember/)
 - [iOS](/ios/)
 - [Rails](/rails/)
 - [React](/react/)
