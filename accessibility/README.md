@@ -13,19 +13,38 @@ accessible.
 Automated checks can catch a lot of common issues before they reach production.
 
 - Test the application in a browser (like Capybara-driven [Acceptance
-  Tests](./testing-rspec/README.md#acceptance-tests))
+  Tests](../testing-rspec/README.md#acceptance-tests))
+- When using Capybara, use [CapybaraAccessibilityAudit]
 - Use tools such as [WAVE] or [axe's browser extensions] to run audits on your
   local build
-- Use a CI/CD solution such as [AccessLint] or [axe]
+- Use a CI/CD solution such as [AccessLint] or [axe]. axe has integrations with popular test frameworks like RSpec and Jest
+
+[CapybaraAccessibilityAudit]: https://github.com/thoughtbot/capybara_accessibility_audit
 
 ### Usability
 
 [Manual usability testing] ensures things work as intended.
 
 - Test your local build using a screen reader such as [VoiceOver] or [NVDA]
-- Use tools such as [Accessibility Insights] to catch issues that cannot be
+- Use auditing tools to catch issues that cannot be
   found using automated checks
+  - [Accessibility Insights] accessibility auditing browser extension
+  - [Readability Analyzer][simple and direct] for auditing text
+  - [axe DevTools] accessibility testing browser extension
+  - [WAVE Evaluation Tool] accessibility testing browser extension
+  - [ARIA DevTools] browser extension for checking ARIA roles
+  - [tab11y] browser extension for checking tab order
+  - [WCAG Color contrast checker] browser extension
+- Validate your HTML with a tool like [W3C's Markup Validation Service][w3c-markup-validator]
 - Hire assistive technology users to user test your product
+
+[Juicy Studio]: https://juicystudio.com/services/readability.php
+[axe DevTools]: https://chromewebstore.google.com/detail/axe-devtools-web-accessib/lhdoppojpmngadmnindnejefpokejbdd
+[WAVE Evaluation Tool]: https://chromewebstore.google.com/detail/wave-evaluation-tool/jbbplnpkjmmeebjpijfedlgcdilocofh
+[ARIA DevTools]: https://chromewebstore.google.com/detail/aria-devtools/dneemiigcbbgbdjlcdjjnianlikimpck
+[tab11y]: https://chromewebstore.google.com/detail/taba11y-tab-order-accessi/aocppmckdocdjkphmofnklcjhdidgmga
+[WCAG Color contrast checker]: https://chromewebstore.google.com/detail/wcag-color-contrast-check/plnahcmalebffmaghcpcmpaciebdhgdf
+[w3c-markup-validator]: https://validator.w3.org/
 
 ## Quick checks
 
@@ -86,14 +105,22 @@ Automated checks can catch a lot of common issues before they reach production.
   label them
 - Ensure form feedback messaging is programmatically associated with the
   relevant inputs
+- Ensure that [dynamic changes to a web page are announced](https://www.w3.org/WAI/WCAG22/Understanding/status-messages.html)
+- Prefer using role selectors in automated acceptance tests
+  - [capybara_accessible_selectors]
+  - [Testing Library's `getByRole()`][testing-library-getbyrole]
+  - [Playwright's `getByRole()`][playwright-getbyrole]
 
 [accessible name]: https://www.w3.org/WAI/ARIA/apg/practices/names-and-descriptions/
-[Cardinal Rules of Naming]: https://www.w3.org/WAI/ARIA/apg/practices/names-and-descriptions/#x5-3-cardinal-rules-of-naming
-[rule-1]: https://www.w3.org/WAI/ARIA/apg/practices/names-and-descriptions/#x5-3-1-rule-1-heed-warnings-and-test-thoroughly
-[rule-2]: https://www.w3.org/WAI/ARIA/apg/practices/names-and-descriptions/#x5-3-2-rule-2-prefer-visible-text
-[rule-3]: https://www.w3.org/WAI/ARIA/apg/practices/names-and-descriptions/#x5-3-3-rule-3-prefer-native-techniques
-[rule-4]: https://www.w3.org/WAI/ARIA/apg/practices/names-and-descriptions/#x5-3-4-rule-4-avoid-browser-fallback
-[rule-5]: https://www.w3.org/WAI/ARIA/apg/practices/names-and-descriptions/#x5-3-5-rule-5-compose-brief-useful-names
+[Cardinal Rules of Naming]: https://www.w3.org/WAI/ARIA/apg/practices/names-and-descriptions/#cardinalrulesofnaming
+[rule-1]: https://www.w3.org/WAI/ARIA/apg/practices/names-and-descriptions/#naming_rule_heed_warnings
+[rule-2]: https://www.w3.org/WAI/ARIA/apg/practices/names-and-descriptions/#naming_rule_visible_text
+[rule-3]: https://www.w3.org/WAI/ARIA/apg/practices/names-and-descriptions/#naming_rule_native_techniques
+[rule-4]: https://www.w3.org/WAI/ARIA/apg/practices/names-and-descriptions/#naming_rule_avoid_fallback
+[rule-5]: https://www.w3.org/WAI/ARIA/apg/practices/names-and-descriptions/#naming_rule_brief_names
+[capybara_accessible_selectors]: https://github.com/citizensadvice/capybara_accessible_selectors
+[testing-library-getbyrole]: https://testing-library.com/docs/queries/byrole
+[playwright-getbyrole]: https://playwright.dev/docs/locators#locate-by-role
 
 ## Full audit
 
@@ -126,7 +153,7 @@ assign it one of four ratings:
 Use the Notes sheet to leave per-cell comments when necessary, referencing them
 with a link. The next steps for an audit are handled on a per-project basis.
 
-[accessibility audit template]: https://www.fsb.org.uk/resources-page/accessibility-audit-template.html
+[accessibility audit template]: https://www.fsb.org.uk/resources/article/accessibility-audit-template-MCTMWUV4Z27FEXRANM566TOZXNOE
 [accesslint]: https://github.com/marketplace/accesslint
 [axe]: https://www.deque.com/axe/axe-for-web/integrations/
 [axe's browser extensions]: https://www.deque.com/axe/axe-for-web/
