@@ -19,7 +19,7 @@ Here’s how it works:
 | Rarely | 1 |
 | Never | 1 |
 
-> **Insight:** Most developers in the survey use AI daily in their work.
+> **Insight:** Most people in the survey use AI daily in their work.
 
 ---
 
