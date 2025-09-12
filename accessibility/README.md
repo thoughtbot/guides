@@ -51,61 +51,61 @@ Automated checks can catch a lot of common issues before they reach production.
 ### Design
 
 - Ensure all content's foreground color values meet the [minimum contrast ratio]
-  for the background color they are placed over
+  for the background color they are placed over ([WCAG 1.4.3][wcag-1-4-3])
 - Ensure all interactive content has distinct hover and focus states to help
-  indicate interactivity
+  indicate interactivity ([WCAG 2.4.7][wcag-2-4-7])
 - Ensure interactive elements [have a visible text label][rule-2]
-- Ensure color is not the only way to determine meaning
+- Ensure color is not the only way to determine meaning ([WCAG 1.4.1][wcag-1-4-1])
 - Ensure interactive components use common UI affordances where applicable, to
   help users understand how they can be operated
 - Prefer icons and glyphs that don't rely on specialized knowledge to understand
   their meaning, unless being used in a domain-specific context
-- Prefer language that is [simple and direct]
-- Ensure form inputs have labels that are visible in every state
-- Ensure link and button text is descriptive and distinct
+- Prefer language that is [simple and direct] ([WCAG 3.1][wcag-3-1])
+- Ensure form inputs have [labels that are visible in every state][placeholder-labels]
+- Ensure link and button text is descriptive and distinct ([WCAG 2.4.4][wcag-2-4-4])
 - Prefer content that is broken into logical sections, with headings that
-  explain the content that follows
+  explain the content that follows ([WCAG 2.4.10][wcag-2-4-10])
 - Prefer text sizing that is set to 16px or larger
 - Ensure animation does not auto-play, can be paused, and avoids [vestibular and
-  seizure triggers]
-- Ensure video content has captions
+  seizure triggers] ([WCAG 2.2.2][wcag-2-2-2])
+- Ensure video content has captions ([WCAG 1.2.2][wcag-1-2-2])
 - Prefer larger interactive target sizes, with some space between grouped
-  interactive controls
+  interactive controls ([WCAG 2.5.8][wcag-2-5-8])
 
 ### Development
 
-- Ensure every focusable or interactive element has an [accessible name][]
+- Ensure every focusable or interactive element has an [accessible name][] ([WCAG 4.1.2][wcag-4-1-2])
 - Follow the [Cardinal Rules of Naming][]:
   1. [Heed Warnings and Test Thoroughly][rule-1]
   2. [Prefer Visible Text][rule-2]
   3. [Prefer Native Techniques][rule-3]
   4. [Avoid Browser Fallback][rule-4]
   5. [Compose Brief, Useful Names][rule-5]
-- Ensure semantic markup is used to describe content
-- Ensure content does not disappear off the screen when zoomed
+- Ensure [semantic markup][semantic-markup] is used to describe content
+- Ensure content does not disappear off the screen when zoomed ([WCAG 1.4.10][wcag-1-4-10])
 - Ensure that interactive content can be tabbed to and activated using the
-  keyboard, and that the tab order matches reading order
+  keyboard, and that the tab order matches reading order ([WCAG 2.1.1][wcag-2-1-1], [WCAG 2.4.3][wcag-2-4-3])
 - Ensure that heading elements are used, and that heading levels are placed in a
-  logical order
-- Ensure that landmarks are used to describe the overall layout of the page or
+  logical order ([WCAG 2.4.10][wcag-2-4-10])
+- Ensure that [landmarks][landmark-regions] are used to describe the overall layout of the page or
   view
 - Ensure that alternative descriptions for image content are concise,
   descriptive, and use punctuation (`alt` attributes for images, `title`
   elements for SVGs)
-- Ensure labels are programmatically associated with their inputs
+- Ensure [labels are programmatically associated][labels-associated-inputs] with their inputs
 - Prefer implementing a method to allow users to skip sections of repeated
-  content
+  content ([WCAG 2.4.1][wcag-2-4-1])
 - Ensure each page or view has a unique title that describes the content it
-  contains
-- The `title` attribute is only used to describe `iframe` element contents
-- Ensure that links are used to navigate to other locations and buttons are used
-  to trigger actions
-- Ensure that focus is trapped inside of modal interactions
-- Ensure `fieldset` and `legend` elements are used to group related inputs and
-  label them
+  contains ([WCAG 2.4.2][wcag-2-4-2])
+- The [`title` attribute is only used to describe `iframe` element contents][title-iframe]
+- Ensure that [links are used to navigate to other locations and buttons are used
+  to trigger actions][links-vs-buttons]
+- Ensure that [focus is trapped inside of modal interactions][focus-traps]
+- Ensure `fieldset` and `legend` elements are used to [group related inputs and
+  label them][fieldsets-legends]
 - Ensure form feedback messaging is programmatically associated with the
-  relevant inputs
-- Ensure that [dynamic changes to a web page are announced](https://www.w3.org/WAI/WCAG22/Understanding/status-messages.html)
+  relevant inputs ([WCAG 3.3.1][wcag-3-3-1])
+- Ensure that dynamic changes to a web page are announced ([WCAG 4.1.3][wcag-4-1-3])
 - Prefer using role selectors in automated acceptance tests
   - [capybara_accessible_selectors]
   - [Testing Library's `getByRole()`][testing-library-getbyrole]
@@ -121,6 +121,33 @@ Automated checks can catch a lot of common issues before they reach production.
 [capybara_accessible_selectors]: https://github.com/citizensadvice/capybara_accessible_selectors
 [testing-library-getbyrole]: https://testing-library.com/docs/queries/byrole
 [playwright-getbyrole]: https://playwright.dev/docs/locators#locate-by-role
+[landmark-regions]: https://www.w3.org/WAI/ARIA/apg/practices/landmark-regions/
+[labels-associated-inputs]: https://www.w3.org/WAI/WCAG22/Techniques/html/H44
+[title-iframe]: https://www.w3.org/WAI/WCAG22/Techniques/html/H64
+[links-vs-buttons]: https://www.nngroup.com/videos/buttons-vs-links/
+[focus-traps]: https://okenlabs.com/blog/accessibility-implementing-focus-traps/
+[fieldsets-legends]: https://www.w3.org/WAI/WCAG22/Techniques/html/H71
+[placeholder-labels]: https://www.deque.com/blog/accessible-forms-the-problem-with-placeholders/#:~:text=A%20Placeholder%20Is%20Not%20a%20Replacement%20for%20Visible%20Labels
+[semantic-markup]: https://www.w3.org/WAI/WCAG22/Techniques/html/H101
+
+[wcag-1-4-3]: https://www.w3.org/WAI/WCAG22/Understanding/contrast-minimum.html
+[wcag-1-4-1]: https://www.w3.org/WAI/WCAG22/Understanding/use-of-color.html
+[wcag-3-1]: https://www.w3.org/WAI/WCAG22/Understanding/readable.html
+[wcag-2-4-4]: https://www.w3.org/WAI/WCAG22/Understanding/link-purpose-in-context
+[wcag-2-4-10]: https://www.w3.org/WAI/WCAG22/Understanding/section-headings.html
+[wcag-2-2-2]: https://www.w3.org/WAI/WCAG22/Understanding/pause-stop-hide.html
+[wcag-1-2-2]: https://www.w3.org/WAI/WCAG22/Understanding/captions-prerecorded.html
+[wcag-2-5-8]: https://www.w3.org/WAI/WCAG22/Understanding/target-size-minimum.html
+[wcag-4-1-2]: https://www.w3.org/WAI/WCAG22/Understanding/name-role-value.html
+[wcag-4-1-3]: https://www.w3.org/WAI/WCAG22/Understanding/status-messages.html
+[wcag-1-4-10]: https://www.w3.org/WAI/WCAG22/Understanding/reflow.html
+[wcag-1-3-1]: https://www.w3.org/WAI/WCAG22/Understanding/info-and-relationships.html
+[wcag-2-1-1]: https://www.w3.org/WAI/WCAG22/Understanding/keyboard.html
+[wcag-2-4-3]: https://www.w3.org/WAI/WCAG22/Understanding/focus-order.html
+[wcag-2-4-1]: https://www.w3.org/WAI/WCAG22/Understanding/bypass-blocks.html
+[wcag-2-4-2]: https://www.w3.org/WAI/WCAG22/Understanding/page-titled.html
+[wcag-3-3-1]: https://www.w3.org/WAI/WCAG22/Understanding/error-identification.html
+[wcag-2-4-7]: https://www.w3.org/WAI/WCAG22/Understanding/focus-visible.html
 
 ## Full audit
 
