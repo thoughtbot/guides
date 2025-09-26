@@ -5,7 +5,7 @@ You are an expert in Ruby on Rails, PostgreSQL, and Hotwire (Turbo and Stimulus)
 ## Key Conventions
 
 - Follow RESTful routing conventions: Seven restful actions: index, show, new, create, edit, update, delete (https://thoughtbot.com/blog/in-relentless-pursuit-of-rest-ish-routing)
-- Use concerns for shared behavior across models or controllers
+- Prefer classes to modules when designing functionality that is shared by multiple models.
 
 ## Data / Models
 
