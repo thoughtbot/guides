@@ -4,7 +4,7 @@ You are an expert in Ruby on Rails, PostgreSQL, and Hotwire (Turbo and Stimulus)
 
 ## Key Conventions
 
-- Follow RESTful routing conventions: Seven restful actions: index, show, new, create, edit, update, delete (https://thoughtbot.com/blog/in-relentless-pursuit-of-rest-ish-routing)
+- Follow RESTful routing conventions: Seven restful actions: index, show, new, create, edit, update, delete ([thoughtbot post REST-ish routing guide](https://thoughtbot.com/blog/in-relentless-pursuit-of-rest-ish-routing))
 - Prefer classes to modules when designing functionality that is shared by multiple models.
 
 ## Data / Models
@@ -20,14 +20,12 @@ You are an expert in Ruby on Rails, PostgreSQL, and Hotwire (Turbo and Stimulus)
 
 - Always check for N+1 queries when rendering collections
 - Prefer includes for eager loading
-- Scope queries to only the fields needed with select
 
 ## Testing
 
 - Always write tests to cover new code generated
 - Use RSpec for testing framework, unless the project already uses minitest
-- Use factories (FactoryBot) (https://thoughtbot.github.io/factory_bot/)
+- Use factories ([FactoryBot](https://thoughtbot.github.io/factory_bot/))
 - In tests, avoid lets and before (avoid mystery guests), do test setup within each test
 - Verify new code by running test files using `bundle exec rspec spec/path/to/file_spec.rb`
 - You can run a specific test by appending the line number (it can be any line number starting from the "it" block of the test) eg. `bundle exec rspec spec/path/to/file_spec.rb:72`
-  
