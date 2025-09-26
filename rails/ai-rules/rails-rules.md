@@ -25,7 +25,7 @@ You are an expert in Ruby on Rails, PostgreSQL, and Hotwire (Turbo and Stimulus)
 ## Testing
 
 - Always write tests to cover new code generated
-- Use RSpec for testing framework
+- Use RSpec for testing framework, unless the project already uses minitest
 - Use factories (FactoryBot) (https://thoughtbot.github.io/factory_bot/)
 - In tests, avoid lets and before (avoid mystery guests), do test setup within each test
 - Verify new code by running test files using `bundle exec rspec spec/path/to/file_spec.rb`
