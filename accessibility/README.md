@@ -38,7 +38,6 @@ Automated checks can catch a lot of common issues before they reach production.
 - Validate your HTML with a tool like [W3C's Markup Validation Service][w3c-markup-validator]
 - Hire assistive technology users to user test your product
 
-[Juicy Studio]: https://juicystudio.com/services/readability.php
 [axe DevTools]: https://chromewebstore.google.com/detail/axe-devtools-web-accessib/lhdoppojpmngadmnindnejefpokejbdd
 [WAVE Evaluation Tool]: https://chromewebstore.google.com/detail/wave-evaluation-tool/jbbplnpkjmmeebjpijfedlgcdilocofh
 [ARIA DevTools]: https://chromewebstore.google.com/detail/aria-devtools/dneemiigcbbgbdjlcdjjnianlikimpck
@@ -133,7 +132,7 @@ Automated checks can catch a lot of common issues before they reach production.
 [wcag-1-4-3]: https://www.w3.org/WAI/WCAG22/Understanding/contrast-minimum.html
 [wcag-1-4-1]: https://www.w3.org/WAI/WCAG22/Understanding/use-of-color.html
 [wcag-3-1]: https://www.w3.org/WAI/WCAG22/Understanding/readable.html
-[wcag-2-4-4]: https://www.w3.org/WAI/WCAG22/Understanding/link-purpose-in-context
+[wcag-2-4-4]: https://www.w3.org/WAI/WCAG22/Understanding/link-purpose-in-context.html
 [wcag-2-4-10]: https://www.w3.org/WAI/WCAG22/Understanding/section-headings.html
 [wcag-2-2-2]: https://www.w3.org/WAI/WCAG22/Understanding/pause-stop-hide.html
 [wcag-1-2-2]: https://www.w3.org/WAI/WCAG22/Understanding/captions-prerecorded.html
