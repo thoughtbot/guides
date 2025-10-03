@@ -140,7 +140,6 @@ Automated checks can catch a lot of common issues before they reach production.
 [wcag-4-1-2]: https://www.w3.org/WAI/WCAG22/Understanding/name-role-value.html
 [wcag-4-1-3]: https://www.w3.org/WAI/WCAG22/Understanding/status-messages.html
 [wcag-1-4-10]: https://www.w3.org/WAI/WCAG22/Understanding/reflow.html
-[wcag-1-3-1]: https://www.w3.org/WAI/WCAG22/Understanding/info-and-relationships.html
 [wcag-2-1-1]: https://www.w3.org/WAI/WCAG22/Understanding/keyboard.html
 [wcag-2-4-3]: https://www.w3.org/WAI/WCAG22/Understanding/focus-order.html
 [wcag-2-4-1]: https://www.w3.org/WAI/WCAG22/Understanding/bypass-blocks.html
