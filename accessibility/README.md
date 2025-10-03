@@ -13,87 +13,139 @@ accessible.
 Automated checks can catch a lot of common issues before they reach production.
 
 - Test the application in a browser (like Capybara-driven [Acceptance
-  Tests](./testing-rspec/README.md#acceptance-tests))
+  Tests](../testing-rspec/README.md#acceptance-tests))
+- When using Capybara, use [CapybaraAccessibilityAudit]
 - Use tools such as [WAVE] or [axe's browser extensions] to run audits on your
   local build
-- Use a CI/CD solution such as [AccessLint] or [axe]
+- Use a CI/CD solution such as [AccessLint] or [axe]. axe has integrations with popular test frameworks like RSpec and Jest
+
+[CapybaraAccessibilityAudit]: https://github.com/thoughtbot/capybara_accessibility_audit
 
 ### Usability
 
 [Manual usability testing] ensures things work as intended.
 
 - Test your local build using a screen reader such as [VoiceOver] or [NVDA]
-- Use tools such as [Accessibility Insights] to catch issues that cannot be
+- Use auditing tools to catch issues that cannot be
   found using automated checks
+  - [Accessibility Insights] accessibility auditing browser extension
+  - [Readability Analyzer][simple and direct] for auditing text
+  - [axe DevTools] accessibility testing browser extension
+  - [WAVE Evaluation Tool] accessibility testing browser extension
+  - [ARIA DevTools] browser extension for checking ARIA roles
+  - [tab11y] browser extension for checking tab order
+  - [WCAG Color contrast checker] browser extension
+- Validate your HTML with a tool like [W3C's Markup Validation Service][w3c-markup-validator]
 - Hire assistive technology users to user test your product
+
+[axe DevTools]: https://chromewebstore.google.com/detail/axe-devtools-web-accessib/lhdoppojpmngadmnindnejefpokejbdd
+[WAVE Evaluation Tool]: https://chromewebstore.google.com/detail/wave-evaluation-tool/jbbplnpkjmmeebjpijfedlgcdilocofh
+[ARIA DevTools]: https://chromewebstore.google.com/detail/aria-devtools/dneemiigcbbgbdjlcdjjnianlikimpck
+[tab11y]: https://chromewebstore.google.com/detail/taba11y-tab-order-accessi/aocppmckdocdjkphmofnklcjhdidgmga
+[WCAG Color contrast checker]: https://chromewebstore.google.com/detail/wcag-color-contrast-check/plnahcmalebffmaghcpcmpaciebdhgdf
+[w3c-markup-validator]: https://validator.w3.org/
 
 ## Quick checks
 
 ### Design
 
 - Ensure all content's foreground color values meet the [minimum contrast ratio]
-  for the background color they are placed over
+  for the background color they are placed over ([WCAG 1.4.3][wcag-1-4-3])
 - Ensure all interactive content has distinct hover and focus states to help
-  indicate interactivity
+  indicate interactivity ([WCAG 2.4.7][wcag-2-4-7])
 - Ensure interactive elements [have a visible text label][rule-2]
-- Ensure color is not the only way to determine meaning
+- Ensure color is not the only way to determine meaning ([WCAG 1.4.1][wcag-1-4-1])
 - Ensure interactive components use common UI affordances where applicable, to
   help users understand how they can be operated
 - Prefer icons and glyphs that don't rely on specialized knowledge to understand
   their meaning, unless being used in a domain-specific context
-- Prefer language that is [simple and direct]
-- Ensure form inputs have labels that are visible in every state
-- Ensure link and button text is descriptive and distinct
+- Prefer language that is [simple and direct] ([WCAG 3.1][wcag-3-1])
+- Ensure form inputs have [labels that are visible in every state][placeholder-labels]
+- Ensure link and button text is descriptive and distinct ([WCAG 2.4.4][wcag-2-4-4])
 - Prefer content that is broken into logical sections, with headings that
-  explain the content that follows
+  explain the content that follows ([WCAG 2.4.10][wcag-2-4-10])
 - Prefer text sizing that is set to 16px or larger
 - Ensure animation does not auto-play, can be paused, and avoids [vestibular and
-  seizure triggers]
-- Ensure video content has captions
+  seizure triggers] ([WCAG 2.2.2][wcag-2-2-2])
+- Ensure video content has captions ([WCAG 1.2.2][wcag-1-2-2])
 - Prefer larger interactive target sizes, with some space between grouped
-  interactive controls
+  interactive controls ([WCAG 2.5.8][wcag-2-5-8])
 
 ### Development
 
-- Ensure every focusable or interactive element has an [accessible name][]
+- Ensure every focusable or interactive element has an [accessible name][] ([WCAG 4.1.2][wcag-4-1-2])
 - Follow the [Cardinal Rules of Naming][]:
   1. [Heed Warnings and Test Thoroughly][rule-1]
   2. [Prefer Visible Text][rule-2]
   3. [Prefer Native Techniques][rule-3]
   4. [Avoid Browser Fallback][rule-4]
   5. [Compose Brief, Useful Names][rule-5]
-- Ensure semantic markup is used to describe content
-- Ensure content does not disappear off the screen when zoomed
+- Ensure [semantic markup][semantic-markup] is used to describe content
+- Ensure content does not disappear off the screen when zoomed ([WCAG 1.4.10][wcag-1-4-10])
 - Ensure that interactive content can be tabbed to and activated using the
-  keyboard, and that the tab order matches reading order
+  keyboard, and that the tab order matches reading order ([WCAG 2.1.1][wcag-2-1-1], [WCAG 2.4.3][wcag-2-4-3])
 - Ensure that heading elements are used, and that heading levels are placed in a
-  logical order
-- Ensure that landmarks are used to describe the overall layout of the page or
+  logical order ([WCAG 2.4.10][wcag-2-4-10])
+- Ensure that [landmarks][landmark-regions] are used to describe the overall layout of the page or
   view
 - Ensure that alternative descriptions for image content are concise,
   descriptive, and use punctuation (`alt` attributes for images, `title`
   elements for SVGs)
-- Ensure labels are programmatically associated with their inputs
+- Ensure [labels are programmatically associated][labels-associated-inputs] with their inputs
 - Prefer implementing a method to allow users to skip sections of repeated
-  content
+  content ([WCAG 2.4.1][wcag-2-4-1])
 - Ensure each page or view has a unique title that describes the content it
-  contains
-- The `title` attribute is only used to describe `iframe` element contents
-- Ensure that links are used to navigate to other locations and buttons are used
-  to trigger actions
-- Ensure that focus is trapped inside of modal interactions
-- Ensure `fieldset` and `legend` elements are used to group related inputs and
-  label them
+  contains ([WCAG 2.4.2][wcag-2-4-2])
+- The [`title` attribute is only used to describe `iframe` element contents][title-iframe]
+- Ensure that [links are used to navigate to other locations and buttons are used
+  to trigger actions][links-vs-buttons]
+- Ensure that [focus is trapped inside of modal interactions][focus-traps]
+- Ensure `fieldset` and `legend` elements are used to [group related inputs and
+  label them][fieldsets-legends]
 - Ensure form feedback messaging is programmatically associated with the
-  relevant inputs
+  relevant inputs ([WCAG 3.3.1][wcag-3-3-1])
+- Ensure that dynamic changes to a web page are announced ([WCAG 4.1.3][wcag-4-1-3])
+- Prefer using role selectors in automated acceptance tests
+  - [capybara_accessible_selectors]
+  - [Testing Library's `getByRole()`][testing-library-getbyrole]
+  - [Playwright's `getByRole()`][playwright-getbyrole]
 
 [accessible name]: https://www.w3.org/WAI/ARIA/apg/practices/names-and-descriptions/
-[Cardinal Rules of Naming]: https://www.w3.org/WAI/ARIA/apg/practices/names-and-descriptions/#x5-3-cardinal-rules-of-naming
-[rule-1]: https://www.w3.org/WAI/ARIA/apg/practices/names-and-descriptions/#x5-3-1-rule-1-heed-warnings-and-test-thoroughly
-[rule-2]: https://www.w3.org/WAI/ARIA/apg/practices/names-and-descriptions/#x5-3-2-rule-2-prefer-visible-text
-[rule-3]: https://www.w3.org/WAI/ARIA/apg/practices/names-and-descriptions/#x5-3-3-rule-3-prefer-native-techniques
-[rule-4]: https://www.w3.org/WAI/ARIA/apg/practices/names-and-descriptions/#x5-3-4-rule-4-avoid-browser-fallback
-[rule-5]: https://www.w3.org/WAI/ARIA/apg/practices/names-and-descriptions/#x5-3-5-rule-5-compose-brief-useful-names
+[Cardinal Rules of Naming]: https://www.w3.org/WAI/ARIA/apg/practices/names-and-descriptions/#cardinalrulesofnaming
+[rule-1]: https://www.w3.org/WAI/ARIA/apg/practices/names-and-descriptions/#naming_rule_heed_warnings
+[rule-2]: https://www.w3.org/WAI/ARIA/apg/practices/names-and-descriptions/#naming_rule_visible_text
+[rule-3]: https://www.w3.org/WAI/ARIA/apg/practices/names-and-descriptions/#naming_rule_native_techniques
+[rule-4]: https://www.w3.org/WAI/ARIA/apg/practices/names-and-descriptions/#naming_rule_avoid_fallback
+[rule-5]: https://www.w3.org/WAI/ARIA/apg/practices/names-and-descriptions/#naming_rule_brief_names
+[capybara_accessible_selectors]: https://github.com/citizensadvice/capybara_accessible_selectors
+[testing-library-getbyrole]: https://testing-library.com/docs/queries/byrole
+[playwright-getbyrole]: https://playwright.dev/docs/locators#locate-by-role
+[landmark-regions]: https://www.w3.org/WAI/ARIA/apg/practices/landmark-regions/
+[labels-associated-inputs]: https://www.w3.org/WAI/WCAG22/Techniques/html/H44
+[title-iframe]: https://www.w3.org/WAI/WCAG22/Techniques/html/H64
+[links-vs-buttons]: https://www.nngroup.com/videos/buttons-vs-links/
+[focus-traps]: https://okenlabs.com/blog/accessibility-implementing-focus-traps/
+[fieldsets-legends]: https://www.w3.org/WAI/WCAG22/Techniques/html/H71
+[placeholder-labels]: https://www.deque.com/blog/accessible-forms-the-problem-with-placeholders/#:~:text=A%20Placeholder%20Is%20Not%20a%20Replacement%20for%20Visible%20Labels
+[semantic-markup]: https://www.w3.org/WAI/WCAG22/Techniques/html/H101
+
+[wcag-1-4-3]: https://www.w3.org/WAI/WCAG22/Understanding/contrast-minimum.html
+[wcag-1-4-1]: https://www.w3.org/WAI/WCAG22/Understanding/use-of-color.html
+[wcag-3-1]: https://www.w3.org/WAI/WCAG22/Understanding/readable.html
+[wcag-2-4-4]: https://www.w3.org/WAI/WCAG22/Understanding/link-purpose-in-context.html
+[wcag-2-4-10]: https://www.w3.org/WAI/WCAG22/Understanding/section-headings.html
+[wcag-2-2-2]: https://www.w3.org/WAI/WCAG22/Understanding/pause-stop-hide.html
+[wcag-1-2-2]: https://www.w3.org/WAI/WCAG22/Understanding/captions-prerecorded.html
+[wcag-2-5-8]: https://www.w3.org/WAI/WCAG22/Understanding/target-size-minimum.html
+[wcag-4-1-2]: https://www.w3.org/WAI/WCAG22/Understanding/name-role-value.html
+[wcag-4-1-3]: https://www.w3.org/WAI/WCAG22/Understanding/status-messages.html
+[wcag-1-4-10]: https://www.w3.org/WAI/WCAG22/Understanding/reflow.html
+[wcag-2-1-1]: https://www.w3.org/WAI/WCAG22/Understanding/keyboard.html
+[wcag-2-4-3]: https://www.w3.org/WAI/WCAG22/Understanding/focus-order.html
+[wcag-2-4-1]: https://www.w3.org/WAI/WCAG22/Understanding/bypass-blocks.html
+[wcag-2-4-2]: https://www.w3.org/WAI/WCAG22/Understanding/page-titled.html
+[wcag-3-3-1]: https://www.w3.org/WAI/WCAG22/Understanding/error-identification.html
+[wcag-2-4-7]: https://www.w3.org/WAI/WCAG22/Understanding/focus-visible.html
 
 ## Full audit
 
@@ -126,7 +178,7 @@ assign it one of four ratings:
 Use the Notes sheet to leave per-cell comments when necessary, referencing them
 with a link. The next steps for an audit are handled on a per-project basis.
 
-[accessibility audit template]: https://www.fsb.org.uk/resources-page/accessibility-audit-template.html
+[accessibility audit template]: https://www.fsb.org.uk/resources/article/accessibility-audit-template-MCTMWUV4Z27FEXRANM566TOZXNOE
 [accesslint]: https://github.com/marketplace/accesslint
 [axe]: https://www.deque.com/axe/axe-for-web/integrations/
 [axe's browser extensions]: https://www.deque.com/axe/axe-for-web/
