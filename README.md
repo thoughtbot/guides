@@ -47,7 +47,6 @@ programming in style.
 - [Haskell](/haskell/)
 - [HTML](/html/)
 - [JavaScript & TypeScript](/javascript-typescript/)
-- [Objective-C](/objective-c/)
 - [Python](/python/)
 - [Ruby](/ruby/)
 - [Sass](/sass/)
