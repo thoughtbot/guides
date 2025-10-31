@@ -47,7 +47,6 @@ programming in style.
 - [HAML](/haml/)
 - [Haskell](/haskell/)
 - [HTML](/html/)
-- [Java](/java/)
 - [JavaScript & TypeScript](/javascript-typescript/)
 - [Objective-C](/objective-c/)
 - [Python](/python/)
