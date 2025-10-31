@@ -46,7 +46,6 @@ programming in style.
 - [ERB](/erb/)
 - [Haskell](/haskell/)
 - [HTML](/html/)
-- [Java](/java/)
 - [JavaScript & TypeScript](/javascript-typescript/)
 - [Objective-C](/objective-c/)
 - [Python](/python/)
