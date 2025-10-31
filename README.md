@@ -44,7 +44,6 @@ programming in style.
 - [CSS](/css/)
 - [Elixir](/elixir/)
 - [ERB](/erb/)
-- [HAML](/haml/)
 - [Haskell](/haskell/)
 - [HTML](/html/)
 - [Java](/java/)
