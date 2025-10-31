@@ -51,7 +51,6 @@ programming in style.
 - [Python](/python/)
 - [Ruby](/ruby/)
 - [Sass](/sass/)
-- [Scala](/scala/)
 - [Shell](/shell/)
 - [Swift](/swift/)
 
