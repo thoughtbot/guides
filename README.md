@@ -43,7 +43,6 @@ programming in style.
 - [Bash](/bash/)
 - [CSS](/css/)
 - [ERB](/erb/)
-- [Haskell](/haskell/)
 - [HTML](/html/)
 - [JavaScript & TypeScript](/javascript-typescript/)
 - [Python](/python/)
