@@ -10,7 +10,7 @@
   },
   "homepage": "https://github.com/thoughtbot/guides#readme",
   "dependencies": {
-    "markdownlint-cli2": "^0.17.2"
+    "markdownlint-cli2": "^0.19.0"
   },
   "scripts": {
     "lint": "markdownlint-cli2 \"./**/*.md\""
