@@ -67,6 +67,13 @@ in the Core Stack, most developers won't learn these technologies, and the
 specialists who learn these stacks are unlikely to be able to learn many layers
 in the Core Stack.
 
+### Next.js for Web
+
+- Use Next.js for web applications that benefit significantly from static site
+  generation (SSG) and SEO optimization.
+- Use TypeScript when writing Next.js applications.
+- Use Vercel with automatic git deploys.
+
 ### Android (Native)
 
 - Use Kotlin for writing native app code.
