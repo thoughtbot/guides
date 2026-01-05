@@ -3,22 +3,20 @@
 ```ruby
 # lib/development/seeder.rb
 
-require "factory_bot"
-
 module Development
   class Seeder
-    include FactoryBot::Syntax::Methods
-
     def self.load_seeds
-      new.load_seeds
+      if Rails.env.development?
+        new.load_seeds
+      else
+        raise "Development::Seeder can only be run in a development environment."
+      end
     end
 
     def load_seeds
-      emails = %w[ralph@example.com ruby@example.com]
-
-      emails.each do |email|
-        create(:user, email:, password: "password") unless User.exists?(email:)
-      end
+      #   ["Ruby", "Ralph"].each do |name|
+      #     User.find_or_create_by!(name:)
+      #   end
     end
   end
 end
@@ -27,18 +25,18 @@ end
 ```rb
 # lib/tasks/development.rake
 
-abort "Seeds can only be loaded in local environments" unless Rails.env.local?
+if Rails.env.development?
+  namespace :development do
+    namespace :db do
+      desc "Loads seed data into development."
+      task seed: ["environment", "db:seed"] do
+        Development::Seeder.load_seeds
+      end
 
-namespace :development do
-  namespace :db do
-    desc "Loads seed data into development."
-    task seed: :environment do
-      Development::Seeder.load_seeds
-    end
-
-    namespace :seed do
-      desc "Truncate tables of each database for development and loads seed data."
-      task replant: [ "environment", "db:truncate_all", "development:db:seed" ]
+      namespace :seed do
+        desc "Truncate tables of each database for development and loads seed data."
+        task replant: ["environment", "db:truncate_all", "development:db:seed"]
+      end
     end
   end
 end
