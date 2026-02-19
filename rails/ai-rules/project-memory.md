@@ -40,6 +40,8 @@ bin/rails server                      # Start dev server
 bin/rails spec                        # Full test suite (Suspenders rake task)
 bundle exec rspec spec/models         # Model specs only
 bundle exec rspec spec/requests       # Request specs only
+bundle exec rspec spec/path/to/file_spec.rb  # Run all tests in file
+bundle exec rspec spec/path/to/file_spec.rb:72  # Run just the test at line 72
 rake standard                         # Lint
 rake standard:fix                     # Auto-fix lint issues
 bin/rails db:migrate                  # Run migrations

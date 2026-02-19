@@ -13,4 +13,3 @@
 - WebMock blocks all external HTTP in tests — always stub external requests.
 - One `expect` per `it` block. Max 2 levels of context nesting.
 - Never test private methods directly. Never stub the system under test.
-- Coverage targets: Models 90%, POROs 95%, Controllers 80%, Helpers/Mailers 100%.
