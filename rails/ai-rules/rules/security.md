@@ -10,4 +10,3 @@
 - Never `render json: model` without explicit `only:` — whitelist attributes.
 - Never redirect to `params[:return_to]` without validation.
 - Use array form for system commands: `system("cmd", arg)`, never `system("cmd #{arg}")`.
-- Run `bundle audit` regularly. Keep gems updated for security patches.
