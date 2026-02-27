@@ -15,24 +15,6 @@ and other standards.
 
 [One sentence: what the app does and who it serves.]
 
-## Stack
-
-thoughtbot opinionated defaults based on Suspenders:
-
-- Ruby [VERSION] / Rails [VERSION]
-- PostgreSQL, Redis
-- Sidekiq for background jobs
-- Puma web server
-- RSpec, FactoryBot, Shoulda Matchers, Capybara, WebMock
-- Standard Ruby for linting (not RuboCop)
-- SimpleCov for test coverage
-- inline_svg for SVG embedding
-- bundler-audit for dependency security
-- GitHub Actions CI
-- Heroku deployment
-- Authentication: Devise
-- [Authorization: Pundit / custom / etc.]
-
 ## Commands
 
 ```bash
