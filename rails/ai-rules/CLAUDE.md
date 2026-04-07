@@ -24,8 +24,8 @@ bundle exec rspec spec/models         # Model specs only
 bundle exec rspec spec/requests       # Request specs only
 bundle exec rspec spec/path/to/file_spec.rb  # Run all tests in file
 bundle exec rspec spec/path/to/file_spec.rb:72  # Run just the test at line 72
-rake standard                         # Lint
-rake standard:fix                     # Auto-fix lint issues
+bundle exec rake standard             # Lint
+bundle exec rake standard:fix         # Auto-fix lint issues
 bin/rails db:migrate                  # Run migrations
 bin/rails suspenders:db:migrate       # Migrate + annotate
 bin/rails suspenders:cleanup:organize_gemfile  # Sort Gemfile
