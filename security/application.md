@@ -137,8 +137,7 @@ sure the connection itself is secured using TLS.
 
 ## Personally-Identifying Information (PII)
 
-As much as you can, do not touch any information you don't need. Some tricks for
-this:
+As much as you can, do not touch any information you don't need.
 
 - Send any credit card data directly to the payment processor from the client.
   They'll give back a token, which you can store safely.
@@ -147,6 +146,7 @@ this:
 
 When you must store PII:
 
+- Store sensitive data in controlled systems with appropriate access restrictions and encryption. In particular, Protected Health Information (PHI) should not be stored in broad, shared tools such as Google Drive, Slack, or Figma, and should not be shared in conversations that may be recorded, transcribed, or summarized by tools, as it may be captured and stored.
 - Use [password best practices] for any account with access to PII,
   including developer accounts which have access to production.
 - Avoid using shared logins with access to PII, even if such logins are managed
