@@ -1,35 +1,21 @@
-# thoughtbot project architecture and coding standards for Rails development using agents
-
-See the folder `rules` for language-specific guidelines, testing conventions,
-and other standards.
-
-> **Usage:**
->
-> 1. Copy the content of this file.
-> 2. Create a new file in the root of your project called `.claude/CLAUDE.md`.
-> 3. Update the information in the new file to match your project.
-> 4. Paste the content of this file into the new file.
-> 5. Copy the rules folder into `.claude/`
-
-## Project: [APP_NAME]
+# Project: [APP_NAME]
 
 [One sentence: what the app does and who it serves.]
 
 ## Commands
 
 ```bash
-bin/rails server                      # Start dev server
+bin/dev                               # Start dev server and worker
 bin/rails spec                        # Full test suite (Suspenders rake task)
 bundle exec rspec spec/models         # Model specs only
 bundle exec rspec spec/requests       # Request specs only
 bundle exec rspec spec/path/to/file_spec.rb  # Run all tests in file
 bundle exec rspec spec/path/to/file_spec.rb:72  # Run just the test at line 72
-bundle exec rake standard             # Lint
-bundle exec rake standard:fix         # Auto-fix lint issues
+bundle exec rubocop                   # Lint
+bundle exec rubocop -a                # Auto-fix lint issues
 bin/rails db:migrate                  # Run migrations
-bin/rails suspenders:db:migrate       # Migrate + annotate
-bin/rails suspenders:cleanup:organize_gemfile  # Sort Gemfile
 bundle audit                          # Check gem vulnerabilities
+bin/ci                                # Run all tests, linters, and security scanners
 bin/rails routes                      # View routes
 ```
 
