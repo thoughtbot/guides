@@ -1,6 +1,7 @@
 # Controllers
 
 - Controllers handle HTTP only: receive request, delegate to model, return response.
+- Avoid long actions, since they often signal business logic that belongs in a model or PORO.
 - Maximum one instance variable per action.
 - No business logic, calculations, email sending, or multi-object operations in controllers.
 - Return `status: :unprocessable_entity` on failed form renders (required by Turbo).
