@@ -84,7 +84,6 @@ may include:
 - [Dart Sass] with `@use` if your project already uses Sass
 
 [lightning css]: https://lightningcss.dev/
-[vite]: https://vite.dev/
 [dart sass]: https://sass-lang.com/dart-sass/
 [cssbundling-rails]: https://github.com/rails/cssbundling-rails
 [PostCSS]: https://github.com/postcss/postcss
@@ -101,7 +100,7 @@ is complex, you can define tokens in various `:root` declarations across differe
 - Mapping primitive values to semantic names makes tokens more meaningful at the
   point of use, and easier to theme:
 
-  ```css
+```css
 :root {
   /* Primitives */
   --color--blue-100: #57929e;
@@ -195,7 +194,6 @@ to keep track of your values here and perhaps scope it per partial.
 
 [container queries]: https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_containment/Container_queries
 
-
 ## Linting
 
 [Stylelint] is a good option for enforcing CSS conventions. The
@@ -258,7 +256,7 @@ For more on how specificity is calculated, see the [MDN specificity docs].
 ### Naming
 
 - Use lowercase and hyphens (kebab-case) for class names and custom properties
-- Be consistent with whatever naming convention the project is already using. Introducing a 
+- Be consistent with whatever naming convention the project is already using. Introducing a
   new system (like BEM) mid-project tends to create inconsistency rather than clarity
 - Avoid concatenating selector names with `&` (e.g. `&__child`) as it makes
   class names harder to search for in the codebase
