@@ -181,7 +181,7 @@ than the viewport:
 
 ### Media queries (for larger layout directives)
 
-Media queries can still the right tool for page-level layout changes: things like large
+Media queries can still be the right tool for page-level layout changes: things like large
 navigation shifts that also should effect other items in the page.
 
 - Start with the smallest viewport and layer upward with `min-width`
