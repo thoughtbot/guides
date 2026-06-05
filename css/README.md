@@ -206,8 +206,9 @@ reflect native CSS rather than Sass-specific conventions.
 
 ## Formatting
 
-- Use hyphens when naming classes and custom properties: `span-columns` not
-  `span_columns` or `spanColumns`
+- Use hyphens when naming classes and custom properties: `block-name`,
+`block-name__element`, `block-name--modifier` instead of `blockName` or
+`block_name`
 - Avoid shorthand properties when setting a single value: `background-color:
   #ff0000` rather than `background: #ff0000`
 - Use `/* */` for comment blocks
