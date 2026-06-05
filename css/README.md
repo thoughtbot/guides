@@ -258,8 +258,8 @@ For more on how specificity is calculated, see the [MDN specificity docs].
 
 - Use lowercase and hyphens (kebab-case) for class names and custom properties
 - [BEM] is a reasonable default for a naming system within your CSS structure
-- Regardless, be consistent with whatever naming convention the project is already 
-  using. Introducing a new system (like BEM) mid-project tends to create 
+- Regardless, be consistent with whatever naming convention the project is already
+  using. Introducing a new system (like BEM) mid-project tends to create
   inconsistency rather than clarity
 - Avoid concatenating selector names with `&` (e.g. `&__child`) as it makes
   class names harder to search for in the codebase
