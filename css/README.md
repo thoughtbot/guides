@@ -9,7 +9,7 @@
 - Prefer native HTML elements over custom implementations, like `<dialog>` for
   modals, `<details>`/`<summary>` for disclosures, and the [Popover API] for
   tooltips and non-modal overlays
-- Use [double colon syntax] for pseudo-elements
+- Use [double colon syntax] for pseudo-elements, single colon for pseudo-classes
 - Vendor prefixes are rarely needed for modern browsers. If a project requires
   legacy browser support, consider automating prefixes via a build tool rather
   than maintaining them by hand
@@ -263,6 +263,8 @@ For more on how specificity is calculated, see the [MDN specificity docs].
   inconsistency rather than clarity
 - Avoid concatenating selector names with `&` (e.g. `&__child`) as it makes
   class names harder to search for in the codebase
+  - An exception is using `&` with pseudo-classes (e.g. `&:hover`) and
+    pseudo-elements (e.g `&::after`).
 - A `.u-` prefix for utility classes helps distinguish them from component
   selectors: e.g. `.u-visually-hidden`
 
