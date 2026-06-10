@@ -6,10 +6,7 @@
   - Selector naming convention
   - Code linting tools and configuration
   - Browser support
-- Prefer native HTML elements over custom implementations, like `<dialog>` for
-  modals, `<details>`/`<summary>` for disclosures, and the [Popover API] for
-  tooltips and non-modal overlays
-- Use [double colon syntax] for pseudo-elements (`::after {}`), single colon for pseudo-classes (`button:hover {}`)
+- Use [double colon syntax] for pseudo-elements (`::after`), single colon for pseudo-classes (`:hover`)
 - Vendor prefixes are rarely needed for modern browsers. If a project requires
   legacy browser support, consider automating prefixes via a build tool rather
   than maintaining them by hand
@@ -196,29 +193,28 @@ to keep track of your values here and perhaps scope it per partial.
 
 ## Linting
 
-[Stylelint] is a good option for enforcing CSS conventions. The
-[stylelint-order] plugin can handle alphabetical declaration ordering. If
+[Stylelint] is a good option for enforcing CSS conventions. If
 adopting a shared config, it's worth reviewing its rules to make sure they
 reflect native CSS rather than Sass-specific conventions.
 
 [stylelint]: https://stylelint.io/
-[stylelint-order]: https://github.com/hudochenkov/stylelint-order
 
 ## Formatting
 
-- Use hyphens when naming classes and custom properties: `block-name`,
-`block-name__element`, `block-name--modifier` instead of `blockName` or
-`block_name`
 - Avoid shorthand properties when setting a single value: `background-color:
   #ff0000` rather than `background: #ff0000`
+  - [Shorthand itself can obscure your intentions], so err on the side of longhand for
+    most properties.
 - Use `/* */` for comment blocks
 - Keeping files under 100 lines makes them easier to scan; split larger files
   into focused partials
 
+[Shorthand itself can obscure your intentions]: https://staging.thoughtbot.com/blog/when-to-use-and-not-use-css-shorthand-properties
+
 ### Declaration ordering
 
 [Alphabetical ordering is a reasonable default] because it's predictable and easy to
-lint.
+lint. The [stylelint-order] plugin can handle alphabetical declaration ordering.
 
 Treat vendor-prefixed properties as if the prefix isn't there when
 alphabetizing:
@@ -232,6 +228,7 @@ alphabetizing:
 ```
 
 [Alphabetical ordering is a reasonable default]: https://ericwbailey.website/published/organize-your-css-declarations-alphabetically/
+[stylelint-order]: https://github.com/hudochenkov/stylelint-order
 
 ## Selectors
 
@@ -256,7 +253,9 @@ For more on how specificity is calculated, see the [MDN specificity docs].
 
 ### Naming
 
-- Use lowercase and hyphens (kebab-case) for class names and custom properties
+- Use lowercase and hyphens (kebab-case) for class names and custom properties: `block-name`,
+`block-name__element`, `block-name--modifier` instead of `blockName` or
+`block_name`.
 - [BEM] is a reasonable default for a naming system within your CSS structure
 - Regardless, be consistent with whatever naming convention the project is already
   using. Introducing a new system (like BEM) mid-project tends to create
@@ -279,8 +278,12 @@ approach exists.
 ### Nesting
 
 Native CSS nesting is well-supported in modern browsers. It's useful for keeping
-component styles self-contained, though deep nesting (more than 2–3 levels) can
-make specificity and readability harder to manage.
+component styles self-contained, though deep nesting can make specificity and 
+readability harder to manage.
+
+- Keep nesting to a maximum of 3 levels deep when possible.
+- Favor nesting for pseudo-classes, pseudo-elements, media queries, and feature queries.
+- Err on the side of unnesting elements if they can be specified in other ways (e.g. naming).
 
 ```css
 .card {
@@ -290,9 +293,13 @@ make specificity and readability harder to manage.
     background-color: var(--color--surface-raised);
   }
 
-  .another-component {
-    font-size: var(--font-size--large);
+  @media screen and (min-width: 30em) {
+    padding: var(--space--small);
   }
+}
+
+.card .another-component {
+  font-size: var(--font-size--large);
 }
 ```
 
