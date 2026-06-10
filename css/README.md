@@ -13,7 +13,6 @@
 - Prefer native CSS over preprocessors like SCSS
 
 [double colon syntax]: https://developer.mozilla.org/en-US/docs/Web/CSS/Pseudo-elements#Syntax
-[popover api]: https://developer.mozilla.org/en-US/docs/Web/API/Popover_API
 
 ## Getting started
 
@@ -191,6 +190,198 @@ to keep track of your values here and perhaps scope it per partial.
 
 [container queries]: https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_containment/Container_queries
 
+## Typography
+
+### Font loading
+
+Only ship fonts in [`woff2` format] as it's supported by all modern browsers and
+there's no need to include `woff`, `ttf`, or other formats as fallbacks.
+
+Always set [`font-display: swap`] on `@font-face` declarations to prevent
+invisible text while a web font is loading:
+
+```css
+@font-face {
+  font-display: swap;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 100 900;
+  src: url("inter.woff2") format("woff2");
+}
+```
+
+If the fallback font differs noticeably in size from the web font, use
+[`font-size-adjust`] to normalize the x-height across both, which reduces
+layout shift when the web font loads:
+
+```css
+body {
+  font-family: "Inter", system-ui;
+  font-size-adjust: from-font;
+}
+```
+
+For performance-sensitive projects, a system font stack can be a reasonable
+alternative to web fonts altogether:
+
+```css
+body {
+  font-family: system-ui, sans-serif;
+}
+```
+
+[`woff2` format]: https://caniuse.com/woff2
+[`font-display: swap`]: https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display
+[`font-size-adjust`]: https://developer.mozilla.org/en-US/docs/Web/CSS/font-size-adjust
+
+### Fluid type
+
+Use [`clamp()`] for more fluid typography. This is a way to scale type
+smoothly between a minimum and maximum size based on viewport width,
+without breakpoints.
+
+- You can use fluid typography for larger headings or display type
+- Most body and UI copy should normally default to a static size (not fluid)
+
+```css
+:root {
+  --font-size--heading: clamp(1.5rem, 4vw, 3rem);
+}
+
+h2 {
+  font-size: var(--font-size--heading);
+}
+```
+
+The first value is the floor, the second is the preferred fluid value, and the
+third is the ceiling.
+
+[`clamp()`]: https://developer.mozilla.org/en-US/docs/Web/CSS/clamp
+
+### Variable fonts
+
+If your project uses a variable font that varies weight, you can define a weight range in
+`@font-face` and let the font render any weight within that range:
+
+```css
+@font-face {
+  font-family: "Inter";
+  font-weight: 100 900;
+  src: url("inter-variable.woff2") format("woff2");
+}
+```
+
+Enable [optical sizing] if the font supports an `opsz` axis. Browsers will
+adjust letterform details automatically based on the rendered size:
+
+```css
+body {
+  font-optical-sizing: auto;
+}
+```
+
+For other variable axes (width, slant, etc.), use [`font-variation-settings`]
+when `font-weight` or `font-style` alone aren't enough:
+
+```css
+.heading {
+  font-variation-settings: "wdth" 110;
+}
+```
+
+[optical sizing]: https://developer.mozilla.org/en-US/docs/Web/CSS/font-optical-sizing
+[`font-variation-settings`]: https://developer.mozilla.org/en-US/docs/Web/CSS/font-variation-settings
+
+### Rendering
+
+`-webkit-font-smoothing: antialiased` renders fonts thinner on macOS and iOS by
+using greyscale antialiasing instead of the default subpixel rendering. It can be a stylistic
+choice and some designers prefer the lighter appearance, while others
+find it reduces legibility at small sizes. If your project uses it, apply it
+consistently:
+
+```css
+body {
+  -webkit-font-smoothing: antialiased;
+}
+```
+
+If your typeface has them, enable common [ligatures] for more natural text rendering:
+
+```css
+body {
+  font-variant-ligatures: common-ligatures;
+}
+```
+
+[ligatures]: https://developer.mozilla.org/en-US/docs/Web/CSS/font-variant-ligatures
+
+### Minimum font sizes
+
+- Body text should be at least `1rem` (or `16px` equivalent) at its smallest.
+- Avoid setting `font-size` in `px` on the `html` or `body` element as it overrides
+the user's browser font size preference, which is a common accessibility accommodation.
+- When using [`clamp()`] for fluid type, the first argument acts as the floor.
+  - Make sure it's never smaller than `1rem` for reading-level text:
+
+```css
+/* Good — floor is 1rem */
+--font-size--body: clamp(1rem, 2.5vw, 1.25rem);
+
+/* Avoid — floor is below accessible threshold */
+--font-size--body: clamp(0.75rem, 2.5vw, 1.25rem);
+```
+
+Supporting text like captions or labels can go smaller, but staying at or above
+`0.75rem` (12px equivalent) is a reasonable lower bound for anything a user is
+expected to read.
+
+### Further readability
+
+Use [`text-wrap`] to improve how text breaks across lines without manual
+intervention.
+
+- Prefer `pretty` as a general default for headings because it prevents orphaned words
+  at the end of a block and works well at any length.
+  - It is still however, not fully supported as of writing this guide.
+- `balance` is a fine fallback for browsers that don't support `pretty`.
+- The spec gives browsers latitude in how they implement these algorithms, so
+  Chrome and Safari may produce slightly different line breaks for the same text.
+
+```css
+h1, h2, h3, h4 {
+  text-wrap: balance;
+  text-wrap: pretty;
+}
+```
+
+Use a unitless value for [`line-height`] as it scales correctly in nested
+elements where `em` or `%` values can compound unexpectedly:
+
+```css
+body {
+  line-height: 1.5;
+}
+
+h1 {
+  line-height: 1.2;
+}
+```
+
+The [`lh` unit] is useful for spacing that should feel proportional to the
+current line height. For example, paragraph margins that stay in rhythm with
+the text:
+
+```css
+p {
+  margin-block-end: 1lh;
+}
+```
+
+[`text-wrap`]: https://developer.mozilla.org/en-US/docs/Web/CSS/text-wrap
+[`line-height`]: https://developer.mozilla.org/en-US/docs/Web/CSS/line-height
+[`lh` unit]: https://developer.mozilla.org/en-US/docs/Web/CSS/length#lh
+
 ## Linting
 
 [Stylelint] is a good option for enforcing CSS conventions. If
@@ -278,7 +469,7 @@ approach exists.
 ### Nesting
 
 Native CSS nesting is well-supported in modern browsers. It's useful for keeping
-component styles self-contained, though deep nesting can make specificity and 
+component styles self-contained, though deep nesting can make specificity and
 readability harder to manage.
 
 - Keep nesting to a maximum of 3 levels deep when possible.
