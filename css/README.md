@@ -9,7 +9,7 @@
 - Prefer native HTML elements over custom implementations, like `<dialog>` for
   modals, `<details>`/`<summary>` for disclosures, and the [Popover API] for
   tooltips and non-modal overlays
-- Use [double colon syntax] for pseudo-elements, single colon for pseudo-classes
+- Use [double colon syntax] for pseudo-elements (`::after {}`), single colon for pseudo-classes (`button:hover {}`)
 - Vendor prefixes are rarely needed for modern browsers. If a project requires
   legacy browser support, consider automating prefixes via a build tool rather
   than maintaining them by hand
