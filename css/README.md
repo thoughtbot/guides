@@ -29,7 +29,7 @@ A reasonable default structure:
 
 ```text
 css/
-├── reset/
+├── resets/
 │   └── _normalize.css          # Browser resets
 ├── base/
 │   ├── _variables.css          # CSS custom properties (colors, spacing, fonts)
