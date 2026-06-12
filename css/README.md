@@ -400,7 +400,7 @@ reflect native CSS rather than Sass-specific conventions.
 - Keeping files under 100 lines makes them easier to scan; split larger files
   into focused partials
 
-[Shorthand itself can obscure your intentions]: https://staging.thoughtbot.com/blog/when-to-use-and-not-use-css-shorthand-properties
+[Shorthand itself can obscure your intentions]: https://thoughtbot.com/blog/when-to-use-and-not-use-css-shorthand-properties
 
 ### Declaration ordering
 
