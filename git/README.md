@@ -7,6 +7,8 @@ A guide for programming within version control.
 - Avoid merge commits by using a [rebase workflow].
 - Squash multiple trivial commits into a single commit.
 - Write a [good commit message].
+- Write commit messages for humans, not machines (i.e.: avoid "chore:" and 
+  other Git patterns).
 
 [rebase workflow]: https://github.com/thoughtbot/guides/blob/main/git/README.md#merge
 [good commit message]: http://tbaggery.com/2008/04/19/a-note-about-git-commit-messages.html
