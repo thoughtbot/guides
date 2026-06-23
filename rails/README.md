@@ -84,6 +84,7 @@ Guidance on ActiveRecord, ActiveModel, and other model objects.
 ## Security
 
 - Set [config.sandbox_by_default][sandbox] to `true` in production-like environments to avoid accidental writing to the production database.
+- Filter sensitive information from external network requests. [Example](/rails/how-to/filter-sensitive-information-from-external-network-requests.md).
 
 [sandbox]: https://guides.rubyonrails.org/configuring.html#config-sandbox-by-default
 
