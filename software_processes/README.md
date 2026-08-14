@@ -45,4 +45,4 @@ We disklike processes that:
 - have a goal that is unclear or can't be evaluated
 - we don't understand
 - are used in the wrong context (e.g. an enterprise process in a startup)
-- take time rather than making time
+- leave no time for important work (this can only be evaluated together with all other processes; maybe a new process must be added and what should be removed is something older that has outlived its value)
