@@ -46,3 +46,4 @@ We disklike processes that:
 - we don't understand
 - are used in the wrong context (e.g. an enterprise process in a startup)
 - leave no time for important work (this can only be evaluated together with all other processes; maybe a new process must be added and what should be removed is something older that has outlived its value)
+- leave us reliant on someone else to do our work
