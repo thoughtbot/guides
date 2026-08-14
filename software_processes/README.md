@@ -1,4 +1,4 @@
-# Template
+# Software delivery processes
 
 Software delivery processes can keep us safe in dangerous circumstances or improve consistency on important tasks. They can also make us unable to do our jobs. In order to be successful at clients we often need to influence their processes.
 
