@@ -29,3 +29,4 @@ rules/testing.md - **MUST write tests first** TDD guidelines
 rules/security.md — security guidelines
 rules/views.md — No logic in views, presenter usage, Turbo conventions
 rules/database.md — Indexes, N+1, migration rules, query guidelines
+rules/comments.md — Code comments are a last resort; prefer telling the story through code, tests, commits
