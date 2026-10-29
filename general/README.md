@@ -19,16 +19,12 @@ violations.
 
 ## Formatting
 
-- Avoid inline comments.
 - Break long lines after 80 characters.
-- Delete trailing whitespace.
+- Delete trailing spaces.
 - Don't misspell.
-- Use empty lines around multi-line blocks.
-- Use spaces around operators, except for unary operators, such as `!`.
 - Use [Unix-style line endings] (`\n`).
-- Use [uppercase for SQL key words and lowercase for SQL identifiers].
+- Use spaces around operators, except for unary operators, such as `!`.
 
-[uppercase for sql key words and lowercase for sql identifiers]: http://www.postgresql.org/docs/9.2/static/sql-syntax-lexical.html#SQL-SYNTAX-IDENTIFIERS
 [unix-style line endings]: http://unix.stackexchange.com/questions/23903/should-i-end-my-text-script-files-with-a-newline
 
 ## Naming
@@ -39,7 +35,8 @@ violations.
 - Prefer naming classes after domain concepts rather than patterns they
   implement (e.g. `Guest` vs `NullUser`, `CachedRequest` vs `RequestDecorator`).
 - Name the enumeration parameter the singular of the collection (`users.each { |user| greet(user) }`).
-- Name variables, methods, and classes to reveal intent. This includes documentation and examples (e.g. don't use `foo`, `bar`, `baz` in examples).
+- Name variables, methods, and classes to reveal intent. This includes documentation and
+  examples (e.g. don't use `foo`, `bar`, `baz` in examples).
 - Treat acronyms as words in names (`XmlHttpRequest` not `XMLHTTPRequest`), even
   if the acronym is the entire name (`class Html` not `class HTML`).
 

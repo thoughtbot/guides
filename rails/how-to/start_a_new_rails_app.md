@@ -4,10 +4,7 @@ Use [Suspenders]:
 
 ```sh
 gem install suspenders
-suspenders the-name-of-your-project-here
-cd the-name-of-your-project-here/
-bin/setup
-rake
+suspenders new the-name-of-your-project-here
 ```
 
 [suspenders]: https://github.com/thoughtbot/suspenders

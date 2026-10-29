@@ -34,6 +34,9 @@ Watch a presentation that covers this material from [Derek Prior at RailsConf 20
 - **Be explicit**
   - Remember people don't always understand your intentions online.
 
+- **When disagreeing, provide alternative solutions**
+  - Don't [simply reject an idea][dont-mcblock-me]. [Explain your reasoning](https://thoughtbot.com/blog/don-t-review-prs-like-a-space-wizard) and [suggest alternative approaches](https://github.com/thoughtbot/guides/pull/762#discussion_r2135772338).
+
 - **Be humble**
   - "I'm not sure - let's look it up."
 
@@ -112,6 +115,8 @@ Then:
   - **Communicate clearly which lines you suggest adding/removing**
   - **Test the suggested changes to validate it works whenever possible**
   - **When not possible, let the pull request author know that you did not test the suggestion**
+    - This applies to code and information in general.
+    - Be cautious with information you got from an unofficial source _like an LLM or blog post_.
   - **Provide some context to let the author know why you're suggesting the change**
 
 ## Style Comments
@@ -139,3 +144,4 @@ This helps us have more meaningful conversations on PRs rather than debating per
 [standard]: https://github.com/testdouble/standard
 [weasel words]: https://en.wikipedia.org/wiki/Weasel_word
 [justification filler phrases]: https://serce.me/posts/2025-05-19-justification-filler-phrases
+[dont-mcblock-me]: https://www.schneems.com/2025/06/03/dont-mcblock-me

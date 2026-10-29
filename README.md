@@ -37,30 +37,24 @@ programming in style.
 - [Security](/security/)
 - [Web](/web/)
 - [Web Performance](/web-performance/)
+- [Production](/production)
 
 ### Languages
 
 - [Bash](/bash/)
 - [CSS](/css/)
-- [Elixir](/elixir/)
 - [ERB](/erb/)
-- [HAML](/haml/)
-- [Haskell](/haskell/)
 - [HTML](/html/)
-- [Java](/java/)
 - [JavaScript & TypeScript](/javascript-typescript/)
-- [Objective-C](/objective-c/)
 - [Python](/python/)
 - [Ruby](/ruby/)
 - [Sass](/sass/)
-- [Scala](/scala/)
 - [Shell](/shell/)
 - [Swift](/swift/)
 
 ### Frameworks and platforms
 
 - [Android](/android/)
-- [Ember](/ember/)
 - [iOS](/ios/)
 - [Rails](/rails/)
 - [React](/react/)
