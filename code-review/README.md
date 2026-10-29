@@ -27,9 +27,9 @@ Watch a presentation that covers this material from [Derek Prior at RailsConf 20
 - **Avoid diminishing words**
   - "simply", "simple", "just"
 
-- **Avoid [weasel words]/[justification filler phrases]**
-  - "Researchers say that", "it's a best practice".
-  - Be clear and explain the tradeoffs and impacts of a particular solution.
+- **Avoid [weasel words]/[justification filler phrases]** - instead, articulate your reasoning
+  - Phrases like, "Researchers say that" or "it's a best practice" can subvert accountability for a personal opinion and obscure the evidence or reasoning behind a recommendation.
+  - Instead, be clear and explain the tradeoffs and impacts of a particular solution.
 
 - **Be explicit**
   - Remember people don't always understand your intentions online.
