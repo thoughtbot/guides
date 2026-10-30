@@ -1,6 +1,7 @@
 # Database & Migrations
 
 - Always use the `rails generate migration` command to create migration files.
+- Migrations must be reversible.
 - Use `text` over `string` if length varies significantly.
 - Add `null: false` and database-level defaults where appropriate.
 - Wrap multi-record operations in transactions. Use `save!` (bang) inside transactions.
