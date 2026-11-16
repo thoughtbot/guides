@@ -56,7 +56,7 @@ substantially higher than the common Heroku platform and have to be renewed
 annually and needed capacity predicted. This does however offer the same easy to
 deploy features as before. The additional cost can be offset by a lower need for
 in-house Site Reliability Engineering (SRE) staff, though it is recommended to have someone available that can
-periodically manage configuraton and monitor server loads.
+periodically manage configuration and monitor server loads.
 
 A more sophisticated and adaptable solution is to consider Amazon Web Services
 ([AWS][]). We have created [Flightdeck][] to help manage high-security,
