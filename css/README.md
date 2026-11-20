@@ -418,6 +418,15 @@ alphabetizing:
 }
 ```
 
+Declare custom properties before the declarations that use them:
+
+```css
+.class {
+  --interest-delay: 0.2s 0.2s;
+  interest-delay: var(--interest-delay);
+}
+```
+
 [Alphabetical ordering is a reasonable default]: https://ericwbailey.website/published/organize-your-css-declarations-alphabetically/
 [stylelint-order]: https://github.com/hudochenkov/stylelint-order
 
